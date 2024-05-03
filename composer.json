@@ -27,7 +27,7 @@
         }
     },
     "scripts": {
-        "build-combined-json": "rm resources/combined.json && php vendor/bin/openapi-merge resources/* > resources/combined.json",
+        "build-combined-json": "if [ -f openapi.json ]; then rm openapi.json; fi && php vendor/bin/openapi-merge resources/* > openapi.json",
         "openapi-generate": ["Composer\\Config::disableProcessTimeout" ,"php -d memory_limit=2G vendor/bin/jane-openapi generate"]
     }
 }
