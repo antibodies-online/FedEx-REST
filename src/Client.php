@@ -870,18 +870,18 @@ class Client extends \AntibodiesOnline\FedEx\Runtime\Client\Client
      *     @var string $authorization This indicates the authorization token for the input request.
      * }
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
-     * @throws \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66BadRequestException
-     * @throws \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66UnauthorizedException
-     * @throws \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66ForbiddenException
-     * @throws \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66NotFoundException
-     * @throws \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66InternalServerErrorException
-     * @throws \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66ServiceUnavailableException
+     * @throws \AntibodiesOnline\FedEx\Exception\TrackSendNotificationBadRequestException
+     * @throws \AntibodiesOnline\FedEx\Exception\TrackSendNotificationUnauthorizedException
+     * @throws \AntibodiesOnline\FedEx\Exception\TrackSendNotificationForbiddenException
+     * @throws \AntibodiesOnline\FedEx\Exception\TrackSendNotificationNotFoundException
+     * @throws \AntibodiesOnline\FedEx\Exception\TrackSendNotificationInternalServerErrorException
+     * @throws \AntibodiesOnline\FedEx\Exception\TrackSendNotificationServiceUnavailableException
      *
      * @return null|\AntibodiesOnline\FedEx\Model\TrackV1NotificationsPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function 19f112535f47e237486334074740bb66($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function trackSendNotification($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
-        return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Endpoint\19f112535f47e237486334074740bb66($requestBody, $headerParameters), $fetch);
+        return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Endpoint\TrackSendNotification($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint returns tracking information based on alternate references other than Tracking Number such as Customer reference numbers, etc.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>

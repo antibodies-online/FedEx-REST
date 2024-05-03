@@ -2,7 +2,7 @@
 
 namespace AntibodiesOnline\FedEx\Endpoint;
 
-class 19f112535f47e237486334074740bb66 extends \AntibodiesOnline\FedEx\Runtime\Client\BaseEndpoint implements \AntibodiesOnline\FedEx\Runtime\Client\Endpoint
+class TrackSendNotification extends \AntibodiesOnline\FedEx\Runtime\Client\BaseEndpoint implements \AntibodiesOnline\FedEx\Runtime\Client\Endpoint
 {
     /**
      * This endpoint helps you setup up, customize the tracking event notifications to be received for a shipment.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
@@ -55,12 +55,12 @@ class 19f112535f47e237486334074740bb66 extends \AntibodiesOnline\FedEx\Runtime\C
     /**
      * {@inheritdoc}
      *
-     * @throws \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66BadRequestException
-     * @throws \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66UnauthorizedException
-     * @throws \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66ForbiddenException
-     * @throws \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66NotFoundException
-     * @throws \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66InternalServerErrorException
-     * @throws \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66ServiceUnavailableException
+     * @throws \AntibodiesOnline\FedEx\Exception\TrackSendNotificationBadRequestException
+     * @throws \AntibodiesOnline\FedEx\Exception\TrackSendNotificationUnauthorizedException
+     * @throws \AntibodiesOnline\FedEx\Exception\TrackSendNotificationForbiddenException
+     * @throws \AntibodiesOnline\FedEx\Exception\TrackSendNotificationNotFoundException
+     * @throws \AntibodiesOnline\FedEx\Exception\TrackSendNotificationInternalServerErrorException
+     * @throws \AntibodiesOnline\FedEx\Exception\TrackSendNotificationServiceUnavailableException
      *
      * @return null|\AntibodiesOnline\FedEx\Model\TrackV1NotificationsPostResponse200
      */
@@ -72,22 +72,22 @@ class 19f112535f47e237486334074740bb66 extends \AntibodiesOnline\FedEx\Runtime\C
             return $serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Model\\TrackV1NotificationsPostResponse200', 'json');
         }
         if (is_null($contentType) === false && (400 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66BadRequestException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Model\\TrackV1NotificationsPostResponse400', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Exception\TrackSendNotificationBadRequestException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Model\\TrackV1NotificationsPostResponse400', 'json'), $response);
         }
         if (is_null($contentType) === false && (401 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66UnauthorizedException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Model\\TrackV1NotificationsPostResponse401', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Exception\TrackSendNotificationUnauthorizedException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Model\\TrackV1NotificationsPostResponse401', 'json'), $response);
         }
         if (is_null($contentType) === false && (403 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66ForbiddenException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Model\\TrackV1NotificationsPostResponse403', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Exception\TrackSendNotificationForbiddenException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Model\\TrackV1NotificationsPostResponse403', 'json'), $response);
         }
         if (is_null($contentType) === false && (404 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66NotFoundException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Model\\TrackV1NotificationsPostResponse404', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Exception\TrackSendNotificationNotFoundException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Model\\TrackV1NotificationsPostResponse404', 'json'), $response);
         }
         if (is_null($contentType) === false && (500 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66InternalServerErrorException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Model\\TrackV1NotificationsPostResponse500', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Exception\TrackSendNotificationInternalServerErrorException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Model\\TrackV1NotificationsPostResponse500', 'json'), $response);
         }
         if (is_null($contentType) === false && (503 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Exception\19f112535f47e237486334074740bb66ServiceUnavailableException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Model\\TrackV1NotificationsPostResponse503', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Exception\TrackSendNotificationServiceUnavailableException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Model\\TrackV1NotificationsPostResponse503', 'json'), $response);
         }
     }
     public function getAuthenticationScopes() : array

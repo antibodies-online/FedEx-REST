@@ -2,7 +2,7 @@
 
 namespace AntibodiesOnline\FedEx\Exception;
 
-class 19f112535f47e237486334074740bb66ServiceUnavailableException extends ServiceUnavailableException
+class TrackSendNotificationServiceUnavailableException extends ServiceUnavailableException
 {
     /**
      * @var \AntibodiesOnline\FedEx\Model\TrackV1NotificationsPostResponse503

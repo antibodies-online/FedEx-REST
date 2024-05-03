@@ -2,7 +2,7 @@
 
 namespace AntibodiesOnline\FedEx\Exception;
 
-class 19f112535f47e237486334074740bb66ForbiddenException extends ForbiddenException
+class TrackSendNotificationForbiddenException extends ForbiddenException
 {
     /**
      * @var \AntibodiesOnline\FedEx\Model\TrackV1NotificationsPostResponse403

@@ -1,4 +1,13 @@
 {
+    "name": "antibodies-online/fedex-rest-sdk",
+    "description": "PHP SDK for Fedex REST API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benedikt Lenzen",
+            "email": "benedikt.lenzen@antibodies-online.com"
+        }
+    ],
     "require-dev": {
         "jane-php/open-api-3": "^7.6",
         "friendsofphp/php-cs-fixer": "^3.54",
@@ -11,5 +20,14 @@
     },
     "require": {
         "jane-php/open-api-runtime": "^7.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "AntibodiesOnline\\FedEx\\": "src/"
+        }
+    },
+    "scripts": {
+        "build-combined-json": "rm resources/combined.json && php vendor/bin/openapi-merge resources/* > resources/combined.json",
+        "openapi-generate": ["Composer\\Config::disableProcessTimeout" ,"php -d memory_limit=2G vendor/bin/jane-openapi generate"]
     }
 }

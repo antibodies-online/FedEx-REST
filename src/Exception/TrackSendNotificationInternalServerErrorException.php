@@ -2,7 +2,7 @@
 
 namespace AntibodiesOnline\FedEx\Exception;
 
-class 19f112535f47e237486334074740bb66InternalServerErrorException extends InternalServerErrorException
+class TrackSendNotificationInternalServerErrorException extends InternalServerErrorException
 {
     /**
      * @var \AntibodiesOnline\FedEx\Model\TrackV1NotificationsPostResponse500

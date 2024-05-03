@@ -2,7 +2,7 @@
 
 namespace AntibodiesOnline\FedEx\Exception;
 
-class 19f112535f47e237486334074740bb66BadRequestException extends BadRequestException
+class TrackSendNotificationBadRequestException extends BadRequestException
 {
     /**
      * @var \AntibodiesOnline\FedEx\Model\TrackV1NotificationsPostResponse400

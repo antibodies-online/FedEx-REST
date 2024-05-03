@@ -2,7 +2,7 @@
 
 namespace AntibodiesOnline\FedEx\Exception;
 
-class 19f112535f47e237486334074740bb66NotFoundException extends NotFoundException
+class TrackSendNotificationNotFoundException extends NotFoundException
 {
     /**
      * @var \AntibodiesOnline\FedEx\Model\TrackV1NotificationsPostResponse404
