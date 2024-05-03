@@ -1,0 +1,15 @@
+{
+    "require-dev": {
+        "jane-php/open-api-3": "^7.6",
+        "friendsofphp/php-cs-fixer": "^3.54",
+        "marcelthole/openapi-merge": "^2.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "require": {
+        "jane-php/open-api-runtime": "^7.6"
+    }
+}
