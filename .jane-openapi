@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'openapi-file' => __DIR__ . '/resources/combined.json',
-    'namespace' => 'AntibodiesOnline\FedEx',
-    'directory' => __DIR__ . '/src/',
+    'openapi-file' => __DIR__ . '/openapi.json',
+    'namespace' => 'AntibodiesOnline\FedEx\Api',
+    'directory' => __DIR__ . '/src/Api/',
 ];
