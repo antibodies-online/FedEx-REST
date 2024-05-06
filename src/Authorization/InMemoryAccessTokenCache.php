@@ -2,7 +2,7 @@
 
 namespace AntibodiesOnline\FedEx\Authorization;
 
-class InMemoryAccessTokenCache
+class InMemoryAccessTokenCache extends AccessTokenCache
 {
     protected ?AccessToken $accessToken = null;
 
