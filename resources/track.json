@@ -27,11 +27,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"oneOf": [
-									{
-										"$ref": "#/components/schemas/Full_Schema_Multiple_Piece_Shipment"
-									}
-								]
+								"$ref": "#/components/schemas/Full_Schema_Multiple_Piece_Shipment"
 							}
 						}
 					}
@@ -243,16 +239,12 @@
 			"post": {
 				"summary": "Send Notification",
 				"description": "This endpoint helps you setup up, customize the tracking event notifications to be received for a shipment.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>",
-				"operationId": "19f112535f47e237486334074740bb66",
+				"operationId": "Track Send Notification",
 				"requestBody": {
 					"content": {
 						"application/json": {
 							"schema": {
-								"oneOf": [
-									{
-										"$ref": "#/components/schemas/Full_Schema_Notification"
-									}
-								]
+								"$ref": "#/components/schemas/Full_Schema_Notification"
 							}
 						}
 					},
@@ -470,11 +462,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"oneOf": [
-									{
-										"$ref": "#/components/schemas/Full_Schema_Tracking_References"
-									}
-								]
+								"$ref": "#/components/schemas/Full_Schema_Tracking_References"
 							}
 						}
 					},
@@ -692,11 +680,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"oneOf": [
-									{
-										"$ref": "#/components/schemas/Full_Schema_TCN"
-									}
-								]
+								"$ref": "#/components/schemas/Full_Schema_TCN"
 							}
 						}
 					},
@@ -914,11 +898,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"oneOf": [
-									{
-										"$ref": "#/components/schemas/Full_Schema_SPOD"
-									}
-								]
+								"$ref": "#/components/schemas/Full_Schema_SPOD"
 							}
 						}
 					},
@@ -1136,11 +1116,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"oneOf": [
-									{
-										"$ref": "#/components/schemas/Full_Schema_Tracking_Numbers"
-									}
-								]
+								"$ref": "#/components/schemas/Full_Schema_Tracking_Numbers"
 							}
 						}
 					},

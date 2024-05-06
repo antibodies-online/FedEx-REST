@@ -66,11 +66,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"oneOf": [
-									{
-										"$ref": "#/components/schemas/Full_Schema_Find_Location"
-									}
-								]
+								"$ref": "#/components/schemas/Full_Schema_Find_Location"
 							}
 						}
 					}

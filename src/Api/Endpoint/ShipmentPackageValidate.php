@@ -7,7 +7,7 @@ class ShipmentPackageValidate extends \AntibodiesOnline\FedEx\Api\Runtime\Client
     /**
      * Use this endpoint to verify the accuracy of a shipment request prior to actually submitting shipment request. This allow businesses that receive shipping orders from end-user/customers to verify the shipment information prior to submitting a create shipment request to FedEx and printing a label. If for any reason the information needs to be edited or changed, it can be done while the end-user is still available to confirm the changes.<br><br>Note:<ul><li>This is shipment level validation hence supports validation for single piece shipment only.</li><li>Shipment validation is supported for all Express and Ground - Domestic as well as international shipments with all applicable special services. </li><li>Shipment validation is supported for SmartPost and not for Freight LTL shipments.</li></ul><br><br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPackagesValidatePostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -15,7 +15,7 @@ class ShipmentPackageValidate extends \AntibodiesOnline\FedEx\Api\Runtime\Client
      *     @var string $authorization This indicates the authorization token for the input request.
      * }
      */
-    public function __construct($requestBody = null, array $headerParameters = [])
+    public function __construct(?\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPackagesValidatePostBody $requestBody = null, array $headerParameters = [])
     {
         $this->body = $requestBody;
         $this->headerParameters = $headerParameters;
@@ -31,8 +31,8 @@ class ShipmentPackageValidate extends \AntibodiesOnline\FedEx\Api\Runtime\Client
     }
     public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
     {
-        if (isset($this->body)) {
-            return [['Content-Type' => ['application/json']], json_encode($this->body)];
+        if ($this->body instanceof \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPackagesValidatePostBody) {
+            return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
         }
         return [[], null];
     }

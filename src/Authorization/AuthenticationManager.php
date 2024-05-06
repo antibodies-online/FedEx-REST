@@ -74,7 +74,7 @@ class AuthenticationManager
 
         try {
             $tokenRequestedAt = time();
-            $response = $this->client->aPIAuthorization($body);
+            $response = $this->client->aPIAuthorization($body, ['content-type' => 'application/x-www-form-urlencoded']);
         } catch (
         APIAuthorizationUnauthorizedException $e
         ) {

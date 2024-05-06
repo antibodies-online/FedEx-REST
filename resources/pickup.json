@@ -2292,49 +2292,13 @@
 				}
 			},
 			"body": {
-				"oneOf": [
-					{
-						"$ref": "#/components/schemas/Full_Schema_Create_Pickup"
-					},
-					{
-						"$ref": "#/components/schemas/Create_Pickup_Ground"
-					},
-					{
-						"$ref": "#/components/schemas/Create_Pickup_Express"
-					},
-					{
-						"$ref": "#/components/schemas/MinimumSamplePayload-ExpressFreightPickup"
-					}
-				]
+				"$ref": "#/components/schemas/Full_Schema_Create_Pickup"
 			},
 			"body_1": {
-				"oneOf": [
-					{
-						"$ref": "#/components/schemas/Full_Schema_Pickup_Availability"
-					},
-					{
-						"$ref": "#/components/schemas/Check_Pickup_Availability_Domestic_Express"
-					},
-					{
-						"$ref": "#/components/schemas/Check_Pickup_Availability_Domestic_Ground"
-					},
-					{
-						"$ref": "#/components/schemas/Check_Pickup_Availability_International_Express"
-					}
-				]
+				"$ref": "#/components/schemas/Full_Schema_Pickup_Availability"
 			},
 			"body_2": {
-				"oneOf": [
-					{
-						"$ref": "#/components/schemas/Full_Schema_Cancel_Pickup"
-					},
-					{
-						"$ref": "#/components/schemas/Cancel_Pickup_Ground"
-					},
-					{
-						"$ref": "#/components/schemas/Cancel_Pickup_Express"
-					}
-				]
+				"$ref": "#/components/schemas/Full_Schema_Cancel_Pickup"
 			},
 			"PickupLocationParty_address": {
 				"required": [

@@ -7,7 +7,7 @@ class CreatePickup extends \AntibodiesOnline\FedEx\Api\Runtime\Client\BaseEndpoi
     /**
      * Use this endpoint to create a pickup request for a package.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -15,7 +15,7 @@ class CreatePickup extends \AntibodiesOnline\FedEx\Api\Runtime\Client\BaseEndpoi
      *     @var string $authorization This indicates the authorization token for the input request.
      * }
      */
-    public function __construct($requestBody = null, array $headerParameters = [])
+    public function __construct(?\AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsPostBody $requestBody = null, array $headerParameters = [])
     {
         $this->body = $requestBody;
         $this->headerParameters = $headerParameters;
@@ -31,8 +31,8 @@ class CreatePickup extends \AntibodiesOnline\FedEx\Api\Runtime\Client\BaseEndpoi
     }
     public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
     {
-        if (isset($this->body)) {
-            return [['Content-Type' => ['application/json']], json_encode($this->body)];
+        if ($this->body instanceof \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsPostBody) {
+            return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
         }
         return [[], null];
     }

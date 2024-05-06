@@ -961,11 +961,7 @@
         "description": "Indicate the image reference metadata details."
       },
       "etds_upload_body": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/FullSchema-DocumentUploadInputVO"
-          }
-        ]
+          "$ref": "#/components/schemas/FullSchema-DocumentUploadInputVO"
       },
       "ImageMetaOutputVO_meta": {
         "type": "object",

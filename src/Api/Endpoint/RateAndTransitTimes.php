@@ -7,7 +7,7 @@ class RateAndTransitTimes extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Bas
     /**
      * This endpoint provides the ability to retrieve rate quotes and optionalll transit information. The rate is calculated based on the origin and destination of the shipment. Additional information such as carrier code, service type, or service option can be used to filter the results. If carrier code is provided, the response includes the rate quotes for the specific transportation carrier. This endpoint provides the rates for FedEx Ground and FedEx Express and does not offer rates for FedEx Freight.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -15,7 +15,7 @@ class RateAndTransitTimes extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Bas
      *     @var string $authorization This indicates the authorization token for the input request.
      * }
      */
-    public function __construct($requestBody = null, array $headerParameters = [])
+    public function __construct(?\AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostBody $requestBody = null, array $headerParameters = [])
     {
         $this->body = $requestBody;
         $this->headerParameters = $headerParameters;
@@ -31,8 +31,8 @@ class RateAndTransitTimes extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Bas
     }
     public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
     {
-        if (isset($this->body)) {
-            return [['Content-Type' => ['application/json']], json_encode($this->body)];
+        if ($this->body instanceof \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostBody) {
+            return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
         }
         return [[], null];
     }

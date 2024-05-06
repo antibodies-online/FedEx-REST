@@ -7,7 +7,7 @@ class ValidatePostal extends \AntibodiesOnline\FedEx\Api\Runtime\Client\BaseEndp
     /**
      * Use this endpoint to validate postal codes and service commitments. Supports city, postal, country and origin-destination related lookups and validations.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\CountryV1PostalValidatePostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -15,7 +15,7 @@ class ValidatePostal extends \AntibodiesOnline\FedEx\Api\Runtime\Client\BaseEndp
      *     @var string $authorization This indicates the authorization token for the input request.
      * }
      */
-    public function __construct($requestBody = null, array $headerParameters = [])
+    public function __construct(?\AntibodiesOnline\FedEx\Api\Model\CountryV1PostalValidatePostBody $requestBody = null, array $headerParameters = [])
     {
         $this->body = $requestBody;
         $this->headerParameters = $headerParameters;
@@ -31,8 +31,8 @@ class ValidatePostal extends \AntibodiesOnline\FedEx\Api\Runtime\Client\BaseEndp
     }
     public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
     {
-        if (isset($this->body)) {
-            return [['Content-Type' => ['application/json']], json_encode($this->body)];
+        if ($this->body instanceof \AntibodiesOnline\FedEx\Api\Model\CountryV1PostalValidatePostBody) {
+            return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
         }
         return [[], null];
     }

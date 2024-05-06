@@ -7,7 +7,7 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
     /**
      * Use this endpoint to get address resolution details. These details are the outcome of validation andddd resolution of the input address. An address is stated assss resolved when the input address matches the known reference data...<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.<i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -24,7 +24,7 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function validateAddress($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function validateAddress(?\AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\ValidateAddress($requestBody, $headerParameters), $fetch);
     }
@@ -49,7 +49,7 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
     /**
      * Use this endpoint to reprint the closed Ground shipments reports.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -66,14 +66,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function performEndOfDayClose($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function performEndOfDayClose(?\AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\PerformEndOfDayClose($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to close the Ground shipments and generate the reports.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPutBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -90,14 +90,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPutResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function groundPerformEndOfDayClose($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function groundPerformEndOfDayClose(?\AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPutBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\GroundPerformEndOfDayClose($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to retrieve regulatory document and advisories for your shipment.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -113,14 +113,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function shipmentRegulatoryDetails($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function shipmentRegulatoryDetails(?\AntibodiesOnline\FedEx\Api\Model\GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\ShipmentRegulatoryDetails($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to search for nearest FedEx locations by address, geographicccc coordinates, or phone numberrrr. You can also narrow your search by type of location and services offered. It returns up to 75 locations within a 50-mile radius for the address used in the search criteria. Results are based on current date and time. Supports all FedEx operating companies and countries, dependent upon being able to get a valid geolocation for a given set of criteria.<br><i>Note: You must specify landline numbers only, when searching for the nearest FedEx locations using phone number.</i><br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -137,14 +137,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function findLocation($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function findLocation(?\AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\FindLocation($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint provides the abilityy to retrieve rateee quotes and optional transit information... The rate is calculated based on the origin and destination of the shipment. Additional information such as carrier code, service type, or service option can be used to filter the results. Applicable operating company is FedEx Freight.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism...</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\RateV1FreightRatesQuotesPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -161,14 +161,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\RateV1FreightRatesQuotesPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function freightRateQuote($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function freightRateQuote(?\AntibodiesOnline\FedEx\Api\Model\RateV1FreightRatesQuotesPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\FreightRateQuote($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps you to create a Freight LTL Shipment request with the required Freight LTL Shipment information, and to retrieve information for an already in process shipment. It also allows you to confirm and validate your shipment.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -185,14 +185,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function freightShipment($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function freightShipment(?\AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\FreightShipment($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint allows you to check the availability of an Freight LTL pickup service. The pickup availability depends on two factors, the cut off time and the access time.<br/><br/>**Cut off time** - The latest time allowed for a pickup to be scheduled. The time is local to the pickup postal code.<br/><br/>**Access time** - The time between the pickup ready time (when the package is ready to be picked) and the time when the driver is ready to pick up the package.<br/><br/><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -209,14 +209,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function checkFreightPickupAvailability($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function checkFreightPickupAvailability(?\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\CheckFreightPickupAvailability($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps you to create a freight pickup request for a package to be picked up.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -233,14 +233,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function createFreightPickup($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function createFreightPickup(?\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\CreateFreightPickup($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to cancel the already scheduled freight pickup request. Note a failure notification will be sent if you attempt to cancel a pickup after the FedEx courier has been dispatched to the pickup location.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsCancelPutBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -257,14 +257,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsCancelPutResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function cancelFreightPickup($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function cancelFreightPickup(?\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsCancelPutBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\CancelFreightPickup($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps you to create an opennnn shipment request withh the required shipping information.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism....</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -281,14 +281,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function createOpenShipmentt($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function createOpenShipmentt(?\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\CreateOpenShipmentt($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to validate and upload the Open Ship shipment data to FedEx Systems once all packages are added in the Shipment request.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -305,14 +305,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function confirmOpenShipment($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function confirmOpenShipment(?\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\ConfirmOpenShipment($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps you to modify an Open shipment request with the required shipping information before the shipment is confirmed.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -329,14 +329,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function modifyOpenShipment($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function modifyOpenShipment(?\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\ModifyOpenShipment($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps you to add packages to Open Shipment request with the required shipping information before the shipment is confirmed.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -353,14 +353,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function addOpenShipmentPackages($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function addOpenShipmentPackages(?\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\AddOpenShipmentPackages($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps you to modify packages in Open Shipment request with the required shipping information before the shipment is confirmed.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesPutBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -377,14 +377,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesPutResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function modifyOpenShipmentPackages($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function modifyOpenShipmentPackages(?\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesPutBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\ModifyOpenShipmentPackages($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps you to delete packages from Open Shipment request with the required shipping information before the shipment is confirmed.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesDeletePutBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -401,14 +401,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesDeletePutResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function deleteOpenShipmentPackages($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function deleteOpenShipmentPackages(?\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesDeletePutBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\DeleteOpenShipmentPackages($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps the user to RETRIEVE specific package request details of the Open Shipment that is created.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesRetrievePostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -425,14 +425,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesRetrievePostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function retrieveOpenShipmentPackages($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function retrieveOpenShipmentPackages(?\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesRetrievePostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\RetrieveOpenShipmentPackages($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps you to delete a Openshipment request with the required shipping information before the shipment is confirmed.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsDeletePutBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -449,14 +449,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsDeletePutResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function deleteOpenShipment($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function deleteOpenShipment(?\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsDeletePutBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\DeleteOpenShipment($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps the user to RETRIEVE the entire shipment request details of the OpenShipment that is created.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsRetrievePostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -472,14 +472,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsRetrievePostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function retrieveOpenShipment($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function retrieveOpenShipment(?\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsRetrievePostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\RetrieveOpenShipment($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint enables you to finalize the Open Shipment. Once an Open Shipment is confirmed, no further changes can be done.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsResultsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -496,14 +496,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsResultsPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function getOpenShipmentResults($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function getOpenShipmentResults(?\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsResultsPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\GetOpenShipmentResults($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to create a pickup request for a package.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -520,14 +520,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function createPickup($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function createPickup(?\AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\CreatePickup($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to check the availability of a pickup service.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsAvailabilitiesPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -544,14 +544,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsAvailabilitiesPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function checkPickupAvailability($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function checkPickupAvailability(?\AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsAvailabilitiesPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\CheckPickupAvailability($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to cancel the already scheduled pickup request. <br>Note: A failure notification will be sent if you attempt to cancel a pickup after the FedEx courier has been dispatched to the pickup location.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsCancelPutBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -568,14 +568,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsCancelPutResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function cancelPickup($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function cancelPickup(?\AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsCancelPutBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\CancelPickup($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to validate postal codes and service commitments. Supports city, postal, country and origin-destination related lookups and validations.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\CountryV1PostalValidatePostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -592,14 +592,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\CountryV1PostalValidatePostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function validatePostal($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function validatePostal(?\AntibodiesOnline\FedEx\Api\Model\CountryV1PostalValidatePostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\ValidatePostal($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint provides the ability to retrieve rate quotes and optionalll transit information. The rate is calculated based on the origin and destination of the shipment. Additional information such as carrier code, service type, or service option can be used to filter the results. If carrier code is provided, the response includes the rate quotes for the specific transportation carrier. This endpoint provides the rates for FedEx Ground and FedEx Express and does not offer rates for FedEx Freight.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -616,14 +616,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function rateAndTransitTimes($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function rateAndTransitTimes(?\AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\RateAndTransitTimes($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint gives the estimated transit times for a particular shipment.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply. It also helps you to track the transaction with APIF.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -639,14 +639,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function retrieveServicesAndTransitTimes($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function retrieveServicesAndTransitTimes(?\AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\RetrieveServicesAndTransitTimes($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to return a list of all FedEx Express or FedEx Ground services and packaging type combinations that are available between the input origin and destination and subpackaging information.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\AvailabilityV1PackageandserviceoptionsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -663,14 +663,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\AvailabilityV1PackageandserviceoptionsPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function getPackageAndServiceOptions($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function getPackageAndServiceOptions(?\AntibodiesOnline\FedEx\Api\Model\AvailabilityV1PackageandserviceoptionsPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\GetPackageAndServiceOptions($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to request list of all available FedEx services, shipment special, service options along with delivery signature options and return shipment types that are available between an origin and destination. You can filter the results using FedEx carrier code(s) and/or service type(s) for specific services.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\AvailabilityV1SpecialserviceoptionsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -687,14 +687,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\AvailabilityV1SpecialserviceoptionsPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function getSpecialServiceOptions($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function getSpecialServiceOptions(?\AntibodiesOnline\FedEx\Api\Model\AvailabilityV1SpecialserviceoptionsPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\GetSpecialServiceOptions($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps you to create shipment requests therebyy validating all the shippingg input information and either generates the labels (if the responses is synchronous) or a job ID if transaction is processed using asynchronous method.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -711,14 +711,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function createShipment($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function createShipment(?\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\CreateShipment($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to cancel FedEx Express and Ground shipments that have not already been tendered to FedEx. This request will cancel all packages within the shipment.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -735,14 +735,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function cancelShipment($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function cancelShipment(?\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\CancelShipment($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps you to process confirmed shipments asynchronously (above 40 packages) and produce results based on job id.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsResultsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This transaction Id helps the customers to track the transaction with APIF.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -759,14 +759,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsResultsPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function getConfirmedShipmentAsyncResults($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function getConfirmedShipmentAsyncResults(?\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsResultsPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\GetConfirmedShipmentAsyncResults($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to verify the accuracy of a shipment request prior to actually submitting shipment request. This allow businesses that receive shipping orders from end-user/customers to verify the shipment information prior to submitting a create shipment request to FedEx and printing a label. If for any reason the information needs to be edited or changed, it can be done while the end-user is still available to confirm the changes.<br><br>Note:<ul><li>This is shipment level validation hence supports validation for single piece shipment only.</li><li>Shipment validation is supported for all Express and Ground - Domestic as well as international shipments with all applicable special services. </li><li>Shipment validation is supported for SmartPost and not for Freight LTL shipments.</li></ul><br><br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPackagesValidatePostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -782,14 +782,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPackagesValidatePostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function shipmentPackageValidate($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function shipmentPackageValidate(?\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPackagesValidatePostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\ShipmentPackageValidate($requestBody, $headerParameters), $fetch);
     }
     /**
      * FedEx creates and delivers a return shipping label to your customer and collects the item for return. Your customer needs to have the package ready for pickup when the FedEx driver arrives. Use this endpoint to create tag requests for FedEx Express and FedEx Ground shipments.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -806,7 +806,7 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function createTag($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function createTag(?\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\CreateTag($requestBody, $headerParameters), $fetch);
     }
@@ -814,7 +814,7 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      * This endpoint cancels a FedEx Return Tag and the associated pickup for FedEx Express and FedEx Ground shipments if the shipment has not yet been picked up by the courier.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
      * @param string $shipmentid 
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagCancelShipmentidPutBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -831,14 +831,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagCancelShipmentidPutResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function cancelTag(string $shipmentid, $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function cancelTag(string $shipmentid, ?\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagCancelShipmentidPutBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\CancelTag($shipmentid, $requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint returns tracking information for multiplee piece shipments, Group MPS, or an outbounddd shipment which is linked to a return shipment.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\TrackV1AssociatedshipmentsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -855,14 +855,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\TrackV1AssociatedshipmentsPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function trackMultiplePieceShipment($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function trackMultiplePieceShipment(?\AntibodiesOnline\FedEx\Api\Model\TrackV1AssociatedshipmentsPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\TrackMultiplePieceShipment($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps you setup up, customize the tracking event notifications to be received for a shipment.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -879,14 +879,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function trackSendNotification($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function trackSendNotification(?\AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\TrackSendNotification($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint returns tracking information based on alternate references other than Tracking Number such as Customer reference numbers, etc.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\TrackV1ReferencenumbersPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -903,14 +903,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\TrackV1ReferencenumbersPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function trackByReferences($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function trackByReferences(?\AntibodiesOnline\FedEx\Api\Model\TrackV1ReferencenumbersPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\TrackByReferences($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to return tracking information based on a Tracking Control Number.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -927,14 +927,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function f1f9080e8452d9ac903f562a2d2626d0($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function f1f9080e8452d9ac903f562a2d2626d0(?\AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\F1f9080e8452d9ac903f562a2d2626d0($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps you to request a letter that includes the recipient's signature as a proof of delivery.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingdocumentsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -951,14 +951,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingdocumentsPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function trackingDocuments($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function trackingDocuments(?\AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingdocumentsPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\TrackingDocuments($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint provides customers package tracking information based on a tracking number for various shipping services.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingnumbersPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -975,14 +975,14 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingnumbersPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function trackByTrackingNumber($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function trackByTrackingNumber(?\AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingnumbersPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\TrackByTrackingNumber($requestBody, $headerParameters), $fetch);
     }
     /**
      * Use this endpoint to upload the trade documents electronically before (pre-shipment) and after (post-shipment) the shipment is created.<br><i>Note&#58; FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $Content-Type Indicates the type of content <br> Example: "multipart/form-data"
      *     @var string $Authorization Indicates the JWE token to be used for authorizing the client request. <br> Example: "Bearer ****"
@@ -998,7 +998,7 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse201|\Psr\Http\Message\ResponseInterface
      */
-    public function uploadETDFiles($requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function uploadETDFiles(?\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\UploadETDFiles($requestBody, $headerParameters), $fetch);
     }

@@ -7,7 +7,7 @@ class CheckFreightPickupAvailability extends \AntibodiesOnline\FedEx\Api\Runtime
     /**
      * This endpoint allows you to check the availability of an Freight LTL pickup service. The pickup availability depends on two factors, the cut off time and the access time.<br/><br/>**Cut off time** - The latest time allowed for a pickup to be scheduled. The time is local to the pickup postal code.<br/><br/>**Access time** - The time between the pickup ready time (when the package is ready to be picked) and the time when the driver is ready to pick up the package.<br/><br/><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -15,7 +15,7 @@ class CheckFreightPickupAvailability extends \AntibodiesOnline\FedEx\Api\Runtime
      *     @var string $authorization This indicates the authorization token for the input request.
      * }
      */
-    public function __construct($requestBody = null, array $headerParameters = [])
+    public function __construct(?\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBody $requestBody = null, array $headerParameters = [])
     {
         $this->body = $requestBody;
         $this->headerParameters = $headerParameters;
@@ -31,8 +31,8 @@ class CheckFreightPickupAvailability extends \AntibodiesOnline\FedEx\Api\Runtime
     }
     public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
     {
-        if (isset($this->body)) {
-            return [['Content-Type' => ['application/json']], json_encode($this->body)];
+        if ($this->body instanceof \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBody) {
+            return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
         }
         return [[], null];
     }

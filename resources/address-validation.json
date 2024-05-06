@@ -1199,26 +1199,7 @@
 				}
 			},
 			"body": {
-				"oneOf": [
-					{
-						"$ref": "#/components/schemas/Full_Schema_Validate_Address"
-					},
-					{
-						"$ref": "#/components/schemas/Address_Validation_Canada"
-					},
-					{
-						"$ref": "#/components/schemas/Address_Validation_US"
-					},
-					{
-						"$ref": "#/components/schemas/Address_Validation_for_Germany"
-					},
-					{
-						"$ref": "#/components/schemas/Address_Validation_for_Italy"
-					},
-					{
-						"$ref": "#/components/schemas/Address_Validation_for_UK"
-					}
-				]
+				"$ref": "#/components/schemas/Full_Schema_Validate_Address"
 			}
 		}
 	}

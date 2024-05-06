@@ -24,11 +24,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"oneOf": [
-									{
-										"$ref": "#/components/schemas/FullSchema"
-									}
-								]
+								"$ref": "#/components/schemas/FullSchema"
 							}
 						}
 					},
@@ -235,11 +231,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"oneOf": [
-									{
-										"$ref": "#/components/schemas/FullSchema-FreightShipment"
-									}
-								]
+								"$ref": "#/components/schemas/FullSchema-FreightShipment"
 							}
 						}
 					}
@@ -436,11 +428,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"oneOf": [
-									{
-										"$ref": "#/components/schemas/FullSchema-FreightPickupAvailability"
-									}
-								]
+								"$ref": "#/components/schemas/FullSchema-FreightPickupAvailability"
 							}
 						}
 					}
@@ -646,11 +634,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"oneOf": [
-									{
-										"$ref": "#/components/schemas/FullSchema-CreatePickup"
-									}
-								]
+								"$ref": "#/components/schemas/FullSchema-CreatePickup"
 							}
 						}
 					}
@@ -847,11 +831,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"oneOf": [
-									{
-										"$ref": "#/components/schemas/FullSchema-CancelFreightPickup"
-									}
-								]
+								"$ref": "#/components/schemas/FullSchema-CancelFreightPickup"
 							}
 						}
 					}

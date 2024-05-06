@@ -3839,30 +3839,10 @@
 				}
 			},
 			"body": {
-				"oneOf": [
-					{
-						"$ref": "#/components/schemas/Full_Schema_TransitTime"
-					},
-					{
-						"$ref": "#/components/schemas/TransitTimes_Domestic"
-					},
-					{
-						"$ref": "#/components/schemas/TransitTimes_International"
-					}
-				]
+				"$ref": "#/components/schemas/Full_Schema_TransitTime"
 			},
 			"body_1": {
-				"oneOf": [
-					{
-						"$ref": "#/components/schemas/Full_Schema_Package_And_Service_Options"
-					},
-					{
-						"$ref": "#/components/schemas/Package_and_Service_Options_Domestic"
-					},
-					{
-						"$ref": "#/components/schemas/Package_and_Service_Options_International"
-					}
-				]
+				"$ref": "#/components/schemas/Full_Schema_Package_And_Service_Options"
 			},
 			"CommitDetail_transitDays": {
 				"type": "object",
@@ -5285,23 +5265,7 @@
 				}
 			},
 			"body_specialserviceoptions": {
-				"oneOf": [
-					{
-						"$ref": "#/components/schemas/Full_Schema_Special_Service_Options"
-					},
-					{
-						"$ref": "#/components/schemas/Special_Service_Options_Domestic_Ground"
-					},
-					{
-						"$ref": "#/components/schemas/Special_Service_Options_Domestic_Express"
-					},
-					{
-						"$ref": "#/components/schemas/Special_Service_Options_International_Express"
-					},
-					{
-						"$ref": "#/components/schemas/Special_Service_Options_International_Express_Freight"
-					}
-				]
+				"$ref": "#/components/schemas/Full_Schema_Special_Service_Options"
 			}
 		}
 	}

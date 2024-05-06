@@ -937,24 +937,10 @@
 				}
 			},
 			"v1_endofday_body": {
-				"oneOf": [
-					{
-						"$ref": "#/components/schemas/FullSchema_GEOD_PUT"
-					},
-					{
-						"$ref": "#/components/schemas/MinimumSamplePayload-Put-GroundClose"
-					}
-				]
+				"$ref": "#/components/schemas/FullSchema_GEOD_PUT"
 			},
 			"v1_endofday_body_1": {
-				"oneOf": [
-					{
-						"$ref": "#/components/schemas/FullSchema_Reprint_POST"
-					},
-					{
-						"$ref": "#/components/schemas/MinimumSamplePayload-Post-Reprintground"
-					}
-				]
+				"$ref": "#/components/schemas/FullSchema_Reprint_POST"
 			},
 			"Op950Detail_format_topOfPageOffset": {
 				"type": "object",

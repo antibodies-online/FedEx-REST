@@ -24,11 +24,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"oneOf": [
-									{
-										"$ref": "#/components/schemas/FullSchema-ValidatePostal"
-									}
-								]
+								"$ref": "#/components/schemas/FullSchema-ValidatePostal"
 							}
 						}
 					}

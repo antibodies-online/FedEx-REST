@@ -7,7 +7,7 @@ class GetConfirmedShipmentAsyncResults extends \AntibodiesOnline\FedEx\Api\Runti
     /**
      * This endpoint helps you to process confirmed shipments asynchronously (above 40 packages) and produce results based on job id.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsResultsPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $x-customer-transaction-id This transaction Id helps the customers to track the transaction with APIF.
      *     @var string $content-type This is used to indicate the media type of the resource. The media type is a string sent along with the file indicating format of the file.
@@ -15,7 +15,7 @@ class GetConfirmedShipmentAsyncResults extends \AntibodiesOnline\FedEx\Api\Runti
      *     @var string $authorization This indicates the authorization token for the input request.
      * }
      */
-    public function __construct($requestBody = null, array $headerParameters = [])
+    public function __construct(?\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsResultsPostBody $requestBody = null, array $headerParameters = [])
     {
         $this->body = $requestBody;
         $this->headerParameters = $headerParameters;
@@ -31,8 +31,8 @@ class GetConfirmedShipmentAsyncResults extends \AntibodiesOnline\FedEx\Api\Runti
     }
     public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
     {
-        if (isset($this->body)) {
-            return [['Content-Type' => ['application/json']], json_encode($this->body)];
+        if ($this->body instanceof \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsResultsPostBody) {
+            return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
         }
         return [[], null];
     }

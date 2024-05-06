@@ -27,11 +27,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "oneOf": [
-                  {
-                    "$ref": "#/components/schemas/Full_Schema_Ship"
-                  }
-                ]
+                  "$ref": "#/components/schemas/Full_Schema_Ship"
               }
             }
           }
@@ -248,11 +244,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "oneOf": [
-                  {
-                    "$ref": "#/components/schemas/Full_Schema_Cancel_Shipment"
-                  }
-                ]
+                  "$ref": "#/components/schemas/Full_Schema_Cancel_Shipment"
               }
             }
           }
@@ -513,11 +505,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "oneOf": [
-                  {
-                    "$ref": "#/components/schemas/FullSchema-getConfirmedShipmentAsyncResults"
-                  }
-                ]
+                  "$ref": "#/components/schemas/FullSchema-getConfirmedShipmentAsyncResults"
               }
             }
           }
@@ -692,11 +680,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "oneOf": [
-                  {
-                    "$ref": "#/components/schemas/FullSchema-VerifyShipment"
-                  }
-                ]
+                  "$ref": "#/components/schemas/FullSchema-VerifyShipment"
               }
             }
           }
@@ -874,11 +858,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "oneOf": [
-                  {
-                    "$ref": "#/components/schemas/Full_Schema_Create_Tag"
-                  }
-                ]
+                  "$ref": "#/components/schemas/Full_Schema_Create_Tag"
               }
             }
           }
@@ -1147,11 +1127,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "oneOf": [
-                  {
-                    "$ref": "#/components/schemas/FullSchema-CancelTag"
-                  }
-                ]
+                  "$ref": "#/components/schemas/FullSchema-CancelTag"
               }
             }
           }

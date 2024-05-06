@@ -24,7 +24,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/body"
+                "$ref": "#/components/schemas/Full_Schema_Quote_Rate"
               }
             }
           },
@@ -6649,70 +6649,6 @@
             ]
           }
         }
-      },
-      "body": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/Full_Schema_Quote_Rate"
-          },
-          {
-            "$ref": "#/components/schemas/US_Domestic_Rate_shop"
-          },
-          {
-            "$ref": "#/components/schemas/Alternate_Currency_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/Express_Freight_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/International_Hold_At_Location_with_Adult_Signature_Option"
-          },
-          {
-            "$ref": "#/components/schemas/International_Multi_Piece_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/International_Return_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/Intra_Canada_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/Intra_Europe_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/Intra_India_Cash_On_Delivery_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/Intra_Mexico_Express_Saver_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/Priority_Alert_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/Express_Freight_Saturday_Pickup_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/SmartPost_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/International_Dry_Ice_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/US_Domestic_Multi_Piece_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/US_Domestic_Priority_Overnight_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/Ground_Home_Delivery_Appointment_Delivery_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/International_Ground_Rate_Quote"
-          },
-          {
-            "$ref": "#/components/schemas/International_Priority_Rate_Quote"
-          }
-        ]
       },
       "EMailNotificationDetail_PrintedReference": {
         "type": "object",

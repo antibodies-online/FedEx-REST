@@ -1,0 +1,43 @@
+<?php
+
+namespace AntibodiesOnline\FedEx\Api\Model;
+
+class ShipV1ShipmentsPostBodyRequestedShipmentShippingDocumentSpecificationGeneralAgencyAgreementDetail extends \ArrayObject
+{
+    /**
+     * @var array
+     */
+    protected $initialized = [];
+    public function isInitialized($property) : bool
+    {
+        return array_key_exists($property, $this->initialized);
+    }
+    /**
+     * Specify the shipping document format.
+     *
+     * @var ShipV1ShipmentsPostBodyRequestedShipmentShippingDocumentSpecificationGeneralAgencyAgreementDetailDocumentFormat
+     */
+    protected $documentFormat;
+    /**
+     * Specify the shipping document format.
+     *
+     * @return ShipV1ShipmentsPostBodyRequestedShipmentShippingDocumentSpecificationGeneralAgencyAgreementDetailDocumentFormat
+     */
+    public function getDocumentFormat() : ShipV1ShipmentsPostBodyRequestedShipmentShippingDocumentSpecificationGeneralAgencyAgreementDetailDocumentFormat
+    {
+        return $this->documentFormat;
+    }
+    /**
+     * Specify the shipping document format.
+     *
+     * @param ShipV1ShipmentsPostBodyRequestedShipmentShippingDocumentSpecificationGeneralAgencyAgreementDetailDocumentFormat $documentFormat
+     *
+     * @return self
+     */
+    public function setDocumentFormat(ShipV1ShipmentsPostBodyRequestedShipmentShippingDocumentSpecificationGeneralAgencyAgreementDetailDocumentFormat $documentFormat) : self
+    {
+        $this->initialized['documentFormat'] = true;
+        $this->documentFormat = $documentFormat;
+        return $this;
+    }
+}

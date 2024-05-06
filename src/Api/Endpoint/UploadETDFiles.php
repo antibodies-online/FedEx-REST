@@ -7,14 +7,14 @@ class UploadETDFiles extends \AntibodiesOnline\FedEx\Api\Runtime\Client\BaseEndp
     /**
      * Use this endpoint to upload the trade documents electronically before (pre-shipment) and after (post-shipment) the shipment is created.<br><i>Note&#58; FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
-     * @param null|mixed $requestBody 
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostBody $requestBody 
      * @param array $headerParameters {
      *     @var string $Content-Type Indicates the type of content <br> Example: "multipart/form-data"
      *     @var string $Authorization Indicates the JWE token to be used for authorizing the client request. <br> Example: "Bearer ****"
      *     @var string $x-customer-transaction-id This is the customer transaction identifier.<br>Example: 771407-1
      * }
      */
-    public function __construct($requestBody = null, array $headerParameters = [])
+    public function __construct(?\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostBody $requestBody = null, array $headerParameters = [])
     {
         $this->body = $requestBody;
         $this->headerParameters = $headerParameters;
@@ -30,7 +30,7 @@ class UploadETDFiles extends \AntibodiesOnline\FedEx\Api\Runtime\Client\BaseEndp
     }
     public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
     {
-        if (isset($this->body)) {
+        if ($this->body instanceof \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostBody) {
             $bodyBuilder = new \Http\Message\MultipartStream\MultipartStreamBuilder($streamFactory);
             $formParameters = $serializer->normalize($this->body, 'json');
             foreach ($formParameters as $key => $value) {
