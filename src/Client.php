@@ -39,4 +39,9 @@ class Client extends BaseClient
     {
         $this->authManager->requestAccessToken();
     }
+
+    public function getAuthManager(): AuthenticationManager
+    {
+        return $this->authManager;
+    }
 }
