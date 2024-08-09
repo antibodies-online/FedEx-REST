@@ -18,11 +18,11 @@ class GetPackageAndServiceOptionsServiceUnavailableException extends ServiceUnav
         $this->availabilityV1PackageandserviceoptionsPostResponse503 = $availabilityV1PackageandserviceoptionsPostResponse503;
         $this->response = $response;
     }
-    public function getAvailabilityV1PackageandserviceoptionsPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1PackageandserviceoptionsPostResponse503
+    public function getAvailabilityV1PackageandserviceoptionsPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1PackageandserviceoptionsPostResponse503
     {
         return $this->availabilityV1PackageandserviceoptionsPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

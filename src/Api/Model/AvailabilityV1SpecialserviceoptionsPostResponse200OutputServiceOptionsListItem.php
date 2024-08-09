@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -88,7 +88,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -99,7 +99,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return bool
      */
-    public function getIssEnabled() : bool
+    public function getIssEnabled(): bool
     {
         return $this->issEnabled;
     }
@@ -110,7 +110,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setIssEnabled(bool $issEnabled) : self
+    public function setIssEnabled(bool $issEnabled): self
     {
         $this->initialized['issEnabled'] = true;
         $this->issEnabled = $issEnabled;
@@ -121,7 +121,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return list<AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsListItemSignatureOptionsListItem>
      */
-    public function getSignatureOptionsList() : array
+    public function getSignatureOptionsList(): array
     {
         return $this->signatureOptionsList;
     }
@@ -132,7 +132,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setSignatureOptionsList(array $signatureOptionsList) : self
+    public function setSignatureOptionsList(array $signatureOptionsList): self
     {
         $this->initialized['signatureOptionsList'] = true;
         $this->signatureOptionsList = $signatureOptionsList;
@@ -143,7 +143,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return list<AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsListItemPackageSpecialServicesListItem>
      */
-    public function getPackageSpecialServicesList() : array
+    public function getPackageSpecialServicesList(): array
     {
         return $this->packageSpecialServicesList;
     }
@@ -154,7 +154,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setPackageSpecialServicesList(array $packageSpecialServicesList) : self
+    public function setPackageSpecialServicesList(array $packageSpecialServicesList): self
     {
         $this->initialized['packageSpecialServicesList'] = true;
         $this->packageSpecialServicesList = $packageSpecialServicesList;
@@ -165,7 +165,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return list<string>
      */
-    public function getReturnShipmentList() : array
+    public function getReturnShipmentList(): array
     {
         return $this->returnShipmentList;
     }
@@ -176,7 +176,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setReturnShipmentList(array $returnShipmentList) : self
+    public function setReturnShipmentList(array $returnShipmentList): self
     {
         $this->initialized['returnShipmentList'] = true;
         $this->returnShipmentList = $returnShipmentList;
@@ -187,7 +187,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return string
      */
-    public function getCarrierCode() : string
+    public function getCarrierCode(): string
     {
         return $this->carrierCode;
     }
@@ -198,7 +198,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setCarrierCode(string $carrierCode) : self
+    public function setCarrierCode(string $carrierCode): self
     {
         $this->initialized['carrierCode'] = true;
         $this->carrierCode = $carrierCode;
@@ -209,7 +209,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return list<AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsListItemBatteryOptionListItem>
      */
-    public function getBatteryOptionList() : array
+    public function getBatteryOptionList(): array
     {
         return $this->batteryOptionList;
     }
@@ -220,7 +220,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setBatteryOptionList(array $batteryOptionList) : self
+    public function setBatteryOptionList(array $batteryOptionList): self
     {
         $this->initialized['batteryOptionList'] = true;
         $this->batteryOptionList = $batteryOptionList;
@@ -231,7 +231,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return list<AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsListItemAlertListItem>
      */
-    public function getAlertList() : array
+    public function getAlertList(): array
     {
         return $this->alertList;
     }
@@ -242,7 +242,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setAlertList(array $alertList) : self
+    public function setAlertList(array $alertList): self
     {
         $this->initialized['alertList'] = true;
         $this->alertList = $alertList;
@@ -253,7 +253,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return list<AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsListItemShipmentSpecialServicesListItem>
      */
-    public function getShipmentSpecialServicesList() : array
+    public function getShipmentSpecialServicesList(): array
     {
         return $this->shipmentSpecialServicesList;
     }
@@ -264,7 +264,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setShipmentSpecialServicesList(array $shipmentSpecialServicesList) : self
+    public function setShipmentSpecialServicesList(array $shipmentSpecialServicesList): self
     {
         $this->initialized['shipmentSpecialServicesList'] = true;
         $this->shipmentSpecialServicesList = $shipmentSpecialServicesList;
@@ -275,7 +275,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return list<AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsListItemAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -286,7 +286,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

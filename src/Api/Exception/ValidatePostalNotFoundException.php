@@ -18,11 +18,11 @@ class ValidatePostalNotFoundException extends NotFoundException
         $this->countryV1PostalValidatePostResponse404 = $countryV1PostalValidatePostResponse404;
         $this->response = $response;
     }
-    public function getCountryV1PostalValidatePostResponse404() : \AntibodiesOnline\FedEx\Api\Model\CountryV1PostalValidatePostResponse404
+    public function getCountryV1PostalValidatePostResponse404(): \AntibodiesOnline\FedEx\Api\Model\CountryV1PostalValidatePostResponse404
     {
         return $this->countryV1PostalValidatePostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -18,11 +18,11 @@ class GetSpecialServiceOptionsNotFoundException extends NotFoundException
         $this->availabilityV1SpecialserviceoptionsPostResponse404 = $availabilityV1SpecialserviceoptionsPostResponse404;
         $this->response = $response;
     }
-    public function getAvailabilityV1SpecialserviceoptionsPostResponse404() : \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1SpecialserviceoptionsPostResponse404
+    public function getAvailabilityV1SpecialserviceoptionsPostResponse404(): \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1SpecialserviceoptionsPostResponse404
     {
         return $this->availabilityV1SpecialserviceoptionsPostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

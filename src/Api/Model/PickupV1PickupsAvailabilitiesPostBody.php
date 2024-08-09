@@ -8,7 +8,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -95,7 +95,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return PickupV1PickupsAvailabilitiesPostBodyPickupAddress
      */
-    public function getPickupAddress() : PickupV1PickupsAvailabilitiesPostBodyPickupAddress
+    public function getPickupAddress(): PickupV1PickupsAvailabilitiesPostBodyPickupAddress
     {
         return $this->pickupAddress;
     }
@@ -106,7 +106,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPickupAddress(PickupV1PickupsAvailabilitiesPostBodyPickupAddress $pickupAddress) : self
+    public function setPickupAddress(PickupV1PickupsAvailabilitiesPostBodyPickupAddress $pickupAddress): self
     {
         $this->initialized['pickupAddress'] = true;
         $this->pickupAddress = $pickupAddress;
@@ -117,7 +117,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDispatchDate() : string
+    public function getDispatchDate(): string
     {
         return $this->dispatchDate;
     }
@@ -128,7 +128,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDispatchDate(string $dispatchDate) : self
+    public function setDispatchDate(string $dispatchDate): self
     {
         $this->initialized['dispatchDate'] = true;
         $this->dispatchDate = $dispatchDate;
@@ -139,7 +139,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getPackageReadyTime() : string
+    public function getPackageReadyTime(): string
     {
         return $this->packageReadyTime;
     }
@@ -150,7 +150,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPackageReadyTime(string $packageReadyTime) : self
+    public function setPackageReadyTime(string $packageReadyTime): self
     {
         $this->initialized['packageReadyTime'] = true;
         $this->packageReadyTime = $packageReadyTime;
@@ -161,7 +161,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCustomerCloseTime() : string
+    public function getCustomerCloseTime(): string
     {
         return $this->customerCloseTime;
     }
@@ -172,7 +172,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCustomerCloseTime(string $customerCloseTime) : self
+    public function setCustomerCloseTime(string $customerCloseTime): self
     {
         $this->initialized['customerCloseTime'] = true;
         $this->customerCloseTime = $customerCloseTime;
@@ -183,7 +183,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getPickupType() : string
+    public function getPickupType(): string
     {
         return $this->pickupType;
     }
@@ -194,7 +194,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPickupType(string $pickupType) : self
+    public function setPickupType(string $pickupType): self
     {
         $this->initialized['pickupType'] = true;
         $this->pickupType = $pickupType;
@@ -205,7 +205,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getPickupRequestType() : array
+    public function getPickupRequestType(): array
     {
         return $this->pickupRequestType;
     }
@@ -216,7 +216,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPickupRequestType(array $pickupRequestType) : self
+    public function setPickupRequestType(array $pickupRequestType): self
     {
         $this->initialized['pickupRequestType'] = true;
         $this->pickupRequestType = $pickupRequestType;
@@ -227,7 +227,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return array<string, mixed>
      */
-    public function getShipmentAttributes() : iterable
+    public function getShipmentAttributes(): iterable
     {
         return $this->shipmentAttributes;
     }
@@ -238,7 +238,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setShipmentAttributes(iterable $shipmentAttributes) : self
+    public function setShipmentAttributes(iterable $shipmentAttributes): self
     {
         $this->initialized['shipmentAttributes'] = true;
         $this->shipmentAttributes = $shipmentAttributes;
@@ -249,7 +249,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return int
      */
-    public function getNumberOfBusinessDays() : int
+    public function getNumberOfBusinessDays(): int
     {
         return $this->numberOfBusinessDays;
     }
@@ -260,7 +260,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setNumberOfBusinessDays(int $numberOfBusinessDays) : self
+    public function setNumberOfBusinessDays(int $numberOfBusinessDays): self
     {
         $this->initialized['numberOfBusinessDays'] = true;
         $this->numberOfBusinessDays = $numberOfBusinessDays;
@@ -271,7 +271,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return list<PickupV1PickupsAvailabilitiesPostBodyPackageDetailsItem>
      */
-    public function getPackageDetails() : array
+    public function getPackageDetails(): array
     {
         return $this->packageDetails;
     }
@@ -282,7 +282,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPackageDetails(array $packageDetails) : self
+    public function setPackageDetails(array $packageDetails): self
     {
         $this->initialized['packageDetails'] = true;
         $this->packageDetails = $packageDetails;
@@ -293,7 +293,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getAssociatedAccountNumber() : string
+    public function getAssociatedAccountNumber(): string
     {
         return $this->associatedAccountNumber;
     }
@@ -304,7 +304,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAssociatedAccountNumber(string $associatedAccountNumber) : self
+    public function setAssociatedAccountNumber(string $associatedAccountNumber): self
     {
         $this->initialized['associatedAccountNumber'] = true;
         $this->associatedAccountNumber = $associatedAccountNumber;
@@ -315,7 +315,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getAssociatedAccountNumberType() : string
+    public function getAssociatedAccountNumberType(): string
     {
         return $this->associatedAccountNumberType;
     }
@@ -326,7 +326,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAssociatedAccountNumberType(string $associatedAccountNumberType) : self
+    public function setAssociatedAccountNumberType(string $associatedAccountNumberType): self
     {
         $this->initialized['associatedAccountNumberType'] = true;
         $this->associatedAccountNumberType = $associatedAccountNumberType;
@@ -337,7 +337,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getCarriers() : array
+    public function getCarriers(): array
     {
         return $this->carriers;
     }
@@ -348,7 +348,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCarriers(array $carriers) : self
+    public function setCarriers(array $carriers): self
     {
         $this->initialized['carriers'] = true;
         $this->carriers = $carriers;
@@ -359,7 +359,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCountryRelationship() : string
+    public function getCountryRelationship(): string
     {
         return $this->countryRelationship;
     }
@@ -370,7 +370,7 @@ class PickupV1PickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCountryRelationship(string $countryRelationship) : self
+    public function setCountryRelationship(string $countryRelationship): self
     {
         $this->initialized['countryRelationship'] = true;
         $this->countryRelationship = $countryRelationship;

@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -46,7 +46,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return self
      */
-    public function setAddress($address) : self
+    public function setAddress($address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -57,7 +57,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBrokeraccountNumber
      */
-    public function getAccountNumber() : RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBrokeraccountNumber
+    public function getAccountNumber(): RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBrokeraccountNumber
     {
         return $this->accountNumber;
     }
@@ -68,7 +68,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return self
      */
-    public function setAccountNumber(RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBrokeraccountNumber $accountNumber) : self
+    public function setAccountNumber(RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBrokeraccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -90,7 +90,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return self
      */
-    public function setContact($contact) : self
+    public function setContact($contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;

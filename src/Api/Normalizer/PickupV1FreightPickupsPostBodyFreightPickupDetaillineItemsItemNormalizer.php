@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -50,7 +50,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('trackingNumber', $data)) {
-                $object->setTrackingNumber($this->denormalizer->denormalize($data['trackingNumber'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumber', 'json', $context));
+                $object->setTrackingNumber($this->denormalizer->denormalize($data['trackingNumber'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumber::class, 'json', $context));
                 unset($data['trackingNumber']);
             }
             if (\array_key_exists('service', $data)) {
@@ -82,19 +82,19 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['pieces']);
             }
             if (\array_key_exists('weight', $data)) {
-                $object->setWeight($this->denormalizer->denormalize($data['weight'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemWeight', 'json', $context));
+                $object->setWeight($this->denormalizer->denormalize($data['weight'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemWeight::class, 'json', $context));
                 unset($data['weight']);
             }
             if (\array_key_exists('dimensions', $data)) {
-                $object->setDimensions($this->denormalizer->denormalize($data['dimensions'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDimensions', 'json', $context));
+                $object->setDimensions($this->denormalizer->denormalize($data['dimensions'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDimensions::class, 'json', $context));
                 unset($data['dimensions']);
             }
             if (\array_key_exists('destination', $data)) {
-                $object->setDestination($this->denormalizer->denormalize($data['destination'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDestination', 'json', $context));
+                $object->setDestination($this->denormalizer->denormalize($data['destination'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDestination::class, 'json', $context));
                 unset($data['destination']);
             }
             if (\array_key_exists('shipmentSpecialServicesRequested', $data)) {
-                $object->setShipmentSpecialServicesRequested($this->denormalizer->denormalize($data['shipmentSpecialServicesRequested'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemShipmentSpecialServicesRequested', 'json', $context));
+                $object->setShipmentSpecialServicesRequested($this->denormalizer->denormalize($data['shipmentSpecialServicesRequested'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemShipmentSpecialServicesRequested::class, 'json', $context));
                 unset($data['shipmentSpecialServicesRequested']);
             }
             foreach ($data as $key => $value) {
@@ -104,7 +104,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('trackingNumber') && null !== $object->getTrackingNumber()) {
@@ -150,9 +150,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem::class => false];
         }
     }
 } else {
@@ -162,13 +162,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem::class;
         }
         /**
          * @return mixed
@@ -195,7 +195,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('trackingNumber', $data)) {
-                $object->setTrackingNumber($this->denormalizer->denormalize($data['trackingNumber'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumber', 'json', $context));
+                $object->setTrackingNumber($this->denormalizer->denormalize($data['trackingNumber'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumber::class, 'json', $context));
                 unset($data['trackingNumber']);
             }
             if (\array_key_exists('service', $data)) {
@@ -227,19 +227,19 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['pieces']);
             }
             if (\array_key_exists('weight', $data)) {
-                $object->setWeight($this->denormalizer->denormalize($data['weight'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemWeight', 'json', $context));
+                $object->setWeight($this->denormalizer->denormalize($data['weight'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemWeight::class, 'json', $context));
                 unset($data['weight']);
             }
             if (\array_key_exists('dimensions', $data)) {
-                $object->setDimensions($this->denormalizer->denormalize($data['dimensions'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDimensions', 'json', $context));
+                $object->setDimensions($this->denormalizer->denormalize($data['dimensions'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDimensions::class, 'json', $context));
                 unset($data['dimensions']);
             }
             if (\array_key_exists('destination', $data)) {
-                $object->setDestination($this->denormalizer->denormalize($data['destination'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDestination', 'json', $context));
+                $object->setDestination($this->denormalizer->denormalize($data['destination'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDestination::class, 'json', $context));
                 unset($data['destination']);
             }
             if (\array_key_exists('shipmentSpecialServicesRequested', $data)) {
-                $object->setShipmentSpecialServicesRequested($this->denormalizer->denormalize($data['shipmentSpecialServicesRequested'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemShipmentSpecialServicesRequested', 'json', $context));
+                $object->setShipmentSpecialServicesRequested($this->denormalizer->denormalize($data['shipmentSpecialServicesRequested'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemShipmentSpecialServicesRequested::class, 'json', $context));
                 unset($data['shipmentSpecialServicesRequested']);
             }
             foreach ($data as $key => $value) {
@@ -298,9 +298,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem::class => false];
         }
     }
 }

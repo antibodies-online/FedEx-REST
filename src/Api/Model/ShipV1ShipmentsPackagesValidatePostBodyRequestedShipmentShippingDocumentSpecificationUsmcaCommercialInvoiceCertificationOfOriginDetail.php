@@ -8,7 +8,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return list<ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailCustomerImageUsagesItem>
      */
-    public function getCustomerImageUsages() : array
+    public function getCustomerImageUsages(): array
     {
         return $this->customerImageUsages;
     }
@@ -70,7 +70,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return self
      */
-    public function setCustomerImageUsages(array $customerImageUsages) : self
+    public function setCustomerImageUsages(array $customerImageUsages): self
     {
         $this->initialized['customerImageUsages'] = true;
         $this->customerImageUsages = $customerImageUsages;
@@ -81,7 +81,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailDocumentFormat
      */
-    public function getDocumentFormat() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailDocumentFormat
+    public function getDocumentFormat(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailDocumentFormat
     {
         return $this->documentFormat;
     }
@@ -92,7 +92,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return self
      */
-    public function setDocumentFormat(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailDocumentFormat $documentFormat) : self
+    public function setDocumentFormat(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailDocumentFormat $documentFormat): self
     {
         $this->initialized['documentFormat'] = true;
         $this->documentFormat = $documentFormat;
@@ -103,7 +103,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return string
      */
-    public function getCertifierSpecification() : string
+    public function getCertifierSpecification(): string
     {
         return $this->certifierSpecification;
     }
@@ -114,7 +114,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return self
      */
-    public function setCertifierSpecification(string $certifierSpecification) : self
+    public function setCertifierSpecification(string $certifierSpecification): self
     {
         $this->initialized['certifierSpecification'] = true;
         $this->certifierSpecification = $certifierSpecification;
@@ -125,7 +125,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return string
      */
-    public function getImporterSpecification() : string
+    public function getImporterSpecification(): string
     {
         return $this->importerSpecification;
     }
@@ -136,7 +136,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return self
      */
-    public function setImporterSpecification(string $importerSpecification) : self
+    public function setImporterSpecification(string $importerSpecification): self
     {
         $this->initialized['importerSpecification'] = true;
         $this->importerSpecification = $importerSpecification;
@@ -147,7 +147,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return string
      */
-    public function getProducerSpecification() : string
+    public function getProducerSpecification(): string
     {
         return $this->producerSpecification;
     }
@@ -158,7 +158,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return self
      */
-    public function setProducerSpecification(string $producerSpecification) : self
+    public function setProducerSpecification(string $producerSpecification): self
     {
         $this->initialized['producerSpecification'] = true;
         $this->producerSpecification = $producerSpecification;
@@ -169,7 +169,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailProducer
      */
-    public function getProducer() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailProducer
+    public function getProducer(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailProducer
     {
         return $this->producer;
     }
@@ -180,7 +180,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return self
      */
-    public function setProducer(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailProducer $producer) : self
+    public function setProducer(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailProducer $producer): self
     {
         $this->initialized['producer'] = true;
         $this->producer = $producer;
@@ -191,7 +191,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return string
      */
-    public function getCertifierJobTitle() : string
+    public function getCertifierJobTitle(): string
     {
         return $this->certifierJobTitle;
     }
@@ -202,7 +202,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return self
      */
-    public function setCertifierJobTitle(string $certifierJobTitle) : self
+    public function setCertifierJobTitle(string $certifierJobTitle): self
     {
         $this->initialized['certifierJobTitle'] = true;
         $this->certifierJobTitle = $certifierJobTitle;

@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesCodDetailCodCollectionAmount
      */
-    public function getCodCollectionAmount() : AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesCodDetailCodCollectionAmount
+    public function getCodCollectionAmount(): AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesCodDetailCodCollectionAmount
     {
         return $this->codCollectionAmount;
     }
@@ -40,7 +40,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices
      *
      * @return self
      */
-    public function setCodCollectionAmount(AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesCodDetailCodCollectionAmount $codCollectionAmount) : self
+    public function setCodCollectionAmount(AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesCodDetailCodCollectionAmount $codCollectionAmount): self
     {
         $this->initialized['codCollectionAmount'] = true;
         $this->codCollectionAmount = $codCollectionAmount;
@@ -51,7 +51,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices
      *
      * @return string
      */
-    public function getCodCollectionType() : string
+    public function getCodCollectionType(): string
     {
         return $this->codCollectionType;
     }
@@ -62,7 +62,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices
      *
      * @return self
      */
-    public function setCodCollectionType(string $codCollectionType) : self
+    public function setCodCollectionType(string $codCollectionType): self
     {
         $this->initialized['codCollectionType'] = true;
         $this->codCollectionType = $codCollectionType;

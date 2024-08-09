@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      *
      * @return string
      */
-    public function getGenerationOptions() : string
+    public function getGenerationOptions(): string
     {
         return $this->generationOptions;
     }
@@ -40,7 +40,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      *
      * @return self
      */
-    public function setGenerationOptions(string $generationOptions) : self
+    public function setGenerationOptions(string $generationOptions): self
     {
         $this->initialized['generationOptions'] = true;
         $this->generationOptions = $generationOptions;
@@ -51,7 +51,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -62,7 +62,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;

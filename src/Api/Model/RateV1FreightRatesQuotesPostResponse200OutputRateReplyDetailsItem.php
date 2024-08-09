@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -94,7 +94,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -105,7 +105,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return string
      */
-    public function getServiceName() : string
+    public function getServiceName(): string
     {
         return $this->serviceName;
     }
@@ -116,7 +116,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return self
      */
-    public function setServiceName(string $serviceName) : self
+    public function setServiceName(string $serviceName): self
     {
         $this->initialized['serviceName'] = true;
         $this->serviceName = $serviceName;
@@ -127,7 +127,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return string
      */
-    public function getPackagingType() : string
+    public function getPackagingType(): string
     {
         return $this->packagingType;
     }
@@ -138,7 +138,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return self
      */
-    public function setPackagingType(string $packagingType) : self
+    public function setPackagingType(string $packagingType): self
     {
         $this->initialized['packagingType'] = true;
         $this->packagingType = $packagingType;
@@ -149,7 +149,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return list<RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCustomerMessagesItem>
      */
-    public function getCustomerMessages() : array
+    public function getCustomerMessages(): array
     {
         return $this->customerMessages;
     }
@@ -160,7 +160,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return self
      */
-    public function setCustomerMessages(array $customerMessages) : self
+    public function setCustomerMessages(array $customerMessages): self
     {
         $this->initialized['customerMessages'] = true;
         $this->customerMessages = $customerMessages;
@@ -171,7 +171,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetails
      */
-    public function getRatedShipmentDetails() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetails
+    public function getRatedShipmentDetails(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetails
     {
         return $this->ratedShipmentDetails;
     }
@@ -182,7 +182,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return self
      */
-    public function setRatedShipmentDetails(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetails $ratedShipmentDetails) : self
+    public function setRatedShipmentDetails(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetails $ratedShipmentDetails): self
     {
         $this->initialized['ratedShipmentDetails'] = true;
         $this->ratedShipmentDetails = $ratedShipmentDetails;
@@ -193,7 +193,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return list<RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItem>
      */
-    public function getFreightTransitLocationDetail() : array
+    public function getFreightTransitLocationDetail(): array
     {
         return $this->freightTransitLocationDetail;
     }
@@ -204,7 +204,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return self
      */
-    public function setFreightTransitLocationDetail(array $freightTransitLocationDetail) : self
+    public function setFreightTransitLocationDetail(array $freightTransitLocationDetail): self
     {
         $this->initialized['freightTransitLocationDetail'] = true;
         $this->freightTransitLocationDetail = $freightTransitLocationDetail;
@@ -215,7 +215,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetail
      */
-    public function getOperationalDetail() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetail
+    public function getOperationalDetail(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetail
     {
         return $this->operationalDetail;
     }
@@ -226,7 +226,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return self
      */
-    public function setOperationalDetail(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetail $operationalDetail) : self
+    public function setOperationalDetail(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetail $operationalDetail): self
     {
         $this->initialized['operationalDetail'] = true;
         $this->operationalDetail = $operationalDetail;
@@ -237,7 +237,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return string
      */
-    public function getSignatureOptionType() : string
+    public function getSignatureOptionType(): string
     {
         return $this->signatureOptionType;
     }
@@ -248,7 +248,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return self
      */
-    public function setSignatureOptionType(string $signatureOptionType) : self
+    public function setSignatureOptionType(string $signatureOptionType): self
     {
         $this->initialized['signatureOptionType'] = true;
         $this->signatureOptionType = $signatureOptionType;
@@ -259,7 +259,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemServiceDescription
      */
-    public function getServiceDescription() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemServiceDescription
+    public function getServiceDescription(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemServiceDescription
     {
         return $this->serviceDescription;
     }
@@ -270,7 +270,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return self
      */
-    public function setServiceDescription(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemServiceDescription $serviceDescription) : self
+    public function setServiceDescription(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemServiceDescription $serviceDescription): self
     {
         $this->initialized['serviceDescription'] = true;
         $this->serviceDescription = $serviceDescription;
@@ -281,7 +281,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDetail
      */
-    public function getBrokerDetail() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDetail
+    public function getBrokerDetail(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDetail
     {
         return $this->brokerDetail;
     }
@@ -292,7 +292,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return self
      */
-    public function setBrokerDetail(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDetail $brokerDetail) : self
+    public function setBrokerDetail(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDetail $brokerDetail): self
     {
         $this->initialized['brokerDetail'] = true;
         $this->brokerDetail = $brokerDetail;
@@ -303,7 +303,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit
      */
-    public function getCommit() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit
+    public function getCommit(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit
     {
         return $this->commit;
     }
@@ -314,7 +314,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem extends 
      *
      * @return self
      */
-    public function setCommit(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit $commit) : self
+    public function setCommit(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit $commit): self
     {
         $this->initialized['commit'] = true;
         $this->commit = $commit;

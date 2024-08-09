@@ -8,7 +8,7 @@ class TrackV1TrackingdocumentsPostResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class TrackV1TrackingdocumentsPostResponse200Output extends \ArrayObject
      *
      * @return TrackV1TrackingdocumentsPostResponse200OutputLocalization
      */
-    public function getLocalization() : TrackV1TrackingdocumentsPostResponse200OutputLocalization
+    public function getLocalization(): TrackV1TrackingdocumentsPostResponse200OutputLocalization
     {
         return $this->localization;
     }
@@ -58,7 +58,7 @@ class TrackV1TrackingdocumentsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setLocalization(TrackV1TrackingdocumentsPostResponse200OutputLocalization $localization) : self
+    public function setLocalization(TrackV1TrackingdocumentsPostResponse200OutputLocalization $localization): self
     {
         $this->initialized['localization'] = true;
         $this->localization = $localization;
@@ -69,7 +69,7 @@ class TrackV1TrackingdocumentsPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getDocumentType() : string
+    public function getDocumentType(): string
     {
         return $this->documentType;
     }
@@ -80,7 +80,7 @@ class TrackV1TrackingdocumentsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setDocumentType(string $documentType) : self
+    public function setDocumentType(string $documentType): self
     {
         $this->initialized['documentType'] = true;
         $this->documentType = $documentType;
@@ -91,7 +91,7 @@ class TrackV1TrackingdocumentsPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getDocumentFormat() : string
+    public function getDocumentFormat(): string
     {
         return $this->documentFormat;
     }
@@ -102,7 +102,7 @@ class TrackV1TrackingdocumentsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setDocumentFormat(string $documentFormat) : self
+    public function setDocumentFormat(string $documentFormat): self
     {
         $this->initialized['documentFormat'] = true;
         $this->documentFormat = $documentFormat;
@@ -113,7 +113,7 @@ class TrackV1TrackingdocumentsPostResponse200Output extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getDocument() : array
+    public function getDocument(): array
     {
         return $this->document;
     }
@@ -124,7 +124,7 @@ class TrackV1TrackingdocumentsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setDocument(array $document) : self
+    public function setDocument(array $document): self
     {
         $this->initialized['document'] = true;
         $this->document = $document;
@@ -135,7 +135,7 @@ class TrackV1TrackingdocumentsPostResponse200Output extends \ArrayObject
      *
      * @return list<TrackV1TrackingdocumentsPostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -146,7 +146,7 @@ class TrackV1TrackingdocumentsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

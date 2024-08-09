@@ -8,7 +8,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -108,7 +108,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return PickupV1PickupsPostBodyAssociatedAccountNumber
      */
-    public function getAssociatedAccountNumber() : PickupV1PickupsPostBodyAssociatedAccountNumber
+    public function getAssociatedAccountNumber(): PickupV1PickupsPostBodyAssociatedAccountNumber
     {
         return $this->associatedAccountNumber;
     }
@@ -119,7 +119,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAssociatedAccountNumber(PickupV1PickupsPostBodyAssociatedAccountNumber $associatedAccountNumber) : self
+    public function setAssociatedAccountNumber(PickupV1PickupsPostBodyAssociatedAccountNumber $associatedAccountNumber): self
     {
         $this->initialized['associatedAccountNumber'] = true;
         $this->associatedAccountNumber = $associatedAccountNumber;
@@ -141,7 +141,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setOriginDetail($originDetail) : self
+    public function setOriginDetail($originDetail): self
     {
         $this->initialized['originDetail'] = true;
         $this->originDetail = $originDetail;
@@ -152,7 +152,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getAssociatedAccountNumberType() : string
+    public function getAssociatedAccountNumberType(): string
     {
         return $this->associatedAccountNumberType;
     }
@@ -163,7 +163,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAssociatedAccountNumberType(string $associatedAccountNumberType) : self
+    public function setAssociatedAccountNumberType(string $associatedAccountNumberType): self
     {
         $this->initialized['associatedAccountNumberType'] = true;
         $this->associatedAccountNumberType = $associatedAccountNumberType;
@@ -175,7 +175,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
     *
     * @return PickupV1PickupsPostBodyTotalWeight
     */
-    public function getTotalWeight() : PickupV1PickupsPostBodyTotalWeight
+    public function getTotalWeight(): PickupV1PickupsPostBodyTotalWeight
     {
         return $this->totalWeight;
     }
@@ -187,7 +187,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
     *
     * @return self
     */
-    public function setTotalWeight(PickupV1PickupsPostBodyTotalWeight $totalWeight) : self
+    public function setTotalWeight(PickupV1PickupsPostBodyTotalWeight $totalWeight): self
     {
         $this->initialized['totalWeight'] = true;
         $this->totalWeight = $totalWeight;
@@ -198,7 +198,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return int
      */
-    public function getPackageCount() : int
+    public function getPackageCount(): int
     {
         return $this->packageCount;
     }
@@ -209,7 +209,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPackageCount(int $packageCount) : self
+    public function setPackageCount(int $packageCount): self
     {
         $this->initialized['packageCount'] = true;
         $this->packageCount = $packageCount;
@@ -220,7 +220,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCarrierCode() : string
+    public function getCarrierCode(): string
     {
         return $this->carrierCode;
     }
@@ -231,7 +231,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCarrierCode(string $carrierCode) : self
+    public function setCarrierCode(string $carrierCode): self
     {
         $this->initialized['carrierCode'] = true;
         $this->carrierCode = $carrierCode;
@@ -242,7 +242,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return PickupV1PickupsPostBodyAccountAddressOfRecord
      */
-    public function getAccountAddressOfRecord() : PickupV1PickupsPostBodyAccountAddressOfRecord
+    public function getAccountAddressOfRecord(): PickupV1PickupsPostBodyAccountAddressOfRecord
     {
         return $this->accountAddressOfRecord;
     }
@@ -253,7 +253,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountAddressOfRecord(PickupV1PickupsPostBodyAccountAddressOfRecord $accountAddressOfRecord) : self
+    public function setAccountAddressOfRecord(PickupV1PickupsPostBodyAccountAddressOfRecord $accountAddressOfRecord): self
     {
         $this->initialized['accountAddressOfRecord'] = true;
         $this->accountAddressOfRecord = $accountAddressOfRecord;
@@ -264,7 +264,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getRemarks() : string
+    public function getRemarks(): string
     {
         return $this->remarks;
     }
@@ -275,7 +275,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRemarks(string $remarks) : self
+    public function setRemarks(string $remarks): self
     {
         $this->initialized['remarks'] = true;
         $this->remarks = $remarks;
@@ -286,7 +286,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCountryRelationships() : string
+    public function getCountryRelationships(): string
     {
         return $this->countryRelationships;
     }
@@ -297,7 +297,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCountryRelationships(string $countryRelationships) : self
+    public function setCountryRelationships(string $countryRelationships): self
     {
         $this->initialized['countryRelationships'] = true;
         $this->countryRelationships = $countryRelationships;
@@ -308,7 +308,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getPickupType() : string
+    public function getPickupType(): string
     {
         return $this->pickupType;
     }
@@ -319,7 +319,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPickupType(string $pickupType) : self
+    public function setPickupType(string $pickupType): self
     {
         $this->initialized['pickupType'] = true;
         $this->pickupType = $pickupType;
@@ -330,7 +330,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTrackingNumber() : string
+    public function getTrackingNumber(): string
     {
         return $this->trackingNumber;
     }
@@ -341,7 +341,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingNumber(string $trackingNumber) : self
+    public function setTrackingNumber(string $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;
@@ -352,7 +352,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCommodityDescription() : string
+    public function getCommodityDescription(): string
     {
         return $this->commodityDescription;
     }
@@ -363,7 +363,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCommodityDescription(string $commodityDescription) : self
+    public function setCommodityDescription(string $commodityDescription): self
     {
         $this->initialized['commodityDescription'] = true;
         $this->commodityDescription = $commodityDescription;
@@ -374,7 +374,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return PickupV1PickupsPostBodyExpressFreightDetail
      */
-    public function getExpressFreightDetail() : PickupV1PickupsPostBodyExpressFreightDetail
+    public function getExpressFreightDetail(): PickupV1PickupsPostBodyExpressFreightDetail
     {
         return $this->expressFreightDetail;
     }
@@ -385,7 +385,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setExpressFreightDetail(PickupV1PickupsPostBodyExpressFreightDetail $expressFreightDetail) : self
+    public function setExpressFreightDetail(PickupV1PickupsPostBodyExpressFreightDetail $expressFreightDetail): self
     {
         $this->initialized['expressFreightDetail'] = true;
         $this->expressFreightDetail = $expressFreightDetail;
@@ -396,7 +396,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return int
      */
-    public function getOversizePackageCount() : int
+    public function getOversizePackageCount(): int
     {
         return $this->oversizePackageCount;
     }
@@ -407,7 +407,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setOversizePackageCount(int $oversizePackageCount) : self
+    public function setOversizePackageCount(int $oversizePackageCount): self
     {
         $this->initialized['oversizePackageCount'] = true;
         $this->oversizePackageCount = $oversizePackageCount;
@@ -429,7 +429,7 @@ class PickupV1PickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPickupNotificationDetail($pickupNotificationDetail) : self
+    public function setPickupNotificationDetail($pickupNotificationDetail): self
     {
         $this->initialized['pickupNotificationDetail'] = true;
         $this->pickupNotificationDetail = $pickupNotificationDetail;

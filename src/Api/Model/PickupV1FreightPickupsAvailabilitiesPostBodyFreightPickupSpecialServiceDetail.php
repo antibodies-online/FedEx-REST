@@ -8,7 +8,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDet
      *
      * @return array<string, mixed>
      */
-    public function getShipmentSpecialServicesRequested() : iterable
+    public function getShipmentSpecialServicesRequested(): iterable
     {
         return $this->shipmentSpecialServicesRequested;
     }
@@ -34,7 +34,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDet
      *
      * @return self
      */
-    public function setShipmentSpecialServicesRequested(iterable $shipmentSpecialServicesRequested) : self
+    public function setShipmentSpecialServicesRequested(iterable $shipmentSpecialServicesRequested): self
     {
         $this->initialized['shipmentSpecialServicesRequested'] = true;
         $this->shipmentSpecialServicesRequested = $shipmentSpecialServicesRequested;

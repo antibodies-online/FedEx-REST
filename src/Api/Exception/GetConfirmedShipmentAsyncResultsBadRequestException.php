@@ -18,11 +18,11 @@ class GetConfirmedShipmentAsyncResultsBadRequestException extends BadRequestExce
         $this->shipV1ShipmentsResultsPostResponse400 = $shipV1ShipmentsResultsPostResponse400;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsResultsPostResponse400() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsResultsPostResponse400
+    public function getShipV1ShipmentsResultsPostResponse400(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsResultsPostResponse400
     {
         return $this->shipV1ShipmentsResultsPostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

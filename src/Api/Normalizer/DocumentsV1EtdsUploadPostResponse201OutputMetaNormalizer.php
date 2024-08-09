@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1EtdsUploadPostResponse201OutputMeta';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse201OutputMeta::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1EtdsUploadPostResponse201OutputMeta';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse201OutputMeta::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -49,21 +49,17 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['docId']);
             }
             if (\array_key_exists('folderId', $data)) {
-                $values = [];
-                foreach ($data['folderId'] as $value) {
-                    $values[] = $value;
-                }
-                $object->setFolderId($values);
+                $object->setFolderId($data['folderId']);
                 unset($data['folderId']);
             }
-            foreach ($data as $key => $value_1) {
+            foreach ($data as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
-                    $object[$key] = $value_1;
+                    $object[$key] = $value;
                 }
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('documentType') && null !== $object->getDocumentType()) {
@@ -73,22 +69,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['docId'] = $object->getDocId();
             }
             if ($object->isInitialized('folderId') && null !== $object->getFolderId()) {
-                $values = [];
-                foreach ($object->getFolderId() as $value) {
-                    $values[] = $value;
-                }
-                $data['folderId'] = $values;
+                $data['folderId'] = $object->getFolderId();
             }
-            foreach ($object as $key => $value_1) {
+            foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
-                    $data[$key] = $value_1;
+                    $data[$key] = $value;
                 }
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1EtdsUploadPostResponse201OutputMeta' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse201OutputMeta::class => false];
         }
     }
 } else {
@@ -98,13 +90,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1EtdsUploadPostResponse201OutputMeta';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse201OutputMeta::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1EtdsUploadPostResponse201OutputMeta';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse201OutputMeta::class;
         }
         /**
          * @return mixed
@@ -130,16 +122,12 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['docId']);
             }
             if (\array_key_exists('folderId', $data)) {
-                $values = [];
-                foreach ($data['folderId'] as $value) {
-                    $values[] = $value;
-                }
-                $object->setFolderId($values);
+                $object->setFolderId($data['folderId']);
                 unset($data['folderId']);
             }
-            foreach ($data as $key => $value_1) {
+            foreach ($data as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
-                    $object[$key] = $value_1;
+                    $object[$key] = $value;
                 }
             }
             return $object;
@@ -157,22 +145,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['docId'] = $object->getDocId();
             }
             if ($object->isInitialized('folderId') && null !== $object->getFolderId()) {
-                $values = [];
-                foreach ($object->getFolderId() as $value) {
-                    $values[] = $value;
-                }
-                $data['folderId'] = $values;
+                $data['folderId'] = $object->getFolderId();
             }
-            foreach ($object as $key => $value_1) {
+            foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
-                    $data[$key] = $value_1;
+                    $data[$key] = $value;
                 }
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1EtdsUploadPostResponse201OutputMeta' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse201OutputMeta::class => false];
         }
     }
 }

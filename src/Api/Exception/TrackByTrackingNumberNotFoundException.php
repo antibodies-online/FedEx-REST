@@ -18,11 +18,11 @@ class TrackByTrackingNumberNotFoundException extends NotFoundException
         $this->trackV1TrackingnumbersPostResponse404 = $trackV1TrackingnumbersPostResponse404;
         $this->response = $response;
     }
-    public function getTrackV1TrackingnumbersPostResponse404() : \AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingnumbersPostResponse404
+    public function getTrackV1TrackingnumbersPostResponse404(): \AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingnumbersPostResponse404
     {
         return $this->trackV1TrackingnumbersPostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

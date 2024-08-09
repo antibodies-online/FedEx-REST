@@ -8,7 +8,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -89,7 +89,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumber
      */
-    public function getTrackingNumber() : PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumber
+    public function getTrackingNumber(): PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumber
     {
         return $this->trackingNumber;
     }
@@ -100,7 +100,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return self
      */
-    public function setTrackingNumber(PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumber $trackingNumber) : self
+    public function setTrackingNumber(PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumber $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;
@@ -111,7 +111,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return string
      */
-    public function getService() : string
+    public function getService(): string
     {
         return $this->service;
     }
@@ -122,7 +122,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return self
      */
-    public function setService(string $service) : self
+    public function setService(string $service): self
     {
         $this->initialized['service'] = true;
         $this->service = $service;
@@ -133,7 +133,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return float
      */
-    public function getSequenceNumber() : float
+    public function getSequenceNumber(): float
     {
         return $this->sequenceNumber;
     }
@@ -144,7 +144,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return self
      */
-    public function setSequenceNumber(float $sequenceNumber) : self
+    public function setSequenceNumber(float $sequenceNumber): self
     {
         $this->initialized['sequenceNumber'] = true;
         $this->sequenceNumber = $sequenceNumber;
@@ -155,7 +155,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return float
      */
-    public function getTotalHandlingUnits() : float
+    public function getTotalHandlingUnits(): float
     {
         return $this->totalHandlingUnits;
     }
@@ -166,7 +166,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return self
      */
-    public function setTotalHandlingUnits(float $totalHandlingUnits) : self
+    public function setTotalHandlingUnits(float $totalHandlingUnits): self
     {
         $this->initialized['totalHandlingUnits'] = true;
         $this->totalHandlingUnits = $totalHandlingUnits;
@@ -177,7 +177,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return bool
      */
-    public function getJustOneMore() : bool
+    public function getJustOneMore(): bool
     {
         return $this->justOneMore;
     }
@@ -188,7 +188,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return self
      */
-    public function setJustOneMore(bool $justOneMore) : self
+    public function setJustOneMore(bool $justOneMore): self
     {
         $this->initialized['justOneMore'] = true;
         $this->justOneMore = $justOneMore;
@@ -199,7 +199,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -210,7 +210,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -221,7 +221,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return string
      */
-    public function getPackaging() : string
+    public function getPackaging(): string
     {
         return $this->packaging;
     }
@@ -232,7 +232,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return self
      */
-    public function setPackaging(string $packaging) : self
+    public function setPackaging(string $packaging): self
     {
         $this->initialized['packaging'] = true;
         $this->packaging = $packaging;
@@ -243,7 +243,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return float
      */
-    public function getPieces() : float
+    public function getPieces(): float
     {
         return $this->pieces;
     }
@@ -254,7 +254,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return self
      */
-    public function setPieces(float $pieces) : self
+    public function setPieces(float $pieces): self
     {
         $this->initialized['pieces'] = true;
         $this->pieces = $pieces;
@@ -265,7 +265,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemWeight
      */
-    public function getWeight() : PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemWeight
+    public function getWeight(): PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemWeight
     {
         return $this->weight;
     }
@@ -276,7 +276,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return self
      */
-    public function setWeight(PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemWeight $weight) : self
+    public function setWeight(PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemWeight $weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -287,7 +287,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDimensions
      */
-    public function getDimensions() : PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDimensions
+    public function getDimensions(): PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDimensions
     {
         return $this->dimensions;
     }
@@ -298,7 +298,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return self
      */
-    public function setDimensions(PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDimensions $dimensions) : self
+    public function setDimensions(PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDimensions $dimensions): self
     {
         $this->initialized['dimensions'] = true;
         $this->dimensions = $dimensions;
@@ -309,7 +309,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDestination
      */
-    public function getDestination() : PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDestination
+    public function getDestination(): PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDestination
     {
         return $this->destination;
     }
@@ -320,7 +320,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return self
      */
-    public function setDestination(PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDestination $destination) : self
+    public function setDestination(PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemDestination $destination): self
     {
         $this->initialized['destination'] = true;
         $this->destination = $destination;
@@ -331,7 +331,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemShipmentSpecialServicesRequested
      */
-    public function getShipmentSpecialServicesRequested() : PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemShipmentSpecialServicesRequested
+    public function getShipmentSpecialServicesRequested(): PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemShipmentSpecialServicesRequested
     {
         return $this->shipmentSpecialServicesRequested;
     }
@@ -342,7 +342,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem extends \Ar
      *
      * @return self
      */
-    public function setShipmentSpecialServicesRequested(PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemShipmentSpecialServicesRequested $shipmentSpecialServicesRequested) : self
+    public function setShipmentSpecialServicesRequested(PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemShipmentSpecialServicesRequested $shipmentSpecialServicesRequested): self
     {
         $this->initialized['shipmentSpecialServicesRequested'] = true;
         $this->shipmentSpecialServicesRequested = $shipmentSpecialServicesRequested;

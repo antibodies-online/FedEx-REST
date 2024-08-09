@@ -5,7 +5,7 @@ namespace AntibodiesOnline\FedEx\Api\Endpoint;
 class UploadETDFiles extends \AntibodiesOnline\FedEx\Api\Runtime\Client\BaseEndpoint implements \AntibodiesOnline\FedEx\Api\Runtime\Client\Endpoint
 {
     /**
-     * Use this endpoint to upload the trade documents electronically before (pre-shipment) and after (post-shipment) the shipment is created.<br><i>Note&#58; FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
+     * Use this endpoint to upload the trade documentss electronicallyy before (pre-shipment) and after (post-shipment) the shipment is created.<br><i>Note&#58; FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
      * @param null|\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostBody $requestBody 
      * @param array $headerParameters {
@@ -20,15 +20,15 @@ class UploadETDFiles extends \AntibodiesOnline\FedEx\Api\Runtime\Client\BaseEndp
         $this->headerParameters = $headerParameters;
     }
     use \AntibodiesOnline\FedEx\Api\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'POST';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return '/documents/v1/etds/upload';
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if ($this->body instanceof \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostBody) {
             $bodyBuilder = new \Http\Message\MultipartStream\MultipartStreamBuilder($streamFactory);
@@ -41,11 +41,11 @@ class UploadETDFiles extends \AntibodiesOnline\FedEx\Api\Runtime\Client\BaseEndp
         }
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
-    protected function getHeadersOptionsResolver() : \Symfony\Component\OptionsResolver\OptionsResolver
+    protected function getHeadersOptionsResolver(): \Symfony\Component\OptionsResolver\OptionsResolver
     {
         $optionsResolver = parent::getHeadersOptionsResolver();
         $optionsResolver->setDefined(['Content-Type', 'Authorization', 'x-customer-transaction-id']);
@@ -73,28 +73,28 @@ class UploadETDFiles extends \AntibodiesOnline\FedEx\Api\Runtime\Client\BaseEndp
         $status = $response->getStatusCode();
         $body = (string) $response->getBody();
         if (is_null($contentType) === false && (201 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            return $serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1EtdsUploadPostResponse201', 'json');
+            return $serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse201', 'json');
         }
         if (is_null($contentType) === false && (400 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\UploadETDFilesBadRequestException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1EtdsUploadPostResponse400', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\UploadETDFilesBadRequestException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse400', 'json'), $response);
         }
         if (is_null($contentType) === false && (401 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\UploadETDFilesUnauthorizedException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1EtdsUploadPostResponse401', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\UploadETDFilesUnauthorizedException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse401', 'json'), $response);
         }
         if (is_null($contentType) === false && (403 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\UploadETDFilesForbiddenException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1EtdsUploadPostResponse403', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\UploadETDFilesForbiddenException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse403', 'json'), $response);
         }
         if (is_null($contentType) === false && (404 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\UploadETDFilesNotFoundException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1EtdsUploadPostResponse404', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\UploadETDFilesNotFoundException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse404', 'json'), $response);
         }
         if (is_null($contentType) === false && (500 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\UploadETDFilesInternalServerErrorException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1EtdsUploadPostResponse500', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\UploadETDFilesInternalServerErrorException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse500', 'json'), $response);
         }
         if (is_null($contentType) === false && (503 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\UploadETDFilesServiceUnavailableException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1EtdsUploadPostResponse503', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\UploadETDFilesServiceUnavailableException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse503', 'json'), $response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

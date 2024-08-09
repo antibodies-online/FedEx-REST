@@ -8,7 +8,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getPersonName() : string
+    public function getPersonName(): string
     {
         return $this->personName;
     }
@@ -46,7 +46,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setPersonName(string $personName) : self
+    public function setPersonName(string $personName): self
     {
         $this->initialized['personName'] = true;
         $this->personName = $personName;
@@ -57,7 +57,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getPhoneNumber() : string
+    public function getPhoneNumber(): string
     {
         return $this->phoneNumber;
     }
@@ -68,7 +68,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setPhoneNumber(string $phoneNumber) : self
+    public function setPhoneNumber(string $phoneNumber): self
     {
         $this->initialized['phoneNumber'] = true;
         $this->phoneNumber = $phoneNumber;
@@ -79,7 +79,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getCompanyName() : string
+    public function getCompanyName(): string
     {
         return $this->companyName;
     }
@@ -90,7 +90,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setCompanyName(string $companyName) : self
+    public function setCompanyName(string $companyName): self
     {
         $this->initialized['companyName'] = true;
         $this->companyName = $companyName;

@@ -8,7 +8,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCarrierCode() : string
+    public function getCarrierCode(): string
     {
         return $this->carrierCode;
     }
@@ -70,7 +70,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCarrierCode(string $carrierCode) : self
+    public function setCarrierCode(string $carrierCode): self
     {
         $this->initialized['carrierCode'] = true;
         $this->carrierCode = $carrierCode;
@@ -81,7 +81,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -92,7 +92,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;
@@ -103,7 +103,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getStateOrProvinceCode() : string
+    public function getStateOrProvinceCode(): string
     {
         return $this->stateOrProvinceCode;
     }
@@ -114,7 +114,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setStateOrProvinceCode(string $stateOrProvinceCode) : self
+    public function setStateOrProvinceCode(string $stateOrProvinceCode): self
     {
         $this->initialized['stateOrProvinceCode'] = true;
         $this->stateOrProvinceCode = $stateOrProvinceCode;
@@ -125,7 +125,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getPostalCode() : string
+    public function getPostalCode(): string
     {
         return $this->postalCode;
     }
@@ -136,7 +136,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPostalCode(string $postalCode) : self
+    public function setPostalCode(string $postalCode): self
     {
         $this->initialized['postalCode'] = true;
         $this->postalCode = $postalCode;
@@ -147,7 +147,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getShipDate() : string
+    public function getShipDate(): string
     {
         return $this->shipDate;
     }
@@ -158,7 +158,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setShipDate(string $shipDate) : self
+    public function setShipDate(string $shipDate): self
     {
         $this->initialized['shipDate'] = true;
         $this->shipDate = $shipDate;
@@ -169,7 +169,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getRoutingCode() : string
+    public function getRoutingCode(): string
     {
         return $this->routingCode;
     }
@@ -180,7 +180,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRoutingCode(string $routingCode) : self
+    public function setRoutingCode(string $routingCode): self
     {
         $this->initialized['routingCode'] = true;
         $this->routingCode = $routingCode;
@@ -191,7 +191,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getCheckForMismatch() : bool
+    public function getCheckForMismatch(): bool
     {
         return $this->checkForMismatch;
     }
@@ -202,7 +202,7 @@ class CountryV1PostalValidatePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCheckForMismatch(bool $checkForMismatch) : self
+    public function setCheckForMismatch(bool $checkForMismatch): self
     {
         $this->initialized['checkForMismatch'] = true;
         $this->checkForMismatch = $checkForMismatch;

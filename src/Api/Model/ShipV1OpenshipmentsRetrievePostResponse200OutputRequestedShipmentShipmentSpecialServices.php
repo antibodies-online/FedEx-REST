@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return list<string>
      */
-    public function getSpecialServiceTypes() : array
+    public function getSpecialServiceTypes(): array
     {
         return $this->specialServiceTypes;
     }
@@ -94,7 +94,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setSpecialServiceTypes(array $specialServiceTypes) : self
+    public function setSpecialServiceTypes(array $specialServiceTypes): self
     {
         $this->initialized['specialServiceTypes'] = true;
         $this->specialServiceTypes = $specialServiceTypes;
@@ -105,7 +105,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesEtdDetail
      */
-    public function getEtdDetail() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesEtdDetail
+    public function getEtdDetail(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesEtdDetail
     {
         return $this->etdDetail;
     }
@@ -116,7 +116,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setEtdDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesEtdDetail $etdDetail) : self
+    public function setEtdDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesEtdDetail $etdDetail): self
     {
         $this->initialized['etdDetail'] = true;
         $this->etdDetail = $etdDetail;
@@ -127,7 +127,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesReturnShipmentDetail
      */
-    public function getReturnShipmentDetail() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesReturnShipmentDetail
+    public function getReturnShipmentDetail(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesReturnShipmentDetail
     {
         return $this->returnShipmentDetail;
     }
@@ -138,7 +138,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setReturnShipmentDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesReturnShipmentDetail $returnShipmentDetail) : self
+    public function setReturnShipmentDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesReturnShipmentDetail $returnShipmentDetail): self
     {
         $this->initialized['returnShipmentDetail'] = true;
         $this->returnShipmentDetail = $returnShipmentDetail;
@@ -149,7 +149,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesDeliveryOnInvoiceAcceptanceDetail
      */
-    public function getDeliveryOnInvoiceAcceptanceDetail() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesDeliveryOnInvoiceAcceptanceDetail
+    public function getDeliveryOnInvoiceAcceptanceDetail(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesDeliveryOnInvoiceAcceptanceDetail
     {
         return $this->deliveryOnInvoiceAcceptanceDetail;
     }
@@ -160,7 +160,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setDeliveryOnInvoiceAcceptanceDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesDeliveryOnInvoiceAcceptanceDetail $deliveryOnInvoiceAcceptanceDetail) : self
+    public function setDeliveryOnInvoiceAcceptanceDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesDeliveryOnInvoiceAcceptanceDetail $deliveryOnInvoiceAcceptanceDetail): self
     {
         $this->initialized['deliveryOnInvoiceAcceptanceDetail'] = true;
         $this->deliveryOnInvoiceAcceptanceDetail = $deliveryOnInvoiceAcceptanceDetail;
@@ -171,7 +171,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesInternationalTrafficInArmsRegulationsDetail
      */
-    public function getInternationalTrafficInArmsRegulationsDetail() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesInternationalTrafficInArmsRegulationsDetail
+    public function getInternationalTrafficInArmsRegulationsDetail(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesInternationalTrafficInArmsRegulationsDetail
     {
         return $this->internationalTrafficInArmsRegulationsDetail;
     }
@@ -182,7 +182,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setInternationalTrafficInArmsRegulationsDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesInternationalTrafficInArmsRegulationsDetail $internationalTrafficInArmsRegulationsDetail) : self
+    public function setInternationalTrafficInArmsRegulationsDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesInternationalTrafficInArmsRegulationsDetail $internationalTrafficInArmsRegulationsDetail): self
     {
         $this->initialized['internationalTrafficInArmsRegulationsDetail'] = true;
         $this->internationalTrafficInArmsRegulationsDetail = $internationalTrafficInArmsRegulationsDetail;
@@ -193,7 +193,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesPendingShipmentDetail
      */
-    public function getPendingShipmentDetail() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesPendingShipmentDetail
+    public function getPendingShipmentDetail(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesPendingShipmentDetail
     {
         return $this->pendingShipmentDetail;
     }
@@ -204,7 +204,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setPendingShipmentDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesPendingShipmentDetail $pendingShipmentDetail) : self
+    public function setPendingShipmentDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesPendingShipmentDetail $pendingShipmentDetail): self
     {
         $this->initialized['pendingShipmentDetail'] = true;
         $this->pendingShipmentDetail = $pendingShipmentDetail;
@@ -215,7 +215,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesHoldAtLocationDetail
      */
-    public function getHoldAtLocationDetail() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesHoldAtLocationDetail
+    public function getHoldAtLocationDetail(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesHoldAtLocationDetail
     {
         return $this->holdAtLocationDetail;
     }
@@ -226,7 +226,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setHoldAtLocationDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesHoldAtLocationDetail $holdAtLocationDetail) : self
+    public function setHoldAtLocationDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesHoldAtLocationDetail $holdAtLocationDetail): self
     {
         $this->initialized['holdAtLocationDetail'] = true;
         $this->holdAtLocationDetail = $holdAtLocationDetail;
@@ -237,7 +237,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesShipmentCODDetail
      */
-    public function getShipmentCODDetail() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesShipmentCODDetail
+    public function getShipmentCODDetail(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesShipmentCODDetail
     {
         return $this->shipmentCODDetail;
     }
@@ -248,7 +248,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setShipmentCODDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesShipmentCODDetail $shipmentCODDetail) : self
+    public function setShipmentCODDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesShipmentCODDetail $shipmentCODDetail): self
     {
         $this->initialized['shipmentCODDetail'] = true;
         $this->shipmentCODDetail = $shipmentCODDetail;
@@ -259,7 +259,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesShipmentDryIceDetail
      */
-    public function getShipmentDryIceDetail() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesShipmentDryIceDetail
+    public function getShipmentDryIceDetail(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesShipmentDryIceDetail
     {
         return $this->shipmentDryIceDetail;
     }
@@ -270,7 +270,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setShipmentDryIceDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesShipmentDryIceDetail $shipmentDryIceDetail) : self
+    public function setShipmentDryIceDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesShipmentDryIceDetail $shipmentDryIceDetail): self
     {
         $this->initialized['shipmentDryIceDetail'] = true;
         $this->shipmentDryIceDetail = $shipmentDryIceDetail;
@@ -281,7 +281,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesInternationalControlledExportDetail
      */
-    public function getInternationalControlledExportDetail() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesInternationalControlledExportDetail
+    public function getInternationalControlledExportDetail(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesInternationalControlledExportDetail
     {
         return $this->internationalControlledExportDetail;
     }
@@ -292,7 +292,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setInternationalControlledExportDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesInternationalControlledExportDetail $internationalControlledExportDetail) : self
+    public function setInternationalControlledExportDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesInternationalControlledExportDetail $internationalControlledExportDetail): self
     {
         $this->initialized['internationalControlledExportDetail'] = true;
         $this->internationalControlledExportDetail = $internationalControlledExportDetail;
@@ -303,7 +303,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesHomeDeliveryPremiumDetail
      */
-    public function getHomeDeliveryPremiumDetail() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesHomeDeliveryPremiumDetail
+    public function getHomeDeliveryPremiumDetail(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesHomeDeliveryPremiumDetail
     {
         return $this->homeDeliveryPremiumDetail;
     }
@@ -314,7 +314,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setHomeDeliveryPremiumDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesHomeDeliveryPremiumDetail $homeDeliveryPremiumDetail) : self
+    public function setHomeDeliveryPremiumDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesHomeDeliveryPremiumDetail $homeDeliveryPremiumDetail): self
     {
         $this->initialized['homeDeliveryPremiumDetail'] = true;
         $this->homeDeliveryPremiumDetail = $homeDeliveryPremiumDetail;

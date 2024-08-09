@@ -18,11 +18,11 @@ class GroundPerformEndOfDayCloseServiceUnavailableException extends ServiceUnava
         $this->shipV1EndofdayPutResponse503 = $shipV1EndofdayPutResponse503;
         $this->response = $response;
     }
-    public function getShipV1EndofdayPutResponse503() : \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPutResponse503
+    public function getShipV1EndofdayPutResponse503(): \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPutResponse503
     {
         return $this->shipV1EndofdayPutResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

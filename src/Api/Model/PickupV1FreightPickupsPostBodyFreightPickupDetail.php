@@ -8,7 +8,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      *
      * @return PickupV1FreightPickupsPostBodyFreightPickupDetailaccountNumber
      */
-    public function getAccountNumber() : PickupV1FreightPickupsPostBodyFreightPickupDetailaccountNumber
+    public function getAccountNumber(): PickupV1FreightPickupsPostBodyFreightPickupDetailaccountNumber
     {
         return $this->accountNumber;
     }
@@ -70,7 +70,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(PickupV1FreightPickupsPostBodyFreightPickupDetailaccountNumber $accountNumber) : self
+    public function setAccountNumber(PickupV1FreightPickupsPostBodyFreightPickupDetailaccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -81,7 +81,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      *
      * @return string
      */
-    public function getRole() : string
+    public function getRole(): string
     {
         return $this->role;
     }
@@ -92,7 +92,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setRole(string $role) : self
+    public function setRole(string $role): self
     {
         $this->initialized['role'] = true;
         $this->role = $role;
@@ -103,7 +103,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      *
      * @return string
      */
-    public function getPayment() : string
+    public function getPayment(): string
     {
         return $this->payment;
     }
@@ -114,7 +114,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setPayment(string $payment) : self
+    public function setPayment(string $payment): self
     {
         $this->initialized['payment'] = true;
         $this->payment = $payment;
@@ -125,7 +125,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      *
      * @return PickupV1FreightPickupsPostBodyFreightPickupDetailsubmittedBy
      */
-    public function getSubmittedBy() : PickupV1FreightPickupsPostBodyFreightPickupDetailsubmittedBy
+    public function getSubmittedBy(): PickupV1FreightPickupsPostBodyFreightPickupDetailsubmittedBy
     {
         return $this->submittedBy;
     }
@@ -136,7 +136,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setSubmittedBy(PickupV1FreightPickupsPostBodyFreightPickupDetailsubmittedBy $submittedBy) : self
+    public function setSubmittedBy(PickupV1FreightPickupsPostBodyFreightPickupDetailsubmittedBy $submittedBy): self
     {
         $this->initialized['submittedBy'] = true;
         $this->submittedBy = $submittedBy;
@@ -147,7 +147,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      *
      * @return list<PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItem>
      */
-    public function getLineItems() : array
+    public function getLineItems(): array
     {
         return $this->lineItems;
     }
@@ -158,7 +158,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setLineItems(array $lineItems) : self
+    public function setLineItems(array $lineItems): self
     {
         $this->initialized['lineItems'] = true;
         $this->lineItems = $lineItems;
@@ -169,7 +169,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      *
      * @return PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBilling
      */
-    public function getAlternateBilling() : PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBilling
+    public function getAlternateBilling(): PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBilling
     {
         return $this->alternateBilling;
     }
@@ -180,7 +180,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setAlternateBilling(PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBilling $alternateBilling) : self
+    public function setAlternateBilling(PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBilling $alternateBilling): self
     {
         $this->initialized['alternateBilling'] = true;
         $this->alternateBilling = $alternateBilling;
@@ -191,7 +191,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      *
      * @return string
      */
-    public function getUserMessage() : string
+    public function getUserMessage(): string
     {
         return $this->userMessage;
     }
@@ -202,7 +202,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setUserMessage(string $userMessage) : self
+    public function setUserMessage(string $userMessage): self
     {
         $this->initialized['userMessage'] = true;
         $this->userMessage = $userMessage;

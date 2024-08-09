@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpec
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpec
      *
      * @return list<string>
      */
-    public function getMaskedData() : array
+    public function getMaskedData(): array
     {
         return $this->maskedData;
     }
@@ -52,7 +52,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpec
      *
      * @return self
      */
-    public function setMaskedData(array $maskedData) : self
+    public function setMaskedData(array $maskedData): self
     {
         $this->initialized['maskedData'] = true;
         $this->maskedData = $maskedData;
@@ -63,7 +63,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpec
      *
      * @return list<ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationCustomerSpecifiedDetailRegulatoryLabelsItem>
      */
-    public function getRegulatoryLabels() : array
+    public function getRegulatoryLabels(): array
     {
         return $this->regulatoryLabels;
     }
@@ -74,7 +74,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpec
      *
      * @return self
      */
-    public function setRegulatoryLabels(array $regulatoryLabels) : self
+    public function setRegulatoryLabels(array $regulatoryLabels): self
     {
         $this->initialized['regulatoryLabels'] = true;
         $this->regulatoryLabels = $regulatoryLabels;
@@ -85,7 +85,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpec
      *
      * @return list<ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationCustomerSpecifiedDetailAdditionalLabelsItem>
      */
-    public function getAdditionalLabels() : array
+    public function getAdditionalLabels(): array
     {
         return $this->additionalLabels;
     }
@@ -96,7 +96,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpec
      *
      * @return self
      */
-    public function setAdditionalLabels(array $additionalLabels) : self
+    public function setAdditionalLabels(array $additionalLabels): self
     {
         $this->initialized['additionalLabels'] = true;
         $this->additionalLabels = $additionalLabels;
@@ -107,7 +107,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpec
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent
      */
-    public function getDocTabContent() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent
+    public function getDocTabContent(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent
     {
         return $this->docTabContent;
     }
@@ -118,7 +118,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpec
      *
      * @return self
      */
-    public function setDocTabContent(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent $docTabContent) : self
+    public function setDocTabContent(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent $docTabContent): self
     {
         $this->initialized['docTabContent'] = true;
         $this->docTabContent = $docTabContent;

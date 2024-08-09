@@ -8,7 +8,7 @@ class PickupV1PickupsPostResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class PickupV1PickupsPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getPickupConfirmationCode() : string
+    public function getPickupConfirmationCode(): string
     {
         return $this->pickupConfirmationCode;
     }
@@ -52,7 +52,7 @@ class PickupV1PickupsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setPickupConfirmationCode(string $pickupConfirmationCode) : self
+    public function setPickupConfirmationCode(string $pickupConfirmationCode): self
     {
         $this->initialized['pickupConfirmationCode'] = true;
         $this->pickupConfirmationCode = $pickupConfirmationCode;
@@ -63,7 +63,7 @@ class PickupV1PickupsPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -74,7 +74,7 @@ class PickupV1PickupsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -85,7 +85,7 @@ class PickupV1PickupsPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getLocation() : string
+    public function getLocation(): string
     {
         return $this->location;
     }
@@ -96,7 +96,7 @@ class PickupV1PickupsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setLocation(string $location) : self
+    public function setLocation(string $location): self
     {
         $this->initialized['location'] = true;
         $this->location = $location;
@@ -107,7 +107,7 @@ class PickupV1PickupsPostResponse200Output extends \ArrayObject
      *
      * @return list<PickupV1PickupsPostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -118,7 +118,7 @@ class PickupV1PickupsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

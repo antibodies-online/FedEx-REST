@@ -8,7 +8,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -137,7 +137,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return LocationV1LocationsPostBodyLocationsSummaryRequestControlParameters
      */
-    public function getLocationsSummaryRequestControlParameters() : LocationV1LocationsPostBodyLocationsSummaryRequestControlParameters
+    public function getLocationsSummaryRequestControlParameters(): LocationV1LocationsPostBodyLocationsSummaryRequestControlParameters
     {
         return $this->locationsSummaryRequestControlParameters;
     }
@@ -148,7 +148,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLocationsSummaryRequestControlParameters(LocationV1LocationsPostBodyLocationsSummaryRequestControlParameters $locationsSummaryRequestControlParameters) : self
+    public function setLocationsSummaryRequestControlParameters(LocationV1LocationsPostBodyLocationsSummaryRequestControlParameters $locationsSummaryRequestControlParameters): self
     {
         $this->initialized['locationsSummaryRequestControlParameters'] = true;
         $this->locationsSummaryRequestControlParameters = $locationsSummaryRequestControlParameters;
@@ -159,7 +159,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return LocationV1LocationsPostBodyConstraints
      */
-    public function getConstraints() : LocationV1LocationsPostBodyConstraints
+    public function getConstraints(): LocationV1LocationsPostBodyConstraints
     {
         return $this->constraints;
     }
@@ -170,7 +170,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setConstraints(LocationV1LocationsPostBodyConstraints $constraints) : self
+    public function setConstraints(LocationV1LocationsPostBodyConstraints $constraints): self
     {
         $this->initialized['constraints'] = true;
         $this->constraints = $constraints;
@@ -181,7 +181,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getLocationSearchCriterion() : string
+    public function getLocationSearchCriterion(): string
     {
         return $this->locationSearchCriterion;
     }
@@ -192,7 +192,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLocationSearchCriterion(string $locationSearchCriterion) : self
+    public function setLocationSearchCriterion(string $locationSearchCriterion): self
     {
         $this->initialized['locationSearchCriterion'] = true;
         $this->locationSearchCriterion = $locationSearchCriterion;
@@ -203,7 +203,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return LocationV1LocationsPostBodyLocation
      */
-    public function getLocation() : LocationV1LocationsPostBodyLocation
+    public function getLocation(): LocationV1LocationsPostBodyLocation
     {
         return $this->location;
     }
@@ -214,7 +214,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLocation(LocationV1LocationsPostBodyLocation $location) : self
+    public function setLocation(LocationV1LocationsPostBodyLocation $location): self
     {
         $this->initialized['location'] = true;
         $this->location = $location;
@@ -225,7 +225,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getPhoneNumber() : string
+    public function getPhoneNumber(): string
     {
         return $this->phoneNumber;
     }
@@ -236,7 +236,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPhoneNumber(string $phoneNumber) : self
+    public function setPhoneNumber(string $phoneNumber): self
     {
         $this->initialized['phoneNumber'] = true;
         $this->phoneNumber = $phoneNumber;
@@ -247,7 +247,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getMultipleMatchesAction() : string
+    public function getMultipleMatchesAction(): string
     {
         return $this->multipleMatchesAction;
     }
@@ -258,7 +258,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setMultipleMatchesAction(string $multipleMatchesAction) : self
+    public function setMultipleMatchesAction(string $multipleMatchesAction): self
     {
         $this->initialized['multipleMatchesAction'] = true;
         $this->multipleMatchesAction = $multipleMatchesAction;
@@ -269,7 +269,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return LocationV1LocationsPostBodySort
      */
-    public function getSort() : LocationV1LocationsPostBodySort
+    public function getSort(): LocationV1LocationsPostBodySort
     {
         return $this->sort;
     }
@@ -280,7 +280,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSort(LocationV1LocationsPostBodySort $sort) : self
+    public function setSort(LocationV1LocationsPostBodySort $sort): self
     {
         $this->initialized['sort'] = true;
         $this->sort = $sort;
@@ -291,7 +291,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return LocationV1LocationsPostBodyTrackingInfo
      */
-    public function getTrackingInfo() : LocationV1LocationsPostBodyTrackingInfo
+    public function getTrackingInfo(): LocationV1LocationsPostBodyTrackingInfo
     {
         return $this->trackingInfo;
     }
@@ -302,7 +302,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingInfo(LocationV1LocationsPostBodyTrackingInfo $trackingInfo) : self
+    public function setTrackingInfo(LocationV1LocationsPostBodyTrackingInfo $trackingInfo): self
     {
         $this->initialized['trackingInfo'] = true;
         $this->trackingInfo = $trackingInfo;
@@ -313,7 +313,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getSameState() : bool
+    public function getSameState(): bool
     {
         return $this->sameState;
     }
@@ -324,7 +324,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSameState(bool $sameState) : self
+    public function setSameState(bool $sameState): self
     {
         $this->initialized['sameState'] = true;
         $this->sameState = $sameState;
@@ -335,7 +335,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getSameCountry() : bool
+    public function getSameCountry(): bool
     {
         return $this->sameCountry;
     }
@@ -346,7 +346,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSameCountry(bool $sameCountry) : self
+    public function setSameCountry(bool $sameCountry): self
     {
         $this->initialized['sameCountry'] = true;
         $this->sameCountry = $sameCountry;
@@ -357,7 +357,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getRedirectToHoldType() : string
+    public function getRedirectToHoldType(): string
     {
         return $this->redirectToHoldType;
     }
@@ -368,7 +368,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRedirectToHoldType(string $redirectToHoldType) : self
+    public function setRedirectToHoldType(string $redirectToHoldType): self
     {
         $this->initialized['redirectToHoldType'] = true;
         $this->redirectToHoldType = $redirectToHoldType;
@@ -379,7 +379,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getLocationAttrTypes() : array
+    public function getLocationAttrTypes(): array
     {
         return $this->locationAttrTypes;
     }
@@ -390,7 +390,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLocationAttrTypes(array $locationAttrTypes) : self
+    public function setLocationAttrTypes(array $locationAttrTypes): self
     {
         $this->initialized['locationAttrTypes'] = true;
         $this->locationAttrTypes = $locationAttrTypes;
@@ -401,7 +401,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return list<LocationV1LocationsPostBodyLocationCapabilitiesItem>
      */
-    public function getLocationCapabilities() : array
+    public function getLocationCapabilities(): array
     {
         return $this->locationCapabilities;
     }
@@ -412,7 +412,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLocationCapabilities(array $locationCapabilities) : self
+    public function setLocationCapabilities(array $locationCapabilities): self
     {
         $this->initialized['locationCapabilities'] = true;
         $this->locationCapabilities = $locationCapabilities;
@@ -423,7 +423,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return list<LocationV1LocationsPostBodyPackageAttributesItem>
      */
-    public function getPackageAttributes() : array
+    public function getPackageAttributes(): array
     {
         return $this->packageAttributes;
     }
@@ -434,7 +434,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPackageAttributes(array $packageAttributes) : self
+    public function setPackageAttributes(array $packageAttributes): self
     {
         $this->initialized['packageAttributes'] = true;
         $this->packageAttributes = $packageAttributes;
@@ -445,7 +445,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getLocationTypes() : array
+    public function getLocationTypes(): array
     {
         return $this->locationTypes;
     }
@@ -456,7 +456,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLocationTypes(array $locationTypes) : self
+    public function setLocationTypes(array $locationTypes): self
     {
         $this->initialized['locationTypes'] = true;
         $this->locationTypes = $locationTypes;
@@ -467,7 +467,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getIncludeHoliday() : bool
+    public function getIncludeHoliday(): bool
     {
         return $this->includeHoliday;
     }
@@ -478,7 +478,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIncludeHoliday(bool $includeHoliday) : self
+    public function setIncludeHoliday(bool $includeHoliday): self
     {
         $this->initialized['includeHoliday'] = true;
         $this->includeHoliday = $includeHoliday;
@@ -489,7 +489,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDropoffTime() : string
+    public function getDropoffTime(): string
     {
         return $this->dropoffTime;
     }
@@ -500,7 +500,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDropoffTime(string $dropoffTime) : self
+    public function setDropoffTime(string $dropoffTime): self
     {
         $this->initialized['dropoffTime'] = true;
         $this->dropoffTime = $dropoffTime;
@@ -511,7 +511,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDropOffServiceType() : string
+    public function getDropOffServiceType(): string
     {
         return $this->dropOffServiceType;
     }
@@ -522,7 +522,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDropOffServiceType(string $dropOffServiceType) : self
+    public function setDropOffServiceType(string $dropOffServiceType): self
     {
         $this->initialized['dropOffServiceType'] = true;
         $this->dropOffServiceType = $dropOffServiceType;
@@ -533,7 +533,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getCarrierCodes() : array
+    public function getCarrierCodes(): array
     {
         return $this->carrierCodes;
     }
@@ -544,7 +544,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCarrierCodes(array $carrierCodes) : self
+    public function setCarrierCodes(array $carrierCodes): self
     {
         $this->initialized['carrierCodes'] = true;
         $this->carrierCodes = $carrierCodes;
@@ -555,7 +555,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getGetCall() : bool
+    public function getGetCall(): bool
     {
         return $this->getCall;
     }
@@ -566,7 +566,7 @@ class LocationV1LocationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setGetCall(bool $getCall) : self
+    public function setGetCall(bool $getCall): self
     {
         $this->initialized['getCall'] = true;
         $this->getCall = $getCall;

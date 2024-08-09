@@ -18,11 +18,11 @@ class GroundPerformEndOfDayCloseNotFoundException extends NotFoundException
         $this->shipV1EndofdayPutResponse404 = $shipV1EndofdayPutResponse404;
         $this->response = $response;
     }
-    public function getShipV1EndofdayPutResponse404() : \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPutResponse404
+    public function getShipV1EndofdayPutResponse404(): \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPutResponse404
     {
         return $this->shipV1EndofdayPutResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

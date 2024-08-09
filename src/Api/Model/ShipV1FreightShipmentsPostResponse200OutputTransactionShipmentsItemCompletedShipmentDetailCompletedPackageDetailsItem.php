@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return int
      */
-    public function getSequenceNumber() : int
+    public function getSequenceNumber(): int
     {
         return $this->sequenceNumber;
     }
@@ -82,7 +82,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setSequenceNumber(int $sequenceNumber) : self
+    public function setSequenceNumber(int $sequenceNumber): self
     {
         $this->initialized['sequenceNumber'] = true;
         $this->sequenceNumber = $sequenceNumber;
@@ -93,7 +93,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemOperationalDetail
      */
-    public function getOperationalDetail() : ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemOperationalDetail
+    public function getOperationalDetail(): ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemOperationalDetail
     {
         return $this->operationalDetail;
     }
@@ -104,7 +104,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setOperationalDetail(ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemOperationalDetail $operationalDetail) : self
+    public function setOperationalDetail(ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemOperationalDetail $operationalDetail): self
     {
         $this->initialized['operationalDetail'] = true;
         $this->operationalDetail = $operationalDetail;
@@ -115,7 +115,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return string
      */
-    public function getSignatureOption() : string
+    public function getSignatureOption(): string
     {
         return $this->signatureOption;
     }
@@ -126,7 +126,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setSignatureOption(string $signatureOption) : self
+    public function setSignatureOption(string $signatureOption): self
     {
         $this->initialized['signatureOption'] = true;
         $this->signatureOption = $signatureOption;
@@ -137,7 +137,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return list<ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemTrackingIdsItem>
      */
-    public function getTrackingIds() : array
+    public function getTrackingIds(): array
     {
         return $this->trackingIds;
     }
@@ -148,7 +148,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setTrackingIds(array $trackingIds) : self
+    public function setTrackingIds(array $trackingIds): self
     {
         $this->initialized['trackingIds'] = true;
         $this->trackingIds = $trackingIds;
@@ -159,7 +159,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return int
      */
-    public function getGroupNumber() : int
+    public function getGroupNumber(): int
     {
         return $this->groupNumber;
     }
@@ -170,7 +170,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setGroupNumber(int $groupNumber) : self
+    public function setGroupNumber(int $groupNumber): self
     {
         $this->initialized['groupNumber'] = true;
         $this->groupNumber = $groupNumber;
@@ -181,7 +181,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return string
      */
-    public function getOversizeClass() : string
+    public function getOversizeClass(): string
     {
         return $this->oversizeClass;
     }
@@ -192,7 +192,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setOversizeClass(string $oversizeClass) : self
+    public function setOversizeClass(string $oversizeClass): self
     {
         $this->initialized['oversizeClass'] = true;
         $this->oversizeClass = $oversizeClass;
@@ -203,7 +203,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemPackageRating
      */
-    public function getPackageRating() : ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemPackageRating
+    public function getPackageRating(): ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemPackageRating
     {
         return $this->packageRating;
     }
@@ -214,7 +214,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setPackageRating(ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemPackageRating $packageRating) : self
+    public function setPackageRating(ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemPackageRating $packageRating): self
     {
         $this->initialized['packageRating'] = true;
         $this->packageRating = $packageRating;
@@ -225,7 +225,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemDryIceWeight
      */
-    public function getDryIceWeight() : ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemDryIceWeight
+    public function getDryIceWeight(): ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemDryIceWeight
     {
         return $this->dryIceWeight;
     }
@@ -236,7 +236,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setDryIceWeight(ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemDryIceWeight $dryIceWeight) : self
+    public function setDryIceWeight(ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemDryIceWeight $dryIceWeight): self
     {
         $this->initialized['dryIceWeight'] = true;
         $this->dryIceWeight = $dryIceWeight;
@@ -247,7 +247,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetail
      */
-    public function getHazardousPackageDetail() : ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetail
+    public function getHazardousPackageDetail(): ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetail
     {
         return $this->hazardousPackageDetail;
     }
@@ -258,7 +258,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setHazardousPackageDetail(ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetail $hazardousPackageDetail) : self
+    public function setHazardousPackageDetail(ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetail $hazardousPackageDetail): self
     {
         $this->initialized['hazardousPackageDetail'] = true;
         $this->hazardousPackageDetail = $hazardousPackageDetail;

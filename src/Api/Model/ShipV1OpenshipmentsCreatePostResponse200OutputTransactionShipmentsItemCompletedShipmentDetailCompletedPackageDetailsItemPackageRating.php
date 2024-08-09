@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return float
      */
-    public function getEffectiveNetDiscount() : float
+    public function getEffectiveNetDiscount(): float
     {
         return $this->effectiveNetDiscount;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setEffectiveNetDiscount(float $effectiveNetDiscount) : self
+    public function setEffectiveNetDiscount(float $effectiveNetDiscount): self
     {
         $this->initialized['effectiveNetDiscount'] = true;
         $this->effectiveNetDiscount = $effectiveNetDiscount;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getActualRateType() : string
+    public function getActualRateType(): string
     {
         return $this->actualRateType;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setActualRateType(string $actualRateType) : self
+    public function setActualRateType(string $actualRateType): self
     {
         $this->initialized['actualRateType'] = true;
         $this->actualRateType = $actualRateType;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return list<ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemPackageRatingPackageRateDetailsItem>
      */
-    public function getPackageRateDetails() : array
+    public function getPackageRateDetails(): array
     {
         return $this->packageRateDetails;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setPackageRateDetails(array $packageRateDetails) : self
+    public function setPackageRateDetails(array $packageRateDetails): self
     {
         $this->initialized['packageRateDetails'] = true;
         $this->packageRateDetails = $packageRateDetails;

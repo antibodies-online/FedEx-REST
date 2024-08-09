@@ -8,7 +8,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailAdrLicenseLicenseOrPermitDetail
      */
-    public function getLicenseOrPermitDetail() : ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailAdrLicenseLicenseOrPermitDetail
+    public function getLicenseOrPermitDetail(): ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailAdrLicenseLicenseOrPermitDetail
     {
         return $this->licenseOrPermitDetail;
     }
@@ -34,7 +34,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setLicenseOrPermitDetail(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailAdrLicenseLicenseOrPermitDetail $licenseOrPermitDetail) : self
+    public function setLicenseOrPermitDetail(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailAdrLicenseLicenseOrPermitDetail $licenseOrPermitDetail): self
     {
         $this->initialized['licenseOrPermitDetail'] = true;
         $this->licenseOrPermitDetail = $licenseOrPermitDetail;

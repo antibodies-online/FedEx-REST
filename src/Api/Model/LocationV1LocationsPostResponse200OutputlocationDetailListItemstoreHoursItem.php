@@ -8,7 +8,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursIt
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursIt
      *
      * @return string
      */
-    public function getDayofweek() : string
+    public function getDayofweek(): string
     {
         return $this->dayofweek;
     }
@@ -58,7 +58,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursIt
      *
      * @return self
      */
-    public function setDayofweek(string $dayofweek) : self
+    public function setDayofweek(string $dayofweek): self
     {
         $this->initialized['dayofweek'] = true;
         $this->dayofweek = $dayofweek;
@@ -69,7 +69,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursIt
      *
      * @return string
      */
-    public function getOperationalHoursType() : string
+    public function getOperationalHoursType(): string
     {
         return $this->operationalHoursType;
     }
@@ -80,7 +80,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursIt
      *
      * @return self
      */
-    public function setOperationalHoursType(string $operationalHoursType) : self
+    public function setOperationalHoursType(string $operationalHoursType): self
     {
         $this->initialized['operationalHoursType'] = true;
         $this->operationalHoursType = $operationalHoursType;
@@ -91,7 +91,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursIt
      *
      * @return list<LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursItemOperationalHoursItem>
      */
-    public function getOperationalHours() : array
+    public function getOperationalHours(): array
     {
         return $this->operationalHours;
     }
@@ -102,7 +102,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursIt
      *
      * @return self
      */
-    public function setOperationalHours(array $operationalHours) : self
+    public function setOperationalHours(array $operationalHours): self
     {
         $this->initialized['operationalHours'] = true;
         $this->operationalHours = $operationalHours;
@@ -113,7 +113,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursIt
      *
      * @return string
      */
-    public function getExceptionalHoursType() : string
+    public function getExceptionalHoursType(): string
     {
         return $this->exceptionalHoursType;
     }
@@ -124,7 +124,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursIt
      *
      * @return self
      */
-    public function setExceptionalHoursType(string $exceptionalHoursType) : self
+    public function setExceptionalHoursType(string $exceptionalHoursType): self
     {
         $this->initialized['exceptionalHoursType'] = true;
         $this->exceptionalHoursType = $exceptionalHoursType;
@@ -135,7 +135,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursIt
      *
      * @return list<LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursItemExceptionalHoursItem>
      */
-    public function getExceptionalHours() : array
+    public function getExceptionalHours(): array
     {
         return $this->exceptionalHours;
     }
@@ -146,7 +146,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursIt
      *
      * @return self
      */
-    public function setExceptionalHours(array $exceptionalHours) : self
+    public function setExceptionalHours(array $exceptionalHours): self
     {
         $this->initialized['exceptionalHours'] = true;
         $this->exceptionalHours = $exceptionalHours;

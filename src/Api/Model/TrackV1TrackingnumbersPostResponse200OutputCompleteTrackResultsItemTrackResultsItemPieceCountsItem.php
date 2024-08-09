@@ -8,7 +8,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getCount() : string
+    public function getCount(): string
     {
         return $this->count;
     }
@@ -46,7 +46,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setCount(string $count) : self
+    public function setCount(string $count): self
     {
         $this->initialized['count'] = true;
         $this->count = $count;
@@ -57,7 +57,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -68,7 +68,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -79,7 +79,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -90,7 +90,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;

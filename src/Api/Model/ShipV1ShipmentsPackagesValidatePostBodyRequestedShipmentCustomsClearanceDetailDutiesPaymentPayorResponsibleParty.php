@@ -8,7 +8,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAddress
      */
-    public function getAddress() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAddress
+    public function getAddress(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAddress
     {
         return $this->address;
     }
@@ -52,7 +52,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return self
      */
-    public function setAddress(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAddress $address) : self
+    public function setAddress(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -63,7 +63,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyContact
      */
-    public function getContact() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyContact
+    public function getContact(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyContact
     {
         return $this->contact;
     }
@@ -74,7 +74,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return self
      */
-    public function setContact(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyContact $contact) : self
+    public function setContact(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -85,7 +85,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAccountNumber
      */
-    public function getAccountNumber() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAccountNumber
+    public function getAccountNumber(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -96,7 +96,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -107,7 +107,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return list<ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyTinsItem>
      */
-    public function getTins() : array
+    public function getTins(): array
     {
         return $this->tins;
     }
@@ -118,7 +118,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return self
      */
-    public function setTins(array $tins) : self
+    public function setTins(array $tins): self
     {
         $this->initialized['tins'] = true;
         $this->tins = $tins;

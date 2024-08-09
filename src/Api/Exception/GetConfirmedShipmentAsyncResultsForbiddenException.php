@@ -18,11 +18,11 @@ class GetConfirmedShipmentAsyncResultsForbiddenException extends ForbiddenExcept
         $this->shipV1ShipmentsResultsPostResponse403 = $shipV1ShipmentsResultsPostResponse403;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsResultsPostResponse403() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsResultsPostResponse403
+    public function getShipV1ShipmentsResultsPostResponse403(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsResultsPostResponse403
     {
         return $this->shipV1ShipmentsResultsPostResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return string
      */
-    public function getQuantity() : string
+    public function getQuantity(): string
     {
         return $this->quantity;
     }
@@ -88,7 +88,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return self
      */
-    public function setQuantity(string $quantity) : self
+    public function setQuantity(string $quantity): self
     {
         $this->initialized['quantity'] = true;
         $this->quantity = $quantity;
@@ -99,7 +99,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return string
      */
-    public function getQuantityUOM() : string
+    public function getQuantityUOM(): string
     {
         return $this->quantityUOM;
     }
@@ -110,7 +110,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return self
      */
-    public function setQuantityUOM(string $quantityUOM) : self
+    public function setQuantityUOM(string $quantityUOM): self
     {
         $this->initialized['quantityUOM'] = true;
         $this->quantityUOM = $quantityUOM;
@@ -121,7 +121,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemCustomsValue
      */
-    public function getCustomsValue() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemCustomsValue
+    public function getCustomsValue(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemCustomsValue
     {
         return $this->customsValue;
     }
@@ -132,7 +132,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return self
      */
-    public function setCustomsValue(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemCustomsValue $customsValue) : self
+    public function setCustomsValue(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemCustomsValue $customsValue): self
     {
         $this->initialized['customsValue'] = true;
         $this->customsValue = $customsValue;
@@ -143,7 +143,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return string
      */
-    public function getCountryOfManufacture() : string
+    public function getCountryOfManufacture(): string
     {
         return $this->countryOfManufacture;
     }
@@ -154,7 +154,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return self
      */
-    public function setCountryOfManufacture(string $countryOfManufacture) : self
+    public function setCountryOfManufacture(string $countryOfManufacture): self
     {
         $this->initialized['countryOfManufacture'] = true;
         $this->countryOfManufacture = $countryOfManufacture;
@@ -165,7 +165,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -176,7 +176,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -187,7 +187,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return string
      */
-    public function getHarmonizedCode() : string
+    public function getHarmonizedCode(): string
     {
         return $this->harmonizedCode;
     }
@@ -198,7 +198,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return self
      */
-    public function setHarmonizedCode(string $harmonizedCode) : self
+    public function setHarmonizedCode(string $harmonizedCode): self
     {
         $this->initialized['harmonizedCode'] = true;
         $this->harmonizedCode = $harmonizedCode;
@@ -209,7 +209,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -220,7 +220,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -231,7 +231,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemWeight
      */
-    public function getWeight() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemWeight
+    public function getWeight(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemWeight
     {
         return $this->weight;
     }
@@ -242,7 +242,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return self
      */
-    public function setWeight(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemWeight $weight) : self
+    public function setWeight(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemWeight $weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -253,7 +253,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return int
      */
-    public function getCommodityId() : int
+    public function getCommodityId(): int
     {
         return $this->commodityId;
     }
@@ -264,7 +264,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return self
      */
-    public function setCommodityId(int $commodityId) : self
+    public function setCommodityId(int $commodityId): self
     {
         $this->initialized['commodityId'] = true;
         $this->commodityId = $commodityId;
@@ -275,7 +275,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemAdditionalMeasures
      */
-    public function getAdditionalMeasures() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemAdditionalMeasures
+    public function getAdditionalMeasures(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemAdditionalMeasures
     {
         return $this->additionalMeasures;
     }
@@ -286,7 +286,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return self
      */
-    public function setAdditionalMeasures(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemAdditionalMeasures $additionalMeasures) : self
+    public function setAdditionalMeasures(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommoditiesItemAdditionalMeasures $additionalMeasures): self
     {
         $this->initialized['additionalMeasures'] = true;
         $this->additionalMeasures = $additionalMeasures;

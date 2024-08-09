@@ -8,7 +8,7 @@ class DocumentsV1EtdsUploadPostResponse201Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class DocumentsV1EtdsUploadPostResponse201Output extends \ArrayObject
      *
      * @return DocumentsV1EtdsUploadPostResponse201OutputMeta
      */
-    public function getMeta() : DocumentsV1EtdsUploadPostResponse201OutputMeta
+    public function getMeta(): DocumentsV1EtdsUploadPostResponse201OutputMeta
     {
         return $this->meta;
     }
@@ -34,7 +34,7 @@ class DocumentsV1EtdsUploadPostResponse201Output extends \ArrayObject
      *
      * @return self
      */
-    public function setMeta(DocumentsV1EtdsUploadPostResponse201OutputMeta $meta) : self
+    public function setMeta(DocumentsV1EtdsUploadPostResponse201OutputMeta $meta): self
     {
         $this->initialized['meta'] = true;
         $this->meta = $meta;

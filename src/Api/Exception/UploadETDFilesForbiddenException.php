@@ -18,11 +18,11 @@ class UploadETDFilesForbiddenException extends ForbiddenException
         $this->documentsV1EtdsUploadPostResponse403 = $documentsV1EtdsUploadPostResponse403;
         $this->response = $response;
     }
-    public function getDocumentsV1EtdsUploadPostResponse403() : \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse403
+    public function getDocumentsV1EtdsUploadPostResponse403(): \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse403
     {
         return $this->documentsV1EtdsUploadPostResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

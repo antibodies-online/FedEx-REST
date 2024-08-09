@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getDayOfWeek() : string
+    public function getDayOfWeek(): string
     {
         return $this->dayOfWeek;
     }
@@ -46,7 +46,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setDayOfWeek(string $dayOfWeek) : self
+    public function setDayOfWeek(string $dayOfWeek): self
     {
         $this->initialized['dayOfWeek'] = true;
         $this->dayOfWeek = $dayOfWeek;
@@ -57,7 +57,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getTime() : string
+    public function getTime(): string
     {
         return $this->time;
     }
@@ -68,7 +68,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setTime(string $time) : self
+    public function setTime(string $time): self
     {
         $this->initialized['time'] = true;
         $this->time = $time;
@@ -79,7 +79,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getDay() : string
+    public function getDay(): string
     {
         return $this->day;
     }
@@ -90,7 +90,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setDay(string $day) : self
+    public function setDay(string $day): self
     {
         $this->initialized['day'] = true;
         $this->day = $day;

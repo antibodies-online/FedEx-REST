@@ -18,11 +18,11 @@ class TrackByReferencesUnauthorizedException extends UnauthorizedException
         $this->trackV1ReferencenumbersPostResponse401 = $trackV1ReferencenumbersPostResponse401;
         $this->response = $response;
     }
-    public function getTrackV1ReferencenumbersPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\TrackV1ReferencenumbersPostResponse401
+    public function getTrackV1ReferencenumbersPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\TrackV1ReferencenumbersPostResponse401
     {
         return $this->trackV1ReferencenumbersPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

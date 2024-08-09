@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShip
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShip
      *
      * @return string
      */
-    public function getFromCurrency() : string
+    public function getFromCurrency(): string
     {
         return $this->fromCurrency;
     }
@@ -46,7 +46,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShip
      *
      * @return self
      */
-    public function setFromCurrency(string $fromCurrency) : self
+    public function setFromCurrency(string $fromCurrency): self
     {
         $this->initialized['fromCurrency'] = true;
         $this->fromCurrency = $fromCurrency;
@@ -57,7 +57,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShip
      *
      * @return string
      */
-    public function getIntoCurrency() : string
+    public function getIntoCurrency(): string
     {
         return $this->intoCurrency;
     }
@@ -68,7 +68,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShip
      *
      * @return self
      */
-    public function setIntoCurrency(string $intoCurrency) : self
+    public function setIntoCurrency(string $intoCurrency): self
     {
         $this->initialized['intoCurrency'] = true;
         $this->intoCurrency = $intoCurrency;
@@ -79,7 +79,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShip
      *
      * @return float
      */
-    public function getRate() : float
+    public function getRate(): float
     {
         return $this->rate;
     }
@@ -90,7 +90,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShip
      *
      * @return self
      */
-    public function setRate(float $rate) : self
+    public function setRate(float $rate): self
     {
         $this->initialized['rate'] = true;
         $this->rate = $rate;

@@ -8,7 +8,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBodyCompletedTagDetail extends \Array
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBodyCompletedTagDetail extends \Array
      *
      * @return string
      */
-    public function getConfirmationNumber() : string
+    public function getConfirmationNumber(): string
     {
         return $this->confirmationNumber;
     }
@@ -46,7 +46,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBodyCompletedTagDetail extends \Array
      *
      * @return self
      */
-    public function setConfirmationNumber(string $confirmationNumber) : self
+    public function setConfirmationNumber(string $confirmationNumber): self
     {
         $this->initialized['confirmationNumber'] = true;
         $this->confirmationNumber = $confirmationNumber;
@@ -57,7 +57,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBodyCompletedTagDetail extends \Array
      *
      * @return string
      */
-    public function getLocation() : string
+    public function getLocation(): string
     {
         return $this->location;
     }
@@ -68,7 +68,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBodyCompletedTagDetail extends \Array
      *
      * @return self
      */
-    public function setLocation(string $location) : self
+    public function setLocation(string $location): self
     {
         $this->initialized['location'] = true;
         $this->location = $location;
@@ -79,7 +79,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBodyCompletedTagDetail extends \Array
      *
      * @return string
      */
-    public function getDispatchDate() : string
+    public function getDispatchDate(): string
     {
         return $this->dispatchDate;
     }
@@ -90,7 +90,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBodyCompletedTagDetail extends \Array
      *
      * @return self
      */
-    public function setDispatchDate(string $dispatchDate) : self
+    public function setDispatchDate(string $dispatchDate): self
     {
         $this->initialized['dispatchDate'] = true;
         $this->dispatchDate = $dispatchDate;

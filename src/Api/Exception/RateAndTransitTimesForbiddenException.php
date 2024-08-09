@@ -18,11 +18,11 @@ class RateAndTransitTimesForbiddenException extends ForbiddenException
         $this->rateV1RatesQuotesPostResponse403 = $rateV1RatesQuotesPostResponse403;
         $this->response = $response;
     }
-    public function getRateV1RatesQuotesPostResponse403() : \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse403
+    public function getRateV1RatesQuotesPostResponse403(): \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse403
     {
         return $this->rateV1RatesQuotesPostResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesDeliveryOnInvoiceAcceptanceDetailRecipient
      */
-    public function getRecipient() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesDeliveryOnInvoiceAcceptanceDetailRecipient
+    public function getRecipient(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesDeliveryOnInvoiceAcceptanceDetailRecipient
     {
         return $this->recipient;
     }
@@ -34,7 +34,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setRecipient(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesDeliveryOnInvoiceAcceptanceDetailRecipient $recipient) : self
+    public function setRecipient(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentSpecialServicesDeliveryOnInvoiceAcceptanceDetailRecipient $recipient): self
     {
         $this->initialized['recipient'] = true;
         $this->recipient = $recipient;

@@ -18,11 +18,11 @@ class TrackMultiplePieceShipmentInternalServerErrorException extends InternalSer
         $this->trackV1AssociatedshipmentsPostResponse500 = $trackV1AssociatedshipmentsPostResponse500;
         $this->response = $response;
     }
-    public function getTrackV1AssociatedshipmentsPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\TrackV1AssociatedshipmentsPostResponse500
+    public function getTrackV1AssociatedshipmentsPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\TrackV1AssociatedshipmentsPostResponse500
     {
         return $this->trackV1AssociatedshipmentsPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

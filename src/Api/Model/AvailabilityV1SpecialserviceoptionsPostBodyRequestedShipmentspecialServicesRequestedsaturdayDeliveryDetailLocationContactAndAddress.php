@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetailLocationContactAndAddressAddress
      */
-    public function getAddress() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetailLocationContactAndAddressAddress
+    public function getAddress(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetailLocationContactAndAddressAddress
     {
         return $this->address;
     }
@@ -40,7 +40,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setAddress(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetailLocationContactAndAddressAddress $address) : self
+    public function setAddress(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetailLocationContactAndAddressAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -51,7 +51,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetailLocationContactAndAddressContact
      */
-    public function getContact() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetailLocationContactAndAddressContact
+    public function getContact(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetailLocationContactAndAddressContact
     {
         return $this->contact;
     }
@@ -62,7 +62,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setContact(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetailLocationContactAndAddressContact $contact) : self
+    public function setContact(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetailLocationContactAndAddressContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;

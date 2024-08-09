@@ -8,7 +8,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryDocumentsLocalizedAttributesLocalization
      */
-    public function getLocalization() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryDocumentsLocalizedAttributesLocalization
+    public function getLocalization(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryDocumentsLocalizedAttributesLocalization
     {
         return $this->localization;
     }
@@ -46,7 +46,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setLocalization(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryDocumentsLocalizedAttributesLocalization $localization) : self
+    public function setLocalization(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryDocumentsLocalizedAttributesLocalization $localization): self
     {
         $this->initialized['localization'] = true;
         $this->localization = $localization;
@@ -57,7 +57,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -68,7 +68,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -79,7 +79,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -90,7 +90,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;

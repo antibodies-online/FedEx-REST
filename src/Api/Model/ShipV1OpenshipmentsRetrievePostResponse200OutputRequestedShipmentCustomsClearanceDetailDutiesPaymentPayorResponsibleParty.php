@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAddress
      */
-    public function getAddress() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAddress
+    public function getAddress(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAddress
     {
         return $this->address;
     }
@@ -52,7 +52,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setAddress(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAddress $address) : self
+    public function setAddress(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -63,7 +63,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyContact
      */
-    public function getContact() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyContact
+    public function getContact(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyContact
     {
         return $this->contact;
     }
@@ -74,7 +74,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setContact(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyContact $contact) : self
+    public function setContact(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -85,7 +85,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAccountNumber
      */
-    public function getAccountNumber() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAccountNumber
+    public function getAccountNumber(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -96,7 +96,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -107,7 +107,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return list<ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsiblePartyTinsItem>
      */
-    public function getTins() : array
+    public function getTins(): array
     {
         return $this->tins;
     }
@@ -118,7 +118,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setTins(array $tins) : self
+    public function setTins(array $tins): self
     {
         $this->initialized['tins'] = true;
         $this->tins = $tins;

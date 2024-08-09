@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return list<ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemOperationalDetailBarcodesBinaryBarcodesItem>
      */
-    public function getBinaryBarcodes() : array
+    public function getBinaryBarcodes(): array
     {
         return $this->binaryBarcodes;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setBinaryBarcodes(array $binaryBarcodes) : self
+    public function setBinaryBarcodes(array $binaryBarcodes): self
     {
         $this->initialized['binaryBarcodes'] = true;
         $this->binaryBarcodes = $binaryBarcodes;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return list<ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemOperationalDetailBarcodesStringBarcodesItem>
      */
-    public function getStringBarcodes() : array
+    public function getStringBarcodes(): array
     {
         return $this->stringBarcodes;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setStringBarcodes(array $stringBarcodes) : self
+    public function setStringBarcodes(array $stringBarcodes): self
     {
         $this->initialized['stringBarcodes'] = true;
         $this->stringBarcodes = $stringBarcodes;

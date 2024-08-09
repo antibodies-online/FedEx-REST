@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpec
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpec
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationPrintedLabelOrigincontact
      */
-    public function getContact() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationPrintedLabelOrigincontact
+    public function getContact(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationPrintedLabelOrigincontact
     {
         return $this->contact;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpec
      *
      * @return self
      */
-    public function setContact(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationPrintedLabelOrigincontact $contact) : self
+    public function setContact(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationPrintedLabelOrigincontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpec
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationPrintedLabelOriginaddress
      */
-    public function getAddress() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationPrintedLabelOriginaddress
+    public function getAddress(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationPrintedLabelOriginaddress
     {
         return $this->address;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpec
      *
      * @return self
      */
-    public function setAddress(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationPrintedLabelOriginaddress $address) : self
+    public function setAddress(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentLabelSpecificationPrintedLabelOriginaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

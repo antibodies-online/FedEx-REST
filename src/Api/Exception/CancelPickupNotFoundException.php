@@ -18,11 +18,11 @@ class CancelPickupNotFoundException extends NotFoundException
         $this->pickupV1PickupsCancelPutResponse404 = $pickupV1PickupsCancelPutResponse404;
         $this->response = $response;
     }
-    public function getPickupV1PickupsCancelPutResponse404() : \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsCancelPutResponse404
+    public function getPickupV1PickupsCancelPutResponse404(): \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsCancelPutResponse404
     {
         return $this->pickupV1PickupsCancelPutResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return string
      */
-    public function getCustomText() : string
+    public function getCustomText(): string
     {
         return $this->customText;
     }
@@ -40,7 +40,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return self
      */
-    public function setCustomText(string $customText) : self
+    public function setCustomText(string $customText): self
     {
         $this->initialized['customText'] = true;
         $this->customText = $customText;
@@ -51,7 +51,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationReturnInstructionsDetailDocumentFormat
      */
-    public function getDocumentFormat() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationReturnInstructionsDetailDocumentFormat
+    public function getDocumentFormat(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationReturnInstructionsDetailDocumentFormat
     {
         return $this->documentFormat;
     }
@@ -62,7 +62,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSp
      *
      * @return self
      */
-    public function setDocumentFormat(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationReturnInstructionsDetailDocumentFormat $documentFormat) : self
+    public function setDocumentFormat(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippingDocumentSpecificationReturnInstructionsDetailDocumentFormat $documentFormat): self
     {
         $this->initialized['documentFormat'] = true;
         $this->documentFormat = $documentFormat;

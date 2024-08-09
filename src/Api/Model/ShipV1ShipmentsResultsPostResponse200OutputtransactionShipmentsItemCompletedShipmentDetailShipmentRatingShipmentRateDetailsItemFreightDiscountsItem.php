@@ -8,7 +8,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return float
      */
-    public function getAmount() : float
+    public function getAmount(): float
     {
         return $this->amount;
     }
@@ -52,7 +52,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setAmount(float $amount) : self
+    public function setAmount(float $amount): self
     {
         $this->initialized['amount'] = true;
         $this->amount = $amount;
@@ -63,7 +63,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return string
      */
-    public function getRateDiscountType() : string
+    public function getRateDiscountType(): string
     {
         return $this->rateDiscountType;
     }
@@ -74,7 +74,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setRateDiscountType(string $rateDiscountType) : self
+    public function setRateDiscountType(string $rateDiscountType): self
     {
         $this->initialized['rateDiscountType'] = true;
         $this->rateDiscountType = $rateDiscountType;
@@ -85,7 +85,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return float
      */
-    public function getPercent() : float
+    public function getPercent(): float
     {
         return $this->percent;
     }
@@ -96,7 +96,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setPercent(float $percent) : self
+    public function setPercent(float $percent): self
     {
         $this->initialized['percent'] = true;
         $this->percent = $percent;
@@ -107,7 +107,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -118,7 +118,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;

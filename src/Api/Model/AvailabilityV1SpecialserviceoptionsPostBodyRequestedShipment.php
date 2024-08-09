@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -91,7 +91,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipper
      */
-    public function getShipper() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipper
+    public function getShipper(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipper
     {
         return $this->shipper;
     }
@@ -102,7 +102,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return self
      */
-    public function setShipper(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipper $shipper) : self
+    public function setShipper(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipper $shipper): self
     {
         $this->initialized['shipper'] = true;
         $this->shipper = $shipper;
@@ -113,7 +113,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrecipient
      */
-    public function getRecipient() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrecipient
+    public function getRecipient(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrecipient
     {
         return $this->recipient;
     }
@@ -124,7 +124,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return self
      */
-    public function setRecipient(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrecipient $recipient) : self
+    public function setRecipient(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrecipient $recipient): self
     {
         $this->initialized['recipient'] = true;
         $this->recipient = $recipient;
@@ -135,7 +135,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -146,7 +146,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -157,7 +157,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return string
      */
-    public function getPackagingType() : string
+    public function getPackagingType(): string
     {
         return $this->packagingType;
     }
@@ -168,7 +168,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return self
      */
-    public function setPackagingType(string $packagingType) : self
+    public function setPackagingType(string $packagingType): self
     {
         $this->initialized['packagingType'] = true;
         $this->packagingType = $packagingType;
@@ -179,7 +179,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return string
      */
-    public function getShipDateStamp() : string
+    public function getShipDateStamp(): string
     {
         return $this->shipDateStamp;
     }
@@ -190,7 +190,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return self
      */
-    public function setShipDateStamp(string $shipDateStamp) : self
+    public function setShipDateStamp(string $shipDateStamp): self
     {
         $this->initialized['shipDateStamp'] = true;
         $this->shipDateStamp = $shipDateStamp;
@@ -201,7 +201,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return list<AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItem>
      */
-    public function getRequestedPackageLineItems() : array
+    public function getRequestedPackageLineItems(): array
     {
         return $this->requestedPackageLineItems;
     }
@@ -212,7 +212,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return self
      */
-    public function setRequestedPackageLineItems(array $requestedPackageLineItems) : self
+    public function setRequestedPackageLineItems(array $requestedPackageLineItems): self
     {
         $this->initialized['requestedPackageLineItems'] = true;
         $this->requestedPackageLineItems = $requestedPackageLineItems;
@@ -223,7 +223,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return string
      */
-    public function getDropoffType() : string
+    public function getDropoffType(): string
     {
         return $this->dropoffType;
     }
@@ -234,7 +234,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return self
      */
-    public function setDropoffType(string $dropoffType) : self
+    public function setDropoffType(string $dropoffType): self
     {
         $this->initialized['dropoffType'] = true;
         $this->dropoffType = $dropoffType;
@@ -247,7 +247,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
     *
     * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentvariableHandlingChargeDetail
     */
-    public function getVariableHandlingChargeDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentvariableHandlingChargeDetail
+    public function getVariableHandlingChargeDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentvariableHandlingChargeDetail
     {
         return $this->variableHandlingChargeDetail;
     }
@@ -260,7 +260,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
     *
     * @return self
     */
-    public function setVariableHandlingChargeDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentvariableHandlingChargeDetail $variableHandlingChargeDetail) : self
+    public function setVariableHandlingChargeDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentvariableHandlingChargeDetail $variableHandlingChargeDetail): self
     {
         $this->initialized['variableHandlingChargeDetail'] = true;
         $this->variableHandlingChargeDetail = $variableHandlingChargeDetail;
@@ -271,7 +271,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetail
      */
-    public function getFreightShipmentDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetail
+    public function getFreightShipmentDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetail
     {
         return $this->freightShipmentDetail;
     }
@@ -282,7 +282,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return self
      */
-    public function setFreightShipmentDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetail $freightShipmentDetail) : self
+    public function setFreightShipmentDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetail $freightShipmentDetail): self
     {
         $this->initialized['freightShipmentDetail'] = true;
         $this->freightShipmentDetail = $freightShipmentDetail;
@@ -293,7 +293,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequested
      */
-    public function getSpecialServicesRequested() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequested
+    public function getSpecialServicesRequested(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequested
     {
         return $this->specialServicesRequested;
     }
@@ -304,7 +304,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return self
      */
-    public function setSpecialServicesRequested(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequested $specialServicesRequested) : self
+    public function setSpecialServicesRequested(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequested $specialServicesRequested): self
     {
         $this->initialized['specialServicesRequested'] = true;
         $this->specialServicesRequested = $specialServicesRequested;
@@ -315,7 +315,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return string
      */
-    public function getPickupType() : string
+    public function getPickupType(): string
     {
         return $this->pickupType;
     }
@@ -326,7 +326,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return self
      */
-    public function setPickupType(string $pickupType) : self
+    public function setPickupType(string $pickupType): self
     {
         $this->initialized['pickupType'] = true;
         $this->pickupType = $pickupType;
@@ -337,7 +337,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return string
      */
-    public function getShippingDocumentSpecification() : string
+    public function getShippingDocumentSpecification(): string
     {
         return $this->shippingDocumentSpecification;
     }
@@ -348,7 +348,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment extends \Arra
      *
      * @return self
      */
-    public function setShippingDocumentSpecification(string $shippingDocumentSpecification) : self
+    public function setShippingDocumentSpecification(string $shippingDocumentSpecification): self
     {
         $this->initialized['shippingDocumentSpecification'] = true;
         $this->shippingDocumentSpecification = $shippingDocumentSpecification;

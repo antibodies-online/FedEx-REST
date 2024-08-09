@@ -8,7 +8,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetail extends \Array
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetail extends \Array
      *
      * @return list<TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItem>
      */
-    public function getTrackingNotifications() : array
+    public function getTrackingNotifications(): array
     {
         return $this->trackingNotifications;
     }
@@ -46,7 +46,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetail extends \Array
      *
      * @return self
      */
-    public function setTrackingNotifications(array $trackingNotifications) : self
+    public function setTrackingNotifications(array $trackingNotifications): self
     {
         $this->initialized['trackingNotifications'] = true;
         $this->trackingNotifications = $trackingNotifications;
@@ -57,7 +57,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetail extends \Array
      *
      * @return string
      */
-    public function getPersonalMessage() : string
+    public function getPersonalMessage(): string
     {
         return $this->personalMessage;
     }
@@ -68,7 +68,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetail extends \Array
      *
      * @return self
      */
-    public function setPersonalMessage(string $personalMessage) : self
+    public function setPersonalMessage(string $personalMessage): self
     {
         $this->initialized['personalMessage'] = true;
         $this->personalMessage = $personalMessage;
@@ -90,7 +90,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetail extends \Array
      *
      * @return self
      */
-    public function setSupportHTML($supportHTML) : self
+    public function setSupportHTML($supportHTML): self
     {
         $this->initialized['supportHTML'] = true;
         $this->supportHTML = $supportHTML;

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailBr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailBr
      *
      * @return ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailBrokersItemBroker
      */
-    public function getBroker() : ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailBrokersItemBroker
+    public function getBroker(): ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailBrokersItemBroker
     {
         return $this->broker;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailBr
      *
      * @return self
      */
-    public function setBroker(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailBrokersItemBroker $broker) : self
+    public function setBroker(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailBrokersItemBroker $broker): self
     {
         $this->initialized['broker'] = true;
         $this->broker = $broker;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailBr
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailBr
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;

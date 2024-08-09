@@ -18,11 +18,11 @@ class DeleteOpenShipmentPackagesBadRequestException extends BadRequestException
         $this->shipV1OpenshipmentsPackagesDeletePutResponse400 = $shipV1OpenshipmentsPackagesDeletePutResponse400;
         $this->response = $response;
     }
-    public function getShipV1OpenshipmentsPackagesDeletePutResponse400() : \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesDeletePutResponse400
+    public function getShipV1OpenshipmentsPackagesDeletePutResponse400(): \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesDeletePutResponse400
     {
         return $this->shipV1OpenshipmentsPackagesDeletePutResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

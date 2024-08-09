@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPay
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPay
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsibleParty
      */
-    public function getResponsibleParty() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsibleParty
+    public function getResponsibleParty(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsibleParty
     {
         return $this->responsibleParty;
     }
@@ -34,7 +34,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPay
      *
      * @return self
      */
-    public function setResponsibleParty(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsibleParty $responsibleParty) : self
+    public function setResponsibleParty(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsibleParty $responsibleParty): self
     {
         $this->initialized['responsibleParty'] = true;
         $this->responsibleParty = $responsibleParty;

@@ -8,7 +8,7 @@ class CountryV1PostalValidatePostResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class CountryV1PostalValidatePostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -64,7 +64,7 @@ class CountryV1PostalValidatePostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;
@@ -75,7 +75,7 @@ class CountryV1PostalValidatePostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getCityFirstInitials() : string
+    public function getCityFirstInitials(): string
     {
         return $this->cityFirstInitials;
     }
@@ -86,7 +86,7 @@ class CountryV1PostalValidatePostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setCityFirstInitials(string $cityFirstInitials) : self
+    public function setCityFirstInitials(string $cityFirstInitials): self
     {
         $this->initialized['cityFirstInitials'] = true;
         $this->cityFirstInitials = $cityFirstInitials;
@@ -97,7 +97,7 @@ class CountryV1PostalValidatePostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getStateOrProvinceCode() : string
+    public function getStateOrProvinceCode(): string
     {
         return $this->stateOrProvinceCode;
     }
@@ -108,7 +108,7 @@ class CountryV1PostalValidatePostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setStateOrProvinceCode(string $stateOrProvinceCode) : self
+    public function setStateOrProvinceCode(string $stateOrProvinceCode): self
     {
         $this->initialized['stateOrProvinceCode'] = true;
         $this->stateOrProvinceCode = $stateOrProvinceCode;
@@ -119,7 +119,7 @@ class CountryV1PostalValidatePostResponse200Output extends \ArrayObject
      *
      * @return list<CountryV1PostalValidatePostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -130,7 +130,7 @@ class CountryV1PostalValidatePostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;
@@ -141,7 +141,7 @@ class CountryV1PostalValidatePostResponse200Output extends \ArrayObject
      *
      * @return list<CountryV1PostalValidatePostResponse200OutputLocationDescriptionsItem>
      */
-    public function getLocationDescriptions() : array
+    public function getLocationDescriptions(): array
     {
         return $this->locationDescriptions;
     }
@@ -152,7 +152,7 @@ class CountryV1PostalValidatePostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setLocationDescriptions(array $locationDescriptions) : self
+    public function setLocationDescriptions(array $locationDescriptions): self
     {
         $this->initialized['locationDescriptions'] = true;
         $this->locationDescriptions = $locationDescriptions;
@@ -163,7 +163,7 @@ class CountryV1PostalValidatePostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getCleanedPostalCode() : string
+    public function getCleanedPostalCode(): string
     {
         return $this->cleanedPostalCode;
     }
@@ -174,7 +174,7 @@ class CountryV1PostalValidatePostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setCleanedPostalCode(string $cleanedPostalCode) : self
+    public function setCleanedPostalCode(string $cleanedPostalCode): self
     {
         $this->initialized['cleanedPostalCode'] = true;
         $this->cleanedPostalCode = $cleanedPostalCode;

@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -90,7 +90,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShipper
      */
-    public function getShipper() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShipper
+    public function getShipper(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShipper
     {
         return $this->shipper;
     }
@@ -101,7 +101,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return self
      */
-    public function setShipper(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShipper $shipper) : self
+    public function setShipper(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShipper $shipper): self
     {
         $this->initialized['shipper'] = true;
         $this->shipper = $shipper;
@@ -112,7 +112,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRecipient
      */
-    public function getRecipient() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRecipient
+    public function getRecipient(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRecipient
     {
         return $this->recipient;
     }
@@ -123,7 +123,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return self
      */
-    public function setRecipient(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRecipient $recipient) : self
+    public function setRecipient(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRecipient $recipient): self
     {
         $this->initialized['recipient'] = true;
         $this->recipient = $recipient;
@@ -134,7 +134,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -145,7 +145,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -156,7 +156,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return string
      */
-    public function getPreferredCurrency() : string
+    public function getPreferredCurrency(): string
     {
         return $this->preferredCurrency;
     }
@@ -167,7 +167,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return self
      */
-    public function setPreferredCurrency(string $preferredCurrency) : self
+    public function setPreferredCurrency(string $preferredCurrency): self
     {
         $this->initialized['preferredCurrency'] = true;
         $this->preferredCurrency = $preferredCurrency;
@@ -178,7 +178,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPayment
      */
-    public function getShippingChargesPayment() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPayment
+    public function getShippingChargesPayment(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPayment
     {
         return $this->shippingChargesPayment;
     }
@@ -189,7 +189,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return self
      */
-    public function setShippingChargesPayment(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPayment $shippingChargesPayment) : self
+    public function setShippingChargesPayment(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPayment $shippingChargesPayment): self
     {
         $this->initialized['shippingChargesPayment'] = true;
         $this->shippingChargesPayment = $shippingChargesPayment;
@@ -200,7 +200,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return list<string>
      */
-    public function getRateRequestType() : array
+    public function getRateRequestType(): array
     {
         return $this->rateRequestType;
     }
@@ -211,7 +211,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return self
      */
-    public function setRateRequestType(array $rateRequestType) : self
+    public function setRateRequestType(array $rateRequestType): self
     {
         $this->initialized['rateRequestType'] = true;
         $this->rateRequestType = $rateRequestType;
@@ -222,7 +222,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return string
      */
-    public function getShipDateStamp() : string
+    public function getShipDateStamp(): string
     {
         return $this->shipDateStamp;
     }
@@ -233,7 +233,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return self
      */
-    public function setShipDateStamp(string $shipDateStamp) : self
+    public function setShipDateStamp(string $shipDateStamp): self
     {
         $this->initialized['shipDateStamp'] = true;
         $this->shipDateStamp = $shipDateStamp;
@@ -244,7 +244,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return list<RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLineItemsItem>
      */
-    public function getRequestedPackageLineItems() : array
+    public function getRequestedPackageLineItems(): array
     {
         return $this->requestedPackageLineItems;
     }
@@ -255,7 +255,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return self
      */
-    public function setRequestedPackageLineItems(array $requestedPackageLineItems) : self
+    public function setRequestedPackageLineItems(array $requestedPackageLineItems): self
     {
         $this->initialized['requestedPackageLineItems'] = true;
         $this->requestedPackageLineItems = $requestedPackageLineItems;
@@ -266,7 +266,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return int
      */
-    public function getTotalPackageCount() : int
+    public function getTotalPackageCount(): int
     {
         return $this->totalPackageCount;
     }
@@ -277,7 +277,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return self
      */
-    public function setTotalPackageCount(int $totalPackageCount) : self
+    public function setTotalPackageCount(int $totalPackageCount): self
     {
         $this->initialized['totalPackageCount'] = true;
         $this->totalPackageCount = $totalPackageCount;
@@ -289,7 +289,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
     *
     * @return int
     */
-    public function getTotalWeight() : int
+    public function getTotalWeight(): int
     {
         return $this->totalWeight;
     }
@@ -301,7 +301,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
     *
     * @return self
     */
-    public function setTotalWeight(int $totalWeight) : self
+    public function setTotalWeight(int $totalWeight): self
     {
         $this->initialized['totalWeight'] = true;
         $this->totalWeight = $totalWeight;
@@ -312,7 +312,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetail
      */
-    public function getFreightShipmentDetail() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetail
+    public function getFreightShipmentDetail(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetail
     {
         return $this->freightShipmentDetail;
     }
@@ -323,7 +323,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return self
      */
-    public function setFreightShipmentDetail(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetail $freightShipmentDetail) : self
+    public function setFreightShipmentDetail(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetail $freightShipmentDetail): self
     {
         $this->initialized['freightShipmentDetail'] = true;
         $this->freightShipmentDetail = $freightShipmentDetail;
@@ -334,7 +334,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServices
      */
-    public function getFreightShipmentSpecialServices() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServices
+    public function getFreightShipmentSpecialServices(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServices
     {
         return $this->freightShipmentSpecialServices;
     }
@@ -345,7 +345,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipment extends \ArrayObj
      *
      * @return self
      */
-    public function setFreightShipmentSpecialServices(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServices $freightShipmentSpecialServices) : self
+    public function setFreightShipmentSpecialServices(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServices $freightShipmentSpecialServices): self
     {
         $this->initialized['freightShipmentSpecialServices'] = true;
         $this->freightShipmentSpecialServices = $freightShipmentSpecialServices;

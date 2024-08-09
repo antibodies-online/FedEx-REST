@@ -8,7 +8,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemCityTok
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemCityTok
      *
      * @return bool
      */
-    public function getChanged() : bool
+    public function getChanged(): bool
     {
         return $this->changed;
     }
@@ -40,7 +40,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemCityTok
      *
      * @return self
      */
-    public function setChanged(bool $changed) : self
+    public function setChanged(bool $changed): self
     {
         $this->initialized['changed'] = true;
         $this->changed = $changed;
@@ -51,7 +51,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemCityTok
      *
      * @return string
      */
-    public function getValue() : string
+    public function getValue(): string
     {
         return $this->value;
     }
@@ -62,7 +62,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemCityTok
      *
      * @return self
      */
-    public function setValue(string $value) : self
+    public function setValue(string $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;

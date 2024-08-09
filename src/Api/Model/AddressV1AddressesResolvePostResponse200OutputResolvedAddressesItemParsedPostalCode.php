@@ -8,7 +8,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedP
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedP
      *
      * @return string
      */
-    public function getBase() : string
+    public function getBase(): string
     {
         return $this->base;
     }
@@ -46,7 +46,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedP
      *
      * @return self
      */
-    public function setBase(string $base) : self
+    public function setBase(string $base): self
     {
         $this->initialized['base'] = true;
         $this->base = $base;
@@ -57,7 +57,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedP
      *
      * @return string
      */
-    public function getAddOn() : string
+    public function getAddOn(): string
     {
         return $this->addOn;
     }
@@ -68,7 +68,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedP
      *
      * @return self
      */
-    public function setAddOn(string $addOn) : self
+    public function setAddOn(string $addOn): self
     {
         $this->initialized['addOn'] = true;
         $this->addOn = $addOn;
@@ -79,7 +79,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedP
      *
      * @return string
      */
-    public function getDeliveryPoint() : string
+    public function getDeliveryPoint(): string
     {
         return $this->deliveryPoint;
     }
@@ -90,7 +90,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedP
      *
      * @return self
      */
-    public function setDeliveryPoint(string $deliveryPoint) : self
+    public function setDeliveryPoint(string $deliveryPoint): self
     {
         $this->initialized['deliveryPoint'] = true;
         $this->deliveryPoint = $deliveryPoint;

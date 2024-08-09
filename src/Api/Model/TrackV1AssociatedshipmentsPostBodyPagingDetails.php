@@ -8,7 +8,7 @@ class TrackV1AssociatedshipmentsPostBodyPagingDetails extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1AssociatedshipmentsPostBodyPagingDetails extends \ArrayObject
      *
      * @return int
      */
-    public function getResultsPerPage() : int
+    public function getResultsPerPage(): int
     {
         return $this->resultsPerPage;
     }
@@ -40,7 +40,7 @@ class TrackV1AssociatedshipmentsPostBodyPagingDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setResultsPerPage(int $resultsPerPage) : self
+    public function setResultsPerPage(int $resultsPerPage): self
     {
         $this->initialized['resultsPerPage'] = true;
         $this->resultsPerPage = $resultsPerPage;
@@ -51,7 +51,7 @@ class TrackV1AssociatedshipmentsPostBodyPagingDetails extends \ArrayObject
      *
      * @return string
      */
-    public function getPagingToken() : string
+    public function getPagingToken(): string
     {
         return $this->pagingToken;
     }
@@ -62,7 +62,7 @@ class TrackV1AssociatedshipmentsPostBodyPagingDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setPagingToken(string $pagingToken) : self
+    public function setPagingToken(string $pagingToken): self
     {
         $this->initialized['pagingToken'] = true;
         $this->pagingToken = $pagingToken;

@@ -8,7 +8,7 @@ class ShipV1ShipmentsTagPostResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ShipV1ShipmentsTagPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getMasterTrackingNumber() : string
+    public function getMasterTrackingNumber(): string
     {
         return $this->masterTrackingNumber;
     }
@@ -58,7 +58,7 @@ class ShipV1ShipmentsTagPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setMasterTrackingNumber(string $masterTrackingNumber) : self
+    public function setMasterTrackingNumber(string $masterTrackingNumber): self
     {
         $this->initialized['masterTrackingNumber'] = true;
         $this->masterTrackingNumber = $masterTrackingNumber;
@@ -69,7 +69,7 @@ class ShipV1ShipmentsTagPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -80,7 +80,7 @@ class ShipV1ShipmentsTagPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -91,7 +91,7 @@ class ShipV1ShipmentsTagPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getShipTimestamp() : string
+    public function getShipTimestamp(): string
     {
         return $this->shipTimestamp;
     }
@@ -102,7 +102,7 @@ class ShipV1ShipmentsTagPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setShipTimestamp(string $shipTimestamp) : self
+    public function setShipTimestamp(string $shipTimestamp): self
     {
         $this->initialized['shipTimestamp'] = true;
         $this->shipTimestamp = $shipTimestamp;
@@ -113,7 +113,7 @@ class ShipV1ShipmentsTagPostResponse200Output extends \ArrayObject
      *
      * @return ShipV1ShipmentsTagPostResponse200OutputCompletedTagDetail
      */
-    public function getCompletedTagDetail() : ShipV1ShipmentsTagPostResponse200OutputCompletedTagDetail
+    public function getCompletedTagDetail(): ShipV1ShipmentsTagPostResponse200OutputCompletedTagDetail
     {
         return $this->completedTagDetail;
     }
@@ -124,7 +124,7 @@ class ShipV1ShipmentsTagPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setCompletedTagDetail(ShipV1ShipmentsTagPostResponse200OutputCompletedTagDetail $completedTagDetail) : self
+    public function setCompletedTagDetail(ShipV1ShipmentsTagPostResponse200OutputCompletedTagDetail $completedTagDetail): self
     {
         $this->initialized['completedTagDetail'] = true;
         $this->completedTagDetail = $completedTagDetail;
@@ -135,7 +135,7 @@ class ShipV1ShipmentsTagPostResponse200Output extends \ArrayObject
      *
      * @return list<ShipV1ShipmentsTagPostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -146,7 +146,7 @@ class ShipV1ShipmentsTagPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

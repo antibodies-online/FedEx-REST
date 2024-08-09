@@ -2,7 +2,7 @@
 
 namespace AntibodiesOnline\FedEx\Api\Exception;
 
-class F1f9080e8452d9ac903f562a2d2626d0ServiceUnavailableException extends ServiceUnavailableException
+class TrackByTrackingControlNumberServiceUnavailableException extends ServiceUnavailableException
 {
     /**
      * @var \AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostResponse503
@@ -18,11 +18,11 @@ class F1f9080e8452d9ac903f562a2d2626d0ServiceUnavailableException extends Servic
         $this->trackV1TcnPostResponse503 = $trackV1TcnPostResponse503;
         $this->response = $response;
     }
-    public function getTrackV1TcnPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostResponse503
+    public function getTrackV1TcnPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostResponse503
     {
         return $this->trackV1TcnPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

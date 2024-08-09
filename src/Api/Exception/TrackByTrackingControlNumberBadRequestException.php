@@ -2,7 +2,7 @@
 
 namespace AntibodiesOnline\FedEx\Api\Exception;
 
-class F1f9080e8452d9ac903f562a2d2626d0BadRequestException extends BadRequestException
+class TrackByTrackingControlNumberBadRequestException extends BadRequestException
 {
     /**
      * @var \AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostResponse400
@@ -18,11 +18,11 @@ class F1f9080e8452d9ac903f562a2d2626d0BadRequestException extends BadRequestExce
         $this->trackV1TcnPostResponse400 = $trackV1TcnPostResponse400;
         $this->response = $response;
     }
-    public function getTrackV1TcnPostResponse400() : \AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostResponse400
+    public function getTrackV1TcnPostResponse400(): \AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostResponse400
     {
         return $this->trackV1TcnPostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

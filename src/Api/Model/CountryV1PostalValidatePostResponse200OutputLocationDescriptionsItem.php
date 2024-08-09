@@ -8,7 +8,7 @@ class CountryV1PostalValidatePostResponse200OutputLocationDescriptionsItem exten
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class CountryV1PostalValidatePostResponse200OutputLocationDescriptionsItem exten
      *
      * @return string
      */
-    public function getLocationId() : string
+    public function getLocationId(): string
     {
         return $this->locationId;
     }
@@ -52,7 +52,7 @@ class CountryV1PostalValidatePostResponse200OutputLocationDescriptionsItem exten
      *
      * @return self
      */
-    public function setLocationId(string $locationId) : self
+    public function setLocationId(string $locationId): self
     {
         $this->initialized['locationId'] = true;
         $this->locationId = $locationId;
@@ -63,7 +63,7 @@ class CountryV1PostalValidatePostResponse200OutputLocationDescriptionsItem exten
      *
      * @return string
      */
-    public function getLocationNumber() : string
+    public function getLocationNumber(): string
     {
         return $this->locationNumber;
     }
@@ -74,7 +74,7 @@ class CountryV1PostalValidatePostResponse200OutputLocationDescriptionsItem exten
      *
      * @return self
      */
-    public function setLocationNumber(string $locationNumber) : self
+    public function setLocationNumber(string $locationNumber): self
     {
         $this->initialized['locationNumber'] = true;
         $this->locationNumber = $locationNumber;
@@ -85,7 +85,7 @@ class CountryV1PostalValidatePostResponse200OutputLocationDescriptionsItem exten
      *
      * @return string
      */
-    public function getServiceArea() : string
+    public function getServiceArea(): string
     {
         return $this->serviceArea;
     }
@@ -96,7 +96,7 @@ class CountryV1PostalValidatePostResponse200OutputLocationDescriptionsItem exten
      *
      * @return self
      */
-    public function setServiceArea(string $serviceArea) : self
+    public function setServiceArea(string $serviceArea): self
     {
         $this->initialized['serviceArea'] = true;
         $this->serviceArea = $serviceArea;
@@ -107,7 +107,7 @@ class CountryV1PostalValidatePostResponse200OutputLocationDescriptionsItem exten
      *
      * @return string
      */
-    public function getAirportId() : string
+    public function getAirportId(): string
     {
         return $this->airportId;
     }
@@ -118,7 +118,7 @@ class CountryV1PostalValidatePostResponse200OutputLocationDescriptionsItem exten
      *
      * @return self
      */
-    public function setAirportId(string $airportId) : self
+    public function setAirportId(string $airportId): self
     {
         $this->initialized['airportId'] = true;
         $this->airportId = $airportId;

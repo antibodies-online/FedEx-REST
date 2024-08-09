@@ -8,7 +8,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -215,7 +215,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalResults() : int
+    public function getTotalResults(): int
     {
         return $this->totalResults;
     }
@@ -226,7 +226,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalResults(int $totalResults) : self
+    public function setTotalResults(int $totalResults): self
     {
         $this->initialized['totalResults'] = true;
         $this->totalResults = $totalResults;
@@ -237,7 +237,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return int
      */
-    public function getResultsReturned() : int
+    public function getResultsReturned(): int
     {
         return $this->resultsReturned;
     }
@@ -248,7 +248,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setResultsReturned(int $resultsReturned) : self
+    public function setResultsReturned(int $resultsReturned): self
     {
         $this->initialized['resultsReturned'] = true;
         $this->resultsReturned = $resultsReturned;
@@ -259,7 +259,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return LocationV1LocationsPostResponse200OutputmatchedAddress
      */
-    public function getMatchedAddress() : LocationV1LocationsPostResponse200OutputmatchedAddress
+    public function getMatchedAddress(): LocationV1LocationsPostResponse200OutputmatchedAddress
     {
         return $this->matchedAddress;
     }
@@ -270,7 +270,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setMatchedAddress(LocationV1LocationsPostResponse200OutputmatchedAddress $matchedAddress) : self
+    public function setMatchedAddress(LocationV1LocationsPostResponse200OutputmatchedAddress $matchedAddress): self
     {
         $this->initialized['matchedAddress'] = true;
         $this->matchedAddress = $matchedAddress;
@@ -281,7 +281,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return LocationV1LocationsPostResponse200OutputmatchedAddressGeoCoord
      */
-    public function getMatchedAddressGeoCoord() : LocationV1LocationsPostResponse200OutputmatchedAddressGeoCoord
+    public function getMatchedAddressGeoCoord(): LocationV1LocationsPostResponse200OutputmatchedAddressGeoCoord
     {
         return $this->matchedAddressGeoCoord;
     }
@@ -292,7 +292,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setMatchedAddressGeoCoord(LocationV1LocationsPostResponse200OutputmatchedAddressGeoCoord $matchedAddressGeoCoord) : self
+    public function setMatchedAddressGeoCoord(LocationV1LocationsPostResponse200OutputmatchedAddressGeoCoord $matchedAddressGeoCoord): self
     {
         $this->initialized['matchedAddressGeoCoord'] = true;
         $this->matchedAddressGeoCoord = $matchedAddressGeoCoord;
@@ -303,7 +303,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return list<LocationV1LocationsPostResponse200OutputlocationDetailListItem>
      */
-    public function getLocationDetailList() : array
+    public function getLocationDetailList(): array
     {
         return $this->locationDetailList;
     }
@@ -314,7 +314,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setLocationDetailList(array $locationDetailList) : self
+    public function setLocationDetailList(array $locationDetailList): self
     {
         $this->initialized['locationDetailList'] = true;
         $this->locationDetailList = $locationDetailList;
@@ -325,7 +325,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return list<LocationV1LocationsPostResponse200OutputalertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -336,7 +336,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;
@@ -347,7 +347,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return LocationV1LocationsPostResponse200OutputnearestLocation
      */
-    public function getNearestLocation() : LocationV1LocationsPostResponse200OutputnearestLocation
+    public function getNearestLocation(): LocationV1LocationsPostResponse200OutputnearestLocation
     {
         return $this->nearestLocation;
     }
@@ -358,7 +358,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setNearestLocation(LocationV1LocationsPostResponse200OutputnearestLocation $nearestLocation) : self
+    public function setNearestLocation(LocationV1LocationsPostResponse200OutputnearestLocation $nearestLocation): self
     {
         $this->initialized['nearestLocation'] = true;
         $this->nearestLocation = $nearestLocation;
@@ -369,7 +369,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return LocationV1LocationsPostResponse200OutputlatestLocation
      */
-    public function getLatestLocation() : LocationV1LocationsPostResponse200OutputlatestLocation
+    public function getLatestLocation(): LocationV1LocationsPostResponse200OutputlatestLocation
     {
         return $this->latestLocation;
     }
@@ -380,7 +380,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setLatestLocation(LocationV1LocationsPostResponse200OutputlatestLocation $latestLocation) : self
+    public function setLatestLocation(LocationV1LocationsPostResponse200OutputlatestLocation $latestLocation): self
     {
         $this->initialized['latestLocation'] = true;
         $this->latestLocation = $latestLocation;
@@ -391,7 +391,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return list<LocationV1LocationsPostResponse200OutputambiguousAddressItem>
      */
-    public function getAmbiguousAddress() : array
+    public function getAmbiguousAddress(): array
     {
         return $this->ambiguousAddress;
     }
@@ -402,7 +402,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAmbiguousAddress(array $ambiguousAddress) : self
+    public function setAmbiguousAddress(array $ambiguousAddress): self
     {
         $this->initialized['ambiguousAddress'] = true;
         $this->ambiguousAddress = $ambiguousAddress;
@@ -413,7 +413,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return bool
      */
-    public function getAmbiguousLocationsReturned() : bool
+    public function getAmbiguousLocationsReturned(): bool
     {
         return $this->ambiguousLocationsReturned;
     }
@@ -424,7 +424,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAmbiguousLocationsReturned(bool $ambiguousLocationsReturned) : self
+    public function setAmbiguousLocationsReturned(bool $ambiguousLocationsReturned): self
     {
         $this->initialized['ambiguousLocationsReturned'] = true;
         $this->ambiguousLocationsReturned = $ambiguousLocationsReturned;
@@ -435,7 +435,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return bool
      */
-    public function getNearestLocationReturned() : bool
+    public function getNearestLocationReturned(): bool
     {
         return $this->nearestLocationReturned;
     }
@@ -446,7 +446,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setNearestLocationReturned(bool $nearestLocationReturned) : self
+    public function setNearestLocationReturned(bool $nearestLocationReturned): self
     {
         $this->initialized['nearestLocationReturned'] = true;
         $this->nearestLocationReturned = $nearestLocationReturned;
@@ -457,7 +457,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return bool
      */
-    public function getLatestLocationReturned() : bool
+    public function getLatestLocationReturned(): bool
     {
         return $this->latestLocationReturned;
     }
@@ -468,7 +468,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setLatestLocationReturned(bool $latestLocationReturned) : self
+    public function setLatestLocationReturned(bool $latestLocationReturned): self
     {
         $this->initialized['latestLocationReturned'] = true;
         $this->latestLocationReturned = $latestLocationReturned;
@@ -479,7 +479,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return int
      */
-    public function getLockerAvailabilityCode() : int
+    public function getLockerAvailabilityCode(): int
     {
         return $this->lockerAvailabilityCode;
     }
@@ -490,7 +490,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setLockerAvailabilityCode(int $lockerAvailabilityCode) : self
+    public function setLockerAvailabilityCode(int $lockerAvailabilityCode): self
     {
         $this->initialized['lockerAvailabilityCode'] = true;
         $this->lockerAvailabilityCode = $lockerAvailabilityCode;
@@ -501,7 +501,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getLockerAvailabilityMessage() : string
+    public function getLockerAvailabilityMessage(): string
     {
         return $this->lockerAvailabilityMessage;
     }
@@ -512,7 +512,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setLockerAvailabilityMessage(string $lockerAvailabilityMessage) : self
+    public function setLockerAvailabilityMessage(string $lockerAvailabilityMessage): self
     {
         $this->initialized['lockerAvailabilityMessage'] = true;
         $this->lockerAvailabilityMessage = $lockerAvailabilityMessage;
@@ -523,7 +523,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return LocationV1LocationsPostResponse200Outputlocation
      */
-    public function getLocation() : LocationV1LocationsPostResponse200Outputlocation
+    public function getLocation(): LocationV1LocationsPostResponse200Outputlocation
     {
         return $this->location;
     }
@@ -534,7 +534,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setLocation(LocationV1LocationsPostResponse200Outputlocation $location) : self
+    public function setLocation(LocationV1LocationsPostResponse200Outputlocation $location): self
     {
         $this->initialized['location'] = true;
         $this->location = $location;
@@ -545,7 +545,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getPhoneNumber() : string
+    public function getPhoneNumber(): string
     {
         return $this->phoneNumber;
     }
@@ -556,7 +556,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setPhoneNumber(string $phoneNumber) : self
+    public function setPhoneNumber(string $phoneNumber): self
     {
         $this->initialized['phoneNumber'] = true;
         $this->phoneNumber = $phoneNumber;
@@ -567,7 +567,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getMultipleMatchesAction() : string
+    public function getMultipleMatchesAction(): string
     {
         return $this->multipleMatchesAction;
     }
@@ -578,7 +578,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setMultipleMatchesAction(string $multipleMatchesAction) : self
+    public function setMultipleMatchesAction(string $multipleMatchesAction): self
     {
         $this->initialized['multipleMatchesAction'] = true;
         $this->multipleMatchesAction = $multipleMatchesAction;
@@ -589,7 +589,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return LocationV1LocationsPostResponse200Outputsort
      */
-    public function getSort() : LocationV1LocationsPostResponse200Outputsort
+    public function getSort(): LocationV1LocationsPostResponse200Outputsort
     {
         return $this->sort;
     }
@@ -600,7 +600,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setSort(LocationV1LocationsPostResponse200Outputsort $sort) : self
+    public function setSort(LocationV1LocationsPostResponse200Outputsort $sort): self
     {
         $this->initialized['sort'] = true;
         $this->sort = $sort;
@@ -611,7 +611,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return LocationV1LocationsPostResponse200OutputtrackingInfo
      */
-    public function getTrackingInfo() : LocationV1LocationsPostResponse200OutputtrackingInfo
+    public function getTrackingInfo(): LocationV1LocationsPostResponse200OutputtrackingInfo
     {
         return $this->trackingInfo;
     }
@@ -622,7 +622,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingInfo(LocationV1LocationsPostResponse200OutputtrackingInfo $trackingInfo) : self
+    public function setTrackingInfo(LocationV1LocationsPostResponse200OutputtrackingInfo $trackingInfo): self
     {
         $this->initialized['trackingInfo'] = true;
         $this->trackingInfo = $trackingInfo;
@@ -633,7 +633,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return bool
      */
-    public function getSameState() : bool
+    public function getSameState(): bool
     {
         return $this->sameState;
     }
@@ -644,7 +644,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setSameState(bool $sameState) : self
+    public function setSameState(bool $sameState): self
     {
         $this->initialized['sameState'] = true;
         $this->sameState = $sameState;
@@ -655,7 +655,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return bool
      */
-    public function getSameCountry() : bool
+    public function getSameCountry(): bool
     {
         return $this->sameCountry;
     }
@@ -666,7 +666,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setSameCountry(bool $sameCountry) : self
+    public function setSameCountry(bool $sameCountry): self
     {
         $this->initialized['sameCountry'] = true;
         $this->sameCountry = $sameCountry;
@@ -677,7 +677,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getRedirectToHoldType() : string
+    public function getRedirectToHoldType(): string
     {
         return $this->redirectToHoldType;
     }
@@ -688,7 +688,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setRedirectToHoldType(string $redirectToHoldType) : self
+    public function setRedirectToHoldType(string $redirectToHoldType): self
     {
         $this->initialized['redirectToHoldType'] = true;
         $this->redirectToHoldType = $redirectToHoldType;
@@ -699,7 +699,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getLocationAttrTypes() : array
+    public function getLocationAttrTypes(): array
     {
         return $this->locationAttrTypes;
     }
@@ -710,7 +710,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setLocationAttrTypes(array $locationAttrTypes) : self
+    public function setLocationAttrTypes(array $locationAttrTypes): self
     {
         $this->initialized['locationAttrTypes'] = true;
         $this->locationAttrTypes = $locationAttrTypes;
@@ -721,7 +721,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return list<LocationV1LocationsPostResponse200OutputlocationCapabilitiesItem>
      */
-    public function getLocationCapabilities() : array
+    public function getLocationCapabilities(): array
     {
         return $this->locationCapabilities;
     }
@@ -732,7 +732,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setLocationCapabilities(array $locationCapabilities) : self
+    public function setLocationCapabilities(array $locationCapabilities): self
     {
         $this->initialized['locationCapabilities'] = true;
         $this->locationCapabilities = $locationCapabilities;
@@ -743,7 +743,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return list<LocationV1LocationsPostResponse200OutputpackageMaximumLimitsItem>
      */
-    public function getPackageMaximumLimits() : array
+    public function getPackageMaximumLimits(): array
     {
         return $this->packageMaximumLimits;
     }
@@ -754,7 +754,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setPackageMaximumLimits(array $packageMaximumLimits) : self
+    public function setPackageMaximumLimits(array $packageMaximumLimits): self
     {
         $this->initialized['packageMaximumLimits'] = true;
         $this->packageMaximumLimits = $packageMaximumLimits;
@@ -765,7 +765,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getLocationTypes() : array
+    public function getLocationTypes(): array
     {
         return $this->locationTypes;
     }
@@ -776,7 +776,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setLocationTypes(array $locationTypes) : self
+    public function setLocationTypes(array $locationTypes): self
     {
         $this->initialized['locationTypes'] = true;
         $this->locationTypes = $locationTypes;
@@ -787,7 +787,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return bool
      */
-    public function getIncludeHoliday() : bool
+    public function getIncludeHoliday(): bool
     {
         return $this->includeHoliday;
     }
@@ -798,7 +798,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setIncludeHoliday(bool $includeHoliday) : self
+    public function setIncludeHoliday(bool $includeHoliday): self
     {
         $this->initialized['includeHoliday'] = true;
         $this->includeHoliday = $includeHoliday;
@@ -809,7 +809,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getDropoffTime() : string
+    public function getDropoffTime(): string
     {
         return $this->dropoffTime;
     }
@@ -820,7 +820,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setDropoffTime(string $dropoffTime) : self
+    public function setDropoffTime(string $dropoffTime): self
     {
         $this->initialized['dropoffTime'] = true;
         $this->dropoffTime = $dropoffTime;
@@ -831,7 +831,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getDropOffServiceType() : string
+    public function getDropOffServiceType(): string
     {
         return $this->dropOffServiceType;
     }
@@ -842,7 +842,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setDropOffServiceType(string $dropOffServiceType) : self
+    public function setDropOffServiceType(string $dropOffServiceType): self
     {
         $this->initialized['dropOffServiceType'] = true;
         $this->dropOffServiceType = $dropOffServiceType;
@@ -853,7 +853,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getSearchBy() : string
+    public function getSearchBy(): string
     {
         return $this->searchBy;
     }
@@ -864,7 +864,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchBy(string $searchBy) : self
+    public function setSearchBy(string $searchBy): self
     {
         $this->initialized['searchBy'] = true;
         $this->searchBy = $searchBy;
@@ -875,7 +875,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getContentOptions() : string
+    public function getContentOptions(): string
     {
         return $this->contentOptions;
     }
@@ -886,7 +886,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setContentOptions(string $contentOptions) : self
+    public function setContentOptions(string $contentOptions): self
     {
         $this->initialized['contentOptions'] = true;
         $this->contentOptions = $contentOptions;
@@ -897,7 +897,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getCarrierCodes() : array
+    public function getCarrierCodes(): array
     {
         return $this->carrierCodes;
     }
@@ -908,7 +908,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setCarrierCodes(array $carrierCodes) : self
+    public function setCarrierCodes(array $carrierCodes): self
     {
         $this->initialized['carrierCodes'] = true;
         $this->carrierCodes = $carrierCodes;
@@ -919,7 +919,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return bool
      */
-    public function getGetCall() : bool
+    public function getGetCall(): bool
     {
         return $this->getCall;
     }
@@ -930,7 +930,7 @@ class LocationV1LocationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setGetCall(bool $getCall) : self
+    public function setGetCall(bool $getCall): self
     {
         $this->initialized['getCall'] = true;
         $this->getCall = $getCall;

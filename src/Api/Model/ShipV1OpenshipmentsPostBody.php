@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class ShipV1OpenshipmentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getLabelResponseOptions() : string
+    public function getLabelResponseOptions(): string
     {
         return $this->labelResponseOptions;
     }
@@ -64,7 +64,7 @@ class ShipV1OpenshipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLabelResponseOptions(string $labelResponseOptions) : self
+    public function setLabelResponseOptions(string $labelResponseOptions): self
     {
         $this->initialized['labelResponseOptions'] = true;
         $this->labelResponseOptions = $labelResponseOptions;
@@ -75,7 +75,7 @@ class ShipV1OpenshipmentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEdtRequestType() : string
+    public function getEdtRequestType(): string
     {
         return $this->edtRequestType;
     }
@@ -86,7 +86,7 @@ class ShipV1OpenshipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEdtRequestType(string $edtRequestType) : self
+    public function setEdtRequestType(string $edtRequestType): self
     {
         $this->initialized['edtRequestType'] = true;
         $this->edtRequestType = $edtRequestType;
@@ -97,7 +97,7 @@ class ShipV1OpenshipmentsPostBody extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPostBodyLabelSpecification
      */
-    public function getLabelSpecification() : ShipV1OpenshipmentsPostBodyLabelSpecification
+    public function getLabelSpecification(): ShipV1OpenshipmentsPostBodyLabelSpecification
     {
         return $this->labelSpecification;
     }
@@ -108,7 +108,7 @@ class ShipV1OpenshipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLabelSpecification(ShipV1OpenshipmentsPostBodyLabelSpecification $labelSpecification) : self
+    public function setLabelSpecification(ShipV1OpenshipmentsPostBodyLabelSpecification $labelSpecification): self
     {
         $this->initialized['labelSpecification'] = true;
         $this->labelSpecification = $labelSpecification;
@@ -119,7 +119,7 @@ class ShipV1OpenshipmentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getIndex() : string
+    public function getIndex(): string
     {
         return $this->index;
     }
@@ -130,7 +130,7 @@ class ShipV1OpenshipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIndex(string $index) : self
+    public function setIndex(string $index): self
     {
         $this->initialized['index'] = true;
         $this->index = $index;
@@ -141,7 +141,7 @@ class ShipV1OpenshipmentsPostBody extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPostBodyShippingDocumentSpecification
      */
-    public function getShippingDocumentSpecification() : ShipV1OpenshipmentsPostBodyShippingDocumentSpecification
+    public function getShippingDocumentSpecification(): ShipV1OpenshipmentsPostBodyShippingDocumentSpecification
     {
         return $this->shippingDocumentSpecification;
     }
@@ -152,7 +152,7 @@ class ShipV1OpenshipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setShippingDocumentSpecification(ShipV1OpenshipmentsPostBodyShippingDocumentSpecification $shippingDocumentSpecification) : self
+    public function setShippingDocumentSpecification(ShipV1OpenshipmentsPostBodyShippingDocumentSpecification $shippingDocumentSpecification): self
     {
         $this->initialized['shippingDocumentSpecification'] = true;
         $this->shippingDocumentSpecification = $shippingDocumentSpecification;
@@ -163,7 +163,7 @@ class ShipV1OpenshipmentsPostBody extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPostBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1OpenshipmentsPostBodyAccountNumber
+    public function getAccountNumber(): ShipV1OpenshipmentsPostBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -174,7 +174,7 @@ class ShipV1OpenshipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1OpenshipmentsPostBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1OpenshipmentsPostBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

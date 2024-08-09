@@ -8,7 +8,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItemPartsItem extends \Arr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItemPartsItem extends \Arr
      *
      * @return int
      */
-    public function getDocumentPartSequenceNumber() : int
+    public function getDocumentPartSequenceNumber(): int
     {
         return $this->documentPartSequenceNumber;
     }
@@ -40,7 +40,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItemPartsItem extends \Arr
      *
      * @return self
      */
-    public function setDocumentPartSequenceNumber(int $documentPartSequenceNumber) : self
+    public function setDocumentPartSequenceNumber(int $documentPartSequenceNumber): self
     {
         $this->initialized['documentPartSequenceNumber'] = true;
         $this->documentPartSequenceNumber = $documentPartSequenceNumber;
@@ -51,7 +51,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItemPartsItem extends \Arr
      *
      * @return string
      */
-    public function getImage() : string
+    public function getImage(): string
     {
         return $this->image;
     }
@@ -62,7 +62,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItemPartsItem extends \Arr
      *
      * @return self
      */
-    public function setImage(string $image) : self
+    public function setImage(string $image): self
     {
         $this->initialized['image'] = true;
         $this->image = $image;

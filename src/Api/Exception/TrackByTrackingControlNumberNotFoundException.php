@@ -2,7 +2,7 @@
 
 namespace AntibodiesOnline\FedEx\Api\Exception;
 
-class F1f9080e8452d9ac903f562a2d2626d0NotFoundException extends NotFoundException
+class TrackByTrackingControlNumberNotFoundException extends NotFoundException
 {
     /**
      * @var \AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostResponse404
@@ -18,11 +18,11 @@ class F1f9080e8452d9ac903f562a2d2626d0NotFoundException extends NotFoundExceptio
         $this->trackV1TcnPostResponse404 = $trackV1TcnPostResponse404;
         $this->response = $response;
     }
-    public function getTrackV1TcnPostResponse404() : \AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostResponse404
+    public function getTrackV1TcnPostResponse404(): \AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostResponse404
     {
         return $this->trackV1TcnPostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

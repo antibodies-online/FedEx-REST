@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -57,7 +57,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['cutOffTime']);
             }
             if (\array_key_exists('accessTime', $data)) {
-                $object->setAccessTime($this->denormalizer->denormalize($data['accessTime'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItemAccessTime', 'json', $context));
+                $object->setAccessTime($this->denormalizer->denormalize($data['accessTime'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItemAccessTime::class, 'json', $context));
                 unset($data['accessTime']);
             }
             if (\array_key_exists('residentialAvailable', $data)) {
@@ -75,7 +75,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('carrier') && null !== $object->getCarrier()) {
@@ -106,9 +106,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem::class => false];
         }
     }
 } else {
@@ -118,13 +118,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem::class;
         }
         /**
          * @return mixed
@@ -158,7 +158,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['cutOffTime']);
             }
             if (\array_key_exists('accessTime', $data)) {
-                $object->setAccessTime($this->denormalizer->denormalize($data['accessTime'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItemAccessTime', 'json', $context));
+                $object->setAccessTime($this->denormalizer->denormalize($data['accessTime'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItemAccessTime::class, 'json', $context));
                 unset($data['accessTime']);
             }
             if (\array_key_exists('residentialAvailable', $data)) {
@@ -210,9 +210,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem::class => false];
         }
     }
 }

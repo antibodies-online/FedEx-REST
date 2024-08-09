@@ -8,7 +8,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -94,7 +94,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAssociatedAccountNumber($associatedAccountNumber) : self
+    public function setAssociatedAccountNumber($associatedAccountNumber): self
     {
         $this->initialized['associatedAccountNumber'] = true;
         $this->associatedAccountNumber = $associatedAccountNumber;
@@ -116,7 +116,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setOriginDetail($originDetail) : self
+    public function setOriginDetail($originDetail): self
     {
         $this->initialized['originDetail'] = true;
         $this->originDetail = $originDetail;
@@ -127,7 +127,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return list<PickupV1FreightPickupsPostBodyTotalWeightItem>
      */
-    public function getTotalWeight() : array
+    public function getTotalWeight(): array
     {
         return $this->totalWeight;
     }
@@ -138,7 +138,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalWeight(array $totalWeight) : self
+    public function setTotalWeight(array $totalWeight): self
     {
         $this->initialized['totalWeight'] = true;
         $this->totalWeight = $totalWeight;
@@ -149,7 +149,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return int
      */
-    public function getPackageCount() : int
+    public function getPackageCount(): int
     {
         return $this->packageCount;
     }
@@ -160,7 +160,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPackageCount(int $packageCount) : self
+    public function setPackageCount(int $packageCount): self
     {
         $this->initialized['packageCount'] = true;
         $this->packageCount = $packageCount;
@@ -171,7 +171,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getRemarks() : string
+    public function getRemarks(): string
     {
         return $this->remarks;
     }
@@ -182,7 +182,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRemarks(string $remarks) : self
+    public function setRemarks(string $remarks): self
     {
         $this->initialized['remarks'] = true;
         $this->remarks = $remarks;
@@ -193,7 +193,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCountryRelationships() : string
+    public function getCountryRelationships(): string
     {
         return $this->countryRelationships;
     }
@@ -204,7 +204,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCountryRelationships(string $countryRelationships) : self
+    public function setCountryRelationships(string $countryRelationships): self
     {
         $this->initialized['countryRelationships'] = true;
         $this->countryRelationships = $countryRelationships;
@@ -215,7 +215,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTrackingNumber() : string
+    public function getTrackingNumber(): string
     {
         return $this->trackingNumber;
     }
@@ -226,7 +226,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingNumber(string $trackingNumber) : self
+    public function setTrackingNumber(string $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;
@@ -237,7 +237,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCommodityDescription() : string
+    public function getCommodityDescription(): string
     {
         return $this->commodityDescription;
     }
@@ -248,7 +248,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCommodityDescription(string $commodityDescription) : self
+    public function setCommodityDescription(string $commodityDescription): self
     {
         $this->initialized['commodityDescription'] = true;
         $this->commodityDescription = $commodityDescription;
@@ -259,7 +259,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return PickupV1FreightPickupsPostBodyFreightPickupDetail
      */
-    public function getFreightPickupDetail() : PickupV1FreightPickupsPostBodyFreightPickupDetail
+    public function getFreightPickupDetail(): PickupV1FreightPickupsPostBodyFreightPickupDetail
     {
         return $this->freightPickupDetail;
     }
@@ -270,7 +270,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setFreightPickupDetail(PickupV1FreightPickupsPostBodyFreightPickupDetail $freightPickupDetail) : self
+    public function setFreightPickupDetail(PickupV1FreightPickupsPostBodyFreightPickupDetail $freightPickupDetail): self
     {
         $this->initialized['freightPickupDetail'] = true;
         $this->freightPickupDetail = $freightPickupDetail;
@@ -281,7 +281,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return int
      */
-    public function getOversizePackageCount() : int
+    public function getOversizePackageCount(): int
     {
         return $this->oversizePackageCount;
     }
@@ -292,7 +292,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setOversizePackageCount(int $oversizePackageCount) : self
+    public function setOversizePackageCount(int $oversizePackageCount): self
     {
         $this->initialized['oversizePackageCount'] = true;
         $this->oversizePackageCount = $oversizePackageCount;
@@ -314,7 +314,7 @@ class PickupV1FreightPickupsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPickupNotificationDetail($pickupNotificationDetail) : self
+    public function setPickupNotificationDetail($pickupNotificationDetail): self
     {
         $this->initialized['pickupNotificationDetail'] = true;
         $this->pickupNotificationDetail = $pickupNotificationDetail;

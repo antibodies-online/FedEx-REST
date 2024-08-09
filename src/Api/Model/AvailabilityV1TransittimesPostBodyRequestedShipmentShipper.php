@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShipper extends \ArrayO
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShipper extends \ArrayO
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentShipperAddress
      */
-    public function getAddress() : AvailabilityV1TransittimesPostBodyRequestedShipmentShipperAddress
+    public function getAddress(): AvailabilityV1TransittimesPostBodyRequestedShipmentShipperAddress
     {
         return $this->address;
     }
@@ -34,7 +34,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShipper extends \ArrayO
      *
      * @return self
      */
-    public function setAddress(AvailabilityV1TransittimesPostBodyRequestedShipmentShipperAddress $address) : self
+    public function setAddress(AvailabilityV1TransittimesPostBodyRequestedShipmentShipperAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

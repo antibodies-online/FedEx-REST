@@ -18,11 +18,11 @@ class FreightRateQuoteServiceUnavailableException extends ServiceUnavailableExce
         $this->rateV1FreightRatesQuotesPostResponse503 = $rateV1FreightRatesQuotesPostResponse503;
         $this->response = $response;
     }
-    public function getRateV1FreightRatesQuotesPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\RateV1FreightRatesQuotesPostResponse503
+    public function getRateV1FreightRatesQuotesPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\RateV1FreightRatesQuotesPostResponse503
     {
         return $this->rateV1FreightRatesQuotesPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -45,11 +45,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['docTabContentType']);
             }
             if (\array_key_exists('zone001', $data)) {
-                $object->setZone001($this->denormalizer->denormalize($data['zone001'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentZone001', 'json', $context));
+                $object->setZone001($this->denormalizer->denormalize($data['zone001'], \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentZone001::class, 'json', $context));
                 unset($data['zone001']);
             }
             if (\array_key_exists('barcoded', $data)) {
-                $object->setBarcoded($this->denormalizer->denormalize($data['barcoded'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcoded', 'json', $context));
+                $object->setBarcoded($this->denormalizer->denormalize($data['barcoded'], \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcoded::class, 'json', $context));
                 unset($data['barcoded']);
             }
             foreach ($data as $key => $value) {
@@ -59,7 +59,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('docTabContentType') && null !== $object->getDocTabContentType()) {
@@ -78,9 +78,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent::class => false];
         }
     }
 } else {
@@ -90,13 +90,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent::class;
         }
         /**
          * @return mixed
@@ -118,11 +118,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['docTabContentType']);
             }
             if (\array_key_exists('zone001', $data)) {
-                $object->setZone001($this->denormalizer->denormalize($data['zone001'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentZone001', 'json', $context));
+                $object->setZone001($this->denormalizer->denormalize($data['zone001'], \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentZone001::class, 'json', $context));
                 unset($data['zone001']);
             }
             if (\array_key_exists('barcoded', $data)) {
-                $object->setBarcoded($this->denormalizer->denormalize($data['barcoded'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcoded', 'json', $context));
+                $object->setBarcoded($this->denormalizer->denormalize($data['barcoded'], \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcoded::class, 'json', $context));
                 unset($data['barcoded']);
             }
             foreach ($data as $key => $value) {
@@ -154,9 +154,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContent::class => false];
         }
     }
 }

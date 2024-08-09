@@ -8,7 +8,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipper extends \A
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipper extends \A
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipperaddress
      */
-    public function getAddress() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipperaddress
+    public function getAddress(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipperaddress
     {
         return $this->address;
     }
@@ -46,7 +46,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipper extends \A
      *
      * @return self
      */
-    public function setAddress(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipperaddress $address) : self
+    public function setAddress(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipperaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -57,7 +57,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipper extends \A
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippercontact
      */
-    public function getContact() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippercontact
+    public function getContact(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippercontact
     {
         return $this->contact;
     }
@@ -68,7 +68,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipper extends \A
      *
      * @return self
      */
-    public function setContact(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippercontact $contact) : self
+    public function setContact(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippercontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -79,7 +79,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipper extends \A
      *
      * @return list<ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShippertinsItem>
      */
-    public function getTins() : array
+    public function getTins(): array
     {
         return $this->tins;
     }
@@ -90,7 +90,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipper extends \A
      *
      * @return self
      */
-    public function setTins(array $tins) : self
+    public function setTins(array $tins): self
     {
         $this->initialized['tins'] = true;
         $this->tins = $tins;

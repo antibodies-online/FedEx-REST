@@ -8,7 +8,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationLocationCapabilitie
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationLocationCapabilitie
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -58,7 +58,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationLocationCapabilitie
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -69,7 +69,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationLocationCapabilitie
      *
      * @return string
      */
-    public function getCarrierCode() : string
+    public function getCarrierCode(): string
     {
         return $this->carrierCode;
     }
@@ -80,7 +80,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationLocationCapabilitie
      *
      * @return self
      */
-    public function setCarrierCode(string $carrierCode) : self
+    public function setCarrierCode(string $carrierCode): self
     {
         $this->initialized['carrierCode'] = true;
         $this->carrierCode = $carrierCode;
@@ -91,7 +91,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationLocationCapabilitie
      *
      * @return string
      */
-    public function getTransferOfPossessionType() : string
+    public function getTransferOfPossessionType(): string
     {
         return $this->transferOfPossessionType;
     }
@@ -102,7 +102,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationLocationCapabilitie
      *
      * @return self
      */
-    public function setTransferOfPossessionType(string $transferOfPossessionType) : self
+    public function setTransferOfPossessionType(string $transferOfPossessionType): self
     {
         $this->initialized['transferOfPossessionType'] = true;
         $this->transferOfPossessionType = $transferOfPossessionType;
@@ -113,7 +113,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationLocationCapabilitie
      *
      * @return string
      */
-    public function getServiceCategory() : string
+    public function getServiceCategory(): string
     {
         return $this->serviceCategory;
     }
@@ -124,7 +124,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationLocationCapabilitie
      *
      * @return self
      */
-    public function setServiceCategory(string $serviceCategory) : self
+    public function setServiceCategory(string $serviceCategory): self
     {
         $this->initialized['serviceCategory'] = true;
         $this->serviceCategory = $serviceCategory;
@@ -135,7 +135,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationLocationCapabilitie
      *
      * @return list<string>
      */
-    public function getDaysOfWeek() : array
+    public function getDaysOfWeek(): array
     {
         return $this->daysOfWeek;
     }
@@ -146,7 +146,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationLocationCapabilitie
      *
      * @return self
      */
-    public function setDaysOfWeek(array $daysOfWeek) : self
+    public function setDaysOfWeek(array $daysOfWeek): self
     {
         $this->initialized['daysOfWeek'] = true;
         $this->daysOfWeek = $daysOfWeek;

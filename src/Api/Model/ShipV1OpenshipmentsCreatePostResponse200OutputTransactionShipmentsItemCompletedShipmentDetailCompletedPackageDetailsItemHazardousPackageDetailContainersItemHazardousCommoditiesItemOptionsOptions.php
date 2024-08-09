@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getLabelTextOption() : string
+    public function getLabelTextOption(): string
     {
         return $this->labelTextOption;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setLabelTextOption(string $labelTextOption) : self
+    public function setLabelTextOption(string $labelTextOption): self
     {
         $this->initialized['labelTextOption'] = true;
         $this->labelTextOption = $labelTextOption;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getCustomerSuppliedLabelText() : string
+    public function getCustomerSuppliedLabelText(): string
     {
         return $this->customerSuppliedLabelText;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setCustomerSuppliedLabelText(string $customerSuppliedLabelText) : self
+    public function setCustomerSuppliedLabelText(string $customerSuppliedLabelText): self
     {
         $this->initialized['customerSuppliedLabelText'] = true;
         $this->customerSuppliedLabelText = $customerSuppliedLabelText;

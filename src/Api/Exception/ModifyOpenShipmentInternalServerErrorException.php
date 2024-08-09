@@ -18,11 +18,11 @@ class ModifyOpenShipmentInternalServerErrorException extends InternalServerError
         $this->shipV1OpenshipmentsPutResponse500 = $shipV1OpenshipmentsPutResponse500;
         $this->response = $response;
     }
-    public function getShipV1OpenshipmentsPutResponse500() : \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutResponse500
+    public function getShipV1OpenshipmentsPutResponse500(): \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutResponse500
     {
         return $this->shipV1OpenshipmentsPutResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

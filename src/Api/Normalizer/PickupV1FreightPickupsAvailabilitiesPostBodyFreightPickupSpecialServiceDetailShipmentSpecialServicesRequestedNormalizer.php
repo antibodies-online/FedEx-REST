@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequested';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequested::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequested';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequested::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -41,11 +41,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('freightGuaranteeDetail', $data)) {
-                $object->setFreightGuaranteeDetail($this->denormalizer->denormalize($data['freightGuaranteeDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightGuaranteeDetail', 'json', $context));
+                $object->setFreightGuaranteeDetail($this->denormalizer->denormalize($data['freightGuaranteeDetail'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightGuaranteeDetail::class, 'json', $context));
                 unset($data['freightGuaranteeDetail']);
             }
             if (\array_key_exists('freightDirectDetail', $data)) {
-                $object->setFreightDirectDetail($this->denormalizer->denormalize($data['freightDirectDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightDirectDetail', 'json', $context));
+                $object->setFreightDirectDetail($this->denormalizer->denormalize($data['freightDirectDetail'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightDirectDetail::class, 'json', $context));
                 unset($data['freightDirectDetail']);
             }
             if (\array_key_exists('specialServiceTypes', $data)) {
@@ -63,7 +63,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('freightGuaranteeDetail') && null !== $object->getFreightGuaranteeDetail()) {
@@ -86,9 +86,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequested' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequested::class => false];
         }
     }
 } else {
@@ -98,13 +98,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequested';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequested::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequested';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequested::class;
         }
         /**
          * @return mixed
@@ -122,11 +122,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('freightGuaranteeDetail', $data)) {
-                $object->setFreightGuaranteeDetail($this->denormalizer->denormalize($data['freightGuaranteeDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightGuaranteeDetail', 'json', $context));
+                $object->setFreightGuaranteeDetail($this->denormalizer->denormalize($data['freightGuaranteeDetail'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightGuaranteeDetail::class, 'json', $context));
                 unset($data['freightGuaranteeDetail']);
             }
             if (\array_key_exists('freightDirectDetail', $data)) {
-                $object->setFreightDirectDetail($this->denormalizer->denormalize($data['freightDirectDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightDirectDetail', 'json', $context));
+                $object->setFreightDirectDetail($this->denormalizer->denormalize($data['freightDirectDetail'], \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightDirectDetail::class, 'json', $context));
                 unset($data['freightDirectDetail']);
             }
             if (\array_key_exists('specialServiceTypes', $data)) {
@@ -170,9 +170,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequested' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequested::class => false];
         }
     }
 }

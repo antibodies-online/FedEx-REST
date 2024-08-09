@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1TcnPostBody';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostBody::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1TcnPostBody';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostBody::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -41,7 +41,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('tcnInfo', $data)) {
-                $object->setTcnInfo($this->denormalizer->denormalize($data['tcnInfo'], 'AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1TcnPostBodyTcnInfo', 'json', $context));
+                $object->setTcnInfo($this->denormalizer->denormalize($data['tcnInfo'], \AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostBodyTcnInfo::class, 'json', $context));
                 unset($data['tcnInfo']);
             }
             if (\array_key_exists('includeDetailedScans', $data)) {
@@ -55,7 +55,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['tcnInfo'] = $this->normalizer->normalize($object->getTcnInfo(), 'json', $context);
@@ -69,9 +69,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1TcnPostBody' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostBody::class => false];
         }
     }
 } else {
@@ -81,13 +81,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1TcnPostBody';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostBody::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1TcnPostBody';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostBody::class;
         }
         /**
          * @return mixed
@@ -105,7 +105,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('tcnInfo', $data)) {
-                $object->setTcnInfo($this->denormalizer->denormalize($data['tcnInfo'], 'AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1TcnPostBodyTcnInfo', 'json', $context));
+                $object->setTcnInfo($this->denormalizer->denormalize($data['tcnInfo'], \AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostBodyTcnInfo::class, 'json', $context));
                 unset($data['tcnInfo']);
             }
             if (\array_key_exists('includeDetailedScans', $data)) {
@@ -136,9 +136,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1TcnPostBody' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostBody::class => false];
         }
     }
 }

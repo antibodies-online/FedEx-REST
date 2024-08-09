@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getFolderId() : string
+    public function getFolderId(): string
     {
         return $this->folderId;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setFolderId(string $folderId) : self
+    public function setFolderId(string $folderId): self
     {
         $this->initialized['folderId'] = true;
         $this->folderId = $folderId;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return list<ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedEtdDetailUploadDocumentReferenceDetailsItem>
      */
-    public function getUploadDocumentReferenceDetails() : array
+    public function getUploadDocumentReferenceDetails(): array
     {
         return $this->uploadDocumentReferenceDetails;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setUploadDocumentReferenceDetails(array $uploadDocumentReferenceDetails) : self
+    public function setUploadDocumentReferenceDetails(array $uploadDocumentReferenceDetails): self
     {
         $this->initialized['uploadDocumentReferenceDetails'] = true;
         $this->uploadDocumentReferenceDetails = $uploadDocumentReferenceDetails;

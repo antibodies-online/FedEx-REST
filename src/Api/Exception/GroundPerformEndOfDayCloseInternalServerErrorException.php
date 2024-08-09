@@ -18,11 +18,11 @@ class GroundPerformEndOfDayCloseInternalServerErrorException extends InternalSer
         $this->shipV1EndofdayPutResponse500 = $shipV1EndofdayPutResponse500;
         $this->response = $response;
     }
-    public function getShipV1EndofdayPutResponse500() : \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPutResponse500
+    public function getShipV1EndofdayPutResponse500(): \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPutResponse500
     {
         return $this->shipV1EndofdayPutResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

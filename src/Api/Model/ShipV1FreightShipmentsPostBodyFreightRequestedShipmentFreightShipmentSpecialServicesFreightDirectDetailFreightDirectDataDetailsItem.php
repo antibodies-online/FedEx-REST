@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -52,7 +52,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -63,7 +63,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return string
      */
-    public function getTransportationType() : string
+    public function getTransportationType(): string
     {
         return $this->transportationType;
     }
@@ -74,7 +74,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setTransportationType(string $transportationType) : self
+    public function setTransportationType(string $transportationType): self
     {
         $this->initialized['transportationType'] = true;
         $this->transportationType = $transportationType;
@@ -85,7 +85,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -96,7 +96,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -107,7 +107,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return list<ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesFreightDirectDetailFreightDirectDataDetailsItemPhoneNumberDetailsItem>
      */
-    public function getPhoneNumberDetails() : array
+    public function getPhoneNumberDetails(): array
     {
         return $this->phoneNumberDetails;
     }
@@ -118,7 +118,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setPhoneNumberDetails(array $phoneNumberDetails) : self
+    public function setPhoneNumberDetails(array $phoneNumberDetails): self
     {
         $this->initialized['phoneNumberDetails'] = true;
         $this->phoneNumberDetails = $phoneNumberDetails;

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationGeneralAgencyAgreementDetail
      */
-    public function getGeneralAgencyAgreementDetail() : ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationGeneralAgencyAgreementDetail
+    public function getGeneralAgencyAgreementDetail(): ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationGeneralAgencyAgreementDetail
     {
         return $this->generalAgencyAgreementDetail;
     }
@@ -76,7 +76,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return self
      */
-    public function setGeneralAgencyAgreementDetail(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationGeneralAgencyAgreementDetail $generalAgencyAgreementDetail) : self
+    public function setGeneralAgencyAgreementDetail(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationGeneralAgencyAgreementDetail $generalAgencyAgreementDetail): self
     {
         $this->initialized['generalAgencyAgreementDetail'] = true;
         $this->generalAgencyAgreementDetail = $generalAgencyAgreementDetail;
@@ -87,7 +87,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetail
      */
-    public function getReturnInstructionsDetail() : ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetail
+    public function getReturnInstructionsDetail(): ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetail
     {
         return $this->returnInstructionsDetail;
     }
@@ -98,7 +98,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return self
      */
-    public function setReturnInstructionsDetail(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetail $returnInstructionsDetail) : self
+    public function setReturnInstructionsDetail(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetail $returnInstructionsDetail): self
     {
         $this->initialized['returnInstructionsDetail'] = true;
         $this->returnInstructionsDetail = $returnInstructionsDetail;
@@ -109,7 +109,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationOp900Detail
      */
-    public function getOp900Detail() : ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationOp900Detail
+    public function getOp900Detail(): ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationOp900Detail
     {
         return $this->op900Detail;
     }
@@ -120,7 +120,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return self
      */
-    public function setOp900Detail(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationOp900Detail $op900Detail) : self
+    public function setOp900Detail(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationOp900Detail $op900Detail): self
     {
         $this->initialized['op900Detail'] = true;
         $this->op900Detail = $op900Detail;
@@ -131,7 +131,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCertificationOfOriginDetail
      */
-    public function getUsmcaCertificationOfOriginDetail() : ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCertificationOfOriginDetail
+    public function getUsmcaCertificationOfOriginDetail(): ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCertificationOfOriginDetail
     {
         return $this->usmcaCertificationOfOriginDetail;
     }
@@ -142,7 +142,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return self
      */
-    public function setUsmcaCertificationOfOriginDetail(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCertificationOfOriginDetail $usmcaCertificationOfOriginDetail) : self
+    public function setUsmcaCertificationOfOriginDetail(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCertificationOfOriginDetail $usmcaCertificationOfOriginDetail): self
     {
         $this->initialized['usmcaCertificationOfOriginDetail'] = true;
         $this->usmcaCertificationOfOriginDetail = $usmcaCertificationOfOriginDetail;
@@ -153,7 +153,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetail
      */
-    public function getUsmcaCommercialInvoiceCertificationOfOriginDetail() : ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetail
+    public function getUsmcaCommercialInvoiceCertificationOfOriginDetail(): ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetail
     {
         return $this->usmcaCommercialInvoiceCertificationOfOriginDetail;
     }
@@ -164,7 +164,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return self
      */
-    public function setUsmcaCommercialInvoiceCertificationOfOriginDetail(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetail $usmcaCommercialInvoiceCertificationOfOriginDetail) : self
+    public function setUsmcaCommercialInvoiceCertificationOfOriginDetail(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetail $usmcaCommercialInvoiceCertificationOfOriginDetail): self
     {
         $this->initialized['usmcaCommercialInvoiceCertificationOfOriginDetail'] = true;
         $this->usmcaCommercialInvoiceCertificationOfOriginDetail = $usmcaCommercialInvoiceCertificationOfOriginDetail;
@@ -175,7 +175,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return list<string>
      */
-    public function getShippingDocumentTypes() : array
+    public function getShippingDocumentTypes(): array
     {
         return $this->shippingDocumentTypes;
     }
@@ -186,7 +186,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return self
      */
-    public function setShippingDocumentTypes(array $shippingDocumentTypes) : self
+    public function setShippingDocumentTypes(array $shippingDocumentTypes): self
     {
         $this->initialized['shippingDocumentTypes'] = true;
         $this->shippingDocumentTypes = $shippingDocumentTypes;
@@ -197,7 +197,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOrigin
      */
-    public function getCertificateOfOrigin() : ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOrigin
+    public function getCertificateOfOrigin(): ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOrigin
     {
         return $this->certificateOfOrigin;
     }
@@ -208,7 +208,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return self
      */
-    public function setCertificateOfOrigin(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOrigin $certificateOfOrigin) : self
+    public function setCertificateOfOrigin(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOrigin $certificateOfOrigin): self
     {
         $this->initialized['certificateOfOrigin'] = true;
         $this->certificateOfOrigin = $certificateOfOrigin;
@@ -219,7 +219,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCommercialInvoiceDetail
      */
-    public function getCommercialInvoiceDetail() : ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCommercialInvoiceDetail
+    public function getCommercialInvoiceDetail(): ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCommercialInvoiceDetail
     {
         return $this->commercialInvoiceDetail;
     }
@@ -230,7 +230,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecification extends \ArrayObj
      *
      * @return self
      */
-    public function setCommercialInvoiceDetail(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCommercialInvoiceDetail $commercialInvoiceDetail) : self
+    public function setCommercialInvoiceDetail(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCommercialInvoiceDetail $commercialInvoiceDetail): self
     {
         $this->initialized['commercialInvoiceDetail'] = true;
         $this->commercialInvoiceDetail = $commercialInvoiceDetail;

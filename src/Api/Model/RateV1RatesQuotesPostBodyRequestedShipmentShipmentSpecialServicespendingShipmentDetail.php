@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return string
      */
-    public function getPendingShipmentType() : string
+    public function getPendingShipmentType(): string
     {
         return $this->pendingShipmentType;
     }
@@ -70,7 +70,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setPendingShipmentType(string $pendingShipmentType) : self
+    public function setPendingShipmentType(string $pendingShipmentType): self
     {
         $this->initialized['pendingShipmentType'] = true;
         $this->pendingShipmentType = $pendingShipmentType;
@@ -81,7 +81,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailProcessingOptions
      */
-    public function getProcessingOptions() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailProcessingOptions
+    public function getProcessingOptions(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailProcessingOptions
     {
         return $this->processingOptions;
     }
@@ -92,7 +92,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setProcessingOptions(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailProcessingOptions $processingOptions) : self
+    public function setProcessingOptions(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailProcessingOptions $processingOptions): self
     {
         $this->initialized['processingOptions'] = true;
         $this->processingOptions = $processingOptions;
@@ -103,7 +103,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailRecommendedDocumentSpecification
      */
-    public function getRecommendedDocumentSpecification() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailRecommendedDocumentSpecification
+    public function getRecommendedDocumentSpecification(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailRecommendedDocumentSpecification
     {
         return $this->recommendedDocumentSpecification;
     }
@@ -114,7 +114,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setRecommendedDocumentSpecification(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailRecommendedDocumentSpecification $recommendedDocumentSpecification) : self
+    public function setRecommendedDocumentSpecification(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailRecommendedDocumentSpecification $recommendedDocumentSpecification): self
     {
         $this->initialized['recommendedDocumentSpecification'] = true;
         $this->recommendedDocumentSpecification = $recommendedDocumentSpecification;
@@ -125,7 +125,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetail
      */
-    public function getEmailLabelDetail() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetail
+    public function getEmailLabelDetail(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetail
     {
         return $this->emailLabelDetail;
     }
@@ -136,7 +136,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setEmailLabelDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetail $emailLabelDetail) : self
+    public function setEmailLabelDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetail $emailLabelDetail): self
     {
         $this->initialized['emailLabelDetail'] = true;
         $this->emailLabelDetail = $emailLabelDetail;
@@ -147,7 +147,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return list<RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailDocumentReferencesItem>
      */
-    public function getDocumentReferences() : array
+    public function getDocumentReferences(): array
     {
         return $this->documentReferences;
     }
@@ -158,7 +158,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setDocumentReferences(array $documentReferences) : self
+    public function setDocumentReferences(array $documentReferences): self
     {
         $this->initialized['documentReferences'] = true;
         $this->documentReferences = $documentReferences;
@@ -169,7 +169,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return string
      */
-    public function getExpirationTimeStamp() : string
+    public function getExpirationTimeStamp(): string
     {
         return $this->expirationTimeStamp;
     }
@@ -180,7 +180,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setExpirationTimeStamp(string $expirationTimeStamp) : self
+    public function setExpirationTimeStamp(string $expirationTimeStamp): self
     {
         $this->initialized['expirationTimeStamp'] = true;
         $this->expirationTimeStamp = $expirationTimeStamp;
@@ -191,7 +191,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailShipmentDryIceDetail
      */
-    public function getShipmentDryIceDetail() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailShipmentDryIceDetail
+    public function getShipmentDryIceDetail(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailShipmentDryIceDetail
     {
         return $this->shipmentDryIceDetail;
     }
@@ -202,7 +202,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setShipmentDryIceDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailShipmentDryIceDetail $shipmentDryIceDetail) : self
+    public function setShipmentDryIceDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailShipmentDryIceDetail $shipmentDryIceDetail): self
     {
         $this->initialized['shipmentDryIceDetail'] = true;
         $this->shipmentDryIceDetail = $shipmentDryIceDetail;

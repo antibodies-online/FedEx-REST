@@ -18,11 +18,11 @@ class CancelTagUnauthorizedException extends UnauthorizedException
         $this->shipV1ShipmentsTagCancelShipmentidPutResponse401 = $shipV1ShipmentsTagCancelShipmentidPutResponse401;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsTagCancelShipmentidPutResponse401() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagCancelShipmentidPutResponse401
+    public function getShipV1ShipmentsTagCancelShipmentidPutResponse401(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagCancelShipmentidPutResponse401
     {
         return $this->shipV1ShipmentsTagCancelShipmentidPutResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

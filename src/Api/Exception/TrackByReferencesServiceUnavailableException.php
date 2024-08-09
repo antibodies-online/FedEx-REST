@@ -18,11 +18,11 @@ class TrackByReferencesServiceUnavailableException extends ServiceUnavailableExc
         $this->trackV1ReferencenumbersPostResponse503 = $trackV1ReferencenumbersPostResponse503;
         $this->response = $response;
     }
-    public function getTrackV1ReferencenumbersPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\TrackV1ReferencenumbersPostResponse503
+    public function getTrackV1ReferencenumbersPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\TrackV1ReferencenumbersPostResponse503
     {
         return $this->trackV1ReferencenumbersPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

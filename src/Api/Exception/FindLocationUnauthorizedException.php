@@ -18,11 +18,11 @@ class FindLocationUnauthorizedException extends UnauthorizedException
         $this->locationV1LocationsPostResponse401 = $locationV1LocationsPostResponse401;
         $this->response = $response;
     }
-    public function getLocationV1LocationsPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse401
+    public function getLocationV1LocationsPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse401
     {
         return $this->locationV1LocationsPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

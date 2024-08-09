@@ -18,11 +18,11 @@ class DeleteOpenShipmentPackagesUnauthorizedException extends UnauthorizedExcept
         $this->shipV1OpenshipmentsPackagesDeletePutResponse401 = $shipV1OpenshipmentsPackagesDeletePutResponse401;
         $this->response = $response;
     }
-    public function getShipV1OpenshipmentsPackagesDeletePutResponse401() : \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesDeletePutResponse401
+    public function getShipV1OpenshipmentsPackagesDeletePutResponse401(): \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesDeletePutResponse401
     {
         return $this->shipV1OpenshipmentsPackagesDeletePutResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

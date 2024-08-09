@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return string
      */
-    public function getDaysInTransit() : string
+    public function getDaysInTransit(): string
     {
         return $this->daysInTransit;
     }
@@ -82,7 +82,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return self
      */
-    public function setDaysInTransit(string $daysInTransit) : self
+    public function setDaysInTransit(string $daysInTransit): self
     {
         $this->initialized['daysInTransit'] = true;
         $this->daysInTransit = $daysInTransit;
@@ -93,7 +93,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return string
      */
-    public function getGuaranteedType() : string
+    public function getGuaranteedType(): string
     {
         return $this->guaranteedType;
     }
@@ -104,7 +104,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return self
      */
-    public function setGuaranteedType(string $guaranteedType) : self
+    public function setGuaranteedType(string $guaranteedType): self
     {
         $this->initialized['guaranteedType'] = true;
         $this->guaranteedType = $guaranteedType;
@@ -115,7 +115,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdateDetail
      */
-    public function getDateDetail() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdateDetail
+    public function getDateDetail(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdateDetail
     {
         return $this->dateDetail;
     }
@@ -126,7 +126,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return self
      */
-    public function setDateDetail(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdateDetail $dateDetail) : self
+    public function setDateDetail(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdateDetail $dateDetail): self
     {
         $this->initialized['dateDetail'] = true;
         $this->dateDetail = $dateDetail;
@@ -137,7 +137,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return bool
      */
-    public function getSaturdayDelivery() : bool
+    public function getSaturdayDelivery(): bool
     {
         return $this->saturdayDelivery;
     }
@@ -148,7 +148,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return self
      */
-    public function setSaturdayDelivery(bool $saturdayDelivery) : self
+    public function setSaturdayDelivery(bool $saturdayDelivery): self
     {
         $this->initialized['saturdayDelivery'] = true;
         $this->saturdayDelivery = $saturdayDelivery;
@@ -159,7 +159,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return list<string>
      */
-    public function getAlternativeCommodityNames() : array
+    public function getAlternativeCommodityNames(): array
     {
         return $this->alternativeCommodityNames;
     }
@@ -170,7 +170,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return self
      */
-    public function setAlternativeCommodityNames(array $alternativeCommodityNames) : self
+    public function setAlternativeCommodityNames(array $alternativeCommodityNames): self
     {
         $this->initialized['alternativeCommodityNames'] = true;
         $this->alternativeCommodityNames = $alternativeCommodityNames;
@@ -181,7 +181,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommittransitDays
      */
-    public function getTransitDays() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommittransitDays
+    public function getTransitDays(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommittransitDays
     {
         return $this->transitDays;
     }
@@ -192,7 +192,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return self
      */
-    public function setTransitDays(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommittransitDays $transitDays) : self
+    public function setTransitDays(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommittransitDays $transitDays): self
     {
         $this->initialized['transitDays'] = true;
         $this->transitDays = $transitDays;
@@ -203,7 +203,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return string
      */
-    public function getLabel() : string
+    public function getLabel(): string
     {
         return $this->label;
     }
@@ -214,7 +214,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return self
      */
-    public function setLabel(string $label) : self
+    public function setLabel(string $label): self
     {
         $this->initialized['label'] = true;
         $this->label = $label;
@@ -225,7 +225,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return string
      */
-    public function getCommitMessageDetails() : string
+    public function getCommitMessageDetails(): string
     {
         return $this->commitMessageDetails;
     }
@@ -236,7 +236,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return self
      */
-    public function setCommitMessageDetails(string $commitMessageDetails) : self
+    public function setCommitMessageDetails(string $commitMessageDetails): self
     {
         $this->initialized['commitMessageDetails'] = true;
         $this->commitMessageDetails = $commitMessageDetails;
@@ -247,7 +247,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return string
      */
-    public function getCommodityName() : string
+    public function getCommodityName(): string
     {
         return $this->commodityName;
     }
@@ -258,7 +258,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemCommit ex
      *
      * @return self
      */
-    public function setCommodityName(string $commodityName) : self
+    public function setCommodityName(string $commodityName): self
     {
         $this->initialized['commodityName'] = true;
         $this->commodityName = $commodityName;

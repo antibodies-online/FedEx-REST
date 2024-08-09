@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return string
      */
-    public function getCustomText() : string
+    public function getCustomText(): string
     {
         return $this->customText;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return self
      */
-    public function setCustomText(string $customText) : self
+    public function setCustomText(string $customText): self
     {
         $this->initialized['customText'] = true;
         $this->customText = $customText;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetailDocumentFormat
      */
-    public function getDocumentFormat() : ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetailDocumentFormat
+    public function getDocumentFormat(): ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetailDocumentFormat
     {
         return $this->documentFormat;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return self
      */
-    public function setDocumentFormat(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetailDocumentFormat $documentFormat) : self
+    public function setDocumentFormat(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetailDocumentFormat $documentFormat): self
     {
         $this->initialized['documentFormat'] = true;
         $this->documentFormat = $documentFormat;

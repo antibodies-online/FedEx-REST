@@ -8,7 +8,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -89,7 +89,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -100,7 +100,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -111,7 +111,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyTotalCommodityValue
      */
-    public function getTotalCommodityValue() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyTotalCommodityValue
+    public function getTotalCommodityValue(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyTotalCommodityValue
     {
         return $this->totalCommodityValue;
     }
@@ -122,7 +122,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return self
      */
-    public function setTotalCommodityValue(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyTotalCommodityValue $totalCommodityValue) : self
+    public function setTotalCommodityValue(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyTotalCommodityValue $totalCommodityValue): self
     {
         $this->initialized['totalCommodityValue'] = true;
         $this->totalCommodityValue = $totalCommodityValue;
@@ -133,7 +133,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyOriginAddress
      */
-    public function getOriginAddress() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyOriginAddress
+    public function getOriginAddress(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyOriginAddress
     {
         return $this->originAddress;
     }
@@ -144,7 +144,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return self
      */
-    public function setOriginAddress(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyOriginAddress $originAddress) : self
+    public function setOriginAddress(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyOriginAddress $originAddress): self
     {
         $this->initialized['originAddress'] = true;
         $this->originAddress = $originAddress;
@@ -155,7 +155,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyDestinationAddress
      */
-    public function getDestinationAddress() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyDestinationAddress
+    public function getDestinationAddress(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyDestinationAddress
     {
         return $this->destinationAddress;
     }
@@ -166,7 +166,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return self
      */
-    public function setDestinationAddress(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyDestinationAddress $destinationAddress) : self
+    public function setDestinationAddress(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyDestinationAddress $destinationAddress): self
     {
         $this->initialized['destinationAddress'] = true;
         $this->destinationAddress = $destinationAddress;
@@ -177,7 +177,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return list<string>
      */
-    public function getServiceOptionType() : array
+    public function getServiceOptionType(): array
     {
         return $this->serviceOptionType;
     }
@@ -188,7 +188,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return self
      */
-    public function setServiceOptionType(array $serviceOptionType) : self
+    public function setServiceOptionType(array $serviceOptionType): self
     {
         $this->initialized['serviceOptionType'] = true;
         $this->serviceOptionType = $serviceOptionType;
@@ -199,7 +199,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetail
      */
-    public function getCustomsClearanceDetail() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetail
+    public function getCustomsClearanceDetail(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetail
     {
         return $this->customsClearanceDetail;
     }
@@ -210,7 +210,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return self
      */
-    public function setCustomsClearanceDetail(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetail $customsClearanceDetail) : self
+    public function setCustomsClearanceDetail(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetail $customsClearanceDetail): self
     {
         $this->initialized['customsClearanceDetail'] = true;
         $this->customsClearanceDetail = $customsClearanceDetail;
@@ -221,7 +221,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return string
      */
-    public function getShipDate() : string
+    public function getShipDate(): string
     {
         return $this->shipDate;
     }
@@ -232,7 +232,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return self
      */
-    public function setShipDate(string $shipDate) : self
+    public function setShipDate(string $shipDate): self
     {
         $this->initialized['shipDate'] = true;
         $this->shipDate = $shipDate;
@@ -243,7 +243,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return string
      */
-    public function getCarrierCode() : string
+    public function getCarrierCode(): string
     {
         return $this->carrierCode;
     }
@@ -254,7 +254,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return self
      */
-    public function setCarrierCode(string $carrierCode) : self
+    public function setCarrierCode(string $carrierCode): self
     {
         $this->initialized['carrierCode'] = true;
         $this->carrierCode = $carrierCode;
@@ -265,7 +265,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyTotalWeight
      */
-    public function getTotalWeight() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyTotalWeight
+    public function getTotalWeight(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyTotalWeight
     {
         return $this->totalWeight;
     }
@@ -276,7 +276,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return self
      */
-    public function setTotalWeight(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyTotalWeight $totalWeight) : self
+    public function setTotalWeight(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyTotalWeight $totalWeight): self
     {
         $this->initialized['totalWeight'] = true;
         $this->totalWeight = $totalWeight;
@@ -287,7 +287,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return bool
      */
-    public function getIncludeURLReferences() : bool
+    public function getIncludeURLReferences(): bool
     {
         return $this->includeURLReferences;
     }
@@ -298,7 +298,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return self
      */
-    public function setIncludeURLReferences(bool $includeURLReferences) : self
+    public function setIncludeURLReferences(bool $includeURLReferences): self
     {
         $this->initialized['includeURLReferences'] = true;
         $this->includeURLReferences = $includeURLReferences;
@@ -309,7 +309,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return string
      */
-    public function getConsolidationType() : string
+    public function getConsolidationType(): string
     {
         return $this->consolidationType;
     }
@@ -320,7 +320,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return self
      */
-    public function setConsolidationType(string $consolidationType) : self
+    public function setConsolidationType(string $consolidationType): self
     {
         $this->initialized['consolidationType'] = true;
         $this->consolidationType = $consolidationType;
@@ -331,7 +331,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return string
      */
-    public function getConsolidationRole() : string
+    public function getConsolidationRole(): string
     {
         return $this->consolidationRole;
     }
@@ -342,7 +342,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBody extends \ArrayObje
      *
      * @return self
      */
-    public function setConsolidationRole(string $consolidationRole) : self
+    public function setConsolidationRole(string $consolidationRole): self
     {
         $this->initialized['consolidationRole'] = true;
         $this->consolidationRole = $consolidationRole;

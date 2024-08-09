@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentServiceTypeDetail extends \Array
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentServiceTypeDetail extends \Array
      *
      * @return string
      */
-    public function getCarrierCode() : string
+    public function getCarrierCode(): string
     {
         return $this->carrierCode;
     }
@@ -52,7 +52,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentServiceTypeDetail extends \Array
      *
      * @return self
      */
-    public function setCarrierCode(string $carrierCode) : self
+    public function setCarrierCode(string $carrierCode): self
     {
         $this->initialized['carrierCode'] = true;
         $this->carrierCode = $carrierCode;
@@ -63,7 +63,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentServiceTypeDetail extends \Array
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -74,7 +74,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentServiceTypeDetail extends \Array
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -85,7 +85,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentServiceTypeDetail extends \Array
      *
      * @return string
      */
-    public function getServiceName() : string
+    public function getServiceName(): string
     {
         return $this->serviceName;
     }
@@ -96,7 +96,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentServiceTypeDetail extends \Array
      *
      * @return self
      */
-    public function setServiceName(string $serviceName) : self
+    public function setServiceName(string $serviceName): self
     {
         $this->initialized['serviceName'] = true;
         $this->serviceName = $serviceName;
@@ -107,7 +107,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentServiceTypeDetail extends \Array
      *
      * @return string
      */
-    public function getServiceCategory() : string
+    public function getServiceCategory(): string
     {
         return $this->serviceCategory;
     }
@@ -118,7 +118,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentServiceTypeDetail extends \Array
      *
      * @return self
      */
-    public function setServiceCategory(string $serviceCategory) : self
+    public function setServiceCategory(string $serviceCategory): self
     {
         $this->initialized['serviceCategory'] = true;
         $this->serviceCategory = $serviceCategory;

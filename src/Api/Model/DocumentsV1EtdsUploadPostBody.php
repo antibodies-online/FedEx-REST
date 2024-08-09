@@ -8,14 +8,14 @@ class DocumentsV1EtdsUploadPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
     /**
      * Input the actual document/file to be uploaded.
      *
-     * @var string
+     * @var mixed
      */
     protected $attachment;
     /**
@@ -27,20 +27,20 @@ class DocumentsV1EtdsUploadPostBody extends \ArrayObject
     /**
      * Input the actual document/file to be uploaded.
      *
-     * @return string
+     * @return mixed
      */
-    public function getAttachment() : string
+    public function getAttachment()
     {
         return $this->attachment;
     }
     /**
      * Input the actual document/file to be uploaded.
      *
-     * @param string $attachment
+     * @param mixed $attachment
      *
      * @return self
      */
-    public function setAttachment(string $attachment) : self
+    public function setAttachment($attachment): self
     {
         $this->initialized['attachment'] = true;
         $this->attachment = $attachment;
@@ -51,7 +51,7 @@ class DocumentsV1EtdsUploadPostBody extends \ArrayObject
      *
      * @return DocumentsV1EtdsUploadPostBodyDocument
      */
-    public function getDocument() : DocumentsV1EtdsUploadPostBodyDocument
+    public function getDocument(): DocumentsV1EtdsUploadPostBodyDocument
     {
         return $this->document;
     }
@@ -62,7 +62,7 @@ class DocumentsV1EtdsUploadPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDocument(DocumentsV1EtdsUploadPostBodyDocument $document) : self
+    public function setDocument(DocumentsV1EtdsUploadPostBodyDocument $document): self
     {
         $this->initialized['document'] = true;
         $this->document = $document;

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -76,7 +76,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -87,7 +87,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getCode() : string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -98,7 +98,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setCode(string $code) : self
+    public function setCode(string $code): self
     {
         $this->initialized['code'] = true;
         $this->code = $code;
@@ -109,7 +109,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return list<ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailServiceDescriptionNamesItem>
      */
-    public function getNames() : array
+    public function getNames(): array
     {
         return $this->names;
     }
@@ -120,7 +120,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setNames(array $names) : self
+    public function setNames(array $names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -131,7 +131,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return list<string>
      */
-    public function getOperatingOrgCodes() : array
+    public function getOperatingOrgCodes(): array
     {
         return $this->operatingOrgCodes;
     }
@@ -142,7 +142,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setOperatingOrgCodes(array $operatingOrgCodes) : self
+    public function setOperatingOrgCodes(array $operatingOrgCodes): self
     {
         $this->initialized['operatingOrgCodes'] = true;
         $this->operatingOrgCodes = $operatingOrgCodes;
@@ -153,7 +153,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getAstraDescription() : string
+    public function getAstraDescription(): string
     {
         return $this->astraDescription;
     }
@@ -164,7 +164,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setAstraDescription(string $astraDescription) : self
+    public function setAstraDescription(string $astraDescription): self
     {
         $this->initialized['astraDescription'] = true;
         $this->astraDescription = $astraDescription;
@@ -175,7 +175,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -186,7 +186,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -197,7 +197,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getServiceId() : string
+    public function getServiceId(): string
     {
         return $this->serviceId;
     }
@@ -208,7 +208,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setServiceId(string $serviceId) : self
+    public function setServiceId(string $serviceId): self
     {
         $this->initialized['serviceId'] = true;
         $this->serviceId = $serviceId;
@@ -219,7 +219,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getServiceCategory() : string
+    public function getServiceCategory(): string
     {
         return $this->serviceCategory;
     }
@@ -230,7 +230,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setServiceCategory(string $serviceCategory) : self
+    public function setServiceCategory(string $serviceCategory): self
     {
         $this->initialized['serviceCategory'] = true;
         $this->serviceCategory = $serviceCategory;

@@ -18,11 +18,11 @@ class GetPackageAndServiceOptionsForbiddenException extends ForbiddenException
         $this->availabilityV1PackageandserviceoptionsPostResponse403 = $availabilityV1PackageandserviceoptionsPostResponse403;
         $this->response = $response;
     }
-    public function getAvailabilityV1PackageandserviceoptionsPostResponse403() : \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1PackageandserviceoptionsPostResponse403
+    public function getAvailabilityV1PackageandserviceoptionsPostResponse403(): \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1PackageandserviceoptionsPostResponse403
     {
         return $this->availabilityV1PackageandserviceoptionsPostResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

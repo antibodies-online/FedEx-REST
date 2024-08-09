@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipper extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipper extends \ArrayObject
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentShipperaddress
      */
-    public function getAddress() : ShipV1ShipmentsPostBodyRequestedShipmentShipperaddress
+    public function getAddress(): ShipV1ShipmentsPostBodyRequestedShipmentShipperaddress
     {
         return $this->address;
     }
@@ -46,7 +46,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipper extends \ArrayObject
      *
      * @return self
      */
-    public function setAddress(ShipV1ShipmentsPostBodyRequestedShipmentShipperaddress $address) : self
+    public function setAddress(ShipV1ShipmentsPostBodyRequestedShipmentShipperaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -57,7 +57,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipper extends \ArrayObject
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentShippercontact
      */
-    public function getContact() : ShipV1ShipmentsPostBodyRequestedShipmentShippercontact
+    public function getContact(): ShipV1ShipmentsPostBodyRequestedShipmentShippercontact
     {
         return $this->contact;
     }
@@ -68,7 +68,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipper extends \ArrayObject
      *
      * @return self
      */
-    public function setContact(ShipV1ShipmentsPostBodyRequestedShipmentShippercontact $contact) : self
+    public function setContact(ShipV1ShipmentsPostBodyRequestedShipmentShippercontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -79,7 +79,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipper extends \ArrayObject
      *
      * @return list<ShipV1ShipmentsPostBodyRequestedShipmentShippertinsItem>
      */
-    public function getTins() : array
+    public function getTins(): array
     {
         return $this->tins;
     }
@@ -90,7 +90,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipper extends \ArrayObject
      *
      * @return self
      */
-    public function setTins(array $tins) : self
+    public function setTins(array $tins): self
     {
         $this->initialized['tins'] = true;
         $this->tins = $tins;

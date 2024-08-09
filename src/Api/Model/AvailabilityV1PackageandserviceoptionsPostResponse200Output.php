@@ -8,7 +8,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200Output extends \Array
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200Output extends \Array
      *
      * @return list<AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsItem>
      */
-    public function getPackageOptions() : array
+    public function getPackageOptions(): array
     {
         return $this->packageOptions;
     }
@@ -58,7 +58,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200Output extends \Array
      *
      * @return self
      */
-    public function setPackageOptions(array $packageOptions) : self
+    public function setPackageOptions(array $packageOptions): self
     {
         $this->initialized['packageOptions'] = true;
         $this->packageOptions = $packageOptions;
@@ -69,7 +69,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200Output extends \Array
      *
      * @return bool
      */
-    public function getOneRate() : bool
+    public function getOneRate(): bool
     {
         return $this->oneRate;
     }
@@ -80,7 +80,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200Output extends \Array
      *
      * @return self
      */
-    public function setOneRate(bool $oneRate) : self
+    public function setOneRate(bool $oneRate): self
     {
         $this->initialized['oneRate'] = true;
         $this->oneRate = $oneRate;
@@ -91,7 +91,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200Output extends \Array
      *
      * @return list<AvailabilityV1PackageandserviceoptionsPostResponse200OutputAdvancedRegulatoryPackagesItem>
      */
-    public function getAdvancedRegulatoryPackages() : array
+    public function getAdvancedRegulatoryPackages(): array
     {
         return $this->advancedRegulatoryPackages;
     }
@@ -102,7 +102,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200Output extends \Array
      *
      * @return self
      */
-    public function setAdvancedRegulatoryPackages(array $advancedRegulatoryPackages) : self
+    public function setAdvancedRegulatoryPackages(array $advancedRegulatoryPackages): self
     {
         $this->initialized['advancedRegulatoryPackages'] = true;
         $this->advancedRegulatoryPackages = $advancedRegulatoryPackages;
@@ -113,7 +113,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200Output extends \Array
      *
      * @return list<AvailabilityV1PackageandserviceoptionsPostResponse200OutputServiceOptionsItem>
      */
-    public function getServiceOptions() : array
+    public function getServiceOptions(): array
     {
         return $this->serviceOptions;
     }
@@ -124,7 +124,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200Output extends \Array
      *
      * @return self
      */
-    public function setServiceOptions(array $serviceOptions) : self
+    public function setServiceOptions(array $serviceOptions): self
     {
         $this->initialized['serviceOptions'] = true;
         $this->serviceOptions = $serviceOptions;
@@ -135,7 +135,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200Output extends \Array
      *
      * @return list<AvailabilityV1PackageandserviceoptionsPostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -146,7 +146,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200Output extends \Array
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

@@ -21,26 +21,26 @@ class CancelShipment extends \AntibodiesOnline\FedEx\Api\Runtime\Client\BaseEndp
         $this->headerParameters = $headerParameters;
     }
     use \AntibodiesOnline\FedEx\Api\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'PUT';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return '/ship/v1/shipments/cancel';
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if ($this->body instanceof \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutBody) {
             return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
         }
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
-    protected function getHeadersOptionsResolver() : \Symfony\Component\OptionsResolver\OptionsResolver
+    protected function getHeadersOptionsResolver(): \Symfony\Component\OptionsResolver\OptionsResolver
     {
         $optionsResolver = parent::getHeadersOptionsResolver();
         $optionsResolver->setDefined(['x-customer-transaction-id', 'content-type', 'x-locale', 'authorization']);
@@ -69,28 +69,28 @@ class CancelShipment extends \AntibodiesOnline\FedEx\Api\Runtime\Client\BaseEndp
         $status = $response->getStatusCode();
         $body = (string) $response->getBody();
         if (is_null($contentType) === false && (200 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            return $serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsCancelPutResponse200', 'json');
+            return $serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse200', 'json');
         }
         if (is_null($contentType) === false && (400 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelShipmentBadRequestException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsCancelPutResponse400', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelShipmentBadRequestException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse400', 'json'), $response);
         }
         if (is_null($contentType) === false && (401 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelShipmentUnauthorizedException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsCancelPutResponse401', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelShipmentUnauthorizedException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse401', 'json'), $response);
         }
         if (is_null($contentType) === false && (403 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelShipmentForbiddenException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsCancelPutResponse403', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelShipmentForbiddenException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse403', 'json'), $response);
         }
         if (is_null($contentType) === false && (404 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelShipmentNotFoundException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsCancelPutResponse404', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelShipmentNotFoundException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse404', 'json'), $response);
         }
         if (is_null($contentType) === false && (500 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelShipmentInternalServerErrorException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsCancelPutResponse500', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelShipmentInternalServerErrorException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse500', 'json'), $response);
         }
         if (is_null($contentType) === false && (503 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelShipmentServiceUnavailableException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsCancelPutResponse503', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelShipmentServiceUnavailableException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse503', 'json'), $response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

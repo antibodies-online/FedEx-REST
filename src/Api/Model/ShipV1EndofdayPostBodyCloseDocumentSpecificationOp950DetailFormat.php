@@ -8,7 +8,7 @@ class ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950DetailFormat extends 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950DetailFormat extends 
      *
      * @return ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950DetailFormatTopOfPageOffset
      */
-    public function getTopOfPageOffset() : ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950DetailFormatTopOfPageOffset
+    public function getTopOfPageOffset(): ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950DetailFormatTopOfPageOffset
     {
         return $this->topOfPageOffset;
     }
@@ -52,7 +52,7 @@ class ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950DetailFormat extends 
      *
      * @return self
      */
-    public function setTopOfPageOffset(ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950DetailFormatTopOfPageOffset $topOfPageOffset) : self
+    public function setTopOfPageOffset(ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950DetailFormatTopOfPageOffset $topOfPageOffset): self
     {
         $this->initialized['topOfPageOffset'] = true;
         $this->topOfPageOffset = $topOfPageOffset;
@@ -63,7 +63,7 @@ class ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950DetailFormat extends 
      *
      * @return string
      */
-    public function getImageType() : string
+    public function getImageType(): string
     {
         return $this->imageType;
     }
@@ -74,7 +74,7 @@ class ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950DetailFormat extends 
      *
      * @return self
      */
-    public function setImageType(string $imageType) : self
+    public function setImageType(string $imageType): self
     {
         $this->initialized['imageType'] = true;
         $this->imageType = $imageType;
@@ -85,7 +85,7 @@ class ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950DetailFormat extends 
      *
      * @return string
      */
-    public function getStockType() : string
+    public function getStockType(): string
     {
         return $this->stockType;
     }
@@ -96,7 +96,7 @@ class ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950DetailFormat extends 
      *
      * @return self
      */
-    public function setStockType(string $stockType) : self
+    public function setStockType(string $stockType): self
     {
         $this->initialized['stockType'] = true;
         $this->stockType = $stockType;
@@ -107,7 +107,7 @@ class ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950DetailFormat extends 
      *
      * @return string
      */
-    public function getLocale() : string
+    public function getLocale(): string
     {
         return $this->locale;
     }
@@ -118,7 +118,7 @@ class ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950DetailFormat extends 
      *
      * @return self
      */
-    public function setLocale(string $locale) : self
+    public function setLocale(string $locale): self
     {
         $this->initialized['locale'] = true;
         $this->locale = $locale;

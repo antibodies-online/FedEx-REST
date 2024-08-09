@@ -8,7 +8,7 @@ class TrackV1TrackingdocumentsPostBodyTrackDocumentDetail extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1TrackingdocumentsPostBodyTrackDocumentDetail extends \ArrayObject
      *
      * @return string
      */
-    public function getDocumentType() : string
+    public function getDocumentType(): string
     {
         return $this->documentType;
     }
@@ -40,7 +40,7 @@ class TrackV1TrackingdocumentsPostBodyTrackDocumentDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setDocumentType(string $documentType) : self
+    public function setDocumentType(string $documentType): self
     {
         $this->initialized['documentType'] = true;
         $this->documentType = $documentType;
@@ -51,7 +51,7 @@ class TrackV1TrackingdocumentsPostBodyTrackDocumentDetail extends \ArrayObject
      *
      * @return string
      */
-    public function getDocumentFormat() : string
+    public function getDocumentFormat(): string
     {
         return $this->documentFormat;
     }
@@ -62,7 +62,7 @@ class TrackV1TrackingdocumentsPostBodyTrackDocumentDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setDocumentFormat(string $documentFormat) : self
+    public function setDocumentFormat(string $documentFormat): self
     {
         $this->initialized['documentFormat'] = true;
         $this->documentFormat = $documentFormat;

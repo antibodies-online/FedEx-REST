@@ -8,7 +8,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -167,7 +167,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getPOBox() : bool
+    public function getPOBox(): bool
     {
         return $this->pOBox;
     }
@@ -178,7 +178,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setPOBox(bool $pOBox) : self
+    public function setPOBox(bool $pOBox): self
     {
         $this->initialized['pOBox'] = true;
         $this->pOBox = $pOBox;
@@ -189,7 +189,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getPOBoxOnlyZIP() : bool
+    public function getPOBoxOnlyZIP(): bool
     {
         return $this->pOBoxOnlyZIP;
     }
@@ -200,7 +200,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setPOBoxOnlyZIP(bool $pOBoxOnlyZIP) : self
+    public function setPOBoxOnlyZIP(bool $pOBoxOnlyZIP): self
     {
         $this->initialized['pOBoxOnlyZIP'] = true;
         $this->pOBoxOnlyZIP = $pOBoxOnlyZIP;
@@ -211,7 +211,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getSplitZip() : bool
+    public function getSplitZip(): bool
     {
         return $this->splitZip;
     }
@@ -222,7 +222,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setSplitZip(bool $splitZip) : self
+    public function setSplitZip(bool $splitZip): self
     {
         $this->initialized['splitZip'] = true;
         $this->splitZip = $splitZip;
@@ -233,7 +233,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getSuiteRequiredButMissing() : bool
+    public function getSuiteRequiredButMissing(): bool
     {
         return $this->suiteRequiredButMissing;
     }
@@ -244,7 +244,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setSuiteRequiredButMissing(bool $suiteRequiredButMissing) : self
+    public function setSuiteRequiredButMissing(bool $suiteRequiredButMissing): self
     {
         $this->initialized['suiteRequiredButMissing'] = true;
         $this->suiteRequiredButMissing = $suiteRequiredButMissing;
@@ -255,7 +255,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getInvalidSuiteNumber() : bool
+    public function getInvalidSuiteNumber(): bool
     {
         return $this->invalidSuiteNumber;
     }
@@ -266,7 +266,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setInvalidSuiteNumber(bool $invalidSuiteNumber) : self
+    public function setInvalidSuiteNumber(bool $invalidSuiteNumber): self
     {
         $this->initialized['invalidSuiteNumber'] = true;
         $this->invalidSuiteNumber = $invalidSuiteNumber;
@@ -277,7 +277,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return string
      */
-    public function getResolutionInput() : string
+    public function getResolutionInput(): string
     {
         return $this->resolutionInput;
     }
@@ -288,7 +288,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setResolutionInput(string $resolutionInput) : self
+    public function setResolutionInput(string $resolutionInput): self
     {
         $this->initialized['resolutionInput'] = true;
         $this->resolutionInput = $resolutionInput;
@@ -299,7 +299,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getDPV() : bool
+    public function getDPV(): bool
     {
         return $this->dPV;
     }
@@ -310,7 +310,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setDPV(bool $dPV) : self
+    public function setDPV(bool $dPV): self
     {
         $this->initialized['dPV'] = true;
         $this->dPV = $dPV;
@@ -321,7 +321,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return string
      */
-    public function getResolutionMethod() : string
+    public function getResolutionMethod(): string
     {
         return $this->resolutionMethod;
     }
@@ -332,7 +332,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setResolutionMethod(string $resolutionMethod) : self
+    public function setResolutionMethod(string $resolutionMethod): self
     {
         $this->initialized['resolutionMethod'] = true;
         $this->resolutionMethod = $resolutionMethod;
@@ -343,7 +343,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return string
      */
-    public function getDataVintage() : string
+    public function getDataVintage(): string
     {
         return $this->dataVintage;
     }
@@ -354,7 +354,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setDataVintage(string $dataVintage) : self
+    public function setDataVintage(string $dataVintage): self
     {
         $this->initialized['dataVintage'] = true;
         $this->dataVintage = $dataVintage;
@@ -365,7 +365,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return string
      */
-    public function getMatchSource() : string
+    public function getMatchSource(): string
     {
         return $this->matchSource;
     }
@@ -376,7 +376,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setMatchSource(string $matchSource) : self
+    public function setMatchSource(string $matchSource): self
     {
         $this->initialized['matchSource'] = true;
         $this->matchSource = $matchSource;
@@ -387,7 +387,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getCountrySupported() : bool
+    public function getCountrySupported(): bool
     {
         return $this->countrySupported;
     }
@@ -398,7 +398,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setCountrySupported(bool $countrySupported) : self
+    public function setCountrySupported(bool $countrySupported): self
     {
         $this->initialized['countrySupported'] = true;
         $this->countrySupported = $countrySupported;
@@ -409,7 +409,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getValidlyFormed() : bool
+    public function getValidlyFormed(): bool
     {
         return $this->validlyFormed;
     }
@@ -420,7 +420,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setValidlyFormed(bool $validlyFormed) : self
+    public function setValidlyFormed(bool $validlyFormed): self
     {
         $this->initialized['validlyFormed'] = true;
         $this->validlyFormed = $validlyFormed;
@@ -431,7 +431,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getMatched() : bool
+    public function getMatched(): bool
     {
         return $this->matched;
     }
@@ -442,7 +442,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setMatched(bool $matched) : self
+    public function setMatched(bool $matched): self
     {
         $this->initialized['matched'] = true;
         $this->matched = $matched;
@@ -453,7 +453,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getResolved() : bool
+    public function getResolved(): bool
     {
         return $this->resolved;
     }
@@ -464,7 +464,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setResolved(bool $resolved) : self
+    public function setResolved(bool $resolved): self
     {
         $this->initialized['resolved'] = true;
         $this->resolved = $resolved;
@@ -475,7 +475,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getInserted() : bool
+    public function getInserted(): bool
     {
         return $this->inserted;
     }
@@ -486,7 +486,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setInserted(bool $inserted) : self
+    public function setInserted(bool $inserted): self
     {
         $this->initialized['inserted'] = true;
         $this->inserted = $inserted;
@@ -497,7 +497,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getMultiUnitBase() : bool
+    public function getMultiUnitBase(): bool
     {
         return $this->multiUnitBase;
     }
@@ -508,7 +508,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setMultiUnitBase(bool $multiUnitBase) : self
+    public function setMultiUnitBase(bool $multiUnitBase): self
     {
         $this->initialized['multiUnitBase'] = true;
         $this->multiUnitBase = $multiUnitBase;
@@ -519,7 +519,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getZIP11Match() : bool
+    public function getZIP11Match(): bool
     {
         return $this->zIP11Match;
     }
@@ -530,7 +530,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setZIP11Match(bool $zIP11Match) : self
+    public function setZIP11Match(bool $zIP11Match): self
     {
         $this->initialized['zIP11Match'] = true;
         $this->zIP11Match = $zIP11Match;
@@ -541,7 +541,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getZIP4Match() : bool
+    public function getZIP4Match(): bool
     {
         return $this->zIP4Match;
     }
@@ -552,7 +552,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setZIP4Match(bool $zIP4Match) : self
+    public function setZIP4Match(bool $zIP4Match): self
     {
         $this->initialized['zIP4Match'] = true;
         $this->zIP4Match = $zIP4Match;
@@ -563,7 +563,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getUniqueZIP() : bool
+    public function getUniqueZIP(): bool
     {
         return $this->uniqueZIP;
     }
@@ -574,7 +574,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setUniqueZIP(bool $uniqueZIP) : self
+    public function setUniqueZIP(bool $uniqueZIP): self
     {
         $this->initialized['uniqueZIP'] = true;
         $this->uniqueZIP = $uniqueZIP;
@@ -585,7 +585,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getStreetAddress() : bool
+    public function getStreetAddress(): bool
     {
         return $this->streetAddress;
     }
@@ -596,7 +596,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setStreetAddress(bool $streetAddress) : self
+    public function setStreetAddress(bool $streetAddress): self
     {
         $this->initialized['streetAddress'] = true;
         $this->streetAddress = $streetAddress;
@@ -607,7 +607,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getRRConversion() : bool
+    public function getRRConversion(): bool
     {
         return $this->rRConversion;
     }
@@ -618,7 +618,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setRRConversion(bool $rRConversion) : self
+    public function setRRConversion(bool $rRConversion): self
     {
         $this->initialized['rRConversion'] = true;
         $this->rRConversion = $rRConversion;
@@ -629,7 +629,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getValidMultiUnit() : bool
+    public function getValidMultiUnit(): bool
     {
         return $this->validMultiUnit;
     }
@@ -640,7 +640,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setValidMultiUnit(bool $validMultiUnit) : self
+    public function setValidMultiUnit(bool $validMultiUnit): self
     {
         $this->initialized['validMultiUnit'] = true;
         $this->validMultiUnit = $validMultiUnit;
@@ -651,7 +651,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return string
      */
-    public function getAddressType() : string
+    public function getAddressType(): string
     {
         return $this->addressType;
     }
@@ -662,7 +662,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setAddressType(string $addressType) : self
+    public function setAddressType(string $addressType): self
     {
         $this->initialized['addressType'] = true;
         $this->addressType = $addressType;
@@ -673,7 +673,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return string
      */
-    public function getAddressPrecision() : string
+    public function getAddressPrecision(): string
     {
         return $this->addressPrecision;
     }
@@ -684,7 +684,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setAddressPrecision(string $addressPrecision) : self
+    public function setAddressPrecision(string $addressPrecision): self
     {
         $this->initialized['addressPrecision'] = true;
         $this->addressPrecision = $addressPrecision;
@@ -695,7 +695,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return bool
      */
-    public function getMultipleMatches() : bool
+    public function getMultipleMatches(): bool
     {
         return $this->multipleMatches;
     }
@@ -706,7 +706,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttribu
      *
      * @return self
      */
-    public function setMultipleMatches(bool $multipleMatches) : self
+    public function setMultipleMatches(bool $multipleMatches): self
     {
         $this->initialized['multipleMatches'] = true;
         $this->multipleMatches = $multipleMatches;

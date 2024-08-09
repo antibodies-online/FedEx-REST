@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemShipmentAdviso
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemShipmentAdviso
      *
      * @return list<ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisoryProhibitionsItem>
      */
-    public function getProhibitions() : array
+    public function getProhibitions(): array
     {
         return $this->prohibitions;
     }
@@ -34,7 +34,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemShipmentAdviso
      *
      * @return self
      */
-    public function setProhibitions(array $prohibitions) : self
+    public function setProhibitions(array $prohibitions): self
     {
         $this->initialized['prohibitions'] = true;
         $this->prohibitions = $prohibitions;

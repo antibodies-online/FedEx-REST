@@ -8,7 +8,7 @@ class TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfo extends \ArrayO
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfo extends \ArrayO
      *
      * @return string
      */
-    public function getShipDateBegin() : string
+    public function getShipDateBegin(): string
     {
         return $this->shipDateBegin;
     }
@@ -46,7 +46,7 @@ class TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfo extends \ArrayO
      *
      * @return self
      */
-    public function setShipDateBegin(string $shipDateBegin) : self
+    public function setShipDateBegin(string $shipDateBegin): self
     {
         $this->initialized['shipDateBegin'] = true;
         $this->shipDateBegin = $shipDateBegin;
@@ -57,7 +57,7 @@ class TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfo extends \ArrayO
      *
      * @return string
      */
-    public function getShipDateEnd() : string
+    public function getShipDateEnd(): string
     {
         return $this->shipDateEnd;
     }
@@ -68,7 +68,7 @@ class TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfo extends \ArrayO
      *
      * @return self
      */
-    public function setShipDateEnd(string $shipDateEnd) : self
+    public function setShipDateEnd(string $shipDateEnd): self
     {
         $this->initialized['shipDateEnd'] = true;
         $this->shipDateEnd = $shipDateEnd;
@@ -79,7 +79,7 @@ class TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfo extends \ArrayO
      *
      * @return TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfotrackingNumberInfo
      */
-    public function getTrackingNumberInfo() : TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfotrackingNumberInfo
+    public function getTrackingNumberInfo(): TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfotrackingNumberInfo
     {
         return $this->trackingNumberInfo;
     }
@@ -90,7 +90,7 @@ class TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfo extends \ArrayO
      *
      * @return self
      */
-    public function setTrackingNumberInfo(TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfotrackingNumberInfo $trackingNumberInfo) : self
+    public function setTrackingNumberInfo(TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfotrackingNumberInfo $trackingNumberInfo): self
     {
         $this->initialized['trackingNumberInfo'] = true;
         $this->trackingNumberInfo = $trackingNumberInfo;

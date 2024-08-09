@@ -18,11 +18,11 @@ class ImageUploadServiceInfoServiceUnavailableException extends ServiceUnavailab
         $this->documentsV1LhsimagesUploadPostResponse503 = $documentsV1LhsimagesUploadPostResponse503;
         $this->response = $response;
     }
-    public function getDocumentsV1LhsimagesUploadPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostResponse503
+    public function getDocumentsV1LhsimagesUploadPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostResponse503
     {
         return $this->documentsV1LhsimagesUploadPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return string
      */
-    public function getBillingCode() : string
+    public function getBillingCode(): string
     {
         return $this->billingCode;
     }
@@ -64,7 +64,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setBillingCode(string $billingCode) : self
+    public function setBillingCode(string $billingCode): self
     {
         $this->initialized['billingCode'] = true;
         $this->billingCode = $billingCode;
@@ -75,7 +75,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return string
      */
-    public function getBillingType() : string
+    public function getBillingType(): string
     {
         return $this->billingType;
     }
@@ -86,7 +86,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setBillingType(string $billingType) : self
+    public function setBillingType(string $billingType): self
     {
         $this->initialized['billingType'] = true;
         $this->billingType = $billingType;
@@ -97,7 +97,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return string
      */
-    public function getAliasId() : string
+    public function getAliasId(): string
     {
         return $this->aliasId;
     }
@@ -108,7 +108,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setAliasId(string $aliasId) : self
+    public function setAliasId(string $aliasId): self
     {
         $this->initialized['aliasId'] = true;
         $this->aliasId = $aliasId;
@@ -119,7 +119,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return string
      */
-    public function getAccountNickname() : string
+    public function getAccountNickname(): string
     {
         return $this->accountNickname;
     }
@@ -130,7 +130,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setAccountNickname(string $accountNickname) : self
+    public function setAccountNickname(string $accountNickname): self
     {
         $this->initialized['accountNickname'] = true;
         $this->accountNickname = $accountNickname;
@@ -141,7 +141,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return string
      */
-    public function getAccountNumber() : string
+    public function getAccountNumber(): string
     {
         return $this->accountNumber;
     }
@@ -152,7 +152,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setAccountNumber(string $accountNumber) : self
+    public function setAccountNumber(string $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -163,7 +163,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return string
      */
-    public function getAccountNumberCountryCode() : string
+    public function getAccountNumberCountryCode(): string
     {
         return $this->accountNumberCountryCode;
     }
@@ -174,7 +174,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setAccountNumberCountryCode(string $accountNumberCountryCode) : self
+    public function setAccountNumberCountryCode(string $accountNumberCountryCode): self
     {
         $this->initialized['accountNumberCountryCode'] = true;
         $this->accountNumberCountryCode = $accountNumberCountryCode;

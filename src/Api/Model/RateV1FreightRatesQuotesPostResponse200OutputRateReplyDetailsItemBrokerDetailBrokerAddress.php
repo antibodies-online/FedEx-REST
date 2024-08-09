@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return list<string>
      */
-    public function getStreetLines() : array
+    public function getStreetLines(): array
     {
         return $this->streetLines;
     }
@@ -88,7 +88,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return self
      */
-    public function setStreetLines(array $streetLines) : self
+    public function setStreetLines(array $streetLines): self
     {
         $this->initialized['streetLines'] = true;
         $this->streetLines = $streetLines;
@@ -99,7 +99,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return string
      */
-    public function getCity() : string
+    public function getCity(): string
     {
         return $this->city;
     }
@@ -110,7 +110,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return self
      */
-    public function setCity(string $city) : self
+    public function setCity(string $city): self
     {
         $this->initialized['city'] = true;
         $this->city = $city;
@@ -121,7 +121,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return string
      */
-    public function getStateOrProvinceCode() : string
+    public function getStateOrProvinceCode(): string
     {
         return $this->stateOrProvinceCode;
     }
@@ -132,7 +132,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return self
      */
-    public function setStateOrProvinceCode(string $stateOrProvinceCode) : self
+    public function setStateOrProvinceCode(string $stateOrProvinceCode): self
     {
         $this->initialized['stateOrProvinceCode'] = true;
         $this->stateOrProvinceCode = $stateOrProvinceCode;
@@ -143,7 +143,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return string
      */
-    public function getPostalCode() : string
+    public function getPostalCode(): string
     {
         return $this->postalCode;
     }
@@ -154,7 +154,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return self
      */
-    public function setPostalCode(string $postalCode) : self
+    public function setPostalCode(string $postalCode): self
     {
         $this->initialized['postalCode'] = true;
         $this->postalCode = $postalCode;
@@ -165,7 +165,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -176,7 +176,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;
@@ -187,7 +187,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return bool
      */
-    public function getResidential() : bool
+    public function getResidential(): bool
     {
         return $this->residential;
     }
@@ -198,7 +198,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return self
      */
-    public function setResidential(bool $residential) : self
+    public function setResidential(bool $residential): self
     {
         $this->initialized['residential'] = true;
         $this->residential = $residential;
@@ -209,7 +209,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return string
      */
-    public function getClassification() : string
+    public function getClassification(): string
     {
         return $this->classification;
     }
@@ -220,7 +220,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return self
      */
-    public function setClassification(string $classification) : self
+    public function setClassification(string $classification): self
     {
         $this->initialized['classification'] = true;
         $this->classification = $classification;
@@ -231,7 +231,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return string
      */
-    public function getGeographicCoordinates() : string
+    public function getGeographicCoordinates(): string
     {
         return $this->geographicCoordinates;
     }
@@ -242,7 +242,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return self
      */
-    public function setGeographicCoordinates(string $geographicCoordinates) : self
+    public function setGeographicCoordinates(string $geographicCoordinates): self
     {
         $this->initialized['geographicCoordinates'] = true;
         $this->geographicCoordinates = $geographicCoordinates;
@@ -253,7 +253,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return string
      */
-    public function getUrbanizationCode() : string
+    public function getUrbanizationCode(): string
     {
         return $this->urbanizationCode;
     }
@@ -264,7 +264,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return self
      */
-    public function setUrbanizationCode(string $urbanizationCode) : self
+    public function setUrbanizationCode(string $urbanizationCode): self
     {
         $this->initialized['urbanizationCode'] = true;
         $this->urbanizationCode = $urbanizationCode;
@@ -275,7 +275,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return string
      */
-    public function getCountryName() : string
+    public function getCountryName(): string
     {
         return $this->countryName;
     }
@@ -286,7 +286,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return self
      */
-    public function setCountryName(string $countryName) : self
+    public function setCountryName(string $countryName): self
     {
         $this->initialized['countryName'] = true;
         $this->countryName = $countryName;

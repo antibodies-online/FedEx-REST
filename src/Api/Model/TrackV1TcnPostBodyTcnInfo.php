@@ -8,7 +8,7 @@ class TrackV1TcnPostBodyTcnInfo extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class TrackV1TcnPostBodyTcnInfo extends \ArrayObject
      *
      * @return string
      */
-    public function getValue() : string
+    public function getValue(): string
     {
         return $this->value;
     }
@@ -52,7 +52,7 @@ class TrackV1TcnPostBodyTcnInfo extends \ArrayObject
      *
      * @return self
      */
-    public function setValue(string $value) : self
+    public function setValue(string $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;
@@ -63,7 +63,7 @@ class TrackV1TcnPostBodyTcnInfo extends \ArrayObject
      *
      * @return string
      */
-    public function getCarrierCode() : string
+    public function getCarrierCode(): string
     {
         return $this->carrierCode;
     }
@@ -74,7 +74,7 @@ class TrackV1TcnPostBodyTcnInfo extends \ArrayObject
      *
      * @return self
      */
-    public function setCarrierCode(string $carrierCode) : self
+    public function setCarrierCode(string $carrierCode): self
     {
         $this->initialized['carrierCode'] = true;
         $this->carrierCode = $carrierCode;
@@ -85,7 +85,7 @@ class TrackV1TcnPostBodyTcnInfo extends \ArrayObject
      *
      * @return string
      */
-    public function getShipDateBegin() : string
+    public function getShipDateBegin(): string
     {
         return $this->shipDateBegin;
     }
@@ -96,7 +96,7 @@ class TrackV1TcnPostBodyTcnInfo extends \ArrayObject
      *
      * @return self
      */
-    public function setShipDateBegin(string $shipDateBegin) : self
+    public function setShipDateBegin(string $shipDateBegin): self
     {
         $this->initialized['shipDateBegin'] = true;
         $this->shipDateBegin = $shipDateBegin;
@@ -107,7 +107,7 @@ class TrackV1TcnPostBodyTcnInfo extends \ArrayObject
      *
      * @return string
      */
-    public function getShipDateEnd() : string
+    public function getShipDateEnd(): string
     {
         return $this->shipDateEnd;
     }
@@ -118,7 +118,7 @@ class TrackV1TcnPostBodyTcnInfo extends \ArrayObject
      *
      * @return self
      */
-    public function setShipDateEnd(string $shipDateEnd) : self
+    public function setShipDateEnd(string $shipDateEnd): self
     {
         $this->initialized['shipDateEnd'] = true;
         $this->shipDateEnd = $shipDateEnd;

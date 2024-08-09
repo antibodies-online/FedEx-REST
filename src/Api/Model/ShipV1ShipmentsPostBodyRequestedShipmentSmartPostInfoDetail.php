@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentSmartPostInfoDetail extends \Array
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentSmartPostInfoDetail extends \Array
      *
      * @return string
      */
-    public function getAncillaryEndorsement() : string
+    public function getAncillaryEndorsement(): string
     {
         return $this->ancillaryEndorsement;
     }
@@ -52,7 +52,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentSmartPostInfoDetail extends \Array
      *
      * @return self
      */
-    public function setAncillaryEndorsement(string $ancillaryEndorsement) : self
+    public function setAncillaryEndorsement(string $ancillaryEndorsement): self
     {
         $this->initialized['ancillaryEndorsement'] = true;
         $this->ancillaryEndorsement = $ancillaryEndorsement;
@@ -63,7 +63,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentSmartPostInfoDetail extends \Array
      *
      * @return string
      */
-    public function getHubId() : string
+    public function getHubId(): string
     {
         return $this->hubId;
     }
@@ -74,7 +74,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentSmartPostInfoDetail extends \Array
      *
      * @return self
      */
-    public function setHubId(string $hubId) : self
+    public function setHubId(string $hubId): self
     {
         $this->initialized['hubId'] = true;
         $this->hubId = $hubId;
@@ -85,7 +85,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentSmartPostInfoDetail extends \Array
      *
      * @return string
      */
-    public function getIndicia() : string
+    public function getIndicia(): string
     {
         return $this->indicia;
     }
@@ -96,7 +96,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentSmartPostInfoDetail extends \Array
      *
      * @return self
      */
-    public function setIndicia(string $indicia) : self
+    public function setIndicia(string $indicia): self
     {
         $this->initialized['indicia'] = true;
         $this->indicia = $indicia;
@@ -107,7 +107,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentSmartPostInfoDetail extends \Array
      *
      * @return string
      */
-    public function getSpecialServices() : string
+    public function getSpecialServices(): string
     {
         return $this->specialServices;
     }
@@ -118,7 +118,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentSmartPostInfoDetail extends \Array
      *
      * @return self
      */
-    public function setSpecialServices(string $specialServices) : self
+    public function setSpecialServices(string $specialServices): self
     {
         $this->initialized['specialServices'] = true;
         $this->specialServices = $specialServices;

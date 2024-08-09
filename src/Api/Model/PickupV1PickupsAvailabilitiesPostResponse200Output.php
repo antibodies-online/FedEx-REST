@@ -8,7 +8,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getRequestTimestamp() : string
+    public function getRequestTimestamp(): string
     {
         return $this->requestTimestamp;
     }
@@ -46,7 +46,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestTimestamp(string $requestTimestamp) : self
+    public function setRequestTimestamp(string $requestTimestamp): self
     {
         $this->initialized['requestTimestamp'] = true;
         $this->requestTimestamp = $requestTimestamp;
@@ -57,7 +57,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200Output extends \ArrayObject
      *
      * @return list<PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem>
      */
-    public function getOptions() : array
+    public function getOptions(): array
     {
         return $this->options;
     }
@@ -68,7 +68,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setOptions(array $options) : self
+    public function setOptions(array $options): self
     {
         $this->initialized['options'] = true;
         $this->options = $options;
@@ -79,7 +79,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200Output extends \ArrayObject
      *
      * @return list<PickupV1PickupsAvailabilitiesPostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -90,7 +90,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return list<ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailAccessDetailAccessorDetailsItem>
      */
-    public function getAccessorDetails() : array
+    public function getAccessorDetails(): array
     {
         return $this->accessorDetails;
     }
@@ -34,7 +34,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return self
      */
-    public function setAccessorDetails(array $accessorDetails) : self
+    public function setAccessorDetails(array $accessorDetails): self
     {
         $this->initialized['accessorDetails'] = true;
         $this->accessorDetails = $accessorDetails;

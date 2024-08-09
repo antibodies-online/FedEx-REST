@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return string
      */
-    public function getItemNumber() : string
+    public function getItemNumber(): string
     {
         return $this->itemNumber;
     }
@@ -52,7 +52,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return self
      */
-    public function setItemNumber(string $itemNumber) : self
+    public function setItemNumber(string $itemNumber): self
     {
         $this->initialized['itemNumber'] = true;
         $this->itemNumber = $itemNumber;
@@ -63,7 +63,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return int
      */
-    public function getReceivedQuantity() : int
+    public function getReceivedQuantity(): int
     {
         return $this->receivedQuantity;
     }
@@ -74,7 +74,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return self
      */
-    public function setReceivedQuantity(int $receivedQuantity) : self
+    public function setReceivedQuantity(int $receivedQuantity): self
     {
         $this->initialized['receivedQuantity'] = true;
         $this->receivedQuantity = $receivedQuantity;
@@ -85,7 +85,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -96,7 +96,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -107,7 +107,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return string
      */
-    public function getPartNumber() : string
+    public function getPartNumber(): string
     {
         return $this->partNumber;
     }
@@ -118,7 +118,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return self
      */
-    public function setPartNumber(string $partNumber) : self
+    public function setPartNumber(string $partNumber): self
     {
         $this->initialized['partNumber'] = true;
         $this->partNumber = $partNumber;

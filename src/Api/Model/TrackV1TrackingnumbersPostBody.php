@@ -8,7 +8,7 @@ class TrackV1TrackingnumbersPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1TrackingnumbersPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getIncludeDetailedScans() : bool
+    public function getIncludeDetailedScans(): bool
     {
         return $this->includeDetailedScans;
     }
@@ -40,7 +40,7 @@ class TrackV1TrackingnumbersPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIncludeDetailedScans(bool $includeDetailedScans) : self
+    public function setIncludeDetailedScans(bool $includeDetailedScans): self
     {
         $this->initialized['includeDetailedScans'] = true;
         $this->includeDetailedScans = $includeDetailedScans;
@@ -51,7 +51,7 @@ class TrackV1TrackingnumbersPostBody extends \ArrayObject
      *
      * @return list<TrackV1TrackingnumbersPostBodyTrackingInfoItem>
      */
-    public function getTrackingInfo() : array
+    public function getTrackingInfo(): array
     {
         return $this->trackingInfo;
     }
@@ -62,7 +62,7 @@ class TrackV1TrackingnumbersPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingInfo(array $trackingInfo) : self
+    public function setTrackingInfo(array $trackingInfo): self
     {
         $this->initialized['trackingInfo'] = true;
         $this->trackingInfo = $trackingInfo;

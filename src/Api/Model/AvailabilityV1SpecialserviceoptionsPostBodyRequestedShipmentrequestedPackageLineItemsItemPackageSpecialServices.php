@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return string
      */
-    public function getSignatureOptionType() : string
+    public function getSignatureOptionType(): string
     {
         return $this->signatureOptionType;
     }
@@ -82,7 +82,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setSignatureOptionType(string $signatureOptionType) : self
+    public function setSignatureOptionType(string $signatureOptionType): self
     {
         $this->initialized['signatureOptionType'] = true;
         $this->signatureOptionType = $signatureOptionType;
@@ -93,7 +93,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesSignatureOptionDetail
      */
-    public function getSignatureOptionDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesSignatureOptionDetail
+    public function getSignatureOptionDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesSignatureOptionDetail
     {
         return $this->signatureOptionDetail;
     }
@@ -104,7 +104,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setSignatureOptionDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesSignatureOptionDetail $signatureOptionDetail) : self
+    public function setSignatureOptionDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesSignatureOptionDetail $signatureOptionDetail): self
     {
         $this->initialized['signatureOptionDetail'] = true;
         $this->signatureOptionDetail = $signatureOptionDetail;
@@ -115,7 +115,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesAlcoholDetail
      */
-    public function getAlcoholDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesAlcoholDetail
+    public function getAlcoholDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesAlcoholDetail
     {
         return $this->alcoholDetail;
     }
@@ -126,7 +126,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setAlcoholDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesAlcoholDetail $alcoholDetail) : self
+    public function setAlcoholDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesAlcoholDetail $alcoholDetail): self
     {
         $this->initialized['alcoholDetail'] = true;
         $this->alcoholDetail = $alcoholDetail;
@@ -137,7 +137,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesDangerousGoodsDetail
      */
-    public function getDangerousGoodsDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesDangerousGoodsDetail
+    public function getDangerousGoodsDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesDangerousGoodsDetail
     {
         return $this->dangerousGoodsDetail;
     }
@@ -148,7 +148,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setDangerousGoodsDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesDangerousGoodsDetail $dangerousGoodsDetail) : self
+    public function setDangerousGoodsDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesDangerousGoodsDetail $dangerousGoodsDetail): self
     {
         $this->initialized['dangerousGoodsDetail'] = true;
         $this->dangerousGoodsDetail = $dangerousGoodsDetail;
@@ -159,7 +159,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return int
      */
-    public function getPieceCountVerificationBoxCount() : int
+    public function getPieceCountVerificationBoxCount(): int
     {
         return $this->pieceCountVerificationBoxCount;
     }
@@ -170,7 +170,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setPieceCountVerificationBoxCount(int $pieceCountVerificationBoxCount) : self
+    public function setPieceCountVerificationBoxCount(int $pieceCountVerificationBoxCount): self
     {
         $this->initialized['pieceCountVerificationBoxCount'] = true;
         $this->pieceCountVerificationBoxCount = $pieceCountVerificationBoxCount;
@@ -181,7 +181,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return list<AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServicesBatteryDetailsItem>
      */
-    public function getBatteryDetails() : array
+    public function getBatteryDetails(): array
     {
         return $this->batteryDetails;
     }
@@ -192,7 +192,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setBatteryDetails(array $batteryDetails) : self
+    public function setBatteryDetails(array $batteryDetails): self
     {
         $this->initialized['batteryDetails'] = true;
         $this->batteryDetails = $batteryDetails;
@@ -203,7 +203,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return list<string>
      */
-    public function getSpecialServiceTypes() : array
+    public function getSpecialServiceTypes(): array
     {
         return $this->specialServiceTypes;
     }
@@ -214,7 +214,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setSpecialServiceTypes(array $specialServiceTypes) : self
+    public function setSpecialServiceTypes(array $specialServiceTypes): self
     {
         $this->initialized['specialServiceTypes'] = true;
         $this->specialServiceTypes = $specialServiceTypes;
@@ -236,7 +236,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setCodDetail($codDetail) : self
+    public function setCodDetail($codDetail): self
     {
         $this->initialized['codDetail'] = true;
         $this->codDetail = $codDetail;
@@ -258,7 +258,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setDryIceWeight($dryIceWeight) : self
+    public function setDryIceWeight($dryIceWeight): self
     {
         $this->initialized['dryIceWeight'] = true;
         $this->dryIceWeight = $dryIceWeight;

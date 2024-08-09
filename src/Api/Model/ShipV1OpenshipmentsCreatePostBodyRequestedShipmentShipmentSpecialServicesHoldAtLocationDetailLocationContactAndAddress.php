@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesH
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesH
      *
      * @return ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddressContact
      */
-    public function getContact() : ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddressContact
+    public function getContact(): ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddressContact
     {
         return $this->contact;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesH
      *
      * @return self
      */
-    public function setContact(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddressContact $contact) : self
+    public function setContact(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddressContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesH
      *
      * @return ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddressAddress
      */
-    public function getAddress() : ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddressAddress
+    public function getAddress(): ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddressAddress
     {
         return $this->address;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesH
      *
      * @return self
      */
-    public function setAddress(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddressAddress $address) : self
+    public function setAddress(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddressAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

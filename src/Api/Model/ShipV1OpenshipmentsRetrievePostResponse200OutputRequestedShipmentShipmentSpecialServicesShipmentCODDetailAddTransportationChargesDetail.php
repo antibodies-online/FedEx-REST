@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return string
      */
-    public function getRateType() : string
+    public function getRateType(): string
     {
         return $this->rateType;
     }
@@ -52,7 +52,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setRateType(string $rateType) : self
+    public function setRateType(string $rateType): self
     {
         $this->initialized['rateType'] = true;
         $this->rateType = $rateType;
@@ -63,7 +63,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return string
      */
-    public function getRateLevelType() : string
+    public function getRateLevelType(): string
     {
         return $this->rateLevelType;
     }
@@ -74,7 +74,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setRateLevelType(string $rateLevelType) : self
+    public function setRateLevelType(string $rateLevelType): self
     {
         $this->initialized['rateLevelType'] = true;
         $this->rateLevelType = $rateLevelType;
@@ -85,7 +85,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return string
      */
-    public function getChargeLevelType() : string
+    public function getChargeLevelType(): string
     {
         return $this->chargeLevelType;
     }
@@ -96,7 +96,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setChargeLevelType(string $chargeLevelType) : self
+    public function setChargeLevelType(string $chargeLevelType): self
     {
         $this->initialized['chargeLevelType'] = true;
         $this->chargeLevelType = $chargeLevelType;
@@ -107,7 +107,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return string
      */
-    public function getChargeType() : string
+    public function getChargeType(): string
     {
         return $this->chargeType;
     }
@@ -118,7 +118,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShipmentS
      *
      * @return self
      */
-    public function setChargeType(string $chargeType) : self
+    public function setChargeType(string $chargeType): self
     {
         $this->initialized['chargeType'] = true;
         $this->chargeType = $chargeType;

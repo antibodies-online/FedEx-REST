@@ -18,11 +18,11 @@ class DeleteOpenShipmentNotFoundException extends NotFoundException
         $this->shipV1OpenshipmentsDeletePutResponse404 = $shipV1OpenshipmentsDeletePutResponse404;
         $this->response = $response;
     }
-    public function getShipV1OpenshipmentsDeletePutResponse404() : \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsDeletePutResponse404
+    public function getShipV1OpenshipmentsDeletePutResponse404(): \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsDeletePutResponse404
     {
         return $this->shipV1OpenshipmentsDeletePutResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

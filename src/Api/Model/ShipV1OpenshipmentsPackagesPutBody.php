@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ShipV1OpenshipmentsPackagesPutBody extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPackagesPutBodyRequestedPackageLineItem
      */
-    public function getRequestedPackageLineItem() : ShipV1OpenshipmentsPackagesPutBodyRequestedPackageLineItem
+    public function getRequestedPackageLineItem(): ShipV1OpenshipmentsPackagesPutBodyRequestedPackageLineItem
     {
         return $this->requestedPackageLineItem;
     }
@@ -58,7 +58,7 @@ class ShipV1OpenshipmentsPackagesPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedPackageLineItem(ShipV1OpenshipmentsPackagesPutBodyRequestedPackageLineItem $requestedPackageLineItem) : self
+    public function setRequestedPackageLineItem(ShipV1OpenshipmentsPackagesPutBodyRequestedPackageLineItem $requestedPackageLineItem): self
     {
         $this->initialized['requestedPackageLineItem'] = true;
         $this->requestedPackageLineItem = $requestedPackageLineItem;
@@ -69,7 +69,7 @@ class ShipV1OpenshipmentsPackagesPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getIndex() : string
+    public function getIndex(): string
     {
         return $this->index;
     }
@@ -80,7 +80,7 @@ class ShipV1OpenshipmentsPackagesPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIndex(string $index) : self
+    public function setIndex(string $index): self
     {
         $this->initialized['index'] = true;
         $this->index = $index;
@@ -91,7 +91,7 @@ class ShipV1OpenshipmentsPackagesPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getShipAction() : string
+    public function getShipAction(): string
     {
         return $this->shipAction;
     }
@@ -102,7 +102,7 @@ class ShipV1OpenshipmentsPackagesPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setShipAction(string $shipAction) : self
+    public function setShipAction(string $shipAction): self
     {
         $this->initialized['shipAction'] = true;
         $this->shipAction = $shipAction;
@@ -113,7 +113,7 @@ class ShipV1OpenshipmentsPackagesPutBody extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPackagesPutBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1OpenshipmentsPackagesPutBodyAccountNumber
+    public function getAccountNumber(): ShipV1OpenshipmentsPackagesPutBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -124,7 +124,7 @@ class ShipV1OpenshipmentsPackagesPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1OpenshipmentsPackagesPutBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1OpenshipmentsPackagesPutBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -135,7 +135,7 @@ class ShipV1OpenshipmentsPackagesPutBody extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPackagesPutBodyTrackingId
      */
-    public function getTrackingId() : ShipV1OpenshipmentsPackagesPutBodyTrackingId
+    public function getTrackingId(): ShipV1OpenshipmentsPackagesPutBodyTrackingId
     {
         return $this->trackingId;
     }
@@ -146,7 +146,7 @@ class ShipV1OpenshipmentsPackagesPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingId(ShipV1OpenshipmentsPackagesPutBodyTrackingId $trackingId) : self
+    public function setTrackingId(ShipV1OpenshipmentsPackagesPutBodyTrackingId $trackingId): self
     {
         $this->initialized['trackingId'] = true;
         $this->trackingId = $trackingId;

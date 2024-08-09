@@ -18,11 +18,11 @@ class CreateFreightPickupForbiddenException extends ForbiddenException
         $this->pickupV1FreightPickupsPostResponse403 = $pickupV1FreightPickupsPostResponse403;
         $this->response = $response;
     }
-    public function getPickupV1FreightPickupsPostResponse403() : \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostResponse403
+    public function getPickupV1FreightPickupsPostResponse403(): \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostResponse403
     {
         return $this->pickupV1FreightPickupsPostResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

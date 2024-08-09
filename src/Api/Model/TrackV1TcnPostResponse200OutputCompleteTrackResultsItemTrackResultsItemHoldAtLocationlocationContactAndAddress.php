@@ -8,7 +8,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHol
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -33,7 +33,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHol
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocationlocationContactAndAddressContact
      */
-    public function getContact() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocationlocationContactAndAddressContact
+    public function getContact(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocationlocationContactAndAddressContact
     {
         return $this->contact;
     }
@@ -44,7 +44,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHol
      *
      * @return self
      */
-    public function setContact(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocationlocationContactAndAddressContact $contact) : self
+    public function setContact(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocationlocationContactAndAddressContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -59,7 +59,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHol
     *
     * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocationlocationContactAndAddressAddress
     */
-    public function getAddress() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocationlocationContactAndAddressAddress
+    public function getAddress(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocationlocationContactAndAddressAddress
     {
         return $this->address;
     }
@@ -74,7 +74,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHol
     *
     * @return self
     */
-    public function setAddress(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocationlocationContactAndAddressAddress $address) : self
+    public function setAddress(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocationlocationContactAndAddressAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

@@ -18,11 +18,11 @@ class ShipmentRegulatoryDetailsNotFoundException extends NotFoundException
         $this->globaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse404 = $globaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse404;
         $this->response = $response;
     }
-    public function getGlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse404() : \AntibodiesOnline\FedEx\Api\Model\GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse404
+    public function getGlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse404(): \AntibodiesOnline\FedEx\Api\Model\GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse404
     {
         return $this->globaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

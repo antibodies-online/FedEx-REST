@@ -18,11 +18,11 @@ class FreightRateQuoteUnauthorizedException extends UnauthorizedException
         $this->rateV1FreightRatesQuotesPostResponse401 = $rateV1FreightRatesQuotesPostResponse401;
         $this->response = $response;
     }
-    public function getRateV1FreightRatesQuotesPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\RateV1FreightRatesQuotesPostResponse401
+    public function getRateV1FreightRatesQuotesPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\RateV1FreightRatesQuotesPostResponse401
     {
         return $this->rateV1FreightRatesQuotesPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

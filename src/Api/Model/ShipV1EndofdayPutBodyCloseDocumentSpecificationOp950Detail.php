@@ -8,7 +8,7 @@ class ShipV1EndofdayPutBodyCloseDocumentSpecificationOp950Detail extends \ArrayO
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1EndofdayPutBodyCloseDocumentSpecificationOp950Detail extends \ArrayO
      *
      * @return ShipV1EndofdayPutBodyCloseDocumentSpecificationOp950DetailFormat
      */
-    public function getFormat() : ShipV1EndofdayPutBodyCloseDocumentSpecificationOp950DetailFormat
+    public function getFormat(): ShipV1EndofdayPutBodyCloseDocumentSpecificationOp950DetailFormat
     {
         return $this->format;
     }
@@ -34,7 +34,7 @@ class ShipV1EndofdayPutBodyCloseDocumentSpecificationOp950Detail extends \ArrayO
      *
      * @return self
      */
-    public function setFormat(ShipV1EndofdayPutBodyCloseDocumentSpecificationOp950DetailFormat $format) : self
+    public function setFormat(ShipV1EndofdayPutBodyCloseDocumentSpecificationOp950DetailFormat $format): self
     {
         $this->initialized['format'] = true;
         $this->format = $format;

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return int
      */
-    public function getNumber() : int
+    public function getNumber(): int
     {
         return $this->number;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return self
      */
-    public function setNumber(int $number) : self
+    public function setNumber(int $number): self
     {
         $this->initialized['number'] = true;
         $this->number = $number;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return string
      */
-    public function getContent() : string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return self
      */
-    public function setContent(string $content) : self
+    public function setContent(string $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;

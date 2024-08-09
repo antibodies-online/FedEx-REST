@@ -8,7 +8,7 @@ class DocumentsV1EtdsUploadPostResponse201OutputMeta extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -25,9 +25,9 @@ class DocumentsV1EtdsUploadPostResponse201OutputMeta extends \ArrayObject
      */
     protected $docId;
     /**
-     * This is the reference server folder id, where the document is uploaded. Note that, for a Pre-Shipment Upload scenario, this field will return a pseudo data.
+     * This is the reference server folder id, where the document is uploaded. 
      *
-     * @var list<string>
+     * @var string
      */
     protected $folderId;
     /**
@@ -35,7 +35,7 @@ class DocumentsV1EtdsUploadPostResponse201OutputMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getDocumentType() : string
+    public function getDocumentType(): string
     {
         return $this->documentType;
     }
@@ -46,7 +46,7 @@ class DocumentsV1EtdsUploadPostResponse201OutputMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setDocumentType(string $documentType) : self
+    public function setDocumentType(string $documentType): self
     {
         $this->initialized['documentType'] = true;
         $this->documentType = $documentType;
@@ -57,7 +57,7 @@ class DocumentsV1EtdsUploadPostResponse201OutputMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getDocId() : string
+    public function getDocId(): string
     {
         return $this->docId;
     }
@@ -68,29 +68,29 @@ class DocumentsV1EtdsUploadPostResponse201OutputMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setDocId(string $docId) : self
+    public function setDocId(string $docId): self
     {
         $this->initialized['docId'] = true;
         $this->docId = $docId;
         return $this;
     }
     /**
-     * This is the reference server folder id, where the document is uploaded. Note that, for a Pre-Shipment Upload scenario, this field will return a pseudo data.
+     * This is the reference server folder id, where the document is uploaded. 
      *
-     * @return list<string>
+     * @return string
      */
-    public function getFolderId() : array
+    public function getFolderId(): string
     {
         return $this->folderId;
     }
     /**
-     * This is the reference server folder id, where the document is uploaded. Note that, for a Pre-Shipment Upload scenario, this field will return a pseudo data.
+     * This is the reference server folder id, where the document is uploaded. 
      *
-     * @param list<string> $folderId
+     * @param string $folderId
      *
      * @return self
      */
-    public function setFolderId(array $folderId) : self
+    public function setFolderId(string $folderId): self
     {
         $this->initialized['folderId'] = true;
         $this->folderId = $folderId;

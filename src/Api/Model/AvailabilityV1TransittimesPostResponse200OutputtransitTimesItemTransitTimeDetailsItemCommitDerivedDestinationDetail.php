@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getServiceArea() : string
+    public function getServiceArea(): string
     {
         return $this->serviceArea;
     }
@@ -70,7 +70,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setServiceArea(string $serviceArea) : self
+    public function setServiceArea(string $serviceArea): self
     {
         $this->initialized['serviceArea'] = true;
         $this->serviceArea = $serviceArea;
@@ -81,7 +81,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -92,7 +92,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;
@@ -103,7 +103,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getLocationId() : string
+    public function getLocationId(): string
     {
         return $this->locationId;
     }
@@ -114,7 +114,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setLocationId(string $locationId) : self
+    public function setLocationId(string $locationId): self
     {
         $this->initialized['locationId'] = true;
         $this->locationId = $locationId;
@@ -125,7 +125,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getAirportId() : string
+    public function getAirportId(): string
     {
         return $this->airportId;
     }
@@ -136,7 +136,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setAirportId(string $airportId) : self
+    public function setAirportId(string $airportId): self
     {
         $this->initialized['airportId'] = true;
         $this->airportId = $airportId;
@@ -147,7 +147,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getPostalCode() : string
+    public function getPostalCode(): string
     {
         return $this->postalCode;
     }
@@ -158,7 +158,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setPostalCode(string $postalCode) : self
+    public function setPostalCode(string $postalCode): self
     {
         $this->initialized['postalCode'] = true;
         $this->postalCode = $postalCode;
@@ -169,7 +169,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getStateOrProvinceCode() : string
+    public function getStateOrProvinceCode(): string
     {
         return $this->stateOrProvinceCode;
     }
@@ -180,7 +180,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setStateOrProvinceCode(string $stateOrProvinceCode) : self
+    public function setStateOrProvinceCode(string $stateOrProvinceCode): self
     {
         $this->initialized['stateOrProvinceCode'] = true;
         $this->stateOrProvinceCode = $stateOrProvinceCode;
@@ -191,7 +191,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return int
      */
-    public function getLocationNumber() : int
+    public function getLocationNumber(): int
     {
         return $this->locationNumber;
     }
@@ -202,7 +202,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setLocationNumber(int $locationNumber) : self
+    public function setLocationNumber(int $locationNumber): self
     {
         $this->initialized['locationNumber'] = true;
         $this->locationNumber = $locationNumber;

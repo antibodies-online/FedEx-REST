@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200Output';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200Output::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200Output';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200Output::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -49,17 +49,17 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['resultsReturned']);
             }
             if (\array_key_exists('matchedAddress', $data)) {
-                $object->setMatchedAddress($this->denormalizer->denormalize($data['matchedAddress'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputmatchedAddress', 'json', $context));
+                $object->setMatchedAddress($this->denormalizer->denormalize($data['matchedAddress'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputmatchedAddress::class, 'json', $context));
                 unset($data['matchedAddress']);
             }
             if (\array_key_exists('matchedAddressGeoCoord', $data)) {
-                $object->setMatchedAddressGeoCoord($this->denormalizer->denormalize($data['matchedAddressGeoCoord'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputmatchedAddressGeoCoord', 'json', $context));
+                $object->setMatchedAddressGeoCoord($this->denormalizer->denormalize($data['matchedAddressGeoCoord'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputmatchedAddressGeoCoord::class, 'json', $context));
                 unset($data['matchedAddressGeoCoord']);
             }
             if (\array_key_exists('locationDetailList', $data)) {
                 $values = [];
                 foreach ($data['locationDetailList'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItem::class, 'json', $context);
                 }
                 $object->setLocationDetailList($values);
                 unset($data['locationDetailList']);
@@ -67,23 +67,23 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('alerts', $data)) {
                 $values_1 = [];
                 foreach ($data['alerts'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputalertsItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputalertsItem::class, 'json', $context);
                 }
                 $object->setAlerts($values_1);
                 unset($data['alerts']);
             }
             if (\array_key_exists('nearestLocation', $data)) {
-                $object->setNearestLocation($this->denormalizer->denormalize($data['nearestLocation'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputnearestLocation', 'json', $context));
+                $object->setNearestLocation($this->denormalizer->denormalize($data['nearestLocation'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputnearestLocation::class, 'json', $context));
                 unset($data['nearestLocation']);
             }
             if (\array_key_exists('latestLocation', $data)) {
-                $object->setLatestLocation($this->denormalizer->denormalize($data['latestLocation'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlatestLocation', 'json', $context));
+                $object->setLatestLocation($this->denormalizer->denormalize($data['latestLocation'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlatestLocation::class, 'json', $context));
                 unset($data['latestLocation']);
             }
             if (\array_key_exists('ambiguousAddress', $data)) {
                 $values_2 = [];
                 foreach ($data['ambiguousAddress'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputambiguousAddressItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputambiguousAddressItem::class, 'json', $context);
                 }
                 $object->setAmbiguousAddress($values_2);
                 unset($data['ambiguousAddress']);
@@ -109,7 +109,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['lockerAvailabilityMessage']);
             }
             if (\array_key_exists('location', $data)) {
-                $object->setLocation($this->denormalizer->denormalize($data['location'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200Outputlocation', 'json', $context));
+                $object->setLocation($this->denormalizer->denormalize($data['location'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200Outputlocation::class, 'json', $context));
                 unset($data['location']);
             }
             if (\array_key_exists('phoneNumber', $data)) {
@@ -121,11 +121,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['multipleMatchesAction']);
             }
             if (\array_key_exists('sort', $data)) {
-                $object->setSort($this->denormalizer->denormalize($data['sort'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200Outputsort', 'json', $context));
+                $object->setSort($this->denormalizer->denormalize($data['sort'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200Outputsort::class, 'json', $context));
                 unset($data['sort']);
             }
             if (\array_key_exists('trackingInfo', $data)) {
-                $object->setTrackingInfo($this->denormalizer->denormalize($data['trackingInfo'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputtrackingInfo', 'json', $context));
+                $object->setTrackingInfo($this->denormalizer->denormalize($data['trackingInfo'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputtrackingInfo::class, 'json', $context));
                 unset($data['trackingInfo']);
             }
             if (\array_key_exists('sameState', $data)) {
@@ -151,7 +151,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('locationCapabilities', $data)) {
                 $values_4 = [];
                 foreach ($data['locationCapabilities'] as $value_4) {
-                    $values_4[] = $this->denormalizer->denormalize($value_4, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationCapabilitiesItem', 'json', $context);
+                    $values_4[] = $this->denormalizer->denormalize($value_4, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationCapabilitiesItem::class, 'json', $context);
                 }
                 $object->setLocationCapabilities($values_4);
                 unset($data['locationCapabilities']);
@@ -159,7 +159,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('packageMaximumLimits', $data)) {
                 $values_5 = [];
                 foreach ($data['packageMaximumLimits'] as $value_5) {
-                    $values_5[] = $this->denormalizer->denormalize($value_5, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputpackageMaximumLimitsItem', 'json', $context);
+                    $values_5[] = $this->denormalizer->denormalize($value_5, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputpackageMaximumLimitsItem::class, 'json', $context);
                 }
                 $object->setPackageMaximumLimits($values_5);
                 unset($data['packageMaximumLimits']);
@@ -211,7 +211,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('totalResults') && null !== $object->getTotalResults()) {
@@ -352,9 +352,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200Output' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200Output::class => false];
         }
     }
 } else {
@@ -364,13 +364,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200Output';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200Output::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200Output';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200Output::class;
         }
         /**
          * @return mixed
@@ -396,17 +396,17 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['resultsReturned']);
             }
             if (\array_key_exists('matchedAddress', $data)) {
-                $object->setMatchedAddress($this->denormalizer->denormalize($data['matchedAddress'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputmatchedAddress', 'json', $context));
+                $object->setMatchedAddress($this->denormalizer->denormalize($data['matchedAddress'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputmatchedAddress::class, 'json', $context));
                 unset($data['matchedAddress']);
             }
             if (\array_key_exists('matchedAddressGeoCoord', $data)) {
-                $object->setMatchedAddressGeoCoord($this->denormalizer->denormalize($data['matchedAddressGeoCoord'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputmatchedAddressGeoCoord', 'json', $context));
+                $object->setMatchedAddressGeoCoord($this->denormalizer->denormalize($data['matchedAddressGeoCoord'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputmatchedAddressGeoCoord::class, 'json', $context));
                 unset($data['matchedAddressGeoCoord']);
             }
             if (\array_key_exists('locationDetailList', $data)) {
                 $values = [];
                 foreach ($data['locationDetailList'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItem::class, 'json', $context);
                 }
                 $object->setLocationDetailList($values);
                 unset($data['locationDetailList']);
@@ -414,23 +414,23 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('alerts', $data)) {
                 $values_1 = [];
                 foreach ($data['alerts'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputalertsItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputalertsItem::class, 'json', $context);
                 }
                 $object->setAlerts($values_1);
                 unset($data['alerts']);
             }
             if (\array_key_exists('nearestLocation', $data)) {
-                $object->setNearestLocation($this->denormalizer->denormalize($data['nearestLocation'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputnearestLocation', 'json', $context));
+                $object->setNearestLocation($this->denormalizer->denormalize($data['nearestLocation'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputnearestLocation::class, 'json', $context));
                 unset($data['nearestLocation']);
             }
             if (\array_key_exists('latestLocation', $data)) {
-                $object->setLatestLocation($this->denormalizer->denormalize($data['latestLocation'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlatestLocation', 'json', $context));
+                $object->setLatestLocation($this->denormalizer->denormalize($data['latestLocation'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlatestLocation::class, 'json', $context));
                 unset($data['latestLocation']);
             }
             if (\array_key_exists('ambiguousAddress', $data)) {
                 $values_2 = [];
                 foreach ($data['ambiguousAddress'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputambiguousAddressItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputambiguousAddressItem::class, 'json', $context);
                 }
                 $object->setAmbiguousAddress($values_2);
                 unset($data['ambiguousAddress']);
@@ -456,7 +456,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['lockerAvailabilityMessage']);
             }
             if (\array_key_exists('location', $data)) {
-                $object->setLocation($this->denormalizer->denormalize($data['location'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200Outputlocation', 'json', $context));
+                $object->setLocation($this->denormalizer->denormalize($data['location'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200Outputlocation::class, 'json', $context));
                 unset($data['location']);
             }
             if (\array_key_exists('phoneNumber', $data)) {
@@ -468,11 +468,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['multipleMatchesAction']);
             }
             if (\array_key_exists('sort', $data)) {
-                $object->setSort($this->denormalizer->denormalize($data['sort'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200Outputsort', 'json', $context));
+                $object->setSort($this->denormalizer->denormalize($data['sort'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200Outputsort::class, 'json', $context));
                 unset($data['sort']);
             }
             if (\array_key_exists('trackingInfo', $data)) {
-                $object->setTrackingInfo($this->denormalizer->denormalize($data['trackingInfo'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputtrackingInfo', 'json', $context));
+                $object->setTrackingInfo($this->denormalizer->denormalize($data['trackingInfo'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputtrackingInfo::class, 'json', $context));
                 unset($data['trackingInfo']);
             }
             if (\array_key_exists('sameState', $data)) {
@@ -498,7 +498,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('locationCapabilities', $data)) {
                 $values_4 = [];
                 foreach ($data['locationCapabilities'] as $value_4) {
-                    $values_4[] = $this->denormalizer->denormalize($value_4, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationCapabilitiesItem', 'json', $context);
+                    $values_4[] = $this->denormalizer->denormalize($value_4, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationCapabilitiesItem::class, 'json', $context);
                 }
                 $object->setLocationCapabilities($values_4);
                 unset($data['locationCapabilities']);
@@ -506,7 +506,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('packageMaximumLimits', $data)) {
                 $values_5 = [];
                 foreach ($data['packageMaximumLimits'] as $value_5) {
-                    $values_5[] = $this->denormalizer->denormalize($value_5, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputpackageMaximumLimitsItem', 'json', $context);
+                    $values_5[] = $this->denormalizer->denormalize($value_5, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputpackageMaximumLimitsItem::class, 'json', $context);
                 }
                 $object->setPackageMaximumLimits($values_5);
                 unset($data['packageMaximumLimits']);
@@ -702,9 +702,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200Output' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200Output::class => false];
         }
     }
 }

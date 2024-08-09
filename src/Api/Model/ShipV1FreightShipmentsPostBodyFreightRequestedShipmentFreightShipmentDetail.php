@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -125,7 +125,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
     *
     * @return string
     */
-    public function getRole() : string
+    public function getRole(): string
     {
         return $this->role;
     }
@@ -137,7 +137,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
     *
     * @return self
     */
-    public function setRole(string $role) : self
+    public function setRole(string $role): self
     {
         $this->initialized['role'] = true;
         $this->role = $role;
@@ -148,7 +148,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return list<ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailSpecialServicePaymentsItem>
      */
-    public function getSpecialServicePayments() : array
+    public function getSpecialServicePayments(): array
     {
         return $this->specialServicePayments;
     }
@@ -159,7 +159,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setSpecialServicePayments(array $specialServicePayments) : self
+    public function setSpecialServicePayments(array $specialServicePayments): self
     {
         $this->initialized['specialServicePayments'] = true;
         $this->specialServicePayments = $specialServicePayments;
@@ -170,7 +170,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLiabilityCoverageDetail
      */
-    public function getLiabilityCoverageDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLiabilityCoverageDetail
+    public function getLiabilityCoverageDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLiabilityCoverageDetail
     {
         return $this->liabilityCoverageDetail;
     }
@@ -181,7 +181,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setLiabilityCoverageDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLiabilityCoverageDetail $liabilityCoverageDetail) : self
+    public function setLiabilityCoverageDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLiabilityCoverageDetail $liabilityCoverageDetail): self
     {
         $this->initialized['liabilityCoverageDetail'] = true;
         $this->liabilityCoverageDetail = $liabilityCoverageDetail;
@@ -207,7 +207,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
     *
     * @return self
     */
-    public function setFedExFreightAccountNumber($fedExFreightAccountNumber) : self
+    public function setFedExFreightAccountNumber($fedExFreightAccountNumber): self
     {
         $this->initialized['fedExFreightAccountNumber'] = true;
         $this->fedExFreightAccountNumber = $fedExFreightAccountNumber;
@@ -218,7 +218,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return string
      */
-    public function getDeclaredValueUnits() : string
+    public function getDeclaredValueUnits(): string
     {
         return $this->declaredValueUnits;
     }
@@ -229,7 +229,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setDeclaredValueUnits(string $declaredValueUnits) : self
+    public function setDeclaredValueUnits(string $declaredValueUnits): self
     {
         $this->initialized['declaredValueUnits'] = true;
         $this->declaredValueUnits = $declaredValueUnits;
@@ -240,7 +240,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return list<ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailPrintedReferencesItem>
      */
-    public function getPrintedReferences() : array
+    public function getPrintedReferences(): array
     {
         return $this->printedReferences;
     }
@@ -251,7 +251,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setPrintedReferences(array $printedReferences) : self
+    public function setPrintedReferences(array $printedReferences): self
     {
         $this->initialized['printedReferences'] = true;
         $this->printedReferences = $printedReferences;
@@ -262,7 +262,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailHazardousMaterialsEmergencyContactNumber
      */
-    public function getHazardousMaterialsEmergencyContactNumber() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailHazardousMaterialsEmergencyContactNumber
+    public function getHazardousMaterialsEmergencyContactNumber(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailHazardousMaterialsEmergencyContactNumber
     {
         return $this->hazardousMaterialsEmergencyContactNumber;
     }
@@ -273,7 +273,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setHazardousMaterialsEmergencyContactNumber(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailHazardousMaterialsEmergencyContactNumber $hazardousMaterialsEmergencyContactNumber) : self
+    public function setHazardousMaterialsEmergencyContactNumber(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailHazardousMaterialsEmergencyContactNumber $hazardousMaterialsEmergencyContactNumber): self
     {
         $this->initialized['hazardousMaterialsEmergencyContactNumber'] = true;
         $this->hazardousMaterialsEmergencyContactNumber = $hazardousMaterialsEmergencyContactNumber;
@@ -286,7 +286,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
     *
     * @return list<ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLineItemItem>
     */
-    public function getLineItem() : array
+    public function getLineItem(): array
     {
         return $this->lineItem;
     }
@@ -299,7 +299,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
     *
     * @return self
     */
-    public function setLineItem(array $lineItem) : self
+    public function setLineItem(array $lineItem): self
     {
         $this->initialized['lineItem'] = true;
         $this->lineItem = $lineItem;
@@ -310,7 +310,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return float
      */
-    public function getClientDiscountPercent() : float
+    public function getClientDiscountPercent(): float
     {
         return $this->clientDiscountPercent;
     }
@@ -321,7 +321,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setClientDiscountPercent(float $clientDiscountPercent) : self
+    public function setClientDiscountPercent(float $clientDiscountPercent): self
     {
         $this->initialized['clientDiscountPercent'] = true;
         $this->clientDiscountPercent = $clientDiscountPercent;
@@ -332,7 +332,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return list<string>
      */
-    public function getCoupons() : array
+    public function getCoupons(): array
     {
         return $this->coupons;
     }
@@ -343,7 +343,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setCoupons(array $coupons) : self
+    public function setCoupons(array $coupons): self
     {
         $this->initialized['coupons'] = true;
         $this->coupons = $coupons;
@@ -354,7 +354,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailFedExFreightBillingContactAndAddress
      */
-    public function getFedExFreightBillingContactAndAddress() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailFedExFreightBillingContactAndAddress
+    public function getFedExFreightBillingContactAndAddress(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailFedExFreightBillingContactAndAddress
     {
         return $this->fedExFreightBillingContactAndAddress;
     }
@@ -365,7 +365,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setFedExFreightBillingContactAndAddress(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailFedExFreightBillingContactAndAddress $fedExFreightBillingContactAndAddress) : self
+    public function setFedExFreightBillingContactAndAddress(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailFedExFreightBillingContactAndAddress $fedExFreightBillingContactAndAddress): self
     {
         $this->initialized['fedExFreightBillingContactAndAddress'] = true;
         $this->fedExFreightBillingContactAndAddress = $fedExFreightBillingContactAndAddress;
@@ -376,7 +376,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return string
      */
-    public function getAliasID() : string
+    public function getAliasID(): string
     {
         return $this->aliasID;
     }
@@ -387,7 +387,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setAliasID(string $aliasID) : self
+    public function setAliasID(string $aliasID): self
     {
         $this->initialized['aliasID'] = true;
         $this->aliasID = $aliasID;
@@ -398,7 +398,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return string
      */
-    public function getCollectTermsType() : string
+    public function getCollectTermsType(): string
     {
         return $this->collectTermsType;
     }
@@ -409,7 +409,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setCollectTermsType(string $collectTermsType) : self
+    public function setCollectTermsType(string $collectTermsType): self
     {
         $this->initialized['collectTermsType'] = true;
         $this->collectTermsType = $collectTermsType;
@@ -420,7 +420,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return string
      */
-    public function getHazardousMaterialsOfferor() : string
+    public function getHazardousMaterialsOfferor(): string
     {
         return $this->hazardousMaterialsOfferor;
     }
@@ -431,7 +431,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setHazardousMaterialsOfferor(string $hazardousMaterialsOfferor) : self
+    public function setHazardousMaterialsOfferor(string $hazardousMaterialsOfferor): self
     {
         $this->initialized['hazardousMaterialsOfferor'] = true;
         $this->hazardousMaterialsOfferor = $hazardousMaterialsOfferor;
@@ -442,7 +442,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailDeclaredValuePerUnit
      */
-    public function getDeclaredValuePerUnit() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailDeclaredValuePerUnit
+    public function getDeclaredValuePerUnit(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailDeclaredValuePerUnit
     {
         return $this->declaredValuePerUnit;
     }
@@ -453,7 +453,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setDeclaredValuePerUnit(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailDeclaredValuePerUnit $declaredValuePerUnit) : self
+    public function setDeclaredValuePerUnit(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailDeclaredValuePerUnit $declaredValuePerUnit): self
     {
         $this->initialized['declaredValuePerUnit'] = true;
         $this->declaredValuePerUnit = $declaredValuePerUnit;
@@ -464,7 +464,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return int
      */
-    public function getTotalHandlingUnits() : int
+    public function getTotalHandlingUnits(): int
     {
         return $this->totalHandlingUnits;
     }
@@ -475,7 +475,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setTotalHandlingUnits(int $totalHandlingUnits) : self
+    public function setTotalHandlingUnits(int $totalHandlingUnits): self
     {
         $this->initialized['totalHandlingUnits'] = true;
         $this->totalHandlingUnits = $totalHandlingUnits;
@@ -486,7 +486,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailAlternateBillingParty
      */
-    public function getAlternateBillingParty() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailAlternateBillingParty
+    public function getAlternateBillingParty(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailAlternateBillingParty
     {
         return $this->alternateBillingParty;
     }
@@ -497,7 +497,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setAlternateBillingParty(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailAlternateBillingParty $alternateBillingParty) : self
+    public function setAlternateBillingParty(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailAlternateBillingParty $alternateBillingParty): self
     {
         $this->initialized['alternateBillingParty'] = true;
         $this->alternateBillingParty = $alternateBillingParty;

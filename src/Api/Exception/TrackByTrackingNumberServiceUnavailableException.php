@@ -18,11 +18,11 @@ class TrackByTrackingNumberServiceUnavailableException extends ServiceUnavailabl
         $this->trackV1TrackingnumbersPostResponse503 = $trackV1TrackingnumbersPostResponse503;
         $this->response = $response;
     }
-    public function getTrackV1TrackingnumbersPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingnumbersPostResponse503
+    public function getTrackV1TrackingnumbersPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingnumbersPostResponse503
     {
         return $this->trackV1TrackingnumbersPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

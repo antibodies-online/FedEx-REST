@@ -8,7 +8,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200Output extends \ArrayOb
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200Output extends \ArrayOb
      *
      * @return string
      */
-    public function getCloseTime() : string
+    public function getCloseTime(): string
     {
         return $this->closeTime;
     }
@@ -58,7 +58,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200Output extends \ArrayOb
      *
      * @return self
      */
-    public function setCloseTime(string $closeTime) : self
+    public function setCloseTime(string $closeTime): self
     {
         $this->initialized['closeTime'] = true;
         $this->closeTime = $closeTime;
@@ -69,7 +69,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200Output extends \ArrayOb
      *
      * @return string
      */
-    public function getCloseTimeType() : string
+    public function getCloseTimeType(): string
     {
         return $this->closeTimeType;
     }
@@ -80,7 +80,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200Output extends \ArrayOb
      *
      * @return self
      */
-    public function setCloseTimeType(string $closeTimeType) : self
+    public function setCloseTimeType(string $closeTimeType): self
     {
         $this->initialized['closeTimeType'] = true;
         $this->closeTimeType = $closeTimeType;
@@ -91,7 +91,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200Output extends \ArrayOb
      *
      * @return string
      */
-    public function getLocalTime() : string
+    public function getLocalTime(): string
     {
         return $this->localTime;
     }
@@ -102,7 +102,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200Output extends \ArrayOb
      *
      * @return self
      */
-    public function setLocalTime(string $localTime) : self
+    public function setLocalTime(string $localTime): self
     {
         $this->initialized['localTime'] = true;
         $this->localTime = $localTime;
@@ -113,7 +113,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200Output extends \ArrayOb
      *
      * @return list<PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem>
      */
-    public function getOptions() : array
+    public function getOptions(): array
     {
         return $this->options;
     }
@@ -124,7 +124,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200Output extends \ArrayOb
      *
      * @return self
      */
-    public function setOptions(array $options) : self
+    public function setOptions(array $options): self
     {
         $this->initialized['options'] = true;
         $this->options = $options;
@@ -135,7 +135,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200Output extends \ArrayOb
      *
      * @return list<PickupV1FreightPickupsAvailabilitiesPostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -146,7 +146,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200Output extends \ArrayOb
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

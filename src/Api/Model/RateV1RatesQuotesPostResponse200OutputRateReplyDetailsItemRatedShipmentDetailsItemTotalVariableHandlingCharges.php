@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return float
      */
-    public function getTotalCustomerCharge() : float
+    public function getTotalCustomerCharge(): float
     {
         return $this->totalCustomerCharge;
     }
@@ -40,7 +40,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTotalCustomerCharge(float $totalCustomerCharge) : self
+    public function setTotalCustomerCharge(float $totalCustomerCharge): self
     {
         $this->initialized['totalCustomerCharge'] = true;
         $this->totalCustomerCharge = $totalCustomerCharge;
@@ -51,7 +51,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return float
      */
-    public function getVariableHandlingCharge() : float
+    public function getVariableHandlingCharge(): float
     {
         return $this->variableHandlingCharge;
     }
@@ -62,7 +62,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setVariableHandlingCharge(float $variableHandlingCharge) : self
+    public function setVariableHandlingCharge(float $variableHandlingCharge): self
     {
         $this->initialized['variableHandlingCharge'] = true;
         $this->variableHandlingCharge = $variableHandlingCharge;

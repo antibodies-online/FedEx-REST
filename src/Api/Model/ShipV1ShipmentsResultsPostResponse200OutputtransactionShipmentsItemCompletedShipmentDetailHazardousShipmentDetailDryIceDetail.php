@@ -8,7 +8,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetailTotalWeight
      */
-    public function getTotalWeight() : ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetailTotalWeight
+    public function getTotalWeight(): ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetailTotalWeight
     {
         return $this->totalWeight;
     }
@@ -46,7 +46,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setTotalWeight(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetailTotalWeight $totalWeight) : self
+    public function setTotalWeight(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetailTotalWeight $totalWeight): self
     {
         $this->initialized['totalWeight'] = true;
         $this->totalWeight = $totalWeight;
@@ -57,7 +57,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return int
      */
-    public function getPackageCount() : int
+    public function getPackageCount(): int
     {
         return $this->packageCount;
     }
@@ -68,7 +68,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setPackageCount(int $packageCount) : self
+    public function setPackageCount(int $packageCount): self
     {
         $this->initialized['packageCount'] = true;
         $this->packageCount = $packageCount;
@@ -79,7 +79,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetailProcessingOptions
      */
-    public function getProcessingOptions() : ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetailProcessingOptions
+    public function getProcessingOptions(): ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetailProcessingOptions
     {
         return $this->processingOptions;
     }
@@ -90,7 +90,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setProcessingOptions(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetailProcessingOptions $processingOptions) : self
+    public function setProcessingOptions(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetailProcessingOptions $processingOptions): self
     {
         $this->initialized['processingOptions'] = true;
         $this->processingOptions = $processingOptions;

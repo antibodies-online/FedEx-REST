@@ -8,7 +8,7 @@ class DocumentsV1LhsimagesUploadPostResponse201Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class DocumentsV1LhsimagesUploadPostResponse201Output extends \ArrayObject
      *
      * @return DocumentsV1LhsimagesUploadPostResponse201OutputMeta
      */
-    public function getMeta() : DocumentsV1LhsimagesUploadPostResponse201OutputMeta
+    public function getMeta(): DocumentsV1LhsimagesUploadPostResponse201OutputMeta
     {
         return $this->meta;
     }
@@ -46,7 +46,7 @@ class DocumentsV1LhsimagesUploadPostResponse201Output extends \ArrayObject
      *
      * @return self
      */
-    public function setMeta(DocumentsV1LhsimagesUploadPostResponse201OutputMeta $meta) : self
+    public function setMeta(DocumentsV1LhsimagesUploadPostResponse201OutputMeta $meta): self
     {
         $this->initialized['meta'] = true;
         $this->meta = $meta;
@@ -57,7 +57,7 @@ class DocumentsV1LhsimagesUploadPostResponse201Output extends \ArrayObject
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -68,7 +68,7 @@ class DocumentsV1LhsimagesUploadPostResponse201Output extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -79,7 +79,7 @@ class DocumentsV1LhsimagesUploadPostResponse201Output extends \ArrayObject
      *
      * @return string
      */
-    public function getDocumentReferenceId() : string
+    public function getDocumentReferenceId(): string
     {
         return $this->documentReferenceId;
     }
@@ -90,7 +90,7 @@ class DocumentsV1LhsimagesUploadPostResponse201Output extends \ArrayObject
      *
      * @return self
      */
-    public function setDocumentReferenceId(string $documentReferenceId) : self
+    public function setDocumentReferenceId(string $documentReferenceId): self
     {
         $this->initialized['documentReferenceId'] = true;
         $this->documentReferenceId = $documentReferenceId;

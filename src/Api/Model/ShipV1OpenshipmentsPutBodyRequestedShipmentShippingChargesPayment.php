@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPayment extends 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPayment extends 
      *
      * @return string
      */
-    public function getPaymentType() : string
+    public function getPaymentType(): string
     {
         return $this->paymentType;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPayment extends 
      *
      * @return self
      */
-    public function setPaymentType(string $paymentType) : self
+    public function setPaymentType(string $paymentType): self
     {
         $this->initialized['paymentType'] = true;
         $this->paymentType = $paymentType;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPayment extends 
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPaymentPayor
      */
-    public function getPayor() : ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPaymentPayor
+    public function getPayor(): ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPaymentPayor
     {
         return $this->payor;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPayment extends 
      *
      * @return self
      */
-    public function setPayor(ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPaymentPayor $payor) : self
+    public function setPayor(ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPaymentPayor $payor): self
     {
         $this->initialized['payor'] = true;
         $this->payor = $payor;

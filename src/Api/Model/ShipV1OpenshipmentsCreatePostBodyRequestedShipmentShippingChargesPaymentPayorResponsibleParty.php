@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPa
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPa
      *
      * @return ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress
      */
-    public function getAddress() : ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress
+    public function getAddress(): ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress
     {
         return $this->address;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPa
      *
      * @return self
      */
-    public function setAddress(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress $address) : self
+    public function setAddress(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPa
      *
      * @return ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyContact
      */
-    public function getContact() : ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyContact
+    public function getContact(): ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyContact
     {
         return $this->contact;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPa
      *
      * @return self
      */
-    public function setContact(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyContact $contact) : self
+    public function setContact(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPa
      *
      * @return ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber
      */
-    public function getAccountNumber() : ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber
+    public function getAccountNumber(): ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPa
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

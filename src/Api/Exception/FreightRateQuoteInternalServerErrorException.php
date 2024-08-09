@@ -18,11 +18,11 @@ class FreightRateQuoteInternalServerErrorException extends InternalServerErrorEx
         $this->rateV1FreightRatesQuotesPostResponse500 = $rateV1FreightRatesQuotesPostResponse500;
         $this->response = $response;
     }
-    public function getRateV1FreightRatesQuotesPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\RateV1FreightRatesQuotesPostResponse500
+    public function getRateV1FreightRatesQuotesPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\RateV1FreightRatesQuotesPostResponse500
     {
         return $this->rateV1FreightRatesQuotesPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

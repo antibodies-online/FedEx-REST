@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -113,7 +113,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return list<string>
      */
-    public function getRegulatoryControls() : array
+    public function getRegulatoryControls(): array
     {
         return $this->regulatoryControls;
     }
@@ -124,7 +124,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setRegulatoryControls(array $regulatoryControls) : self
+    public function setRegulatoryControls(array $regulatoryControls): self
     {
         $this->initialized['regulatoryControls'] = true;
         $this->regulatoryControls = $regulatoryControls;
@@ -135,7 +135,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return list<ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailBrokersItem>
      */
-    public function getBrokers() : array
+    public function getBrokers(): array
     {
         return $this->brokers;
     }
@@ -146,7 +146,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setBrokers(array $brokers) : self
+    public function setBrokers(array $brokers): self
     {
         $this->initialized['brokers'] = true;
         $this->brokers = $brokers;
@@ -157,7 +157,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailCommercialInvoice
      */
-    public function getCommercialInvoice() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailCommercialInvoice
+    public function getCommercialInvoice(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailCommercialInvoice
     {
         return $this->commercialInvoice;
     }
@@ -168,7 +168,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setCommercialInvoice(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailCommercialInvoice $commercialInvoice) : self
+    public function setCommercialInvoice(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailCommercialInvoice $commercialInvoice): self
     {
         $this->initialized['commercialInvoice'] = true;
         $this->commercialInvoice = $commercialInvoice;
@@ -179,7 +179,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return string
      */
-    public function getFreightOnValue() : string
+    public function getFreightOnValue(): string
     {
         return $this->freightOnValue;
     }
@@ -190,7 +190,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setFreightOnValue(string $freightOnValue) : self
+    public function setFreightOnValue(string $freightOnValue): self
     {
         $this->initialized['freightOnValue'] = true;
         $this->freightOnValue = $freightOnValue;
@@ -201,7 +201,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPayment
      */
-    public function getDutiesPayment() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPayment
+    public function getDutiesPayment(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPayment
     {
         return $this->dutiesPayment;
     }
@@ -212,7 +212,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setDutiesPayment(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPayment $dutiesPayment) : self
+    public function setDutiesPayment(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPayment $dutiesPayment): self
     {
         $this->initialized['dutiesPayment'] = true;
         $this->dutiesPayment = $dutiesPayment;
@@ -223,7 +223,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return list<ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailCommoditiesItem>
      */
-    public function getCommodities() : array
+    public function getCommodities(): array
     {
         return $this->commodities;
     }
@@ -234,7 +234,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setCommodities(array $commodities) : self
+    public function setCommodities(array $commodities): self
     {
         $this->initialized['commodities'] = true;
         $this->commodities = $commodities;
@@ -245,7 +245,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return bool
      */
-    public function getIsDocumentOnly() : bool
+    public function getIsDocumentOnly(): bool
     {
         return $this->isDocumentOnly;
     }
@@ -256,7 +256,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setIsDocumentOnly(bool $isDocumentOnly) : self
+    public function setIsDocumentOnly(bool $isDocumentOnly): self
     {
         $this->initialized['isDocumentOnly'] = true;
         $this->isDocumentOnly = $isDocumentOnly;
@@ -267,7 +267,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailRecipientCustomsId
      */
-    public function getRecipientCustomsId() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailRecipientCustomsId
+    public function getRecipientCustomsId(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailRecipientCustomsId
     {
         return $this->recipientCustomsId;
     }
@@ -278,7 +278,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setRecipientCustomsId(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailRecipientCustomsId $recipientCustomsId) : self
+    public function setRecipientCustomsId(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailRecipientCustomsId $recipientCustomsId): self
     {
         $this->initialized['recipientCustomsId'] = true;
         $this->recipientCustomsId = $recipientCustomsId;
@@ -289,7 +289,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailCustomsOption
      */
-    public function getCustomsOption() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailCustomsOption
+    public function getCustomsOption(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailCustomsOption
     {
         return $this->customsOption;
     }
@@ -300,7 +300,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setCustomsOption(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailCustomsOption $customsOption) : self
+    public function setCustomsOption(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailCustomsOption $customsOption): self
     {
         $this->initialized['customsOption'] = true;
         $this->customsOption = $customsOption;
@@ -311,7 +311,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailImporterOfRecord
      */
-    public function getImporterOfRecord() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailImporterOfRecord
+    public function getImporterOfRecord(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailImporterOfRecord
     {
         return $this->importerOfRecord;
     }
@@ -322,7 +322,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setImporterOfRecord(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailImporterOfRecord $importerOfRecord) : self
+    public function setImporterOfRecord(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailImporterOfRecord $importerOfRecord): self
     {
         $this->initialized['importerOfRecord'] = true;
         $this->importerOfRecord = $importerOfRecord;
@@ -333,7 +333,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return string
      */
-    public function getGeneratedDocumentLocale() : string
+    public function getGeneratedDocumentLocale(): string
     {
         return $this->generatedDocumentLocale;
     }
@@ -344,7 +344,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setGeneratedDocumentLocale(string $generatedDocumentLocale) : self
+    public function setGeneratedDocumentLocale(string $generatedDocumentLocale): self
     {
         $this->initialized['generatedDocumentLocale'] = true;
         $this->generatedDocumentLocale = $generatedDocumentLocale;
@@ -355,7 +355,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailExportDetail
      */
-    public function getExportDetail() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailExportDetail
+    public function getExportDetail(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailExportDetail
     {
         return $this->exportDetail;
     }
@@ -366,7 +366,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setExportDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailExportDetail $exportDetail) : self
+    public function setExportDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailExportDetail $exportDetail): self
     {
         $this->initialized['exportDetail'] = true;
         $this->exportDetail = $exportDetail;
@@ -377,7 +377,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailTotalCustomsValue
      */
-    public function getTotalCustomsValue() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailTotalCustomsValue
+    public function getTotalCustomsValue(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailTotalCustomsValue
     {
         return $this->totalCustomsValue;
     }
@@ -388,7 +388,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setTotalCustomsValue(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailTotalCustomsValue $totalCustomsValue) : self
+    public function setTotalCustomsValue(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailTotalCustomsValue $totalCustomsValue): self
     {
         $this->initialized['totalCustomsValue'] = true;
         $this->totalCustomsValue = $totalCustomsValue;
@@ -399,7 +399,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return bool
      */
-    public function getPartiesToTransactionAreRelated() : bool
+    public function getPartiesToTransactionAreRelated(): bool
     {
         return $this->partiesToTransactionAreRelated;
     }
@@ -410,7 +410,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setPartiesToTransactionAreRelated(bool $partiesToTransactionAreRelated) : self
+    public function setPartiesToTransactionAreRelated(bool $partiesToTransactionAreRelated): self
     {
         $this->initialized['partiesToTransactionAreRelated'] = true;
         $this->partiesToTransactionAreRelated = $partiesToTransactionAreRelated;
@@ -421,7 +421,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDeclarationStatementDetail
      */
-    public function getDeclarationStatementDetail() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDeclarationStatementDetail
+    public function getDeclarationStatementDetail(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDeclarationStatementDetail
     {
         return $this->declarationStatementDetail;
     }
@@ -432,7 +432,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setDeclarationStatementDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDeclarationStatementDetail $declarationStatementDetail) : self
+    public function setDeclarationStatementDetail(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDeclarationStatementDetail $declarationStatementDetail): self
     {
         $this->initialized['declarationStatementDetail'] = true;
         $this->declarationStatementDetail = $declarationStatementDetail;
@@ -443,7 +443,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailInsuranceCharge
      */
-    public function getInsuranceCharge() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailInsuranceCharge
+    public function getInsuranceCharge(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailInsuranceCharge
     {
         return $this->insuranceCharge;
     }
@@ -454,7 +454,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setInsuranceCharge(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailInsuranceCharge $insuranceCharge) : self
+    public function setInsuranceCharge(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailInsuranceCharge $insuranceCharge): self
     {
         $this->initialized['insuranceCharge'] = true;
         $this->insuranceCharge = $insuranceCharge;

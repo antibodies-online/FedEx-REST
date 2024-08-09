@@ -8,7 +8,7 @@ class OauthTokenPostResponse200 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class OauthTokenPostResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getAccessToken() : string
+    public function getAccessToken(): string
     {
         return $this->accessToken;
     }
@@ -52,7 +52,7 @@ class OauthTokenPostResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setAccessToken(string $accessToken) : self
+    public function setAccessToken(string $accessToken): self
     {
         $this->initialized['accessToken'] = true;
         $this->accessToken = $accessToken;
@@ -63,7 +63,7 @@ class OauthTokenPostResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getTokenType() : string
+    public function getTokenType(): string
     {
         return $this->tokenType;
     }
@@ -74,7 +74,7 @@ class OauthTokenPostResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setTokenType(string $tokenType) : self
+    public function setTokenType(string $tokenType): self
     {
         $this->initialized['tokenType'] = true;
         $this->tokenType = $tokenType;
@@ -85,7 +85,7 @@ class OauthTokenPostResponse200 extends \ArrayObject
      *
      * @return int
      */
-    public function getExpiresIn() : int
+    public function getExpiresIn(): int
     {
         return $this->expiresIn;
     }
@@ -96,7 +96,7 @@ class OauthTokenPostResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setExpiresIn(int $expiresIn) : self
+    public function setExpiresIn(int $expiresIn): self
     {
         $this->initialized['expiresIn'] = true;
         $this->expiresIn = $expiresIn;
@@ -107,7 +107,7 @@ class OauthTokenPostResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getScope() : string
+    public function getScope(): string
     {
         return $this->scope;
     }
@@ -118,7 +118,7 @@ class OauthTokenPostResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setScope(string $scope) : self
+    public function setScope(string $scope): self
     {
         $this->initialized['scope'] = true;
         $this->scope = $scope;

@@ -8,7 +8,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetails
      */
-    public function getShipmentDetails() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetails
+    public function getShipmentDetails(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetails
     {
         return $this->shipmentDetails;
     }
@@ -46,7 +46,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setShipmentDetails(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetails $shipmentDetails) : self
+    public function setShipmentDetails(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetails $shipmentDetails): self
     {
         $this->initialized['shipmentDetails'] = true;
         $this->shipmentDetails = $shipmentDetails;
@@ -57,7 +57,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -68,7 +68,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;
@@ -79,7 +79,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getCategory() : string
+    public function getCategory(): string
     {
         return $this->category;
     }
@@ -90,7 +90,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setCategory(string $category) : self
+    public function setCategory(string $category): self
     {
         $this->initialized['category'] = true;
         $this->category = $category;

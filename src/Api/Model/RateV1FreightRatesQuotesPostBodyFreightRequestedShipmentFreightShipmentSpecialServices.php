@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpe
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesfreightGuaranteeDetail
      */
-    public function getFreightGuaranteeDetail() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesfreightGuaranteeDetail
+    public function getFreightGuaranteeDetail(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesfreightGuaranteeDetail
     {
         return $this->freightGuaranteeDetail;
     }
@@ -46,7 +46,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpe
      *
      * @return self
      */
-    public function setFreightGuaranteeDetail(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesfreightGuaranteeDetail $freightGuaranteeDetail) : self
+    public function setFreightGuaranteeDetail(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesfreightGuaranteeDetail $freightGuaranteeDetail): self
     {
         $this->initialized['freightGuaranteeDetail'] = true;
         $this->freightGuaranteeDetail = $freightGuaranteeDetail;
@@ -57,7 +57,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpe
      *
      * @return list<string>
      */
-    public function getSpecialServiceTypes() : array
+    public function getSpecialServiceTypes(): array
     {
         return $this->specialServiceTypes;
     }
@@ -68,7 +68,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpe
      *
      * @return self
      */
-    public function setSpecialServiceTypes(array $specialServiceTypes) : self
+    public function setSpecialServiceTypes(array $specialServiceTypes): self
     {
         $this->initialized['specialServiceTypes'] = true;
         $this->specialServiceTypes = $specialServiceTypes;
@@ -79,7 +79,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpe
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesfreightDirectDetail
      */
-    public function getFreightDirectDetail() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesfreightDirectDetail
+    public function getFreightDirectDetail(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesfreightDirectDetail
     {
         return $this->freightDirectDetail;
     }
@@ -90,7 +90,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpe
      *
      * @return self
      */
-    public function setFreightDirectDetail(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesfreightDirectDetail $freightDirectDetail) : self
+    public function setFreightDirectDetail(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesfreightDirectDetail $freightDirectDetail): self
     {
         $this->initialized['freightDirectDetail'] = true;
         $this->freightDirectDetail = $freightDirectDetail;

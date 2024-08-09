@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getMergeLabelDocOption() : string
+    public function getMergeLabelDocOption(): string
     {
         return $this->mergeLabelDocOption;
     }
@@ -70,7 +70,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setMergeLabelDocOption(string $mergeLabelDocOption) : self
+    public function setMergeLabelDocOption(string $mergeLabelDocOption): self
     {
         $this->initialized['mergeLabelDocOption'] = true;
         $this->mergeLabelDocOption = $mergeLabelDocOption;
@@ -81,7 +81,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipment
      */
-    public function getRequestedShipment() : ShipV1ShipmentsPostBodyRequestedShipment
+    public function getRequestedShipment(): ShipV1ShipmentsPostBodyRequestedShipment
     {
         return $this->requestedShipment;
     }
@@ -92,7 +92,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedShipment(ShipV1ShipmentsPostBodyRequestedShipment $requestedShipment) : self
+    public function setRequestedShipment(ShipV1ShipmentsPostBodyRequestedShipment $requestedShipment): self
     {
         $this->initialized['requestedShipment'] = true;
         $this->requestedShipment = $requestedShipment;
@@ -103,7 +103,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getLabelResponseOptions() : string
+    public function getLabelResponseOptions(): string
     {
         return $this->labelResponseOptions;
     }
@@ -114,7 +114,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLabelResponseOptions(string $labelResponseOptions) : self
+    public function setLabelResponseOptions(string $labelResponseOptions): self
     {
         $this->initialized['labelResponseOptions'] = true;
         $this->labelResponseOptions = $labelResponseOptions;
@@ -125,7 +125,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      *
      * @return ShipV1ShipmentsPostBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1ShipmentsPostBodyAccountNumber
+    public function getAccountNumber(): ShipV1ShipmentsPostBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -136,7 +136,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1ShipmentsPostBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1ShipmentsPostBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -147,7 +147,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getShipAction() : string
+    public function getShipAction(): string
     {
         return $this->shipAction;
     }
@@ -158,7 +158,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setShipAction(string $shipAction) : self
+    public function setShipAction(string $shipAction): self
     {
         $this->initialized['shipAction'] = true;
         $this->shipAction = $shipAction;
@@ -169,7 +169,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getProcessingOptionType() : string
+    public function getProcessingOptionType(): string
     {
         return $this->processingOptionType;
     }
@@ -180,7 +180,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setProcessingOptionType(string $processingOptionType) : self
+    public function setProcessingOptionType(string $processingOptionType): self
     {
         $this->initialized['processingOptionType'] = true;
         $this->processingOptionType = $processingOptionType;
@@ -191,7 +191,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getOneLabelAtATime() : bool
+    public function getOneLabelAtATime(): bool
     {
         return $this->oneLabelAtATime;
     }
@@ -202,7 +202,7 @@ class ShipV1ShipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setOneLabelAtATime(bool $oneLabelAtATime) : self
+    public function setOneLabelAtATime(bool $oneLabelAtATime): self
     {
         $this->initialized['oneLabelAtATime'] = true;
         $this->oneLabelAtATime = $oneLabelAtATime;

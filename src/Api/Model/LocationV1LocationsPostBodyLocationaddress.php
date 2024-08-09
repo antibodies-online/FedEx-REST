@@ -8,7 +8,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getStreetLines() : array
+    public function getStreetLines(): array
     {
         return $this->streetLines;
     }
@@ -82,7 +82,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return self
      */
-    public function setStreetLines(array $streetLines) : self
+    public function setStreetLines(array $streetLines): self
     {
         $this->initialized['streetLines'] = true;
         $this->streetLines = $streetLines;
@@ -93,7 +93,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return string
      */
-    public function getCity() : string
+    public function getCity(): string
     {
         return $this->city;
     }
@@ -104,7 +104,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return self
      */
-    public function setCity(string $city) : self
+    public function setCity(string $city): self
     {
         $this->initialized['city'] = true;
         $this->city = $city;
@@ -115,7 +115,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return string
      */
-    public function getStateOrProvinceCode() : string
+    public function getStateOrProvinceCode(): string
     {
         return $this->stateOrProvinceCode;
     }
@@ -126,7 +126,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return self
      */
-    public function setStateOrProvinceCode(string $stateOrProvinceCode) : self
+    public function setStateOrProvinceCode(string $stateOrProvinceCode): self
     {
         $this->initialized['stateOrProvinceCode'] = true;
         $this->stateOrProvinceCode = $stateOrProvinceCode;
@@ -137,7 +137,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return string
      */
-    public function getPostalCode() : string
+    public function getPostalCode(): string
     {
         return $this->postalCode;
     }
@@ -148,7 +148,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return self
      */
-    public function setPostalCode(string $postalCode) : self
+    public function setPostalCode(string $postalCode): self
     {
         $this->initialized['postalCode'] = true;
         $this->postalCode = $postalCode;
@@ -159,7 +159,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -170,7 +170,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;
@@ -181,7 +181,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return bool
      */
-    public function getResidential() : bool
+    public function getResidential(): bool
     {
         return $this->residential;
     }
@@ -192,7 +192,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return self
      */
-    public function setResidential(bool $residential) : self
+    public function setResidential(bool $residential): self
     {
         $this->initialized['residential'] = true;
         $this->residential = $residential;
@@ -203,7 +203,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return string
      */
-    public function getAddressVerificationId() : string
+    public function getAddressVerificationId(): string
     {
         return $this->addressVerificationId;
     }
@@ -214,7 +214,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return self
      */
-    public function setAddressVerificationId(string $addressVerificationId) : self
+    public function setAddressVerificationId(string $addressVerificationId): self
     {
         $this->initialized['addressVerificationId'] = true;
         $this->addressVerificationId = $addressVerificationId;
@@ -225,7 +225,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return string
      */
-    public function getAddressClassification() : string
+    public function getAddressClassification(): string
     {
         return $this->addressClassification;
     }
@@ -236,7 +236,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return self
      */
-    public function setAddressClassification(string $addressClassification) : self
+    public function setAddressClassification(string $addressClassification): self
     {
         $this->initialized['addressClassification'] = true;
         $this->addressClassification = $addressClassification;
@@ -247,7 +247,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return string
      */
-    public function getAddressClassificationConfidence() : string
+    public function getAddressClassificationConfidence(): string
     {
         return $this->addressClassificationConfidence;
     }
@@ -258,7 +258,7 @@ class LocationV1LocationsPostBodyLocationaddress extends \ArrayObject
      *
      * @return self
      */
-    public function setAddressClassificationConfidence(string $addressClassificationConfidence) : self
+    public function setAddressClassificationConfidence(string $addressClassificationConfidence): self
     {
         $this->initialized['addressClassificationConfidence'] = true;
         $this->addressClassificationConfidence = $addressClassificationConfidence;

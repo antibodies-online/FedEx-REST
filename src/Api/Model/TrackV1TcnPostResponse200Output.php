@@ -8,7 +8,7 @@ class TrackV1TcnPostResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1TcnPostResponse200Output extends \ArrayObject
      *
      * @return list<TrackV1TcnPostResponse200OutputCompleteTrackResultsItem>
      */
-    public function getCompleteTrackResults() : array
+    public function getCompleteTrackResults(): array
     {
         return $this->completeTrackResults;
     }
@@ -40,7 +40,7 @@ class TrackV1TcnPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setCompleteTrackResults(array $completeTrackResults) : self
+    public function setCompleteTrackResults(array $completeTrackResults): self
     {
         $this->initialized['completeTrackResults'] = true;
         $this->completeTrackResults = $completeTrackResults;
@@ -51,7 +51,7 @@ class TrackV1TcnPostResponse200Output extends \ArrayObject
      *
      * @return list<TrackV1TcnPostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -62,7 +62,7 @@ class TrackV1TcnPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

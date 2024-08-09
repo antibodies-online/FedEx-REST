@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return string
      */
-    public function getCoverageType() : string
+    public function getCoverageType(): string
     {
         return $this->coverageType;
     }
@@ -40,7 +40,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setCoverageType(string $coverageType) : self
+    public function setCoverageType(string $coverageType): self
     {
         $this->initialized['coverageType'] = true;
         $this->coverageType = $coverageType;
@@ -51,7 +51,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLiabilityCoverageDetailCoverageAmount
      */
-    public function getCoverageAmount() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLiabilityCoverageDetailCoverageAmount
+    public function getCoverageAmount(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLiabilityCoverageDetailCoverageAmount
     {
         return $this->coverageAmount;
     }
@@ -62,7 +62,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetai
      *
      * @return self
      */
-    public function setCoverageAmount(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLiabilityCoverageDetailCoverageAmount $coverageAmount) : self
+    public function setCoverageAmount(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLiabilityCoverageDetailCoverageAmount $coverageAmount): self
     {
         $this->initialized['coverageAmount'] = true;
         $this->coverageAmount = $coverageAmount;

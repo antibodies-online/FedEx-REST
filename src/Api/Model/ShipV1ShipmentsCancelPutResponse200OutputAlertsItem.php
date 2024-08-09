@@ -8,7 +8,7 @@ class ShipV1ShipmentsCancelPutResponse200OutputAlertsItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1ShipmentsCancelPutResponse200OutputAlertsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCode() : string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -46,7 +46,7 @@ class ShipV1ShipmentsCancelPutResponse200OutputAlertsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCode(string $code) : self
+    public function setCode(string $code): self
     {
         $this->initialized['code'] = true;
         $this->code = $code;
@@ -57,7 +57,7 @@ class ShipV1ShipmentsCancelPutResponse200OutputAlertsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getAlertType() : string
+    public function getAlertType(): string
     {
         return $this->alertType;
     }
@@ -68,7 +68,7 @@ class ShipV1ShipmentsCancelPutResponse200OutputAlertsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setAlertType(string $alertType) : self
+    public function setAlertType(string $alertType): self
     {
         $this->initialized['alertType'] = true;
         $this->alertType = $alertType;
@@ -79,7 +79,7 @@ class ShipV1ShipmentsCancelPutResponse200OutputAlertsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -90,7 +90,7 @@ class ShipV1ShipmentsCancelPutResponse200OutputAlertsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;

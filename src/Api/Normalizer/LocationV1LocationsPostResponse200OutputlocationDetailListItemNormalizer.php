@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItem';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItem';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItem::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -41,11 +41,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('distance', $data)) {
-                $object->setDistance($this->denormalizer->denormalize($data['distance'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItemdistance', 'json', $context));
+                $object->setDistance($this->denormalizer->denormalize($data['distance'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItemdistance::class, 'json', $context));
                 unset($data['distance']);
             }
             if (\array_key_exists('contactAndAddress', $data)) {
-                $object->setContactAndAddress($this->denormalizer->denormalize($data['contactAndAddress'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddress', 'json', $context));
+                $object->setContactAndAddress($this->denormalizer->denormalize($data['contactAndAddress'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddress::class, 'json', $context));
                 unset($data['contactAndAddress']);
             }
             if (\array_key_exists('locationId', $data)) {
@@ -55,7 +55,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('storeHours', $data)) {
                 $values = [];
                 foreach ($data['storeHours'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursItem::class, 'json', $context);
                 }
                 $object->setStoreHours($values);
                 unset($data['storeHours']);
@@ -63,13 +63,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('carrierDetailList', $data)) {
                 $values_1 = [];
                 foreach ($data['carrierDetailList'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItemcarrierDetailListItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItemcarrierDetailListItem::class, 'json', $context);
                 }
                 $object->setCarrierDetailList($values_1);
                 unset($data['carrierDetailList']);
             }
             if (\array_key_exists('geoPositionalCoordinates', $data)) {
-                $object->setGeoPositionalCoordinates($this->denormalizer->denormalize($data['geoPositionalCoordinates'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItemgeoPositionalCoordinates', 'json', $context));
+                $object->setGeoPositionalCoordinates($this->denormalizer->denormalize($data['geoPositionalCoordinates'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItemgeoPositionalCoordinates::class, 'json', $context));
                 unset($data['geoPositionalCoordinates']);
             }
             if (\array_key_exists('locationType', $data)) {
@@ -89,7 +89,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['lockerAvailability']);
             }
             if (\array_key_exists('packageMaximumLimits', $data)) {
-                $object->setPackageMaximumLimits($this->denormalizer->denormalize($data['packageMaximumLimits'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaximumLimits', 'json', $context));
+                $object->setPackageMaximumLimits($this->denormalizer->denormalize($data['packageMaximumLimits'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaximumLimits::class, 'json', $context));
                 unset($data['packageMaximumLimits']);
             }
             if (\array_key_exists('specialInstructions', $data)) {
@@ -101,7 +101,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['rthservice']);
             }
             if (\array_key_exists('locationCapabilities', $data)) {
-                $object->setLocationCapabilities($this->denormalizer->denormalize($data['locationCapabilities'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItemlocationCapabilities', 'json', $context));
+                $object->setLocationCapabilities($this->denormalizer->denormalize($data['locationCapabilities'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItemlocationCapabilities::class, 'json', $context));
                 unset($data['locationCapabilities']);
             }
             foreach ($data as $key => $value_3) {
@@ -111,7 +111,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('distance') && null !== $object->getDistance()) {
@@ -172,9 +172,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItem' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItem::class => false];
         }
     }
 } else {
@@ -184,13 +184,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItem';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItem';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItem::class;
         }
         /**
          * @return mixed
@@ -208,11 +208,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('distance', $data)) {
-                $object->setDistance($this->denormalizer->denormalize($data['distance'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItemdistance', 'json', $context));
+                $object->setDistance($this->denormalizer->denormalize($data['distance'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItemdistance::class, 'json', $context));
                 unset($data['distance']);
             }
             if (\array_key_exists('contactAndAddress', $data)) {
-                $object->setContactAndAddress($this->denormalizer->denormalize($data['contactAndAddress'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddress', 'json', $context));
+                $object->setContactAndAddress($this->denormalizer->denormalize($data['contactAndAddress'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddress::class, 'json', $context));
                 unset($data['contactAndAddress']);
             }
             if (\array_key_exists('locationId', $data)) {
@@ -222,7 +222,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('storeHours', $data)) {
                 $values = [];
                 foreach ($data['storeHours'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItemstoreHoursItem::class, 'json', $context);
                 }
                 $object->setStoreHours($values);
                 unset($data['storeHours']);
@@ -230,13 +230,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('carrierDetailList', $data)) {
                 $values_1 = [];
                 foreach ($data['carrierDetailList'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItemcarrierDetailListItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItemcarrierDetailListItem::class, 'json', $context);
                 }
                 $object->setCarrierDetailList($values_1);
                 unset($data['carrierDetailList']);
             }
             if (\array_key_exists('geoPositionalCoordinates', $data)) {
-                $object->setGeoPositionalCoordinates($this->denormalizer->denormalize($data['geoPositionalCoordinates'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItemgeoPositionalCoordinates', 'json', $context));
+                $object->setGeoPositionalCoordinates($this->denormalizer->denormalize($data['geoPositionalCoordinates'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItemgeoPositionalCoordinates::class, 'json', $context));
                 unset($data['geoPositionalCoordinates']);
             }
             if (\array_key_exists('locationType', $data)) {
@@ -256,7 +256,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['lockerAvailability']);
             }
             if (\array_key_exists('packageMaximumLimits', $data)) {
-                $object->setPackageMaximumLimits($this->denormalizer->denormalize($data['packageMaximumLimits'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaximumLimits', 'json', $context));
+                $object->setPackageMaximumLimits($this->denormalizer->denormalize($data['packageMaximumLimits'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaximumLimits::class, 'json', $context));
                 unset($data['packageMaximumLimits']);
             }
             if (\array_key_exists('specialInstructions', $data)) {
@@ -268,7 +268,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['rthservice']);
             }
             if (\array_key_exists('locationCapabilities', $data)) {
-                $object->setLocationCapabilities($this->denormalizer->denormalize($data['locationCapabilities'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItemlocationCapabilities', 'json', $context));
+                $object->setLocationCapabilities($this->denormalizer->denormalize($data['locationCapabilities'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItemlocationCapabilities::class, 'json', $context));
                 unset($data['locationCapabilities']);
             }
             foreach ($data as $key => $value_3) {
@@ -342,9 +342,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostResponse200OutputlocationDetailListItem' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse200OutputlocationDetailListItem::class => false];
         }
     }
 }

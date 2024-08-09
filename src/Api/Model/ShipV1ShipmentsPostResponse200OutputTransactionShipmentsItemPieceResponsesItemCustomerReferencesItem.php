@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemPieceResponses
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemPieceResponses
      *
      * @return string
      */
-    public function getCustomerReferenceType() : string
+    public function getCustomerReferenceType(): string
     {
         return $this->customerReferenceType;
     }
@@ -40,7 +40,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemPieceResponses
      *
      * @return self
      */
-    public function setCustomerReferenceType(string $customerReferenceType) : self
+    public function setCustomerReferenceType(string $customerReferenceType): self
     {
         $this->initialized['customerReferenceType'] = true;
         $this->customerReferenceType = $customerReferenceType;
@@ -51,7 +51,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemPieceResponses
      *
      * @return string
      */
-    public function getValue() : string
+    public function getValue(): string
     {
         return $this->value;
     }
@@ -62,7 +62,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemPieceResponses
      *
      * @return self
      */
-    public function setValue(string $value) : self
+    public function setValue(string $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;

@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -95,7 +95,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return string
      */
-    public function getSequenceNumber() : string
+    public function getSequenceNumber(): string
     {
         return $this->sequenceNumber;
     }
@@ -106,7 +106,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return self
      */
-    public function setSequenceNumber(string $sequenceNumber) : self
+    public function setSequenceNumber(string $sequenceNumber): self
     {
         $this->initialized['sequenceNumber'] = true;
         $this->sequenceNumber = $sequenceNumber;
@@ -117,7 +117,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return string
      */
-    public function getSubPackagingType() : string
+    public function getSubPackagingType(): string
     {
         return $this->subPackagingType;
     }
@@ -128,7 +128,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return self
      */
-    public function setSubPackagingType(string $subPackagingType) : self
+    public function setSubPackagingType(string $subPackagingType): self
     {
         $this->initialized['subPackagingType'] = true;
         $this->subPackagingType = $subPackagingType;
@@ -139,7 +139,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return list<ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemCustomerReferencesItem>
      */
-    public function getCustomerReferences() : array
+    public function getCustomerReferences(): array
     {
         return $this->customerReferences;
     }
@@ -150,7 +150,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return self
      */
-    public function setCustomerReferences(array $customerReferences) : self
+    public function setCustomerReferences(array $customerReferences): self
     {
         $this->initialized['customerReferences'] = true;
         $this->customerReferences = $customerReferences;
@@ -161,7 +161,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemDeclaredValue
      */
-    public function getDeclaredValue() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemDeclaredValue
+    public function getDeclaredValue(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemDeclaredValue
     {
         return $this->declaredValue;
     }
@@ -172,7 +172,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return self
      */
-    public function setDeclaredValue(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemDeclaredValue $declaredValue) : self
+    public function setDeclaredValue(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemDeclaredValue $declaredValue): self
     {
         $this->initialized['declaredValue'] = true;
         $this->declaredValue = $declaredValue;
@@ -183,7 +183,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemWeight
      */
-    public function getWeight() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemWeight
+    public function getWeight(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemWeight
     {
         return $this->weight;
     }
@@ -194,7 +194,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return self
      */
-    public function setWeight(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemWeight $weight) : self
+    public function setWeight(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemWeight $weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -205,7 +205,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemDimensions
      */
-    public function getDimensions() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemDimensions
+    public function getDimensions(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemDimensions
     {
         return $this->dimensions;
     }
@@ -216,7 +216,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return self
      */
-    public function setDimensions(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemDimensions $dimensions) : self
+    public function setDimensions(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemDimensions $dimensions): self
     {
         $this->initialized['dimensions'] = true;
         $this->dimensions = $dimensions;
@@ -227,7 +227,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return string
      */
-    public function getPhysicalPackaging() : string
+    public function getPhysicalPackaging(): string
     {
         return $this->physicalPackaging;
     }
@@ -238,7 +238,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return self
      */
-    public function setPhysicalPackaging(string $physicalPackaging) : self
+    public function setPhysicalPackaging(string $physicalPackaging): self
     {
         $this->initialized['physicalPackaging'] = true;
         $this->physicalPackaging = $physicalPackaging;
@@ -249,7 +249,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return int
      */
-    public function getGroupPackageCount() : int
+    public function getGroupPackageCount(): int
     {
         return $this->groupPackageCount;
     }
@@ -260,7 +260,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return self
      */
-    public function setGroupPackageCount(int $groupPackageCount) : self
+    public function setGroupPackageCount(int $groupPackageCount): self
     {
         $this->initialized['groupPackageCount'] = true;
         $this->groupPackageCount = $groupPackageCount;
@@ -271,7 +271,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return string
      */
-    public function getItemDescriptionForClearance() : string
+    public function getItemDescriptionForClearance(): string
     {
         return $this->itemDescriptionForClearance;
     }
@@ -282,7 +282,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return self
      */
-    public function setItemDescriptionForClearance(string $itemDescriptionForClearance) : self
+    public function setItemDescriptionForClearance(string $itemDescriptionForClearance): self
     {
         $this->initialized['itemDescriptionForClearance'] = true;
         $this->itemDescriptionForClearance = $itemDescriptionForClearance;
@@ -293,7 +293,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return list<ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemContentRecordItem>
      */
-    public function getContentRecord() : array
+    public function getContentRecord(): array
     {
         return $this->contentRecord;
     }
@@ -304,7 +304,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return self
      */
-    public function setContentRecord(array $contentRecord) : self
+    public function setContentRecord(array $contentRecord): self
     {
         $this->initialized['contentRecord'] = true;
         $this->contentRecord = $contentRecord;
@@ -315,7 +315,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return string
      */
-    public function getItemDescription() : string
+    public function getItemDescription(): string
     {
         return $this->itemDescription;
     }
@@ -326,7 +326,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return self
      */
-    public function setItemDescription(string $itemDescription) : self
+    public function setItemDescription(string $itemDescription): self
     {
         $this->initialized['itemDescription'] = true;
         $this->itemDescription = $itemDescription;
@@ -337,7 +337,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail
      */
-    public function getVariableHandlingChargeDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail
+    public function getVariableHandlingChargeDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail
     {
         return $this->variableHandlingChargeDetail;
     }
@@ -348,7 +348,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return self
      */
-    public function setVariableHandlingChargeDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail $variableHandlingChargeDetail) : self
+    public function setVariableHandlingChargeDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail $variableHandlingChargeDetail): self
     {
         $this->initialized['variableHandlingChargeDetail'] = true;
         $this->variableHandlingChargeDetail = $variableHandlingChargeDetail;
@@ -359,7 +359,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return list<ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemAssociatedFreightLineItemsItem>
      */
-    public function getAssociatedFreightLineItems() : array
+    public function getAssociatedFreightLineItems(): array
     {
         return $this->associatedFreightLineItems;
     }
@@ -370,7 +370,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLine
      *
      * @return self
      */
-    public function setAssociatedFreightLineItems(array $associatedFreightLineItems) : self
+    public function setAssociatedFreightLineItems(array $associatedFreightLineItems): self
     {
         $this->initialized['associatedFreightLineItems'] = true;
         $this->associatedFreightLineItems = $associatedFreightLineItems;

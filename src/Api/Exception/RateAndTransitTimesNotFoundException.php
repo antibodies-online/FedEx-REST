@@ -18,11 +18,11 @@ class RateAndTransitTimesNotFoundException extends NotFoundException
         $this->rateV1RatesQuotesPostResponse404 = $rateV1RatesQuotesPostResponse404;
         $this->response = $response;
     }
-    public function getRateV1RatesQuotesPostResponse404() : \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse404
+    public function getRateV1RatesQuotesPostResponse404(): \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse404
     {
         return $this->rateV1RatesQuotesPostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

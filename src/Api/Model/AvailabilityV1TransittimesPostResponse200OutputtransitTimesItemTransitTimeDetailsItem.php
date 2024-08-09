@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -64,7 +64,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -75,7 +75,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return list<AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCustomerMessagesItem>
      */
-    public function getCustomerMessages() : array
+    public function getCustomerMessages(): array
     {
         return $this->customerMessages;
     }
@@ -86,7 +86,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setCustomerMessages(array $customerMessages) : self
+    public function setCustomerMessages(array $customerMessages): self
     {
         $this->initialized['customerMessages'] = true;
         $this->customerMessages = $customerMessages;
@@ -97,7 +97,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDistance
      */
-    public function getDistance() : AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDistance
+    public function getDistance(): AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDistance
     {
         return $this->distance;
     }
@@ -108,7 +108,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setDistance(AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDistance $distance) : self
+    public function setDistance(AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDistance $distance): self
     {
         $this->initialized['distance'] = true;
         $this->distance = $distance;
@@ -119,7 +119,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommit
      */
-    public function getCommit() : AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommit
+    public function getCommit(): AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommit
     {
         return $this->commit;
     }
@@ -130,7 +130,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setCommit(AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommit $commit) : self
+    public function setCommit(AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommit $commit): self
     {
         $this->initialized['commit'] = true;
         $this->commit = $commit;
@@ -141,7 +141,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDestinationLocation
      */
-    public function getDestinationLocation() : AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDestinationLocation
+    public function getDestinationLocation(): AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDestinationLocation
     {
         return $this->destinationLocation;
     }
@@ -152,7 +152,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setDestinationLocation(AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDestinationLocation $destinationLocation) : self
+    public function setDestinationLocation(AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDestinationLocation $destinationLocation): self
     {
         $this->initialized['destinationLocation'] = true;
         $this->destinationLocation = $destinationLocation;
@@ -163,7 +163,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getServiceName() : string
+    public function getServiceName(): string
     {
         return $this->serviceName;
     }
@@ -174,7 +174,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setServiceName(string $serviceName) : self
+    public function setServiceName(string $serviceName): self
     {
         $this->initialized['serviceName'] = true;
         $this->serviceName = $serviceName;

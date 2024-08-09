@@ -18,11 +18,11 @@ class ShipmentRegulatoryDetailsUnauthorizedException extends UnauthorizedExcepti
         $this->globaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse401 = $globaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse401;
         $this->response = $response;
     }
-    public function getGlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse401() : \AntibodiesOnline\FedEx\Api\Model\GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse401
+    public function getGlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse401(): \AntibodiesOnline\FedEx\Api\Model\GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse401
     {
         return $this->globaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

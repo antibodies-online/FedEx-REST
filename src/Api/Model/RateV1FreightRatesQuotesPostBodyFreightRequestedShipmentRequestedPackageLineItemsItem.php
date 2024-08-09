@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLi
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLi
      *
      * @return string
      */
-    public function getSubPackagingType() : string
+    public function getSubPackagingType(): string
     {
         return $this->subPackagingType;
     }
@@ -70,7 +70,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLi
      *
      * @return self
      */
-    public function setSubPackagingType(string $subPackagingType) : self
+    public function setSubPackagingType(string $subPackagingType): self
     {
         $this->initialized['subPackagingType'] = true;
         $this->subPackagingType = $subPackagingType;
@@ -81,7 +81,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLi
      *
      * @return int
      */
-    public function getGroupPackageCount() : int
+    public function getGroupPackageCount(): int
     {
         return $this->groupPackageCount;
     }
@@ -92,7 +92,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLi
      *
      * @return self
      */
-    public function setGroupPackageCount(int $groupPackageCount) : self
+    public function setGroupPackageCount(int $groupPackageCount): self
     {
         $this->initialized['groupPackageCount'] = true;
         $this->groupPackageCount = $groupPackageCount;
@@ -103,7 +103,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLi
      *
      * @return list<RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemContentRecordItem>
      */
-    public function getContentRecord() : array
+    public function getContentRecord(): array
     {
         return $this->contentRecord;
     }
@@ -114,7 +114,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLi
      *
      * @return self
      */
-    public function setContentRecord(array $contentRecord) : self
+    public function setContentRecord(array $contentRecord): self
     {
         $this->initialized['contentRecord'] = true;
         $this->contentRecord = $contentRecord;
@@ -136,7 +136,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLi
      *
      * @return self
      */
-    public function setDeclaredValue($declaredValue) : self
+    public function setDeclaredValue($declaredValue): self
     {
         $this->initialized['declaredValue'] = true;
         $this->declaredValue = $declaredValue;
@@ -158,7 +158,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLi
      *
      * @return self
      */
-    public function setWeight($weight) : self
+    public function setWeight($weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -180,7 +180,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLi
      *
      * @return self
      */
-    public function setDimensions($dimensions) : self
+    public function setDimensions($dimensions): self
     {
         $this->initialized['dimensions'] = true;
         $this->dimensions = $dimensions;
@@ -191,7 +191,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLi
      *
      * @return list<RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLineItemsItemAssociatedFreightLineItemsItem>
      */
-    public function getAssociatedFreightLineItems() : array
+    public function getAssociatedFreightLineItems(): array
     {
         return $this->associatedFreightLineItems;
     }
@@ -202,7 +202,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRequestedPackageLi
      *
      * @return self
      */
-    public function setAssociatedFreightLineItems(array $associatedFreightLineItems) : self
+    public function setAssociatedFreightLineItems(array $associatedFreightLineItems): self
     {
         $this->initialized['associatedFreightLineItems'] = true;
         $this->associatedFreightLineItems = $associatedFreightLineItems;

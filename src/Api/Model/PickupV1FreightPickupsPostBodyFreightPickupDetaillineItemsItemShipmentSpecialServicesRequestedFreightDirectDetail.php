@@ -8,7 +8,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemShipmentSpec
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemShipmentSpec
      *
      * @return list<PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemShipmentSpecialServicesRequestedFreightDirectDetailFreightDirectDataDetailsItem>
      */
-    public function getFreightDirectDataDetails() : array
+    public function getFreightDirectDataDetails(): array
     {
         return $this->freightDirectDataDetails;
     }
@@ -34,7 +34,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemShipmentSpec
      *
      * @return self
      */
-    public function setFreightDirectDataDetails(array $freightDirectDataDetails) : self
+    public function setFreightDirectDataDetails(array $freightDirectDataDetails): self
     {
         $this->initialized['freightDirectDataDetails'] = true;
         $this->freightDirectDataDetails = $freightDirectDataDetails;

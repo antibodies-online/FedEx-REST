@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItem';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItem';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItem::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -41,13 +41,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('unitPrice', $data)) {
-                $object->setUnitPrice($this->denormalizer->denormalize($data['unitPrice'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUnitPrice', 'json', $context));
+                $object->setUnitPrice($this->denormalizer->denormalize($data['unitPrice'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUnitPrice::class, 'json', $context));
                 unset($data['unitPrice']);
             }
             if (\array_key_exists('additionalMeasures', $data)) {
                 $values = [];
                 foreach ($data['additionalMeasures'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemAdditionalMeasuresItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemAdditionalMeasuresItem::class, 'json', $context);
                 }
                 $object->setAdditionalMeasures($values);
                 unset($data['additionalMeasures']);
@@ -65,7 +65,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['quantityUnits']);
             }
             if (\array_key_exists('customsValue', $data)) {
-                $object->setCustomsValue($this->denormalizer->denormalize($data['customsValue'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemCustomsValue', 'json', $context));
+                $object->setCustomsValue($this->denormalizer->denormalize($data['customsValue'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemCustomsValue::class, 'json', $context));
                 unset($data['customsValue']);
             }
             if (\array_key_exists('countryOfManufacture', $data)) {
@@ -89,7 +89,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['name']);
             }
             if (\array_key_exists('weight', $data)) {
-                $object->setWeight($this->denormalizer->denormalize($data['weight'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemWeight', 'json', $context));
+                $object->setWeight($this->denormalizer->denormalize($data['weight'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemWeight::class, 'json', $context));
                 unset($data['weight']);
             }
             if (\array_key_exists('exportLicenseNumber', $data)) {
@@ -97,7 +97,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['exportLicenseNumber']);
             }
             if (\array_key_exists('exportLicenseExpirationDate', $data)) {
-                $object->setExportLicenseExpirationDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['exportLicenseExpirationDate']));
+                $object->setExportLicenseExpirationDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['exportLicenseExpirationDate']));
                 unset($data['exportLicenseExpirationDate']);
             }
             if (\array_key_exists('partNumber', $data)) {
@@ -109,7 +109,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['purpose']);
             }
             if (\array_key_exists('usmcaDetail', $data)) {
-                $object->setUsmcaDetail($this->denormalizer->denormalize($data['usmcaDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUsmcaDetail', 'json', $context));
+                $object->setUsmcaDetail($this->denormalizer->denormalize($data['usmcaDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUsmcaDetail::class, 'json', $context));
                 unset($data['usmcaDetail']);
             }
             foreach ($data as $key => $value_1) {
@@ -119,7 +119,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('unitPrice') && null !== $object->getUnitPrice()) {
@@ -164,7 +164,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['exportLicenseNumber'] = $object->getExportLicenseNumber();
             }
             if ($object->isInitialized('exportLicenseExpirationDate') && null !== $object->getExportLicenseExpirationDate()) {
-                $data['exportLicenseExpirationDate'] = $object->getExportLicenseExpirationDate()->format('Y-m-d\\TH:i:sP');
+                $data['exportLicenseExpirationDate'] = $object->getExportLicenseExpirationDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('partNumber') && null !== $object->getPartNumber()) {
                 $data['partNumber'] = $object->getPartNumber();
@@ -182,9 +182,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItem' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItem::class => false];
         }
     }
 } else {
@@ -194,13 +194,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItem';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItem';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItem::class;
         }
         /**
          * @return mixed
@@ -218,13 +218,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('unitPrice', $data)) {
-                $object->setUnitPrice($this->denormalizer->denormalize($data['unitPrice'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUnitPrice', 'json', $context));
+                $object->setUnitPrice($this->denormalizer->denormalize($data['unitPrice'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUnitPrice::class, 'json', $context));
                 unset($data['unitPrice']);
             }
             if (\array_key_exists('additionalMeasures', $data)) {
                 $values = [];
                 foreach ($data['additionalMeasures'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemAdditionalMeasuresItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemAdditionalMeasuresItem::class, 'json', $context);
                 }
                 $object->setAdditionalMeasures($values);
                 unset($data['additionalMeasures']);
@@ -242,7 +242,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['quantityUnits']);
             }
             if (\array_key_exists('customsValue', $data)) {
-                $object->setCustomsValue($this->denormalizer->denormalize($data['customsValue'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemCustomsValue', 'json', $context));
+                $object->setCustomsValue($this->denormalizer->denormalize($data['customsValue'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemCustomsValue::class, 'json', $context));
                 unset($data['customsValue']);
             }
             if (\array_key_exists('countryOfManufacture', $data)) {
@@ -266,7 +266,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['name']);
             }
             if (\array_key_exists('weight', $data)) {
-                $object->setWeight($this->denormalizer->denormalize($data['weight'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemWeight', 'json', $context));
+                $object->setWeight($this->denormalizer->denormalize($data['weight'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemWeight::class, 'json', $context));
                 unset($data['weight']);
             }
             if (\array_key_exists('exportLicenseNumber', $data)) {
@@ -274,7 +274,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['exportLicenseNumber']);
             }
             if (\array_key_exists('exportLicenseExpirationDate', $data)) {
-                $object->setExportLicenseExpirationDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['exportLicenseExpirationDate']));
+                $object->setExportLicenseExpirationDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['exportLicenseExpirationDate']));
                 unset($data['exportLicenseExpirationDate']);
             }
             if (\array_key_exists('partNumber', $data)) {
@@ -286,7 +286,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['purpose']);
             }
             if (\array_key_exists('usmcaDetail', $data)) {
-                $object->setUsmcaDetail($this->denormalizer->denormalize($data['usmcaDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUsmcaDetail', 'json', $context));
+                $object->setUsmcaDetail($this->denormalizer->denormalize($data['usmcaDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUsmcaDetail::class, 'json', $context));
                 unset($data['usmcaDetail']);
             }
             foreach ($data as $key => $value_1) {
@@ -344,7 +344,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['exportLicenseNumber'] = $object->getExportLicenseNumber();
             }
             if ($object->isInitialized('exportLicenseExpirationDate') && null !== $object->getExportLicenseExpirationDate()) {
-                $data['exportLicenseExpirationDate'] = $object->getExportLicenseExpirationDate()->format('Y-m-d\\TH:i:sP');
+                $data['exportLicenseExpirationDate'] = $object->getExportLicenseExpirationDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('partNumber') && null !== $object->getPartNumber()) {
                 $data['partNumber'] = $object->getPartNumber();
@@ -362,9 +362,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItem' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItem::class => false];
         }
     }
 }

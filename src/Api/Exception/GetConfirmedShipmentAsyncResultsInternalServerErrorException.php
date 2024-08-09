@@ -18,11 +18,11 @@ class GetConfirmedShipmentAsyncResultsInternalServerErrorException extends Inter
         $this->shipV1ShipmentsResultsPostResponse500 = $shipV1ShipmentsResultsPostResponse500;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsResultsPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsResultsPostResponse500
+    public function getShipV1ShipmentsResultsPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsResultsPostResponse500
     {
         return $this->shipV1ShipmentsResultsPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

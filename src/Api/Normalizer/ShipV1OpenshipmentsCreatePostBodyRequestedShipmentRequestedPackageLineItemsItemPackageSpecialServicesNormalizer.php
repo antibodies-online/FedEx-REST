@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -53,23 +53,23 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['signatureOptionType']);
             }
             if (\array_key_exists('priorityAlertDetail', $data)) {
-                $object->setPriorityAlertDetail($this->denormalizer->denormalize($data['priorityAlertDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesPriorityAlertDetail', 'json', $context));
+                $object->setPriorityAlertDetail($this->denormalizer->denormalize($data['priorityAlertDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesPriorityAlertDetail::class, 'json', $context));
                 unset($data['priorityAlertDetail']);
             }
             if (\array_key_exists('signatureOptionDetail', $data)) {
-                $object->setSignatureOptionDetail($this->denormalizer->denormalize($data['signatureOptionDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesSignatureOptionDetail', 'json', $context));
+                $object->setSignatureOptionDetail($this->denormalizer->denormalize($data['signatureOptionDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesSignatureOptionDetail::class, 'json', $context));
                 unset($data['signatureOptionDetail']);
             }
             if (\array_key_exists('alcoholDetail', $data)) {
-                $object->setAlcoholDetail($this->denormalizer->denormalize($data['alcoholDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesAlcoholDetail', 'json', $context));
+                $object->setAlcoholDetail($this->denormalizer->denormalize($data['alcoholDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesAlcoholDetail::class, 'json', $context));
                 unset($data['alcoholDetail']);
             }
             if (\array_key_exists('dangerousGoodsDetail', $data)) {
-                $object->setDangerousGoodsDetail($this->denormalizer->denormalize($data['dangerousGoodsDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDangerousGoodsDetail', 'json', $context));
+                $object->setDangerousGoodsDetail($this->denormalizer->denormalize($data['dangerousGoodsDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDangerousGoodsDetail::class, 'json', $context));
                 unset($data['dangerousGoodsDetail']);
             }
             if (\array_key_exists('packageCODDetail', $data)) {
-                $object->setPackageCODDetail($this->denormalizer->denormalize($data['packageCODDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesPackageCODDetail', 'json', $context));
+                $object->setPackageCODDetail($this->denormalizer->denormalize($data['packageCODDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesPackageCODDetail::class, 'json', $context));
                 unset($data['packageCODDetail']);
             }
             if (\array_key_exists('pieceCountVerificationBoxCount', $data)) {
@@ -79,13 +79,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('batteryDetails', $data)) {
                 $values_1 = [];
                 foreach ($data['batteryDetails'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesBatteryDetailsItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesBatteryDetailsItem::class, 'json', $context);
                 }
                 $object->setBatteryDetails($values_1);
                 unset($data['batteryDetails']);
             }
             if (\array_key_exists('dryIceWeight', $data)) {
-                $object->setDryIceWeight($this->denormalizer->denormalize($data['dryIceWeight'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDryIceWeight', 'json', $context));
+                $object->setDryIceWeight($this->denormalizer->denormalize($data['dryIceWeight'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDryIceWeight::class, 'json', $context));
                 unset($data['dryIceWeight']);
             }
             foreach ($data as $key => $value_2) {
@@ -95,7 +95,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('specialServiceTypes') && null !== $object->getSpecialServiceTypes()) {
@@ -143,9 +143,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices::class => false];
         }
     }
 } else {
@@ -155,13 +155,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices::class;
         }
         /**
          * @return mixed
@@ -191,23 +191,23 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['signatureOptionType']);
             }
             if (\array_key_exists('priorityAlertDetail', $data)) {
-                $object->setPriorityAlertDetail($this->denormalizer->denormalize($data['priorityAlertDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesPriorityAlertDetail', 'json', $context));
+                $object->setPriorityAlertDetail($this->denormalizer->denormalize($data['priorityAlertDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesPriorityAlertDetail::class, 'json', $context));
                 unset($data['priorityAlertDetail']);
             }
             if (\array_key_exists('signatureOptionDetail', $data)) {
-                $object->setSignatureOptionDetail($this->denormalizer->denormalize($data['signatureOptionDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesSignatureOptionDetail', 'json', $context));
+                $object->setSignatureOptionDetail($this->denormalizer->denormalize($data['signatureOptionDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesSignatureOptionDetail::class, 'json', $context));
                 unset($data['signatureOptionDetail']);
             }
             if (\array_key_exists('alcoholDetail', $data)) {
-                $object->setAlcoholDetail($this->denormalizer->denormalize($data['alcoholDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesAlcoholDetail', 'json', $context));
+                $object->setAlcoholDetail($this->denormalizer->denormalize($data['alcoholDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesAlcoholDetail::class, 'json', $context));
                 unset($data['alcoholDetail']);
             }
             if (\array_key_exists('dangerousGoodsDetail', $data)) {
-                $object->setDangerousGoodsDetail($this->denormalizer->denormalize($data['dangerousGoodsDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDangerousGoodsDetail', 'json', $context));
+                $object->setDangerousGoodsDetail($this->denormalizer->denormalize($data['dangerousGoodsDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDangerousGoodsDetail::class, 'json', $context));
                 unset($data['dangerousGoodsDetail']);
             }
             if (\array_key_exists('packageCODDetail', $data)) {
-                $object->setPackageCODDetail($this->denormalizer->denormalize($data['packageCODDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesPackageCODDetail', 'json', $context));
+                $object->setPackageCODDetail($this->denormalizer->denormalize($data['packageCODDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesPackageCODDetail::class, 'json', $context));
                 unset($data['packageCODDetail']);
             }
             if (\array_key_exists('pieceCountVerificationBoxCount', $data)) {
@@ -217,13 +217,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('batteryDetails', $data)) {
                 $values_1 = [];
                 foreach ($data['batteryDetails'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesBatteryDetailsItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesBatteryDetailsItem::class, 'json', $context);
                 }
                 $object->setBatteryDetails($values_1);
                 unset($data['batteryDetails']);
             }
             if (\array_key_exists('dryIceWeight', $data)) {
-                $object->setDryIceWeight($this->denormalizer->denormalize($data['dryIceWeight'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDryIceWeight', 'json', $context));
+                $object->setDryIceWeight($this->denormalizer->denormalize($data['dryIceWeight'], \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDryIceWeight::class, 'json', $context));
                 unset($data['dryIceWeight']);
             }
             foreach ($data as $key => $value_2) {
@@ -284,9 +284,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices::class => false];
         }
     }
 }

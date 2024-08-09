@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentP
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentP
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress
      */
-    public function getAddress() : AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress
+    public function getAddress(): AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress
     {
         return $this->address;
     }
@@ -40,7 +40,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentP
      *
      * @return self
      */
-    public function setAddress(AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress $address) : self
+    public function setAddress(AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -51,7 +51,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentP
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber
      */
-    public function getAccountNumber() : AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber
+    public function getAccountNumber(): AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -62,7 +62,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentP
      *
      * @return self
      */
-    public function setAccountNumber(AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber $accountNumber) : self
+    public function setAccountNumber(AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

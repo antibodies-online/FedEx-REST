@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return list<string>
      */
-    public function getSpecialServiceTypes() : array
+    public function getSpecialServiceTypes(): array
     {
         return $this->specialServiceTypes;
     }
@@ -76,7 +76,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setSpecialServiceTypes(array $specialServiceTypes) : self
+    public function setSpecialServiceTypes(array $specialServiceTypes): self
     {
         $this->initialized['specialServiceTypes'] = true;
         $this->specialServiceTypes = $specialServiceTypes;
@@ -87,7 +87,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getSignatureOptionType() : string
+    public function getSignatureOptionType(): string
     {
         return $this->signatureOptionType;
     }
@@ -98,7 +98,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setSignatureOptionType(string $signatureOptionType) : self
+    public function setSignatureOptionType(string $signatureOptionType): self
     {
         $this->initialized['signatureOptionType'] = true;
         $this->signatureOptionType = $signatureOptionType;
@@ -109,7 +109,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesalcoholDetail
      */
-    public function getAlcoholDetail() : RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesalcoholDetail
+    public function getAlcoholDetail(): RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesalcoholDetail
     {
         return $this->alcoholDetail;
     }
@@ -120,7 +120,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setAlcoholDetail(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesalcoholDetail $alcoholDetail) : self
+    public function setAlcoholDetail(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesalcoholDetail $alcoholDetail): self
     {
         $this->initialized['alcoholDetail'] = true;
         $this->alcoholDetail = $alcoholDetail;
@@ -131,7 +131,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetail
      */
-    public function getDangerousGoodsDetail() : RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetail
+    public function getDangerousGoodsDetail(): RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetail
     {
         return $this->dangerousGoodsDetail;
     }
@@ -142,7 +142,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setDangerousGoodsDetail(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetail $dangerousGoodsDetail) : self
+    public function setDangerousGoodsDetail(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetail $dangerousGoodsDetail): self
     {
         $this->initialized['dangerousGoodsDetail'] = true;
         $this->dangerousGoodsDetail = $dangerousGoodsDetail;
@@ -153,7 +153,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicespackageCODDetail
      */
-    public function getPackageCODDetail() : RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicespackageCODDetail
+    public function getPackageCODDetail(): RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicespackageCODDetail
     {
         return $this->packageCODDetail;
     }
@@ -164,7 +164,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setPackageCODDetail(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicespackageCODDetail $packageCODDetail) : self
+    public function setPackageCODDetail(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicespackageCODDetail $packageCODDetail): self
     {
         $this->initialized['packageCODDetail'] = true;
         $this->packageCODDetail = $packageCODDetail;
@@ -175,7 +175,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return int
      */
-    public function getPieceCountVerificationBoxCount() : int
+    public function getPieceCountVerificationBoxCount(): int
     {
         return $this->pieceCountVerificationBoxCount;
     }
@@ -186,7 +186,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setPieceCountVerificationBoxCount(int $pieceCountVerificationBoxCount) : self
+    public function setPieceCountVerificationBoxCount(int $pieceCountVerificationBoxCount): self
     {
         $this->initialized['pieceCountVerificationBoxCount'] = true;
         $this->pieceCountVerificationBoxCount = $pieceCountVerificationBoxCount;
@@ -197,7 +197,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return list<RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesbatteryDetailsItem>
      */
-    public function getBatteryDetails() : array
+    public function getBatteryDetails(): array
     {
         return $this->batteryDetails;
     }
@@ -208,7 +208,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setBatteryDetails(array $batteryDetails) : self
+    public function setBatteryDetails(array $batteryDetails): self
     {
         $this->initialized['batteryDetails'] = true;
         $this->batteryDetails = $batteryDetails;
@@ -219,7 +219,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdryIceWeight
      */
-    public function getDryIceWeight() : RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdryIceWeight
+    public function getDryIceWeight(): RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdryIceWeight
     {
         return $this->dryIceWeight;
     }
@@ -230,7 +230,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setDryIceWeight(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdryIceWeight $dryIceWeight) : self
+    public function setDryIceWeight(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdryIceWeight $dryIceWeight): self
     {
         $this->initialized['dryIceWeight'] = true;
         $this->dryIceWeight = $dryIceWeight;

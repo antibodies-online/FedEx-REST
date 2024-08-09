@@ -18,11 +18,11 @@ class CreateTagBadRequestException extends BadRequestException
         $this->shipV1ShipmentsTagPostResponse400 = $shipV1ShipmentsTagPostResponse400;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsTagPostResponse400() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagPostResponse400
+    public function getShipV1ShipmentsTagPostResponse400(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagPostResponse400
     {
         return $this->shipV1ShipmentsTagPostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

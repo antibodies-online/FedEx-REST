@@ -18,11 +18,11 @@ class TrackSendNotificationServiceUnavailableException extends ServiceUnavailabl
         $this->trackV1NotificationsPostResponse503 = $trackV1NotificationsPostResponse503;
         $this->response = $response;
     }
-    public function getTrackV1NotificationsPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostResponse503
+    public function getTrackV1NotificationsPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostResponse503
     {
         return $this->trackV1NotificationsPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

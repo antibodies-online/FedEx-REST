@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetail';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetail::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetail';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetail::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -41,15 +41,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('returnEmailDetail', $data)) {
-                $object->setReturnEmailDetail($this->denormalizer->denormalize($data['returnEmailDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnEmailDetail', 'json', $context));
+                $object->setReturnEmailDetail($this->denormalizer->denormalize($data['returnEmailDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnEmailDetail::class, 'json', $context));
                 unset($data['returnEmailDetail']);
             }
             if (\array_key_exists('rma', $data)) {
-                $object->setRma($this->denormalizer->denormalize($data['rma'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailRma', 'json', $context));
+                $object->setRma($this->denormalizer->denormalize($data['rma'], \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailRma::class, 'json', $context));
                 unset($data['rma']);
             }
             if (\array_key_exists('returnAssociationDetail', $data)) {
-                $object->setReturnAssociationDetail($this->denormalizer->denormalize($data['returnAssociationDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnAssociationDetail', 'json', $context));
+                $object->setReturnAssociationDetail($this->denormalizer->denormalize($data['returnAssociationDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnAssociationDetail::class, 'json', $context));
                 unset($data['returnAssociationDetail']);
             }
             if (\array_key_exists('returnType', $data)) {
@@ -63,7 +63,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('returnEmailDetail') && null !== $object->getReturnEmailDetail()) {
@@ -83,9 +83,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetail' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetail::class => false];
         }
     }
 } else {
@@ -95,13 +95,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetail';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetail::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetail';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetail::class;
         }
         /**
          * @return mixed
@@ -119,15 +119,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('returnEmailDetail', $data)) {
-                $object->setReturnEmailDetail($this->denormalizer->denormalize($data['returnEmailDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnEmailDetail', 'json', $context));
+                $object->setReturnEmailDetail($this->denormalizer->denormalize($data['returnEmailDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnEmailDetail::class, 'json', $context));
                 unset($data['returnEmailDetail']);
             }
             if (\array_key_exists('rma', $data)) {
-                $object->setRma($this->denormalizer->denormalize($data['rma'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailRma', 'json', $context));
+                $object->setRma($this->denormalizer->denormalize($data['rma'], \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailRma::class, 'json', $context));
                 unset($data['rma']);
             }
             if (\array_key_exists('returnAssociationDetail', $data)) {
-                $object->setReturnAssociationDetail($this->denormalizer->denormalize($data['returnAssociationDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnAssociationDetail', 'json', $context));
+                $object->setReturnAssociationDetail($this->denormalizer->denormalize($data['returnAssociationDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnAssociationDetail::class, 'json', $context));
                 unset($data['returnAssociationDetail']);
             }
             if (\array_key_exists('returnType', $data)) {
@@ -164,9 +164,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetail' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetail::class => false];
         }
     }
 }

@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return string
      */
-    public function getBatteryPackingType() : string
+    public function getBatteryPackingType(): string
     {
         return $this->batteryPackingType;
     }
@@ -46,7 +46,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setBatteryPackingType(string $batteryPackingType) : self
+    public function setBatteryPackingType(string $batteryPackingType): self
     {
         $this->initialized['batteryPackingType'] = true;
         $this->batteryPackingType = $batteryPackingType;
@@ -57,7 +57,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return string
      */
-    public function getBatteryRegulatoryType() : string
+    public function getBatteryRegulatoryType(): string
     {
         return $this->batteryRegulatoryType;
     }
@@ -68,7 +68,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setBatteryRegulatoryType(string $batteryRegulatoryType) : self
+    public function setBatteryRegulatoryType(string $batteryRegulatoryType): self
     {
         $this->initialized['batteryRegulatoryType'] = true;
         $this->batteryRegulatoryType = $batteryRegulatoryType;
@@ -79,7 +79,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return string
      */
-    public function getBatteryMaterialType() : string
+    public function getBatteryMaterialType(): string
     {
         return $this->batteryMaterialType;
     }
@@ -90,7 +90,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setBatteryMaterialType(string $batteryMaterialType) : self
+    public function setBatteryMaterialType(string $batteryMaterialType): self
     {
         $this->initialized['batteryMaterialType'] = true;
         $this->batteryMaterialType = $batteryMaterialType;

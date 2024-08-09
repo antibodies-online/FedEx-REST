@@ -8,7 +8,7 @@ class TrackV1TrackingdocumentsPostResponse200OutputLocalization extends \ArrayOb
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1TrackingdocumentsPostResponse200OutputLocalization extends \ArrayOb
      *
      * @return string
      */
-    public function getLanguageCode() : string
+    public function getLanguageCode(): string
     {
         return $this->languageCode;
     }
@@ -40,7 +40,7 @@ class TrackV1TrackingdocumentsPostResponse200OutputLocalization extends \ArrayOb
      *
      * @return self
      */
-    public function setLanguageCode(string $languageCode) : self
+    public function setLanguageCode(string $languageCode): self
     {
         $this->initialized['languageCode'] = true;
         $this->languageCode = $languageCode;
@@ -51,7 +51,7 @@ class TrackV1TrackingdocumentsPostResponse200OutputLocalization extends \ArrayOb
      *
      * @return string
      */
-    public function getLocaleCode() : string
+    public function getLocaleCode(): string
     {
         return $this->localeCode;
     }
@@ -62,7 +62,7 @@ class TrackV1TrackingdocumentsPostResponse200OutputLocalization extends \ArrayOb
      *
      * @return self
      */
-    public function setLocaleCode(string $localeCode) : self
+    public function setLocaleCode(string $localeCode): self
     {
         $this->initialized['localeCode'] = true;
         $this->localeCode = $localeCode;

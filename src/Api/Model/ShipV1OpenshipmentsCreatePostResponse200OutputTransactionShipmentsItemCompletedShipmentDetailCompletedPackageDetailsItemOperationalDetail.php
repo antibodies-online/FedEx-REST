@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getAstraHandlingText() : string
+    public function getAstraHandlingText(): string
     {
         return $this->astraHandlingText;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setAstraHandlingText(string $astraHandlingText) : self
+    public function setAstraHandlingText(string $astraHandlingText): self
     {
         $this->initialized['astraHandlingText'] = true;
         $this->astraHandlingText = $astraHandlingText;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemOperationalDetailBarcodes
      */
-    public function getBarcodes() : ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemOperationalDetailBarcodes
+    public function getBarcodes(): ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemOperationalDetailBarcodes
     {
         return $this->barcodes;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setBarcodes(ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemOperationalDetailBarcodes $barcodes) : self
+    public function setBarcodes(ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemOperationalDetailBarcodes $barcodes): self
     {
         $this->initialized['barcodes'] = true;
         $this->barcodes = $barcodes;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return list<ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemOperationalDetailOperationalInstructionsItem>
      */
-    public function getOperationalInstructions() : array
+    public function getOperationalInstructions(): array
     {
         return $this->operationalInstructions;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setOperationalInstructions(array $operationalInstructions) : self
+    public function setOperationalInstructions(array $operationalInstructions): self
     {
         $this->initialized['operationalInstructions'] = true;
         $this->operationalInstructions = $operationalInstructions;

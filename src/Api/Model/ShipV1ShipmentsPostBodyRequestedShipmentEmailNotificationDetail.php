@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentEmailNotificationDetail extends \A
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentEmailNotificationDetail extends \A
      *
      * @return string
      */
-    public function getAggregationType() : string
+    public function getAggregationType(): string
     {
         return $this->aggregationType;
     }
@@ -46,7 +46,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentEmailNotificationDetail extends \A
      *
      * @return self
      */
-    public function setAggregationType(string $aggregationType) : self
+    public function setAggregationType(string $aggregationType): self
     {
         $this->initialized['aggregationType'] = true;
         $this->aggregationType = $aggregationType;
@@ -57,7 +57,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentEmailNotificationDetail extends \A
      *
      * @return list<ShipV1ShipmentsPostBodyRequestedShipmentEmailNotificationDetailEmailNotificationRecipientsItem>
      */
-    public function getEmailNotificationRecipients() : array
+    public function getEmailNotificationRecipients(): array
     {
         return $this->emailNotificationRecipients;
     }
@@ -68,7 +68,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentEmailNotificationDetail extends \A
      *
      * @return self
      */
-    public function setEmailNotificationRecipients(array $emailNotificationRecipients) : self
+    public function setEmailNotificationRecipients(array $emailNotificationRecipients): self
     {
         $this->initialized['emailNotificationRecipients'] = true;
         $this->emailNotificationRecipients = $emailNotificationRecipients;
@@ -79,7 +79,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentEmailNotificationDetail extends \A
      *
      * @return string
      */
-    public function getPersonalMessage() : string
+    public function getPersonalMessage(): string
     {
         return $this->personalMessage;
     }
@@ -90,7 +90,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentEmailNotificationDetail extends \A
      *
      * @return self
      */
-    public function setPersonalMessage(string $personalMessage) : self
+    public function setPersonalMessage(string $personalMessage): self
     {
         $this->initialized['personalMessage'] = true;
         $this->personalMessage = $personalMessage;

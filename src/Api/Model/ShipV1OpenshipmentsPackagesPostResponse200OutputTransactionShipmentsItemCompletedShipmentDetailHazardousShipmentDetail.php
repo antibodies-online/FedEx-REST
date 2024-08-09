@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailHazardousSummaryDetail
      */
-    public function getHazardousSummaryDetail() : ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailHazardousSummaryDetail
+    public function getHazardousSummaryDetail(): ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailHazardousSummaryDetail
     {
         return $this->hazardousSummaryDetail;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return self
      */
-    public function setHazardousSummaryDetail(ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailHazardousSummaryDetail $hazardousSummaryDetail) : self
+    public function setHazardousSummaryDetail(ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailHazardousSummaryDetail $hazardousSummaryDetail): self
     {
         $this->initialized['hazardousSummaryDetail'] = true;
         $this->hazardousSummaryDetail = $hazardousSummaryDetail;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailAdrLicense
      */
-    public function getAdrLicense() : ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailAdrLicense
+    public function getAdrLicense(): ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailAdrLicense
     {
         return $this->adrLicense;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return self
      */
-    public function setAdrLicense(ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailAdrLicense $adrLicense) : self
+    public function setAdrLicense(ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailAdrLicense $adrLicense): self
     {
         $this->initialized['adrLicense'] = true;
         $this->adrLicense = $adrLicense;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetail
      */
-    public function getDryIceDetail() : ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetail
+    public function getDryIceDetail(): ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetail
     {
         return $this->dryIceDetail;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return self
      */
-    public function setDryIceDetail(ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetail $dryIceDetail) : self
+    public function setDryIceDetail(ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetailDryIceDetail $dryIceDetail): self
     {
         $this->initialized['dryIceDetail'] = true;
         $this->dryIceDetail = $dryIceDetail;

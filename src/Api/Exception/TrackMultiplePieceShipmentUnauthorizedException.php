@@ -18,11 +18,11 @@ class TrackMultiplePieceShipmentUnauthorizedException extends UnauthorizedExcept
         $this->trackV1AssociatedshipmentsPostResponse401 = $trackV1AssociatedshipmentsPostResponse401;
         $this->response = $response;
     }
-    public function getTrackV1AssociatedshipmentsPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\TrackV1AssociatedshipmentsPostResponse401
+    public function getTrackV1AssociatedshipmentsPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\TrackV1AssociatedshipmentsPostResponse401
     {
         return $this->trackV1AssociatedshipmentsPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

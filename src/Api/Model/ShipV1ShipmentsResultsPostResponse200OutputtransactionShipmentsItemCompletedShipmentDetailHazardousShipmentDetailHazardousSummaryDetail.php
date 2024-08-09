@@ -8,7 +8,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return int
      */
-    public function getSmallQuantityExceptionPackageCount() : int
+    public function getSmallQuantityExceptionPackageCount(): int
     {
         return $this->smallQuantityExceptionPackageCount;
     }
@@ -34,7 +34,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setSmallQuantityExceptionPackageCount(int $smallQuantityExceptionPackageCount) : self
+    public function setSmallQuantityExceptionPackageCount(int $smallQuantityExceptionPackageCount): self
     {
         $this->initialized['smallQuantityExceptionPackageCount'] = true;
         $this->smallQuantityExceptionPackageCount = $smallQuantityExceptionPackageCount;

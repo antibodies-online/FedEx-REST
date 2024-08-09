@@ -18,11 +18,11 @@ class CancelShipmentForbiddenException extends ForbiddenException
         $this->shipV1ShipmentsCancelPutResponse403 = $shipV1ShipmentsCancelPutResponse403;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsCancelPutResponse403() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse403
+    public function getShipV1ShipmentsCancelPutResponse403(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse403
     {
         return $this->shipV1ShipmentsCancelPutResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

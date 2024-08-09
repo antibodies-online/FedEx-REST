@@ -8,7 +8,7 @@ class ShipV1ShipmentsTagPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -40,7 +40,7 @@ class ShipV1ShipmentsTagPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedShipment($requestedShipment) : self
+    public function setRequestedShipment($requestedShipment): self
     {
         $this->initialized['requestedShipment'] = true;
         $this->requestedShipment = $requestedShipment;
@@ -51,7 +51,7 @@ class ShipV1ShipmentsTagPostBody extends \ArrayObject
      *
      * @return ShipV1ShipmentsTagPostBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1ShipmentsTagPostBodyAccountNumber
+    public function getAccountNumber(): ShipV1ShipmentsTagPostBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -62,7 +62,7 @@ class ShipV1ShipmentsTagPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1ShipmentsTagPostBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1ShipmentsTagPostBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

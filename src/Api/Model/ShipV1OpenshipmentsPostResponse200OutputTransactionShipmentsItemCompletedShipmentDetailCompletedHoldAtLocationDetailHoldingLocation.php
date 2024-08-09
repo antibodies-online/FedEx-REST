@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocationaddress
      */
-    public function getAddress() : ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocationaddress
+    public function getAddress(): ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocationaddress
     {
         return $this->address;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return self
      */
-    public function setAddress(ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocationaddress $address) : self
+    public function setAddress(ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocationaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocationcontact
      */
-    public function getContact() : ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocationcontact
+    public function getContact(): ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocationcontact
     {
         return $this->contact;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return self
      */
-    public function setContact(ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocationcontact $contact) : self
+    public function setContact(ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocationcontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;

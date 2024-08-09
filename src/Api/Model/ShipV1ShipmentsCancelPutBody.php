@@ -8,7 +8,7 @@ class ShipV1ShipmentsCancelPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ShipV1ShipmentsCancelPutBody extends \ArrayObject
      *
      * @return ShipV1ShipmentsCancelPutBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1ShipmentsCancelPutBodyAccountNumber
+    public function getAccountNumber(): ShipV1ShipmentsCancelPutBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -58,7 +58,7 @@ class ShipV1ShipmentsCancelPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1ShipmentsCancelPutBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1ShipmentsCancelPutBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -69,7 +69,7 @@ class ShipV1ShipmentsCancelPutBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getEmailShipment() : bool
+    public function getEmailShipment(): bool
     {
         return $this->emailShipment;
     }
@@ -80,7 +80,7 @@ class ShipV1ShipmentsCancelPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEmailShipment(bool $emailShipment) : self
+    public function setEmailShipment(bool $emailShipment): self
     {
         $this->initialized['emailShipment'] = true;
         $this->emailShipment = $emailShipment;
@@ -91,7 +91,7 @@ class ShipV1ShipmentsCancelPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getSenderCountryCode() : string
+    public function getSenderCountryCode(): string
     {
         return $this->senderCountryCode;
     }
@@ -102,7 +102,7 @@ class ShipV1ShipmentsCancelPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSenderCountryCode(string $senderCountryCode) : self
+    public function setSenderCountryCode(string $senderCountryCode): self
     {
         $this->initialized['senderCountryCode'] = true;
         $this->senderCountryCode = $senderCountryCode;
@@ -113,7 +113,7 @@ class ShipV1ShipmentsCancelPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDeletionControl() : string
+    public function getDeletionControl(): string
     {
         return $this->deletionControl;
     }
@@ -124,7 +124,7 @@ class ShipV1ShipmentsCancelPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDeletionControl(string $deletionControl) : self
+    public function setDeletionControl(string $deletionControl): self
     {
         $this->initialized['deletionControl'] = true;
         $this->deletionControl = $deletionControl;
@@ -135,7 +135,7 @@ class ShipV1ShipmentsCancelPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTrackingNumber() : string
+    public function getTrackingNumber(): string
     {
         return $this->trackingNumber;
     }
@@ -146,7 +146,7 @@ class ShipV1ShipmentsCancelPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingNumber(string $trackingNumber) : self
+    public function setTrackingNumber(string $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;

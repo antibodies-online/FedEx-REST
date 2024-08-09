@@ -18,11 +18,11 @@ class RateAndTransitTimesServiceUnavailableException extends ServiceUnavailableE
         $this->rateV1RatesQuotesPostResponse503 = $rateV1RatesQuotesPostResponse503;
         $this->response = $response;
     }
-    public function getRateV1RatesQuotesPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse503
+    public function getRateV1RatesQuotesPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse503
     {
         return $this->rateV1RatesQuotesPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

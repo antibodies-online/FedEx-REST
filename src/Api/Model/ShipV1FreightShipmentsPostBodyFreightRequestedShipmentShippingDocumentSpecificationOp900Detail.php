@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return list<ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationOp900DetailCustomerImageUsagesItem>
      */
-    public function getCustomerImageUsages() : array
+    public function getCustomerImageUsages(): array
     {
         return $this->customerImageUsages;
     }
@@ -46,7 +46,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return self
      */
-    public function setCustomerImageUsages(array $customerImageUsages) : self
+    public function setCustomerImageUsages(array $customerImageUsages): self
     {
         $this->initialized['customerImageUsages'] = true;
         $this->customerImageUsages = $customerImageUsages;
@@ -57,7 +57,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return string
      */
-    public function getSignatureName() : string
+    public function getSignatureName(): string
     {
         return $this->signatureName;
     }
@@ -68,7 +68,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return self
      */
-    public function setSignatureName(string $signatureName) : self
+    public function setSignatureName(string $signatureName): self
     {
         $this->initialized['signatureName'] = true;
         $this->signatureName = $signatureName;
@@ -79,7 +79,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationOp900DetailDocumentFormat
      */
-    public function getDocumentFormat() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationOp900DetailDocumentFormat
+    public function getDocumentFormat(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationOp900DetailDocumentFormat
     {
         return $this->documentFormat;
     }
@@ -90,7 +90,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return self
      */
-    public function setDocumentFormat(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationOp900DetailDocumentFormat $documentFormat) : self
+    public function setDocumentFormat(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationOp900DetailDocumentFormat $documentFormat): self
     {
         $this->initialized['documentFormat'] = true;
         $this->documentFormat = $documentFormat;

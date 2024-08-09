@@ -18,11 +18,11 @@ class APIAuthorizationServiceUnavailableException extends ServiceUnavailableExce
         $this->oauthTokenPostResponse503 = $oauthTokenPostResponse503;
         $this->response = $response;
     }
-    public function getOauthTokenPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\OauthTokenPostResponse503
+    public function getOauthTokenPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\OauthTokenPostResponse503
     {
         return $this->oauthTokenPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

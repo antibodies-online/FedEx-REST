@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return bool
      */
-    public function getProvideInstructions() : bool
+    public function getProvideInstructions(): bool
     {
         return $this->provideInstructions;
     }
@@ -64,7 +64,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return self
      */
-    public function setProvideInstructions(bool $provideInstructions) : self
+    public function setProvideInstructions(bool $provideInstructions): self
     {
         $this->initialized['provideInstructions'] = true;
         $this->provideInstructions = $provideInstructions;
@@ -75,7 +75,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetailDocumentFormatOptionsRequested
      */
-    public function getOptionsRequested() : ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetailDocumentFormatOptionsRequested
+    public function getOptionsRequested(): ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetailDocumentFormatOptionsRequested
     {
         return $this->optionsRequested;
     }
@@ -86,7 +86,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return self
      */
-    public function setOptionsRequested(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetailDocumentFormatOptionsRequested $optionsRequested) : self
+    public function setOptionsRequested(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetailDocumentFormatOptionsRequested $optionsRequested): self
     {
         $this->initialized['optionsRequested'] = true;
         $this->optionsRequested = $optionsRequested;
@@ -97,7 +97,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return string
      */
-    public function getStockType() : string
+    public function getStockType(): string
     {
         return $this->stockType;
     }
@@ -108,7 +108,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return self
      */
-    public function setStockType(string $stockType) : self
+    public function setStockType(string $stockType): self
     {
         $this->initialized['stockType'] = true;
         $this->stockType = $stockType;
@@ -119,7 +119,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return list<ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructionsDetailDocumentFormatDispositionsItem>
      */
-    public function getDispositions() : array
+    public function getDispositions(): array
     {
         return $this->dispositions;
     }
@@ -130,7 +130,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return self
      */
-    public function setDispositions(array $dispositions) : self
+    public function setDispositions(array $dispositions): self
     {
         $this->initialized['dispositions'] = true;
         $this->dispositions = $dispositions;
@@ -141,7 +141,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return string
      */
-    public function getLocale() : string
+    public function getLocale(): string
     {
         return $this->locale;
     }
@@ -152,7 +152,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return self
      */
-    public function setLocale(string $locale) : self
+    public function setLocale(string $locale): self
     {
         $this->initialized['locale'] = true;
         $this->locale = $locale;
@@ -163,7 +163,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return string
      */
-    public function getDocType() : string
+    public function getDocType(): string
     {
         return $this->docType;
     }
@@ -174,7 +174,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationReturnInstructions
      *
      * @return self
      */
-    public function setDocType(string $docType) : self
+    public function setDocType(string $docType): self
     {
         $this->initialized['docType'] = true;
         $this->docType = $docType;

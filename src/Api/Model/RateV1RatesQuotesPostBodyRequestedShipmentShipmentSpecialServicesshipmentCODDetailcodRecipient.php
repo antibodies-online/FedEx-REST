@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientAddress
      */
-    public function getAddress() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientAddress
+    public function getAddress(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientAddress
     {
         return $this->address;
     }
@@ -46,7 +46,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return self
      */
-    public function setAddress(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientAddress $address) : self
+    public function setAddress(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -57,7 +57,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientContact
      */
-    public function getContact() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientContact
+    public function getContact(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientContact
     {
         return $this->contact;
     }
@@ -68,7 +68,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return self
      */
-    public function setContact(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientContact $contact) : self
+    public function setContact(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -79,7 +79,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientAccountNumber
      */
-    public function getAccountNumber() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientAccountNumber
+    public function getAccountNumber(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientAccountNumber
     {
         return $this->accountNumber;
     }
@@ -90,7 +90,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return self
      */
-    public function setAccountNumber(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientAccountNumber $accountNumber) : self
+    public function setAccountNumber(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipientAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

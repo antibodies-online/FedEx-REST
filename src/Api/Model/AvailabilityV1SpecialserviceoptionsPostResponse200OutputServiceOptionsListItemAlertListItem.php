@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -40,7 +40,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setDisplayText($displayText) : self
+    public function setDisplayText($displayText): self
     {
         $this->initialized['displayText'] = true;
         $this->displayText = $displayText;
@@ -62,7 +62,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setKey($key) : self
+    public function setKey($key): self
     {
         $this->initialized['key'] = true;
         $this->key = $key;

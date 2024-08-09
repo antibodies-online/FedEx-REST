@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return string
      */
-    public function getPersonName() : string
+    public function getPersonName(): string
     {
         return $this->personName;
     }
@@ -82,7 +82,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return self
      */
-    public function setPersonName(string $personName) : self
+    public function setPersonName(string $personName): self
     {
         $this->initialized['personName'] = true;
         $this->personName = $personName;
@@ -93,7 +93,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return string
      */
-    public function getTollFreePhoneNumber() : string
+    public function getTollFreePhoneNumber(): string
     {
         return $this->tollFreePhoneNumber;
     }
@@ -104,7 +104,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return self
      */
-    public function setTollFreePhoneNumber(string $tollFreePhoneNumber) : self
+    public function setTollFreePhoneNumber(string $tollFreePhoneNumber): self
     {
         $this->initialized['tollFreePhoneNumber'] = true;
         $this->tollFreePhoneNumber = $tollFreePhoneNumber;
@@ -115,7 +115,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -126,7 +126,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -137,7 +137,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return string
      */
-    public function getPhoneNumber() : string
+    public function getPhoneNumber(): string
     {
         return $this->phoneNumber;
     }
@@ -148,7 +148,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return self
      */
-    public function setPhoneNumber(string $phoneNumber) : self
+    public function setPhoneNumber(string $phoneNumber): self
     {
         $this->initialized['phoneNumber'] = true;
         $this->phoneNumber = $phoneNumber;
@@ -159,7 +159,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return string
      */
-    public function getPhoneExtension() : string
+    public function getPhoneExtension(): string
     {
         return $this->phoneExtension;
     }
@@ -170,7 +170,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return self
      */
-    public function setPhoneExtension(string $phoneExtension) : self
+    public function setPhoneExtension(string $phoneExtension): self
     {
         $this->initialized['phoneExtension'] = true;
         $this->phoneExtension = $phoneExtension;
@@ -181,7 +181,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return string
      */
-    public function getCompanyName() : string
+    public function getCompanyName(): string
     {
         return $this->companyName;
     }
@@ -192,7 +192,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return self
      */
-    public function setCompanyName(string $companyName) : self
+    public function setCompanyName(string $companyName): self
     {
         $this->initialized['companyName'] = true;
         $this->companyName = $companyName;
@@ -203,7 +203,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return string
      */
-    public function getPagerNumber() : string
+    public function getPagerNumber(): string
     {
         return $this->pagerNumber;
     }
@@ -214,7 +214,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return self
      */
-    public function setPagerNumber(string $pagerNumber) : self
+    public function setPagerNumber(string $pagerNumber): self
     {
         $this->initialized['pagerNumber'] = true;
         $this->pagerNumber = $pagerNumber;
@@ -225,7 +225,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return string
      */
-    public function getFaxNumber() : string
+    public function getFaxNumber(): string
     {
         return $this->faxNumber;
     }
@@ -236,7 +236,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return self
      */
-    public function setFaxNumber(string $faxNumber) : self
+    public function setFaxNumber(string $faxNumber): self
     {
         $this->initialized['faxNumber'] = true;
         $this->faxNumber = $faxNumber;
@@ -247,7 +247,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -258,7 +258,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;

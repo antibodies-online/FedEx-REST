@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipper extend
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipper extend
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipperaddress
      */
-    public function getAddress() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipperaddress
+    public function getAddress(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipperaddress
     {
         return $this->address;
     }
@@ -46,7 +46,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipper extend
      *
      * @return self
      */
-    public function setAddress(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipperaddress $address) : self
+    public function setAddress(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipperaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -57,7 +57,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipper extend
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshippercontact
      */
-    public function getContact() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshippercontact
+    public function getContact(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshippercontact
     {
         return $this->contact;
     }
@@ -68,7 +68,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipper extend
      *
      * @return self
      */
-    public function setContact(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshippercontact $contact) : self
+    public function setContact(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshippercontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -79,7 +79,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipper extend
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipperaccountNumber
      */
-    public function getAccountNumber() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipperaccountNumber
+    public function getAccountNumber(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipperaccountNumber
     {
         return $this->accountNumber;
     }
@@ -90,7 +90,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipper extend
      *
      * @return self
      */
-    public function setAccountNumber(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipperaccountNumber $accountNumber) : self
+    public function setAccountNumber(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentshipperaccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

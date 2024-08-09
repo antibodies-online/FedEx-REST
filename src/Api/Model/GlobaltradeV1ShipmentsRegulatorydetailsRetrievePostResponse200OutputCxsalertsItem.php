@@ -8,7 +8,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCxsale
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCxsale
      *
      * @return string
      */
-    public function getCode() : string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -52,7 +52,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCxsale
      *
      * @return self
      */
-    public function setCode(string $code) : self
+    public function setCode(string $code): self
     {
         $this->initialized['code'] = true;
         $this->code = $code;
@@ -63,7 +63,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCxsale
      *
      * @return string
      */
-    public function getAlertType() : string
+    public function getAlertType(): string
     {
         return $this->alertType;
     }
@@ -74,7 +74,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCxsale
      *
      * @return self
      */
-    public function setAlertType(string $alertType) : self
+    public function setAlertType(string $alertType): self
     {
         $this->initialized['alertType'] = true;
         $this->alertType = $alertType;
@@ -85,7 +85,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCxsale
      *
      * @return list<GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCxsalertsItemParameterListItem>
      */
-    public function getParameterList() : array
+    public function getParameterList(): array
     {
         return $this->parameterList;
     }
@@ -96,7 +96,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCxsale
      *
      * @return self
      */
-    public function setParameterList(array $parameterList) : self
+    public function setParameterList(array $parameterList): self
     {
         $this->initialized['parameterList'] = true;
         $this->parameterList = $parameterList;
@@ -107,7 +107,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCxsale
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -118,7 +118,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCxsale
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;

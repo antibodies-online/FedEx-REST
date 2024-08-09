@@ -18,11 +18,11 @@ class CancelFreightPickupUnauthorizedException extends UnauthorizedException
         $this->pickupV1FreightPickupsCancelPutResponse401 = $pickupV1FreightPickupsCancelPutResponse401;
         $this->response = $response;
     }
-    public function getPickupV1FreightPickupsCancelPutResponse401() : \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsCancelPutResponse401
+    public function getPickupV1FreightPickupsCancelPutResponse401(): \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsCancelPutResponse401
     {
         return $this->pickupV1FreightPickupsCancelPutResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

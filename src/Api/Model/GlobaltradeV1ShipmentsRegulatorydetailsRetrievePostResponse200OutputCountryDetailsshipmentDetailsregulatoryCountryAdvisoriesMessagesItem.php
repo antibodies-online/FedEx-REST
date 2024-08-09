@@ -8,7 +8,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getCode() : string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -52,7 +52,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setCode(string $code) : self
+    public function setCode(string $code): self
     {
         $this->initialized['code'] = true;
         $this->code = $code;
@@ -63,7 +63,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getText() : string
+    public function getText(): string
     {
         return $this->text;
     }
@@ -74,7 +74,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setText(string $text) : self
+    public function setText(string $text): self
     {
         $this->initialized['text'] = true;
         $this->text = $text;
@@ -85,7 +85,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return list<GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryCountryAdvisoriesMessagesItemParametersItem>
      */
-    public function getParameters() : array
+    public function getParameters(): array
     {
         return $this->parameters;
     }
@@ -96,7 +96,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setParameters(array $parameters) : self
+    public function setParameters(array $parameters): self
     {
         $this->initialized['parameters'] = true;
         $this->parameters = $parameters;
@@ -107,7 +107,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getLocalizedText() : string
+    public function getLocalizedText(): string
     {
         return $this->localizedText;
     }
@@ -118,7 +118,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setLocalizedText(string $localizedText) : self
+    public function setLocalizedText(string $localizedText): self
     {
         $this->initialized['localizedText'] = true;
         $this->localizedText = $localizedText;

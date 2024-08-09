@@ -18,11 +18,11 @@ class APIAuthorizationInternalServerErrorException extends InternalServerErrorEx
         $this->oauthTokenPostResponse500 = $oauthTokenPostResponse500;
         $this->response = $response;
     }
-    public function getOauthTokenPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\OauthTokenPostResponse500
+    public function getOauthTokenPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\OauthTokenPostResponse500
     {
         return $this->oauthTokenPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

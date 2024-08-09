@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemQuantity
      */
-    public function getQuantity() : ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemQuantity
+    public function getQuantity(): ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemQuantity
     {
         return $this->quantity;
     }
@@ -58,7 +58,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return self
      */
-    public function setQuantity(ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemQuantity $quantity) : self
+    public function setQuantity(ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemQuantity $quantity): self
     {
         $this->initialized['quantity'] = true;
         $this->quantity = $quantity;
@@ -69,7 +69,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemOptions
      */
-    public function getOptions() : ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemOptions
+    public function getOptions(): ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemOptions
     {
         return $this->options;
     }
@@ -80,7 +80,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return self
      */
-    public function setOptions(ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemOptions $options) : self
+    public function setOptions(ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemOptions $options): self
     {
         $this->initialized['options'] = true;
         $this->options = $options;
@@ -91,7 +91,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemDescription
      */
-    public function getDescription() : ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemDescription
+    public function getDescription(): ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemDescription
     {
         return $this->description;
     }
@@ -102,7 +102,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return self
      */
-    public function setDescription(ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemDescription $description) : self
+    public function setDescription(ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemDescription $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -113,7 +113,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemNetExplosiveDetail
      */
-    public function getNetExplosiveDetail() : ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemNetExplosiveDetail
+    public function getNetExplosiveDetail(): ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemNetExplosiveDetail
     {
         return $this->netExplosiveDetail;
     }
@@ -124,7 +124,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return self
      */
-    public function setNetExplosiveDetail(ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemNetExplosiveDetail $netExplosiveDetail) : self
+    public function setNetExplosiveDetail(ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemNetExplosiveDetail $netExplosiveDetail): self
     {
         $this->initialized['netExplosiveDetail'] = true;
         $this->netExplosiveDetail = $netExplosiveDetail;
@@ -135,7 +135,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return float
      */
-    public function getMassPoints() : float
+    public function getMassPoints(): float
     {
         return $this->massPoints;
     }
@@ -146,7 +146,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return self
      */
-    public function setMassPoints(float $massPoints) : self
+    public function setMassPoints(float $massPoints): self
     {
         $this->initialized['massPoints'] = true;
         $this->massPoints = $massPoints;

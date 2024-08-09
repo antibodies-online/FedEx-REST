@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return string
      */
-    public function getRequestDate() : string
+    public function getRequestDate(): string
     {
         return $this->requestDate;
     }
@@ -52,7 +52,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setRequestDate(string $requestDate) : self
+    public function setRequestDate(string $requestDate): self
     {
         $this->initialized['requestDate'] = true;
         $this->requestDate = $requestDate;
@@ -63,7 +63,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return string
      */
-    public function getRequestTime() : string
+    public function getRequestTime(): string
     {
         return $this->requestTime;
     }
@@ -74,7 +74,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setRequestTime(string $requestTime) : self
+    public function setRequestTime(string $requestTime): self
     {
         $this->initialized['requestTime'] = true;
         $this->requestTime = $requestTime;
@@ -85,7 +85,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesCustomDeliveryWindowDetailRequestRange
      */
-    public function getRequestRange() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesCustomDeliveryWindowDetailRequestRange
+    public function getRequestRange(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesCustomDeliveryWindowDetailRequestRange
     {
         return $this->requestRange;
     }
@@ -96,7 +96,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setRequestRange(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesCustomDeliveryWindowDetailRequestRange $requestRange) : self
+    public function setRequestRange(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesCustomDeliveryWindowDetailRequestRange $requestRange): self
     {
         $this->initialized['requestRange'] = true;
         $this->requestRange = $requestRange;
@@ -107,7 +107,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -118,7 +118,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;

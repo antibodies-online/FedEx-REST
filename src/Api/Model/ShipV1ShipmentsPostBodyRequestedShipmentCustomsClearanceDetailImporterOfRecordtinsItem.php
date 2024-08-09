@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentCustomsClearanceDetailImporterOfRe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentCustomsClearanceDetailImporterOfRe
      *
      * @return string
      */
-    public function getNumber() : string
+    public function getNumber(): string
     {
         return $this->number;
     }
@@ -58,7 +58,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentCustomsClearanceDetailImporterOfRe
      *
      * @return self
      */
-    public function setNumber(string $number) : self
+    public function setNumber(string $number): self
     {
         $this->initialized['number'] = true;
         $this->number = $number;
@@ -69,7 +69,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentCustomsClearanceDetailImporterOfRe
      *
      * @return string
      */
-    public function getTinType() : string
+    public function getTinType(): string
     {
         return $this->tinType;
     }
@@ -80,7 +80,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentCustomsClearanceDetailImporterOfRe
      *
      * @return self
      */
-    public function setTinType(string $tinType) : self
+    public function setTinType(string $tinType): self
     {
         $this->initialized['tinType'] = true;
         $this->tinType = $tinType;
@@ -91,7 +91,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentCustomsClearanceDetailImporterOfRe
      *
      * @return string
      */
-    public function getUsage() : string
+    public function getUsage(): string
     {
         return $this->usage;
     }
@@ -102,7 +102,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentCustomsClearanceDetailImporterOfRe
      *
      * @return self
      */
-    public function setUsage(string $usage) : self
+    public function setUsage(string $usage): self
     {
         $this->initialized['usage'] = true;
         $this->usage = $usage;
@@ -113,7 +113,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentCustomsClearanceDetailImporterOfRe
      *
      * @return string
      */
-    public function getEffectiveDate() : string
+    public function getEffectiveDate(): string
     {
         return $this->effectiveDate;
     }
@@ -124,7 +124,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentCustomsClearanceDetailImporterOfRe
      *
      * @return self
      */
-    public function setEffectiveDate(string $effectiveDate) : self
+    public function setEffectiveDate(string $effectiveDate): self
     {
         $this->initialized['effectiveDate'] = true;
         $this->effectiveDate = $effectiveDate;
@@ -135,7 +135,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentCustomsClearanceDetailImporterOfRe
      *
      * @return string
      */
-    public function getExpirationDate() : string
+    public function getExpirationDate(): string
     {
         return $this->expirationDate;
     }
@@ -146,7 +146,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentCustomsClearanceDetailImporterOfRe
      *
      * @return self
      */
-    public function setExpirationDate(string $expirationDate) : self
+    public function setExpirationDate(string $expirationDate): self
     {
         $this->initialized['expirationDate'] = true;
         $this->expirationDate = $expirationDate;

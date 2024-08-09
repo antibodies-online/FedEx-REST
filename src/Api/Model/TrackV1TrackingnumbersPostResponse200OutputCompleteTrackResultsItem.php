@@ -8,7 +8,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItem extend
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItem extend
      *
      * @return string
      */
-    public function getTrackingNumber() : string
+    public function getTrackingNumber(): string
     {
         return $this->trackingNumber;
     }
@@ -40,7 +40,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItem extend
      *
      * @return self
      */
-    public function setTrackingNumber(string $trackingNumber) : self
+    public function setTrackingNumber(string $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;
@@ -51,7 +51,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItem extend
      *
      * @return list<TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItem>
      */
-    public function getTrackResults() : array
+    public function getTrackResults(): array
     {
         return $this->trackResults;
     }
@@ -62,7 +62,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItem extend
      *
      * @return self
      */
-    public function setTrackResults(array $trackResults) : self
+    public function setTrackResults(array $trackResults): self
     {
         $this->initialized['trackResults'] = true;
         $this->trackResults = $trackResults;

@@ -8,7 +8,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDet
      *
      * @return PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightGuaranteeDetail
      */
-    public function getFreightGuaranteeDetail() : PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightGuaranteeDetail
+    public function getFreightGuaranteeDetail(): PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightGuaranteeDetail
     {
         return $this->freightGuaranteeDetail;
     }
@@ -46,7 +46,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDet
      *
      * @return self
      */
-    public function setFreightGuaranteeDetail(PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightGuaranteeDetail $freightGuaranteeDetail) : self
+    public function setFreightGuaranteeDetail(PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightGuaranteeDetail $freightGuaranteeDetail): self
     {
         $this->initialized['freightGuaranteeDetail'] = true;
         $this->freightGuaranteeDetail = $freightGuaranteeDetail;
@@ -57,7 +57,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDet
      *
      * @return PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightDirectDetail
      */
-    public function getFreightDirectDetail() : PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightDirectDetail
+    public function getFreightDirectDetail(): PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightDirectDetail
     {
         return $this->freightDirectDetail;
     }
@@ -68,7 +68,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDet
      *
      * @return self
      */
-    public function setFreightDirectDetail(PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightDirectDetail $freightDirectDetail) : self
+    public function setFreightDirectDetail(PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetailShipmentSpecialServicesRequestedfreightDirectDetail $freightDirectDetail): self
     {
         $this->initialized['freightDirectDetail'] = true;
         $this->freightDirectDetail = $freightDirectDetail;
@@ -79,7 +79,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDet
      *
      * @return list<string>
      */
-    public function getSpecialServiceTypes() : array
+    public function getSpecialServiceTypes(): array
     {
         return $this->specialServiceTypes;
     }
@@ -90,7 +90,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDet
      *
      * @return self
      */
-    public function setSpecialServiceTypes(array $specialServiceTypes) : self
+    public function setSpecialServiceTypes(array $specialServiceTypes): self
     {
         $this->initialized['specialServiceTypes'] = true;
         $this->specialServiceTypes = $specialServiceTypes;

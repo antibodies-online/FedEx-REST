@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTo extends \Arra
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTo extends \Arra
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldToaddress
      */
-    public function getAddress() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldToaddress
+    public function getAddress(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldToaddress
     {
         return $this->address;
     }
@@ -52,7 +52,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTo extends \Arra
      *
      * @return self
      */
-    public function setAddress(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldToaddress $address) : self
+    public function setAddress(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldToaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -63,7 +63,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTo extends \Arra
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTocontact
      */
-    public function getContact() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTocontact
+    public function getContact(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTocontact
     {
         return $this->contact;
     }
@@ -74,7 +74,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTo extends \Arra
      *
      * @return self
      */
-    public function setContact(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTocontact $contact) : self
+    public function setContact(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTocontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -85,7 +85,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTo extends \Arra
      *
      * @return list<ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTotinsItem>
      */
-    public function getTins() : array
+    public function getTins(): array
     {
         return $this->tins;
     }
@@ -96,7 +96,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTo extends \Arra
      *
      * @return self
      */
-    public function setTins(array $tins) : self
+    public function setTins(array $tins): self
     {
         $this->initialized['tins'] = true;
         $this->tins = $tins;
@@ -107,7 +107,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTo extends \Arra
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldToaccountNumber
      */
-    public function getAccountNumber() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldToaccountNumber
+    public function getAccountNumber(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldToaccountNumber
     {
         return $this->accountNumber;
     }
@@ -118,7 +118,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTo extends \Arra
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldToaccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldToaccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

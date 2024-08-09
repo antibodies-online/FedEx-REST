@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentRequested
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentRequested
      *
      * @return string
      */
-    public function getUnits() : string
+    public function getUnits(): string
     {
         return $this->units;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentRequested
      *
      * @return self
      */
-    public function setUnits(string $units) : self
+    public function setUnits(string $units): self
     {
         $this->initialized['units'] = true;
         $this->units = $units;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentRequested
      *
      * @return float
      */
-    public function getValue() : float
+    public function getValue(): float
     {
         return $this->value;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentRequested
      *
      * @return self
      */
-    public function setValue(float $value) : self
+    public function setValue(float $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;

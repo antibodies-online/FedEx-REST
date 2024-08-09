@@ -8,7 +8,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -89,7 +89,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatementsUserMessage
      */
-    public function getUserMessage() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatementsUserMessage
+    public function getUserMessage(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatementsUserMessage
     {
         return $this->userMessage;
     }
@@ -100,7 +100,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setUserMessage(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatementsUserMessage $userMessage) : self
+    public function setUserMessage(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatementsUserMessage $userMessage): self
     {
         $this->initialized['userMessage'] = true;
         $this->userMessage = $userMessage;
@@ -111,7 +111,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getSupportType() : string
+    public function getSupportType(): string
     {
         return $this->supportType;
     }
@@ -122,7 +122,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setSupportType(string $supportType) : self
+    public function setSupportType(string $supportType): self
     {
         $this->initialized['supportType'] = true;
         $this->supportType = $supportType;
@@ -133,7 +133,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getAllowability() : string
+    public function getAllowability(): string
     {
         return $this->allowability;
     }
@@ -144,7 +144,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setAllowability(string $allowability) : self
+    public function setAllowability(string $allowability): self
     {
         $this->initialized['allowability'] = true;
         $this->allowability = $allowability;
@@ -155,7 +155,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getFileName() : string
+    public function getFileName(): string
     {
         return $this->fileName;
     }
@@ -166,7 +166,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setFileName(string $fileName) : self
+    public function setFileName(string $fileName): self
     {
         $this->initialized['fileName'] = true;
         $this->fileName = $fileName;
@@ -177,7 +177,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getAgencyUrl() : string
+    public function getAgencyUrl(): string
     {
         return $this->agencyUrl;
     }
@@ -188,7 +188,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setAgencyUrl(string $agencyUrl) : self
+    public function setAgencyUrl(string $agencyUrl): self
     {
         $this->initialized['agencyUrl'] = true;
         $this->agencyUrl = $agencyUrl;
@@ -199,7 +199,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getDocumentUrl() : string
+    public function getDocumentUrl(): string
     {
         return $this->documentUrl;
     }
@@ -210,7 +210,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setDocumentUrl(string $documentUrl) : self
+    public function setDocumentUrl(string $documentUrl): self
     {
         $this->initialized['documentUrl'] = true;
         $this->documentUrl = $documentUrl;
@@ -221,7 +221,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -232,7 +232,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -243,7 +243,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getCompletionType() : string
+    public function getCompletionType(): string
     {
         return $this->completionType;
     }
@@ -254,7 +254,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setCompletionType(string $completionType) : self
+    public function setCompletionType(string $completionType): self
     {
         $this->initialized['completionType'] = true;
         $this->completionType = $completionType;
@@ -265,7 +265,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getAgencyName() : string
+    public function getAgencyName(): string
     {
         return $this->agencyName;
     }
@@ -276,7 +276,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setAgencyName(string $agencyName) : self
+    public function setAgencyName(string $agencyName): self
     {
         $this->initialized['agencyName'] = true;
         $this->agencyName = $agencyName;
@@ -287,7 +287,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatementsLocalizedAttributes
      */
-    public function getLocalizedAttributes() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatementsLocalizedAttributes
+    public function getLocalizedAttributes(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatementsLocalizedAttributes
     {
         return $this->localizedAttributes;
     }
@@ -298,7 +298,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setLocalizedAttributes(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatementsLocalizedAttributes $localizedAttributes) : self
+    public function setLocalizedAttributes(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatementsLocalizedAttributes $localizedAttributes): self
     {
         $this->initialized['localizedAttributes'] = true;
         $this->localizedAttributes = $localizedAttributes;
@@ -309,7 +309,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return list<string>
      */
-    public function getDocumentIds() : array
+    public function getDocumentIds(): array
     {
         return $this->documentIds;
     }
@@ -320,7 +320,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setDocumentIds(array $documentIds) : self
+    public function setDocumentIds(array $documentIds): self
     {
         $this->initialized['documentIds'] = true;
         $this->documentIds = $documentIds;
@@ -331,7 +331,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getStatementUrl() : string
+    public function getStatementUrl(): string
     {
         return $this->statementUrl;
     }
@@ -342,7 +342,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setStatementUrl(string $statementUrl) : self
+    public function setStatementUrl(string $statementUrl): self
     {
         $this->initialized['statementUrl'] = true;
         $this->statementUrl = $statementUrl;

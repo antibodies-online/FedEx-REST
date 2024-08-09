@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200Output extends \ArrayObj
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200Output extends \ArrayObj
      *
      * @return ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItem
      */
-    public function getRequestedpackageLineItem() : ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItem
+    public function getRequestedpackageLineItem(): ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItem
     {
         return $this->requestedpackageLineItem;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200Output extends \ArrayObj
      *
      * @return self
      */
-    public function setRequestedpackageLineItem(ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItem $requestedpackageLineItem) : self
+    public function setRequestedpackageLineItem(ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItem $requestedpackageLineItem): self
     {
         $this->initialized['requestedpackageLineItem'] = true;
         $this->requestedpackageLineItem = $requestedpackageLineItem;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200Output extends \ArrayObj
      *
      * @return list<ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200Output extends \ArrayObj
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

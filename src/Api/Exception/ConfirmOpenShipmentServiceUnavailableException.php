@@ -18,11 +18,11 @@ class ConfirmOpenShipmentServiceUnavailableException extends ServiceUnavailableE
         $this->shipV1OpenshipmentsPostResponse503 = $shipV1OpenshipmentsPostResponse503;
         $this->response = $response;
     }
-    public function getShipV1OpenshipmentsPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPostResponse503
+    public function getShipV1OpenshipmentsPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPostResponse503
     {
         return $this->shipV1OpenshipmentsPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

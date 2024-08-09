@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPaym
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPaym
      *
      * @return string
      */
-    public function getCity() : string
+    public function getCity(): string
     {
         return $this->city;
     }
@@ -58,7 +58,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPaym
      *
      * @return self
      */
-    public function setCity(string $city) : self
+    public function setCity(string $city): self
     {
         $this->initialized['city'] = true;
         $this->city = $city;
@@ -69,7 +69,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPaym
      *
      * @return string
      */
-    public function getStateOrProvinceCode() : string
+    public function getStateOrProvinceCode(): string
     {
         return $this->stateOrProvinceCode;
     }
@@ -80,7 +80,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPaym
      *
      * @return self
      */
-    public function setStateOrProvinceCode(string $stateOrProvinceCode) : self
+    public function setStateOrProvinceCode(string $stateOrProvinceCode): self
     {
         $this->initialized['stateOrProvinceCode'] = true;
         $this->stateOrProvinceCode = $stateOrProvinceCode;
@@ -91,7 +91,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPaym
      *
      * @return string
      */
-    public function getPostalCode() : string
+    public function getPostalCode(): string
     {
         return $this->postalCode;
     }
@@ -102,7 +102,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPaym
      *
      * @return self
      */
-    public function setPostalCode(string $postalCode) : self
+    public function setPostalCode(string $postalCode): self
     {
         $this->initialized['postalCode'] = true;
         $this->postalCode = $postalCode;
@@ -113,7 +113,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPaym
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -124,7 +124,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPaym
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;
@@ -135,7 +135,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPaym
      *
      * @return bool
      */
-    public function getResidential() : bool
+    public function getResidential(): bool
     {
         return $this->residential;
     }
@@ -146,7 +146,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPaym
      *
      * @return self
      */
-    public function setResidential(bool $residential) : self
+    public function setResidential(bool $residential): self
     {
         $this->initialized['residential'] = true;
         $this->residential = $residential;

@@ -8,7 +8,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getPieceCount() : string
+    public function getPieceCount(): string
     {
         return $this->pieceCount;
     }
@@ -52,7 +52,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setPieceCount(string $pieceCount) : self
+    public function setPieceCount(string $pieceCount): self
     {
         $this->initialized['pieceCount'] = true;
         $this->pieceCount = $pieceCount;
@@ -63,7 +63,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getStatusDescription() : string
+    public function getStatusDescription(): string
     {
         return $this->statusDescription;
     }
@@ -74,7 +74,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setStatusDescription(string $statusDescription) : self
+    public function setStatusDescription(string $statusDescription): self
     {
         $this->initialized['statusDescription'] = true;
         $this->statusDescription = $statusDescription;
@@ -85,7 +85,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getTimestamp() : string
+    public function getTimestamp(): string
     {
         return $this->timestamp;
     }
@@ -96,7 +96,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setTimestamp(string $timestamp) : self
+    public function setTimestamp(string $timestamp): self
     {
         $this->initialized['timestamp'] = true;
         $this->timestamp = $timestamp;
@@ -107,7 +107,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getStatusCode() : string
+    public function getStatusCode(): string
     {
         return $this->statusCode;
     }
@@ -118,7 +118,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setStatusCode(string $statusCode) : self
+    public function setStatusCode(string $statusCode): self
     {
         $this->initialized['statusCode'] = true;
         $this->statusCode = $statusCode;

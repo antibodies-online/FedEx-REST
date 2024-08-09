@@ -18,11 +18,11 @@ class ValidateAddressInternalServerErrorException extends InternalServerErrorExc
         $this->addressV1AddressesResolvePostResponse500 = $addressV1AddressesResolvePostResponse500;
         $this->response = $response;
     }
-    public function getAddressV1AddressesResolvePostResponse500() : \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse500
+    public function getAddressV1AddressesResolvePostResponse500(): \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse500
     {
         return $this->addressV1AddressesResolvePostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

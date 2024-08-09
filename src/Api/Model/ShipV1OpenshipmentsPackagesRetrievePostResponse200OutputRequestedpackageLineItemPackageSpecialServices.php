@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return list<string>
      */
-    public function getSpecialServiceTypes() : array
+    public function getSpecialServiceTypes(): array
     {
         return $this->specialServiceTypes;
     }
@@ -88,7 +88,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return self
      */
-    public function setSpecialServiceTypes(array $specialServiceTypes) : self
+    public function setSpecialServiceTypes(array $specialServiceTypes): self
     {
         $this->initialized['specialServiceTypes'] = true;
         $this->specialServiceTypes = $specialServiceTypes;
@@ -99,7 +99,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return string
      */
-    public function getSignatureOptionType() : string
+    public function getSignatureOptionType(): string
     {
         return $this->signatureOptionType;
     }
@@ -110,7 +110,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return self
      */
-    public function setSignatureOptionType(string $signatureOptionType) : self
+    public function setSignatureOptionType(string $signatureOptionType): self
     {
         $this->initialized['signatureOptionType'] = true;
         $this->signatureOptionType = $signatureOptionType;
@@ -121,7 +121,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesPriorityAlertDetail
      */
-    public function getPriorityAlertDetail() : ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesPriorityAlertDetail
+    public function getPriorityAlertDetail(): ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesPriorityAlertDetail
     {
         return $this->priorityAlertDetail;
     }
@@ -132,7 +132,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return self
      */
-    public function setPriorityAlertDetail(ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesPriorityAlertDetail $priorityAlertDetail) : self
+    public function setPriorityAlertDetail(ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesPriorityAlertDetail $priorityAlertDetail): self
     {
         $this->initialized['priorityAlertDetail'] = true;
         $this->priorityAlertDetail = $priorityAlertDetail;
@@ -143,7 +143,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesSignatureOptionDetail
      */
-    public function getSignatureOptionDetail() : ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesSignatureOptionDetail
+    public function getSignatureOptionDetail(): ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesSignatureOptionDetail
     {
         return $this->signatureOptionDetail;
     }
@@ -154,7 +154,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return self
      */
-    public function setSignatureOptionDetail(ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesSignatureOptionDetail $signatureOptionDetail) : self
+    public function setSignatureOptionDetail(ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesSignatureOptionDetail $signatureOptionDetail): self
     {
         $this->initialized['signatureOptionDetail'] = true;
         $this->signatureOptionDetail = $signatureOptionDetail;
@@ -165,7 +165,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesAlcoholDetail
      */
-    public function getAlcoholDetail() : ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesAlcoholDetail
+    public function getAlcoholDetail(): ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesAlcoholDetail
     {
         return $this->alcoholDetail;
     }
@@ -176,7 +176,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return self
      */
-    public function setAlcoholDetail(ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesAlcoholDetail $alcoholDetail) : self
+    public function setAlcoholDetail(ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesAlcoholDetail $alcoholDetail): self
     {
         $this->initialized['alcoholDetail'] = true;
         $this->alcoholDetail = $alcoholDetail;
@@ -187,7 +187,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesDangerousGoodsDetail
      */
-    public function getDangerousGoodsDetail() : ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesDangerousGoodsDetail
+    public function getDangerousGoodsDetail(): ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesDangerousGoodsDetail
     {
         return $this->dangerousGoodsDetail;
     }
@@ -198,7 +198,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return self
      */
-    public function setDangerousGoodsDetail(ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesDangerousGoodsDetail $dangerousGoodsDetail) : self
+    public function setDangerousGoodsDetail(ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesDangerousGoodsDetail $dangerousGoodsDetail): self
     {
         $this->initialized['dangerousGoodsDetail'] = true;
         $this->dangerousGoodsDetail = $dangerousGoodsDetail;
@@ -209,7 +209,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesPackageCODDetail
      */
-    public function getPackageCODDetail() : ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesPackageCODDetail
+    public function getPackageCODDetail(): ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesPackageCODDetail
     {
         return $this->packageCODDetail;
     }
@@ -220,7 +220,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return self
      */
-    public function setPackageCODDetail(ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesPackageCODDetail $packageCODDetail) : self
+    public function setPackageCODDetail(ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesPackageCODDetail $packageCODDetail): self
     {
         $this->initialized['packageCODDetail'] = true;
         $this->packageCODDetail = $packageCODDetail;
@@ -231,7 +231,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return int
      */
-    public function getPieceCountVerificationBoxCount() : int
+    public function getPieceCountVerificationBoxCount(): int
     {
         return $this->pieceCountVerificationBoxCount;
     }
@@ -242,7 +242,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return self
      */
-    public function setPieceCountVerificationBoxCount(int $pieceCountVerificationBoxCount) : self
+    public function setPieceCountVerificationBoxCount(int $pieceCountVerificationBoxCount): self
     {
         $this->initialized['pieceCountVerificationBoxCount'] = true;
         $this->pieceCountVerificationBoxCount = $pieceCountVerificationBoxCount;
@@ -253,7 +253,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return list<ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesBatteryDetailsItem>
      */
-    public function getBatteryDetails() : array
+    public function getBatteryDetails(): array
     {
         return $this->batteryDetails;
     }
@@ -264,7 +264,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return self
      */
-    public function setBatteryDetails(array $batteryDetails) : self
+    public function setBatteryDetails(array $batteryDetails): self
     {
         $this->initialized['batteryDetails'] = true;
         $this->batteryDetails = $batteryDetails;
@@ -275,7 +275,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesDryIceWeight
      */
-    public function getDryIceWeight() : ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesDryIceWeight
+    public function getDryIceWeight(): ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesDryIceWeight
     {
         return $this->dryIceWeight;
     }
@@ -286,7 +286,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLi
      *
      * @return self
      */
-    public function setDryIceWeight(ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesDryIceWeight $dryIceWeight) : self
+    public function setDryIceWeight(ShipV1OpenshipmentsPackagesRetrievePostResponse200OutputRequestedpackageLineItemPackageSpecialServicesDryIceWeight $dryIceWeight): self
     {
         $this->initialized['dryIceWeight'] = true;
         $this->dryIceWeight = $dryIceWeight;

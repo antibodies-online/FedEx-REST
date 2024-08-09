@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return string
      */
-    public function getValue() : string
+    public function getValue(): string
     {
         return $this->value;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemCompletedS
      *
      * @return self
      */
-    public function setValue(string $value) : self
+    public function setValue(string $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;

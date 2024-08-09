@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipient
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipient
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -70,7 +70,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipient
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -81,7 +81,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipient
      *
      * @return list<string>
      */
-    public function getNotificationEventType() : array
+    public function getNotificationEventType(): array
     {
         return $this->notificationEventType;
     }
@@ -92,7 +92,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipient
      *
      * @return self
      */
-    public function setNotificationEventType(array $notificationEventType) : self
+    public function setNotificationEventType(array $notificationEventType): self
     {
         $this->initialized['notificationEventType'] = true;
         $this->notificationEventType = $notificationEventType;
@@ -114,7 +114,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipient
      *
      * @return self
      */
-    public function setSmsDetail($smsDetail) : self
+    public function setSmsDetail($smsDetail): self
     {
         $this->initialized['smsDetail'] = true;
         $this->smsDetail = $smsDetail;
@@ -125,7 +125,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipient
      *
      * @return string
      */
-    public function getNotificationFormatType() : string
+    public function getNotificationFormatType(): string
     {
         return $this->notificationFormatType;
     }
@@ -136,7 +136,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipient
      *
      * @return self
      */
-    public function setNotificationFormatType(string $notificationFormatType) : self
+    public function setNotificationFormatType(string $notificationFormatType): self
     {
         $this->initialized['notificationFormatType'] = true;
         $this->notificationFormatType = $notificationFormatType;
@@ -147,7 +147,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipient
      *
      * @return string
      */
-    public function getEmailNotificationRecipientType() : string
+    public function getEmailNotificationRecipientType(): string
     {
         return $this->emailNotificationRecipientType;
     }
@@ -158,7 +158,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipient
      *
      * @return self
      */
-    public function setEmailNotificationRecipientType(string $emailNotificationRecipientType) : self
+    public function setEmailNotificationRecipientType(string $emailNotificationRecipientType): self
     {
         $this->initialized['emailNotificationRecipientType'] = true;
         $this->emailNotificationRecipientType = $emailNotificationRecipientType;
@@ -169,7 +169,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipient
      *
      * @return string
      */
-    public function getNotificationType() : string
+    public function getNotificationType(): string
     {
         return $this->notificationType;
     }
@@ -180,7 +180,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipient
      *
      * @return self
      */
-    public function setNotificationType(string $notificationType) : self
+    public function setNotificationType(string $notificationType): self
     {
         $this->initialized['notificationType'] = true;
         $this->notificationType = $notificationType;
@@ -191,7 +191,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipient
      *
      * @return string
      */
-    public function getLocale() : string
+    public function getLocale(): string
     {
         return $this->locale;
     }
@@ -202,7 +202,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipient
      *
      * @return self
      */
-    public function setLocale(string $locale) : self
+    public function setLocale(string $locale): self
     {
         $this->initialized['locale'] = true;
         $this->locale = $locale;

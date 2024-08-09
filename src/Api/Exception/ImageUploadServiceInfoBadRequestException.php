@@ -18,11 +18,11 @@ class ImageUploadServiceInfoBadRequestException extends BadRequestException
         $this->documentsV1LhsimagesUploadPostResponse400 = $documentsV1LhsimagesUploadPostResponse400;
         $this->response = $response;
     }
-    public function getDocumentsV1LhsimagesUploadPostResponse400() : \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostResponse400
+    public function getDocumentsV1LhsimagesUploadPostResponse400(): \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostResponse400
     {
         return $this->documentsV1LhsimagesUploadPostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -18,11 +18,11 @@ class ImageUploadServiceInfoUnauthorizedException extends UnauthorizedException
         $this->documentsV1LhsimagesUploadPostResponse401 = $documentsV1LhsimagesUploadPostResponse401;
         $this->response = $response;
     }
-    public function getDocumentsV1LhsimagesUploadPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostResponse401
+    public function getDocumentsV1LhsimagesUploadPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostResponse401
     {
         return $this->documentsV1LhsimagesUploadPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

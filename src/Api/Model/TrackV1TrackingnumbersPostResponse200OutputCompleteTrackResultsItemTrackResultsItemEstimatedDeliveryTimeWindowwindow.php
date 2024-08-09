@@ -8,7 +8,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getBegins() : string
+    public function getBegins(): string
     {
         return $this->begins;
     }
@@ -40,7 +40,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setBegins(string $begins) : self
+    public function setBegins(string $begins): self
     {
         $this->initialized['begins'] = true;
         $this->begins = $begins;
@@ -51,7 +51,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getEnds() : string
+    public function getEnds(): string
     {
         return $this->ends;
     }
@@ -62,7 +62,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setEnds(string $ends) : self
+    public function setEnds(string $ends): self
     {
         $this->initialized['ends'] = true;
         $this->ends = $ends;

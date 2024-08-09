@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return list<string>
      */
-    public function getSpecialServiceTypes() : array
+    public function getSpecialServiceTypes(): array
     {
         return $this->specialServiceTypes;
     }
@@ -58,7 +58,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setSpecialServiceTypes(array $specialServiceTypes) : self
+    public function setSpecialServiceTypes(array $specialServiceTypes): self
     {
         $this->initialized['specialServiceTypes'] = true;
         $this->specialServiceTypes = $specialServiceTypes;
@@ -69,7 +69,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesFreightGuaranteeDetail
      */
-    public function getFreightGuaranteeDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesFreightGuaranteeDetail
+    public function getFreightGuaranteeDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesFreightGuaranteeDetail
     {
         return $this->freightGuaranteeDetail;
     }
@@ -80,7 +80,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setFreightGuaranteeDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesFreightGuaranteeDetail $freightGuaranteeDetail) : self
+    public function setFreightGuaranteeDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesFreightGuaranteeDetail $freightGuaranteeDetail): self
     {
         $this->initialized['freightGuaranteeDetail'] = true;
         $this->freightGuaranteeDetail = $freightGuaranteeDetail;
@@ -91,7 +91,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesShipmentCODDetail
      */
-    public function getShipmentCODDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesShipmentCODDetail
+    public function getShipmentCODDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesShipmentCODDetail
     {
         return $this->shipmentCODDetail;
     }
@@ -102,7 +102,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setShipmentCODDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesShipmentCODDetail $shipmentCODDetail) : self
+    public function setShipmentCODDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesShipmentCODDetail $shipmentCODDetail): self
     {
         $this->initialized['shipmentCODDetail'] = true;
         $this->shipmentCODDetail = $shipmentCODDetail;
@@ -113,7 +113,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesFreightDirectDetail
      */
-    public function getFreightDirectDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesFreightDirectDetail
+    public function getFreightDirectDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesFreightDirectDetail
     {
         return $this->freightDirectDetail;
     }
@@ -124,7 +124,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setFreightDirectDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesFreightDirectDetail $freightDirectDetail) : self
+    public function setFreightDirectDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesFreightDirectDetail $freightDirectDetail): self
     {
         $this->initialized['freightDirectDetail'] = true;
         $this->freightDirectDetail = $freightDirectDetail;
@@ -135,7 +135,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesCustomDeliveryWindowDetail
      */
-    public function getCustomDeliveryWindowDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesCustomDeliveryWindowDetail
+    public function getCustomDeliveryWindowDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesCustomDeliveryWindowDetail
     {
         return $this->customDeliveryWindowDetail;
     }
@@ -146,7 +146,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setCustomDeliveryWindowDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesCustomDeliveryWindowDetail $customDeliveryWindowDetail) : self
+    public function setCustomDeliveryWindowDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServicesCustomDeliveryWindowDetail $customDeliveryWindowDetail): self
     {
         $this->initialized['customDeliveryWindowDetail'] = true;
         $this->customDeliveryWindowDetail = $customDeliveryWindowDetail;

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingC
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingC
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress
      */
-    public function getAddress() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress
+    public function getAddress(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress
     {
         return $this->address;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingC
      *
      * @return self
      */
-    public function setAddress(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress $address) : self
+    public function setAddress(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingC
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyContact
      */
-    public function getContact() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyContact
+    public function getContact(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyContact
     {
         return $this->contact;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingC
      *
      * @return self
      */
-    public function setContact(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyContact $contact) : self
+    public function setContact(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingC
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber
      */
-    public function getAccountNumber() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber
+    public function getAccountNumber(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingC
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentShippingChargesPaymentPayorResponsiblePartyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

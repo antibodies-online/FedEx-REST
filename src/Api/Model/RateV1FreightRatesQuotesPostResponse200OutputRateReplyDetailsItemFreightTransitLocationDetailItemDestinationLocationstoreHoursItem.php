@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return list<RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemDestinationLocationstoreHoursItemExceptionalHoursItem>
      */
-    public function getExceptionalHours() : array
+    public function getExceptionalHours(): array
     {
         return $this->exceptionalHours;
     }
@@ -58,7 +58,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setExceptionalHours(array $exceptionalHours) : self
+    public function setExceptionalHours(array $exceptionalHours): self
     {
         $this->initialized['exceptionalHours'] = true;
         $this->exceptionalHours = $exceptionalHours;
@@ -69,7 +69,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return string
      */
-    public function getDayofweek() : string
+    public function getDayofweek(): string
     {
         return $this->dayofweek;
     }
@@ -80,7 +80,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setDayofweek(string $dayofweek) : self
+    public function setDayofweek(string $dayofweek): self
     {
         $this->initialized['dayofweek'] = true;
         $this->dayofweek = $dayofweek;
@@ -91,7 +91,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return list<RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemDestinationLocationstoreHoursItemOperationalHoursItem>
      */
-    public function getOperationalHours() : array
+    public function getOperationalHours(): array
     {
         return $this->operationalHours;
     }
@@ -102,7 +102,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setOperationalHours(array $operationalHours) : self
+    public function setOperationalHours(array $operationalHours): self
     {
         $this->initialized['operationalHours'] = true;
         $this->operationalHours = $operationalHours;
@@ -113,7 +113,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return string
      */
-    public function getExceptionalHoursType() : string
+    public function getExceptionalHoursType(): string
     {
         return $this->exceptionalHoursType;
     }
@@ -124,7 +124,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setExceptionalHoursType(string $exceptionalHoursType) : self
+    public function setExceptionalHoursType(string $exceptionalHoursType): self
     {
         $this->initialized['exceptionalHoursType'] = true;
         $this->exceptionalHoursType = $exceptionalHoursType;
@@ -135,7 +135,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return string
      */
-    public function getOperationalHoursType() : string
+    public function getOperationalHoursType(): string
     {
         return $this->operationalHoursType;
     }
@@ -146,7 +146,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setOperationalHoursType(string $operationalHoursType) : self
+    public function setOperationalHoursType(string $operationalHoursType): self
     {
         $this->initialized['operationalHoursType'] = true;
         $this->operationalHoursType = $operationalHoursType;

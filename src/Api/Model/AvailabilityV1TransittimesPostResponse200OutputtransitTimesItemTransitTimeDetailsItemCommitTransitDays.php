@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -46,7 +46,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -57,7 +57,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getMinimumTransitTime() : string
+    public function getMinimumTransitTime(): string
     {
         return $this->minimumTransitTime;
     }
@@ -68,7 +68,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setMinimumTransitTime(string $minimumTransitTime) : self
+    public function setMinimumTransitTime(string $minimumTransitTime): self
     {
         $this->initialized['minimumTransitTime'] = true;
         $this->minimumTransitTime = $minimumTransitTime;
@@ -79,7 +79,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getMaximumTransitTime() : string
+    public function getMaximumTransitTime(): string
     {
         return $this->maximumTransitTime;
     }
@@ -90,7 +90,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setMaximumTransitTime(string $maximumTransitTime) : self
+    public function setMaximumTransitTime(string $maximumTransitTime): self
     {
         $this->initialized['maximumTransitTime'] = true;
         $this->maximumTransitTime = $maximumTransitTime;

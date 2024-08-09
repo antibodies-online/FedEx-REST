@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentOrigin extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentOrigin extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentOrigincontact
      */
-    public function getContact() : ShipV1OpenshipmentsPutBodyRequestedShipmentOrigincontact
+    public function getContact(): ShipV1OpenshipmentsPutBodyRequestedShipmentOrigincontact
     {
         return $this->contact;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentOrigin extends \ArrayObject
      *
      * @return self
      */
-    public function setContact(ShipV1OpenshipmentsPutBodyRequestedShipmentOrigincontact $contact) : self
+    public function setContact(ShipV1OpenshipmentsPutBodyRequestedShipmentOrigincontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentOrigin extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentOriginaddress
      */
-    public function getAddress() : ShipV1OpenshipmentsPutBodyRequestedShipmentOriginaddress
+    public function getAddress(): ShipV1OpenshipmentsPutBodyRequestedShipmentOriginaddress
     {
         return $this->address;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentOrigin extends \ArrayObject
      *
      * @return self
      */
-    public function setAddress(ShipV1OpenshipmentsPutBodyRequestedShipmentOriginaddress $address) : self
+    public function setAddress(ShipV1OpenshipmentsPutBodyRequestedShipmentOriginaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

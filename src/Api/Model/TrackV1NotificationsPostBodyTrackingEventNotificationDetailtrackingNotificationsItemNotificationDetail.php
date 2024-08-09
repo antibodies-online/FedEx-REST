@@ -8,7 +8,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailLocalization
      */
-    public function getLocalization() : TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailLocalization
+    public function getLocalization(): TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailLocalization
     {
         return $this->localization;
     }
@@ -46,7 +46,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return self
      */
-    public function setLocalization(TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailLocalization $localization) : self
+    public function setLocalization(TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailLocalization $localization): self
     {
         $this->initialized['localization'] = true;
         $this->localization = $localization;
@@ -57,7 +57,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailEmailDetail
      */
-    public function getEmailDetail() : TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailEmailDetail
+    public function getEmailDetail(): TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailEmailDetail
     {
         return $this->emailDetail;
     }
@@ -68,7 +68,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return self
      */
-    public function setEmailDetail(TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailEmailDetail $emailDetail) : self
+    public function setEmailDetail(TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailEmailDetail $emailDetail): self
     {
         $this->initialized['emailDetail'] = true;
         $this->emailDetail = $emailDetail;
@@ -79,7 +79,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return string
      */
-    public function getNotificationType() : string
+    public function getNotificationType(): string
     {
         return $this->notificationType;
     }
@@ -90,7 +90,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return self
      */
-    public function setNotificationType(string $notificationType) : self
+    public function setNotificationType(string $notificationType): self
     {
         $this->initialized['notificationType'] = true;
         $this->notificationType = $notificationType;

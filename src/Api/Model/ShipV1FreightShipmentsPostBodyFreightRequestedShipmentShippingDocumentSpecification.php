@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationGeneralAgencyAgreementDetail
      */
-    public function getGeneralAgencyAgreementDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationGeneralAgencyAgreementDetail
+    public function getGeneralAgencyAgreementDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationGeneralAgencyAgreementDetail
     {
         return $this->generalAgencyAgreementDetail;
     }
@@ -82,7 +82,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return self
      */
-    public function setGeneralAgencyAgreementDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationGeneralAgencyAgreementDetail $generalAgencyAgreementDetail) : self
+    public function setGeneralAgencyAgreementDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationGeneralAgencyAgreementDetail $generalAgencyAgreementDetail): self
     {
         $this->initialized['generalAgencyAgreementDetail'] = true;
         $this->generalAgencyAgreementDetail = $generalAgencyAgreementDetail;
@@ -93,7 +93,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationOp900Detail
      */
-    public function getOp900Detail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationOp900Detail
+    public function getOp900Detail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationOp900Detail
     {
         return $this->op900Detail;
     }
@@ -104,7 +104,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return self
      */
-    public function setOp900Detail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationOp900Detail $op900Detail) : self
+    public function setOp900Detail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationOp900Detail $op900Detail): self
     {
         $this->initialized['op900Detail'] = true;
         $this->op900Detail = $op900Detail;
@@ -115,7 +115,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationUsmcaCertificationOfOriginDetail
      */
-    public function getUsmcaCertificationOfOriginDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationUsmcaCertificationOfOriginDetail
+    public function getUsmcaCertificationOfOriginDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationUsmcaCertificationOfOriginDetail
     {
         return $this->usmcaCertificationOfOriginDetail;
     }
@@ -126,7 +126,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return self
      */
-    public function setUsmcaCertificationOfOriginDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationUsmcaCertificationOfOriginDetail $usmcaCertificationOfOriginDetail) : self
+    public function setUsmcaCertificationOfOriginDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationUsmcaCertificationOfOriginDetail $usmcaCertificationOfOriginDetail): self
     {
         $this->initialized['usmcaCertificationOfOriginDetail'] = true;
         $this->usmcaCertificationOfOriginDetail = $usmcaCertificationOfOriginDetail;
@@ -137,7 +137,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetail
      */
-    public function getUsmcaCommercialInvoiceCertificationOfOriginDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetail
+    public function getUsmcaCommercialInvoiceCertificationOfOriginDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetail
     {
         return $this->usmcaCommercialInvoiceCertificationOfOriginDetail;
     }
@@ -148,7 +148,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return self
      */
-    public function setUsmcaCommercialInvoiceCertificationOfOriginDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetail $usmcaCommercialInvoiceCertificationOfOriginDetail) : self
+    public function setUsmcaCommercialInvoiceCertificationOfOriginDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetail $usmcaCommercialInvoiceCertificationOfOriginDetail): self
     {
         $this->initialized['usmcaCommercialInvoiceCertificationOfOriginDetail'] = true;
         $this->usmcaCommercialInvoiceCertificationOfOriginDetail = $usmcaCommercialInvoiceCertificationOfOriginDetail;
@@ -159,7 +159,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return list<string>
      */
-    public function getShippingDocumentTypes() : array
+    public function getShippingDocumentTypes(): array
     {
         return $this->shippingDocumentTypes;
     }
@@ -170,7 +170,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return self
      */
-    public function setShippingDocumentTypes(array $shippingDocumentTypes) : self
+    public function setShippingDocumentTypes(array $shippingDocumentTypes): self
     {
         $this->initialized['shippingDocumentTypes'] = true;
         $this->shippingDocumentTypes = $shippingDocumentTypes;
@@ -181,7 +181,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationCertificateOfOrigin
      */
-    public function getCertificateOfOrigin() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationCertificateOfOrigin
+    public function getCertificateOfOrigin(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationCertificateOfOrigin
     {
         return $this->certificateOfOrigin;
     }
@@ -192,7 +192,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return self
      */
-    public function setCertificateOfOrigin(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationCertificateOfOrigin $certificateOfOrigin) : self
+    public function setCertificateOfOrigin(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationCertificateOfOrigin $certificateOfOrigin): self
     {
         $this->initialized['certificateOfOrigin'] = true;
         $this->certificateOfOrigin = $certificateOfOrigin;
@@ -203,7 +203,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationCommercialInvoiceDetail
      */
-    public function getCommercialInvoiceDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationCommercialInvoiceDetail
+    public function getCommercialInvoiceDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationCommercialInvoiceDetail
     {
         return $this->commercialInvoiceDetail;
     }
@@ -214,7 +214,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return self
      */
-    public function setCommercialInvoiceDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationCommercialInvoiceDetail $commercialInvoiceDetail) : self
+    public function setCommercialInvoiceDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationCommercialInvoiceDetail $commercialInvoiceDetail): self
     {
         $this->initialized['commercialInvoiceDetail'] = true;
         $this->commercialInvoiceDetail = $commercialInvoiceDetail;
@@ -225,7 +225,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationFreightAddressLabelDetail
      */
-    public function getFreightAddressLabelDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationFreightAddressLabelDetail
+    public function getFreightAddressLabelDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationFreightAddressLabelDetail
     {
         return $this->freightAddressLabelDetail;
     }
@@ -236,7 +236,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return self
      */
-    public function setFreightAddressLabelDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationFreightAddressLabelDetail $freightAddressLabelDetail) : self
+    public function setFreightAddressLabelDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationFreightAddressLabelDetail $freightAddressLabelDetail): self
     {
         $this->initialized['freightAddressLabelDetail'] = true;
         $this->freightAddressLabelDetail = $freightAddressLabelDetail;
@@ -247,7 +247,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationFreightBillOfLadingDetail
      */
-    public function getFreightBillOfLadingDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationFreightBillOfLadingDetail
+    public function getFreightBillOfLadingDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationFreightBillOfLadingDetail
     {
         return $this->freightBillOfLadingDetail;
     }
@@ -258,7 +258,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpec
      *
      * @return self
      */
-    public function setFreightBillOfLadingDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationFreightBillOfLadingDetail $freightBillOfLadingDetail) : self
+    public function setFreightBillOfLadingDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecificationFreightBillOfLadingDetail $freightBillOfLadingDetail): self
     {
         $this->initialized['freightBillOfLadingDetail'] = true;
         $this->freightBillOfLadingDetail = $freightBillOfLadingDetail;

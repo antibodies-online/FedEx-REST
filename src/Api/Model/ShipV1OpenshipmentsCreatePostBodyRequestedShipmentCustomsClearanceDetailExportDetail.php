@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailEx
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailEx
      *
      * @return ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailExportDetailDestinationControlDetail
      */
-    public function getDestinationControlDetail() : ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailExportDetailDestinationControlDetail
+    public function getDestinationControlDetail(): ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailExportDetailDestinationControlDetail
     {
         return $this->destinationControlDetail;
     }
@@ -52,7 +52,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailEx
      *
      * @return self
      */
-    public function setDestinationControlDetail(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailExportDetailDestinationControlDetail $destinationControlDetail) : self
+    public function setDestinationControlDetail(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailExportDetailDestinationControlDetail $destinationControlDetail): self
     {
         $this->initialized['destinationControlDetail'] = true;
         $this->destinationControlDetail = $destinationControlDetail;
@@ -63,7 +63,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailEx
      *
      * @return string
      */
-    public function getB13AFilingOption() : string
+    public function getB13AFilingOption(): string
     {
         return $this->b13AFilingOption;
     }
@@ -74,7 +74,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailEx
      *
      * @return self
      */
-    public function setB13AFilingOption(string $b13AFilingOption) : self
+    public function setB13AFilingOption(string $b13AFilingOption): self
     {
         $this->initialized['b13AFilingOption'] = true;
         $this->b13AFilingOption = $b13AFilingOption;
@@ -85,7 +85,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailEx
      *
      * @return string
      */
-    public function getExportComplianceStatement() : string
+    public function getExportComplianceStatement(): string
     {
         return $this->exportComplianceStatement;
     }
@@ -96,7 +96,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailEx
      *
      * @return self
      */
-    public function setExportComplianceStatement(string $exportComplianceStatement) : self
+    public function setExportComplianceStatement(string $exportComplianceStatement): self
     {
         $this->initialized['exportComplianceStatement'] = true;
         $this->exportComplianceStatement = $exportComplianceStatement;
@@ -107,7 +107,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailEx
      *
      * @return string
      */
-    public function getPermitNumber() : string
+    public function getPermitNumber(): string
     {
         return $this->permitNumber;
     }
@@ -118,7 +118,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentCustomsClearanceDetailEx
      *
      * @return self
      */
-    public function setPermitNumber(string $permitNumber) : self
+    public function setPermitNumber(string $permitNumber): self
     {
         $this->initialized['permitNumber'] = true;
         $this->permitNumber = $permitNumber;

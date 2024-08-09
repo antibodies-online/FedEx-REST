@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getBrokerCommitTimestamp() : string
+    public function getBrokerCommitTimestamp(): string
     {
         return $this->brokerCommitTimestamp;
     }
@@ -70,7 +70,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setBrokerCommitTimestamp(string $brokerCommitTimestamp) : self
+    public function setBrokerCommitTimestamp(string $brokerCommitTimestamp): self
     {
         $this->initialized['brokerCommitTimestamp'] = true;
         $this->brokerCommitTimestamp = $brokerCommitTimestamp;
@@ -81,7 +81,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getCutOffTime() : string
+    public function getCutOffTime(): string
     {
         return $this->cutOffTime;
     }
@@ -92,7 +92,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setCutOffTime(string $cutOffTime) : self
+    public function setCutOffTime(string $cutOffTime): self
     {
         $this->initialized['cutOffTime'] = true;
         $this->cutOffTime = $cutOffTime;
@@ -103,7 +103,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getCommodityName() : string
+    public function getCommodityName(): string
     {
         return $this->commodityName;
     }
@@ -114,7 +114,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setCommodityName(string $commodityName) : self
+    public function setCommodityName(string $commodityName): self
     {
         $this->initialized['commodityName'] = true;
         $this->commodityName = $commodityName;
@@ -125,7 +125,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitTransitDays
      */
-    public function getTransitDays() : AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitTransitDays
+    public function getTransitDays(): AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitTransitDays
     {
         return $this->transitDays;
     }
@@ -136,7 +136,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setTransitDays(AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitTransitDays $transitDays) : self
+    public function setTransitDays(AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitTransitDays $transitDays): self
     {
         $this->initialized['transitDays'] = true;
         $this->transitDays = $transitDays;
@@ -147,7 +147,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return string
      */
-    public function getCommitMessageDetails() : string
+    public function getCommitMessageDetails(): string
     {
         return $this->commitMessageDetails;
     }
@@ -158,7 +158,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setCommitMessageDetails(string $commitMessageDetails) : self
+    public function setCommitMessageDetails(string $commitMessageDetails): self
     {
         $this->initialized['commitMessageDetails'] = true;
         $this->commitMessageDetails = $commitMessageDetails;
@@ -169,7 +169,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitDerivedDestinationDetail
      */
-    public function getDerivedDestinationDetail() : AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitDerivedDestinationDetail
+    public function getDerivedDestinationDetail(): AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitDerivedDestinationDetail
     {
         return $this->derivedDestinationDetail;
     }
@@ -180,7 +180,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setDerivedDestinationDetail(AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitDerivedDestinationDetail $derivedDestinationDetail) : self
+    public function setDerivedDestinationDetail(AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitDerivedDestinationDetail $derivedDestinationDetail): self
     {
         $this->initialized['derivedDestinationDetail'] = true;
         $this->derivedDestinationDetail = $derivedDestinationDetail;
@@ -191,7 +191,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitDateDetail
      */
-    public function getDateDetail() : AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitDateDetail
+    public function getDateDetail(): AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitDateDetail
     {
         return $this->dateDetail;
     }
@@ -202,7 +202,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setDateDetail(AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitDateDetail $dateDetail) : self
+    public function setDateDetail(AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemCommitDateDetail $dateDetail): self
     {
         $this->initialized['dateDetail'] = true;
         $this->dateDetail = $dateDetail;

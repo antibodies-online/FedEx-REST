@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesDeletePutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsPackagesDeletePutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getIndex() : string
+    public function getIndex(): string
     {
         return $this->index;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsPackagesDeletePutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIndex(string $index) : self
+    public function setIndex(string $index): self
     {
         $this->initialized['index'] = true;
         $this->index = $index;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsPackagesDeletePutBody extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPackagesDeletePutBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1OpenshipmentsPackagesDeletePutBodyAccountNumber
+    public function getAccountNumber(): ShipV1OpenshipmentsPackagesDeletePutBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsPackagesDeletePutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1OpenshipmentsPackagesDeletePutBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1OpenshipmentsPackagesDeletePutBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsPackagesDeletePutBody extends \ArrayObject
      *
      * @return list<ShipV1OpenshipmentsPackagesDeletePutBodyTrackingIdsItem>
      */
-    public function getTrackingIds() : array
+    public function getTrackingIds(): array
     {
         return $this->trackingIds;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsPackagesDeletePutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingIds(array $trackingIds) : self
+    public function setTrackingIds(array $trackingIds): self
     {
         $this->initialized['trackingIds'] = true;
         $this->trackingIds = $trackingIds;

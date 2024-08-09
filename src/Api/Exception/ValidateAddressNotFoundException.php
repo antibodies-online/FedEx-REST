@@ -18,11 +18,11 @@ class ValidateAddressNotFoundException extends NotFoundException
         $this->addressV1AddressesResolvePostResponse404 = $addressV1AddressesResolvePostResponse404;
         $this->response = $response;
     }
-    public function getAddressV1AddressesResolvePostResponse404() : \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse404
+    public function getAddressV1AddressesResolvePostResponse404(): \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse404
     {
         return $this->addressV1AddressesResolvePostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

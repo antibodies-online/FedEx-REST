@@ -18,11 +18,11 @@ class GetSpecialServiceOptionsInternalServerErrorException extends InternalServe
         $this->availabilityV1SpecialserviceoptionsPostResponse500 = $availabilityV1SpecialserviceoptionsPostResponse500;
         $this->response = $response;
     }
-    public function getAvailabilityV1SpecialserviceoptionsPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1SpecialserviceoptionsPostResponse500
+    public function getAvailabilityV1SpecialserviceoptionsPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1SpecialserviceoptionsPostResponse500
     {
         return $this->availabilityV1SpecialserviceoptionsPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

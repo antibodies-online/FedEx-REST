@@ -8,7 +8,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocument extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocument extends \ArrayObject
      *
      * @return string
      */
-    public function getReferenceId() : string
+    public function getReferenceId(): string
     {
         return $this->referenceId;
     }
@@ -58,7 +58,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocument extends \ArrayObject
      *
      * @return self
      */
-    public function setReferenceId(string $referenceId) : self
+    public function setReferenceId(string $referenceId): self
     {
         $this->initialized['referenceId'] = true;
         $this->referenceId = $referenceId;
@@ -69,7 +69,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocument extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -80,7 +80,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocument extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -91,7 +91,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocument extends \ArrayObject
      *
      * @return string
      */
-    public function getContentType() : string
+    public function getContentType(): string
     {
         return $this->contentType;
     }
@@ -102,7 +102,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocument extends \ArrayObject
      *
      * @return self
      */
-    public function setContentType(string $contentType) : self
+    public function setContentType(string $contentType): self
     {
         $this->initialized['contentType'] = true;
         $this->contentType = $contentType;
@@ -113,7 +113,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocument extends \ArrayObject
      *
      * @return DocumentsV1LhsimagesUploadPostBodyDocumentRules
      */
-    public function getRules() : DocumentsV1LhsimagesUploadPostBodyDocumentRules
+    public function getRules(): DocumentsV1LhsimagesUploadPostBodyDocumentRules
     {
         return $this->rules;
     }
@@ -124,7 +124,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocument extends \ArrayObject
      *
      * @return self
      */
-    public function setRules(DocumentsV1LhsimagesUploadPostBodyDocumentRules $rules) : self
+    public function setRules(DocumentsV1LhsimagesUploadPostBodyDocumentRules $rules): self
     {
         $this->initialized['rules'] = true;
         $this->rules = $rules;
@@ -135,7 +135,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocument extends \ArrayObject
      *
      * @return DocumentsV1LhsimagesUploadPostBodyDocumentMeta
      */
-    public function getMeta() : DocumentsV1LhsimagesUploadPostBodyDocumentMeta
+    public function getMeta(): DocumentsV1LhsimagesUploadPostBodyDocumentMeta
     {
         return $this->meta;
     }
@@ -146,7 +146,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocument extends \ArrayObject
      *
      * @return self
      */
-    public function setMeta(DocumentsV1LhsimagesUploadPostBodyDocumentMeta $meta) : self
+    public function setMeta(DocumentsV1LhsimagesUploadPostBodyDocumentMeta $meta): self
     {
         $this->initialized['meta'] = true;
         $this->meta = $meta;

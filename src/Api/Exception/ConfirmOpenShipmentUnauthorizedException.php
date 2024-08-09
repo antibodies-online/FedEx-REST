@@ -18,11 +18,11 @@ class ConfirmOpenShipmentUnauthorizedException extends UnauthorizedException
         $this->shipV1OpenshipmentsPostResponse401 = $shipV1OpenshipmentsPostResponse401;
         $this->response = $response;
     }
-    public function getShipV1OpenshipmentsPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPostResponse401
+    public function getShipV1OpenshipmentsPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPostResponse401
     {
         return $this->shipV1OpenshipmentsPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -706,6 +706,7 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      * @throws \AntibodiesOnline\FedEx\Api\Exception\CreateShipmentUnauthorizedException
      * @throws \AntibodiesOnline\FedEx\Api\Exception\CreateShipmentForbiddenException
      * @throws \AntibodiesOnline\FedEx\Api\Exception\CreateShipmentNotFoundException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\CreateShipmentUnprocessableEntityException
      * @throws \AntibodiesOnline\FedEx\Api\Exception\CreateShipmentInternalServerErrorException
      * @throws \AntibodiesOnline\FedEx\Api\Exception\CreateShipmentServiceUnavailableException
      *
@@ -918,18 +919,18 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
      *     @var string $authorization This indicates the authorization token for the input request.
      * }
      * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
-     * @throws \AntibodiesOnline\FedEx\Api\Exception\F1f9080e8452d9ac903f562a2d2626d0BadRequestException
-     * @throws \AntibodiesOnline\FedEx\Api\Exception\F1f9080e8452d9ac903f562a2d2626d0UnauthorizedException
-     * @throws \AntibodiesOnline\FedEx\Api\Exception\F1f9080e8452d9ac903f562a2d2626d0ForbiddenException
-     * @throws \AntibodiesOnline\FedEx\Api\Exception\F1f9080e8452d9ac903f562a2d2626d0NotFoundException
-     * @throws \AntibodiesOnline\FedEx\Api\Exception\F1f9080e8452d9ac903f562a2d2626d0InternalServerErrorException
-     * @throws \AntibodiesOnline\FedEx\Api\Exception\F1f9080e8452d9ac903f562a2d2626d0ServiceUnavailableException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\TrackByTrackingControlNumberBadRequestException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\TrackByTrackingControlNumberUnauthorizedException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\TrackByTrackingControlNumberForbiddenException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\TrackByTrackingControlNumberNotFoundException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\TrackByTrackingControlNumberInternalServerErrorException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\TrackByTrackingControlNumberServiceUnavailableException
      *
      * @return null|\AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostResponse200|\Psr\Http\Message\ResponseInterface
      */
-    public function f1f9080e8452d9ac903f562a2d2626d0(?\AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    public function trackByTrackingControlNumber(?\AntibodiesOnline\FedEx\Api\Model\TrackV1TcnPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
-        return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\F1f9080e8452d9ac903f562a2d2626d0($requestBody, $headerParameters), $fetch);
+        return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\TrackByTrackingControlNumber($requestBody, $headerParameters), $fetch);
     }
     /**
      * This endpoint helps you to request a letter that includes the recipient's signature as a proof of delivery.<br><i>Note: FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
@@ -980,7 +981,7 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\TrackByTrackingNumber($requestBody, $headerParameters), $fetch);
     }
     /**
-     * Use this endpoint to upload the trade documents electronically before (pre-shipment) and after (post-shipment) the shipment is created.<br><i>Note&#58; FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
+     * Use this endpoint to upload the trade documentss electronicallyy before (pre-shipment) and after (post-shipment) the shipment is created.<br><i>Note&#58; FedEx APIs do not support Cross-Origin Resource Sharing (CORS) mechanism.</i>
      *
      * @param null|\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostBody $requestBody 
      * @param array $headerParameters {
@@ -1023,6 +1024,52 @@ class Client extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Client
     public function imageUploadServiceInfo(?\AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
     {
         return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\ImageUploadServiceInfo($requestBody, $headerParameters), $fetch);
+    }
+    /**
+     * Use this endpoint to upload multiple trade documents electronically before (pre-shipment) and after (post-shipment) the shipment is created
+     *
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsMultiuploadPostBody $requestBody 
+     * @param array $headerParameters {
+     *     @var string $Content-Type Type of content
+     *     @var string $Authorization This indicates the authorization token for the input request.
+     *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply
+     * }
+     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\UploadMultiETDfilesBadRequestException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\UploadMultiETDfilesUnauthorizedException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\UploadMultiETDfilesForbiddenException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\UploadMultiETDfilesNotFoundException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\UploadMultiETDfilesInternalServerErrorException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\UploadMultiETDfilesServiceUnavailableException
+     *
+     * @return null|\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsMultiuploadPostResponse201|\Psr\Http\Message\ResponseInterface
+     */
+    public function uploadMultiETDfiles(?\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsMultiuploadPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    {
+        return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\UploadMultiETDfiles($requestBody, $headerParameters), $fetch);
+    }
+    /**
+     * Use this endpoint to upload multiple trade documents as base64 electronically before (pre-shipment) and after (post-shipment) the shipment is created
+     *
+     * @param null|\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsEncodedmultiuploadPostBody $requestBody 
+     * @param array $headerParameters {
+     *     @var string $Content-Type Type of content
+     *     @var string $Authorization This indicates the authorization token for the input request.
+     *     @var string $x-customer-transaction-id This element allows you to assign a unique identifier to your transaction. This element is also returned in the reply and helps you match the request to the reply
+     * }
+     * @param string $fetch Fetch mode to use (can be OBJECT or RESPONSE)
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\UploadMultiEncodedETDfilesBadRequestException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\UploadMultiEncodedETDfilesUnauthorizedException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\UploadMultiEncodedETDfilesForbiddenException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\UploadMultiEncodedETDfilesNotFoundException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\UploadMultiEncodedETDfilesInternalServerErrorException
+     * @throws \AntibodiesOnline\FedEx\Api\Exception\UploadMultiEncodedETDfilesServiceUnavailableException
+     *
+     * @return null|\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsEncodedmultiuploadPostResponse201|\Psr\Http\Message\ResponseInterface
+     */
+    public function uploadMultiEncodedETDfiles(?\AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsEncodedmultiuploadPostBody $requestBody = null, array $headerParameters = [], string $fetch = self::FETCH_OBJECT)
+    {
+        return $this->executeEndpoint(new \AntibodiesOnline\FedEx\Api\Endpoint\UploadMultiEncodedETDfiles($requestBody, $headerParameters), $fetch);
     }
     public static function create($httpClient = null, array $additionalPlugins = [], array $additionalNormalizers = [])
     {

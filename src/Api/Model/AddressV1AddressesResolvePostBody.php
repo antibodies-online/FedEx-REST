@@ -8,7 +8,7 @@ class AddressV1AddressesResolvePostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class AddressV1AddressesResolvePostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getInEffectAsOfTimestamp() : string
+    public function getInEffectAsOfTimestamp(): string
     {
         return $this->inEffectAsOfTimestamp;
     }
@@ -46,7 +46,7 @@ class AddressV1AddressesResolvePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setInEffectAsOfTimestamp(string $inEffectAsOfTimestamp) : self
+    public function setInEffectAsOfTimestamp(string $inEffectAsOfTimestamp): self
     {
         $this->initialized['inEffectAsOfTimestamp'] = true;
         $this->inEffectAsOfTimestamp = $inEffectAsOfTimestamp;
@@ -57,7 +57,7 @@ class AddressV1AddressesResolvePostBody extends \ArrayObject
      *
      * @return AddressV1AddressesResolvePostBodyValidateAddressControlParameters
      */
-    public function getValidateAddressControlParameters() : AddressV1AddressesResolvePostBodyValidateAddressControlParameters
+    public function getValidateAddressControlParameters(): AddressV1AddressesResolvePostBodyValidateAddressControlParameters
     {
         return $this->validateAddressControlParameters;
     }
@@ -68,7 +68,7 @@ class AddressV1AddressesResolvePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setValidateAddressControlParameters(AddressV1AddressesResolvePostBodyValidateAddressControlParameters $validateAddressControlParameters) : self
+    public function setValidateAddressControlParameters(AddressV1AddressesResolvePostBodyValidateAddressControlParameters $validateAddressControlParameters): self
     {
         $this->initialized['validateAddressControlParameters'] = true;
         $this->validateAddressControlParameters = $validateAddressControlParameters;
@@ -79,7 +79,7 @@ class AddressV1AddressesResolvePostBody extends \ArrayObject
      *
      * @return list<AddressV1AddressesResolvePostBodyAddressesToValidateItem>
      */
-    public function getAddressesToValidate() : array
+    public function getAddressesToValidate(): array
     {
         return $this->addressesToValidate;
     }
@@ -90,7 +90,7 @@ class AddressV1AddressesResolvePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAddressesToValidate(array $addressesToValidate) : self
+    public function setAddressesToValidate(array $addressesToValidate): self
     {
         $this->initialized['addressesToValidate'] = true;
         $this->addressesToValidate = $addressesToValidate;

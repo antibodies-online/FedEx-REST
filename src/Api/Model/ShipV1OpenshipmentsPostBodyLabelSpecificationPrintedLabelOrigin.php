@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigin extends \A
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigin extends \A
      *
      * @return ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigincontact
      */
-    public function getContact() : ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigincontact
+    public function getContact(): ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigincontact
     {
         return $this->contact;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigin extends \A
      *
      * @return self
      */
-    public function setContact(ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigincontact $contact) : self
+    public function setContact(ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigincontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigin extends \A
      *
      * @return ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOriginaddress
      */
-    public function getAddress() : ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOriginaddress
+    public function getAddress(): ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOriginaddress
     {
         return $this->address;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigin extends \A
      *
      * @return self
      */
-    public function setAddress(ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOriginaddress $address) : self
+    public function setAddress(ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOriginaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

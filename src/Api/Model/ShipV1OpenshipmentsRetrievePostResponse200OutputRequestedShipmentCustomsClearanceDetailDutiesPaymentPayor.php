@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsibleParty
      */
-    public function getResponsibleParty() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsibleParty
+    public function getResponsibleParty(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsibleParty
     {
         return $this->responsibleParty;
     }
@@ -34,7 +34,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setResponsibleParty(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsibleParty $responsibleParty) : self
+    public function setResponsibleParty(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsClearanceDetailDutiesPaymentPayorResponsibleParty $responsibleParty): self
     {
         $this->initialized['responsibleParty'] = true;
         $this->responsibleParty = $responsibleParty;

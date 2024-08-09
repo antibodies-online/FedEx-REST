@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemInnerReceptaclesItemQuantity
      */
-    public function getQuantity() : RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemInnerReceptaclesItemQuantity
+    public function getQuantity(): RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemInnerReceptaclesItemQuantity
     {
         return $this->quantity;
     }
@@ -34,7 +34,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setQuantity(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemInnerReceptaclesItemQuantity $quantity) : self
+    public function setQuantity(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemInnerReceptaclesItemQuantity $quantity): self
     {
         $this->initialized['quantity'] = true;
         $this->quantity = $quantity;

@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmen
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmen
      *
      * @return ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisory
      */
-    public function getRegulatoryAdvisory() : ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisory
+    public function getRegulatoryAdvisory(): ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisory
     {
         return $this->regulatoryAdvisory;
     }
@@ -34,7 +34,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmen
      *
      * @return self
      */
-    public function setRegulatoryAdvisory(ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisory $regulatoryAdvisory) : self
+    public function setRegulatoryAdvisory(ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisory $regulatoryAdvisory): self
     {
         $this->initialized['regulatoryAdvisory'] = true;
         $this->regulatoryAdvisory = $regulatoryAdvisory;

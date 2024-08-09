@@ -18,11 +18,11 @@ class CancelShipmentBadRequestException extends BadRequestException
         $this->shipV1ShipmentsCancelPutResponse400 = $shipV1ShipmentsCancelPutResponse400;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsCancelPutResponse400() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse400
+    public function getShipV1ShipmentsCancelPutResponse400(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse400
     {
         return $this->shipV1ShipmentsCancelPutResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

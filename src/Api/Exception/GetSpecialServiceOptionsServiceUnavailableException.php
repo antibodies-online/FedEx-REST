@@ -18,11 +18,11 @@ class GetSpecialServiceOptionsServiceUnavailableException extends ServiceUnavail
         $this->availabilityV1SpecialserviceoptionsPostResponse503 = $availabilityV1SpecialserviceoptionsPostResponse503;
         $this->response = $response;
     }
-    public function getAvailabilityV1SpecialserviceoptionsPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1SpecialserviceoptionsPostResponse503
+    public function getAvailabilityV1SpecialserviceoptionsPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1SpecialserviceoptionsPostResponse503
     {
         return $this->availabilityV1SpecialserviceoptionsPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

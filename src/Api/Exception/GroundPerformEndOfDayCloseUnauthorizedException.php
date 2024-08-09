@@ -18,11 +18,11 @@ class GroundPerformEndOfDayCloseUnauthorizedException extends UnauthorizedExcept
         $this->shipV1EndofdayPutResponse401 = $shipV1EndofdayPutResponse401;
         $this->response = $response;
     }
-    public function getShipV1EndofdayPutResponse401() : \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPutResponse401
+    public function getShipV1EndofdayPutResponse401(): \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPutResponse401
     {
         return $this->shipV1EndofdayPutResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

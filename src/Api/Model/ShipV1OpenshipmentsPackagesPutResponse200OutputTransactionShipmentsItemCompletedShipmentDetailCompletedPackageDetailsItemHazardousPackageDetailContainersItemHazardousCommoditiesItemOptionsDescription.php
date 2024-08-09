@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -97,7 +97,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return int
      */
-    public function getSequenceNumber() : int
+    public function getSequenceNumber(): int
     {
         return $this->sequenceNumber;
     }
@@ -108,7 +108,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setSequenceNumber(int $sequenceNumber) : self
+    public function setSequenceNumber(int $sequenceNumber): self
     {
         $this->initialized['sequenceNumber'] = true;
         $this->sequenceNumber = $sequenceNumber;
@@ -119,7 +119,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return list<string>
      */
-    public function getProcessingOptions() : array
+    public function getProcessingOptions(): array
     {
         return $this->processingOptions;
     }
@@ -130,7 +130,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setProcessingOptions(array $processingOptions) : self
+    public function setProcessingOptions(array $processingOptions): self
     {
         $this->initialized['processingOptions'] = true;
         $this->processingOptions = $processingOptions;
@@ -143,7 +143,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
     *
     * @return list<string>
     */
-    public function getSubsidiaryClasses() : array
+    public function getSubsidiaryClasses(): array
     {
         return $this->subsidiaryClasses;
     }
@@ -156,7 +156,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
     *
     * @return self
     */
-    public function setSubsidiaryClasses(array $subsidiaryClasses) : self
+    public function setSubsidiaryClasses(array $subsidiaryClasses): self
     {
         $this->initialized['subsidiaryClasses'] = true;
         $this->subsidiaryClasses = $subsidiaryClasses;
@@ -167,7 +167,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getLabelText() : string
+    public function getLabelText(): string
     {
         return $this->labelText;
     }
@@ -178,7 +178,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setLabelText(string $labelText) : self
+    public function setLabelText(string $labelText): self
     {
         $this->initialized['labelText'] = true;
         $this->labelText = $labelText;
@@ -189,7 +189,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getTechnicalName() : string
+    public function getTechnicalName(): string
     {
         return $this->technicalName;
     }
@@ -200,7 +200,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setTechnicalName(string $technicalName) : self
+    public function setTechnicalName(string $technicalName): self
     {
         $this->initialized['technicalName'] = true;
         $this->technicalName = $technicalName;
@@ -211,7 +211,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemOptionsDescriptionPackingDetails
      */
-    public function getPackingDetails() : ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemOptionsDescriptionPackingDetails
+    public function getPackingDetails(): ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemOptionsDescriptionPackingDetails
     {
         return $this->packingDetails;
     }
@@ -222,7 +222,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setPackingDetails(ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemOptionsDescriptionPackingDetails $packingDetails) : self
+    public function setPackingDetails(ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItemOptionsDescriptionPackingDetails $packingDetails): self
     {
         $this->initialized['packingDetails'] = true;
         $this->packingDetails = $packingDetails;
@@ -233,7 +233,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getAuthorization() : string
+    public function getAuthorization(): string
     {
         return $this->authorization;
     }
@@ -244,7 +244,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setAuthorization(string $authorization) : self
+    public function setAuthorization(string $authorization): self
     {
         $this->initialized['authorization'] = true;
         $this->authorization = $authorization;
@@ -255,7 +255,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return bool
      */
-    public function getReportableQuantity() : bool
+    public function getReportableQuantity(): bool
     {
         return $this->reportableQuantity;
     }
@@ -266,7 +266,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setReportableQuantity(bool $reportableQuantity) : self
+    public function setReportableQuantity(bool $reportableQuantity): self
     {
         $this->initialized['reportableQuantity'] = true;
         $this->reportableQuantity = $reportableQuantity;
@@ -277,7 +277,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return float
      */
-    public function getPercentage() : float
+    public function getPercentage(): float
     {
         return $this->percentage;
     }
@@ -288,7 +288,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setPercentage(float $percentage) : self
+    public function setPercentage(float $percentage): self
     {
         $this->initialized['percentage'] = true;
         $this->percentage = $percentage;
@@ -299,7 +299,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -310,7 +310,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -321,7 +321,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getPackingGroup() : string
+    public function getPackingGroup(): string
     {
         return $this->packingGroup;
     }
@@ -332,7 +332,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setPackingGroup(string $packingGroup) : self
+    public function setPackingGroup(string $packingGroup): self
     {
         $this->initialized['packingGroup'] = true;
         $this->packingGroup = $packingGroup;
@@ -343,7 +343,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getProperShippingName() : string
+    public function getProperShippingName(): string
     {
         return $this->properShippingName;
     }
@@ -354,7 +354,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setProperShippingName(string $properShippingName) : self
+    public function setProperShippingName(string $properShippingName): self
     {
         $this->initialized['properShippingName'] = true;
         $this->properShippingName = $properShippingName;
@@ -365,7 +365,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getHazardClass() : string
+    public function getHazardClass(): string
     {
         return $this->hazardClass;
     }
@@ -376,7 +376,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setHazardClass(string $hazardClass) : self
+    public function setHazardClass(string $hazardClass): self
     {
         $this->initialized['hazardClass'] = true;
         $this->hazardClass = $hazardClass;

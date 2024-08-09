@@ -8,7 +8,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return string
      */
-    public function getPersonName() : string
+    public function getPersonName(): string
     {
         return $this->personName;
     }
@@ -76,7 +76,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return self
      */
-    public function setPersonName(string $personName) : self
+    public function setPersonName(string $personName): self
     {
         $this->initialized['personName'] = true;
         $this->personName = $personName;
@@ -87,7 +87,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -98,7 +98,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -109,7 +109,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return string
      */
-    public function getPhoneNumber() : string
+    public function getPhoneNumber(): string
     {
         return $this->phoneNumber;
     }
@@ -120,7 +120,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return self
      */
-    public function setPhoneNumber(string $phoneNumber) : self
+    public function setPhoneNumber(string $phoneNumber): self
     {
         $this->initialized['phoneNumber'] = true;
         $this->phoneNumber = $phoneNumber;
@@ -131,7 +131,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return string
      */
-    public function getPhoneExtension() : string
+    public function getPhoneExtension(): string
     {
         return $this->phoneExtension;
     }
@@ -142,7 +142,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return self
      */
-    public function setPhoneExtension(string $phoneExtension) : self
+    public function setPhoneExtension(string $phoneExtension): self
     {
         $this->initialized['phoneExtension'] = true;
         $this->phoneExtension = $phoneExtension;
@@ -153,7 +153,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return string
      */
-    public function getFaxNumber() : string
+    public function getFaxNumber(): string
     {
         return $this->faxNumber;
     }
@@ -164,7 +164,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return self
      */
-    public function setFaxNumber(string $faxNumber) : self
+    public function setFaxNumber(string $faxNumber): self
     {
         $this->initialized['faxNumber'] = true;
         $this->faxNumber = $faxNumber;
@@ -175,7 +175,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return string
      */
-    public function getCompanyName() : string
+    public function getCompanyName(): string
     {
         return $this->companyName;
     }
@@ -186,7 +186,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return self
      */
-    public function setCompanyName(string $companyName) : self
+    public function setCompanyName(string $companyName): self
     {
         $this->initialized['companyName'] = true;
         $this->companyName = $companyName;
@@ -197,7 +197,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return string
      */
-    public function getStateTaxId() : string
+    public function getStateTaxId(): string
     {
         return $this->stateTaxId;
     }
@@ -208,7 +208,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return self
      */
-    public function setStateTaxId(string $stateTaxId) : self
+    public function setStateTaxId(string $stateTaxId): self
     {
         $this->initialized['stateTaxId'] = true;
         $this->stateTaxId = $stateTaxId;
@@ -219,7 +219,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return string
      */
-    public function getFedralTaxId() : string
+    public function getFedralTaxId(): string
     {
         return $this->fedralTaxId;
     }
@@ -230,7 +230,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddr
      *
      * @return self
      */
-    public function setFedralTaxId(string $fedralTaxId) : self
+    public function setFedralTaxId(string $fedralTaxId): self
     {
         $this->initialized['fedralTaxId'] = true;
         $this->fedralTaxId = $fedralTaxId;

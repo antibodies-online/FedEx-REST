@@ -18,11 +18,11 @@ class ValidatePostalInternalServerErrorException extends InternalServerErrorExce
         $this->countryV1PostalValidatePostResponse500 = $countryV1PostalValidatePostResponse500;
         $this->response = $response;
     }
-    public function getCountryV1PostalValidatePostResponse500() : \AntibodiesOnline\FedEx\Api\Model\CountryV1PostalValidatePostResponse500
+    public function getCountryV1PostalValidatePostResponse500(): \AntibodiesOnline\FedEx\Api\Model\CountryV1PostalValidatePostResponse500
     {
         return $this->countryV1PostalValidatePostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

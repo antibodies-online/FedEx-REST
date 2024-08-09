@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPr
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPrintedLabelOriginContact
      */
-    public function getContact() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPrintedLabelOriginContact
+    public function getContact(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPrintedLabelOriginContact
     {
         return $this->contact;
     }
@@ -40,7 +40,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPr
      *
      * @return self
      */
-    public function setContact(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPrintedLabelOriginContact $contact) : self
+    public function setContact(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPrintedLabelOriginContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -51,7 +51,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPr
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPrintedLabelOriginAddress
      */
-    public function getAddress() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPrintedLabelOriginAddress
+    public function getAddress(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPrintedLabelOriginAddress
     {
         return $this->address;
     }
@@ -62,7 +62,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPr
      *
      * @return self
      */
-    public function setAddress(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPrintedLabelOriginAddress $address) : self
+    public function setAddress(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationPrintedLabelOriginAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -50,13 +50,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('specialServicePayments', $data)) {
                 $values = [];
                 foreach ($data['specialServicePayments'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailSpecialServicePaymentsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailSpecialServicePaymentsItem::class, 'json', $context);
                 }
                 $object->setSpecialServicePayments($values);
                 unset($data['specialServicePayments']);
             }
             if (\array_key_exists('liabilityCoverageDetail', $data)) {
-                $object->setLiabilityCoverageDetail($this->denormalizer->denormalize($data['liabilityCoverageDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLiabilityCoverageDetail', 'json', $context));
+                $object->setLiabilityCoverageDetail($this->denormalizer->denormalize($data['liabilityCoverageDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLiabilityCoverageDetail::class, 'json', $context));
                 unset($data['liabilityCoverageDetail']);
             }
             if (\array_key_exists('fedExFreightAccountNumber', $data)) {
@@ -70,19 +70,19 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('printedReferences', $data)) {
                 $values_1 = [];
                 foreach ($data['printedReferences'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailPrintedReferencesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailPrintedReferencesItem::class, 'json', $context);
                 }
                 $object->setPrintedReferences($values_1);
                 unset($data['printedReferences']);
             }
             if (\array_key_exists('hazardousMaterialsEmergencyContactNumber', $data)) {
-                $object->setHazardousMaterialsEmergencyContactNumber($this->denormalizer->denormalize($data['hazardousMaterialsEmergencyContactNumber'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailHazardousMaterialsEmergencyContactNumber', 'json', $context));
+                $object->setHazardousMaterialsEmergencyContactNumber($this->denormalizer->denormalize($data['hazardousMaterialsEmergencyContactNumber'], \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailHazardousMaterialsEmergencyContactNumber::class, 'json', $context));
                 unset($data['hazardousMaterialsEmergencyContactNumber']);
             }
             if (\array_key_exists('lineItem', $data)) {
                 $values_2 = [];
                 foreach ($data['lineItem'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLineItemItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLineItemItem::class, 'json', $context);
                 }
                 $object->setLineItem($values_2);
                 unset($data['lineItem']);
@@ -100,7 +100,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['coupons']);
             }
             if (\array_key_exists('fedExFreightBillingContactAndAddress', $data)) {
-                $object->setFedExFreightBillingContactAndAddress($this->denormalizer->denormalize($data['fedExFreightBillingContactAndAddress'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailFedExFreightBillingContactAndAddress', 'json', $context));
+                $object->setFedExFreightBillingContactAndAddress($this->denormalizer->denormalize($data['fedExFreightBillingContactAndAddress'], \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailFedExFreightBillingContactAndAddress::class, 'json', $context));
                 unset($data['fedExFreightBillingContactAndAddress']);
             }
             if (\array_key_exists('aliasID', $data)) {
@@ -116,7 +116,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['hazardousMaterialsOfferor']);
             }
             if (\array_key_exists('declaredValuePerUnit', $data)) {
-                $object->setDeclaredValuePerUnit($this->denormalizer->denormalize($data['declaredValuePerUnit'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailDeclaredValuePerUnit', 'json', $context));
+                $object->setDeclaredValuePerUnit($this->denormalizer->denormalize($data['declaredValuePerUnit'], \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailDeclaredValuePerUnit::class, 'json', $context));
                 unset($data['declaredValuePerUnit']);
             }
             if (\array_key_exists('totalHandlingUnits', $data)) {
@@ -124,7 +124,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['totalHandlingUnits']);
             }
             if (\array_key_exists('alternateBillingParty', $data)) {
-                $object->setAlternateBillingParty($this->denormalizer->denormalize($data['alternateBillingParty'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailAlternateBillingParty', 'json', $context));
+                $object->setAlternateBillingParty($this->denormalizer->denormalize($data['alternateBillingParty'], \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailAlternateBillingParty::class, 'json', $context));
                 unset($data['alternateBillingParty']);
             }
             foreach ($data as $key => $value_4) {
@@ -134,7 +134,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['role'] = $object->getRole();
@@ -203,9 +203,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail::class => false];
         }
     }
 } else {
@@ -215,13 +215,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail::class;
         }
         /**
          * @return mixed
@@ -248,13 +248,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('specialServicePayments', $data)) {
                 $values = [];
                 foreach ($data['specialServicePayments'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailSpecialServicePaymentsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailSpecialServicePaymentsItem::class, 'json', $context);
                 }
                 $object->setSpecialServicePayments($values);
                 unset($data['specialServicePayments']);
             }
             if (\array_key_exists('liabilityCoverageDetail', $data)) {
-                $object->setLiabilityCoverageDetail($this->denormalizer->denormalize($data['liabilityCoverageDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLiabilityCoverageDetail', 'json', $context));
+                $object->setLiabilityCoverageDetail($this->denormalizer->denormalize($data['liabilityCoverageDetail'], \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLiabilityCoverageDetail::class, 'json', $context));
                 unset($data['liabilityCoverageDetail']);
             }
             if (\array_key_exists('fedExFreightAccountNumber', $data)) {
@@ -268,19 +268,19 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('printedReferences', $data)) {
                 $values_1 = [];
                 foreach ($data['printedReferences'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailPrintedReferencesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailPrintedReferencesItem::class, 'json', $context);
                 }
                 $object->setPrintedReferences($values_1);
                 unset($data['printedReferences']);
             }
             if (\array_key_exists('hazardousMaterialsEmergencyContactNumber', $data)) {
-                $object->setHazardousMaterialsEmergencyContactNumber($this->denormalizer->denormalize($data['hazardousMaterialsEmergencyContactNumber'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailHazardousMaterialsEmergencyContactNumber', 'json', $context));
+                $object->setHazardousMaterialsEmergencyContactNumber($this->denormalizer->denormalize($data['hazardousMaterialsEmergencyContactNumber'], \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailHazardousMaterialsEmergencyContactNumber::class, 'json', $context));
                 unset($data['hazardousMaterialsEmergencyContactNumber']);
             }
             if (\array_key_exists('lineItem', $data)) {
                 $values_2 = [];
                 foreach ($data['lineItem'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLineItemItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailLineItemItem::class, 'json', $context);
                 }
                 $object->setLineItem($values_2);
                 unset($data['lineItem']);
@@ -298,7 +298,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['coupons']);
             }
             if (\array_key_exists('fedExFreightBillingContactAndAddress', $data)) {
-                $object->setFedExFreightBillingContactAndAddress($this->denormalizer->denormalize($data['fedExFreightBillingContactAndAddress'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailFedExFreightBillingContactAndAddress', 'json', $context));
+                $object->setFedExFreightBillingContactAndAddress($this->denormalizer->denormalize($data['fedExFreightBillingContactAndAddress'], \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailFedExFreightBillingContactAndAddress::class, 'json', $context));
                 unset($data['fedExFreightBillingContactAndAddress']);
             }
             if (\array_key_exists('aliasID', $data)) {
@@ -314,7 +314,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['hazardousMaterialsOfferor']);
             }
             if (\array_key_exists('declaredValuePerUnit', $data)) {
-                $object->setDeclaredValuePerUnit($this->denormalizer->denormalize($data['declaredValuePerUnit'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailDeclaredValuePerUnit', 'json', $context));
+                $object->setDeclaredValuePerUnit($this->denormalizer->denormalize($data['declaredValuePerUnit'], \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailDeclaredValuePerUnit::class, 'json', $context));
                 unset($data['declaredValuePerUnit']);
             }
             if (\array_key_exists('totalHandlingUnits', $data)) {
@@ -322,7 +322,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['totalHandlingUnits']);
             }
             if (\array_key_exists('alternateBillingParty', $data)) {
-                $object->setAlternateBillingParty($this->denormalizer->denormalize($data['alternateBillingParty'], 'AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailAlternateBillingParty', 'json', $context));
+                $object->setAlternateBillingParty($this->denormalizer->denormalize($data['alternateBillingParty'], \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetailAlternateBillingParty::class, 'json', $context));
                 unset($data['alternateBillingParty']);
             }
             foreach ($data as $key => $value_4) {
@@ -404,9 +404,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail::class => false];
         }
     }
 }

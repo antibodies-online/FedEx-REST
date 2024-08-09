@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return string
      */
-    public function getPendingShipmentType() : string
+    public function getPendingShipmentType(): string
     {
         return $this->pendingShipmentType;
     }
@@ -64,7 +64,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return self
      */
-    public function setPendingShipmentType(string $pendingShipmentType) : self
+    public function setPendingShipmentType(string $pendingShipmentType): self
     {
         $this->initialized['pendingShipmentType'] = true;
         $this->pendingShipmentType = $pendingShipmentType;
@@ -75,7 +75,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailProcessingOptions
      */
-    public function getProcessingOptions() : ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailProcessingOptions
+    public function getProcessingOptions(): ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailProcessingOptions
     {
         return $this->processingOptions;
     }
@@ -86,7 +86,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return self
      */
-    public function setProcessingOptions(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailProcessingOptions $processingOptions) : self
+    public function setProcessingOptions(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailProcessingOptions $processingOptions): self
     {
         $this->initialized['processingOptions'] = true;
         $this->processingOptions = $processingOptions;
@@ -97,7 +97,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailRecommendedDocumentSpecification
      */
-    public function getRecommendedDocumentSpecification() : ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailRecommendedDocumentSpecification
+    public function getRecommendedDocumentSpecification(): ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailRecommendedDocumentSpecification
     {
         return $this->recommendedDocumentSpecification;
     }
@@ -108,7 +108,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return self
      */
-    public function setRecommendedDocumentSpecification(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailRecommendedDocumentSpecification $recommendedDocumentSpecification) : self
+    public function setRecommendedDocumentSpecification(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailRecommendedDocumentSpecification $recommendedDocumentSpecification): self
     {
         $this->initialized['recommendedDocumentSpecification'] = true;
         $this->recommendedDocumentSpecification = $recommendedDocumentSpecification;
@@ -119,7 +119,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailEmailLabelDetail
      */
-    public function getEmailLabelDetail() : ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailEmailLabelDetail
+    public function getEmailLabelDetail(): ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailEmailLabelDetail
     {
         return $this->emailLabelDetail;
     }
@@ -130,7 +130,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return self
      */
-    public function setEmailLabelDetail(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailEmailLabelDetail $emailLabelDetail) : self
+    public function setEmailLabelDetail(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailEmailLabelDetail $emailLabelDetail): self
     {
         $this->initialized['emailLabelDetail'] = true;
         $this->emailLabelDetail = $emailLabelDetail;
@@ -141,7 +141,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return list<ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailAttachedDocumentsItem>
      */
-    public function getAttachedDocuments() : array
+    public function getAttachedDocuments(): array
     {
         return $this->attachedDocuments;
     }
@@ -152,7 +152,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return self
      */
-    public function setAttachedDocuments(array $attachedDocuments) : self
+    public function setAttachedDocuments(array $attachedDocuments): self
     {
         $this->initialized['attachedDocuments'] = true;
         $this->attachedDocuments = $attachedDocuments;
@@ -163,7 +163,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return string
      */
-    public function getExpirationTimeStamp() : string
+    public function getExpirationTimeStamp(): string
     {
         return $this->expirationTimeStamp;
     }
@@ -174,7 +174,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return self
      */
-    public function setExpirationTimeStamp(string $expirationTimeStamp) : self
+    public function setExpirationTimeStamp(string $expirationTimeStamp): self
     {
         $this->initialized['expirationTimeStamp'] = true;
         $this->expirationTimeStamp = $expirationTimeStamp;

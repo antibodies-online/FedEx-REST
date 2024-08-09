@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return string
      */
-    public function getDayOfWeek() : string
+    public function getDayOfWeek(): string
     {
         return $this->dayOfWeek;
     }
@@ -58,7 +58,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setDayOfWeek(string $dayOfWeek) : self
+    public function setDayOfWeek(string $dayOfWeek): self
     {
         $this->initialized['dayOfWeek'] = true;
         $this->dayOfWeek = $dayOfWeek;
@@ -69,7 +69,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcarrierDetailsItemLatestDropoffDetailsOperationalOverlay
      */
-    public function getOperationalOverlay() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcarrierDetailsItemLatestDropoffDetailsOperationalOverlay
+    public function getOperationalOverlay(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcarrierDetailsItemLatestDropoffDetailsOperationalOverlay
     {
         return $this->operationalOverlay;
     }
@@ -80,7 +80,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setOperationalOverlay(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcarrierDetailsItemLatestDropoffDetailsOperationalOverlay $operationalOverlay) : self
+    public function setOperationalOverlay(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcarrierDetailsItemLatestDropoffDetailsOperationalOverlay $operationalOverlay): self
     {
         $this->initialized['operationalOverlay'] = true;
         $this->operationalOverlay = $operationalOverlay;
@@ -91,7 +91,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return string
      */
-    public function getExceptionalTime() : string
+    public function getExceptionalTime(): string
     {
         return $this->exceptionalTime;
     }
@@ -102,7 +102,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setExceptionalTime(string $exceptionalTime) : self
+    public function setExceptionalTime(string $exceptionalTime): self
     {
         $this->initialized['exceptionalTime'] = true;
         $this->exceptionalTime = $exceptionalTime;
@@ -113,7 +113,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcarrierDetailsItemLatestDropoffDetailsExceptionalOverlay
      */
-    public function getExceptionalOverlay() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcarrierDetailsItemLatestDropoffDetailsExceptionalOverlay
+    public function getExceptionalOverlay(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcarrierDetailsItemLatestDropoffDetailsExceptionalOverlay
     {
         return $this->exceptionalOverlay;
     }
@@ -124,7 +124,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setExceptionalOverlay(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcarrierDetailsItemLatestDropoffDetailsExceptionalOverlay $exceptionalOverlay) : self
+    public function setExceptionalOverlay(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcarrierDetailsItemLatestDropoffDetailsExceptionalOverlay $exceptionalOverlay): self
     {
         $this->initialized['exceptionalOverlay'] = true;
         $this->exceptionalOverlay = $exceptionalOverlay;
@@ -135,7 +135,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return string
      */
-    public function getOperationTime() : string
+    public function getOperationTime(): string
     {
         return $this->operationTime;
     }
@@ -146,7 +146,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setOperationTime(string $operationTime) : self
+    public function setOperationTime(string $operationTime): self
     {
         $this->initialized['operationTime'] = true;
         $this->operationTime = $operationTime;

@@ -8,7 +8,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayor
      */
-    public function getPayor() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayor
+    public function getPayor(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayor
     {
         return $this->payor;
     }
@@ -46,7 +46,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return self
      */
-    public function setPayor(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayor $payor) : self
+    public function setPayor(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentPayor $payor): self
     {
         $this->initialized['payor'] = true;
         $this->payor = $payor;
@@ -57,7 +57,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentBillingDetails
      */
-    public function getBillingDetails() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentBillingDetails
+    public function getBillingDetails(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentBillingDetails
     {
         return $this->billingDetails;
     }
@@ -68,7 +68,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return self
      */
-    public function setBillingDetails(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentBillingDetails $billingDetails) : self
+    public function setBillingDetails(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDetailDutiesPaymentBillingDetails $billingDetails): self
     {
         $this->initialized['billingDetails'] = true;
         $this->billingDetails = $billingDetails;
@@ -79,7 +79,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return string
      */
-    public function getPaymentType() : string
+    public function getPaymentType(): string
     {
         return $this->paymentType;
     }
@@ -90,7 +90,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return self
      */
-    public function setPaymentType(string $paymentType) : self
+    public function setPaymentType(string $paymentType): self
     {
         $this->initialized['paymentType'] = true;
         $this->paymentType = $paymentType;

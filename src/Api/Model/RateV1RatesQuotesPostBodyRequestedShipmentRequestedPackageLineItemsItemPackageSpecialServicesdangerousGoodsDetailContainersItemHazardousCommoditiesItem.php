@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemQuantity
      */
-    public function getQuantity() : RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemQuantity
+    public function getQuantity(): RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemQuantity
     {
         return $this->quantity;
     }
@@ -52,7 +52,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setQuantity(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemQuantity $quantity) : self
+    public function setQuantity(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemQuantity $quantity): self
     {
         $this->initialized['quantity'] = true;
         $this->quantity = $quantity;
@@ -63,7 +63,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return list<RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemInnerReceptaclesItem>
      */
-    public function getInnerReceptacles() : array
+    public function getInnerReceptacles(): array
     {
         return $this->innerReceptacles;
     }
@@ -74,7 +74,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setInnerReceptacles(array $innerReceptacles) : self
+    public function setInnerReceptacles(array $innerReceptacles): self
     {
         $this->initialized['innerReceptacles'] = true;
         $this->innerReceptacles = $innerReceptacles;
@@ -85,7 +85,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemOptions
      */
-    public function getOptions() : RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemOptions
+    public function getOptions(): RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemOptions
     {
         return $this->options;
     }
@@ -96,7 +96,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setOptions(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemOptions $options) : self
+    public function setOptions(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemOptions $options): self
     {
         $this->initialized['options'] = true;
         $this->options = $options;
@@ -107,7 +107,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemDescription
      */
-    public function getDescription() : RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemDescription
+    public function getDescription(): RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemDescription
     {
         return $this->description;
     }
@@ -118,7 +118,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setDescription(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemDescription $description) : self
+    public function setDescription(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItemDescription $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;

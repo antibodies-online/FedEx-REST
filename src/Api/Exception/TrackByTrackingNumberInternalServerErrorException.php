@@ -18,11 +18,11 @@ class TrackByTrackingNumberInternalServerErrorException extends InternalServerEr
         $this->trackV1TrackingnumbersPostResponse500 = $trackV1TrackingnumbersPostResponse500;
         $this->response = $response;
     }
-    public function getTrackV1TrackingnumbersPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingnumbersPostResponse500
+    public function getTrackV1TrackingnumbersPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingnumbersPostResponse500
     {
         return $this->trackV1TrackingnumbersPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

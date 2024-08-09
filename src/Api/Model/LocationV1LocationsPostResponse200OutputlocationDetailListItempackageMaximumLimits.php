@@ -8,7 +8,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaxim
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaxim
      *
      * @return LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaximumLimitsweight
      */
-    public function getWeight() : LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaximumLimitsweight
+    public function getWeight(): LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaximumLimitsweight
     {
         return $this->weight;
     }
@@ -40,7 +40,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaxim
      *
      * @return self
      */
-    public function setWeight(LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaximumLimitsweight $weight) : self
+    public function setWeight(LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaximumLimitsweight $weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -51,7 +51,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaxim
      *
      * @return LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaximumLimitsdimensions
      */
-    public function getDimensions() : LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaximumLimitsdimensions
+    public function getDimensions(): LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaximumLimitsdimensions
     {
         return $this->dimensions;
     }
@@ -62,7 +62,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaxim
      *
      * @return self
      */
-    public function setDimensions(LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaximumLimitsdimensions $dimensions) : self
+    public function setDimensions(LocationV1LocationsPostResponse200OutputlocationDetailListItempackageMaximumLimitsdimensions $dimensions): self
     {
         $this->initialized['dimensions'] = true;
         $this->dimensions = $dimensions;

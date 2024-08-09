@@ -8,7 +8,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBilling extends 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBilling extends 
      *
      * @return PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingaddress
      */
-    public function getAddress() : PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingaddress
+    public function getAddress(): PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingaddress
     {
         return $this->address;
     }
@@ -46,7 +46,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBilling extends 
      *
      * @return self
      */
-    public function setAddress(PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingaddress $address) : self
+    public function setAddress(PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -57,7 +57,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBilling extends 
      *
      * @return PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingcontact
      */
-    public function getContact() : PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingcontact
+    public function getContact(): PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingcontact
     {
         return $this->contact;
     }
@@ -68,7 +68,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBilling extends 
      *
      * @return self
      */
-    public function setContact(PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingcontact $contact) : self
+    public function setContact(PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingcontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -79,7 +79,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBilling extends 
      *
      * @return PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingaccountNumber
      */
-    public function getAccountNumber() : PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingaccountNumber
+    public function getAccountNumber(): PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingaccountNumber
     {
         return $this->accountNumber;
     }
@@ -90,7 +90,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBilling extends 
      *
      * @return self
      */
-    public function setAccountNumber(PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingaccountNumber $accountNumber) : self
+    public function setAccountNumber(PickupV1FreightPickupsPostBodyFreightPickupDetailalternateBillingaccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

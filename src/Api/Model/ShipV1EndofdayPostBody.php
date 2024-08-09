@@ -8,7 +8,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCloseReqType() : string
+    public function getCloseReqType(): string
     {
         return $this->closeReqType;
     }
@@ -70,7 +70,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCloseReqType(string $closeReqType) : self
+    public function setCloseReqType(string $closeReqType): self
     {
         $this->initialized['closeReqType'] = true;
         $this->closeReqType = $closeReqType;
@@ -81,7 +81,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      *
      * @return ShipV1EndofdayPostBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1EndofdayPostBodyAccountNumber
+    public function getAccountNumber(): ShipV1EndofdayPostBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -92,7 +92,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1EndofdayPostBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1EndofdayPostBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -103,7 +103,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getGroundServiceCategory() : string
+    public function getGroundServiceCategory(): string
     {
         return $this->groundServiceCategory;
     }
@@ -114,7 +114,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setGroundServiceCategory(string $groundServiceCategory) : self
+    public function setGroundServiceCategory(string $groundServiceCategory): self
     {
         $this->initialized['groundServiceCategory'] = true;
         $this->groundServiceCategory = $groundServiceCategory;
@@ -125,7 +125,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCloseDate() : string
+    public function getCloseDate(): string
     {
         return $this->closeDate;
     }
@@ -136,7 +136,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCloseDate(string $closeDate) : self
+    public function setCloseDate(string $closeDate): self
     {
         $this->initialized['closeDate'] = true;
         $this->closeDate = $closeDate;
@@ -147,7 +147,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTrackingNumber() : string
+    public function getTrackingNumber(): string
     {
         return $this->trackingNumber;
     }
@@ -158,7 +158,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingNumber(string $trackingNumber) : self
+    public function setTrackingNumber(string $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;
@@ -169,7 +169,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getReprintOption() : string
+    public function getReprintOption(): string
     {
         return $this->reprintOption;
     }
@@ -180,7 +180,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setReprintOption(string $reprintOption) : self
+    public function setReprintOption(string $reprintOption): self
     {
         $this->initialized['reprintOption'] = true;
         $this->reprintOption = $reprintOption;
@@ -191,7 +191,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      *
      * @return ShipV1EndofdayPostBodyCloseDocumentSpecification
      */
-    public function getCloseDocumentSpecification() : ShipV1EndofdayPostBodyCloseDocumentSpecification
+    public function getCloseDocumentSpecification(): ShipV1EndofdayPostBodyCloseDocumentSpecification
     {
         return $this->closeDocumentSpecification;
     }
@@ -202,7 +202,7 @@ class ShipV1EndofdayPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCloseDocumentSpecification(ShipV1EndofdayPostBodyCloseDocumentSpecification $closeDocumentSpecification) : self
+    public function setCloseDocumentSpecification(ShipV1EndofdayPostBodyCloseDocumentSpecification $closeDocumentSpecification): self
     {
         $this->initialized['closeDocumentSpecification'] = true;
         $this->closeDocumentSpecification = $closeDocumentSpecification;

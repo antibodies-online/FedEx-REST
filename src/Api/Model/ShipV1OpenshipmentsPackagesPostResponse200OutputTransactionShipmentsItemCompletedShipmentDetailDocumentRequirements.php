@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return list<string>
      */
-    public function getRequiredDocuments() : array
+    public function getRequiredDocuments(): array
     {
         return $this->requiredDocuments;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return self
      */
-    public function setRequiredDocuments(array $requiredDocuments) : self
+    public function setRequiredDocuments(array $requiredDocuments): self
     {
         $this->initialized['requiredDocuments'] = true;
         $this->requiredDocuments = $requiredDocuments;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return list<string>
      */
-    public function getProhibitedDocuments() : array
+    public function getProhibitedDocuments(): array
     {
         return $this->prohibitedDocuments;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return self
      */
-    public function setProhibitedDocuments(array $prohibitedDocuments) : self
+    public function setProhibitedDocuments(array $prohibitedDocuments): self
     {
         $this->initialized['prohibitedDocuments'] = true;
         $this->prohibitedDocuments = $prohibitedDocuments;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return list<ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailDocumentRequirementsGenerationDetailsItem>
      */
-    public function getGenerationDetails() : array
+    public function getGenerationDetails(): array
     {
         return $this->generationDetails;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemCo
      *
      * @return self
      */
-    public function setGenerationDetails(array $generationDetails) : self
+    public function setGenerationDetails(array $generationDetails): self
     {
         $this->initialized['generationDetails'] = true;
         $this->generationDetails = $generationDetails;

@@ -8,7 +8,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemErr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemErr
      *
      * @return string
      */
-    public function getCode() : string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -46,7 +46,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemErr
      *
      * @return self
      */
-    public function setCode(string $code) : self
+    public function setCode(string $code): self
     {
         $this->initialized['code'] = true;
         $this->code = $code;
@@ -57,7 +57,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemErr
      *
      * @return list<TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemErrorParameterListItem>
      */
-    public function getParameterList() : array
+    public function getParameterList(): array
     {
         return $this->parameterList;
     }
@@ -68,7 +68,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemErr
      *
      * @return self
      */
-    public function setParameterList(array $parameterList) : self
+    public function setParameterList(array $parameterList): self
     {
         $this->initialized['parameterList'] = true;
         $this->parameterList = $parameterList;
@@ -79,7 +79,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemErr
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -90,7 +90,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemErr
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;

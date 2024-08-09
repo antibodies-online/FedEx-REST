@@ -18,11 +18,11 @@ class TrackByReferencesInternalServerErrorException extends InternalServerErrorE
         $this->trackV1ReferencenumbersPostResponse500 = $trackV1ReferencenumbersPostResponse500;
         $this->response = $response;
     }
-    public function getTrackV1ReferencenumbersPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\TrackV1ReferencenumbersPostResponse500
+    public function getTrackV1ReferencenumbersPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\TrackV1ReferencenumbersPostResponse500
     {
         return $this->trackV1ReferencenumbersPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

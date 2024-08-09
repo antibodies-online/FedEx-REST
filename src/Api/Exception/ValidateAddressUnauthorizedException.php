@@ -18,11 +18,11 @@ class ValidateAddressUnauthorizedException extends UnauthorizedException
         $this->addressV1AddressesResolvePostResponse401 = $addressV1AddressesResolvePostResponse401;
         $this->response = $response;
     }
-    public function getAddressV1AddressesResolvePostResponse401() : \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse401
+    public function getAddressV1AddressesResolvePostResponse401(): \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse401
     {
         return $this->addressV1AddressesResolvePostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

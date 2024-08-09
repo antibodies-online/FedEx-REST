@@ -8,7 +8,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return string
      */
-    public function getReason() : string
+    public function getReason(): string
     {
         return $this->reason;
     }
@@ -52,7 +52,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setReason(string $reason) : self
+    public function setReason(string $reason): self
     {
         $this->initialized['reason'] = true;
         $this->reason = $reason;
@@ -63,7 +63,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return string
      */
-    public function getReasonDescription() : string
+    public function getReasonDescription(): string
     {
         return $this->reasonDescription;
     }
@@ -74,7 +74,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setReasonDescription(string $reasonDescription) : self
+    public function setReasonDescription(string $reasonDescription): self
     {
         $this->initialized['reasonDescription'] = true;
         $this->reasonDescription = $reasonDescription;
@@ -85,7 +85,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return string
      */
-    public function getAction() : string
+    public function getAction(): string
     {
         return $this->action;
     }
@@ -96,7 +96,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setAction(string $action) : self
+    public function setAction(string $action): self
     {
         $this->initialized['action'] = true;
         $this->action = $action;
@@ -107,7 +107,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return string
      */
-    public function getActionDescription() : string
+    public function getActionDescription(): string
     {
         return $this->actionDescription;
     }
@@ -118,7 +118,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setActionDescription(string $actionDescription) : self
+    public function setActionDescription(string $actionDescription): self
     {
         $this->initialized['actionDescription'] = true;
         $this->actionDescription = $actionDescription;

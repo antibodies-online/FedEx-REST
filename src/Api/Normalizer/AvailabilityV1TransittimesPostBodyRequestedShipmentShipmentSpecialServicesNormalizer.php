@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -49,23 +49,23 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['specialServiceTypes']);
             }
             if (\array_key_exists('codDetail', $data)) {
-                $object->setCodDetail($this->denormalizer->denormalize($data['codDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesCodDetail', 'json', $context));
+                $object->setCodDetail($this->denormalizer->denormalize($data['codDetail'], \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesCodDetail::class, 'json', $context));
                 unset($data['codDetail']);
             }
             if (\array_key_exists('internationalControlledExportDetail', $data)) {
-                $object->setInternationalControlledExportDetail($this->denormalizer->denormalize($data['internationalControlledExportDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesInternationalControlledExportDetail', 'json', $context));
+                $object->setInternationalControlledExportDetail($this->denormalizer->denormalize($data['internationalControlledExportDetail'], \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesInternationalControlledExportDetail::class, 'json', $context));
                 unset($data['internationalControlledExportDetail']);
             }
             if (\array_key_exists('homeDeliveryPremiumDetail', $data)) {
-                $object->setHomeDeliveryPremiumDetail($this->denormalizer->denormalize($data['homeDeliveryPremiumDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesHomeDeliveryPremiumDetail', 'json', $context));
+                $object->setHomeDeliveryPremiumDetail($this->denormalizer->denormalize($data['homeDeliveryPremiumDetail'], \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesHomeDeliveryPremiumDetail::class, 'json', $context));
                 unset($data['homeDeliveryPremiumDetail']);
             }
             if (\array_key_exists('holdAtLocationDetail', $data)) {
-                $object->setHoldAtLocationDetail($this->denormalizer->denormalize($data['holdAtLocationDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetail', 'json', $context));
+                $object->setHoldAtLocationDetail($this->denormalizer->denormalize($data['holdAtLocationDetail'], \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetail::class, 'json', $context));
                 unset($data['holdAtLocationDetail']);
             }
             if (\array_key_exists('shipmentDryIceDetail', $data)) {
-                $object->setShipmentDryIceDetail($this->denormalizer->denormalize($data['shipmentDryIceDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesShipmentDryIceDetail', 'json', $context));
+                $object->setShipmentDryIceDetail($this->denormalizer->denormalize($data['shipmentDryIceDetail'], \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesShipmentDryIceDetail::class, 'json', $context));
                 unset($data['shipmentDryIceDetail']);
             }
             foreach ($data as $key => $value_1) {
@@ -75,7 +75,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('specialServiceTypes') && null !== $object->getSpecialServiceTypes()) {
@@ -107,9 +107,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices::class => false];
         }
     }
 } else {
@@ -119,13 +119,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices::class;
         }
         /**
          * @return mixed
@@ -151,23 +151,23 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['specialServiceTypes']);
             }
             if (\array_key_exists('codDetail', $data)) {
-                $object->setCodDetail($this->denormalizer->denormalize($data['codDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesCodDetail', 'json', $context));
+                $object->setCodDetail($this->denormalizer->denormalize($data['codDetail'], \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesCodDetail::class, 'json', $context));
                 unset($data['codDetail']);
             }
             if (\array_key_exists('internationalControlledExportDetail', $data)) {
-                $object->setInternationalControlledExportDetail($this->denormalizer->denormalize($data['internationalControlledExportDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesInternationalControlledExportDetail', 'json', $context));
+                $object->setInternationalControlledExportDetail($this->denormalizer->denormalize($data['internationalControlledExportDetail'], \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesInternationalControlledExportDetail::class, 'json', $context));
                 unset($data['internationalControlledExportDetail']);
             }
             if (\array_key_exists('homeDeliveryPremiumDetail', $data)) {
-                $object->setHomeDeliveryPremiumDetail($this->denormalizer->denormalize($data['homeDeliveryPremiumDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesHomeDeliveryPremiumDetail', 'json', $context));
+                $object->setHomeDeliveryPremiumDetail($this->denormalizer->denormalize($data['homeDeliveryPremiumDetail'], \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesHomeDeliveryPremiumDetail::class, 'json', $context));
                 unset($data['homeDeliveryPremiumDetail']);
             }
             if (\array_key_exists('holdAtLocationDetail', $data)) {
-                $object->setHoldAtLocationDetail($this->denormalizer->denormalize($data['holdAtLocationDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetail', 'json', $context));
+                $object->setHoldAtLocationDetail($this->denormalizer->denormalize($data['holdAtLocationDetail'], \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetail::class, 'json', $context));
                 unset($data['holdAtLocationDetail']);
             }
             if (\array_key_exists('shipmentDryIceDetail', $data)) {
-                $object->setShipmentDryIceDetail($this->denormalizer->denormalize($data['shipmentDryIceDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesShipmentDryIceDetail', 'json', $context));
+                $object->setShipmentDryIceDetail($this->denormalizer->denormalize($data['shipmentDryIceDetail'], \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServicesShipmentDryIceDetail::class, 'json', $context));
                 unset($data['shipmentDryIceDetail']);
             }
             foreach ($data as $key => $value_1) {
@@ -212,9 +212,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices::class => false];
         }
     }
 }

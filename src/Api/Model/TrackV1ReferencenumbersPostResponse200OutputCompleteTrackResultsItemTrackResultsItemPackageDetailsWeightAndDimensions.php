@@ -8,7 +8,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return list<TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsWeightAndDimensionsWeightItem>
      */
-    public function getWeight() : array
+    public function getWeight(): array
     {
         return $this->weight;
     }
@@ -40,7 +40,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setWeight(array $weight) : self
+    public function setWeight(array $weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -51,7 +51,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return list<TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsWeightAndDimensionsDimensionsItem>
      */
-    public function getDimensions() : array
+    public function getDimensions(): array
     {
         return $this->dimensions;
     }
@@ -62,7 +62,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setDimensions(array $dimensions) : self
+    public function setDimensions(array $dimensions): self
     {
         $this->initialized['dimensions'] = true;
         $this->dimensions = $dimensions;

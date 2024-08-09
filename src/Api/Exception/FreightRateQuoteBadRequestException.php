@@ -18,11 +18,11 @@ class FreightRateQuoteBadRequestException extends BadRequestException
         $this->rateV1FreightRatesQuotesPostResponse400 = $rateV1FreightRatesQuotesPostResponse400;
         $this->response = $response;
     }
-    public function getRateV1FreightRatesQuotesPostResponse400() : \AntibodiesOnline\FedEx\Api\Model\RateV1FreightRatesQuotesPostResponse400
+    public function getRateV1FreightRatesQuotesPostResponse400(): \AntibodiesOnline\FedEx\Api\Model\RateV1FreightRatesQuotesPostResponse400
     {
         return $this->rateV1FreightRatesQuotesPostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

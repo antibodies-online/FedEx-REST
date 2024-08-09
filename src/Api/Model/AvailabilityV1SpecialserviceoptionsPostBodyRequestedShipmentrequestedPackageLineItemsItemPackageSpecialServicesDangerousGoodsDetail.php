@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return string
      */
-    public function getAccessibility() : string
+    public function getAccessibility(): string
     {
         return $this->accessibility;
     }
@@ -40,7 +40,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setAccessibility(string $accessibility) : self
+    public function setAccessibility(string $accessibility): self
     {
         $this->initialized['accessibility'] = true;
         $this->accessibility = $accessibility;
@@ -51,7 +51,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return list<string>
      */
-    public function getOptions() : array
+    public function getOptions(): array
     {
         return $this->options;
     }
@@ -62,7 +62,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setOptions(array $options) : self
+    public function setOptions(array $options): self
     {
         $this->initialized['options'] = true;
         $this->options = $options;

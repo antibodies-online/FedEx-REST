@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationGeneralAgencyAgree
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationGeneralAgencyAgree
      *
      * @return ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationGeneralAgencyAgreementDetailDocumentFormat
      */
-    public function getDocumentFormat() : ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationGeneralAgencyAgreementDetailDocumentFormat
+    public function getDocumentFormat(): ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationGeneralAgencyAgreementDetailDocumentFormat
     {
         return $this->documentFormat;
     }
@@ -34,7 +34,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationGeneralAgencyAgree
      *
      * @return self
      */
-    public function setDocumentFormat(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationGeneralAgencyAgreementDetailDocumentFormat $documentFormat) : self
+    public function setDocumentFormat(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationGeneralAgencyAgreementDetailDocumentFormat $documentFormat): self
     {
         $this->initialized['documentFormat'] = true;
         $this->documentFormat = $documentFormat;

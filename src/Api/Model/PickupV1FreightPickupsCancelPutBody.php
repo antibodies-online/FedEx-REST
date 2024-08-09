@@ -8,7 +8,7 @@ class PickupV1FreightPickupsCancelPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class PickupV1FreightPickupsCancelPutBody extends \ArrayObject
      *
      * @return PickupV1FreightPickupsCancelPutBodyAssociatedAccountNumber
      */
-    public function getAssociatedAccountNumber() : PickupV1FreightPickupsCancelPutBodyAssociatedAccountNumber
+    public function getAssociatedAccountNumber(): PickupV1FreightPickupsCancelPutBodyAssociatedAccountNumber
     {
         return $this->associatedAccountNumber;
     }
@@ -64,7 +64,7 @@ class PickupV1FreightPickupsCancelPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAssociatedAccountNumber(PickupV1FreightPickupsCancelPutBodyAssociatedAccountNumber $associatedAccountNumber) : self
+    public function setAssociatedAccountNumber(PickupV1FreightPickupsCancelPutBodyAssociatedAccountNumber $associatedAccountNumber): self
     {
         $this->initialized['associatedAccountNumber'] = true;
         $this->associatedAccountNumber = $associatedAccountNumber;
@@ -75,7 +75,7 @@ class PickupV1FreightPickupsCancelPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getPickupConfirmationCode() : string
+    public function getPickupConfirmationCode(): string
     {
         return $this->pickupConfirmationCode;
     }
@@ -86,7 +86,7 @@ class PickupV1FreightPickupsCancelPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPickupConfirmationCode(string $pickupConfirmationCode) : self
+    public function setPickupConfirmationCode(string $pickupConfirmationCode): self
     {
         $this->initialized['pickupConfirmationCode'] = true;
         $this->pickupConfirmationCode = $pickupConfirmationCode;
@@ -97,7 +97,7 @@ class PickupV1FreightPickupsCancelPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getRemarks() : string
+    public function getRemarks(): string
     {
         return $this->remarks;
     }
@@ -108,7 +108,7 @@ class PickupV1FreightPickupsCancelPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRemarks(string $remarks) : self
+    public function setRemarks(string $remarks): self
     {
         $this->initialized['remarks'] = true;
         $this->remarks = $remarks;
@@ -119,7 +119,7 @@ class PickupV1FreightPickupsCancelPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getReason() : string
+    public function getReason(): string
     {
         return $this->reason;
     }
@@ -130,7 +130,7 @@ class PickupV1FreightPickupsCancelPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setReason(string $reason) : self
+    public function setReason(string $reason): self
     {
         $this->initialized['reason'] = true;
         $this->reason = $reason;
@@ -141,7 +141,7 @@ class PickupV1FreightPickupsCancelPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getContactName() : string
+    public function getContactName(): string
     {
         return $this->contactName;
     }
@@ -152,7 +152,7 @@ class PickupV1FreightPickupsCancelPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setContactName(string $contactName) : self
+    public function setContactName(string $contactName): self
     {
         $this->initialized['contactName'] = true;
         $this->contactName = $contactName;
@@ -163,7 +163,7 @@ class PickupV1FreightPickupsCancelPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getScheduledDate() : string
+    public function getScheduledDate(): string
     {
         return $this->scheduledDate;
     }
@@ -174,7 +174,7 @@ class PickupV1FreightPickupsCancelPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setScheduledDate(string $scheduledDate) : self
+    public function setScheduledDate(string $scheduledDate): self
     {
         $this->initialized['scheduledDate'] = true;
         $this->scheduledDate = $scheduledDate;

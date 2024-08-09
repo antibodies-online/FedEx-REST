@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class AvailabilityV1TransittimesPostBody extends \ArrayObject
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipment
      */
-    public function getRequestedShipment() : AvailabilityV1TransittimesPostBodyRequestedShipment
+    public function getRequestedShipment(): AvailabilityV1TransittimesPostBodyRequestedShipment
     {
         return $this->requestedShipment;
     }
@@ -40,7 +40,7 @@ class AvailabilityV1TransittimesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedShipment(AvailabilityV1TransittimesPostBodyRequestedShipment $requestedShipment) : self
+    public function setRequestedShipment(AvailabilityV1TransittimesPostBodyRequestedShipment $requestedShipment): self
     {
         $this->initialized['requestedShipment'] = true;
         $this->requestedShipment = $requestedShipment;
@@ -51,7 +51,7 @@ class AvailabilityV1TransittimesPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getCarrierCodes() : array
+    public function getCarrierCodes(): array
     {
         return $this->carrierCodes;
     }
@@ -62,7 +62,7 @@ class AvailabilityV1TransittimesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCarrierCodes(array $carrierCodes) : self
+    public function setCarrierCodes(array $carrierCodes): self
     {
         $this->initialized['carrierCodes'] = true;
         $this->carrierCodes = $carrierCodes;

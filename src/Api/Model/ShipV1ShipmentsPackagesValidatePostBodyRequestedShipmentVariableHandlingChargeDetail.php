@@ -8,7 +8,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingCh
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingCh
      *
      * @return string
      */
-    public function getRateType() : string
+    public function getRateType(): string
     {
         return $this->rateType;
     }
@@ -58,7 +58,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingCh
      *
      * @return self
      */
-    public function setRateType(string $rateType) : self
+    public function setRateType(string $rateType): self
     {
         $this->initialized['rateType'] = true;
         $this->rateType = $rateType;
@@ -69,7 +69,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingCh
      *
      * @return float
      */
-    public function getPercentValue() : float
+    public function getPercentValue(): float
     {
         return $this->percentValue;
     }
@@ -80,7 +80,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingCh
      *
      * @return self
      */
-    public function setPercentValue(float $percentValue) : self
+    public function setPercentValue(float $percentValue): self
     {
         $this->initialized['percentValue'] = true;
         $this->percentValue = $percentValue;
@@ -91,7 +91,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingCh
      *
      * @return string
      */
-    public function getRateLevelType() : string
+    public function getRateLevelType(): string
     {
         return $this->rateLevelType;
     }
@@ -102,7 +102,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingCh
      *
      * @return self
      */
-    public function setRateLevelType(string $rateLevelType) : self
+    public function setRateLevelType(string $rateLevelType): self
     {
         $this->initialized['rateLevelType'] = true;
         $this->rateLevelType = $rateLevelType;
@@ -113,7 +113,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingCh
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingChargeDetailFixedValue
      */
-    public function getFixedValue() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingChargeDetailFixedValue
+    public function getFixedValue(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingChargeDetailFixedValue
     {
         return $this->fixedValue;
     }
@@ -124,7 +124,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingCh
      *
      * @return self
      */
-    public function setFixedValue(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingChargeDetailFixedValue $fixedValue) : self
+    public function setFixedValue(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingChargeDetailFixedValue $fixedValue): self
     {
         $this->initialized['fixedValue'] = true;
         $this->fixedValue = $fixedValue;
@@ -135,7 +135,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingCh
      *
      * @return string
      */
-    public function getRateElementBasis() : string
+    public function getRateElementBasis(): string
     {
         return $this->rateElementBasis;
     }
@@ -146,7 +146,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentVariableHandlingCh
      *
      * @return self
      */
-    public function setRateElementBasis(string $rateElementBasis) : self
+    public function setRateElementBasis(string $rateElementBasis): self
     {
         $this->initialized['rateElementBasis'] = true;
         $this->rateElementBasis = $rateElementBasis;

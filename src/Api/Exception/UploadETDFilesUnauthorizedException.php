@@ -18,11 +18,11 @@ class UploadETDFilesUnauthorizedException extends UnauthorizedException
         $this->documentsV1EtdsUploadPostResponse401 = $documentsV1EtdsUploadPostResponse401;
         $this->response = $response;
     }
-    public function getDocumentsV1EtdsUploadPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse401
+    public function getDocumentsV1EtdsUploadPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse401
     {
         return $this->documentsV1EtdsUploadPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

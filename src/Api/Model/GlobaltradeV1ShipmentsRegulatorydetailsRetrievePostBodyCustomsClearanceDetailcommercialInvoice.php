@@ -8,7 +8,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommercialInvoiceFreightCharge
      */
-    public function getFreightCharge() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommercialInvoiceFreightCharge
+    public function getFreightCharge(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommercialInvoiceFreightCharge
     {
         return $this->freightCharge;
     }
@@ -40,7 +40,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return self
      */
-    public function setFreightCharge(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommercialInvoiceFreightCharge $freightCharge) : self
+    public function setFreightCharge(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDetailcommercialInvoiceFreightCharge $freightCharge): self
     {
         $this->initialized['freightCharge'] = true;
         $this->freightCharge = $freightCharge;
@@ -51,7 +51,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return string
      */
-    public function getPurpose() : string
+    public function getPurpose(): string
     {
         return $this->purpose;
     }
@@ -62,7 +62,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return self
      */
-    public function setPurpose(string $purpose) : self
+    public function setPurpose(string $purpose): self
     {
         $this->initialized['purpose'] = true;
         $this->purpose = $purpose;

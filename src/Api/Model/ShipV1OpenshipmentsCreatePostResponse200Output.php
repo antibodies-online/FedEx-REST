@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -43,7 +43,7 @@ class ShipV1OpenshipmentsCreatePostResponse200Output extends \ArrayObject
     *
     * @return string
     */
-    public function getAsynchronousProcessingResultsDetail() : string
+    public function getAsynchronousProcessingResultsDetail(): string
     {
         return $this->asynchronousProcessingResultsDetail;
     }
@@ -55,7 +55,7 @@ class ShipV1OpenshipmentsCreatePostResponse200Output extends \ArrayObject
     *
     * @return self
     */
-    public function setAsynchronousProcessingResultsDetail(string $asynchronousProcessingResultsDetail) : self
+    public function setAsynchronousProcessingResultsDetail(string $asynchronousProcessingResultsDetail): self
     {
         $this->initialized['asynchronousProcessingResultsDetail'] = true;
         $this->asynchronousProcessingResultsDetail = $asynchronousProcessingResultsDetail;
@@ -66,7 +66,7 @@ class ShipV1OpenshipmentsCreatePostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getJobId() : string
+    public function getJobId(): string
     {
         return $this->jobId;
     }
@@ -77,7 +77,7 @@ class ShipV1OpenshipmentsCreatePostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setJobId(string $jobId) : self
+    public function setJobId(string $jobId): self
     {
         $this->initialized['jobId'] = true;
         $this->jobId = $jobId;
@@ -88,7 +88,7 @@ class ShipV1OpenshipmentsCreatePostResponse200Output extends \ArrayObject
      *
      * @return list<ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItem>
      */
-    public function getTransactionShipments() : array
+    public function getTransactionShipments(): array
     {
         return $this->transactionShipments;
     }
@@ -99,7 +99,7 @@ class ShipV1OpenshipmentsCreatePostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setTransactionShipments(array $transactionShipments) : self
+    public function setTransactionShipments(array $transactionShipments): self
     {
         $this->initialized['transactionShipments'] = true;
         $this->transactionShipments = $transactionShipments;
@@ -110,7 +110,7 @@ class ShipV1OpenshipmentsCreatePostResponse200Output extends \ArrayObject
      *
      * @return list<ShipV1OpenshipmentsCreatePostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -121,7 +121,7 @@ class ShipV1OpenshipmentsCreatePostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

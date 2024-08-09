@@ -18,11 +18,11 @@ class CreatePickupUnauthorizedException extends UnauthorizedException
         $this->pickupV1PickupsPostResponse401 = $pickupV1PickupsPostResponse401;
         $this->response = $response;
     }
-    public function getPickupV1PickupsPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsPostResponse401
+    public function getPickupV1PickupsPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsPostResponse401
     {
         return $this->pickupV1PickupsPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

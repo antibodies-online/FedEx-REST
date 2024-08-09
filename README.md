@@ -25,7 +25,7 @@ TBC
 composer build-combined-json
 ```
 > [!CAUTION]
-> Be careful, the track json contains a operation with numbers. This will break the function names in the Client. You have to rewrite the name to: "Track Send Notification"!
+> Be careful, the track json contains an operation with numbers. This will break the function names in the Client. You have to rewrite the name to: "Track Send Notification"!
 
 ### Generate Classes
 ```shell

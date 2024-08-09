@@ -18,11 +18,11 @@ class FreightShipmentUnauthorizedException extends UnauthorizedException
         $this->shipV1FreightShipmentsPostResponse401 = $shipV1FreightShipmentsPostResponse401;
         $this->response = $response;
     }
-    public function getShipV1FreightShipmentsPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostResponse401
+    public function getShipV1FreightShipmentsPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostResponse401
     {
         return $this->shipV1FreightShipmentsPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

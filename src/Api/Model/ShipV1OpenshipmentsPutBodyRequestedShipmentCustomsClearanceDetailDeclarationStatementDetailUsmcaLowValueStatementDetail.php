@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailDeclarati
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailDeclarati
      *
      * @return bool
      */
-    public function getCountryOfOriginLowValueDocumentRequested() : bool
+    public function getCountryOfOriginLowValueDocumentRequested(): bool
     {
         return $this->countryOfOriginLowValueDocumentRequested;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailDeclarati
      *
      * @return self
      */
-    public function setCountryOfOriginLowValueDocumentRequested(bool $countryOfOriginLowValueDocumentRequested) : self
+    public function setCountryOfOriginLowValueDocumentRequested(bool $countryOfOriginLowValueDocumentRequested): self
     {
         $this->initialized['countryOfOriginLowValueDocumentRequested'] = true;
         $this->countryOfOriginLowValueDocumentRequested = $countryOfOriginLowValueDocumentRequested;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailDeclarati
      *
      * @return string
      */
-    public function getCustomsRole() : string
+    public function getCustomsRole(): string
     {
         return $this->customsRole;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailDeclarati
      *
      * @return self
      */
-    public function setCustomsRole(string $customsRole) : self
+    public function setCustomsRole(string $customsRole): self
     {
         $this->initialized['customsRole'] = true;
         $this->customsRole = $customsRole;

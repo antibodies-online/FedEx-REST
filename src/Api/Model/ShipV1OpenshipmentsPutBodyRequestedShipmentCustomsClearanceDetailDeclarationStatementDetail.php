@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailDeclarati
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailDeclarati
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailDeclarationStatementDetailUsmcaLowValueStatementDetail
      */
-    public function getUsmcaLowValueStatementDetail() : ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailDeclarationStatementDetailUsmcaLowValueStatementDetail
+    public function getUsmcaLowValueStatementDetail(): ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailDeclarationStatementDetailUsmcaLowValueStatementDetail
     {
         return $this->usmcaLowValueStatementDetail;
     }
@@ -34,7 +34,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailDeclarati
      *
      * @return self
      */
-    public function setUsmcaLowValueStatementDetail(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailDeclarationStatementDetailUsmcaLowValueStatementDetail $usmcaLowValueStatementDetail) : self
+    public function setUsmcaLowValueStatementDetail(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailDeclarationStatementDetailUsmcaLowValueStatementDetail $usmcaLowValueStatementDetail): self
     {
         $this->initialized['usmcaLowValueStatementDetail'] = true;
         $this->usmcaLowValueStatementDetail = $usmcaLowValueStatementDetail;

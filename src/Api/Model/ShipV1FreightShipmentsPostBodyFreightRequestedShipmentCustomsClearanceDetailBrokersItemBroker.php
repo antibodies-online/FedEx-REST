@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDeta
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -52,7 +52,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDeta
      *
      * @return self
      */
-    public function setAddress($address) : self
+    public function setAddress($address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -74,7 +74,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDeta
      *
      * @return self
      */
-    public function setContact($contact) : self
+    public function setContact($contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -85,7 +85,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDeta
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDetailBrokersItemBrokeraccountNumber
      */
-    public function getAccountNumber() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDetailBrokersItemBrokeraccountNumber
+    public function getAccountNumber(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDetailBrokersItemBrokeraccountNumber
     {
         return $this->accountNumber;
     }
@@ -96,7 +96,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDeta
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDetailBrokersItemBrokeraccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDetailBrokersItemBrokeraccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -107,7 +107,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDeta
      *
      * @return list<ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDetailBrokersItemBrokertinsItem>
      */
-    public function getTins() : array
+    public function getTins(): array
     {
         return $this->tins;
     }
@@ -118,7 +118,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDeta
      *
      * @return self
      */
-    public function setTins(array $tins) : self
+    public function setTins(array $tins): self
     {
         $this->initialized['tins'] = true;
         $this->tins = $tins;

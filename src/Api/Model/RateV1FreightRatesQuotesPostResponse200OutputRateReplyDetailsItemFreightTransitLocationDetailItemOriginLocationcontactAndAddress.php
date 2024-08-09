@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddressContact
      */
-    public function getContact() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddressContact
+    public function getContact(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddressContact
     {
         return $this->contact;
     }
@@ -40,7 +40,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setContact(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddressContact $contact) : self
+    public function setContact(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddressContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -51,7 +51,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddressAddress
      */
-    public function getAddress() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddressAddress
+    public function getAddress(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddressAddress
     {
         return $this->address;
     }
@@ -62,7 +62,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setAddress(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddressAddress $address) : self
+    public function setAddress(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddressAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

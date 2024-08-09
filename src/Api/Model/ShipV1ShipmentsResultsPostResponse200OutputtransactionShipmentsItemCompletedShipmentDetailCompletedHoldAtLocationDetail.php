@@ -8,7 +8,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return string
      */
-    public function getHoldingLocationType() : string
+    public function getHoldingLocationType(): string
     {
         return $this->holdingLocationType;
     }
@@ -40,7 +40,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setHoldingLocationType(string $holdingLocationType) : self
+    public function setHoldingLocationType(string $holdingLocationType): self
     {
         $this->initialized['holdingLocationType'] = true;
         $this->holdingLocationType = $holdingLocationType;
@@ -51,7 +51,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocation
      */
-    public function getHoldingLocation() : ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocation
+    public function getHoldingLocation(): ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocation
     {
         return $this->holdingLocation;
     }
@@ -62,7 +62,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setHoldingLocation(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocation $holdingLocation) : self
+    public function setHoldingLocation(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetailHoldingLocation $holdingLocation): self
     {
         $this->initialized['holdingLocation'] = true;
         $this->holdingLocation = $holdingLocation;

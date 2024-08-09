@@ -21,26 +21,26 @@ class RetrieveServicesAndTransitTimes extends \AntibodiesOnline\FedEx\Api\Runtim
         $this->headerParameters = $headerParameters;
     }
     use \AntibodiesOnline\FedEx\Api\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'POST';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return '/availability/v1/transittimes';
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if ($this->body instanceof \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostBody) {
             return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
         }
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
-    protected function getHeadersOptionsResolver() : \Symfony\Component\OptionsResolver\OptionsResolver
+    protected function getHeadersOptionsResolver(): \Symfony\Component\OptionsResolver\OptionsResolver
     {
         $optionsResolver = parent::getHeadersOptionsResolver();
         $optionsResolver->setDefined(['x-customer-transaction-id', 'content-type', 'x-locale', 'authorization']);
@@ -68,25 +68,25 @@ class RetrieveServicesAndTransitTimes extends \AntibodiesOnline\FedEx\Api\Runtim
         $status = $response->getStatusCode();
         $body = (string) $response->getBody();
         if (is_null($contentType) === false && (200 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            return $serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostResponse200', 'json');
+            return $serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostResponse200', 'json');
         }
         if (is_null($contentType) === false && (400 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\RetrieveServicesAndTransitTimesBadRequestException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostResponse400', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\RetrieveServicesAndTransitTimesBadRequestException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostResponse400', 'json'), $response);
         }
         if (is_null($contentType) === false && (401 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\RetrieveServicesAndTransitTimesUnauthorizedException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostResponse401', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\RetrieveServicesAndTransitTimesUnauthorizedException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostResponse401', 'json'), $response);
         }
         if (is_null($contentType) === false && (403 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\RetrieveServicesAndTransitTimesForbiddenException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostResponse403', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\RetrieveServicesAndTransitTimesForbiddenException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostResponse403', 'json'), $response);
         }
         if (is_null($contentType) === false && (404 === $status && mb_strpos($contentType, 'application/json') !== false)) {
             throw new \AntibodiesOnline\FedEx\Api\Exception\RetrieveServicesAndTransitTimesNotFoundException($response);
         }
         if (is_null($contentType) === false && (500 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\RetrieveServicesAndTransitTimesInternalServerErrorException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\AvailabilityV1TransittimesPostResponse500', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\RetrieveServicesAndTransitTimesInternalServerErrorException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostResponse500', 'json'), $response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryO
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryO
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryOnInvoiceAcceptanceDetailRecipient
      */
-    public function getRecipient() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryOnInvoiceAcceptanceDetailRecipient
+    public function getRecipient(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryOnInvoiceAcceptanceDetailRecipient
     {
         return $this->recipient;
     }
@@ -34,7 +34,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryO
      *
      * @return self
      */
-    public function setRecipient(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryOnInvoiceAcceptanceDetailRecipient $recipient) : self
+    public function setRecipient(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryOnInvoiceAcceptanceDetailRecipient $recipient): self
     {
         $this->initialized['recipient'] = true;
         $this->recipient = $recipient;

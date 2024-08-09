@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentExpressFreightDetail extends \Ar
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentExpressFreightDetail extends \Ar
      *
      * @return string
      */
-    public function getBookingConfirmationNumber() : string
+    public function getBookingConfirmationNumber(): string
     {
         return $this->bookingConfirmationNumber;
     }
@@ -40,7 +40,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentExpressFreightDetail extends \Ar
      *
      * @return self
      */
-    public function setBookingConfirmationNumber(string $bookingConfirmationNumber) : self
+    public function setBookingConfirmationNumber(string $bookingConfirmationNumber): self
     {
         $this->initialized['bookingConfirmationNumber'] = true;
         $this->bookingConfirmationNumber = $bookingConfirmationNumber;
@@ -51,7 +51,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentExpressFreightDetail extends \Ar
      *
      * @return int
      */
-    public function getShippersLoadAndCount() : int
+    public function getShippersLoadAndCount(): int
     {
         return $this->shippersLoadAndCount;
     }
@@ -62,7 +62,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentExpressFreightDetail extends \Ar
      *
      * @return self
      */
-    public function setShippersLoadAndCount(int $shippersLoadAndCount) : self
+    public function setShippersLoadAndCount(int $shippersLoadAndCount): self
     {
         $this->initialized['shippersLoadAndCount'] = true;
         $this->shippersLoadAndCount = $shippersLoadAndCount;

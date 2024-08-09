@@ -8,7 +8,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -203,7 +203,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemTrackingNumberInfo
      */
-    public function getTrackingNumberInfo() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemTrackingNumberInfo
+    public function getTrackingNumberInfo(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemTrackingNumberInfo
     {
         return $this->trackingNumberInfo;
     }
@@ -214,7 +214,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setTrackingNumberInfo(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemTrackingNumberInfo $trackingNumberInfo) : self
+    public function setTrackingNumberInfo(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemTrackingNumberInfo $trackingNumberInfo): self
     {
         $this->initialized['trackingNumberInfo'] = true;
         $this->trackingNumberInfo = $trackingNumberInfo;
@@ -225,7 +225,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemAdditionalTrackingInfo
      */
-    public function getAdditionalTrackingInfo() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemAdditionalTrackingInfo
+    public function getAdditionalTrackingInfo(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemAdditionalTrackingInfo
     {
         return $this->additionalTrackingInfo;
     }
@@ -236,7 +236,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setAdditionalTrackingInfo(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemAdditionalTrackingInfo $additionalTrackingInfo) : self
+    public function setAdditionalTrackingInfo(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemAdditionalTrackingInfo $additionalTrackingInfo): self
     {
         $this->initialized['additionalTrackingInfo'] = true;
         $this->additionalTrackingInfo = $additionalTrackingInfo;
@@ -247,7 +247,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDistanceToDestination
      */
-    public function getDistanceToDestination() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDistanceToDestination
+    public function getDistanceToDestination(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDistanceToDestination
     {
         return $this->distanceToDestination;
     }
@@ -258,7 +258,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setDistanceToDestination(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDistanceToDestination $distanceToDestination) : self
+    public function setDistanceToDestination(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDistanceToDestination $distanceToDestination): self
     {
         $this->initialized['distanceToDestination'] = true;
         $this->distanceToDestination = $distanceToDestination;
@@ -269,7 +269,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return list<TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemConsolidationDetailItem>
      */
-    public function getConsolidationDetail() : array
+    public function getConsolidationDetail(): array
     {
         return $this->consolidationDetail;
     }
@@ -280,7 +280,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setConsolidationDetail(array $consolidationDetail) : self
+    public function setConsolidationDetail(array $consolidationDetail): self
     {
         $this->initialized['consolidationDetail'] = true;
         $this->consolidationDetail = $consolidationDetail;
@@ -291,7 +291,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return string
      */
-    public function getMeterNumber() : string
+    public function getMeterNumber(): string
     {
         return $this->meterNumber;
     }
@@ -302,7 +302,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setMeterNumber(string $meterNumber) : self
+    public function setMeterNumber(string $meterNumber): self
     {
         $this->initialized['meterNumber'] = true;
         $this->meterNumber = $meterNumber;
@@ -313,7 +313,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemReturnDetail
      */
-    public function getReturnDetail() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemReturnDetail
+    public function getReturnDetail(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemReturnDetail
     {
         return $this->returnDetail;
     }
@@ -324,7 +324,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setReturnDetail(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemReturnDetail $returnDetail) : self
+    public function setReturnDetail(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemReturnDetail $returnDetail): self
     {
         $this->initialized['returnDetail'] = true;
         $this->returnDetail = $returnDetail;
@@ -335,7 +335,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemServiceDetail
      */
-    public function getServiceDetail() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemServiceDetail
+    public function getServiceDetail(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemServiceDetail
     {
         return $this->serviceDetail;
     }
@@ -346,7 +346,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setServiceDetail(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemServiceDetail $serviceDetail) : self
+    public function setServiceDetail(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemServiceDetail $serviceDetail): self
     {
         $this->initialized['serviceDetail'] = true;
         $this->serviceDetail = $serviceDetail;
@@ -357,7 +357,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDestinationLocation
      */
-    public function getDestinationLocation() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDestinationLocation
+    public function getDestinationLocation(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDestinationLocation
     {
         return $this->destinationLocation;
     }
@@ -368,7 +368,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setDestinationLocation(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDestinationLocation $destinationLocation) : self
+    public function setDestinationLocation(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDestinationLocation $destinationLocation): self
     {
         $this->initialized['destinationLocation'] = true;
         $this->destinationLocation = $destinationLocation;
@@ -379,7 +379,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetail
      */
-    public function getLatestStatusDetail() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetail
+    public function getLatestStatusDetail(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetail
     {
         return $this->latestStatusDetail;
     }
@@ -390,7 +390,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setLatestStatusDetail(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetail $latestStatusDetail) : self
+    public function setLatestStatusDetail(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetail $latestStatusDetail): self
     {
         $this->initialized['latestStatusDetail'] = true;
         $this->latestStatusDetail = $latestStatusDetail;
@@ -401,7 +401,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemServiceCommitMessage
      */
-    public function getServiceCommitMessage() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemServiceCommitMessage
+    public function getServiceCommitMessage(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemServiceCommitMessage
     {
         return $this->serviceCommitMessage;
     }
@@ -412,7 +412,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setServiceCommitMessage(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemServiceCommitMessage $serviceCommitMessage) : self
+    public function setServiceCommitMessage(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemServiceCommitMessage $serviceCommitMessage): self
     {
         $this->initialized['serviceCommitMessage'] = true;
         $this->serviceCommitMessage = $serviceCommitMessage;
@@ -423,7 +423,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return list<TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemInformationNotesItem>
      */
-    public function getInformationNotes() : array
+    public function getInformationNotes(): array
     {
         return $this->informationNotes;
     }
@@ -434,7 +434,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setInformationNotes(array $informationNotes) : self
+    public function setInformationNotes(array $informationNotes): self
     {
         $this->initialized['informationNotes'] = true;
         $this->informationNotes = $informationNotes;
@@ -445,7 +445,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemError
      */
-    public function getError() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemError
+    public function getError(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemError
     {
         return $this->error;
     }
@@ -456,7 +456,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setError(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemError $error) : self
+    public function setError(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemError $error): self
     {
         $this->initialized['error'] = true;
         $this->error = $error;
@@ -467,7 +467,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return list<TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemSpecialHandlingsItem>
      */
-    public function getSpecialHandlings() : array
+    public function getSpecialHandlings(): array
     {
         return $this->specialHandlings;
     }
@@ -478,7 +478,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setSpecialHandlings(array $specialHandlings) : self
+    public function setSpecialHandlings(array $specialHandlings): self
     {
         $this->initialized['specialHandlings'] = true;
         $this->specialHandlings = $specialHandlings;
@@ -489,7 +489,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return list<TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemAvailableImagesItem>
      */
-    public function getAvailableImages() : array
+    public function getAvailableImages(): array
     {
         return $this->availableImages;
     }
@@ -500,7 +500,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setAvailableImages(array $availableImages) : self
+    public function setAvailableImages(array $availableImages): self
     {
         $this->initialized['availableImages'] = true;
         $this->availableImages = $availableImages;
@@ -511,7 +511,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDeliveryDetails
      */
-    public function getDeliveryDetails() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDeliveryDetails
+    public function getDeliveryDetails(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDeliveryDetails
     {
         return $this->deliveryDetails;
     }
@@ -522,7 +522,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setDeliveryDetails(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDeliveryDetails $deliveryDetails) : self
+    public function setDeliveryDetails(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDeliveryDetails $deliveryDetails): self
     {
         $this->initialized['deliveryDetails'] = true;
         $this->deliveryDetails = $deliveryDetails;
@@ -533,7 +533,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return list<TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemScanEventsItem>
      */
-    public function getScanEvents() : array
+    public function getScanEvents(): array
     {
         return $this->scanEvents;
     }
@@ -544,7 +544,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setScanEvents(array $scanEvents) : self
+    public function setScanEvents(array $scanEvents): self
     {
         $this->initialized['scanEvents'] = true;
         $this->scanEvents = $scanEvents;
@@ -555,7 +555,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return list<TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDateAndTimesItem>
      */
-    public function getDateAndTimes() : array
+    public function getDateAndTimes(): array
     {
         return $this->dateAndTimes;
     }
@@ -566,7 +566,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setDateAndTimes(array $dateAndTimes) : self
+    public function setDateAndTimes(array $dateAndTimes): self
     {
         $this->initialized['dateAndTimes'] = true;
         $this->dateAndTimes = $dateAndTimes;
@@ -577,7 +577,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetails
      */
-    public function getPackageDetails() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetails
+    public function getPackageDetails(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetails
     {
         return $this->packageDetails;
     }
@@ -588,7 +588,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setPackageDetails(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetails $packageDetails) : self
+    public function setPackageDetails(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetails $packageDetails): self
     {
         $this->initialized['packageDetails'] = true;
         $this->packageDetails = $packageDetails;
@@ -599,7 +599,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return string
      */
-    public function getGoodsClassificationCode() : string
+    public function getGoodsClassificationCode(): string
     {
         return $this->goodsClassificationCode;
     }
@@ -610,7 +610,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setGoodsClassificationCode(string $goodsClassificationCode) : self
+    public function setGoodsClassificationCode(string $goodsClassificationCode): self
     {
         $this->initialized['goodsClassificationCode'] = true;
         $this->goodsClassificationCode = $goodsClassificationCode;
@@ -621,7 +621,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocation
      */
-    public function getHoldAtLocation() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocation
+    public function getHoldAtLocation(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocation
     {
         return $this->holdAtLocation;
     }
@@ -632,7 +632,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setHoldAtLocation(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocation $holdAtLocation) : self
+    public function setHoldAtLocation(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemHoldAtLocation $holdAtLocation): self
     {
         $this->initialized['holdAtLocation'] = true;
         $this->holdAtLocation = $holdAtLocation;
@@ -643,7 +643,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return list<TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemCustomDeliveryOptionsItem>
      */
-    public function getCustomDeliveryOptions() : array
+    public function getCustomDeliveryOptions(): array
     {
         return $this->customDeliveryOptions;
     }
@@ -654,7 +654,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setCustomDeliveryOptions(array $customDeliveryOptions) : self
+    public function setCustomDeliveryOptions(array $customDeliveryOptions): self
     {
         $this->initialized['customDeliveryOptions'] = true;
         $this->customDeliveryOptions = $customDeliveryOptions;
@@ -665,7 +665,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemEstimatedDeliveryTimeWindow
      */
-    public function getEstimatedDeliveryTimeWindow() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemEstimatedDeliveryTimeWindow
+    public function getEstimatedDeliveryTimeWindow(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemEstimatedDeliveryTimeWindow
     {
         return $this->estimatedDeliveryTimeWindow;
     }
@@ -676,7 +676,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setEstimatedDeliveryTimeWindow(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemEstimatedDeliveryTimeWindow $estimatedDeliveryTimeWindow) : self
+    public function setEstimatedDeliveryTimeWindow(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemEstimatedDeliveryTimeWindow $estimatedDeliveryTimeWindow): self
     {
         $this->initialized['estimatedDeliveryTimeWindow'] = true;
         $this->estimatedDeliveryTimeWindow = $estimatedDeliveryTimeWindow;
@@ -687,7 +687,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return list<TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPieceCountsItem>
      */
-    public function getPieceCounts() : array
+    public function getPieceCounts(): array
     {
         return $this->pieceCounts;
     }
@@ -698,7 +698,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setPieceCounts(array $pieceCounts) : self
+    public function setPieceCounts(array $pieceCounts): self
     {
         $this->initialized['pieceCounts'] = true;
         $this->pieceCounts = $pieceCounts;
@@ -709,7 +709,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemOriginLocation
      */
-    public function getOriginLocation() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemOriginLocation
+    public function getOriginLocation(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemOriginLocation
     {
         return $this->originLocation;
     }
@@ -720,7 +720,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setOriginLocation(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemOriginLocation $originLocation) : self
+    public function setOriginLocation(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemOriginLocation $originLocation): self
     {
         $this->initialized['originLocation'] = true;
         $this->originLocation = $originLocation;
@@ -731,7 +731,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemRecipientInformation
      */
-    public function getRecipientInformation() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemRecipientInformation
+    public function getRecipientInformation(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemRecipientInformation
     {
         return $this->recipientInformation;
     }
@@ -742,7 +742,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setRecipientInformation(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemRecipientInformation $recipientInformation) : self
+    public function setRecipientInformation(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemRecipientInformation $recipientInformation): self
     {
         $this->initialized['recipientInformation'] = true;
         $this->recipientInformation = $recipientInformation;
@@ -753,7 +753,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemStandardTransitTimeWindow
      */
-    public function getStandardTransitTimeWindow() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemStandardTransitTimeWindow
+    public function getStandardTransitTimeWindow(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemStandardTransitTimeWindow
     {
         return $this->standardTransitTimeWindow;
     }
@@ -764,7 +764,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setStandardTransitTimeWindow(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemStandardTransitTimeWindow $standardTransitTimeWindow) : self
+    public function setStandardTransitTimeWindow(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemStandardTransitTimeWindow $standardTransitTimeWindow): self
     {
         $this->initialized['standardTransitTimeWindow'] = true;
         $this->standardTransitTimeWindow = $standardTransitTimeWindow;
@@ -775,7 +775,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipmentDetails
      */
-    public function getShipmentDetails() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipmentDetails
+    public function getShipmentDetails(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipmentDetails
     {
         return $this->shipmentDetails;
     }
@@ -786,7 +786,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setShipmentDetails(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipmentDetails $shipmentDetails) : self
+    public function setShipmentDetails(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipmentDetails $shipmentDetails): self
     {
         $this->initialized['shipmentDetails'] = true;
         $this->shipmentDetails = $shipmentDetails;
@@ -797,7 +797,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemReasonDetail
      */
-    public function getReasonDetail() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemReasonDetail
+    public function getReasonDetail(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemReasonDetail
     {
         return $this->reasonDetail;
     }
@@ -808,7 +808,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setReasonDetail(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemReasonDetail $reasonDetail) : self
+    public function setReasonDetail(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemReasonDetail $reasonDetail): self
     {
         $this->initialized['reasonDetail'] = true;
         $this->reasonDetail = $reasonDetail;
@@ -819,7 +819,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return list<string>
      */
-    public function getAvailableNotifications() : array
+    public function getAvailableNotifications(): array
     {
         return $this->availableNotifications;
     }
@@ -830,7 +830,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setAvailableNotifications(array $availableNotifications) : self
+    public function setAvailableNotifications(array $availableNotifications): self
     {
         $this->initialized['availableNotifications'] = true;
         $this->availableNotifications = $availableNotifications;
@@ -841,7 +841,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformation
      */
-    public function getShipperInformation() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformation
+    public function getShipperInformation(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformation
     {
         return $this->shipperInformation;
     }
@@ -852,7 +852,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setShipperInformation(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformation $shipperInformation) : self
+    public function setShipperInformation(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformation $shipperInformation): self
     {
         $this->initialized['shipperInformation'] = true;
         $this->shipperInformation = $shipperInformation;
@@ -863,7 +863,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLastUpdatedDestinationAddress
      */
-    public function getLastUpdatedDestinationAddress() : TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLastUpdatedDestinationAddress
+    public function getLastUpdatedDestinationAddress(): TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLastUpdatedDestinationAddress
     {
         return $this->lastUpdatedDestinationAddress;
     }
@@ -874,7 +874,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItem ex
      *
      * @return self
      */
-    public function setLastUpdatedDestinationAddress(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLastUpdatedDestinationAddress $lastUpdatedDestinationAddress) : self
+    public function setLastUpdatedDestinationAddress(TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLastUpdatedDestinationAddress $lastUpdatedDestinationAddress): self
     {
         $this->initialized['lastUpdatedDestinationAddress'] = true;
         $this->lastUpdatedDestinationAddress = $lastUpdatedDestinationAddress;

@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRecipient extends 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRecipient extends 
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRecipientaddress
      */
-    public function getAddress() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRecipientaddress
+    public function getAddress(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRecipientaddress
     {
         return $this->address;
     }
@@ -34,7 +34,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRecipient extends 
      *
      * @return self
      */
-    public function setAddress(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRecipientaddress $address) : self
+    public function setAddress(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentRecipientaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

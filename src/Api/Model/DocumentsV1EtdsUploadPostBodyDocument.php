@@ -8,7 +8,7 @@ class DocumentsV1EtdsUploadPostBodyDocument extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -37,9 +37,9 @@ class DocumentsV1EtdsUploadPostBodyDocument extends \ArrayObject
      */
     protected $contentType;
     /**
-     * 
+     * Indicate the shipment metadata associated with the document to be uploaded.
      *
-     * @var array<string, mixed>
+     * @var DocumentsV1EtdsUploadPostBodyDocumentMeta
      */
     protected $meta;
     /**
@@ -47,7 +47,7 @@ class DocumentsV1EtdsUploadPostBodyDocument extends \ArrayObject
      *
      * @return string
      */
-    public function getWorkflowName() : string
+    public function getWorkflowName(): string
     {
         return $this->workflowName;
     }
@@ -58,7 +58,7 @@ class DocumentsV1EtdsUploadPostBodyDocument extends \ArrayObject
      *
      * @return self
      */
-    public function setWorkflowName(string $workflowName) : self
+    public function setWorkflowName(string $workflowName): self
     {
         $this->initialized['workflowName'] = true;
         $this->workflowName = $workflowName;
@@ -69,7 +69,7 @@ class DocumentsV1EtdsUploadPostBodyDocument extends \ArrayObject
      *
      * @return string
      */
-    public function getCarrierCode() : string
+    public function getCarrierCode(): string
     {
         return $this->carrierCode;
     }
@@ -80,7 +80,7 @@ class DocumentsV1EtdsUploadPostBodyDocument extends \ArrayObject
      *
      * @return self
      */
-    public function setCarrierCode(string $carrierCode) : self
+    public function setCarrierCode(string $carrierCode): self
     {
         $this->initialized['carrierCode'] = true;
         $this->carrierCode = $carrierCode;
@@ -91,7 +91,7 @@ class DocumentsV1EtdsUploadPostBodyDocument extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -102,7 +102,7 @@ class DocumentsV1EtdsUploadPostBodyDocument extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -113,7 +113,7 @@ class DocumentsV1EtdsUploadPostBodyDocument extends \ArrayObject
      *
      * @return string
      */
-    public function getContentType() : string
+    public function getContentType(): string
     {
         return $this->contentType;
     }
@@ -124,29 +124,29 @@ class DocumentsV1EtdsUploadPostBodyDocument extends \ArrayObject
      *
      * @return self
      */
-    public function setContentType(string $contentType) : self
+    public function setContentType(string $contentType): self
     {
         $this->initialized['contentType'] = true;
         $this->contentType = $contentType;
         return $this;
     }
     /**
-     * 
+     * Indicate the shipment metadata associated with the document to be uploaded.
      *
-     * @return array<string, mixed>
+     * @return DocumentsV1EtdsUploadPostBodyDocumentMeta
      */
-    public function getMeta() : iterable
+    public function getMeta(): DocumentsV1EtdsUploadPostBodyDocumentMeta
     {
         return $this->meta;
     }
     /**
-     * 
+     * Indicate the shipment metadata associated with the document to be uploaded.
      *
-     * @param array<string, mixed> $meta
+     * @param DocumentsV1EtdsUploadPostBodyDocumentMeta $meta
      *
      * @return self
      */
-    public function setMeta(iterable $meta) : self
+    public function setMeta(DocumentsV1EtdsUploadPostBodyDocumentMeta $meta): self
     {
         $this->initialized['meta'] = true;
         $this->meta = $meta;

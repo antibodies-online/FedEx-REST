@@ -18,11 +18,11 @@ class FindLocationServiceUnavailableException extends ServiceUnavailableExceptio
         $this->locationV1LocationsPostResponse503 = $locationV1LocationsPostResponse503;
         $this->response = $response;
     }
-    public function getLocationV1LocationsPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse503
+    public function getLocationV1LocationsPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse503
     {
         return $this->locationV1LocationsPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

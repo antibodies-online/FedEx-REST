@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItem extends \
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItem extends \
      *
      * @return ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItemAddress
      */
-    public function getAddress() : ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItemAddress
+    public function getAddress(): ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItemAddress
     {
         return $this->address;
     }
@@ -52,7 +52,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItem extends \
      *
      * @return self
      */
-    public function setAddress(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItemAddress $address) : self
+    public function setAddress(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItemAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -63,7 +63,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItem extends \
      *
      * @return ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItemContact
      */
-    public function getContact() : ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItemContact
+    public function getContact(): ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItemContact
     {
         return $this->contact;
     }
@@ -74,7 +74,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItem extends \
      *
      * @return self
      */
-    public function setContact(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItemContact $contact) : self
+    public function setContact(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItemContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -85,7 +85,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItem extends \
      *
      * @return list<ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItemTinsItem>
      */
-    public function getTins() : array
+    public function getTins(): array
     {
         return $this->tins;
     }
@@ -96,7 +96,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItem extends \
      *
      * @return self
      */
-    public function setTins(array $tins) : self
+    public function setTins(array $tins): self
     {
         $this->initialized['tins'] = true;
         $this->tins = $tins;
@@ -107,7 +107,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItem extends \
      *
      * @return string
      */
-    public function getDeliveryInstructions() : string
+    public function getDeliveryInstructions(): string
     {
         return $this->deliveryInstructions;
     }
@@ -118,7 +118,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentRecipientsItem extends \
      *
      * @return self
      */
-    public function setDeliveryInstructions(string $deliveryInstructions) : self
+    public function setDeliveryInstructions(string $deliveryInstructions): self
     {
         $this->initialized['deliveryInstructions'] = true;
         $this->deliveryInstructions = $deliveryInstructions;

@@ -8,7 +8,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDet
      *
      * @return string
      */
-    public function getTime() : string
+    public function getTime(): string
     {
         return $this->time;
     }
@@ -34,7 +34,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDet
      *
      * @return self
      */
-    public function setTime(string $time) : self
+    public function setTime(string $time): self
     {
         $this->initialized['time'] = true;
         $this->time = $time;

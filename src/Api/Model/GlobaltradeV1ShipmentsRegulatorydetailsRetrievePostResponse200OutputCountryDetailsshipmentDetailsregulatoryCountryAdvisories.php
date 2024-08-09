@@ -8,7 +8,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getTypes() : string
+    public function getTypes(): string
     {
         return $this->types;
     }
@@ -40,7 +40,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setTypes(string $types) : self
+    public function setTypes(string $types): self
     {
         $this->initialized['types'] = true;
         $this->types = $types;
@@ -51,7 +51,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return list<GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryCountryAdvisoriesMessagesItem>
      */
-    public function getMessages() : array
+    public function getMessages(): array
     {
         return $this->messages;
     }
@@ -62,7 +62,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setMessages(array $messages) : self
+    public function setMessages(array $messages): self
     {
         $this->initialized['messages'] = true;
         $this->messages = $messages;

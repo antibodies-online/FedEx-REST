@@ -8,7 +8,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemRet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemRet
      *
      * @return string
      */
-    public function getAuthorizationName() : string
+    public function getAuthorizationName(): string
     {
         return $this->authorizationName;
     }
@@ -40,7 +40,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemRet
      *
      * @return self
      */
-    public function setAuthorizationName(string $authorizationName) : self
+    public function setAuthorizationName(string $authorizationName): self
     {
         $this->initialized['authorizationName'] = true;
         $this->authorizationName = $authorizationName;
@@ -51,7 +51,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemRet
      *
      * @return list<TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemReturnDetailReasonDetailItem>
      */
-    public function getReasonDetail() : array
+    public function getReasonDetail(): array
     {
         return $this->reasonDetail;
     }
@@ -62,7 +62,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemRet
      *
      * @return self
      */
-    public function setReasonDetail(array $reasonDetail) : self
+    public function setReasonDetail(array $reasonDetail): self
     {
         $this->initialized['reasonDetail'] = true;
         $this->reasonDetail = $reasonDetail;

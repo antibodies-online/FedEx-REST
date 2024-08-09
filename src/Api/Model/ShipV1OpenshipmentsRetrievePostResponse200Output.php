@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200Output extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipment
      */
-    public function getRequestedShipment() : ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipment
+    public function getRequestedShipment(): ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipment
     {
         return $this->requestedShipment;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedShipment(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipment $requestedShipment) : self
+    public function setRequestedShipment(ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipment $requestedShipment): self
     {
         $this->initialized['requestedShipment'] = true;
         $this->requestedShipment = $requestedShipment;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200Output extends \ArrayObject
      *
      * @return list<ShipV1OpenshipmentsRetrievePostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesreturnShipmentDetail
      */
-    public function getReturnShipmentDetail() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesreturnShipmentDetail
+    public function getReturnShipmentDetail(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesreturnShipmentDetail
     {
         return $this->returnShipmentDetail;
     }
@@ -88,7 +88,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return self
      */
-    public function setReturnShipmentDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesreturnShipmentDetail $returnShipmentDetail) : self
+    public function setReturnShipmentDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesreturnShipmentDetail $returnShipmentDetail): self
     {
         $this->initialized['returnShipmentDetail'] = true;
         $this->returnShipmentDetail = $returnShipmentDetail;
@@ -99,7 +99,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryOnInvoiceAcceptanceDetail
      */
-    public function getDeliveryOnInvoiceAcceptanceDetail() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryOnInvoiceAcceptanceDetail
+    public function getDeliveryOnInvoiceAcceptanceDetail(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryOnInvoiceAcceptanceDetail
     {
         return $this->deliveryOnInvoiceAcceptanceDetail;
     }
@@ -110,7 +110,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return self
      */
-    public function setDeliveryOnInvoiceAcceptanceDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryOnInvoiceAcceptanceDetail $deliveryOnInvoiceAcceptanceDetail) : self
+    public function setDeliveryOnInvoiceAcceptanceDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryOnInvoiceAcceptanceDetail $deliveryOnInvoiceAcceptanceDetail): self
     {
         $this->initialized['deliveryOnInvoiceAcceptanceDetail'] = true;
         $this->deliveryOnInvoiceAcceptanceDetail = $deliveryOnInvoiceAcceptanceDetail;
@@ -121,7 +121,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesinternationalTrafficInArmsRegulationsDetail
      */
-    public function getInternationalTrafficInArmsRegulationsDetail() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesinternationalTrafficInArmsRegulationsDetail
+    public function getInternationalTrafficInArmsRegulationsDetail(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesinternationalTrafficInArmsRegulationsDetail
     {
         return $this->internationalTrafficInArmsRegulationsDetail;
     }
@@ -132,7 +132,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return self
      */
-    public function setInternationalTrafficInArmsRegulationsDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesinternationalTrafficInArmsRegulationsDetail $internationalTrafficInArmsRegulationsDetail) : self
+    public function setInternationalTrafficInArmsRegulationsDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesinternationalTrafficInArmsRegulationsDetail $internationalTrafficInArmsRegulationsDetail): self
     {
         $this->initialized['internationalTrafficInArmsRegulationsDetail'] = true;
         $this->internationalTrafficInArmsRegulationsDetail = $internationalTrafficInArmsRegulationsDetail;
@@ -143,7 +143,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetail
      */
-    public function getPendingShipmentDetail() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetail
+    public function getPendingShipmentDetail(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetail
     {
         return $this->pendingShipmentDetail;
     }
@@ -154,7 +154,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return self
      */
-    public function setPendingShipmentDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetail $pendingShipmentDetail) : self
+    public function setPendingShipmentDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetail $pendingShipmentDetail): self
     {
         $this->initialized['pendingShipmentDetail'] = true;
         $this->pendingShipmentDetail = $pendingShipmentDetail;
@@ -165,7 +165,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetail
      */
-    public function getHoldAtLocationDetail() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetail
+    public function getHoldAtLocationDetail(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetail
     {
         return $this->holdAtLocationDetail;
     }
@@ -176,7 +176,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return self
      */
-    public function setHoldAtLocationDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetail $holdAtLocationDetail) : self
+    public function setHoldAtLocationDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetail $holdAtLocationDetail): self
     {
         $this->initialized['holdAtLocationDetail'] = true;
         $this->holdAtLocationDetail = $holdAtLocationDetail;
@@ -187,7 +187,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetail
      */
-    public function getShipmentCODDetail() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetail
+    public function getShipmentCODDetail(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetail
     {
         return $this->shipmentCODDetail;
     }
@@ -198,7 +198,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return self
      */
-    public function setShipmentCODDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetail $shipmentCODDetail) : self
+    public function setShipmentCODDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetail $shipmentCODDetail): self
     {
         $this->initialized['shipmentCODDetail'] = true;
         $this->shipmentCODDetail = $shipmentCODDetail;
@@ -209,7 +209,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentDryIceDetail
      */
-    public function getShipmentDryIceDetail() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentDryIceDetail
+    public function getShipmentDryIceDetail(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentDryIceDetail
     {
         return $this->shipmentDryIceDetail;
     }
@@ -220,7 +220,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return self
      */
-    public function setShipmentDryIceDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentDryIceDetail $shipmentDryIceDetail) : self
+    public function setShipmentDryIceDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentDryIceDetail $shipmentDryIceDetail): self
     {
         $this->initialized['shipmentDryIceDetail'] = true;
         $this->shipmentDryIceDetail = $shipmentDryIceDetail;
@@ -231,7 +231,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesinternationalControlledExportDetail
      */
-    public function getInternationalControlledExportDetail() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesinternationalControlledExportDetail
+    public function getInternationalControlledExportDetail(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesinternationalControlledExportDetail
     {
         return $this->internationalControlledExportDetail;
     }
@@ -242,7 +242,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return self
      */
-    public function setInternationalControlledExportDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesinternationalControlledExportDetail $internationalControlledExportDetail) : self
+    public function setInternationalControlledExportDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesinternationalControlledExportDetail $internationalControlledExportDetail): self
     {
         $this->initialized['internationalControlledExportDetail'] = true;
         $this->internationalControlledExportDetail = $internationalControlledExportDetail;
@@ -253,7 +253,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliveryPremiumDetail
      */
-    public function getHomeDeliveryPremiumDetail() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliveryPremiumDetail
+    public function getHomeDeliveryPremiumDetail(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliveryPremiumDetail
     {
         return $this->homeDeliveryPremiumDetail;
     }
@@ -264,7 +264,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return self
      */
-    public function setHomeDeliveryPremiumDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliveryPremiumDetail $homeDeliveryPremiumDetail) : self
+    public function setHomeDeliveryPremiumDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliveryPremiumDetail $homeDeliveryPremiumDetail): self
     {
         $this->initialized['homeDeliveryPremiumDetail'] = true;
         $this->homeDeliveryPremiumDetail = $homeDeliveryPremiumDetail;
@@ -275,7 +275,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return list<string>
      */
-    public function getSpecialServiceTypes() : array
+    public function getSpecialServiceTypes(): array
     {
         return $this->specialServiceTypes;
     }
@@ -286,7 +286,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServices extends 
      *
      * @return self
      */
-    public function setSpecialServiceTypes(array $specialServiceTypes) : self
+    public function setSpecialServiceTypes(array $specialServiceTypes): self
     {
         $this->initialized['specialServiceTypes'] = true;
         $this->specialServiceTypes = $specialServiceTypes;

@@ -8,7 +8,7 @@ class OauthTokenPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class OauthTokenPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getGrantType() : string
+    public function getGrantType(): string
     {
         return $this->grantType;
     }
@@ -58,7 +58,7 @@ class OauthTokenPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setGrantType(string $grantType) : self
+    public function setGrantType(string $grantType): self
     {
         $this->initialized['grantType'] = true;
         $this->grantType = $grantType;
@@ -69,7 +69,7 @@ class OauthTokenPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getClientId() : string
+    public function getClientId(): string
     {
         return $this->clientId;
     }
@@ -80,7 +80,7 @@ class OauthTokenPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setClientId(string $clientId) : self
+    public function setClientId(string $clientId): self
     {
         $this->initialized['clientId'] = true;
         $this->clientId = $clientId;
@@ -91,7 +91,7 @@ class OauthTokenPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getClientSecret() : string
+    public function getClientSecret(): string
     {
         return $this->clientSecret;
     }
@@ -102,7 +102,7 @@ class OauthTokenPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setClientSecret(string $clientSecret) : self
+    public function setClientSecret(string $clientSecret): self
     {
         $this->initialized['clientSecret'] = true;
         $this->clientSecret = $clientSecret;
@@ -113,7 +113,7 @@ class OauthTokenPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getChildKey() : string
+    public function getChildKey(): string
     {
         return $this->childKey;
     }
@@ -124,7 +124,7 @@ class OauthTokenPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setChildKey(string $childKey) : self
+    public function setChildKey(string $childKey): self
     {
         $this->initialized['childKey'] = true;
         $this->childKey = $childKey;
@@ -135,7 +135,7 @@ class OauthTokenPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getChildSecret() : string
+    public function getChildSecret(): string
     {
         return $this->childSecret;
     }
@@ -146,7 +146,7 @@ class OauthTokenPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setChildSecret(string $childSecret) : self
+    public function setChildSecret(string $childSecret): self
     {
         $this->initialized['childSecret'] = true;
         $this->childSecret = $childSecret;

@@ -18,11 +18,11 @@ class DeleteOpenShipmentPackagesServiceUnavailableException extends ServiceUnava
         $this->shipV1OpenshipmentsPackagesDeletePutResponse503 = $shipV1OpenshipmentsPackagesDeletePutResponse503;
         $this->response = $response;
     }
-    public function getShipV1OpenshipmentsPackagesDeletePutResponse503() : \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesDeletePutResponse503
+    public function getShipV1OpenshipmentsPackagesDeletePutResponse503(): \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesDeletePutResponse503
     {
         return $this->shipV1OpenshipmentsPackagesDeletePutResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

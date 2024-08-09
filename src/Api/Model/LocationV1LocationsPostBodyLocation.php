@@ -8,7 +8,7 @@ class LocationV1LocationsPostBodyLocation extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class LocationV1LocationsPostBodyLocation extends \ArrayObject
      *
      * @return LocationV1LocationsPostBodyLocationaddress
      */
-    public function getAddress() : LocationV1LocationsPostBodyLocationaddress
+    public function getAddress(): LocationV1LocationsPostBodyLocationaddress
     {
         return $this->address;
     }
@@ -40,7 +40,7 @@ class LocationV1LocationsPostBodyLocation extends \ArrayObject
      *
      * @return self
      */
-    public function setAddress(LocationV1LocationsPostBodyLocationaddress $address) : self
+    public function setAddress(LocationV1LocationsPostBodyLocationaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -51,7 +51,7 @@ class LocationV1LocationsPostBodyLocation extends \ArrayObject
      *
      * @return LocationV1LocationsPostBodyLocationlongLat
      */
-    public function getLongLat() : LocationV1LocationsPostBodyLocationlongLat
+    public function getLongLat(): LocationV1LocationsPostBodyLocationlongLat
     {
         return $this->longLat;
     }
@@ -62,7 +62,7 @@ class LocationV1LocationsPostBodyLocation extends \ArrayObject
      *
      * @return self
      */
-    public function setLongLat(LocationV1LocationsPostBodyLocationlongLat $longLat) : self
+    public function setLongLat(LocationV1LocationsPostBodyLocationlongLat $longLat): self
     {
         $this->initialized['longLat'] = true;
         $this->longLat = $longLat;

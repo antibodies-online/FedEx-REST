@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -89,7 +89,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
     *
     * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailshipmentDimensions
     */
-    public function getShipmentDimensions() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailshipmentDimensions
+    public function getShipmentDimensions(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailshipmentDimensions
     {
         return $this->shipmentDimensions;
     }
@@ -102,7 +102,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
     *
     * @return self
     */
-    public function setShipmentDimensions(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailshipmentDimensions $shipmentDimensions) : self
+    public function setShipmentDimensions(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailshipmentDimensions $shipmentDimensions): self
     {
         $this->initialized['shipmentDimensions'] = true;
         $this->shipmentDimensions = $shipmentDimensions;
@@ -113,7 +113,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return bool
      */
-    public function getAlternateBilling() : bool
+    public function getAlternateBilling(): bool
     {
         return $this->alternateBilling;
     }
@@ -124,7 +124,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setAlternateBilling(bool $alternateBilling) : self
+    public function setAlternateBilling(bool $alternateBilling): self
     {
         $this->initialized['alternateBilling'] = true;
         $this->alternateBilling = $alternateBilling;
@@ -137,7 +137,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
     *
     * @return list<AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetaillineItemItem>
     */
-    public function getLineItem() : array
+    public function getLineItem(): array
     {
         return $this->lineItem;
     }
@@ -150,7 +150,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
     *
     * @return self
     */
-    public function setLineItem(array $lineItem) : self
+    public function setLineItem(array $lineItem): self
     {
         $this->initialized['lineItem'] = true;
         $this->lineItem = $lineItem;
@@ -161,7 +161,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return string
      */
-    public function getRole() : string
+    public function getRole(): string
     {
         return $this->role;
     }
@@ -172,7 +172,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setRole(string $role) : self
+    public function setRole(string $role): self
     {
         $this->initialized['role'] = true;
         $this->role = $role;
@@ -183,7 +183,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return float
      */
-    public function getClientDiscountPercent() : float
+    public function getClientDiscountPercent(): float
     {
         return $this->clientDiscountPercent;
     }
@@ -194,7 +194,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setClientDiscountPercent(float $clientDiscountPercent) : self
+    public function setClientDiscountPercent(float $clientDiscountPercent): self
     {
         $this->initialized['clientDiscountPercent'] = true;
         $this->clientDiscountPercent = $clientDiscountPercent;
@@ -207,7 +207,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
     *
     * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightBillingContactAndAddress
     */
-    public function getFedExFreightBillingContactAndAddress() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightBillingContactAndAddress
+    public function getFedExFreightBillingContactAndAddress(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightBillingContactAndAddress
     {
         return $this->fedExFreightBillingContactAndAddress;
     }
@@ -220,7 +220,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
     *
     * @return self
     */
-    public function setFedExFreightBillingContactAndAddress(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightBillingContactAndAddress $fedExFreightBillingContactAndAddress) : self
+    public function setFedExFreightBillingContactAndAddress(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightBillingContactAndAddress $fedExFreightBillingContactAndAddress): self
     {
         $this->initialized['fedExFreightBillingContactAndAddress'] = true;
         $this->fedExFreightBillingContactAndAddress = $fedExFreightBillingContactAndAddress;
@@ -231,7 +231,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return string
      */
-    public function getAliasID() : string
+    public function getAliasID(): string
     {
         return $this->aliasID;
     }
@@ -242,7 +242,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setAliasID(string $aliasID) : self
+    public function setAliasID(string $aliasID): self
     {
         $this->initialized['aliasID'] = true;
         $this->aliasID = $aliasID;
@@ -253,7 +253,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailliabilityCoverageDetail
      */
-    public function getLiabilityCoverageDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailliabilityCoverageDetail
+    public function getLiabilityCoverageDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailliabilityCoverageDetail
     {
         return $this->liabilityCoverageDetail;
     }
@@ -264,7 +264,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setLiabilityCoverageDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailliabilityCoverageDetail $liabilityCoverageDetail) : self
+    public function setLiabilityCoverageDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailliabilityCoverageDetail $liabilityCoverageDetail): self
     {
         $this->initialized['liabilityCoverageDetail'] = true;
         $this->liabilityCoverageDetail = $liabilityCoverageDetail;
@@ -277,7 +277,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
     *
     * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightAccountNumber
     */
-    public function getFedExFreightAccountNumber() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightAccountNumber
+    public function getFedExFreightAccountNumber(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightAccountNumber
     {
         return $this->fedExFreightAccountNumber;
     }
@@ -290,7 +290,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
     *
     * @return self
     */
-    public function setFedExFreightAccountNumber(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightAccountNumber $fedExFreightAccountNumber) : self
+    public function setFedExFreightAccountNumber(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightAccountNumber $fedExFreightAccountNumber): self
     {
         $this->initialized['fedExFreightAccountNumber'] = true;
         $this->fedExFreightAccountNumber = $fedExFreightAccountNumber;
@@ -303,7 +303,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
     *
     * @return int
     */
-    public function getTotalHandlingUnits() : int
+    public function getTotalHandlingUnits(): int
     {
         return $this->totalHandlingUnits;
     }
@@ -316,7 +316,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
     *
     * @return self
     */
-    public function setTotalHandlingUnits(int $totalHandlingUnits) : self
+    public function setTotalHandlingUnits(int $totalHandlingUnits): self
     {
         $this->initialized['totalHandlingUnits'] = true;
         $this->totalHandlingUnits = $totalHandlingUnits;

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentRequested
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentRequested
      *
      * @return string
      */
-    public function getAlcoholRecipientType() : string
+    public function getAlcoholRecipientType(): string
     {
         return $this->alcoholRecipientType;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentRequested
      *
      * @return self
      */
-    public function setAlcoholRecipientType(string $alcoholRecipientType) : self
+    public function setAlcoholRecipientType(string $alcoholRecipientType): self
     {
         $this->initialized['alcoholRecipientType'] = true;
         $this->alcoholRecipientType = $alcoholRecipientType;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentRequested
      *
      * @return string
      */
-    public function getShipperAgreementType() : string
+    public function getShipperAgreementType(): string
     {
         return $this->shipperAgreementType;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentRequested
      *
      * @return self
      */
-    public function setShipperAgreementType(string $shipperAgreementType) : self
+    public function setShipperAgreementType(string $shipperAgreementType): self
     {
         $this->initialized['shipperAgreementType'] = true;
         $this->shipperAgreementType = $shipperAgreementType;

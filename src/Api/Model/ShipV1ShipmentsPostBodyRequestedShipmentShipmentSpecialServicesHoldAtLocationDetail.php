@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocat
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocat
      *
      * @return string
      */
-    public function getLocationId() : string
+    public function getLocationId(): string
     {
         return $this->locationId;
     }
@@ -46,7 +46,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocat
      *
      * @return self
      */
-    public function setLocationId(string $locationId) : self
+    public function setLocationId(string $locationId): self
     {
         $this->initialized['locationId'] = true;
         $this->locationId = $locationId;
@@ -57,7 +57,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocat
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddress
      */
-    public function getLocationContactAndAddress() : ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddress
+    public function getLocationContactAndAddress(): ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddress
     {
         return $this->locationContactAndAddress;
     }
@@ -68,7 +68,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocat
      *
      * @return self
      */
-    public function setLocationContactAndAddress(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddress $locationContactAndAddress) : self
+    public function setLocationContactAndAddress(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocationDetailLocationContactAndAddress $locationContactAndAddress): self
     {
         $this->initialized['locationContactAndAddress'] = true;
         $this->locationContactAndAddress = $locationContactAndAddress;
@@ -79,7 +79,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocat
      *
      * @return string
      */
-    public function getLocationType() : string
+    public function getLocationType(): string
     {
         return $this->locationType;
     }
@@ -90,7 +90,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesHoldAtLocat
      *
      * @return self
      */
-    public function setLocationType(string $locationType) : self
+    public function setLocationType(string $locationType): self
     {
         $this->initialized['locationType'] = true;
         $this->locationType = $locationType;

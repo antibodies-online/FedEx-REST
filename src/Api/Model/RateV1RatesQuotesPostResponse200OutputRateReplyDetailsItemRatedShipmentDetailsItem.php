@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -143,7 +143,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return string
      */
-    public function getRateType() : string
+    public function getRateType(): string
     {
         return $this->rateType;
     }
@@ -154,7 +154,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setRateType(string $rateType) : self
+    public function setRateType(string $rateType): self
     {
         $this->initialized['rateType'] = true;
         $this->rateType = $rateType;
@@ -165,7 +165,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return string
      */
-    public function getRatedWeightMethod() : string
+    public function getRatedWeightMethod(): string
     {
         return $this->ratedWeightMethod;
     }
@@ -176,7 +176,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setRatedWeightMethod(string $ratedWeightMethod) : self
+    public function setRatedWeightMethod(string $ratedWeightMethod): self
     {
         $this->initialized['ratedWeightMethod'] = true;
         $this->ratedWeightMethod = $ratedWeightMethod;
@@ -187,7 +187,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return float
      */
-    public function getTotalDutiesTaxesAndFees() : float
+    public function getTotalDutiesTaxesAndFees(): float
     {
         return $this->totalDutiesTaxesAndFees;
     }
@@ -198,7 +198,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTotalDutiesTaxesAndFees(float $totalDutiesTaxesAndFees) : self
+    public function setTotalDutiesTaxesAndFees(float $totalDutiesTaxesAndFees): self
     {
         $this->initialized['totalDutiesTaxesAndFees'] = true;
         $this->totalDutiesTaxesAndFees = $totalDutiesTaxesAndFees;
@@ -209,7 +209,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return float
      */
-    public function getTotalDiscounts() : float
+    public function getTotalDiscounts(): float
     {
         return $this->totalDiscounts;
     }
@@ -220,7 +220,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTotalDiscounts(float $totalDiscounts) : self
+    public function setTotalDiscounts(float $totalDiscounts): self
     {
         $this->initialized['totalDiscounts'] = true;
         $this->totalDiscounts = $totalDiscounts;
@@ -231,7 +231,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return float
      */
-    public function getTotalDutiesAndTaxes() : float
+    public function getTotalDutiesAndTaxes(): float
     {
         return $this->totalDutiesAndTaxes;
     }
@@ -242,7 +242,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTotalDutiesAndTaxes(float $totalDutiesAndTaxes) : self
+    public function setTotalDutiesAndTaxes(float $totalDutiesAndTaxes): self
     {
         $this->initialized['totalDutiesAndTaxes'] = true;
         $this->totalDutiesAndTaxes = $totalDutiesAndTaxes;
@@ -253,7 +253,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemVariableHandlingCharges
      */
-    public function getVariableHandlingCharges() : RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemVariableHandlingCharges
+    public function getVariableHandlingCharges(): RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemVariableHandlingCharges
     {
         return $this->variableHandlingCharges;
     }
@@ -264,7 +264,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setVariableHandlingCharges(RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemVariableHandlingCharges $variableHandlingCharges) : self
+    public function setVariableHandlingCharges(RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemVariableHandlingCharges $variableHandlingCharges): self
     {
         $this->initialized['variableHandlingCharges'] = true;
         $this->variableHandlingCharges = $variableHandlingCharges;
@@ -275,7 +275,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return list<RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemEdtChargesItem>
      */
-    public function getEdtCharges() : array
+    public function getEdtCharges(): array
     {
         return $this->edtCharges;
     }
@@ -286,7 +286,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setEdtCharges(array $edtCharges) : self
+    public function setEdtCharges(array $edtCharges): self
     {
         $this->initialized['edtCharges'] = true;
         $this->edtCharges = $edtCharges;
@@ -297,7 +297,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return float
      */
-    public function getTotalAncillaryFeesAndTaxes() : float
+    public function getTotalAncillaryFeesAndTaxes(): float
     {
         return $this->totalAncillaryFeesAndTaxes;
     }
@@ -308,7 +308,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTotalAncillaryFeesAndTaxes(float $totalAncillaryFeesAndTaxes) : self
+    public function setTotalAncillaryFeesAndTaxes(float $totalAncillaryFeesAndTaxes): self
     {
         $this->initialized['totalAncillaryFeesAndTaxes'] = true;
         $this->totalAncillaryFeesAndTaxes = $totalAncillaryFeesAndTaxes;
@@ -319,7 +319,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return list<RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemRatedPackagesItem>
      */
-    public function getRatedPackages() : array
+    public function getRatedPackages(): array
     {
         return $this->ratedPackages;
     }
@@ -330,7 +330,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setRatedPackages(array $ratedPackages) : self
+    public function setRatedPackages(array $ratedPackages): self
     {
         $this->initialized['ratedPackages'] = true;
         $this->ratedPackages = $ratedPackages;
@@ -341,7 +341,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return float
      */
-    public function getTotalNetFedExCharge() : float
+    public function getTotalNetFedExCharge(): float
     {
         return $this->totalNetFedExCharge;
     }
@@ -352,7 +352,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTotalNetFedExCharge(float $totalNetFedExCharge) : self
+    public function setTotalNetFedExCharge(float $totalNetFedExCharge): self
     {
         $this->initialized['totalNetFedExCharge'] = true;
         $this->totalNetFedExCharge = $totalNetFedExCharge;
@@ -363,7 +363,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return string
      */
-    public function getQuoteNumber() : string
+    public function getQuoteNumber(): string
     {
         return $this->quoteNumber;
     }
@@ -374,7 +374,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setQuoteNumber(string $quoteNumber) : self
+    public function setQuoteNumber(string $quoteNumber): self
     {
         $this->initialized['quoteNumber'] = true;
         $this->quoteNumber = $quoteNumber;
@@ -385,7 +385,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return list<RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentLegRateDetailsItem>
      */
-    public function getShipmentLegRateDetails() : array
+    public function getShipmentLegRateDetails(): array
     {
         return $this->shipmentLegRateDetails;
     }
@@ -396,7 +396,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setShipmentLegRateDetails(array $shipmentLegRateDetails) : self
+    public function setShipmentLegRateDetails(array $shipmentLegRateDetails): self
     {
         $this->initialized['shipmentLegRateDetails'] = true;
         $this->shipmentLegRateDetails = $shipmentLegRateDetails;
@@ -407,7 +407,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return string
      */
-    public function getFreightChargeBasis() : string
+    public function getFreightChargeBasis(): string
     {
         return $this->freightChargeBasis;
     }
@@ -418,7 +418,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setFreightChargeBasis(string $freightChargeBasis) : self
+    public function setFreightChargeBasis(string $freightChargeBasis): self
     {
         $this->initialized['freightChargeBasis'] = true;
         $this->freightChargeBasis = $freightChargeBasis;
@@ -429,7 +429,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemTotalVariableHandlingCharges
      */
-    public function getTotalVariableHandlingCharges() : RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemTotalVariableHandlingCharges
+    public function getTotalVariableHandlingCharges(): RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemTotalVariableHandlingCharges
     {
         return $this->totalVariableHandlingCharges;
     }
@@ -440,7 +440,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTotalVariableHandlingCharges(RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemTotalVariableHandlingCharges $totalVariableHandlingCharges) : self
+    public function setTotalVariableHandlingCharges(RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemTotalVariableHandlingCharges $totalVariableHandlingCharges): self
     {
         $this->initialized['totalVariableHandlingCharges'] = true;
         $this->totalVariableHandlingCharges = $totalVariableHandlingCharges;
@@ -451,7 +451,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return float
      */
-    public function getTotalVatCharge() : float
+    public function getTotalVatCharge(): float
     {
         return $this->totalVatCharge;
     }
@@ -462,7 +462,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTotalVatCharge(float $totalVatCharge) : self
+    public function setTotalVatCharge(float $totalVatCharge): self
     {
         $this->initialized['totalVatCharge'] = true;
         $this->totalVatCharge = $totalVatCharge;
@@ -473,7 +473,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return list<RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemAncillaryFeesAndTaxesItem>
      */
-    public function getAncillaryFeesAndTaxes() : array
+    public function getAncillaryFeesAndTaxes(): array
     {
         return $this->ancillaryFeesAndTaxes;
     }
@@ -484,7 +484,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setAncillaryFeesAndTaxes(array $ancillaryFeesAndTaxes) : self
+    public function setAncillaryFeesAndTaxes(array $ancillaryFeesAndTaxes): self
     {
         $this->initialized['ancillaryFeesAndTaxes'] = true;
         $this->ancillaryFeesAndTaxes = $ancillaryFeesAndTaxes;
@@ -495,7 +495,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return list<RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemPreferredEdtChargesItem>
      */
-    public function getPreferredEdtCharges() : array
+    public function getPreferredEdtCharges(): array
     {
         return $this->preferredEdtCharges;
     }
@@ -506,7 +506,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setPreferredEdtCharges(array $preferredEdtCharges) : self
+    public function setPreferredEdtCharges(array $preferredEdtCharges): self
     {
         $this->initialized['preferredEdtCharges'] = true;
         $this->preferredEdtCharges = $preferredEdtCharges;
@@ -517,7 +517,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return float
      */
-    public function getTotalNetCharge() : float
+    public function getTotalNetCharge(): float
     {
         return $this->totalNetCharge;
     }
@@ -528,7 +528,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTotalNetCharge(float $totalNetCharge) : self
+    public function setTotalNetCharge(float $totalNetCharge): self
     {
         $this->initialized['totalNetCharge'] = true;
         $this->totalNetCharge = $totalNetCharge;
@@ -539,7 +539,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return float
      */
-    public function getTotalBaseCharge() : float
+    public function getTotalBaseCharge(): float
     {
         return $this->totalBaseCharge;
     }
@@ -550,7 +550,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTotalBaseCharge(float $totalBaseCharge) : self
+    public function setTotalBaseCharge(float $totalBaseCharge): self
     {
         $this->initialized['totalBaseCharge'] = true;
         $this->totalBaseCharge = $totalBaseCharge;
@@ -561,7 +561,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return float
      */
-    public function getTotalNetChargeWithDutiesAndTaxes() : float
+    public function getTotalNetChargeWithDutiesAndTaxes(): float
     {
         return $this->totalNetChargeWithDutiesAndTaxes;
     }
@@ -572,7 +572,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTotalNetChargeWithDutiesAndTaxes(float $totalNetChargeWithDutiesAndTaxes) : self
+    public function setTotalNetChargeWithDutiesAndTaxes(float $totalNetChargeWithDutiesAndTaxes): self
     {
         $this->initialized['totalNetChargeWithDutiesAndTaxes'] = true;
         $this->totalNetChargeWithDutiesAndTaxes = $totalNetChargeWithDutiesAndTaxes;
@@ -583,7 +583,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentRateDetail
      */
-    public function getShipmentRateDetail() : RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentRateDetail
+    public function getShipmentRateDetail(): RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentRateDetail
     {
         return $this->shipmentRateDetail;
     }
@@ -594,7 +594,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setShipmentRateDetail(RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentRateDetail $shipmentRateDetail) : self
+    public function setShipmentRateDetail(RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentRateDetail $shipmentRateDetail): self
     {
         $this->initialized['shipmentRateDetail'] = true;
         $this->shipmentRateDetail = $shipmentRateDetail;

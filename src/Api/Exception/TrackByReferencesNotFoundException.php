@@ -18,11 +18,11 @@ class TrackByReferencesNotFoundException extends NotFoundException
         $this->trackV1ReferencenumbersPostResponse404 = $trackV1ReferencenumbersPostResponse404;
         $this->response = $response;
     }
-    public function getTrackV1ReferencenumbersPostResponse404() : \AntibodiesOnline\FedEx\Api\Model\TrackV1ReferencenumbersPostResponse404
+    public function getTrackV1ReferencenumbersPostResponse404(): \AntibodiesOnline\FedEx\Api\Model\TrackV1ReferencenumbersPostResponse404
     {
         return $this->trackV1ReferencenumbersPostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPayment 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -30,7 +30,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPayment 
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayor
      */
-    public function getPayor() : AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayor
+    public function getPayor(): AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayor
     {
         return $this->payor;
     }
@@ -41,7 +41,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPayment 
      *
      * @return self
      */
-    public function setPayor(AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayor $payor) : self
+    public function setPayor(AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPaymentPayor $payor): self
     {
         $this->initialized['payor'] = true;
         $this->payor = $payor;
@@ -53,7 +53,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPayment 
     *
     * @return string
     */
-    public function getPaymentType() : string
+    public function getPaymentType(): string
     {
         return $this->paymentType;
     }
@@ -65,7 +65,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPayment 
     *
     * @return self
     */
-    public function setPaymentType(string $paymentType) : self
+    public function setPaymentType(string $paymentType): self
     {
         $this->initialized['paymentType'] = true;
         $this->paymentType = $paymentType;

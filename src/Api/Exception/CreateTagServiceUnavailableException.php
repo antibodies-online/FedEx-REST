@@ -18,11 +18,11 @@ class CreateTagServiceUnavailableException extends ServiceUnavailableException
         $this->shipV1ShipmentsTagPostResponse503 = $shipV1ShipmentsTagPostResponse503;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsTagPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagPostResponse503
+    public function getShipV1ShipmentsTagPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagPostResponse503
     {
         return $this->shipV1ShipmentsTagPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

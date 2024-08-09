@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return list<AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContactAncillaryDetailEmailAddressesItem>
      */
-    public function getEmailAddresses() : array
+    public function getEmailAddresses(): array
     {
         return $this->emailAddresses;
     }
@@ -58,7 +58,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setEmailAddresses(array $emailAddresses) : self
+    public function setEmailAddresses(array $emailAddresses): self
     {
         $this->initialized['emailAddresses'] = true;
         $this->emailAddresses = $emailAddresses;
@@ -69,7 +69,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return string
      */
-    public function getPrefix() : string
+    public function getPrefix(): string
     {
         return $this->prefix;
     }
@@ -80,7 +80,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setPrefix(string $prefix) : self
+    public function setPrefix(string $prefix): self
     {
         $this->initialized['prefix'] = true;
         $this->prefix = $prefix;
@@ -91,7 +91,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return list<AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContactAncillaryDetailPhoneNumberDetailsItem>
      */
-    public function getPhoneNumberDetails() : array
+    public function getPhoneNumberDetails(): array
     {
         return $this->phoneNumberDetails;
     }
@@ -102,7 +102,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setPhoneNumberDetails(array $phoneNumberDetails) : self
+    public function setPhoneNumberDetails(array $phoneNumberDetails): self
     {
         $this->initialized['phoneNumberDetails'] = true;
         $this->phoneNumberDetails = $phoneNumberDetails;
@@ -113,7 +113,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContactAncillaryDetailCompanyName
      */
-    public function getCompanyName() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContactAncillaryDetailCompanyName
+    public function getCompanyName(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContactAncillaryDetailCompanyName
     {
         return $this->companyName;
     }
@@ -124,7 +124,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setCompanyName(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContactAncillaryDetailCompanyName $companyName) : self
+    public function setCompanyName(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContactAncillaryDetailCompanyName $companyName): self
     {
         $this->initialized['companyName'] = true;
         $this->companyName = $companyName;
@@ -135,7 +135,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -146,7 +146,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;

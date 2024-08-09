@@ -18,11 +18,11 @@ class CancelTagInternalServerErrorException extends InternalServerErrorException
         $this->shipV1ShipmentsTagCancelShipmentidPutResponse500 = $shipV1ShipmentsTagCancelShipmentidPutResponse500;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsTagCancelShipmentidPutResponse500() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagCancelShipmentidPutResponse500
+    public function getShipV1ShipmentsTagCancelShipmentidPutResponse500(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagCancelShipmentidPutResponse500
     {
         return $this->shipV1ShipmentsTagCancelShipmentidPutResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

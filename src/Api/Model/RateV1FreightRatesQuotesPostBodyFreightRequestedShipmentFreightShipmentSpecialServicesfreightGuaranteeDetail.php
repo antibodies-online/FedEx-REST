@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpe
      *
      * @return string
      */
-    public function getFreightGuaranteeType() : string
+    public function getFreightGuaranteeType(): string
     {
         return $this->freightGuaranteeType;
     }
@@ -40,7 +40,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpe
      *
      * @return self
      */
-    public function setFreightGuaranteeType(string $freightGuaranteeType) : self
+    public function setFreightGuaranteeType(string $freightGuaranteeType): self
     {
         $this->initialized['freightGuaranteeType'] = true;
         $this->freightGuaranteeType = $freightGuaranteeType;
@@ -51,7 +51,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpe
      *
      * @return string
      */
-    public function getGuaranteeTimestamp() : string
+    public function getGuaranteeTimestamp(): string
     {
         return $this->guaranteeTimestamp;
     }
@@ -62,7 +62,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentSpe
      *
      * @return self
      */
-    public function setGuaranteeTimestamp(string $guaranteeTimestamp) : self
+    public function setGuaranteeTimestamp(string $guaranteeTimestamp): self
     {
         $this->initialized['guaranteeTimestamp'] = true;
         $this->guaranteeTimestamp = $guaranteeTimestamp;

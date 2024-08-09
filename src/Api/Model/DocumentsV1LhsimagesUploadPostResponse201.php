@@ -8,7 +8,7 @@ class DocumentsV1LhsimagesUploadPostResponse201 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class DocumentsV1LhsimagesUploadPostResponse201 extends \ArrayObject
      *
      * @return DocumentsV1LhsimagesUploadPostResponse201Output
      */
-    public function getOutput() : DocumentsV1LhsimagesUploadPostResponse201Output
+    public function getOutput(): DocumentsV1LhsimagesUploadPostResponse201Output
     {
         return $this->output;
     }
@@ -40,7 +40,7 @@ class DocumentsV1LhsimagesUploadPostResponse201 extends \ArrayObject
      *
      * @return self
      */
-    public function setOutput(DocumentsV1LhsimagesUploadPostResponse201Output $output) : self
+    public function setOutput(DocumentsV1LhsimagesUploadPostResponse201Output $output): self
     {
         $this->initialized['output'] = true;
         $this->output = $output;
@@ -51,7 +51,7 @@ class DocumentsV1LhsimagesUploadPostResponse201 extends \ArrayObject
      *
      * @return string
      */
-    public function getCustomerTransactionId() : string
+    public function getCustomerTransactionId(): string
     {
         return $this->customerTransactionId;
     }
@@ -62,7 +62,7 @@ class DocumentsV1LhsimagesUploadPostResponse201 extends \ArrayObject
      *
      * @return self
      */
-    public function setCustomerTransactionId(string $customerTransactionId) : self
+    public function setCustomerTransactionId(string $customerTransactionId): self
     {
         $this->initialized['customerTransactionId'] = true;
         $this->customerTransactionId = $customerTransactionId;

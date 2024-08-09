@@ -8,7 +8,7 @@ class TrackV1ReferencenumbersPostResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class TrackV1ReferencenumbersPostResponse200Output extends \ArrayObject
      *
      * @return list<TrackV1ReferencenumbersPostResponse200OutputCxsErrorsItem>
      */
-    public function getCxsErrors() : array
+    public function getCxsErrors(): array
     {
         return $this->cxsErrors;
     }
@@ -52,7 +52,7 @@ class TrackV1ReferencenumbersPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setCxsErrors(array $cxsErrors) : self
+    public function setCxsErrors(array $cxsErrors): self
     {
         $this->initialized['cxsErrors'] = true;
         $this->cxsErrors = $cxsErrors;
@@ -63,7 +63,7 @@ class TrackV1ReferencenumbersPostResponse200Output extends \ArrayObject
      *
      * @return list<TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItem>
      */
-    public function getCompleteTrackResults() : array
+    public function getCompleteTrackResults(): array
     {
         return $this->completeTrackResults;
     }
@@ -74,7 +74,7 @@ class TrackV1ReferencenumbersPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setCompleteTrackResults(array $completeTrackResults) : self
+    public function setCompleteTrackResults(array $completeTrackResults): self
     {
         $this->initialized['completeTrackResults'] = true;
         $this->completeTrackResults = $completeTrackResults;
@@ -85,7 +85,7 @@ class TrackV1ReferencenumbersPostResponse200Output extends \ArrayObject
      *
      * @return list<TrackV1ReferencenumbersPostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -96,7 +96,7 @@ class TrackV1ReferencenumbersPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;
@@ -107,7 +107,7 @@ class TrackV1ReferencenumbersPostResponse200Output extends \ArrayObject
      *
      * @return bool
      */
-    public function getSuccessful() : bool
+    public function getSuccessful(): bool
     {
         return $this->successful;
     }
@@ -118,7 +118,7 @@ class TrackV1ReferencenumbersPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setSuccessful(bool $successful) : self
+    public function setSuccessful(bool $successful): self
     {
         $this->initialized['successful'] = true;
         $this->successful = $successful;

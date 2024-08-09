@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInv
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInv
      *
      * @return ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailDocumentFormatDispositionsItemEMailDetail
      */
-    public function getEMailDetail() : ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailDocumentFormatDispositionsItemEMailDetail
+    public function getEMailDetail(): ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailDocumentFormatDispositionsItemEMailDetail
     {
         return $this->eMailDetail;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInv
      *
      * @return self
      */
-    public function setEMailDetail(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailDocumentFormatDispositionsItemEMailDetail $eMailDetail) : self
+    public function setEMailDetail(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInvoiceCertificationOfOriginDetailDocumentFormatDispositionsItemEMailDetail $eMailDetail): self
     {
         $this->initialized['eMailDetail'] = true;
         $this->eMailDetail = $eMailDetail;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInv
      *
      * @return string
      */
-    public function getDispositionType() : string
+    public function getDispositionType(): string
     {
         return $this->dispositionType;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationUsmcaCommercialInv
      *
      * @return self
      */
-    public function setDispositionType(string $dispositionType) : self
+    public function setDispositionType(string $dispositionType): self
     {
         $this->initialized['dispositionType'] = true;
         $this->dispositionType = $dispositionType;

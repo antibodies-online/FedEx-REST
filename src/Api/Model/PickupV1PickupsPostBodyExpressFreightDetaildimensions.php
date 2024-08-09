@@ -8,7 +8,7 @@ class PickupV1PickupsPostBodyExpressFreightDetaildimensions extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -44,7 +44,7 @@ class PickupV1PickupsPostBodyExpressFreightDetaildimensions extends \ArrayObject
     *
     * @return int
     */
-    public function getLength() : int
+    public function getLength(): int
     {
         return $this->length;
     }
@@ -56,7 +56,7 @@ class PickupV1PickupsPostBodyExpressFreightDetaildimensions extends \ArrayObject
     *
     * @return self
     */
-    public function setLength(int $length) : self
+    public function setLength(int $length): self
     {
         $this->initialized['length'] = true;
         $this->length = $length;
@@ -68,7 +68,7 @@ class PickupV1PickupsPostBodyExpressFreightDetaildimensions extends \ArrayObject
     *
     * @return int
     */
-    public function getWidth() : int
+    public function getWidth(): int
     {
         return $this->width;
     }
@@ -80,7 +80,7 @@ class PickupV1PickupsPostBodyExpressFreightDetaildimensions extends \ArrayObject
     *
     * @return self
     */
-    public function setWidth(int $width) : self
+    public function setWidth(int $width): self
     {
         $this->initialized['width'] = true;
         $this->width = $width;
@@ -91,7 +91,7 @@ class PickupV1PickupsPostBodyExpressFreightDetaildimensions extends \ArrayObject
      *
      * @return string
      */
-    public function getUnits() : string
+    public function getUnits(): string
     {
         return $this->units;
     }
@@ -102,7 +102,7 @@ class PickupV1PickupsPostBodyExpressFreightDetaildimensions extends \ArrayObject
      *
      * @return self
      */
-    public function setUnits(string $units) : self
+    public function setUnits(string $units): self
     {
         $this->initialized['units'] = true;
         $this->units = $units;
@@ -113,7 +113,7 @@ class PickupV1PickupsPostBodyExpressFreightDetaildimensions extends \ArrayObject
      *
      * @return int
      */
-    public function getHeight() : int
+    public function getHeight(): int
     {
         return $this->height;
     }
@@ -124,7 +124,7 @@ class PickupV1PickupsPostBodyExpressFreightDetaildimensions extends \ArrayObject
      *
      * @return self
      */
-    public function setHeight(int $height) : self
+    public function setHeight(int $height): self
     {
         $this->initialized['height'] = true;
         $this->height = $height;

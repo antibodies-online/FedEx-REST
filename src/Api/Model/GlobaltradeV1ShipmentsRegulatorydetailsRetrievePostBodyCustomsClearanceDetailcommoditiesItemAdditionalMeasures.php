@@ -8,7 +8,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return string
      */
-    public function getUom() : string
+    public function getUom(): string
     {
         return $this->uom;
     }
@@ -40,7 +40,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return self
      */
-    public function setUom(string $uom) : self
+    public function setUom(string $uom): self
     {
         $this->initialized['uom'] = true;
         $this->uom = $uom;
@@ -51,7 +51,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return float
      */
-    public function getQuantity() : float
+    public function getQuantity(): float
     {
         return $this->quantity;
     }
@@ -62,7 +62,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyCustomsClearanceDet
      *
      * @return self
      */
-    public function setQuantity(float $quantity) : self
+    public function setQuantity(float $quantity): self
     {
         $this->initialized['quantity'] = true;
         $this->quantity = $quantity;

@@ -8,7 +8,7 @@ class LocationV1LocationsPostResponse200OutputtrackingInfo extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class LocationV1LocationsPostResponse200OutputtrackingInfo extends \ArrayObject
      *
      * @return string
      */
-    public function getUniqueTrackingId() : string
+    public function getUniqueTrackingId(): string
     {
         return $this->uniqueTrackingId;
     }
@@ -46,7 +46,7 @@ class LocationV1LocationsPostResponse200OutputtrackingInfo extends \ArrayObject
      *
      * @return self
      */
-    public function setUniqueTrackingId(string $uniqueTrackingId) : self
+    public function setUniqueTrackingId(string $uniqueTrackingId): self
     {
         $this->initialized['uniqueTrackingId'] = true;
         $this->uniqueTrackingId = $uniqueTrackingId;
@@ -57,7 +57,7 @@ class LocationV1LocationsPostResponse200OutputtrackingInfo extends \ArrayObject
      *
      * @return string
      */
-    public function getTrackingNumber() : string
+    public function getTrackingNumber(): string
     {
         return $this->trackingNumber;
     }
@@ -68,7 +68,7 @@ class LocationV1LocationsPostResponse200OutputtrackingInfo extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingNumber(string $trackingNumber) : self
+    public function setTrackingNumber(string $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;
@@ -79,7 +79,7 @@ class LocationV1LocationsPostResponse200OutputtrackingInfo extends \ArrayObject
      *
      * @return string
      */
-    public function getShipDate() : string
+    public function getShipDate(): string
     {
         return $this->shipDate;
     }
@@ -90,7 +90,7 @@ class LocationV1LocationsPostResponse200OutputtrackingInfo extends \ArrayObject
      *
      * @return self
      */
-    public function setShipDate(string $shipDate) : self
+    public function setShipDate(string $shipDate): self
     {
         $this->initialized['shipDate'] = true;
         $this->shipDate = $shipDate;

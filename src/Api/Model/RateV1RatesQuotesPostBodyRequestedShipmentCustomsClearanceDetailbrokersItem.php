@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBroker
      */
-    public function getBroker() : RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBroker
+    public function getBroker(): RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBroker
     {
         return $this->broker;
     }
@@ -70,7 +70,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return self
      */
-    public function setBroker(RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBroker $broker) : self
+    public function setBroker(RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBroker $broker): self
     {
         $this->initialized['broker'] = true;
         $this->broker = $broker;
@@ -81,7 +81,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -92,7 +92,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -103,7 +103,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return string
      */
-    public function getBrokerCommitTimestamp() : string
+    public function getBrokerCommitTimestamp(): string
     {
         return $this->brokerCommitTimestamp;
     }
@@ -114,7 +114,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return self
      */
-    public function setBrokerCommitTimestamp(string $brokerCommitTimestamp) : self
+    public function setBrokerCommitTimestamp(string $brokerCommitTimestamp): self
     {
         $this->initialized['brokerCommitTimestamp'] = true;
         $this->brokerCommitTimestamp = $brokerCommitTimestamp;
@@ -125,7 +125,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return string
      */
-    public function getBrokerCommitDayOfWeek() : string
+    public function getBrokerCommitDayOfWeek(): string
     {
         return $this->brokerCommitDayOfWeek;
     }
@@ -136,7 +136,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return self
      */
-    public function setBrokerCommitDayOfWeek(string $brokerCommitDayOfWeek) : self
+    public function setBrokerCommitDayOfWeek(string $brokerCommitDayOfWeek): self
     {
         $this->initialized['brokerCommitDayOfWeek'] = true;
         $this->brokerCommitDayOfWeek = $brokerCommitDayOfWeek;
@@ -147,7 +147,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return string
      */
-    public function getBrokerLocationId() : string
+    public function getBrokerLocationId(): string
     {
         return $this->brokerLocationId;
     }
@@ -158,7 +158,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return self
      */
-    public function setBrokerLocationId(string $brokerLocationId) : self
+    public function setBrokerLocationId(string $brokerLocationId): self
     {
         $this->initialized['brokerLocationId'] = true;
         $this->brokerLocationId = $brokerLocationId;
@@ -169,7 +169,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBrokerAddress
      */
-    public function getBrokerAddress() : RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBrokerAddress
+    public function getBrokerAddress(): RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBrokerAddress
     {
         return $this->brokerAddress;
     }
@@ -180,7 +180,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return self
      */
-    public function setBrokerAddress(RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBrokerAddress $brokerAddress) : self
+    public function setBrokerAddress(RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItemBrokerAddress $brokerAddress): self
     {
         $this->initialized['brokerAddress'] = true;
         $this->brokerAddress = $brokerAddress;
@@ -191,7 +191,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return int
      */
-    public function getBrokerToDestinationDays() : int
+    public function getBrokerToDestinationDays(): int
     {
         return $this->brokerToDestinationDays;
     }
@@ -202,7 +202,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersIte
      *
      * @return self
      */
-    public function setBrokerToDestinationDays(int $brokerToDestinationDays) : self
+    public function setBrokerToDestinationDays(int $brokerToDestinationDays): self
     {
         $this->initialized['brokerToDestinationDays'] = true;
         $this->brokerToDestinationDays = $brokerToDestinationDays;

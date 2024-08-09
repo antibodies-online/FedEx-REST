@@ -8,7 +8,7 @@ class ShipV1ShipmentsResultsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1ShipmentsResultsPostBody extends \ArrayObject
      *
      * @return ShipV1ShipmentsResultsPostBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1ShipmentsResultsPostBodyAccountNumber
+    public function getAccountNumber(): ShipV1ShipmentsResultsPostBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -40,7 +40,7 @@ class ShipV1ShipmentsResultsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1ShipmentsResultsPostBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1ShipmentsResultsPostBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -51,7 +51,7 @@ class ShipV1ShipmentsResultsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getJobId() : string
+    public function getJobId(): string
     {
         return $this->jobId;
     }
@@ -62,7 +62,7 @@ class ShipV1ShipmentsResultsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setJobId(string $jobId) : self
+    public function setJobId(string $jobId): self
     {
         $this->initialized['jobId'] = true;
         $this->jobId = $jobId;

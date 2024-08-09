@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return string
      */
-    public function getEndUser() : string
+    public function getEndUser(): string
     {
         return $this->endUser;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setEndUser(string $endUser) : self
+    public function setEndUser(string $endUser): self
     {
         $this->initialized['endUser'] = true;
         $this->endUser = $endUser;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return string
      */
-    public function getStatementTypes() : string
+    public function getStatementTypes(): string
     {
         return $this->statementTypes;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setStatementTypes(string $statementTypes) : self
+    public function setStatementTypes(string $statementTypes): self
     {
         $this->initialized['statementTypes'] = true;
         $this->statementTypes = $statementTypes;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return list<string>
      */
-    public function getDestinationCountries() : array
+    public function getDestinationCountries(): array
     {
         return $this->destinationCountries;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentCustomsCl
      *
      * @return self
      */
-    public function setDestinationCountries(array $destinationCountries) : self
+    public function setDestinationCountries(array $destinationCountries): self
     {
         $this->initialized['destinationCountries'] = true;
         $this->destinationCountries = $destinationCountries;

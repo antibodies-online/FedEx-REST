@@ -8,7 +8,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getLocationId() : string
+    public function getLocationId(): string
     {
         return $this->locationId;
     }
@@ -40,7 +40,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setLocationId(string $locationId) : self
+    public function setLocationId(string $locationId): self
     {
         $this->initialized['locationId'] = true;
         $this->locationId = $locationId;
@@ -51,7 +51,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemOriginLocationlocationContactAndAddress
      */
-    public function getLocationContactAndAddress() : TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemOriginLocationlocationContactAndAddress
+    public function getLocationContactAndAddress(): TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemOriginLocationlocationContactAndAddress
     {
         return $this->locationContactAndAddress;
     }
@@ -62,7 +62,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setLocationContactAndAddress(TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemOriginLocationlocationContactAndAddress $locationContactAndAddress) : self
+    public function setLocationContactAndAddress(TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemOriginLocationlocationContactAndAddress $locationContactAndAddress): self
     {
         $this->initialized['locationContactAndAddress'] = true;
         $this->locationContactAndAddress = $locationContactAndAddress;

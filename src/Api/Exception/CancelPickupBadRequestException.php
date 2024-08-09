@@ -18,11 +18,11 @@ class CancelPickupBadRequestException extends BadRequestException
         $this->pickupV1PickupsCancelPutResponse400 = $pickupV1PickupsCancelPutResponse400;
         $this->response = $response;
     }
-    public function getPickupV1PickupsCancelPutResponse400() : \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsCancelPutResponse400
+    public function getPickupV1PickupsCancelPutResponse400(): \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsCancelPutResponse400
     {
         return $this->pickupV1PickupsCancelPutResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

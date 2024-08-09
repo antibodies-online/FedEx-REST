@@ -8,7 +8,7 @@ class LocationV1LocationsPostBodyPackageAttributesItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class LocationV1LocationsPostBodyPackageAttributesItem extends \ArrayObject
      *
      * @return LocationV1LocationsPostBodyPackageAttributesItemWeight
      */
-    public function getWeight() : LocationV1LocationsPostBodyPackageAttributesItemWeight
+    public function getWeight(): LocationV1LocationsPostBodyPackageAttributesItemWeight
     {
         return $this->weight;
     }
@@ -40,7 +40,7 @@ class LocationV1LocationsPostBodyPackageAttributesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setWeight(LocationV1LocationsPostBodyPackageAttributesItemWeight $weight) : self
+    public function setWeight(LocationV1LocationsPostBodyPackageAttributesItemWeight $weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -51,7 +51,7 @@ class LocationV1LocationsPostBodyPackageAttributesItem extends \ArrayObject
      *
      * @return LocationV1LocationsPostBodyPackageAttributesItemDimensions
      */
-    public function getDimensions() : LocationV1LocationsPostBodyPackageAttributesItemDimensions
+    public function getDimensions(): LocationV1LocationsPostBodyPackageAttributesItemDimensions
     {
         return $this->dimensions;
     }
@@ -62,7 +62,7 @@ class LocationV1LocationsPostBodyPackageAttributesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDimensions(LocationV1LocationsPostBodyPackageAttributesItemDimensions $dimensions) : self
+    public function setDimensions(LocationV1LocationsPostBodyPackageAttributesItemDimensions $dimensions): self
     {
         $this->initialized['dimensions'] = true;
         $this->dimensions = $dimensions;

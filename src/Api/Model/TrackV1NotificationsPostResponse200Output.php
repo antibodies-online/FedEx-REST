@@ -8,7 +8,7 @@ class TrackV1NotificationsPostResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class TrackV1NotificationsPostResponse200Output extends \ArrayObject
      *
      * @return TrackV1NotificationsPostResponse200OutputTrackingNumberInfo
      */
-    public function getTrackingNumberInfo() : TrackV1NotificationsPostResponse200OutputTrackingNumberInfo
+    public function getTrackingNumberInfo(): TrackV1NotificationsPostResponse200OutputTrackingNumberInfo
     {
         return $this->trackingNumberInfo;
     }
@@ -52,7 +52,7 @@ class TrackV1NotificationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingNumberInfo(TrackV1NotificationsPostResponse200OutputTrackingNumberInfo $trackingNumberInfo) : self
+    public function setTrackingNumberInfo(TrackV1NotificationsPostResponse200OutputTrackingNumberInfo $trackingNumberInfo): self
     {
         $this->initialized['trackingNumberInfo'] = true;
         $this->trackingNumberInfo = $trackingNumberInfo;
@@ -63,7 +63,7 @@ class TrackV1NotificationsPostResponse200Output extends \ArrayObject
      *
      * @return TrackV1NotificationsPostResponse200OutputDestinationAddress
      */
-    public function getDestinationAddress() : TrackV1NotificationsPostResponse200OutputDestinationAddress
+    public function getDestinationAddress(): TrackV1NotificationsPostResponse200OutputDestinationAddress
     {
         return $this->destinationAddress;
     }
@@ -74,7 +74,7 @@ class TrackV1NotificationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setDestinationAddress(TrackV1NotificationsPostResponse200OutputDestinationAddress $destinationAddress) : self
+    public function setDestinationAddress(TrackV1NotificationsPostResponse200OutputDestinationAddress $destinationAddress): self
     {
         $this->initialized['destinationAddress'] = true;
         $this->destinationAddress = $destinationAddress;
@@ -85,7 +85,7 @@ class TrackV1NotificationsPostResponse200Output extends \ArrayObject
      *
      * @return list<list<string>>
      */
-    public function getRecipientDetails() : array
+    public function getRecipientDetails(): array
     {
         return $this->recipientDetails;
     }
@@ -96,7 +96,7 @@ class TrackV1NotificationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setRecipientDetails(array $recipientDetails) : self
+    public function setRecipientDetails(array $recipientDetails): self
     {
         $this->initialized['recipientDetails'] = true;
         $this->recipientDetails = $recipientDetails;
@@ -107,7 +107,7 @@ class TrackV1NotificationsPostResponse200Output extends \ArrayObject
      *
      * @return list<TrackV1NotificationsPostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -118,7 +118,7 @@ class TrackV1NotificationsPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

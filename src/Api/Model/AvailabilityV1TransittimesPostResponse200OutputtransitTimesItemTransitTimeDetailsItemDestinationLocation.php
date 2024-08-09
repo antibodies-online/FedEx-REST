@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDestinationLocationGeoPositionalCoordinates
      */
-    public function getGeoPositionalCoordinates() : AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDestinationLocationGeoPositionalCoordinates
+    public function getGeoPositionalCoordinates(): AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDestinationLocationGeoPositionalCoordinates
     {
         return $this->geoPositionalCoordinates;
     }
@@ -34,7 +34,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTime
      *
      * @return self
      */
-    public function setGeoPositionalCoordinates(AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDestinationLocationGeoPositionalCoordinates $geoPositionalCoordinates) : self
+    public function setGeoPositionalCoordinates(AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItemDestinationLocationGeoPositionalCoordinates $geoPositionalCoordinates): self
     {
         $this->initialized['geoPositionalCoordinates'] = true;
         $this->geoPositionalCoordinates = $geoPositionalCoordinates;

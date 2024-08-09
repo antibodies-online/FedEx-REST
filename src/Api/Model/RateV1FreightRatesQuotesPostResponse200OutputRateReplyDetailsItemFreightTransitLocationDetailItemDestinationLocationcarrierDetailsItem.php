@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return string
      */
-    public function getCountryRelationshipType() : string
+    public function getCountryRelationshipType(): string
     {
         return $this->countryRelationshipType;
     }
@@ -46,7 +46,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setCountryRelationshipType(string $countryRelationshipType) : self
+    public function setCountryRelationshipType(string $countryRelationshipType): self
     {
         $this->initialized['countryRelationshipType'] = true;
         $this->countryRelationshipType = $countryRelationshipType;
@@ -57,7 +57,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return string
      */
-    public function getCarrierCodeType() : string
+    public function getCarrierCodeType(): string
     {
         return $this->carrierCodeType;
     }
@@ -68,7 +68,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setCarrierCodeType(string $carrierCodeType) : self
+    public function setCarrierCodeType(string $carrierCodeType): self
     {
         $this->initialized['carrierCodeType'] = true;
         $this->carrierCodeType = $carrierCodeType;
@@ -79,7 +79,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemDestinationLocationcarrierDetailsItemLatestDropoffDetails
      */
-    public function getLatestDropoffDetails() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemDestinationLocationcarrierDetailsItemLatestDropoffDetails
+    public function getLatestDropoffDetails(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemDestinationLocationcarrierDetailsItemLatestDropoffDetails
     {
         return $this->latestDropoffDetails;
     }
@@ -90,7 +90,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setLatestDropoffDetails(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemDestinationLocationcarrierDetailsItemLatestDropoffDetails $latestDropoffDetails) : self
+    public function setLatestDropoffDetails(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemDestinationLocationcarrierDetailsItemLatestDropoffDetails $latestDropoffDetails): self
     {
         $this->initialized['latestDropoffDetails'] = true;
         $this->latestDropoffDetails = $latestDropoffDetails;

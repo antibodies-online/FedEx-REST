@@ -8,7 +8,7 @@ class ShipV1EndofdayPostBodyCloseDocumentSpecification extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1EndofdayPostBodyCloseDocumentSpecification extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getCloseDocumentTypes() : array
+    public function getCloseDocumentTypes(): array
     {
         return $this->closeDocumentTypes;
     }
@@ -40,7 +40,7 @@ class ShipV1EndofdayPostBodyCloseDocumentSpecification extends \ArrayObject
      *
      * @return self
      */
-    public function setCloseDocumentTypes(array $closeDocumentTypes) : self
+    public function setCloseDocumentTypes(array $closeDocumentTypes): self
     {
         $this->initialized['closeDocumentTypes'] = true;
         $this->closeDocumentTypes = $closeDocumentTypes;
@@ -51,7 +51,7 @@ class ShipV1EndofdayPostBodyCloseDocumentSpecification extends \ArrayObject
      *
      * @return ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950Detail
      */
-    public function getOp950Detail() : ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950Detail
+    public function getOp950Detail(): ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950Detail
     {
         return $this->op950Detail;
     }
@@ -62,7 +62,7 @@ class ShipV1EndofdayPostBodyCloseDocumentSpecification extends \ArrayObject
      *
      * @return self
      */
-    public function setOp950Detail(ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950Detail $op950Detail) : self
+    public function setOp950Detail(ShipV1EndofdayPostBodyCloseDocumentSpecificationOp950Detail $op950Detail): self
     {
         $this->initialized['op950Detail'] = true;
         $this->op950Detail = $op950Detail;

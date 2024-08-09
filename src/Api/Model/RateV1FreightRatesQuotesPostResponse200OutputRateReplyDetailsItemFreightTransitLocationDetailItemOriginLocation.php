@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationgeoPositionalCoordinates
      */
-    public function getGeoPositionalCoordinates() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationgeoPositionalCoordinates
+    public function getGeoPositionalCoordinates(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationgeoPositionalCoordinates
     {
         return $this->geoPositionalCoordinates;
     }
@@ -82,7 +82,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setGeoPositionalCoordinates(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationgeoPositionalCoordinates $geoPositionalCoordinates) : self
+    public function setGeoPositionalCoordinates(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationgeoPositionalCoordinates $geoPositionalCoordinates): self
     {
         $this->initialized['geoPositionalCoordinates'] = true;
         $this->geoPositionalCoordinates = $geoPositionalCoordinates;
@@ -93,7 +93,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return list<RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationstoreHoursItem>
      */
-    public function getStoreHours() : array
+    public function getStoreHours(): array
     {
         return $this->storeHours;
     }
@@ -104,7 +104,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setStoreHours(array $storeHours) : self
+    public function setStoreHours(array $storeHours): self
     {
         $this->initialized['storeHours'] = true;
         $this->storeHours = $storeHours;
@@ -115,7 +115,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return string
      */
-    public function getLocationId() : string
+    public function getLocationId(): string
     {
         return $this->locationId;
     }
@@ -126,7 +126,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setLocationId(string $locationId) : self
+    public function setLocationId(string $locationId): self
     {
         $this->initialized['locationId'] = true;
         $this->locationId = $locationId;
@@ -137,7 +137,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return string
      */
-    public function getSpecialInstructions() : string
+    public function getSpecialInstructions(): string
     {
         return $this->specialInstructions;
     }
@@ -148,7 +148,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setSpecialInstructions(string $specialInstructions) : self
+    public function setSpecialInstructions(string $specialInstructions): self
     {
         $this->initialized['specialInstructions'] = true;
         $this->specialInstructions = $specialInstructions;
@@ -159,7 +159,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return list<string>
      */
-    public function getLocationAttributeTypes() : array
+    public function getLocationAttributeTypes(): array
     {
         return $this->locationAttributeTypes;
     }
@@ -170,7 +170,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setLocationAttributeTypes(array $locationAttributeTypes) : self
+    public function setLocationAttributeTypes(array $locationAttributeTypes): self
     {
         $this->initialized['locationAttributeTypes'] = true;
         $this->locationAttributeTypes = $locationAttributeTypes;
@@ -181,7 +181,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return string
      */
-    public function getMapURL() : string
+    public function getMapURL(): string
     {
         return $this->mapURL;
     }
@@ -192,7 +192,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setMapURL(string $mapURL) : self
+    public function setMapURL(string $mapURL): self
     {
         $this->initialized['mapURL'] = true;
         $this->mapURL = $mapURL;
@@ -203,7 +203,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return string
      */
-    public function getLocationType() : string
+    public function getLocationType(): string
     {
         return $this->locationType;
     }
@@ -214,7 +214,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setLocationType(string $locationType) : self
+    public function setLocationType(string $locationType): self
     {
         $this->initialized['locationType'] = true;
         $this->locationType = $locationType;
@@ -225,7 +225,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddress
      */
-    public function getContactAndAddress() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddress
+    public function getContactAndAddress(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddress
     {
         return $this->contactAndAddress;
     }
@@ -236,7 +236,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setContactAndAddress(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddress $contactAndAddress) : self
+    public function setContactAndAddress(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcontactAndAddress $contactAndAddress): self
     {
         $this->initialized['contactAndAddress'] = true;
         $this->contactAndAddress = $contactAndAddress;
@@ -247,7 +247,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return list<RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTransitLocationDetailItemOriginLocationcarrierDetailsItem>
      */
-    public function getCarrierDetails() : array
+    public function getCarrierDetails(): array
     {
         return $this->carrierDetails;
     }
@@ -258,7 +258,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setCarrierDetails(array $carrierDetails) : self
+    public function setCarrierDetails(array $carrierDetails): self
     {
         $this->initialized['carrierDetails'] = true;
         $this->carrierDetails = $carrierDetails;

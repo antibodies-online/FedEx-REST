@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOrig
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOrig
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOriginContact
      */
-    public function getContact() : ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOriginContact
+    public function getContact(): ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOriginContact
     {
         return $this->contact;
     }
@@ -40,7 +40,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOrig
      *
      * @return self
      */
-    public function setContact(ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOriginContact $contact) : self
+    public function setContact(ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOriginContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -51,7 +51,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOrig
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOriginAddress
      */
-    public function getAddress() : ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOriginAddress
+    public function getAddress(): ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOriginAddress
     {
         return $this->address;
     }
@@ -62,7 +62,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOrig
      *
      * @return self
      */
-    public function setAddress(ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOriginAddress $address) : self
+    public function setAddress(ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationPrintedLabelOriginAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

@@ -8,7 +8,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return string
      */
-    public function getPackingInstructions() : string
+    public function getPackingInstructions(): string
     {
         return $this->packingInstructions;
     }
@@ -40,7 +40,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setPackingInstructions(string $packingInstructions) : self
+    public function setPackingInstructions(string $packingInstructions): self
     {
         $this->initialized['packingInstructions'] = true;
         $this->packingInstructions = $packingInstructions;
@@ -51,7 +51,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return bool
      */
-    public function getCargoAircraftOnly() : bool
+    public function getCargoAircraftOnly(): bool
     {
         return $this->cargoAircraftOnly;
     }
@@ -62,7 +62,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setCargoAircraftOnly(bool $cargoAircraftOnly) : self
+    public function setCargoAircraftOnly(bool $cargoAircraftOnly): self
     {
         $this->initialized['cargoAircraftOnly'] = true;
         $this->cargoAircraftOnly = $cargoAircraftOnly;

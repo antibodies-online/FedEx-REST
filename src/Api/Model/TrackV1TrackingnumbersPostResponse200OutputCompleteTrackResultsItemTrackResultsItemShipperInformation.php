@@ -8,7 +8,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -33,7 +33,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformationcontact
      */
-    public function getContact() : TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformationcontact
+    public function getContact(): TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformationcontact
     {
         return $this->contact;
     }
@@ -44,7 +44,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setContact(TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformationcontact $contact) : self
+    public function setContact(TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformationcontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -59,7 +59,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
     *
     * @return TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformationaddress
     */
-    public function getAddress() : TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformationaddress
+    public function getAddress(): TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformationaddress
     {
         return $this->address;
     }
@@ -74,7 +74,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
     *
     * @return self
     */
-    public function setAddress(TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformationaddress $address) : self
+    public function setAddress(TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipperInformationaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

@@ -18,11 +18,11 @@ class CreateTagNotFoundException extends NotFoundException
         $this->shipV1ShipmentsTagPostResponse404 = $shipV1ShipmentsTagPostResponse404;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsTagPostResponse404() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagPostResponse404
+    public function getShipV1ShipmentsTagPostResponse404(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagPostResponse404
     {
         return $this->shipV1ShipmentsTagPostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

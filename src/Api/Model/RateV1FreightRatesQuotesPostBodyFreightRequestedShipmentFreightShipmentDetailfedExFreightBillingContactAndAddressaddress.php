@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return list<string>
      */
-    public function getStreetLines() : array
+    public function getStreetLines(): array
     {
         return $this->streetLines;
     }
@@ -52,7 +52,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setStreetLines(array $streetLines) : self
+    public function setStreetLines(array $streetLines): self
     {
         $this->initialized['streetLines'] = true;
         $this->streetLines = $streetLines;
@@ -63,7 +63,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return string
      */
-    public function getCity() : string
+    public function getCity(): string
     {
         return $this->city;
     }
@@ -74,7 +74,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setCity(string $city) : self
+    public function setCity(string $city): self
     {
         $this->initialized['city'] = true;
         $this->city = $city;
@@ -85,7 +85,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return string
      */
-    public function getStateOrProvinceCode() : string
+    public function getStateOrProvinceCode(): string
     {
         return $this->stateOrProvinceCode;
     }
@@ -96,7 +96,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setStateOrProvinceCode(string $stateOrProvinceCode) : self
+    public function setStateOrProvinceCode(string $stateOrProvinceCode): self
     {
         $this->initialized['stateOrProvinceCode'] = true;
         $this->stateOrProvinceCode = $stateOrProvinceCode;
@@ -107,7 +107,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return string
      */
-    public function getPostalCode() : string
+    public function getPostalCode(): string
     {
         return $this->postalCode;
     }
@@ -118,7 +118,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setPostalCode(string $postalCode) : self
+    public function setPostalCode(string $postalCode): self
     {
         $this->initialized['postalCode'] = true;
         $this->postalCode = $postalCode;

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentMasterTra
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentMasterTra
      *
      * @return string
      */
-    public function getFormId() : string
+    public function getFormId(): string
     {
         return $this->formId;
     }
@@ -52,7 +52,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentMasterTra
      *
      * @return self
      */
-    public function setFormId(string $formId) : self
+    public function setFormId(string $formId): self
     {
         $this->initialized['formId'] = true;
         $this->formId = $formId;
@@ -63,7 +63,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentMasterTra
      *
      * @return string
      */
-    public function getTrackingIdType() : string
+    public function getTrackingIdType(): string
     {
         return $this->trackingIdType;
     }
@@ -74,7 +74,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentMasterTra
      *
      * @return self
      */
-    public function setTrackingIdType(string $trackingIdType) : self
+    public function setTrackingIdType(string $trackingIdType): self
     {
         $this->initialized['trackingIdType'] = true;
         $this->trackingIdType = $trackingIdType;
@@ -85,7 +85,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentMasterTra
      *
      * @return string
      */
-    public function getUspsApplicationId() : string
+    public function getUspsApplicationId(): string
     {
         return $this->uspsApplicationId;
     }
@@ -96,7 +96,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentMasterTra
      *
      * @return self
      */
-    public function setUspsApplicationId(string $uspsApplicationId) : self
+    public function setUspsApplicationId(string $uspsApplicationId): self
     {
         $this->initialized['uspsApplicationId'] = true;
         $this->uspsApplicationId = $uspsApplicationId;
@@ -107,7 +107,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentMasterTra
      *
      * @return string
      */
-    public function getTrackingNumber() : string
+    public function getTrackingNumber(): string
     {
         return $this->trackingNumber;
     }
@@ -118,7 +118,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentMasterTra
      *
      * @return self
      */
-    public function setTrackingNumber(string $trackingNumber) : self
+    public function setTrackingNumber(string $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;

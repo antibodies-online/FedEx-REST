@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -46,7 +46,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return self
      */
-    public function setAddress($address) : self
+    public function setAddress($address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -68,7 +68,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return self
      */
-    public function setContact($contact) : self
+    public function setContact($contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -79,7 +79,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDetailBrokeraccountNumber
      */
-    public function getAccountNumber() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDetailBrokeraccountNumber
+    public function getAccountNumber(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDetailBrokeraccountNumber
     {
         return $this->accountNumber;
     }
@@ -90,7 +90,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDet
      *
      * @return self
      */
-    public function setAccountNumber(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDetailBrokeraccountNumber $accountNumber) : self
+    public function setAccountNumber(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemBrokerDetailBrokeraccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

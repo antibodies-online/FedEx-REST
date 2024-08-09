@@ -8,7 +8,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -95,7 +95,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return LocationV1LocationsPostResponse200OutputambiguousAddressItemDistance
      */
-    public function getDistance() : LocationV1LocationsPostResponse200OutputambiguousAddressItemDistance
+    public function getDistance(): LocationV1LocationsPostResponse200OutputambiguousAddressItemDistance
     {
         return $this->distance;
     }
@@ -106,7 +106,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return self
      */
-    public function setDistance(LocationV1LocationsPostResponse200OutputambiguousAddressItemDistance $distance) : self
+    public function setDistance(LocationV1LocationsPostResponse200OutputambiguousAddressItemDistance $distance): self
     {
         $this->initialized['distance'] = true;
         $this->distance = $distance;
@@ -117,7 +117,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddress
      */
-    public function getContactAndAddress() : LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddress
+    public function getContactAndAddress(): LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddress
     {
         return $this->contactAndAddress;
     }
@@ -128,7 +128,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return self
      */
-    public function setContactAndAddress(LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddress $contactAndAddress) : self
+    public function setContactAndAddress(LocationV1LocationsPostResponse200OutputambiguousAddressItemContactAndAddress $contactAndAddress): self
     {
         $this->initialized['contactAndAddress'] = true;
         $this->contactAndAddress = $contactAndAddress;
@@ -139,7 +139,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return string
      */
-    public function getLocationId() : string
+    public function getLocationId(): string
     {
         return $this->locationId;
     }
@@ -150,7 +150,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return self
      */
-    public function setLocationId(string $locationId) : self
+    public function setLocationId(string $locationId): self
     {
         $this->initialized['locationId'] = true;
         $this->locationId = $locationId;
@@ -161,7 +161,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return list<LocationV1LocationsPostResponse200OutputambiguousAddressItemStoreHoursItem>
      */
-    public function getStoreHours() : array
+    public function getStoreHours(): array
     {
         return $this->storeHours;
     }
@@ -172,7 +172,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return self
      */
-    public function setStoreHours(array $storeHours) : self
+    public function setStoreHours(array $storeHours): self
     {
         $this->initialized['storeHours'] = true;
         $this->storeHours = $storeHours;
@@ -183,7 +183,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return list<LocationV1LocationsPostResponse200OutputambiguousAddressItemCarrierDetailListItem>
      */
-    public function getCarrierDetailList() : array
+    public function getCarrierDetailList(): array
     {
         return $this->carrierDetailList;
     }
@@ -194,7 +194,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return self
      */
-    public function setCarrierDetailList(array $carrierDetailList) : self
+    public function setCarrierDetailList(array $carrierDetailList): self
     {
         $this->initialized['carrierDetailList'] = true;
         $this->carrierDetailList = $carrierDetailList;
@@ -205,7 +205,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return LocationV1LocationsPostResponse200OutputambiguousAddressItemGeoPositionalCoordinates
      */
-    public function getGeoPositionalCoordinates() : LocationV1LocationsPostResponse200OutputambiguousAddressItemGeoPositionalCoordinates
+    public function getGeoPositionalCoordinates(): LocationV1LocationsPostResponse200OutputambiguousAddressItemGeoPositionalCoordinates
     {
         return $this->geoPositionalCoordinates;
     }
@@ -216,7 +216,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return self
      */
-    public function setGeoPositionalCoordinates(LocationV1LocationsPostResponse200OutputambiguousAddressItemGeoPositionalCoordinates $geoPositionalCoordinates) : self
+    public function setGeoPositionalCoordinates(LocationV1LocationsPostResponse200OutputambiguousAddressItemGeoPositionalCoordinates $geoPositionalCoordinates): self
     {
         $this->initialized['geoPositionalCoordinates'] = true;
         $this->geoPositionalCoordinates = $geoPositionalCoordinates;
@@ -227,7 +227,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return string
      */
-    public function getLocationType() : string
+    public function getLocationType(): string
     {
         return $this->locationType;
     }
@@ -238,7 +238,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return self
      */
-    public function setLocationType(string $locationType) : self
+    public function setLocationType(string $locationType): self
     {
         $this->initialized['locationType'] = true;
         $this->locationType = $locationType;
@@ -249,7 +249,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return list<string>
      */
-    public function getLocationAttributeTypes() : array
+    public function getLocationAttributeTypes(): array
     {
         return $this->locationAttributeTypes;
     }
@@ -260,7 +260,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return self
      */
-    public function setLocationAttributeTypes(array $locationAttributeTypes) : self
+    public function setLocationAttributeTypes(array $locationAttributeTypes): self
     {
         $this->initialized['locationAttributeTypes'] = true;
         $this->locationAttributeTypes = $locationAttributeTypes;
@@ -271,7 +271,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return bool
      */
-    public function getLockerAvailability() : bool
+    public function getLockerAvailability(): bool
     {
         return $this->lockerAvailability;
     }
@@ -282,7 +282,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return self
      */
-    public function setLockerAvailability(bool $lockerAvailability) : self
+    public function setLockerAvailability(bool $lockerAvailability): self
     {
         $this->initialized['lockerAvailability'] = true;
         $this->lockerAvailability = $lockerAvailability;
@@ -293,7 +293,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return LocationV1LocationsPostResponse200OutputambiguousAddressItemPackageMaximumLimits
      */
-    public function getPackageMaximumLimits() : LocationV1LocationsPostResponse200OutputambiguousAddressItemPackageMaximumLimits
+    public function getPackageMaximumLimits(): LocationV1LocationsPostResponse200OutputambiguousAddressItemPackageMaximumLimits
     {
         return $this->packageMaximumLimits;
     }
@@ -304,7 +304,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return self
      */
-    public function setPackageMaximumLimits(LocationV1LocationsPostResponse200OutputambiguousAddressItemPackageMaximumLimits $packageMaximumLimits) : self
+    public function setPackageMaximumLimits(LocationV1LocationsPostResponse200OutputambiguousAddressItemPackageMaximumLimits $packageMaximumLimits): self
     {
         $this->initialized['packageMaximumLimits'] = true;
         $this->packageMaximumLimits = $packageMaximumLimits;
@@ -315,7 +315,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return string
      */
-    public function getSpecialInstructions() : string
+    public function getSpecialInstructions(): string
     {
         return $this->specialInstructions;
     }
@@ -326,7 +326,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return self
      */
-    public function setSpecialInstructions(string $specialInstructions) : self
+    public function setSpecialInstructions(string $specialInstructions): self
     {
         $this->initialized['specialInstructions'] = true;
         $this->specialInstructions = $specialInstructions;
@@ -337,7 +337,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return string
      */
-    public function getRthservice() : string
+    public function getRthservice(): string
     {
         return $this->rthservice;
     }
@@ -348,7 +348,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return self
      */
-    public function setRthservice(string $rthservice) : self
+    public function setRthservice(string $rthservice): self
     {
         $this->initialized['rthservice'] = true;
         $this->rthservice = $rthservice;
@@ -359,7 +359,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return LocationV1LocationsPostResponse200OutputambiguousAddressItemLocationCapabilities
      */
-    public function getLocationCapabilities() : LocationV1LocationsPostResponse200OutputambiguousAddressItemLocationCapabilities
+    public function getLocationCapabilities(): LocationV1LocationsPostResponse200OutputambiguousAddressItemLocationCapabilities
     {
         return $this->locationCapabilities;
     }
@@ -370,7 +370,7 @@ class LocationV1LocationsPostResponse200OutputambiguousAddressItem extends \Arra
      *
      * @return self
      */
-    public function setLocationCapabilities(LocationV1LocationsPostResponse200OutputambiguousAddressItemLocationCapabilities $locationCapabilities) : self
+    public function setLocationCapabilities(LocationV1LocationsPostResponse200OutputambiguousAddressItemLocationCapabilities $locationCapabilities): self
     {
         $this->initialized['locationCapabilities'] = true;
         $this->locationCapabilities = $locationCapabilities;

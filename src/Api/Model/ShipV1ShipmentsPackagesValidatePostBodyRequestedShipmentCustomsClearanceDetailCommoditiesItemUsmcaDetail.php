@@ -8,7 +8,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return string
      */
-    public function getOriginCriterion() : string
+    public function getOriginCriterion(): string
     {
         return $this->originCriterion;
     }
@@ -34,7 +34,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentCustomsClearanceDe
      *
      * @return self
      */
-    public function setOriginCriterion(string $originCriterion) : self
+    public function setOriginCriterion(string $originCriterion): self
     {
         $this->initialized['originCriterion'] = true;
         $this->originCriterion = $originCriterion;

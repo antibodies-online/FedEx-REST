@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesInternation
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesInternation
      *
      * @return string
      */
-    public function getLicenseOrPermitExpirationDate() : string
+    public function getLicenseOrPermitExpirationDate(): string
     {
         return $this->licenseOrPermitExpirationDate;
     }
@@ -58,7 +58,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesInternation
      *
      * @return self
      */
-    public function setLicenseOrPermitExpirationDate(string $licenseOrPermitExpirationDate) : self
+    public function setLicenseOrPermitExpirationDate(string $licenseOrPermitExpirationDate): self
     {
         $this->initialized['licenseOrPermitExpirationDate'] = true;
         $this->licenseOrPermitExpirationDate = $licenseOrPermitExpirationDate;
@@ -69,7 +69,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesInternation
      *
      * @return string
      */
-    public function getLicenseOrPermitNumber() : string
+    public function getLicenseOrPermitNumber(): string
     {
         return $this->licenseOrPermitNumber;
     }
@@ -80,7 +80,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesInternation
      *
      * @return self
      */
-    public function setLicenseOrPermitNumber(string $licenseOrPermitNumber) : self
+    public function setLicenseOrPermitNumber(string $licenseOrPermitNumber): self
     {
         $this->initialized['licenseOrPermitNumber'] = true;
         $this->licenseOrPermitNumber = $licenseOrPermitNumber;
@@ -91,7 +91,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesInternation
      *
      * @return string
      */
-    public function getEntryNumber() : string
+    public function getEntryNumber(): string
     {
         return $this->entryNumber;
     }
@@ -102,7 +102,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesInternation
      *
      * @return self
      */
-    public function setEntryNumber(string $entryNumber) : self
+    public function setEntryNumber(string $entryNumber): self
     {
         $this->initialized['entryNumber'] = true;
         $this->entryNumber = $entryNumber;
@@ -113,7 +113,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesInternation
      *
      * @return string
      */
-    public function getForeignTradeZoneCode() : string
+    public function getForeignTradeZoneCode(): string
     {
         return $this->foreignTradeZoneCode;
     }
@@ -124,7 +124,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesInternation
      *
      * @return self
      */
-    public function setForeignTradeZoneCode(string $foreignTradeZoneCode) : self
+    public function setForeignTradeZoneCode(string $foreignTradeZoneCode): self
     {
         $this->initialized['foreignTradeZoneCode'] = true;
         $this->foreignTradeZoneCode = $foreignTradeZoneCode;
@@ -135,7 +135,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesInternation
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -146,7 +146,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesInternation
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;

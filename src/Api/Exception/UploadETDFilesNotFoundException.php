@@ -18,11 +18,11 @@ class UploadETDFilesNotFoundException extends NotFoundException
         $this->documentsV1EtdsUploadPostResponse404 = $documentsV1EtdsUploadPostResponse404;
         $this->response = $response;
     }
-    public function getDocumentsV1EtdsUploadPostResponse404() : \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse404
+    public function getDocumentsV1EtdsUploadPostResponse404(): \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse404
     {
         return $this->documentsV1EtdsUploadPostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

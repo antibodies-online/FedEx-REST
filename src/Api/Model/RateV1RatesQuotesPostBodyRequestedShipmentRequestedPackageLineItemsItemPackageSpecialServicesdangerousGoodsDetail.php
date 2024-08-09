@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getOfferor() : string
+    public function getOfferor(): string
     {
         return $this->offeror;
     }
@@ -70,7 +70,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setOfferor(string $offeror) : self
+    public function setOfferor(string $offeror): self
     {
         $this->initialized['offeror'] = true;
         $this->offeror = $offeror;
@@ -81,7 +81,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getAccessibility() : string
+    public function getAccessibility(): string
     {
         return $this->accessibility;
     }
@@ -92,7 +92,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setAccessibility(string $accessibility) : self
+    public function setAccessibility(string $accessibility): self
     {
         $this->initialized['accessibility'] = true;
         $this->accessibility = $accessibility;
@@ -103,7 +103,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getEmergencyContactNumber() : string
+    public function getEmergencyContactNumber(): string
     {
         return $this->emergencyContactNumber;
     }
@@ -114,7 +114,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setEmergencyContactNumber(string $emergencyContactNumber) : self
+    public function setEmergencyContactNumber(string $emergencyContactNumber): self
     {
         $this->initialized['emergencyContactNumber'] = true;
         $this->emergencyContactNumber = $emergencyContactNumber;
@@ -125,7 +125,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return list<string>
      */
-    public function getOptions() : array
+    public function getOptions(): array
     {
         return $this->options;
     }
@@ -136,7 +136,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setOptions(array $options) : self
+    public function setOptions(array $options): self
     {
         $this->initialized['options'] = true;
         $this->options = $options;
@@ -147,7 +147,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return list<RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItem>
      */
-    public function getContainers() : array
+    public function getContainers(): array
     {
         return $this->containers;
     }
@@ -158,7 +158,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setContainers(array $containers) : self
+    public function setContainers(array $containers): self
     {
         $this->initialized['containers'] = true;
         $this->containers = $containers;
@@ -169,7 +169,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getRegulation() : string
+    public function getRegulation(): string
     {
         return $this->regulation;
     }
@@ -180,7 +180,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setRegulation(string $regulation) : self
+    public function setRegulation(string $regulation): self
     {
         $this->initialized['regulation'] = true;
         $this->regulation = $regulation;
@@ -191,7 +191,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailPackaging
      */
-    public function getPackaging() : RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailPackaging
+    public function getPackaging(): RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailPackaging
     {
         return $this->packaging;
     }
@@ -202,7 +202,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setPackaging(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailPackaging $packaging) : self
+    public function setPackaging(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailPackaging $packaging): self
     {
         $this->initialized['packaging'] = true;
         $this->packaging = $packaging;

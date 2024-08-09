@@ -8,7 +8,7 @@ class AddressV1AddressesResolvePostBodyAddressesToValidateItem extends \ArrayObj
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class AddressV1AddressesResolvePostBodyAddressesToValidateItem extends \ArrayObj
      *
      * @return AddressV1AddressesResolvePostBodyAddressesToValidateItemAddress
      */
-    public function getAddress() : AddressV1AddressesResolvePostBodyAddressesToValidateItemAddress
+    public function getAddress(): AddressV1AddressesResolvePostBodyAddressesToValidateItemAddress
     {
         return $this->address;
     }
@@ -40,7 +40,7 @@ class AddressV1AddressesResolvePostBodyAddressesToValidateItem extends \ArrayObj
      *
      * @return self
      */
-    public function setAddress(AddressV1AddressesResolvePostBodyAddressesToValidateItemAddress $address) : self
+    public function setAddress(AddressV1AddressesResolvePostBodyAddressesToValidateItemAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -51,7 +51,7 @@ class AddressV1AddressesResolvePostBodyAddressesToValidateItem extends \ArrayObj
      *
      * @return string
      */
-    public function getClientReferenceId() : string
+    public function getClientReferenceId(): string
     {
         return $this->clientReferenceId;
     }
@@ -62,7 +62,7 @@ class AddressV1AddressesResolvePostBodyAddressesToValidateItem extends \ArrayObj
      *
      * @return self
      */
-    public function setClientReferenceId(string $clientReferenceId) : self
+    public function setClientReferenceId(string $clientReferenceId): self
     {
         $this->initialized['clientReferenceId'] = true;
         $this->clientReferenceId = $clientReferenceId;

@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippercontact exten
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippercontact exten
      *
      * @return string
      */
-    public function getPersonName() : string
+    public function getPersonName(): string
     {
         return $this->personName;
     }
@@ -58,7 +58,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippercontact exten
      *
      * @return self
      */
-    public function setPersonName(string $personName) : self
+    public function setPersonName(string $personName): self
     {
         $this->initialized['personName'] = true;
         $this->personName = $personName;
@@ -69,7 +69,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippercontact exten
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -80,7 +80,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippercontact exten
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -91,7 +91,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippercontact exten
      *
      * @return string
      */
-    public function getPhoneExtension() : string
+    public function getPhoneExtension(): string
     {
         return $this->phoneExtension;
     }
@@ -102,7 +102,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippercontact exten
      *
      * @return self
      */
-    public function setPhoneExtension(string $phoneExtension) : self
+    public function setPhoneExtension(string $phoneExtension): self
     {
         $this->initialized['phoneExtension'] = true;
         $this->phoneExtension = $phoneExtension;
@@ -113,7 +113,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippercontact exten
      *
      * @return string
      */
-    public function getPhoneNumber() : string
+    public function getPhoneNumber(): string
     {
         return $this->phoneNumber;
     }
@@ -124,7 +124,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippercontact exten
      *
      * @return self
      */
-    public function setPhoneNumber(string $phoneNumber) : self
+    public function setPhoneNumber(string $phoneNumber): self
     {
         $this->initialized['phoneNumber'] = true;
         $this->phoneNumber = $phoneNumber;
@@ -135,7 +135,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippercontact exten
      *
      * @return string
      */
-    public function getCompanyName() : string
+    public function getCompanyName(): string
     {
         return $this->companyName;
     }
@@ -146,7 +146,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippercontact exten
      *
      * @return self
      */
-    public function setCompanyName(string $companyName) : self
+    public function setCompanyName(string $companyName): self
     {
         $this->initialized['companyName'] = true;
         $this->companyName = $companyName;

@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return string
      */
-    public function getCustomerIntegrationMode() : string
+    public function getCustomerIntegrationMode(): string
     {
         return $this->customerIntegrationMode;
     }
@@ -46,7 +46,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setCustomerIntegrationMode(string $customerIntegrationMode) : self
+    public function setCustomerIntegrationMode(string $customerIntegrationMode): self
     {
         $this->initialized['customerIntegrationMode'] = true;
         $this->customerIntegrationMode = $customerIntegrationMode;
@@ -57,7 +57,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return string
      */
-    public function getSubType() : string
+    public function getSubType(): string
     {
         return $this->subType;
     }
@@ -68,7 +68,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setSubType(string $subType) : self
+    public function setSubType(string $subType): self
     {
         $this->initialized['subType'] = true;
         $this->subType = $subType;
@@ -79,7 +79,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return string
      */
-    public function getSpecialServiceType() : string
+    public function getSpecialServiceType(): string
     {
         return $this->specialServiceType;
     }
@@ -90,7 +90,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsList
      *
      * @return self
      */
-    public function setSpecialServiceType(string $specialServiceType) : self
+    public function setSpecialServiceType(string $specialServiceType): self
     {
         $this->initialized['specialServiceType'] = true;
         $this->specialServiceType = $specialServiceType;

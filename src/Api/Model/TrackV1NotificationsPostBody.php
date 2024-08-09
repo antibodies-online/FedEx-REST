@@ -8,7 +8,7 @@ class TrackV1NotificationsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class TrackV1NotificationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getSenderContactName() : string
+    public function getSenderContactName(): string
     {
         return $this->senderContactName;
     }
@@ -64,7 +64,7 @@ class TrackV1NotificationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSenderContactName(string $senderContactName) : self
+    public function setSenderContactName(string $senderContactName): self
     {
         $this->initialized['senderContactName'] = true;
         $this->senderContactName = $senderContactName;
@@ -75,7 +75,7 @@ class TrackV1NotificationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getSenderEMailAddress() : string
+    public function getSenderEMailAddress(): string
     {
         return $this->senderEMailAddress;
     }
@@ -86,7 +86,7 @@ class TrackV1NotificationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSenderEMailAddress(string $senderEMailAddress) : self
+    public function setSenderEMailAddress(string $senderEMailAddress): self
     {
         $this->initialized['senderEMailAddress'] = true;
         $this->senderEMailAddress = $senderEMailAddress;
@@ -97,7 +97,7 @@ class TrackV1NotificationsPostBody extends \ArrayObject
      *
      * @return TrackV1NotificationsPostBodyTrackingEventNotificationDetail
      */
-    public function getTrackingEventNotificationDetail() : TrackV1NotificationsPostBodyTrackingEventNotificationDetail
+    public function getTrackingEventNotificationDetail(): TrackV1NotificationsPostBodyTrackingEventNotificationDetail
     {
         return $this->trackingEventNotificationDetail;
     }
@@ -108,7 +108,7 @@ class TrackV1NotificationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingEventNotificationDetail(TrackV1NotificationsPostBodyTrackingEventNotificationDetail $trackingEventNotificationDetail) : self
+    public function setTrackingEventNotificationDetail(TrackV1NotificationsPostBodyTrackingEventNotificationDetail $trackingEventNotificationDetail): self
     {
         $this->initialized['trackingEventNotificationDetail'] = true;
         $this->trackingEventNotificationDetail = $trackingEventNotificationDetail;
@@ -119,7 +119,7 @@ class TrackV1NotificationsPostBody extends \ArrayObject
      *
      * @return TrackV1NotificationsPostBodyTrackingNumberInfo
      */
-    public function getTrackingNumberInfo() : TrackV1NotificationsPostBodyTrackingNumberInfo
+    public function getTrackingNumberInfo(): TrackV1NotificationsPostBodyTrackingNumberInfo
     {
         return $this->trackingNumberInfo;
     }
@@ -130,7 +130,7 @@ class TrackV1NotificationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingNumberInfo(TrackV1NotificationsPostBodyTrackingNumberInfo $trackingNumberInfo) : self
+    public function setTrackingNumberInfo(TrackV1NotificationsPostBodyTrackingNumberInfo $trackingNumberInfo): self
     {
         $this->initialized['trackingNumberInfo'] = true;
         $this->trackingNumberInfo = $trackingNumberInfo;
@@ -141,7 +141,7 @@ class TrackV1NotificationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getShipDateBegin() : string
+    public function getShipDateBegin(): string
     {
         return $this->shipDateBegin;
     }
@@ -152,7 +152,7 @@ class TrackV1NotificationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setShipDateBegin(string $shipDateBegin) : self
+    public function setShipDateBegin(string $shipDateBegin): self
     {
         $this->initialized['shipDateBegin'] = true;
         $this->shipDateBegin = $shipDateBegin;
@@ -163,7 +163,7 @@ class TrackV1NotificationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getShipDateEnd() : string
+    public function getShipDateEnd(): string
     {
         return $this->shipDateEnd;
     }
@@ -174,7 +174,7 @@ class TrackV1NotificationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setShipDateEnd(string $shipDateEnd) : self
+    public function setShipDateEnd(string $shipDateEnd): self
     {
         $this->initialized['shipDateEnd'] = true;
         $this->shipDateEnd = $shipDateEnd;

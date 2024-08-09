@@ -8,7 +8,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -40,7 +40,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -51,7 +51,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -62,7 +62,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;

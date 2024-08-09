@@ -8,7 +8,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail
      */
-    public function getNotificationDetail() : TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail
+    public function getNotificationDetail(): TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail
     {
         return $this->notificationDetail;
     }
@@ -52,7 +52,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return self
      */
-    public function setNotificationDetail(TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail $notificationDetail) : self
+    public function setNotificationDetail(TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail $notificationDetail): self
     {
         $this->initialized['notificationDetail'] = true;
         $this->notificationDetail = $notificationDetail;
@@ -63,7 +63,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return string
      */
-    public function getRole() : string
+    public function getRole(): string
     {
         return $this->role;
     }
@@ -74,7 +74,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return self
      */
-    public function setRole(string $role) : self
+    public function setRole(string $role): self
     {
         $this->initialized['role'] = true;
         $this->role = $role;
@@ -85,7 +85,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return list<string>
      */
-    public function getNotificationEventTypes() : array
+    public function getNotificationEventTypes(): array
     {
         return $this->notificationEventTypes;
     }
@@ -96,7 +96,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return self
      */
-    public function setNotificationEventTypes(array $notificationEventTypes) : self
+    public function setNotificationEventTypes(array $notificationEventTypes): self
     {
         $this->initialized['notificationEventTypes'] = true;
         $this->notificationEventTypes = $notificationEventTypes;
@@ -107,7 +107,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return bool
      */
-    public function getCurrentResultRequestedFlag() : bool
+    public function getCurrentResultRequestedFlag(): bool
     {
         return $this->currentResultRequestedFlag;
     }
@@ -118,7 +118,7 @@ class TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotific
      *
      * @return self
      */
-    public function setCurrentResultRequestedFlag(bool $currentResultRequestedFlag) : self
+    public function setCurrentResultRequestedFlag(bool $currentResultRequestedFlag): self
     {
         $this->initialized['currentResultRequestedFlag'] = true;
         $this->currentResultRequestedFlag = $currentResultRequestedFlag;

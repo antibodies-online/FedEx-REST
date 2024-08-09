@@ -18,11 +18,11 @@ class CancelTagServiceUnavailableException extends ServiceUnavailableException
         $this->shipV1ShipmentsTagCancelShipmentidPutResponse503 = $shipV1ShipmentsTagCancelShipmentidPutResponse503;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsTagCancelShipmentidPutResponse503() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagCancelShipmentidPutResponse503
+    public function getShipV1ShipmentsTagCancelShipmentidPutResponse503(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagCancelShipmentidPutResponse503
     {
         return $this->shipV1ShipmentsTagCancelShipmentidPutResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

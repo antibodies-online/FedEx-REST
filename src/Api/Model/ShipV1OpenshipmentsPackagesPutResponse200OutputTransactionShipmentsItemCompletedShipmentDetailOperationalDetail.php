@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -185,7 +185,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getOriginServiceArea() : string
+    public function getOriginServiceArea(): string
     {
         return $this->originServiceArea;
     }
@@ -196,7 +196,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setOriginServiceArea(string $originServiceArea) : self
+    public function setOriginServiceArea(string $originServiceArea): self
     {
         $this->initialized['originServiceArea'] = true;
         $this->originServiceArea = $originServiceArea;
@@ -207,7 +207,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getServiceCode() : string
+    public function getServiceCode(): string
     {
         return $this->serviceCode;
     }
@@ -218,7 +218,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setServiceCode(string $serviceCode) : self
+    public function setServiceCode(string $serviceCode): self
     {
         $this->initialized['serviceCode'] = true;
         $this->serviceCode = $serviceCode;
@@ -229,7 +229,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getAirportId() : string
+    public function getAirportId(): string
     {
         return $this->airportId;
     }
@@ -240,7 +240,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setAirportId(string $airportId) : self
+    public function setAirportId(string $airportId): self
     {
         $this->initialized['airportId'] = true;
         $this->airportId = $airportId;
@@ -251,7 +251,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getPostalCode() : string
+    public function getPostalCode(): string
     {
         return $this->postalCode;
     }
@@ -262,7 +262,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setPostalCode(string $postalCode) : self
+    public function setPostalCode(string $postalCode): self
     {
         $this->initialized['postalCode'] = true;
         $this->postalCode = $postalCode;
@@ -273,7 +273,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getScac() : string
+    public function getScac(): string
     {
         return $this->scac;
     }
@@ -284,7 +284,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setScac(string $scac) : self
+    public function setScac(string $scac): self
     {
         $this->initialized['scac'] = true;
         $this->scac = $scac;
@@ -295,7 +295,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getDeliveryDay() : string
+    public function getDeliveryDay(): string
     {
         return $this->deliveryDay;
     }
@@ -306,7 +306,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setDeliveryDay(string $deliveryDay) : self
+    public function setDeliveryDay(string $deliveryDay): self
     {
         $this->initialized['deliveryDay'] = true;
         $this->deliveryDay = $deliveryDay;
@@ -317,7 +317,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getOriginLocationId() : string
+    public function getOriginLocationId(): string
     {
         return $this->originLocationId;
     }
@@ -328,7 +328,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setOriginLocationId(string $originLocationId) : self
+    public function setOriginLocationId(string $originLocationId): self
     {
         $this->initialized['originLocationId'] = true;
         $this->originLocationId = $originLocationId;
@@ -339,7 +339,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -350,7 +350,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;
@@ -361,7 +361,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getAstraDescription() : string
+    public function getAstraDescription(): string
     {
         return $this->astraDescription;
     }
@@ -372,7 +372,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setAstraDescription(string $astraDescription) : self
+    public function setAstraDescription(string $astraDescription): self
     {
         $this->initialized['astraDescription'] = true;
         $this->astraDescription = $astraDescription;
@@ -383,7 +383,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return int
      */
-    public function getOriginLocationNumber() : int
+    public function getOriginLocationNumber(): int
     {
         return $this->originLocationNumber;
     }
@@ -394,7 +394,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setOriginLocationNumber(int $originLocationNumber) : self
+    public function setOriginLocationNumber(int $originLocationNumber): self
     {
         $this->initialized['originLocationNumber'] = true;
         $this->originLocationNumber = $originLocationNumber;
@@ -405,7 +405,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getDeliveryDate() : string
+    public function getDeliveryDate(): string
     {
         return $this->deliveryDate;
     }
@@ -416,7 +416,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setDeliveryDate(string $deliveryDate) : self
+    public function setDeliveryDate(string $deliveryDate): self
     {
         $this->initialized['deliveryDate'] = true;
         $this->deliveryDate = $deliveryDate;
@@ -427,7 +427,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return list<string>
      */
-    public function getDeliveryEligibilities() : array
+    public function getDeliveryEligibilities(): array
     {
         return $this->deliveryEligibilities;
     }
@@ -438,7 +438,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setDeliveryEligibilities(array $deliveryEligibilities) : self
+    public function setDeliveryEligibilities(array $deliveryEligibilities): self
     {
         $this->initialized['deliveryEligibilities'] = true;
         $this->deliveryEligibilities = $deliveryEligibilities;
@@ -449,7 +449,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return bool
      */
-    public function getIneligibleForMoneyBackGuarantee() : bool
+    public function getIneligibleForMoneyBackGuarantee(): bool
     {
         return $this->ineligibleForMoneyBackGuarantee;
     }
@@ -460,7 +460,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setIneligibleForMoneyBackGuarantee(bool $ineligibleForMoneyBackGuarantee) : self
+    public function setIneligibleForMoneyBackGuarantee(bool $ineligibleForMoneyBackGuarantee): self
     {
         $this->initialized['ineligibleForMoneyBackGuarantee'] = true;
         $this->ineligibleForMoneyBackGuarantee = $ineligibleForMoneyBackGuarantee;
@@ -471,7 +471,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getMaximumTransitTime() : string
+    public function getMaximumTransitTime(): string
     {
         return $this->maximumTransitTime;
     }
@@ -482,7 +482,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setMaximumTransitTime(string $maximumTransitTime) : self
+    public function setMaximumTransitTime(string $maximumTransitTime): self
     {
         $this->initialized['maximumTransitTime'] = true;
         $this->maximumTransitTime = $maximumTransitTime;
@@ -493,7 +493,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getDestinationLocationStateOrProvinceCode() : string
+    public function getDestinationLocationStateOrProvinceCode(): string
     {
         return $this->destinationLocationStateOrProvinceCode;
     }
@@ -504,7 +504,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setDestinationLocationStateOrProvinceCode(string $destinationLocationStateOrProvinceCode) : self
+    public function setDestinationLocationStateOrProvinceCode(string $destinationLocationStateOrProvinceCode): self
     {
         $this->initialized['destinationLocationStateOrProvinceCode'] = true;
         $this->destinationLocationStateOrProvinceCode = $destinationLocationStateOrProvinceCode;
@@ -515,7 +515,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getAstraPlannedServiceLevel() : string
+    public function getAstraPlannedServiceLevel(): string
     {
         return $this->astraPlannedServiceLevel;
     }
@@ -526,7 +526,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setAstraPlannedServiceLevel(string $astraPlannedServiceLevel) : self
+    public function setAstraPlannedServiceLevel(string $astraPlannedServiceLevel): self
     {
         $this->initialized['astraPlannedServiceLevel'] = true;
         $this->astraPlannedServiceLevel = $astraPlannedServiceLevel;
@@ -537,7 +537,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getDestinationLocationId() : string
+    public function getDestinationLocationId(): string
     {
         return $this->destinationLocationId;
     }
@@ -548,7 +548,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setDestinationLocationId(string $destinationLocationId) : self
+    public function setDestinationLocationId(string $destinationLocationId): self
     {
         $this->initialized['destinationLocationId'] = true;
         $this->destinationLocationId = $destinationLocationId;
@@ -559,7 +559,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getTransitTime() : string
+    public function getTransitTime(): string
     {
         return $this->transitTime;
     }
@@ -570,7 +570,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setTransitTime(string $transitTime) : self
+    public function setTransitTime(string $transitTime): self
     {
         $this->initialized['transitTime'] = true;
         $this->transitTime = $transitTime;
@@ -581,7 +581,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getStateOrProvinceCode() : string
+    public function getStateOrProvinceCode(): string
     {
         return $this->stateOrProvinceCode;
     }
@@ -592,7 +592,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setStateOrProvinceCode(string $stateOrProvinceCode) : self
+    public function setStateOrProvinceCode(string $stateOrProvinceCode): self
     {
         $this->initialized['stateOrProvinceCode'] = true;
         $this->stateOrProvinceCode = $stateOrProvinceCode;
@@ -603,7 +603,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return int
      */
-    public function getDestinationLocationNumber() : int
+    public function getDestinationLocationNumber(): int
     {
         return $this->destinationLocationNumber;
     }
@@ -614,7 +614,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setDestinationLocationNumber(int $destinationLocationNumber) : self
+    public function setDestinationLocationNumber(int $destinationLocationNumber): self
     {
         $this->initialized['destinationLocationNumber'] = true;
         $this->destinationLocationNumber = $destinationLocationNumber;
@@ -625,7 +625,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getPackagingCode() : string
+    public function getPackagingCode(): string
     {
         return $this->packagingCode;
     }
@@ -636,7 +636,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setPackagingCode(string $packagingCode) : self
+    public function setPackagingCode(string $packagingCode): self
     {
         $this->initialized['packagingCode'] = true;
         $this->packagingCode = $packagingCode;
@@ -647,7 +647,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getCommitDate() : string
+    public function getCommitDate(): string
     {
         return $this->commitDate;
     }
@@ -658,7 +658,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setCommitDate(string $commitDate) : self
+    public function setCommitDate(string $commitDate): self
     {
         $this->initialized['commitDate'] = true;
         $this->commitDate = $commitDate;
@@ -669,7 +669,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getPublishedDeliveryTime() : string
+    public function getPublishedDeliveryTime(): string
     {
         return $this->publishedDeliveryTime;
     }
@@ -680,7 +680,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setPublishedDeliveryTime(string $publishedDeliveryTime) : self
+    public function setPublishedDeliveryTime(string $publishedDeliveryTime): self
     {
         $this->initialized['publishedDeliveryTime'] = true;
         $this->publishedDeliveryTime = $publishedDeliveryTime;
@@ -691,7 +691,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getUrsaSuffixCode() : string
+    public function getUrsaSuffixCode(): string
     {
         return $this->ursaSuffixCode;
     }
@@ -702,7 +702,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setUrsaSuffixCode(string $ursaSuffixCode) : self
+    public function setUrsaSuffixCode(string $ursaSuffixCode): self
     {
         $this->initialized['ursaSuffixCode'] = true;
         $this->ursaSuffixCode = $ursaSuffixCode;
@@ -713,7 +713,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getUrsaPrefixCode() : string
+    public function getUrsaPrefixCode(): string
     {
         return $this->ursaPrefixCode;
     }
@@ -724,7 +724,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setUrsaPrefixCode(string $ursaPrefixCode) : self
+    public function setUrsaPrefixCode(string $ursaPrefixCode): self
     {
         $this->initialized['ursaPrefixCode'] = true;
         $this->ursaPrefixCode = $ursaPrefixCode;
@@ -735,7 +735,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getDestinationServiceArea() : string
+    public function getDestinationServiceArea(): string
     {
         return $this->destinationServiceArea;
     }
@@ -746,7 +746,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setDestinationServiceArea(string $destinationServiceArea) : self
+    public function setDestinationServiceArea(string $destinationServiceArea): self
     {
         $this->initialized['destinationServiceArea'] = true;
         $this->destinationServiceArea = $destinationServiceArea;
@@ -757,7 +757,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getCommitDay() : string
+    public function getCommitDay(): string
     {
         return $this->commitDay;
     }
@@ -768,7 +768,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setCommitDay(string $commitDay) : self
+    public function setCommitDay(string $commitDay): self
     {
         $this->initialized['commitDay'] = true;
         $this->commitDay = $commitDay;
@@ -779,7 +779,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getCustomTransitTime() : string
+    public function getCustomTransitTime(): string
     {
         return $this->customTransitTime;
     }
@@ -790,7 +790,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setCustomTransitTime(string $customTransitTime) : self
+    public function setCustomTransitTime(string $customTransitTime): self
     {
         $this->initialized['customTransitTime'] = true;
         $this->customTransitTime = $customTransitTime;

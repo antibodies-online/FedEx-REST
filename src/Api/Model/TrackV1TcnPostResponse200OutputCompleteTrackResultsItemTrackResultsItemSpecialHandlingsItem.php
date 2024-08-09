@@ -8,7 +8,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemSpe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemSpe
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -46,7 +46,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemSpe
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -57,7 +57,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemSpe
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -68,7 +68,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemSpe
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -79,7 +79,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemSpe
      *
      * @return string
      */
-    public function getPaymentType() : string
+    public function getPaymentType(): string
     {
         return $this->paymentType;
     }
@@ -90,7 +90,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemSpe
      *
      * @return self
      */
-    public function setPaymentType(string $paymentType) : self
+    public function setPaymentType(string $paymentType): self
     {
         $this->initialized['paymentType'] = true;
         $this->paymentType = $paymentType;

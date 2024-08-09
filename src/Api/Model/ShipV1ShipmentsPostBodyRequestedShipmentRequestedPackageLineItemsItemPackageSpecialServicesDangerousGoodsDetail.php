@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentRequestedPackageLineItemsItemPacka
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentRequestedPackageLineItemsItemPacka
      *
      * @return bool
      */
-    public function getCargoAircraftOnly() : bool
+    public function getCargoAircraftOnly(): bool
     {
         return $this->cargoAircraftOnly;
     }
@@ -46,7 +46,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentRequestedPackageLineItemsItemPacka
      *
      * @return self
      */
-    public function setCargoAircraftOnly(bool $cargoAircraftOnly) : self
+    public function setCargoAircraftOnly(bool $cargoAircraftOnly): self
     {
         $this->initialized['cargoAircraftOnly'] = true;
         $this->cargoAircraftOnly = $cargoAircraftOnly;
@@ -57,7 +57,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentRequestedPackageLineItemsItemPacka
      *
      * @return string
      */
-    public function getAccessibility() : string
+    public function getAccessibility(): string
     {
         return $this->accessibility;
     }
@@ -68,7 +68,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentRequestedPackageLineItemsItemPacka
      *
      * @return self
      */
-    public function setAccessibility(string $accessibility) : self
+    public function setAccessibility(string $accessibility): self
     {
         $this->initialized['accessibility'] = true;
         $this->accessibility = $accessibility;
@@ -79,7 +79,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentRequestedPackageLineItemsItemPacka
      *
      * @return list<string>
      */
-    public function getOptions() : array
+    public function getOptions(): array
     {
         return $this->options;
     }
@@ -90,7 +90,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentRequestedPackageLineItemsItemPacka
      *
      * @return self
      */
-    public function setOptions(array $options) : self
+    public function setOptions(array $options): self
     {
         $this->initialized['options'] = true;
         $this->options = $options;

@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailaddTransportationChargesDetail
      */
-    public function getAddTransportationChargesDetail() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailaddTransportationChargesDetail
+    public function getAddTransportationChargesDetail(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailaddTransportationChargesDetail
     {
         return $this->addTransportationChargesDetail;
     }
@@ -64,7 +64,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return self
      */
-    public function setAddTransportationChargesDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailaddTransportationChargesDetail $addTransportationChargesDetail) : self
+    public function setAddTransportationChargesDetail(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailaddTransportationChargesDetail $addTransportationChargesDetail): self
     {
         $this->initialized['addTransportationChargesDetail'] = true;
         $this->addTransportationChargesDetail = $addTransportationChargesDetail;
@@ -75,7 +75,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipient
      */
-    public function getCodRecipient() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipient
+    public function getCodRecipient(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipient
     {
         return $this->codRecipient;
     }
@@ -86,7 +86,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return self
      */
-    public function setCodRecipient(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipient $codRecipient) : self
+    public function setCodRecipient(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailcodRecipient $codRecipient): self
     {
         $this->initialized['codRecipient'] = true;
         $this->codRecipient = $codRecipient;
@@ -97,7 +97,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return string
      */
-    public function getRemitToName() : string
+    public function getRemitToName(): string
     {
         return $this->remitToName;
     }
@@ -108,7 +108,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return self
      */
-    public function setRemitToName(string $remitToName) : self
+    public function setRemitToName(string $remitToName): self
     {
         $this->initialized['remitToName'] = true;
         $this->remitToName = $remitToName;
@@ -119,7 +119,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return string
      */
-    public function getCodCollectionType() : string
+    public function getCodCollectionType(): string
     {
         return $this->codCollectionType;
     }
@@ -130,7 +130,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return self
      */
-    public function setCodCollectionType(string $codCollectionType) : self
+    public function setCodCollectionType(string $codCollectionType): self
     {
         $this->initialized['codCollectionType'] = true;
         $this->codCollectionType = $codCollectionType;
@@ -141,7 +141,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddress
      */
-    public function getFinancialInstitutionContactAndAddress() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddress
+    public function getFinancialInstitutionContactAndAddress(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddress
     {
         return $this->financialInstitutionContactAndAddress;
     }
@@ -152,7 +152,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return self
      */
-    public function setFinancialInstitutionContactAndAddress(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddress $financialInstitutionContactAndAddress) : self
+    public function setFinancialInstitutionContactAndAddress(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddress $financialInstitutionContactAndAddress): self
     {
         $this->initialized['financialInstitutionContactAndAddress'] = true;
         $this->financialInstitutionContactAndAddress = $financialInstitutionContactAndAddress;
@@ -163,7 +163,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return string
      */
-    public function getReturnReferenceIndicatorType() : string
+    public function getReturnReferenceIndicatorType(): string
     {
         return $this->returnReferenceIndicatorType;
     }
@@ -174,7 +174,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return self
      */
-    public function setReturnReferenceIndicatorType(string $returnReferenceIndicatorType) : self
+    public function setReturnReferenceIndicatorType(string $returnReferenceIndicatorType): self
     {
         $this->initialized['returnReferenceIndicatorType'] = true;
         $this->returnReferenceIndicatorType = $returnReferenceIndicatorType;

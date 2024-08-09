@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShippingDocumentSpecificationCerti
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShippingDocumentSpecificationCerti
      *
      * @return list<ShipV1ShipmentsPostBodyRequestedShipmentShippingDocumentSpecificationCertificateOfOriginDocumentFormatDispositionsItemEMailDetailEMailRecipientsItem>
      */
-    public function getEMailRecipients() : array
+    public function getEMailRecipients(): array
     {
         return $this->eMailRecipients;
     }
@@ -46,7 +46,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShippingDocumentSpecificationCerti
      *
      * @return self
      */
-    public function setEMailRecipients(array $eMailRecipients) : self
+    public function setEMailRecipients(array $eMailRecipients): self
     {
         $this->initialized['eMailRecipients'] = true;
         $this->eMailRecipients = $eMailRecipients;
@@ -57,7 +57,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShippingDocumentSpecificationCerti
      *
      * @return string
      */
-    public function getLocale() : string
+    public function getLocale(): string
     {
         return $this->locale;
     }
@@ -68,7 +68,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShippingDocumentSpecificationCerti
      *
      * @return self
      */
-    public function setLocale(string $locale) : self
+    public function setLocale(string $locale): self
     {
         $this->initialized['locale'] = true;
         $this->locale = $locale;
@@ -79,7 +79,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShippingDocumentSpecificationCerti
      *
      * @return string
      */
-    public function getGrouping() : string
+    public function getGrouping(): string
     {
         return $this->grouping;
     }
@@ -90,7 +90,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShippingDocumentSpecificationCerti
      *
      * @return self
      */
-    public function setGrouping(string $grouping) : self
+    public function setGrouping(string $grouping): self
     {
         $this->initialized['grouping'] = true;
         $this->grouping = $grouping;

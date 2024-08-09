@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class AvailabilityV1TransittimesPostResponse200Output extends \ArrayObject
      *
      * @return list<AvailabilityV1TransittimesPostResponse200OutputalertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -46,7 +46,7 @@ class AvailabilityV1TransittimesPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;
@@ -57,7 +57,7 @@ class AvailabilityV1TransittimesPostResponse200Output extends \ArrayObject
      *
      * @return list<AvailabilityV1TransittimesPostResponse200OutputtransitTimesItem>
      */
-    public function getTransitTimes() : array
+    public function getTransitTimes(): array
     {
         return $this->transitTimes;
     }
@@ -68,7 +68,7 @@ class AvailabilityV1TransittimesPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setTransitTimes(array $transitTimes) : self
+    public function setTransitTimes(array $transitTimes): self
     {
         $this->initialized['transitTimes'] = true;
         $this->transitTimes = $transitTimes;
@@ -79,7 +79,7 @@ class AvailabilityV1TransittimesPostResponse200Output extends \ArrayObject
      *
      * @return bool
      */
-    public function getEncoded() : bool
+    public function getEncoded(): bool
     {
         return $this->encoded;
     }
@@ -90,7 +90,7 @@ class AvailabilityV1TransittimesPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setEncoded(bool $encoded) : self
+    public function setEncoded(bool $encoded): self
     {
         $this->initialized['encoded'] = true;
         $this->encoded = $encoded;

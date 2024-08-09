@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsRetrievePostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getIndex() : string
+    public function getIndex(): string
     {
         return $this->index;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsRetrievePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIndex(string $index) : self
+    public function setIndex(string $index): self
     {
         $this->initialized['index'] = true;
         $this->index = $index;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsRetrievePostBody extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsRetrievePostBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1OpenshipmentsRetrievePostBodyAccountNumber
+    public function getAccountNumber(): ShipV1OpenshipmentsRetrievePostBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsRetrievePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1OpenshipmentsRetrievePostBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1OpenshipmentsRetrievePostBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

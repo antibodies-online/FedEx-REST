@@ -18,11 +18,11 @@ class ShipmentPackageValidateBadRequestException extends BadRequestException
         $this->shipV1ShipmentsPackagesValidatePostResponse400 = $shipV1ShipmentsPackagesValidatePostResponse400;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsPackagesValidatePostResponse400() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPackagesValidatePostResponse400
+    public function getShipV1ShipmentsPackagesValidatePostResponse400(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPackagesValidatePostResponse400
     {
         return $this->shipV1ShipmentsPackagesValidatePostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -107,7 +107,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return string
      */
-    public function getCarrier() : string
+    public function getCarrier(): string
     {
         return $this->carrier;
     }
@@ -118,7 +118,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setCarrier(string $carrier) : self
+    public function setCarrier(string $carrier): self
     {
         $this->initialized['carrier'] = true;
         $this->carrier = $carrier;
@@ -129,7 +129,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return bool
      */
-    public function getAvailable() : bool
+    public function getAvailable(): bool
     {
         return $this->available;
     }
@@ -140,7 +140,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setAvailable(bool $available) : self
+    public function setAvailable(bool $available): self
     {
         $this->initialized['available'] = true;
         $this->available = $available;
@@ -151,7 +151,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return string
      */
-    public function getPickupDate() : string
+    public function getPickupDate(): string
     {
         return $this->pickupDate;
     }
@@ -162,7 +162,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setPickupDate(string $pickupDate) : self
+    public function setPickupDate(string $pickupDate): self
     {
         $this->initialized['pickupDate'] = true;
         $this->pickupDate = $pickupDate;
@@ -173,7 +173,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return string
      */
-    public function getCutOffTime() : string
+    public function getCutOffTime(): string
     {
         return $this->cutOffTime;
     }
@@ -184,7 +184,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setCutOffTime(string $cutOffTime) : self
+    public function setCutOffTime(string $cutOffTime): self
     {
         $this->initialized['cutOffTime'] = true;
         $this->cutOffTime = $cutOffTime;
@@ -195,7 +195,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemAccessTime
      */
-    public function getAccessTime() : PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemAccessTime
+    public function getAccessTime(): PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemAccessTime
     {
         return $this->accessTime;
     }
@@ -206,7 +206,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setAccessTime(PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemAccessTime $accessTime) : self
+    public function setAccessTime(PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemAccessTime $accessTime): self
     {
         $this->initialized['accessTime'] = true;
         $this->accessTime = $accessTime;
@@ -217,7 +217,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return bool
      */
-    public function getResidentialAvailable() : bool
+    public function getResidentialAvailable(): bool
     {
         return $this->residentialAvailable;
     }
@@ -228,7 +228,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setResidentialAvailable(bool $residentialAvailable) : self
+    public function setResidentialAvailable(bool $residentialAvailable): self
     {
         $this->initialized['residentialAvailable'] = true;
         $this->residentialAvailable = $residentialAvailable;
@@ -239,7 +239,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return string
      */
-    public function getCountryRelationship() : string
+    public function getCountryRelationship(): string
     {
         return $this->countryRelationship;
     }
@@ -250,7 +250,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setCountryRelationship(string $countryRelationship) : self
+    public function setCountryRelationship(string $countryRelationship): self
     {
         $this->initialized['countryRelationship'] = true;
         $this->countryRelationship = $countryRelationship;
@@ -261,7 +261,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return string
      */
-    public function getScheduleDay() : string
+    public function getScheduleDay(): string
     {
         return $this->scheduleDay;
     }
@@ -272,7 +272,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setScheduleDay(string $scheduleDay) : self
+    public function setScheduleDay(string $scheduleDay): self
     {
         $this->initialized['scheduleDay'] = true;
         $this->scheduleDay = $scheduleDay;
@@ -283,7 +283,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return string
      */
-    public function getDefaultReadyTime() : string
+    public function getDefaultReadyTime(): string
     {
         return $this->defaultReadyTime;
     }
@@ -294,7 +294,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setDefaultReadyTime(string $defaultReadyTime) : self
+    public function setDefaultReadyTime(string $defaultReadyTime): self
     {
         $this->initialized['defaultReadyTime'] = true;
         $this->defaultReadyTime = $defaultReadyTime;
@@ -316,7 +316,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setDefaultLatestTimeOptions($defaultLatestTimeOptions) : self
+    public function setDefaultLatestTimeOptions($defaultLatestTimeOptions): self
     {
         $this->initialized['defaultLatestTimeOptions'] = true;
         $this->defaultLatestTimeOptions = $defaultLatestTimeOptions;
@@ -327,7 +327,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return string
      */
-    public function getEarlyCutOffTime() : string
+    public function getEarlyCutOffTime(): string
     {
         return $this->earlyCutOffTime;
     }
@@ -338,7 +338,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setEarlyCutOffTime(string $earlyCutOffTime) : self
+    public function setEarlyCutOffTime(string $earlyCutOffTime): self
     {
         $this->initialized['earlyCutOffTime'] = true;
         $this->earlyCutOffTime = $earlyCutOffTime;
@@ -349,7 +349,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemEarlyAccessTime
      */
-    public function getEarlyAccessTime() : PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemEarlyAccessTime
+    public function getEarlyAccessTime(): PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemEarlyAccessTime
     {
         return $this->earlyAccessTime;
     }
@@ -360,7 +360,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setEarlyAccessTime(PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemEarlyAccessTime $earlyAccessTime) : self
+    public function setEarlyAccessTime(PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemEarlyAccessTime $earlyAccessTime): self
     {
         $this->initialized['earlyAccessTime'] = true;
         $this->earlyAccessTime = $earlyAccessTime;
@@ -371,7 +371,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return string
      */
-    public function getEarlyPickupLocationId() : string
+    public function getEarlyPickupLocationId(): string
     {
         return $this->earlyPickupLocationId;
     }
@@ -382,7 +382,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setEarlyPickupLocationId(string $earlyPickupLocationId) : self
+    public function setEarlyPickupLocationId(string $earlyPickupLocationId): self
     {
         $this->initialized['earlyPickupLocationId'] = true;
         $this->earlyPickupLocationId = $earlyPickupLocationId;
@@ -393,7 +393,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return list<string>
      */
-    public function getReadyTimeOptions() : array
+    public function getReadyTimeOptions(): array
     {
         return $this->readyTimeOptions;
     }
@@ -404,7 +404,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setReadyTimeOptions(array $readyTimeOptions) : self
+    public function setReadyTimeOptions(array $readyTimeOptions): self
     {
         $this->initialized['readyTimeOptions'] = true;
         $this->readyTimeOptions = $readyTimeOptions;
@@ -415,7 +415,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return list<string>
      */
-    public function getLatestTimeOptions() : array
+    public function getLatestTimeOptions(): array
     {
         return $this->latestTimeOptions;
     }
@@ -426,7 +426,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItem extends \Arr
      *
      * @return self
      */
-    public function setLatestTimeOptions(array $latestTimeOptions) : self
+    public function setLatestTimeOptions(array $latestTimeOptions): self
     {
         $this->initialized['latestTimeOptions'] = true;
         $this->latestTimeOptions = $latestTimeOptions;

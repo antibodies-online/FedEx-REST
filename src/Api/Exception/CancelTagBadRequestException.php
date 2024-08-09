@@ -18,11 +18,11 @@ class CancelTagBadRequestException extends BadRequestException
         $this->shipV1ShipmentsTagCancelShipmentidPutResponse400 = $shipV1ShipmentsTagCancelShipmentidPutResponse400;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsTagCancelShipmentidPutResponse400() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagCancelShipmentidPutResponse400
+    public function getShipV1ShipmentsTagCancelShipmentidPutResponse400(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagCancelShipmentidPutResponse400
     {
         return $this->shipV1ShipmentsTagCancelShipmentidPutResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

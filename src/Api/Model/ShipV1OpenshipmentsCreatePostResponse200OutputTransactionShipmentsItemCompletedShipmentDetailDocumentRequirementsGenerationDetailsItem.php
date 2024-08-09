@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getLetterhead() : string
+    public function getLetterhead(): string
     {
         return $this->letterhead;
     }
@@ -52,7 +52,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setLetterhead(string $letterhead) : self
+    public function setLetterhead(string $letterhead): self
     {
         $this->initialized['letterhead'] = true;
         $this->letterhead = $letterhead;
@@ -63,7 +63,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getElectronicSignature() : string
+    public function getElectronicSignature(): string
     {
         return $this->electronicSignature;
     }
@@ -74,7 +74,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setElectronicSignature(string $electronicSignature) : self
+    public function setElectronicSignature(string $electronicSignature): self
     {
         $this->initialized['electronicSignature'] = true;
         $this->electronicSignature = $electronicSignature;
@@ -85,7 +85,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return int
      */
-    public function getMinimumCopiesRequired() : int
+    public function getMinimumCopiesRequired(): int
     {
         return $this->minimumCopiesRequired;
     }
@@ -96,7 +96,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setMinimumCopiesRequired(int $minimumCopiesRequired) : self
+    public function setMinimumCopiesRequired(int $minimumCopiesRequired): self
     {
         $this->initialized['minimumCopiesRequired'] = true;
         $this->minimumCopiesRequired = $minimumCopiesRequired;
@@ -107,7 +107,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -118,7 +118,7 @@ class ShipV1OpenshipmentsCreatePostResponse200OutputTransactionShipmentsItemComp
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;

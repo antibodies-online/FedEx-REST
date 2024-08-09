@@ -18,11 +18,11 @@ class FindLocationBadRequestException extends BadRequestException
         $this->locationV1LocationsPostResponse400 = $locationV1LocationsPostResponse400;
         $this->response = $response;
     }
-    public function getLocationV1LocationsPostResponse400() : \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse400
+    public function getLocationV1LocationsPostResponse400(): \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse400
     {
         return $this->locationV1LocationsPostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

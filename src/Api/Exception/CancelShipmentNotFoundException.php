@@ -18,11 +18,11 @@ class CancelShipmentNotFoundException extends NotFoundException
         $this->shipV1ShipmentsCancelPutResponse404 = $shipV1ShipmentsCancelPutResponse404;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsCancelPutResponse404() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse404
+    public function getShipV1ShipmentsCancelPutResponse404(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse404
     {
         return $this->shipV1ShipmentsCancelPutResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

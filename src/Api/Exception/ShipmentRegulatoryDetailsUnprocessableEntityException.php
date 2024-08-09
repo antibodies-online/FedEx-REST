@@ -18,11 +18,11 @@ class ShipmentRegulatoryDetailsUnprocessableEntityException extends Unprocessabl
         $this->globaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse422 = $globaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse422;
         $this->response = $response;
     }
-    public function getGlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse422() : \AntibodiesOnline\FedEx\Api\Model\GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse422
+    public function getGlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse422(): \AntibodiesOnline\FedEx\Api\Model\GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse422
     {
         return $this->globaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse422;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

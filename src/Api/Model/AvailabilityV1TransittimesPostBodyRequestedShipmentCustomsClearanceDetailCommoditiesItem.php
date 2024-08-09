@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -94,7 +94,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -105,7 +105,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return int
      */
-    public function getQuantity() : int
+    public function getQuantity(): int
     {
         return $this->quantity;
     }
@@ -116,7 +116,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return self
      */
-    public function setQuantity(int $quantity) : self
+    public function setQuantity(int $quantity): self
     {
         $this->initialized['quantity'] = true;
         $this->quantity = $quantity;
@@ -127,7 +127,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUnitPrice
      */
-    public function getUnitPrice() : AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUnitPrice
+    public function getUnitPrice(): AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUnitPrice
     {
         return $this->unitPrice;
     }
@@ -138,7 +138,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return self
      */
-    public function setUnitPrice(AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUnitPrice $unitPrice) : self
+    public function setUnitPrice(AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUnitPrice $unitPrice): self
     {
         $this->initialized['unitPrice'] = true;
         $this->unitPrice = $unitPrice;
@@ -149,7 +149,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemWeight
      */
-    public function getWeight() : AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemWeight
+    public function getWeight(): AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemWeight
     {
         return $this->weight;
     }
@@ -160,7 +160,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return self
      */
-    public function setWeight(AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemWeight $weight) : self
+    public function setWeight(AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemWeight $weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -171,7 +171,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemCustomsValue
      */
-    public function getCustomsValue() : AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemCustomsValue
+    public function getCustomsValue(): AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemCustomsValue
     {
         return $this->customsValue;
     }
@@ -182,7 +182,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return self
      */
-    public function setCustomsValue(AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemCustomsValue $customsValue) : self
+    public function setCustomsValue(AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemCustomsValue $customsValue): self
     {
         $this->initialized['customsValue'] = true;
         $this->customsValue = $customsValue;
@@ -193,7 +193,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return int
      */
-    public function getNumberOfPieces() : int
+    public function getNumberOfPieces(): int
     {
         return $this->numberOfPieces;
     }
@@ -204,7 +204,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return self
      */
-    public function setNumberOfPieces(int $numberOfPieces) : self
+    public function setNumberOfPieces(int $numberOfPieces): self
     {
         $this->initialized['numberOfPieces'] = true;
         $this->numberOfPieces = $numberOfPieces;
@@ -215,7 +215,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return string
      */
-    public function getCountryOfManufacture() : string
+    public function getCountryOfManufacture(): string
     {
         return $this->countryOfManufacture;
     }
@@ -226,7 +226,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return self
      */
-    public function setCountryOfManufacture(string $countryOfManufacture) : self
+    public function setCountryOfManufacture(string $countryOfManufacture): self
     {
         $this->initialized['countryOfManufacture'] = true;
         $this->countryOfManufacture = $countryOfManufacture;
@@ -237,7 +237,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return string
      */
-    public function getQuantityUnits() : string
+    public function getQuantityUnits(): string
     {
         return $this->quantityUnits;
     }
@@ -248,7 +248,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return self
      */
-    public function setQuantityUnits(string $quantityUnits) : self
+    public function setQuantityUnits(string $quantityUnits): self
     {
         $this->initialized['quantityUnits'] = true;
         $this->quantityUnits = $quantityUnits;
@@ -259,7 +259,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -270,7 +270,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -281,7 +281,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return string
      */
-    public function getHarmonizedCode() : string
+    public function getHarmonizedCode(): string
     {
         return $this->harmonizedCode;
     }
@@ -292,7 +292,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return self
      */
-    public function setHarmonizedCode(string $harmonizedCode) : self
+    public function setHarmonizedCode(string $harmonizedCode): self
     {
         $this->initialized['harmonizedCode'] = true;
         $this->harmonizedCode = $harmonizedCode;
@@ -303,7 +303,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return string
      */
-    public function getPartNumber() : string
+    public function getPartNumber(): string
     {
         return $this->partNumber;
     }
@@ -314,7 +314,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailC
      *
      * @return self
      */
-    public function setPartNumber(string $partNumber) : self
+    public function setPartNumber(string $partNumber): self
     {
         $this->initialized['partNumber'] = true;
         $this->partNumber = $partNumber;

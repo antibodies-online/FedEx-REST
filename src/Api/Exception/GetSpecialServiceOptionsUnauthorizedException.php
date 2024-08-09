@@ -18,11 +18,11 @@ class GetSpecialServiceOptionsUnauthorizedException extends UnauthorizedExceptio
         $this->availabilityV1SpecialserviceoptionsPostResponse401 = $availabilityV1SpecialserviceoptionsPostResponse401;
         $this->response = $response;
     }
-    public function getAvailabilityV1SpecialserviceoptionsPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1SpecialserviceoptionsPostResponse401
+    public function getAvailabilityV1SpecialserviceoptionsPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1SpecialserviceoptionsPostResponse401
     {
         return $this->availabilityV1SpecialserviceoptionsPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -18,11 +18,11 @@ class RetrieveOpenShipmentPackagesForbiddenException extends ForbiddenException
         $this->shipV1OpenshipmentsPackagesRetrievePostResponse403 = $shipV1OpenshipmentsPackagesRetrievePostResponse403;
         $this->response = $response;
     }
-    public function getShipV1OpenshipmentsPackagesRetrievePostResponse403() : \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesRetrievePostResponse403
+    public function getShipV1OpenshipmentsPackagesRetrievePostResponse403(): \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesRetrievePostResponse403
     {
         return $this->shipV1OpenshipmentsPackagesRetrievePostResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemPi
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemPi
      *
      * @return string
      */
-    public function getTransactionDetails() : string
+    public function getTransactionDetails(): string
     {
         return $this->transactionDetails;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemPi
      *
      * @return self
      */
-    public function setTransactionDetails(string $transactionDetails) : self
+    public function setTransactionDetails(string $transactionDetails): self
     {
         $this->initialized['transactionDetails'] = true;
         $this->transactionDetails = $transactionDetails;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemPi
      *
      * @return string
      */
-    public function getTransactionId() : string
+    public function getTransactionId(): string
     {
         return $this->transactionId;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemPi
      *
      * @return self
      */
-    public function setTransactionId(string $transactionId) : self
+    public function setTransactionId(string $transactionId): self
     {
         $this->initialized['transactionId'] = true;
         $this->transactionId = $transactionId;

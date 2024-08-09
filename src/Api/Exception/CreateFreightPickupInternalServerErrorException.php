@@ -18,11 +18,11 @@ class CreateFreightPickupInternalServerErrorException extends InternalServerErro
         $this->pickupV1FreightPickupsPostResponse500 = $pickupV1FreightPickupsPostResponse500;
         $this->response = $response;
     }
-    public function getPickupV1FreightPickupsPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostResponse500
+    public function getPickupV1FreightPickupsPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsPostResponse500
     {
         return $this->pickupV1FreightPickupsPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

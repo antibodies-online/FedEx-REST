@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOrigi
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOrigi
      *
      * @return list<ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOriginCustomerImageUsagesItem>
      */
-    public function getCustomerImageUsages() : array
+    public function getCustomerImageUsages(): array
     {
         return $this->customerImageUsages;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOrigi
      *
      * @return self
      */
-    public function setCustomerImageUsages(array $customerImageUsages) : self
+    public function setCustomerImageUsages(array $customerImageUsages): self
     {
         $this->initialized['customerImageUsages'] = true;
         $this->customerImageUsages = $customerImageUsages;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOrigi
      *
      * @return ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOriginDocumentFormat
      */
-    public function getDocumentFormat() : ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOriginDocumentFormat
+    public function getDocumentFormat(): ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOriginDocumentFormat
     {
         return $this->documentFormat;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOrigi
      *
      * @return self
      */
-    public function setDocumentFormat(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOriginDocumentFormat $documentFormat) : self
+    public function setDocumentFormat(ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationCertificateOfOriginDocumentFormat $documentFormat): self
     {
         $this->initialized['documentFormat'] = true;
         $this->documentFormat = $documentFormat;

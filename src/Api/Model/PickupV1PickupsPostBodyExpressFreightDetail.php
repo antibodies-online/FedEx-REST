@@ -8,7 +8,7 @@ class PickupV1PickupsPostBodyExpressFreightDetail extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class PickupV1PickupsPostBodyExpressFreightDetail extends \ArrayObject
      *
      * @return string
      */
-    public function getTruckType() : string
+    public function getTruckType(): string
     {
         return $this->truckType;
     }
@@ -58,7 +58,7 @@ class PickupV1PickupsPostBodyExpressFreightDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setTruckType(string $truckType) : self
+    public function setTruckType(string $truckType): self
     {
         $this->initialized['truckType'] = true;
         $this->truckType = $truckType;
@@ -69,7 +69,7 @@ class PickupV1PickupsPostBodyExpressFreightDetail extends \ArrayObject
      *
      * @return string
      */
-    public function getService() : string
+    public function getService(): string
     {
         return $this->service;
     }
@@ -80,7 +80,7 @@ class PickupV1PickupsPostBodyExpressFreightDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setService(string $service) : self
+    public function setService(string $service): self
     {
         $this->initialized['service'] = true;
         $this->service = $service;
@@ -91,7 +91,7 @@ class PickupV1PickupsPostBodyExpressFreightDetail extends \ArrayObject
      *
      * @return string
      */
-    public function getTrailerLength() : string
+    public function getTrailerLength(): string
     {
         return $this->trailerLength;
     }
@@ -102,7 +102,7 @@ class PickupV1PickupsPostBodyExpressFreightDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setTrailerLength(string $trailerLength) : self
+    public function setTrailerLength(string $trailerLength): self
     {
         $this->initialized['trailerLength'] = true;
         $this->trailerLength = $trailerLength;
@@ -113,7 +113,7 @@ class PickupV1PickupsPostBodyExpressFreightDetail extends \ArrayObject
      *
      * @return string
      */
-    public function getBookingNumber() : string
+    public function getBookingNumber(): string
     {
         return $this->bookingNumber;
     }
@@ -124,7 +124,7 @@ class PickupV1PickupsPostBodyExpressFreightDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setBookingNumber(string $bookingNumber) : self
+    public function setBookingNumber(string $bookingNumber): self
     {
         $this->initialized['bookingNumber'] = true;
         $this->bookingNumber = $bookingNumber;
@@ -135,7 +135,7 @@ class PickupV1PickupsPostBodyExpressFreightDetail extends \ArrayObject
      *
      * @return PickupV1PickupsPostBodyExpressFreightDetaildimensions
      */
-    public function getDimensions() : PickupV1PickupsPostBodyExpressFreightDetaildimensions
+    public function getDimensions(): PickupV1PickupsPostBodyExpressFreightDetaildimensions
     {
         return $this->dimensions;
     }
@@ -146,7 +146,7 @@ class PickupV1PickupsPostBodyExpressFreightDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setDimensions(PickupV1PickupsPostBodyExpressFreightDetaildimensions $dimensions) : self
+    public function setDimensions(PickupV1PickupsPostBodyExpressFreightDetaildimensions $dimensions): self
     {
         $this->initialized['dimensions'] = true;
         $this->dimensions = $dimensions;

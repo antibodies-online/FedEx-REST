@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return float
      */
-    public function getQvalue() : float
+    public function getQvalue(): float
     {
         return $this->qvalue;
     }
@@ -40,7 +40,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return self
      */
-    public function setQvalue(float $qvalue) : self
+    public function setQvalue(float $qvalue): self
     {
         $this->initialized['qvalue'] = true;
         $this->qvalue = $qvalue;
@@ -51,7 +51,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return list<ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItemHazardousCommoditiesItem>
      */
-    public function getHazardousCommodities() : array
+    public function getHazardousCommodities(): array
     {
         return $this->hazardousCommodities;
     }
@@ -62,7 +62,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return self
      */
-    public function setHazardousCommodities(array $hazardousCommodities) : self
+    public function setHazardousCommodities(array $hazardousCommodities): self
     {
         $this->initialized['hazardousCommodities'] = true;
         $this->hazardousCommodities = $hazardousCommodities;

@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200Output extends \ArrayObj
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200Output extends \ArrayObj
      *
      * @return list<AvailabilityV1SpecialserviceoptionsPostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -40,7 +40,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200Output extends \ArrayObj
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;
@@ -51,7 +51,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200Output extends \ArrayObj
      *
      * @return list<AvailabilityV1SpecialserviceoptionsPostResponse200OutputServiceOptionsListItem>
      */
-    public function getServiceOptionsList() : array
+    public function getServiceOptionsList(): array
     {
         return $this->serviceOptionsList;
     }
@@ -62,7 +62,7 @@ class AvailabilityV1SpecialserviceoptionsPostResponse200Output extends \ArrayObj
      *
      * @return self
      */
-    public function setServiceOptionsList(array $serviceOptionsList) : self
+    public function setServiceOptionsList(array $serviceOptionsList): self
     {
         $this->initialized['serviceOptionsList'] = true;
         $this->serviceOptionsList = $serviceOptionsList;

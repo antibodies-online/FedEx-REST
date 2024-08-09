@@ -8,7 +8,7 @@ class DocumentsV1LhsimagesUploadPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class DocumentsV1LhsimagesUploadPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getAttachment() : string
+    public function getAttachment(): string
     {
         return $this->attachment;
     }
@@ -40,7 +40,7 @@ class DocumentsV1LhsimagesUploadPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAttachment(string $attachment) : self
+    public function setAttachment(string $attachment): self
     {
         $this->initialized['attachment'] = true;
         $this->attachment = $attachment;
@@ -51,7 +51,7 @@ class DocumentsV1LhsimagesUploadPostBody extends \ArrayObject
      *
      * @return DocumentsV1LhsimagesUploadPostBodyDocument
      */
-    public function getDocument() : DocumentsV1LhsimagesUploadPostBodyDocument
+    public function getDocument(): DocumentsV1LhsimagesUploadPostBodyDocument
     {
         return $this->document;
     }
@@ -62,7 +62,7 @@ class DocumentsV1LhsimagesUploadPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDocument(DocumentsV1LhsimagesUploadPostBodyDocument $document) : self
+    public function setDocument(DocumentsV1LhsimagesUploadPostBodyDocument $document): self
     {
         $this->initialized['document'] = true;
         $this->document = $document;

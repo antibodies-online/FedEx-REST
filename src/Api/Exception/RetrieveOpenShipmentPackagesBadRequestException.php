@@ -18,11 +18,11 @@ class RetrieveOpenShipmentPackagesBadRequestException extends BadRequestExceptio
         $this->shipV1OpenshipmentsPackagesRetrievePostResponse400 = $shipV1OpenshipmentsPackagesRetrievePostResponse400;
         $this->response = $response;
     }
-    public function getShipV1OpenshipmentsPackagesRetrievePostResponse400() : \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesRetrievePostResponse400
+    public function getShipV1OpenshipmentsPackagesRetrievePostResponse400(): \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesRetrievePostResponse400
     {
         return $this->shipV1OpenshipmentsPackagesRetrievePostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

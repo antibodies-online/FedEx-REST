@@ -18,11 +18,11 @@ class CreateTagInternalServerErrorException extends InternalServerErrorException
         $this->shipV1ShipmentsTagPostResponse500 = $shipV1ShipmentsTagPostResponse500;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsTagPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagPostResponse500
+    public function getShipV1ShipmentsTagPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagPostResponse500
     {
         return $this->shipV1ShipmentsTagPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

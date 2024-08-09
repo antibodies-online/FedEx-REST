@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentExpressFr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentExpressFr
      *
      * @return int
      */
-    public function getBookingConfirmationNumber() : int
+    public function getBookingConfirmationNumber(): int
     {
         return $this->bookingConfirmationNumber;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentExpressFr
      *
      * @return self
      */
-    public function setBookingConfirmationNumber(int $bookingConfirmationNumber) : self
+    public function setBookingConfirmationNumber(int $bookingConfirmationNumber): self
     {
         $this->initialized['bookingConfirmationNumber'] = true;
         $this->bookingConfirmationNumber = $bookingConfirmationNumber;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentExpressFr
      *
      * @return int
      */
-    public function getShippersLoadAndCount() : int
+    public function getShippersLoadAndCount(): int
     {
         return $this->shippersLoadAndCount;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentExpressFr
      *
      * @return self
      */
-    public function setShippersLoadAndCount(int $shippersLoadAndCount) : self
+    public function setShippersLoadAndCount(int $shippersLoadAndCount): self
     {
         $this->initialized['shippersLoadAndCount'] = true;
         $this->shippersLoadAndCount = $shippersLoadAndCount;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentExpressFr
      *
      * @return bool
      */
-    public function getPackingListEnclosed() : bool
+    public function getPackingListEnclosed(): bool
     {
         return $this->packingListEnclosed;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsRetrievePostResponse200OutputRequestedShipmentExpressFr
      *
      * @return self
      */
-    public function setPackingListEnclosed(bool $packingListEnclosed) : self
+    public function setPackingListEnclosed(bool $packingListEnclosed): self
     {
         $this->initialized['packingListEnclosed'] = true;
         $this->packingListEnclosed = $packingListEnclosed;

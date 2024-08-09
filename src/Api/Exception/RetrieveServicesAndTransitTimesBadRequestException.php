@@ -18,11 +18,11 @@ class RetrieveServicesAndTransitTimesBadRequestException extends BadRequestExcep
         $this->availabilityV1TransittimesPostResponse400 = $availabilityV1TransittimesPostResponse400;
         $this->response = $response;
     }
-    public function getAvailabilityV1TransittimesPostResponse400() : \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostResponse400
+    public function getAvailabilityV1TransittimesPostResponse400(): \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostResponse400
     {
         return $this->availabilityV1TransittimesPostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

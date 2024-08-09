@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostBodyRateRequestControlParameters extends \Arra
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class RateV1FreightRatesQuotesPostBodyRateRequestControlParameters extends \Arra
      *
      * @return bool
      */
-    public function getReturnTransitTimes() : bool
+    public function getReturnTransitTimes(): bool
     {
         return $this->returnTransitTimes;
     }
@@ -52,7 +52,7 @@ class RateV1FreightRatesQuotesPostBodyRateRequestControlParameters extends \Arra
      *
      * @return self
      */
-    public function setReturnTransitTimes(bool $returnTransitTimes) : self
+    public function setReturnTransitTimes(bool $returnTransitTimes): self
     {
         $this->initialized['returnTransitTimes'] = true;
         $this->returnTransitTimes = $returnTransitTimes;
@@ -63,7 +63,7 @@ class RateV1FreightRatesQuotesPostBodyRateRequestControlParameters extends \Arra
      *
      * @return bool
      */
-    public function getServicesNeededOnRateFailure() : bool
+    public function getServicesNeededOnRateFailure(): bool
     {
         return $this->servicesNeededOnRateFailure;
     }
@@ -74,7 +74,7 @@ class RateV1FreightRatesQuotesPostBodyRateRequestControlParameters extends \Arra
      *
      * @return self
      */
-    public function setServicesNeededOnRateFailure(bool $servicesNeededOnRateFailure) : self
+    public function setServicesNeededOnRateFailure(bool $servicesNeededOnRateFailure): self
     {
         $this->initialized['servicesNeededOnRateFailure'] = true;
         $this->servicesNeededOnRateFailure = $servicesNeededOnRateFailure;
@@ -85,7 +85,7 @@ class RateV1FreightRatesQuotesPostBodyRateRequestControlParameters extends \Arra
      *
      * @return string
      */
-    public function getVariableOptions() : string
+    public function getVariableOptions(): string
     {
         return $this->variableOptions;
     }
@@ -96,7 +96,7 @@ class RateV1FreightRatesQuotesPostBodyRateRequestControlParameters extends \Arra
      *
      * @return self
      */
-    public function setVariableOptions(string $variableOptions) : self
+    public function setVariableOptions(string $variableOptions): self
     {
         $this->initialized['variableOptions'] = true;
         $this->variableOptions = $variableOptions;
@@ -107,7 +107,7 @@ class RateV1FreightRatesQuotesPostBodyRateRequestControlParameters extends \Arra
      *
      * @return string
      */
-    public function getRateSortOrder() : string
+    public function getRateSortOrder(): string
     {
         return $this->rateSortOrder;
     }
@@ -118,7 +118,7 @@ class RateV1FreightRatesQuotesPostBodyRateRequestControlParameters extends \Arra
      *
      * @return self
      */
-    public function setRateSortOrder(string $rateSortOrder) : self
+    public function setRateSortOrder(string $rateSortOrder): self
     {
         $this->initialized['rateSortOrder'] = true;
         $this->rateSortOrder = $rateSortOrder;

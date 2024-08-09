@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContact
      */
-    public function getContact() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContact
+    public function getContact(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContact
     {
         return $this->contact;
     }
@@ -52,7 +52,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setContact(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContact $contact) : self
+    public function setContact(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -63,7 +63,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContactAncillaryDetail
      */
-    public function getContactAncillaryDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContactAncillaryDetail
+    public function getContactAncillaryDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContactAncillaryDetail
     {
         return $this->contactAncillaryDetail;
     }
@@ -74,7 +74,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setContactAncillaryDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContactAncillaryDetail $contactAncillaryDetail) : self
+    public function setContactAncillaryDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressContactAncillaryDetail $contactAncillaryDetail): self
     {
         $this->initialized['contactAncillaryDetail'] = true;
         $this->contactAncillaryDetail = $contactAncillaryDetail;
@@ -85,7 +85,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressAddress
      */
-    public function getAddress() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressAddress
+    public function getAddress(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressAddress
     {
         return $this->address;
     }
@@ -96,7 +96,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setAddress(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressAddress $address) : self
+    public function setAddress(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -107,7 +107,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressAddressAncillaryDetail
      */
-    public function getAddressAncillaryDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressAddressAncillaryDetail
+    public function getAddressAncillaryDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressAddressAncillaryDetail
     {
         return $this->addressAncillaryDetail;
     }
@@ -118,7 +118,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setAddressAncillaryDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressAddressAncillaryDetail $addressAncillaryDetail) : self
+    public function setAddressAncillaryDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetailLocationContactAndAddressAddressAncillaryDetail $addressAncillaryDetail): self
     {
         $this->initialized['addressAncillaryDetail'] = true;
         $this->addressAncillaryDetail = $addressAncillaryDetail;

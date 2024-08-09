@@ -18,11 +18,11 @@ class TrackMultiplePieceShipmentServiceUnavailableException extends ServiceUnava
         $this->trackV1AssociatedshipmentsPostResponse503 = $trackV1AssociatedshipmentsPostResponse503;
         $this->response = $response;
     }
-    public function getTrackV1AssociatedshipmentsPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\TrackV1AssociatedshipmentsPostResponse503
+    public function getTrackV1AssociatedshipmentsPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\TrackV1AssociatedshipmentsPostResponse503
     {
         return $this->trackV1AssociatedshipmentsPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

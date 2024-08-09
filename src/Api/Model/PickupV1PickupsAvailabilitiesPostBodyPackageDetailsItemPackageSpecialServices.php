@@ -8,7 +8,7 @@ class PickupV1PickupsAvailabilitiesPostBodyPackageDetailsItemPackageSpecialServi
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class PickupV1PickupsAvailabilitiesPostBodyPackageDetailsItemPackageSpecialServi
      *
      * @return list<string>
      */
-    public function getSpecialServiceTypes() : array
+    public function getSpecialServiceTypes(): array
     {
         return $this->specialServiceTypes;
     }
@@ -34,7 +34,7 @@ class PickupV1PickupsAvailabilitiesPostBodyPackageDetailsItemPackageSpecialServi
      *
      * @return self
      */
-    public function setSpecialServiceTypes(array $specialServiceTypes) : self
+    public function setSpecialServiceTypes(array $specialServiceTypes): self
     {
         $this->initialized['specialServiceTypes'] = true;
         $this->specialServiceTypes = $specialServiceTypes;

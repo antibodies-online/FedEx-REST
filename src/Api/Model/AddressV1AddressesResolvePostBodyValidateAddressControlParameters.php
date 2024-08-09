@@ -8,7 +8,7 @@ class AddressV1AddressesResolvePostBodyValidateAddressControlParameters extends 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class AddressV1AddressesResolvePostBodyValidateAddressControlParameters extends 
      *
      * @return bool
      */
-    public function getIncludeResolutionTokens() : bool
+    public function getIncludeResolutionTokens(): bool
     {
         return $this->includeResolutionTokens;
     }
@@ -34,7 +34,7 @@ class AddressV1AddressesResolvePostBodyValidateAddressControlParameters extends 
      *
      * @return self
      */
-    public function setIncludeResolutionTokens(bool $includeResolutionTokens) : self
+    public function setIncludeResolutionTokens(bool $includeResolutionTokens): self
     {
         $this->initialized['includeResolutionTokens'] = true;
         $this->includeResolutionTokens = $includeResolutionTokens;

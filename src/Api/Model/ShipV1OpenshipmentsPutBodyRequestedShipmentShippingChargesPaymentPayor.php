@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPaymentPayor ext
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPaymentPayor ext
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPaymentPayorResponsibleParty
      */
-    public function getResponsibleParty() : ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPaymentPayorResponsibleParty
+    public function getResponsibleParty(): ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPaymentPayorResponsibleParty
     {
         return $this->responsibleParty;
     }
@@ -34,7 +34,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPaymentPayor ext
      *
      * @return self
      */
-    public function setResponsibleParty(ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPaymentPayorResponsibleParty $responsibleParty) : self
+    public function setResponsibleParty(ShipV1OpenshipmentsPutBodyRequestedShipmentShippingChargesPaymentPayorResponsibleParty $responsibleParty): self
     {
         $this->initialized['responsibleParty'] = true;
         $this->responsibleParty = $responsibleParty;

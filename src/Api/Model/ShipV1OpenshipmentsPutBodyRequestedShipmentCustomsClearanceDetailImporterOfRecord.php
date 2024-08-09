@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterO
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterO
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordaddress
      */
-    public function getAddress() : ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordaddress
+    public function getAddress(): ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordaddress
     {
         return $this->address;
     }
@@ -52,7 +52,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterO
      *
      * @return self
      */
-    public function setAddress(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordaddress $address) : self
+    public function setAddress(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -63,7 +63,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterO
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordcontact
      */
-    public function getContact() : ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordcontact
+    public function getContact(): ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordcontact
     {
         return $this->contact;
     }
@@ -74,7 +74,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterO
      *
      * @return self
      */
-    public function setContact(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordcontact $contact) : self
+    public function setContact(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordcontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -85,7 +85,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterO
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordaccountNumber
      */
-    public function getAccountNumber() : ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordaccountNumber
+    public function getAccountNumber(): ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordaccountNumber
     {
         return $this->accountNumber;
     }
@@ -96,7 +96,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterO
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordaccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordaccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -107,7 +107,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterO
      *
      * @return list<ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterOfRecordtinsItem>
      */
-    public function getTins() : array
+    public function getTins(): array
     {
         return $this->tins;
     }
@@ -118,7 +118,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailImporterO
      *
      * @return self
      */
-    public function setTins(array $tins) : self
+    public function setTins(array $tins): self
     {
         $this->initialized['tins'] = true;
         $this->tins = $tins;

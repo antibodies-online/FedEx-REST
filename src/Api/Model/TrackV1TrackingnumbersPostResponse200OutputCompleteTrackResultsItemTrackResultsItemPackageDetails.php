@@ -8,7 +8,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getPhysicalPackagingType() : string
+    public function getPhysicalPackagingType(): string
     {
         return $this->physicalPackagingType;
     }
@@ -82,7 +82,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setPhysicalPackagingType(string $physicalPackagingType) : self
+    public function setPhysicalPackagingType(string $physicalPackagingType): self
     {
         $this->initialized['physicalPackagingType'] = true;
         $this->physicalPackagingType = $physicalPackagingType;
@@ -93,7 +93,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getSequenceNumber() : string
+    public function getSequenceNumber(): string
     {
         return $this->sequenceNumber;
     }
@@ -104,7 +104,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setSequenceNumber(string $sequenceNumber) : self
+    public function setSequenceNumber(string $sequenceNumber): self
     {
         $this->initialized['sequenceNumber'] = true;
         $this->sequenceNumber = $sequenceNumber;
@@ -115,7 +115,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getUndeliveredCount() : string
+    public function getUndeliveredCount(): string
     {
         return $this->undeliveredCount;
     }
@@ -126,7 +126,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setUndeliveredCount(string $undeliveredCount) : self
+    public function setUndeliveredCount(string $undeliveredCount): self
     {
         $this->initialized['undeliveredCount'] = true;
         $this->undeliveredCount = $undeliveredCount;
@@ -137,7 +137,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsPackagingDescription
      */
-    public function getPackagingDescription() : TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsPackagingDescription
+    public function getPackagingDescription(): TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsPackagingDescription
     {
         return $this->packagingDescription;
     }
@@ -148,7 +148,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setPackagingDescription(TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsPackagingDescription $packagingDescription) : self
+    public function setPackagingDescription(TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsPackagingDescription $packagingDescription): self
     {
         $this->initialized['packagingDescription'] = true;
         $this->packagingDescription = $packagingDescription;
@@ -159,7 +159,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getCount() : string
+    public function getCount(): string
     {
         return $this->count;
     }
@@ -170,7 +170,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setCount(string $count) : self
+    public function setCount(string $count): self
     {
         $this->initialized['count'] = true;
         $this->count = $count;
@@ -181,7 +181,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsWeightAndDimensions
      */
-    public function getWeightAndDimensions() : TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsWeightAndDimensions
+    public function getWeightAndDimensions(): TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsWeightAndDimensions
     {
         return $this->weightAndDimensions;
     }
@@ -192,7 +192,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setWeightAndDimensions(TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsWeightAndDimensions $weightAndDimensions) : self
+    public function setWeightAndDimensions(TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsWeightAndDimensions $weightAndDimensions): self
     {
         $this->initialized['weightAndDimensions'] = true;
         $this->weightAndDimensions = $weightAndDimensions;
@@ -203,7 +203,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return list<string>
      */
-    public function getPackageContent() : array
+    public function getPackageContent(): array
     {
         return $this->packageContent;
     }
@@ -214,7 +214,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setPackageContent(array $packageContent) : self
+    public function setPackageContent(array $packageContent): self
     {
         $this->initialized['packageContent'] = true;
         $this->packageContent = $packageContent;
@@ -225,7 +225,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getContentPieceCount() : string
+    public function getContentPieceCount(): string
     {
         return $this->contentPieceCount;
     }
@@ -236,7 +236,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setContentPieceCount(string $contentPieceCount) : self
+    public function setContentPieceCount(string $contentPieceCount): self
     {
         $this->initialized['contentPieceCount'] = true;
         $this->contentPieceCount = $contentPieceCount;
@@ -247,7 +247,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsDeclaredValue
      */
-    public function getDeclaredValue() : TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsDeclaredValue
+    public function getDeclaredValue(): TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsDeclaredValue
     {
         return $this->declaredValue;
     }
@@ -258,7 +258,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setDeclaredValue(TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsDeclaredValue $declaredValue) : self
+    public function setDeclaredValue(TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemPackageDetailsDeclaredValue $declaredValue): self
     {
         $this->initialized['declaredValue'] = true;
         $this->declaredValue = $declaredValue;

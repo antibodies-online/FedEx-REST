@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return string
      */
-    public function getPhoneNumberType() : string
+    public function getPhoneNumberType(): string
     {
         return $this->phoneNumberType;
     }
@@ -40,7 +40,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setPhoneNumberType(string $phoneNumberType) : self
+    public function setPhoneNumberType(string $phoneNumberType): self
     {
         $this->initialized['phoneNumberType'] = true;
         $this->phoneNumberType = $phoneNumberType;
@@ -51,7 +51,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return string
      */
-    public function getPhoneNumber() : string
+    public function getPhoneNumber(): string
     {
         return $this->phoneNumber;
     }
@@ -62,7 +62,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpeci
      *
      * @return self
      */
-    public function setPhoneNumber(string $phoneNumber) : self
+    public function setPhoneNumber(string $phoneNumber): self
     {
         $this->initialized['phoneNumber'] = true;
         $this->phoneNumber = $phoneNumber;

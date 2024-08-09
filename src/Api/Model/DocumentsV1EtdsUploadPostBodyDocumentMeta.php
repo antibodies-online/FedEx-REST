@@ -8,7 +8,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getShipDocumentType() : string
+    public function getShipDocumentType(): string
     {
         return $this->shipDocumentType;
     }
@@ -76,7 +76,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setShipDocumentType(string $shipDocumentType) : self
+    public function setShipDocumentType(string $shipDocumentType): self
     {
         $this->initialized['shipDocumentType'] = true;
         $this->shipDocumentType = $shipDocumentType;
@@ -87,7 +87,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getFormCode() : string
+    public function getFormCode(): string
     {
         return $this->formCode;
     }
@@ -98,7 +98,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setFormCode(string $formCode) : self
+    public function setFormCode(string $formCode): self
     {
         $this->initialized['formCode'] = true;
         $this->formCode = $formCode;
@@ -109,7 +109,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getTrackingNumber() : string
+    public function getTrackingNumber(): string
     {
         return $this->trackingNumber;
     }
@@ -120,7 +120,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingNumber(string $trackingNumber) : self
+    public function setTrackingNumber(string $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;
@@ -131,7 +131,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getShipmentDate() : string
+    public function getShipmentDate(): string
     {
         return $this->shipmentDate;
     }
@@ -142,7 +142,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setShipmentDate(string $shipmentDate) : self
+    public function setShipmentDate(string $shipmentDate): self
     {
         $this->initialized['shipmentDate'] = true;
         $this->shipmentDate = $shipmentDate;
@@ -153,7 +153,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getOriginLocationCode() : string
+    public function getOriginLocationCode(): string
     {
         return $this->originLocationCode;
     }
@@ -164,7 +164,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setOriginLocationCode(string $originLocationCode) : self
+    public function setOriginLocationCode(string $originLocationCode): self
     {
         $this->initialized['originLocationCode'] = true;
         $this->originLocationCode = $originLocationCode;
@@ -175,7 +175,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getOriginCountryCode() : string
+    public function getOriginCountryCode(): string
     {
         return $this->originCountryCode;
     }
@@ -186,7 +186,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setOriginCountryCode(string $originCountryCode) : self
+    public function setOriginCountryCode(string $originCountryCode): self
     {
         $this->initialized['originCountryCode'] = true;
         $this->originCountryCode = $originCountryCode;
@@ -197,7 +197,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getDestinationLocationCode() : string
+    public function getDestinationLocationCode(): string
     {
         return $this->destinationLocationCode;
     }
@@ -208,7 +208,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setDestinationLocationCode(string $destinationLocationCode) : self
+    public function setDestinationLocationCode(string $destinationLocationCode): self
     {
         $this->initialized['destinationLocationCode'] = true;
         $this->destinationLocationCode = $destinationLocationCode;
@@ -219,7 +219,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getDestinationCountryCode() : string
+    public function getDestinationCountryCode(): string
     {
         return $this->destinationCountryCode;
     }
@@ -230,7 +230,7 @@ class DocumentsV1EtdsUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setDestinationCountryCode(string $destinationCountryCode) : self
+    public function setDestinationCountryCode(string $destinationCountryCode): self
     {
         $this->initialized['destinationCountryCode'] = true;
         $this->destinationCountryCode = $destinationCountryCode;

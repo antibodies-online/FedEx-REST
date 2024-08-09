@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -52,7 +52,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -63,7 +63,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailEmailLabelDetailRecipientsItemOptionsRequested
      */
-    public function getOptionsRequested() : ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailEmailLabelDetailRecipientsItemOptionsRequested
+    public function getOptionsRequested(): ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailEmailLabelDetailRecipientsItemOptionsRequested
     {
         return $this->optionsRequested;
     }
@@ -74,7 +74,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return self
      */
-    public function setOptionsRequested(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailEmailLabelDetailRecipientsItemOptionsRequested $optionsRequested) : self
+    public function setOptionsRequested(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShipmentDetailEmailLabelDetailRecipientsItemOptionsRequested $optionsRequested): self
     {
         $this->initialized['optionsRequested'] = true;
         $this->optionsRequested = $optionsRequested;
@@ -85,7 +85,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return string
      */
-    public function getRole() : string
+    public function getRole(): string
     {
         return $this->role;
     }
@@ -96,7 +96,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return self
      */
-    public function setRole(string $role) : self
+    public function setRole(string $role): self
     {
         $this->initialized['role'] = true;
         $this->role = $role;
@@ -107,7 +107,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return string
      */
-    public function getLocale() : string
+    public function getLocale(): string
     {
         return $this->locale;
     }
@@ -118,7 +118,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesPendingShip
      *
      * @return self
      */
-    public function setLocale(string $locale) : self
+    public function setLocale(string $locale): self
     {
         $this->initialized['locale'] = true;
         $this->locale = $locale;

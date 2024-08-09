@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return string
      */
-    public function getDocumentType() : string
+    public function getDocumentType(): string
     {
         return $this->documentType;
     }
@@ -52,7 +52,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setDocumentType(string $documentType) : self
+    public function setDocumentType(string $documentType): self
     {
         $this->initialized['documentType'] = true;
         $this->documentType = $documentType;
@@ -63,7 +63,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return string
      */
-    public function getCustomerReference() : string
+    public function getCustomerReference(): string
     {
         return $this->customerReference;
     }
@@ -74,7 +74,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setCustomerReference(string $customerReference) : self
+    public function setCustomerReference(string $customerReference): self
     {
         $this->initialized['customerReference'] = true;
         $this->customerReference = $customerReference;
@@ -85,7 +85,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -96,7 +96,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -107,7 +107,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return string
      */
-    public function getDocumentId() : string
+    public function getDocumentId(): string
     {
         return $this->documentId;
     }
@@ -118,7 +118,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setDocumentId(string $documentId) : self
+    public function setDocumentId(string $documentId): self
     {
         $this->initialized['documentId'] = true;
         $this->documentId = $documentId;

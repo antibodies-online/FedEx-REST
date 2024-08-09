@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommit';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommit::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommit';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommit::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -53,11 +53,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['smartPostCommitTime']);
             }
             if (\array_key_exists('dateDetail', $data)) {
-                $object->setDateDetail($this->denormalizer->denormalize($data['dateDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdateDetail', 'json', $context));
+                $object->setDateDetail($this->denormalizer->denormalize($data['dateDetail'], \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdateDetail::class, 'json', $context));
                 unset($data['dateDetail']);
             }
             if (\array_key_exists('delayDetails', $data)) {
-                $object->setDelayDetails($this->denormalizer->denormalize($data['delayDetails'], 'AntibodiesOnline\\FedEx\\Api\\Model\\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetails', 'json', $context));
+                $object->setDelayDetails($this->denormalizer->denormalize($data['delayDetails'], \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetails::class, 'json', $context));
                 unset($data['delayDetails']);
             }
             if (\array_key_exists('saturdayDelivery', $data)) {
@@ -73,7 +73,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['alternativeCommodityNames']);
             }
             if (\array_key_exists('transitDays', $data)) {
-                $object->setTransitDays($this->denormalizer->denormalize($data['transitDays'], 'AntibodiesOnline\\FedEx\\Api\\Model\\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommittransitDays', 'json', $context));
+                $object->setTransitDays($this->denormalizer->denormalize($data['transitDays'], \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommittransitDays::class, 'json', $context));
                 unset($data['transitDays']);
             }
             if (\array_key_exists('label', $data)) {
@@ -95,7 +95,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('daysInTransit') && null !== $object->getDaysInTransit()) {
@@ -142,9 +142,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommit' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommit::class => false];
         }
     }
 } else {
@@ -154,13 +154,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommit';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommit::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommit';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommit::class;
         }
         /**
          * @return mixed
@@ -190,11 +190,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['smartPostCommitTime']);
             }
             if (\array_key_exists('dateDetail', $data)) {
-                $object->setDateDetail($this->denormalizer->denormalize($data['dateDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdateDetail', 'json', $context));
+                $object->setDateDetail($this->denormalizer->denormalize($data['dateDetail'], \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdateDetail::class, 'json', $context));
                 unset($data['dateDetail']);
             }
             if (\array_key_exists('delayDetails', $data)) {
-                $object->setDelayDetails($this->denormalizer->denormalize($data['delayDetails'], 'AntibodiesOnline\\FedEx\\Api\\Model\\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetails', 'json', $context));
+                $object->setDelayDetails($this->denormalizer->denormalize($data['delayDetails'], \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetails::class, 'json', $context));
                 unset($data['delayDetails']);
             }
             if (\array_key_exists('saturdayDelivery', $data)) {
@@ -210,7 +210,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['alternativeCommodityNames']);
             }
             if (\array_key_exists('transitDays', $data)) {
-                $object->setTransitDays($this->denormalizer->denormalize($data['transitDays'], 'AntibodiesOnline\\FedEx\\Api\\Model\\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommittransitDays', 'json', $context));
+                $object->setTransitDays($this->denormalizer->denormalize($data['transitDays'], \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommittransitDays::class, 'json', $context));
                 unset($data['transitDays']);
             }
             if (\array_key_exists('label', $data)) {
@@ -282,9 +282,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommit' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommit::class => false];
         }
     }
 }

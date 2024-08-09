@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesinternati
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesinternati
      *
      * @return string
      */
-    public function getLicenseOrExemptionNumber() : string
+    public function getLicenseOrExemptionNumber(): string
     {
         return $this->licenseOrExemptionNumber;
     }
@@ -34,7 +34,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesinternati
      *
      * @return self
      */
-    public function setLicenseOrExemptionNumber(string $licenseOrExemptionNumber) : self
+    public function setLicenseOrExemptionNumber(string $licenseOrExemptionNumber): self
     {
         $this->initialized['licenseOrExemptionNumber'] = true;
         $this->licenseOrExemptionNumber = $licenseOrExemptionNumber;

@@ -8,7 +8,7 @@ class ShipV1ShipmentsPackagesValidatePostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1ShipmentsPackagesValidatePostBody extends \ArrayObject
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipment
      */
-    public function getRequestedShipment() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipment
+    public function getRequestedShipment(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipment
     {
         return $this->requestedShipment;
     }
@@ -40,7 +40,7 @@ class ShipV1ShipmentsPackagesValidatePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedShipment(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipment $requestedShipment) : self
+    public function setRequestedShipment(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipment $requestedShipment): self
     {
         $this->initialized['requestedShipment'] = true;
         $this->requestedShipment = $requestedShipment;
@@ -51,7 +51,7 @@ class ShipV1ShipmentsPackagesValidatePostBody extends \ArrayObject
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1ShipmentsPackagesValidatePostBodyAccountNumber
+    public function getAccountNumber(): ShipV1ShipmentsPackagesValidatePostBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -62,7 +62,7 @@ class ShipV1ShipmentsPackagesValidatePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1ShipmentsPackagesValidatePostBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1ShipmentsPackagesValidatePostBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

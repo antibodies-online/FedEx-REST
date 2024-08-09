@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdateDetail
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdateDetail
      *
      * @return string
      */
-    public function getDayOfWeek() : string
+    public function getDayOfWeek(): string
     {
         return $this->dayOfWeek;
     }
@@ -40,7 +40,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdateDetail
      *
      * @return self
      */
-    public function setDayOfWeek(string $dayOfWeek) : self
+    public function setDayOfWeek(string $dayOfWeek): self
     {
         $this->initialized['dayOfWeek'] = true;
         $this->dayOfWeek = $dayOfWeek;
@@ -51,7 +51,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdateDetail
      *
      * @return string
      */
-    public function getDayFormat() : string
+    public function getDayFormat(): string
     {
         return $this->dayFormat;
     }
@@ -62,7 +62,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdateDetail
      *
      * @return self
      */
-    public function setDayFormat(string $dayFormat) : self
+    public function setDayFormat(string $dayFormat): self
     {
         $this->initialized['dayFormat'] = true;
         $this->dayFormat = $dayFormat;

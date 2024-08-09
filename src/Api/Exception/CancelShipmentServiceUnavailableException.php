@@ -18,11 +18,11 @@ class CancelShipmentServiceUnavailableException extends ServiceUnavailableExcept
         $this->shipV1ShipmentsCancelPutResponse503 = $shipV1ShipmentsCancelPutResponse503;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsCancelPutResponse503() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse503
+    public function getShipV1ShipmentsCancelPutResponse503(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse503
     {
         return $this->shipV1ShipmentsCancelPutResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -18,11 +18,11 @@ class PerformEndOfDayCloseInternalServerErrorException extends InternalServerErr
         $this->shipV1EndofdayPostResponse500 = $shipV1EndofdayPostResponse500;
         $this->response = $response;
     }
-    public function getShipV1EndofdayPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPostResponse500
+    public function getShipV1EndofdayPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPostResponse500
     {
         return $this->shipV1EndofdayPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getMaterial() : string
+    public function getMaterial(): string
     {
         return $this->material;
     }
@@ -46,7 +46,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setMaterial(string $material) : self
+    public function setMaterial(string $material): self
     {
         $this->initialized['material'] = true;
         $this->material = $material;
@@ -57,7 +57,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getRegulatorySubType() : string
+    public function getRegulatorySubType(): string
     {
         return $this->regulatorySubType;
     }
@@ -68,7 +68,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setRegulatorySubType(string $regulatorySubType) : self
+    public function setRegulatorySubType(string $regulatorySubType): self
     {
         $this->initialized['regulatorySubType'] = true;
         $this->regulatorySubType = $regulatorySubType;
@@ -79,7 +79,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getPacking() : string
+    public function getPacking(): string
     {
         return $this->packing;
     }
@@ -90,7 +90,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setPacking(string $packing) : self
+    public function setPacking(string $packing): self
     {
         $this->initialized['packing'] = true;
         $this->packing = $packing;

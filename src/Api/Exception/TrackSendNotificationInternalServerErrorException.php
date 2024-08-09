@@ -18,11 +18,11 @@ class TrackSendNotificationInternalServerErrorException extends InternalServerEr
         $this->trackV1NotificationsPostResponse500 = $trackV1NotificationsPostResponse500;
         $this->response = $response;
     }
-    public function getTrackV1NotificationsPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostResponse500
+    public function getTrackV1NotificationsPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostResponse500
     {
         return $this->trackV1NotificationsPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

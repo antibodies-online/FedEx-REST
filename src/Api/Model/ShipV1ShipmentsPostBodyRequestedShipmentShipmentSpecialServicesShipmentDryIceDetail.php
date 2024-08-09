@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentDry
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentDry
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentDryIceDetailTotalWeight
      */
-    public function getTotalWeight() : ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentDryIceDetailTotalWeight
+    public function getTotalWeight(): ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentDryIceDetailTotalWeight
     {
         return $this->totalWeight;
     }
@@ -40,7 +40,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentDry
      *
      * @return self
      */
-    public function setTotalWeight(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentDryIceDetailTotalWeight $totalWeight) : self
+    public function setTotalWeight(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentDryIceDetailTotalWeight $totalWeight): self
     {
         $this->initialized['totalWeight'] = true;
         $this->totalWeight = $totalWeight;
@@ -51,7 +51,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentDry
      *
      * @return int
      */
-    public function getPackageCount() : int
+    public function getPackageCount(): int
     {
         return $this->packageCount;
     }
@@ -62,7 +62,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentDry
      *
      * @return self
      */
-    public function setPackageCount(int $packageCount) : self
+    public function setPackageCount(int $packageCount): self
     {
         $this->initialized['packageCount'] = true;
         $this->packageCount = $packageCount;

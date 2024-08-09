@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifie
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifie
      *
      * @return string
      */
-    public function getSymbology() : string
+    public function getSymbology(): string
     {
         return $this->symbology;
     }
@@ -40,7 +40,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifie
      *
      * @return self
      */
-    public function setSymbology(string $symbology) : self
+    public function setSymbology(string $symbology): self
     {
         $this->initialized['symbology'] = true;
         $this->symbology = $symbology;
@@ -51,7 +51,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifie
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcodedSpecification
      */
-    public function getSpecification() : ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcodedSpecification
+    public function getSpecification(): ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcodedSpecification
     {
         return $this->specification;
     }
@@ -62,7 +62,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifie
      *
      * @return self
      */
-    public function setSpecification(ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcodedSpecification $specification) : self
+    public function setSpecification(ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcodedSpecification $specification): self
     {
         $this->initialized['specification'] = true;
         $this->specification = $specification;

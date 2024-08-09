@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -52,7 +52,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -63,7 +63,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetailRecipientsItemOptionsRequested
      */
-    public function getOptionsRequested() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetailRecipientsItemOptionsRequested
+    public function getOptionsRequested(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetailRecipientsItemOptionsRequested
     {
         return $this->optionsRequested;
     }
@@ -74,7 +74,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setOptionsRequested(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetailRecipientsItemOptionsRequested $optionsRequested) : self
+    public function setOptionsRequested(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetailRecipientsItemOptionsRequested $optionsRequested): self
     {
         $this->initialized['optionsRequested'] = true;
         $this->optionsRequested = $optionsRequested;
@@ -85,7 +85,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return string
      */
-    public function getRole() : string
+    public function getRole(): string
     {
         return $this->role;
     }
@@ -96,7 +96,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setRole(string $role) : self
+    public function setRole(string $role): self
     {
         $this->initialized['role'] = true;
         $this->role = $role;
@@ -107,7 +107,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetailRecipientsItemLocale
      */
-    public function getLocale() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetailRecipientsItemLocale
+    public function getLocale(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetailRecipientsItemLocale
     {
         return $this->locale;
     }
@@ -118,7 +118,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setLocale(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetailRecipientsItemLocale $locale) : self
+    public function setLocale(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingShipmentDetailEmailLabelDetailRecipientsItemLocale $locale): self
     {
         $this->initialized['locale'] = true;
         $this->locale = $locale;

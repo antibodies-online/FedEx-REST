@@ -18,11 +18,11 @@ class TrackByTrackingNumberBadRequestException extends BadRequestException
         $this->trackV1TrackingnumbersPostResponse400 = $trackV1TrackingnumbersPostResponse400;
         $this->response = $response;
     }
-    public function getTrackV1TrackingnumbersPostResponse400() : \AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingnumbersPostResponse400
+    public function getTrackV1TrackingnumbersPostResponse400(): \AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingnumbersPostResponse400
     {
         return $this->trackV1TrackingnumbersPostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

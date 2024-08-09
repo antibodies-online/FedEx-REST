@@ -8,7 +8,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return string
      */
-    public function getDimension() : string
+    public function getDimension(): string
     {
         return $this->dimension;
     }
@@ -40,7 +40,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return self
      */
-    public function setDimension(string $dimension) : self
+    public function setDimension(string $dimension): self
     {
         $this->initialized['dimension'] = true;
         $this->dimension = $dimension;
@@ -51,7 +51,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -62,7 +62,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;

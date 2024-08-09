@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return string
      */
-    public function getCountry() : string
+    public function getCountry(): string
     {
         return $this->country;
     }
@@ -40,7 +40,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setCountry(string $country) : self
+    public function setCountry(string $country): self
     {
         $this->initialized['country'] = true;
         $this->country = $country;
@@ -51,7 +51,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return string
      */
-    public function getLanguage() : string
+    public function getLanguage(): string
     {
         return $this->language;
     }
@@ -62,7 +62,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setLanguage(string $language) : self
+    public function setLanguage(string $language): self
     {
         $this->initialized['language'] = true;
         $this->language = $language;

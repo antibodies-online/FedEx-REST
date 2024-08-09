@@ -18,11 +18,11 @@ class CancelPickupInternalServerErrorException extends InternalServerErrorExcept
         $this->pickupV1PickupsCancelPutResponse500 = $pickupV1PickupsCancelPutResponse500;
         $this->response = $response;
     }
-    public function getPickupV1PickupsCancelPutResponse500() : \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsCancelPutResponse500
+    public function getPickupV1PickupsCancelPutResponse500(): \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsCancelPutResponse500
     {
         return $this->pickupV1PickupsCancelPutResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

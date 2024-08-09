@@ -8,7 +8,7 @@ class ShipV1EndofdayPutBodyCloseDocumentSpecificationOp950DetailFormatTopOfPageO
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1EndofdayPutBodyCloseDocumentSpecificationOp950DetailFormatTopOfPageO
      *
      * @return string
      */
-    public function getValue() : string
+    public function getValue(): string
     {
         return $this->value;
     }
@@ -40,7 +40,7 @@ class ShipV1EndofdayPutBodyCloseDocumentSpecificationOp950DetailFormatTopOfPageO
      *
      * @return self
      */
-    public function setValue(string $value) : self
+    public function setValue(string $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;
@@ -51,7 +51,7 @@ class ShipV1EndofdayPutBodyCloseDocumentSpecificationOp950DetailFormatTopOfPageO
      *
      * @return string
      */
-    public function getUnits() : string
+    public function getUnits(): string
     {
         return $this->units;
     }
@@ -62,7 +62,7 @@ class ShipV1EndofdayPutBodyCloseDocumentSpecificationOp950DetailFormatTopOfPageO
      *
      * @return self
      */
-    public function setUnits(string $units) : self
+    public function setUnits(string $units): self
     {
         $this->initialized['units'] = true;
         $this->units = $units;

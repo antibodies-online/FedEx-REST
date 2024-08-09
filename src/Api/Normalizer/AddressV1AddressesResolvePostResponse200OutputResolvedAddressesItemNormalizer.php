@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -71,17 +71,17 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('cityToken', $data)) {
                 $values_2 = [];
                 foreach ($data['cityToken'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'AntibodiesOnline\\FedEx\\Api\\Model\\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemCityTokenItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemCityTokenItem::class, 'json', $context);
                 }
                 $object->setCityToken($values_2);
                 unset($data['cityToken']);
             }
             if (\array_key_exists('postalCodeToken', $data)) {
-                $object->setPostalCodeToken($this->denormalizer->denormalize($data['postalCodeToken'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemPostalCodeToken', 'json', $context));
+                $object->setPostalCodeToken($this->denormalizer->denormalize($data['postalCodeToken'], \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemPostalCodeToken::class, 'json', $context));
                 unset($data['postalCodeToken']);
             }
             if (\array_key_exists('parsedPostalCode', $data)) {
-                $object->setParsedPostalCode($this->denormalizer->denormalize($data['parsedPostalCode'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedPostalCode', 'json', $context));
+                $object->setParsedPostalCode($this->denormalizer->denormalize($data['parsedPostalCode'], \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedPostalCode::class, 'json', $context));
                 unset($data['parsedPostalCode']);
             }
             if (\array_key_exists('classification', $data)) {
@@ -113,7 +113,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['generalDelivery']);
             }
             if (\array_key_exists('attributes', $data)) {
-                $object->setAttributes($this->denormalizer->denormalize($data['attributes'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttributes', 'json', $context));
+                $object->setAttributes($this->denormalizer->denormalize($data['attributes'], \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttributes::class, 'json', $context));
                 unset($data['attributes']);
             }
             foreach ($data as $key => $value_3) {
@@ -123,7 +123,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('streetLinesToken') && null !== $object->getStreetLinesToken()) {
@@ -193,9 +193,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem::class => false];
         }
     }
 } else {
@@ -205,13 +205,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem::class;
         }
         /**
          * @return mixed
@@ -259,17 +259,17 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('cityToken', $data)) {
                 $values_2 = [];
                 foreach ($data['cityToken'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'AntibodiesOnline\\FedEx\\Api\\Model\\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemCityTokenItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemCityTokenItem::class, 'json', $context);
                 }
                 $object->setCityToken($values_2);
                 unset($data['cityToken']);
             }
             if (\array_key_exists('postalCodeToken', $data)) {
-                $object->setPostalCodeToken($this->denormalizer->denormalize($data['postalCodeToken'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemPostalCodeToken', 'json', $context));
+                $object->setPostalCodeToken($this->denormalizer->denormalize($data['postalCodeToken'], \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemPostalCodeToken::class, 'json', $context));
                 unset($data['postalCodeToken']);
             }
             if (\array_key_exists('parsedPostalCode', $data)) {
-                $object->setParsedPostalCode($this->denormalizer->denormalize($data['parsedPostalCode'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedPostalCode', 'json', $context));
+                $object->setParsedPostalCode($this->denormalizer->denormalize($data['parsedPostalCode'], \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedPostalCode::class, 'json', $context));
                 unset($data['parsedPostalCode']);
             }
             if (\array_key_exists('classification', $data)) {
@@ -301,7 +301,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['generalDelivery']);
             }
             if (\array_key_exists('attributes', $data)) {
-                $object->setAttributes($this->denormalizer->denormalize($data['attributes'], 'AntibodiesOnline\\FedEx\\Api\\Model\\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttributes', 'json', $context));
+                $object->setAttributes($this->denormalizer->denormalize($data['attributes'], \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttributes::class, 'json', $context));
                 unset($data['attributes']);
             }
             foreach ($data as $key => $value_3) {
@@ -384,9 +384,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem::class => false];
         }
     }
 }

@@ -8,7 +8,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBody extends \ArrayObject
      *
      * @return ShipV1ShipmentsTagCancelShipmentidPutBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1ShipmentsTagCancelShipmentidPutBodyAccountNumber
+    public function getAccountNumber(): ShipV1ShipmentsTagCancelShipmentidPutBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -52,7 +52,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1ShipmentsTagCancelShipmentidPutBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1ShipmentsTagCancelShipmentidPutBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -63,7 +63,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -74,7 +74,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -85,7 +85,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTrackingNumber() : string
+    public function getTrackingNumber(): string
     {
         return $this->trackingNumber;
     }
@@ -96,7 +96,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingNumber(string $trackingNumber) : self
+    public function setTrackingNumber(string $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;
@@ -107,7 +107,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBody extends \ArrayObject
      *
      * @return ShipV1ShipmentsTagCancelShipmentidPutBodyCompletedTagDetail
      */
-    public function getCompletedTagDetail() : ShipV1ShipmentsTagCancelShipmentidPutBodyCompletedTagDetail
+    public function getCompletedTagDetail(): ShipV1ShipmentsTagCancelShipmentidPutBodyCompletedTagDetail
     {
         return $this->completedTagDetail;
     }
@@ -118,7 +118,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCompletedTagDetail(ShipV1ShipmentsTagCancelShipmentidPutBodyCompletedTagDetail $completedTagDetail) : self
+    public function setCompletedTagDetail(ShipV1ShipmentsTagCancelShipmentidPutBodyCompletedTagDetail $completedTagDetail): self
     {
         $this->initialized['completedTagDetail'] = true;
         $this->completedTagDetail = $completedTagDetail;

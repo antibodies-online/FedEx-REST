@@ -8,7 +8,7 @@ class TrackV1NotificationsPostBodyTrackingNumberInfo extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class TrackV1NotificationsPostBodyTrackingNumberInfo extends \ArrayObject
      *
      * @return string
      */
-    public function getTrackingNumber() : string
+    public function getTrackingNumber(): string
     {
         return $this->trackingNumber;
     }
@@ -46,7 +46,7 @@ class TrackV1NotificationsPostBodyTrackingNumberInfo extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingNumber(string $trackingNumber) : self
+    public function setTrackingNumber(string $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;
@@ -57,7 +57,7 @@ class TrackV1NotificationsPostBodyTrackingNumberInfo extends \ArrayObject
      *
      * @return string
      */
-    public function getCarrierCode() : string
+    public function getCarrierCode(): string
     {
         return $this->carrierCode;
     }
@@ -68,7 +68,7 @@ class TrackV1NotificationsPostBodyTrackingNumberInfo extends \ArrayObject
      *
      * @return self
      */
-    public function setCarrierCode(string $carrierCode) : self
+    public function setCarrierCode(string $carrierCode): self
     {
         $this->initialized['carrierCode'] = true;
         $this->carrierCode = $carrierCode;
@@ -79,7 +79,7 @@ class TrackV1NotificationsPostBodyTrackingNumberInfo extends \ArrayObject
      *
      * @return string
      */
-    public function getTrackingNumberUniqueId() : string
+    public function getTrackingNumberUniqueId(): string
     {
         return $this->trackingNumberUniqueId;
     }
@@ -90,7 +90,7 @@ class TrackV1NotificationsPostBodyTrackingNumberInfo extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingNumberUniqueId(string $trackingNumberUniqueId) : self
+    public function setTrackingNumberUniqueId(string $trackingNumberUniqueId): self
     {
         $this->initialized['trackingNumberUniqueId'] = true;
         $this->trackingNumberUniqueId = $trackingNumberUniqueId;

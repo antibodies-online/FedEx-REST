@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class AvailabilityV1SpecialserviceoptionsPostBody extends \ArrayObject
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment
      */
-    public function getRequestedShipment() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment
+    public function getRequestedShipment(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment
     {
         return $this->requestedShipment;
     }
@@ -46,7 +46,7 @@ class AvailabilityV1SpecialserviceoptionsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedShipment(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment $requestedShipment) : self
+    public function setRequestedShipment(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipment $requestedShipment): self
     {
         $this->initialized['requestedShipment'] = true;
         $this->requestedShipment = $requestedShipment;
@@ -57,7 +57,7 @@ class AvailabilityV1SpecialserviceoptionsPostBody extends \ArrayObject
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyAccountNumber
      */
-    public function getAccountNumber() : AvailabilityV1SpecialserviceoptionsPostBodyAccountNumber
+    public function getAccountNumber(): AvailabilityV1SpecialserviceoptionsPostBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -68,7 +68,7 @@ class AvailabilityV1SpecialserviceoptionsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(AvailabilityV1SpecialserviceoptionsPostBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(AvailabilityV1SpecialserviceoptionsPostBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -79,7 +79,7 @@ class AvailabilityV1SpecialserviceoptionsPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getCarrierCodes() : array
+    public function getCarrierCodes(): array
     {
         return $this->carrierCodes;
     }
@@ -90,7 +90,7 @@ class AvailabilityV1SpecialserviceoptionsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCarrierCodes(array $carrierCodes) : self
+    public function setCarrierCodes(array $carrierCodes): self
     {
         $this->initialized['carrierCodes'] = true;
         $this->carrierCodes = $carrierCodes;

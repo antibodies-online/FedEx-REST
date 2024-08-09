@@ -8,7 +8,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getLocalization() : string
+    public function getLocalization(): string
     {
         return $this->localization;
     }
@@ -40,7 +40,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setLocalization(string $localization) : self
+    public function setLocalization(string $localization): self
     {
         $this->initialized['localization'] = true;
         $this->localization = $localization;
@@ -51,7 +51,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getLocaleCode() : string
+    public function getLocaleCode(): string
     {
         return $this->localeCode;
     }
@@ -62,7 +62,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setLocaleCode(string $localeCode) : self
+    public function setLocaleCode(string $localeCode): self
     {
         $this->initialized['localeCode'] = true;
         $this->localeCode = $localeCode;

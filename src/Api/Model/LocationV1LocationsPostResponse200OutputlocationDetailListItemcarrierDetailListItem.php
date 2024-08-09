@@ -8,7 +8,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemcarrierDetai
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemcarrierDetai
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -40,7 +40,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemcarrierDetai
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -51,7 +51,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemcarrierDetai
      *
      * @return string
      */
-    public function getServiceCategory() : string
+    public function getServiceCategory(): string
     {
         return $this->serviceCategory;
     }
@@ -62,7 +62,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemcarrierDetai
      *
      * @return self
      */
-    public function setServiceCategory(string $serviceCategory) : self
+    public function setServiceCategory(string $serviceCategory): self
     {
         $this->initialized['serviceCategory'] = true;
         $this->serviceCategory = $serviceCategory;

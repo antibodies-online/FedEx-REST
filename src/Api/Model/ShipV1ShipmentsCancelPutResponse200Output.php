@@ -8,7 +8,7 @@ class ShipV1ShipmentsCancelPutResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1ShipmentsCancelPutResponse200Output extends \ArrayObject
      *
      * @return bool
      */
-    public function getCancelledShipment() : bool
+    public function getCancelledShipment(): bool
     {
         return $this->cancelledShipment;
     }
@@ -52,7 +52,7 @@ class ShipV1ShipmentsCancelPutResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setCancelledShipment(bool $cancelledShipment) : self
+    public function setCancelledShipment(bool $cancelledShipment): self
     {
         $this->initialized['cancelledShipment'] = true;
         $this->cancelledShipment = $cancelledShipment;
@@ -63,7 +63,7 @@ class ShipV1ShipmentsCancelPutResponse200Output extends \ArrayObject
      *
      * @return bool
      */
-    public function getCancelledHistory() : bool
+    public function getCancelledHistory(): bool
     {
         return $this->cancelledHistory;
     }
@@ -74,7 +74,7 @@ class ShipV1ShipmentsCancelPutResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setCancelledHistory(bool $cancelledHistory) : self
+    public function setCancelledHistory(bool $cancelledHistory): self
     {
         $this->initialized['cancelledHistory'] = true;
         $this->cancelledHistory = $cancelledHistory;
@@ -85,7 +85,7 @@ class ShipV1ShipmentsCancelPutResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getSuccessMessage() : string
+    public function getSuccessMessage(): string
     {
         return $this->successMessage;
     }
@@ -96,7 +96,7 @@ class ShipV1ShipmentsCancelPutResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setSuccessMessage(string $successMessage) : self
+    public function setSuccessMessage(string $successMessage): self
     {
         $this->initialized['successMessage'] = true;
         $this->successMessage = $successMessage;
@@ -107,7 +107,7 @@ class ShipV1ShipmentsCancelPutResponse200Output extends \ArrayObject
      *
      * @return list<ShipV1ShipmentsCancelPutResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -118,7 +118,7 @@ class ShipV1ShipmentsCancelPutResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

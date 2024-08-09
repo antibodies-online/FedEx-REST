@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -41,11 +41,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('localization', $data)) {
-                $object->setLocalization($this->denormalizer->denormalize($data['localization'], 'AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailLocalization', 'json', $context));
+                $object->setLocalization($this->denormalizer->denormalize($data['localization'], \AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailLocalization::class, 'json', $context));
                 unset($data['localization']);
             }
             if (\array_key_exists('emailDetail', $data)) {
-                $object->setEmailDetail($this->denormalizer->denormalize($data['emailDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailEmailDetail', 'json', $context));
+                $object->setEmailDetail($this->denormalizer->denormalize($data['emailDetail'], \AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailEmailDetail::class, 'json', $context));
                 unset($data['emailDetail']);
             }
             if (\array_key_exists('notificationType', $data)) {
@@ -59,7 +59,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['localization'] = $this->normalizer->normalize($object->getLocalization(), 'json', $context);
@@ -72,9 +72,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail::class => false];
         }
     }
 } else {
@@ -84,13 +84,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail::class;
         }
         /**
          * @return mixed
@@ -108,11 +108,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('localization', $data)) {
-                $object->setLocalization($this->denormalizer->denormalize($data['localization'], 'AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailLocalization', 'json', $context));
+                $object->setLocalization($this->denormalizer->denormalize($data['localization'], \AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailLocalization::class, 'json', $context));
                 unset($data['localization']);
             }
             if (\array_key_exists('emailDetail', $data)) {
-                $object->setEmailDetail($this->denormalizer->denormalize($data['emailDetail'], 'AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailEmailDetail', 'json', $context));
+                $object->setEmailDetail($this->denormalizer->denormalize($data['emailDetail'], \AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetailEmailDetail::class, 'json', $context));
                 unset($data['emailDetail']);
             }
             if (\array_key_exists('notificationType', $data)) {
@@ -142,9 +142,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostBodyTrackingEventNotificationDetailtrackingNotificationsItemNotificationDetail::class => false];
         }
     }
 }

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1OpenshipmentsPackagesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getIndex() : string
+    public function getIndex(): string
     {
         return $this->index;
     }
@@ -52,7 +52,7 @@ class ShipV1OpenshipmentsPackagesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIndex(string $index) : self
+    public function setIndex(string $index): self
     {
         $this->initialized['index'] = true;
         $this->index = $index;
@@ -63,7 +63,7 @@ class ShipV1OpenshipmentsPackagesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getShipAction() : string
+    public function getShipAction(): string
     {
         return $this->shipAction;
     }
@@ -74,7 +74,7 @@ class ShipV1OpenshipmentsPackagesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setShipAction(string $shipAction) : self
+    public function setShipAction(string $shipAction): self
     {
         $this->initialized['shipAction'] = true;
         $this->shipAction = $shipAction;
@@ -85,7 +85,7 @@ class ShipV1OpenshipmentsPackagesPostBody extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPackagesPostBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1OpenshipmentsPackagesPostBodyAccountNumber
+    public function getAccountNumber(): ShipV1OpenshipmentsPackagesPostBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -96,7 +96,7 @@ class ShipV1OpenshipmentsPackagesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1OpenshipmentsPackagesPostBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1OpenshipmentsPackagesPostBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -107,7 +107,7 @@ class ShipV1OpenshipmentsPackagesPostBody extends \ArrayObject
      *
      * @return list<ShipV1OpenshipmentsPackagesPostBodyRequestedPackageLineItemsItem>
      */
-    public function getRequestedPackageLineItems() : array
+    public function getRequestedPackageLineItems(): array
     {
         return $this->requestedPackageLineItems;
     }
@@ -118,7 +118,7 @@ class ShipV1OpenshipmentsPackagesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedPackageLineItems(array $requestedPackageLineItems) : self
+    public function setRequestedPackageLineItems(array $requestedPackageLineItems): self
     {
         $this->initialized['requestedPackageLineItems'] = true;
         $this->requestedPackageLineItems = $requestedPackageLineItems;

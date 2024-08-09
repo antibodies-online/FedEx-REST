@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -89,7 +89,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return int
      */
-    public function getHandlingUnits() : int
+    public function getHandlingUnits(): int
     {
         return $this->handlingUnits;
     }
@@ -100,7 +100,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setHandlingUnits(int $handlingUnits) : self
+    public function setHandlingUnits(int $handlingUnits): self
     {
         $this->initialized['handlingUnits'] = true;
         $this->handlingUnits = $handlingUnits;
@@ -111,7 +111,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return string
      */
-    public function getNmfcCode() : string
+    public function getNmfcCode(): string
     {
         return $this->nmfcCode;
     }
@@ -122,7 +122,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setNmfcCode(string $nmfcCode) : self
+    public function setNmfcCode(string $nmfcCode): self
     {
         $this->initialized['nmfcCode'] = true;
         $this->nmfcCode = $nmfcCode;
@@ -133,7 +133,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return string
      */
-    public function getSubPackagingType() : string
+    public function getSubPackagingType(): string
     {
         return $this->subPackagingType;
     }
@@ -144,7 +144,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setSubPackagingType(string $subPackagingType) : self
+    public function setSubPackagingType(string $subPackagingType): self
     {
         $this->initialized['subPackagingType'] = true;
         $this->subPackagingType = $subPackagingType;
@@ -155,7 +155,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -166,7 +166,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -177,7 +177,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemWeight
      */
-    public function getWeight() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemWeight
+    public function getWeight(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemWeight
     {
         return $this->weight;
     }
@@ -188,7 +188,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setWeight(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemWeight $weight) : self
+    public function setWeight(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemWeight $weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -199,7 +199,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return int
      */
-    public function getPieces() : int
+    public function getPieces(): int
     {
         return $this->pieces;
     }
@@ -210,7 +210,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setPieces(int $pieces) : self
+    public function setPieces(int $pieces): self
     {
         $this->initialized['pieces'] = true;
         $this->pieces = $pieces;
@@ -221,7 +221,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemVolume
      */
-    public function getVolume() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemVolume
+    public function getVolume(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemVolume
     {
         return $this->volume;
     }
@@ -232,7 +232,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setVolume(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemVolume $volume) : self
+    public function setVolume(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemVolume $volume): self
     {
         $this->initialized['volume'] = true;
         $this->volume = $volume;
@@ -243,7 +243,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return string
      */
-    public function getFreightClass() : string
+    public function getFreightClass(): string
     {
         return $this->freightClass;
     }
@@ -254,7 +254,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setFreightClass(string $freightClass) : self
+    public function setFreightClass(string $freightClass): self
     {
         $this->initialized['freightClass'] = true;
         $this->freightClass = $freightClass;
@@ -265,7 +265,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return string
      */
-    public function getPurchaseOrderNumber() : string
+    public function getPurchaseOrderNumber(): string
     {
         return $this->purchaseOrderNumber;
     }
@@ -276,7 +276,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setPurchaseOrderNumber(string $purchaseOrderNumber) : self
+    public function setPurchaseOrderNumber(string $purchaseOrderNumber): self
     {
         $this->initialized['purchaseOrderNumber'] = true;
         $this->purchaseOrderNumber = $purchaseOrderNumber;
@@ -287,7 +287,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -298,7 +298,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -309,7 +309,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return string
      */
-    public function getHazardousMaterials() : string
+    public function getHazardousMaterials(): string
     {
         return $this->hazardousMaterials;
     }
@@ -320,7 +320,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setHazardousMaterials(string $hazardousMaterials) : self
+    public function setHazardousMaterials(string $hazardousMaterials): self
     {
         $this->initialized['hazardousMaterials'] = true;
         $this->hazardousMaterials = $hazardousMaterials;
@@ -331,7 +331,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemDimensions
      */
-    public function getDimensions() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemDimensions
+    public function getDimensions(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemDimensions
     {
         return $this->dimensions;
     }
@@ -342,7 +342,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setDimensions(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemDimensions $dimensions) : self
+    public function setDimensions(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetaillineItemItemDimensions $dimensions): self
     {
         $this->initialized['dimensions'] = true;
         $this->dimensions = $dimensions;

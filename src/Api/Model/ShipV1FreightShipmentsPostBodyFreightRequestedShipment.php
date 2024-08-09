@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -149,7 +149,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return string
      */
-    public function getShipDatestamp() : string
+    public function getShipDatestamp(): string
     {
         return $this->shipDatestamp;
     }
@@ -160,7 +160,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setShipDatestamp(string $shipDatestamp) : self
+    public function setShipDatestamp(string $shipDatestamp): self
     {
         $this->initialized['shipDatestamp'] = true;
         $this->shipDatestamp = $shipDatestamp;
@@ -171,7 +171,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return string
      */
-    public function getPickupType() : string
+    public function getPickupType(): string
     {
         return $this->pickupType;
     }
@@ -182,7 +182,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setPickupType(string $pickupType) : self
+    public function setPickupType(string $pickupType): self
     {
         $this->initialized['pickupType'] = true;
         $this->pickupType = $pickupType;
@@ -193,7 +193,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -204,7 +204,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -215,7 +215,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return string
      */
-    public function getPackagingType() : string
+    public function getPackagingType(): string
     {
         return $this->packagingType;
     }
@@ -226,7 +226,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setPackagingType(string $packagingType) : self
+    public function setPackagingType(string $packagingType): self
     {
         $this->initialized['packagingType'] = true;
         $this->packagingType = $packagingType;
@@ -237,7 +237,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return int
      */
-    public function getTotalWeight() : int
+    public function getTotalWeight(): int
     {
         return $this->totalWeight;
     }
@@ -248,7 +248,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setTotalWeight(int $totalWeight) : self
+    public function setTotalWeight(int $totalWeight): self
     {
         $this->initialized['totalWeight'] = true;
         $this->totalWeight = $totalWeight;
@@ -259,7 +259,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return string
      */
-    public function getPreferredCurrency() : string
+    public function getPreferredCurrency(): string
     {
         return $this->preferredCurrency;
     }
@@ -270,7 +270,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setPreferredCurrency(string $preferredCurrency) : self
+    public function setPreferredCurrency(string $preferredCurrency): self
     {
         $this->initialized['preferredCurrency'] = true;
         $this->preferredCurrency = $preferredCurrency;
@@ -281,7 +281,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShipper
      */
-    public function getShipper() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShipper
+    public function getShipper(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShipper
     {
         return $this->shipper;
     }
@@ -292,7 +292,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setShipper(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShipper $shipper) : self
+    public function setShipper(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShipper $shipper): self
     {
         $this->initialized['shipper'] = true;
         $this->shipper = $shipper;
@@ -303,7 +303,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRecipient
      */
-    public function getRecipient() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRecipient
+    public function getRecipient(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRecipient
     {
         return $this->recipient;
     }
@@ -314,7 +314,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setRecipient(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRecipient $recipient) : self
+    public function setRecipient(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRecipient $recipient): self
     {
         $this->initialized['recipient'] = true;
         $this->recipient = $recipient;
@@ -325,7 +325,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTo
      */
-    public function getSoldTo() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTo
+    public function getSoldTo(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTo
     {
         return $this->soldTo;
     }
@@ -336,7 +336,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setSoldTo(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTo $soldTo) : self
+    public function setSoldTo(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentSoldTo $soldTo): self
     {
         $this->initialized['soldTo'] = true;
         $this->soldTo = $soldTo;
@@ -347,7 +347,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentOrigin
      */
-    public function getOrigin() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentOrigin
+    public function getOrigin(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentOrigin
     {
         return $this->origin;
     }
@@ -358,7 +358,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setOrigin(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentOrigin $origin) : self
+    public function setOrigin(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentOrigin $origin): self
     {
         $this->initialized['origin'] = true;
         $this->origin = $origin;
@@ -369,7 +369,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingChargesPayment
      */
-    public function getShippingChargesPayment() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingChargesPayment
+    public function getShippingChargesPayment(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingChargesPayment
     {
         return $this->shippingChargesPayment;
     }
@@ -380,7 +380,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setShippingChargesPayment(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingChargesPayment $shippingChargesPayment) : self
+    public function setShippingChargesPayment(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingChargesPayment $shippingChargesPayment): self
     {
         $this->initialized['shippingChargesPayment'] = true;
         $this->shippingChargesPayment = $shippingChargesPayment;
@@ -391,7 +391,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServices
      */
-    public function getFreightShipmentSpecialServices() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServices
+    public function getFreightShipmentSpecialServices(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServices
     {
         return $this->freightShipmentSpecialServices;
     }
@@ -402,7 +402,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setFreightShipmentSpecialServices(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServices $freightShipmentSpecialServices) : self
+    public function setFreightShipmentSpecialServices(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentSpecialServices $freightShipmentSpecialServices): self
     {
         $this->initialized['freightShipmentSpecialServices'] = true;
         $this->freightShipmentSpecialServices = $freightShipmentSpecialServices;
@@ -413,7 +413,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentEmailNotificationDetail
      */
-    public function getEmailNotificationDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentEmailNotificationDetail
+    public function getEmailNotificationDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentEmailNotificationDetail
     {
         return $this->emailNotificationDetail;
     }
@@ -424,7 +424,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setEmailNotificationDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentEmailNotificationDetail $emailNotificationDetail) : self
+    public function setEmailNotificationDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentEmailNotificationDetail $emailNotificationDetail): self
     {
         $this->initialized['emailNotificationDetail'] = true;
         $this->emailNotificationDetail = $emailNotificationDetail;
@@ -435,7 +435,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail
      */
-    public function getFreightShipmentDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail
+    public function getFreightShipmentDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail
     {
         return $this->freightShipmentDetail;
     }
@@ -446,7 +446,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setFreightShipmentDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail $freightShipmentDetail) : self
+    public function setFreightShipmentDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentFreightShipmentDetail $freightShipmentDetail): self
     {
         $this->initialized['freightShipmentDetail'] = true;
         $this->freightShipmentDetail = $freightShipmentDetail;
@@ -457,7 +457,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentVariableHandlingChargeDetail
      */
-    public function getVariableHandlingChargeDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentVariableHandlingChargeDetail
+    public function getVariableHandlingChargeDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentVariableHandlingChargeDetail
     {
         return $this->variableHandlingChargeDetail;
     }
@@ -468,7 +468,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setVariableHandlingChargeDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentVariableHandlingChargeDetail $variableHandlingChargeDetail) : self
+    public function setVariableHandlingChargeDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentVariableHandlingChargeDetail $variableHandlingChargeDetail): self
     {
         $this->initialized['variableHandlingChargeDetail'] = true;
         $this->variableHandlingChargeDetail = $variableHandlingChargeDetail;
@@ -479,7 +479,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDetail
      */
-    public function getCustomsClearanceDetail() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDetail
+    public function getCustomsClearanceDetail(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDetail
     {
         return $this->customsClearanceDetail;
     }
@@ -490,7 +490,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setCustomsClearanceDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDetail $customsClearanceDetail) : self
+    public function setCustomsClearanceDetail(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDetail $customsClearanceDetail): self
     {
         $this->initialized['customsClearanceDetail'] = true;
         $this->customsClearanceDetail = $customsClearanceDetail;
@@ -501,7 +501,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecification
      */
-    public function getLabelSpecification() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecification
+    public function getLabelSpecification(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecification
     {
         return $this->labelSpecification;
     }
@@ -512,7 +512,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setLabelSpecification(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecification $labelSpecification) : self
+    public function setLabelSpecification(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecification $labelSpecification): self
     {
         $this->initialized['labelSpecification'] = true;
         $this->labelSpecification = $labelSpecification;
@@ -523,7 +523,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecification
      */
-    public function getShippingDocumentSpecification() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecification
+    public function getShippingDocumentSpecification(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecification
     {
         return $this->shippingDocumentSpecification;
     }
@@ -534,7 +534,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setShippingDocumentSpecification(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecification $shippingDocumentSpecification) : self
+    public function setShippingDocumentSpecification(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentShippingDocumentSpecification $shippingDocumentSpecification): self
     {
         $this->initialized['shippingDocumentSpecification'] = true;
         $this->shippingDocumentSpecification = $shippingDocumentSpecification;
@@ -545,7 +545,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return list<string>
      */
-    public function getRateRequestType() : array
+    public function getRateRequestType(): array
     {
         return $this->rateRequestType;
     }
@@ -556,7 +556,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setRateRequestType(array $rateRequestType) : self
+    public function setRateRequestType(array $rateRequestType): self
     {
         $this->initialized['rateRequestType'] = true;
         $this->rateRequestType = $rateRequestType;
@@ -567,7 +567,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return int
      */
-    public function getTotalPackageCount() : int
+    public function getTotalPackageCount(): int
     {
         return $this->totalPackageCount;
     }
@@ -578,7 +578,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setTotalPackageCount(int $totalPackageCount) : self
+    public function setTotalPackageCount(int $totalPackageCount): self
     {
         $this->initialized['totalPackageCount'] = true;
         $this->totalPackageCount = $totalPackageCount;
@@ -589,7 +589,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipmentMasterTrackingId
      */
-    public function getMasterTrackingId() : ShipV1FreightShipmentsPostBodyFreightRequestedShipmentMasterTrackingId
+    public function getMasterTrackingId(): ShipV1FreightShipmentsPostBodyFreightRequestedShipmentMasterTrackingId
     {
         return $this->masterTrackingId;
     }
@@ -600,7 +600,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setMasterTrackingId(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentMasterTrackingId $masterTrackingId) : self
+    public function setMasterTrackingId(ShipV1FreightShipmentsPostBodyFreightRequestedShipmentMasterTrackingId $masterTrackingId): self
     {
         $this->initialized['masterTrackingId'] = true;
         $this->masterTrackingId = $masterTrackingId;
@@ -611,7 +611,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return list<ShipV1FreightShipmentsPostBodyFreightRequestedShipmentRequestedPackageLineItemsItem>
      */
-    public function getRequestedPackageLineItems() : array
+    public function getRequestedPackageLineItems(): array
     {
         return $this->requestedPackageLineItems;
     }
@@ -622,7 +622,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipment extends \ArrayObjec
      *
      * @return self
      */
-    public function setRequestedPackageLineItems(array $requestedPackageLineItems) : self
+    public function setRequestedPackageLineItems(array $requestedPackageLineItems): self
     {
         $this->initialized['requestedPackageLineItems'] = true;
         $this->requestedPackageLineItems = $requestedPackageLineItems;

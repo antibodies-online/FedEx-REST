@@ -120,6 +120,26 @@
               }
             }
           },
+          "422": {
+            "description": "Unprocessable Entity",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponseVO"
+                },
+                "example": {
+                  "transactionId": "624deea6-b709-470c-8c39-4b5511281492",
+                  "customerTransactionId": "AnyCo_order123456789",
+                  "errors": [
+                    {
+                      "code": "SHIPMENT.POSTALCODE.INVALID",
+                      "message": "Invalid ZIP/Postal code. Please correct and try again."
+                    }
+                  ]
+                }
+              }
+            }
+          },
           "500": {
             "description": "Failure",
             "content": {

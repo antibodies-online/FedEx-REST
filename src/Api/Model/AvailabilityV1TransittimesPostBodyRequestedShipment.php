@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentShipper
      */
-    public function getShipper() : AvailabilityV1TransittimesPostBodyRequestedShipmentShipper
+    public function getShipper(): AvailabilityV1TransittimesPostBodyRequestedShipmentShipper
     {
         return $this->shipper;
     }
@@ -88,7 +88,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return self
      */
-    public function setShipper(AvailabilityV1TransittimesPostBodyRequestedShipmentShipper $shipper) : self
+    public function setShipper(AvailabilityV1TransittimesPostBodyRequestedShipmentShipper $shipper): self
     {
         $this->initialized['shipper'] = true;
         $this->shipper = $shipper;
@@ -99,7 +99,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return list<AvailabilityV1TransittimesPostBodyRequestedShipmentRecipientsItem>
      */
-    public function getRecipients() : array
+    public function getRecipients(): array
     {
         return $this->recipients;
     }
@@ -110,7 +110,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return self
      */
-    public function setRecipients(array $recipients) : self
+    public function setRecipients(array $recipients): self
     {
         $this->initialized['recipients'] = true;
         $this->recipients = $recipients;
@@ -121,7 +121,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -132,7 +132,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -143,7 +143,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return string
      */
-    public function getPackagingType() : string
+    public function getPackagingType(): string
     {
         return $this->packagingType;
     }
@@ -154,7 +154,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return self
      */
-    public function setPackagingType(string $packagingType) : self
+    public function setPackagingType(string $packagingType): self
     {
         $this->initialized['packagingType'] = true;
         $this->packagingType = $packagingType;
@@ -165,7 +165,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return string
      */
-    public function getShipDatestamp() : string
+    public function getShipDatestamp(): string
     {
         return $this->shipDatestamp;
     }
@@ -176,7 +176,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return self
      */
-    public function setShipDatestamp(string $shipDatestamp) : self
+    public function setShipDatestamp(string $shipDatestamp): self
     {
         $this->initialized['shipDatestamp'] = true;
         $this->shipDatestamp = $shipDatestamp;
@@ -187,7 +187,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return string
      */
-    public function getPickupType() : string
+    public function getPickupType(): string
     {
         return $this->pickupType;
     }
@@ -198,7 +198,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return self
      */
-    public function setPickupType(string $pickupType) : self
+    public function setPickupType(string $pickupType): self
     {
         $this->initialized['pickupType'] = true;
         $this->pickupType = $pickupType;
@@ -209,7 +209,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPayment
      */
-    public function getShippingChargesPayment() : AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPayment
+    public function getShippingChargesPayment(): AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPayment
     {
         return $this->shippingChargesPayment;
     }
@@ -220,7 +220,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return self
      */
-    public function setShippingChargesPayment(AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPayment $shippingChargesPayment) : self
+    public function setShippingChargesPayment(AvailabilityV1TransittimesPostBodyRequestedShipmentShippingChargesPayment $shippingChargesPayment): self
     {
         $this->initialized['shippingChargesPayment'] = true;
         $this->shippingChargesPayment = $shippingChargesPayment;
@@ -231,7 +231,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return list<AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItem>
      */
-    public function getRequestedPackageLineItems() : array
+    public function getRequestedPackageLineItems(): array
     {
         return $this->requestedPackageLineItems;
     }
@@ -242,7 +242,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedPackageLineItems(array $requestedPackageLineItems) : self
+    public function setRequestedPackageLineItems(array $requestedPackageLineItems): self
     {
         $this->initialized['requestedPackageLineItems'] = true;
         $this->requestedPackageLineItems = $requestedPackageLineItems;
@@ -253,7 +253,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices
      */
-    public function getShipmentSpecialServices() : AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices
+    public function getShipmentSpecialServices(): AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices
     {
         return $this->shipmentSpecialServices;
     }
@@ -264,7 +264,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return self
      */
-    public function setShipmentSpecialServices(AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices $shipmentSpecialServices) : self
+    public function setShipmentSpecialServices(AvailabilityV1TransittimesPostBodyRequestedShipmentShipmentSpecialServices $shipmentSpecialServices): self
     {
         $this->initialized['shipmentSpecialServices'] = true;
         $this->shipmentSpecialServices = $shipmentSpecialServices;
@@ -275,7 +275,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetail
      */
-    public function getCustomsClearanceDetail() : AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetail
+    public function getCustomsClearanceDetail(): AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetail
     {
         return $this->customsClearanceDetail;
     }
@@ -286,7 +286,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipment extends \ArrayObject
      *
      * @return self
      */
-    public function setCustomsClearanceDetail(AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetail $customsClearanceDetail) : self
+    public function setCustomsClearanceDetail(AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetail $customsClearanceDetail): self
     {
         $this->initialized['customsClearanceDetail'] = true;
         $this->customsClearanceDetail = $customsClearanceDetail;

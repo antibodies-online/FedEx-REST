@@ -18,11 +18,11 @@ class CancelShipmentInternalServerErrorException extends InternalServerErrorExce
         $this->shipV1ShipmentsCancelPutResponse500 = $shipV1ShipmentsCancelPutResponse500;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsCancelPutResponse500() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse500
+    public function getShipV1ShipmentsCancelPutResponse500(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse500
     {
         return $this->shipV1ShipmentsCancelPutResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

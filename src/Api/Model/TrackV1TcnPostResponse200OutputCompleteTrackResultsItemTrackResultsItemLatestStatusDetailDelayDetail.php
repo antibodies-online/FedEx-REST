@@ -8,7 +8,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLat
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLat
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -46,7 +46,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLat
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -57,7 +57,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLat
      *
      * @return string
      */
-    public function getSubType() : string
+    public function getSubType(): string
     {
         return $this->subType;
     }
@@ -68,7 +68,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLat
      *
      * @return self
      */
-    public function setSubType(string $subType) : self
+    public function setSubType(string $subType): self
     {
         $this->initialized['subType'] = true;
         $this->subType = $subType;
@@ -79,7 +79,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLat
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -90,7 +90,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLat
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;

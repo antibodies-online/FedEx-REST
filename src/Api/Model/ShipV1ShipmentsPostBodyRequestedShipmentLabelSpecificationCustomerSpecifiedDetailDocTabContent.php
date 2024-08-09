@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifie
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifie
      *
      * @return string
      */
-    public function getDocTabContentType() : string
+    public function getDocTabContentType(): string
     {
         return $this->docTabContentType;
     }
@@ -46,7 +46,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifie
      *
      * @return self
      */
-    public function setDocTabContentType(string $docTabContentType) : self
+    public function setDocTabContentType(string $docTabContentType): self
     {
         $this->initialized['docTabContentType'] = true;
         $this->docTabContentType = $docTabContentType;
@@ -57,7 +57,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifie
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentZone001
      */
-    public function getZone001() : ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentZone001
+    public function getZone001(): ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentZone001
     {
         return $this->zone001;
     }
@@ -68,7 +68,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifie
      *
      * @return self
      */
-    public function setZone001(ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentZone001 $zone001) : self
+    public function setZone001(ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentZone001 $zone001): self
     {
         $this->initialized['zone001'] = true;
         $this->zone001 = $zone001;
@@ -79,7 +79,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifie
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcoded
      */
-    public function getBarcoded() : ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcoded
+    public function getBarcoded(): ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcoded
     {
         return $this->barcoded;
     }
@@ -90,7 +90,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifie
      *
      * @return self
      */
-    public function setBarcoded(ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcoded $barcoded) : self
+    public function setBarcoded(ShipV1ShipmentsPostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcoded $barcoded): self
     {
         $this->initialized['barcoded'] = true;
         $this->barcoded = $barcoded;

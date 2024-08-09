@@ -18,11 +18,11 @@ class TrackMultiplePieceShipmentNotFoundException extends NotFoundException
         $this->trackV1AssociatedshipmentsPostResponse404 = $trackV1AssociatedshipmentsPostResponse404;
         $this->response = $response;
     }
-    public function getTrackV1AssociatedshipmentsPostResponse404() : \AntibodiesOnline\FedEx\Api\Model\TrackV1AssociatedshipmentsPostResponse404
+    public function getTrackV1AssociatedshipmentsPostResponse404(): \AntibodiesOnline\FedEx\Api\Model\TrackV1AssociatedshipmentsPostResponse404
     {
         return $this->trackV1AssociatedshipmentsPostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

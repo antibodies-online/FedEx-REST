@@ -8,7 +8,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesHomeDeliveryPremiumDetailPhoneNumber
      */
-    public function getPhoneNumber() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesHomeDeliveryPremiumDetailPhoneNumber
+    public function getPhoneNumber(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesHomeDeliveryPremiumDetailPhoneNumber
     {
         return $this->phoneNumber;
     }
@@ -46,7 +46,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      *
      * @return self
      */
-    public function setPhoneNumber(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesHomeDeliveryPremiumDetailPhoneNumber $phoneNumber) : self
+    public function setPhoneNumber(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesHomeDeliveryPremiumDetailPhoneNumber $phoneNumber): self
     {
         $this->initialized['phoneNumber'] = true;
         $this->phoneNumber = $phoneNumber;
@@ -57,7 +57,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      *
      * @return string
      */
-    public function getDeliveryDate() : string
+    public function getDeliveryDate(): string
     {
         return $this->deliveryDate;
     }
@@ -68,7 +68,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      *
      * @return self
      */
-    public function setDeliveryDate(string $deliveryDate) : self
+    public function setDeliveryDate(string $deliveryDate): self
     {
         $this->initialized['deliveryDate'] = true;
         $this->deliveryDate = $deliveryDate;
@@ -79,7 +79,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      *
      * @return string
      */
-    public function getHomedeliveryPremiumType() : string
+    public function getHomedeliveryPremiumType(): string
     {
         return $this->homedeliveryPremiumType;
     }
@@ -90,7 +90,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      *
      * @return self
      */
-    public function setHomedeliveryPremiumType(string $homedeliveryPremiumType) : self
+    public function setHomedeliveryPremiumType(string $homedeliveryPremiumType): self
     {
         $this->initialized['homedeliveryPremiumType'] = true;
         $this->homedeliveryPremiumType = $homedeliveryPremiumType;

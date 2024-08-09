@@ -8,7 +8,7 @@ class PickupV1PickupsAvailabilitiesPostBodyPackageDetailsItem extends \ArrayObje
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class PickupV1PickupsAvailabilitiesPostBodyPackageDetailsItem extends \ArrayObje
      *
      * @return PickupV1PickupsAvailabilitiesPostBodyPackageDetailsItemPackageSpecialServices
      */
-    public function getPackageSpecialServices() : PickupV1PickupsAvailabilitiesPostBodyPackageDetailsItemPackageSpecialServices
+    public function getPackageSpecialServices(): PickupV1PickupsAvailabilitiesPostBodyPackageDetailsItemPackageSpecialServices
     {
         return $this->packageSpecialServices;
     }
@@ -34,7 +34,7 @@ class PickupV1PickupsAvailabilitiesPostBodyPackageDetailsItem extends \ArrayObje
      *
      * @return self
      */
-    public function setPackageSpecialServices(PickupV1PickupsAvailabilitiesPostBodyPackageDetailsItemPackageSpecialServices $packageSpecialServices) : self
+    public function setPackageSpecialServices(PickupV1PickupsAvailabilitiesPostBodyPackageDetailsItemPackageSpecialServices $packageSpecialServices): self
     {
         $this->initialized['packageSpecialServices'] = true;
         $this->packageSpecialServices = $packageSpecialServices;

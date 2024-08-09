@@ -18,11 +18,11 @@ class FreightShipmentServiceUnavailableException extends ServiceUnavailableExcep
         $this->shipV1FreightShipmentsPostResponse503 = $shipV1FreightShipmentsPostResponse503;
         $this->response = $response;
     }
-    public function getShipV1FreightShipmentsPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostResponse503
+    public function getShipV1FreightShipmentsPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostResponse503
     {
         return $this->shipV1FreightShipmentsPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

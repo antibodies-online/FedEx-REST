@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOrigin extends \ArrayObj
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOrigin extends \ArrayObj
      *
      * @return ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOrigincontact
      */
-    public function getContact() : ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOrigincontact
+    public function getContact(): ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOrigincontact
     {
         return $this->contact;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOrigin extends \ArrayObj
      *
      * @return self
      */
-    public function setContact(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOrigincontact $contact) : self
+    public function setContact(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOrigincontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOrigin extends \ArrayObj
      *
      * @return ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOriginaddress
      */
-    public function getAddress() : ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOriginaddress
+    public function getAddress(): ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOriginaddress
     {
         return $this->address;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOrigin extends \ArrayObj
      *
      * @return self
      */
-    public function setAddress(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOriginaddress $address) : self
+    public function setAddress(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentOriginaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

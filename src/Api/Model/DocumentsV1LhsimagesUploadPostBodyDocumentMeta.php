@@ -8,7 +8,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocumentMeta extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getImageType() : string
+    public function getImageType(): string
     {
         return $this->imageType;
     }
@@ -40,7 +40,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setImageType(string $imageType) : self
+    public function setImageType(string $imageType): self
     {
         $this->initialized['imageType'] = true;
         $this->imageType = $imageType;
@@ -51,7 +51,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getImageIndex() : string
+    public function getImageIndex(): string
     {
         return $this->imageIndex;
     }
@@ -62,7 +62,7 @@ class DocumentsV1LhsimagesUploadPostBodyDocumentMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setImageIndex(string $imageIndex) : self
+    public function setImageIndex(string $imageIndex): self
     {
         $this->initialized['imageIndex'] = true;
         $this->imageIndex = $imageIndex;

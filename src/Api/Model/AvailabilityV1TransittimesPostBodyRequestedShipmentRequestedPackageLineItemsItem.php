@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemDeclaredValue
      */
-    public function getDeclaredValue() : AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemDeclaredValue
+    public function getDeclaredValue(): AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemDeclaredValue
     {
         return $this->declaredValue;
     }
@@ -52,7 +52,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return self
      */
-    public function setDeclaredValue(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemDeclaredValue $declaredValue) : self
+    public function setDeclaredValue(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemDeclaredValue $declaredValue): self
     {
         $this->initialized['declaredValue'] = true;
         $this->declaredValue = $declaredValue;
@@ -63,7 +63,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemWeight
      */
-    public function getWeight() : AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemWeight
+    public function getWeight(): AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemWeight
     {
         return $this->weight;
     }
@@ -74,7 +74,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return self
      */
-    public function setWeight(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemWeight $weight) : self
+    public function setWeight(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemWeight $weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -85,7 +85,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemDimensions
      */
-    public function getDimensions() : AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemDimensions
+    public function getDimensions(): AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemDimensions
     {
         return $this->dimensions;
     }
@@ -96,7 +96,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return self
      */
-    public function setDimensions(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemDimensions $dimensions) : self
+    public function setDimensions(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemDimensions $dimensions): self
     {
         $this->initialized['dimensions'] = true;
         $this->dimensions = $dimensions;
@@ -107,7 +107,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices
      */
-    public function getPackageSpecialServices() : AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices
+    public function getPackageSpecialServices(): AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices
     {
         return $this->packageSpecialServices;
     }
@@ -118,7 +118,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return self
      */
-    public function setPackageSpecialServices(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices $packageSpecialServices) : self
+    public function setPackageSpecialServices(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices $packageSpecialServices): self
     {
         $this->initialized['packageSpecialServices'] = true;
         $this->packageSpecialServices = $packageSpecialServices;

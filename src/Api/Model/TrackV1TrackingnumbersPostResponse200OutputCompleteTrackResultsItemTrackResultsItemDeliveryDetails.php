@@ -8,7 +8,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getReceivedByName() : string
+    public function getReceivedByName(): string
     {
         return $this->receivedByName;
     }
@@ -94,7 +94,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setReceivedByName(string $receivedByName) : self
+    public function setReceivedByName(string $receivedByName): self
     {
         $this->initialized['receivedByName'] = true;
         $this->receivedByName = $receivedByName;
@@ -105,7 +105,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getDestinationServiceArea() : string
+    public function getDestinationServiceArea(): string
     {
         return $this->destinationServiceArea;
     }
@@ -116,7 +116,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setDestinationServiceArea(string $destinationServiceArea) : self
+    public function setDestinationServiceArea(string $destinationServiceArea): self
     {
         $this->initialized['destinationServiceArea'] = true;
         $this->destinationServiceArea = $destinationServiceArea;
@@ -127,7 +127,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getDestinationServiceAreaDescription() : string
+    public function getDestinationServiceAreaDescription(): string
     {
         return $this->destinationServiceAreaDescription;
     }
@@ -138,7 +138,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setDestinationServiceAreaDescription(string $destinationServiceAreaDescription) : self
+    public function setDestinationServiceAreaDescription(string $destinationServiceAreaDescription): self
     {
         $this->initialized['destinationServiceAreaDescription'] = true;
         $this->destinationServiceAreaDescription = $destinationServiceAreaDescription;
@@ -149,7 +149,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getLocationDescription() : string
+    public function getLocationDescription(): string
     {
         return $this->locationDescription;
     }
@@ -160,7 +160,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setLocationDescription(string $locationDescription) : self
+    public function setLocationDescription(string $locationDescription): self
     {
         $this->initialized['locationDescription'] = true;
         $this->locationDescription = $locationDescription;
@@ -171,7 +171,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDeliveryDetailsActualDeliveryAddress
      */
-    public function getActualDeliveryAddress() : TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDeliveryDetailsActualDeliveryAddress
+    public function getActualDeliveryAddress(): TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDeliveryDetailsActualDeliveryAddress
     {
         return $this->actualDeliveryAddress;
     }
@@ -182,7 +182,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setActualDeliveryAddress(TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDeliveryDetailsActualDeliveryAddress $actualDeliveryAddress) : self
+    public function setActualDeliveryAddress(TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDeliveryDetailsActualDeliveryAddress $actualDeliveryAddress): self
     {
         $this->initialized['actualDeliveryAddress'] = true;
         $this->actualDeliveryAddress = $actualDeliveryAddress;
@@ -193,7 +193,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return bool
      */
-    public function getDeliveryToday() : bool
+    public function getDeliveryToday(): bool
     {
         return $this->deliveryToday;
     }
@@ -204,7 +204,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setDeliveryToday(bool $deliveryToday) : self
+    public function setDeliveryToday(bool $deliveryToday): self
     {
         $this->initialized['deliveryToday'] = true;
         $this->deliveryToday = $deliveryToday;
@@ -215,7 +215,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getLocationType() : string
+    public function getLocationType(): string
     {
         return $this->locationType;
     }
@@ -226,7 +226,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setLocationType(string $locationType) : self
+    public function setLocationType(string $locationType): self
     {
         $this->initialized['locationType'] = true;
         $this->locationType = $locationType;
@@ -237,7 +237,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getSignedByName() : string
+    public function getSignedByName(): string
     {
         return $this->signedByName;
     }
@@ -248,7 +248,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setSignedByName(string $signedByName) : self
+    public function setSignedByName(string $signedByName): self
     {
         $this->initialized['signedByName'] = true;
         $this->signedByName = $signedByName;
@@ -259,7 +259,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getOfficeOrderDeliveryMethod() : string
+    public function getOfficeOrderDeliveryMethod(): string
     {
         return $this->officeOrderDeliveryMethod;
     }
@@ -270,7 +270,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setOfficeOrderDeliveryMethod(string $officeOrderDeliveryMethod) : self
+    public function setOfficeOrderDeliveryMethod(string $officeOrderDeliveryMethod): self
     {
         $this->initialized['officeOrderDeliveryMethod'] = true;
         $this->officeOrderDeliveryMethod = $officeOrderDeliveryMethod;
@@ -281,7 +281,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return string
      */
-    public function getDeliveryAttempts() : string
+    public function getDeliveryAttempts(): string
     {
         return $this->deliveryAttempts;
     }
@@ -292,7 +292,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setDeliveryAttempts(string $deliveryAttempts) : self
+    public function setDeliveryAttempts(string $deliveryAttempts): self
     {
         $this->initialized['deliveryAttempts'] = true;
         $this->deliveryAttempts = $deliveryAttempts;
@@ -303,7 +303,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return list<TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemDeliveryDetailsDeliveryOptionEligibilityDetailsItem>
      */
-    public function getDeliveryOptionEligibilityDetails() : array
+    public function getDeliveryOptionEligibilityDetails(): array
     {
         return $this->deliveryOptionEligibilityDetails;
     }
@@ -314,7 +314,7 @@ class TrackV1TrackingnumbersPostResponse200OutputCompleteTrackResultsItemTrackRe
      *
      * @return self
      */
-    public function setDeliveryOptionEligibilityDetails(array $deliveryOptionEligibilityDetails) : self
+    public function setDeliveryOptionEligibilityDetails(array $deliveryOptionEligibilityDetails): self
     {
         $this->initialized['deliveryOptionEligibilityDetails'] = true;
         $this->deliveryOptionEligibilityDetails = $deliveryOptionEligibilityDetails;

@@ -18,11 +18,11 @@ class APIAuthorizationUnauthorizedException extends UnauthorizedException
         $this->oauthTokenPostResponse401 = $oauthTokenPostResponse401;
         $this->response = $response;
     }
-    public function getOauthTokenPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\OauthTokenPostResponse401
+    public function getOauthTokenPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\OauthTokenPostResponse401
     {
         return $this->oauthTokenPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

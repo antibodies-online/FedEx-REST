@@ -8,7 +8,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentLabelSpecification
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentLabelSpecification
      *
      * @return string
      */
-    public function getSymbology() : string
+    public function getSymbology(): string
     {
         return $this->symbology;
     }
@@ -40,7 +40,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentLabelSpecification
      *
      * @return self
      */
-    public function setSymbology(string $symbology) : self
+    public function setSymbology(string $symbology): self
     {
         $this->initialized['symbology'] = true;
         $this->symbology = $symbology;
@@ -51,7 +51,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentLabelSpecification
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcodedSpecification
      */
-    public function getSpecification() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcodedSpecification
+    public function getSpecification(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcodedSpecification
     {
         return $this->specification;
     }
@@ -62,7 +62,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentLabelSpecification
      *
      * @return self
      */
-    public function setSpecification(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcodedSpecification $specification) : self
+    public function setSpecification(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentBarcodedSpecification $specification): self
     {
         $this->initialized['specification'] = true;
         $this->specification = $specification;

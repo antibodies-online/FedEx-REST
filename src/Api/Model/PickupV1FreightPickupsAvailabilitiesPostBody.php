@@ -8,7 +8,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return PickupV1FreightPickupsAvailabilitiesPostBodyPickupAddress
      */
-    public function getPickupAddress() : PickupV1FreightPickupsAvailabilitiesPostBodyPickupAddress
+    public function getPickupAddress(): PickupV1FreightPickupsAvailabilitiesPostBodyPickupAddress
     {
         return $this->pickupAddress;
     }
@@ -70,7 +70,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPickupAddress(PickupV1FreightPickupsAvailabilitiesPostBodyPickupAddress $pickupAddress) : self
+    public function setPickupAddress(PickupV1FreightPickupsAvailabilitiesPostBodyPickupAddress $pickupAddress): self
     {
         $this->initialized['pickupAddress'] = true;
         $this->pickupAddress = $pickupAddress;
@@ -81,7 +81,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getPackageReadyTime() : string
+    public function getPackageReadyTime(): string
     {
         return $this->packageReadyTime;
     }
@@ -92,7 +92,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPackageReadyTime(string $packageReadyTime) : self
+    public function setPackageReadyTime(string $packageReadyTime): self
     {
         $this->initialized['packageReadyTime'] = true;
         $this->packageReadyTime = $packageReadyTime;
@@ -103,7 +103,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCustomerCloseTime() : string
+    public function getCustomerCloseTime(): string
     {
         return $this->customerCloseTime;
     }
@@ -114,7 +114,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCustomerCloseTime(string $customerCloseTime) : self
+    public function setCustomerCloseTime(string $customerCloseTime): self
     {
         $this->initialized['customerCloseTime'] = true;
         $this->customerCloseTime = $customerCloseTime;
@@ -125,7 +125,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return array<string, mixed>
      */
-    public function getShipmentAttributes() : iterable
+    public function getShipmentAttributes(): iterable
     {
         return $this->shipmentAttributes;
     }
@@ -136,7 +136,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setShipmentAttributes(iterable $shipmentAttributes) : self
+    public function setShipmentAttributes(iterable $shipmentAttributes): self
     {
         $this->initialized['shipmentAttributes'] = true;
         $this->shipmentAttributes = $shipmentAttributes;
@@ -147,7 +147,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetail
      */
-    public function getFreightPickupSpecialServiceDetail() : PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetail
+    public function getFreightPickupSpecialServiceDetail(): PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetail
     {
         return $this->freightPickupSpecialServiceDetail;
     }
@@ -158,7 +158,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setFreightPickupSpecialServiceDetail(PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetail $freightPickupSpecialServiceDetail) : self
+    public function setFreightPickupSpecialServiceDetail(PickupV1FreightPickupsAvailabilitiesPostBodyFreightPickupSpecialServiceDetail $freightPickupSpecialServiceDetail): self
     {
         $this->initialized['freightPickupSpecialServiceDetail'] = true;
         $this->freightPickupSpecialServiceDetail = $freightPickupSpecialServiceDetail;
@@ -169,7 +169,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDispatchDate() : string
+    public function getDispatchDate(): string
     {
         return $this->dispatchDate;
     }
@@ -180,7 +180,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDispatchDate(string $dispatchDate) : self
+    public function setDispatchDate(string $dispatchDate): self
     {
         $this->initialized['dispatchDate'] = true;
         $this->dispatchDate = $dispatchDate;
@@ -191,7 +191,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return int
      */
-    public function getNumberOfBusinessDays() : int
+    public function getNumberOfBusinessDays(): int
     {
         return $this->numberOfBusinessDays;
     }
@@ -202,7 +202,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setNumberOfBusinessDays(int $numberOfBusinessDays) : self
+    public function setNumberOfBusinessDays(int $numberOfBusinessDays): self
     {
         $this->initialized['numberOfBusinessDays'] = true;
         $this->numberOfBusinessDays = $numberOfBusinessDays;

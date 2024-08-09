@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return string
      */
-    public function getPhysicalPackaging() : string
+    public function getPhysicalPackaging(): string
     {
         return $this->physicalPackaging;
     }
@@ -82,7 +82,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setPhysicalPackaging(string $physicalPackaging) : self
+    public function setPhysicalPackaging(string $physicalPackaging): self
     {
         $this->initialized['physicalPackaging'] = true;
         $this->physicalPackaging = $physicalPackaging;
@@ -93,7 +93,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return int
      */
-    public function getGroupPackageCount() : int
+    public function getGroupPackageCount(): int
     {
         return $this->groupPackageCount;
     }
@@ -104,7 +104,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setGroupPackageCount(int $groupPackageCount) : self
+    public function setGroupPackageCount(int $groupPackageCount): self
     {
         $this->initialized['groupPackageCount'] = true;
         $this->groupPackageCount = $groupPackageCount;
@@ -115,7 +115,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return string
      */
-    public function getItemDescriptionForClearance() : string
+    public function getItemDescriptionForClearance(): string
     {
         return $this->itemDescriptionForClearance;
     }
@@ -126,7 +126,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setItemDescriptionForClearance(string $itemDescriptionForClearance) : self
+    public function setItemDescriptionForClearance(string $itemDescriptionForClearance): self
     {
         $this->initialized['itemDescriptionForClearance'] = true;
         $this->itemDescriptionForClearance = $itemDescriptionForClearance;
@@ -137,7 +137,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return list<AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemCustomerReferencesItem>
      */
-    public function getCustomerReferences() : array
+    public function getCustomerReferences(): array
     {
         return $this->customerReferences;
     }
@@ -148,7 +148,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setCustomerReferences(array $customerReferences) : self
+    public function setCustomerReferences(array $customerReferences): self
     {
         $this->initialized['customerReferences'] = true;
         $this->customerReferences = $customerReferences;
@@ -159,7 +159,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemContentRecord
      */
-    public function getContentRecord() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemContentRecord
+    public function getContentRecord(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemContentRecord
     {
         return $this->contentRecord;
     }
@@ -170,7 +170,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setContentRecord(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemContentRecord $contentRecord) : self
+    public function setContentRecord(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemContentRecord $contentRecord): self
     {
         $this->initialized['contentRecord'] = true;
         $this->contentRecord = $contentRecord;
@@ -181,7 +181,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemDeclaredValue
      */
-    public function getDeclaredValue() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemDeclaredValue
+    public function getDeclaredValue(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemDeclaredValue
     {
         return $this->declaredValue;
     }
@@ -192,7 +192,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setDeclaredValue(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemDeclaredValue $declaredValue) : self
+    public function setDeclaredValue(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemDeclaredValue $declaredValue): self
     {
         $this->initialized['declaredValue'] = true;
         $this->declaredValue = $declaredValue;
@@ -203,7 +203,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemWeight
      */
-    public function getWeight() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemWeight
+    public function getWeight(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemWeight
     {
         return $this->weight;
     }
@@ -214,7 +214,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setWeight(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemWeight $weight) : self
+    public function setWeight(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemWeight $weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -225,7 +225,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemDimensions
      */
-    public function getDimensions() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemDimensions
+    public function getDimensions(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemDimensions
     {
         return $this->dimensions;
     }
@@ -236,7 +236,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setDimensions(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemDimensions $dimensions) : self
+    public function setDimensions(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemDimensions $dimensions): self
     {
         $this->initialized['dimensions'] = true;
         $this->dimensions = $dimensions;
@@ -247,7 +247,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServices
      */
-    public function getPackageSpecialServices() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServices
+    public function getPackageSpecialServices(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServices
     {
         return $this->packageSpecialServices;
     }
@@ -258,7 +258,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setPackageSpecialServices(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServices $packageSpecialServices) : self
+    public function setPackageSpecialServices(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPackageLineItemsItemPackageSpecialServices $packageSpecialServices): self
     {
         $this->initialized['packageSpecialServices'] = true;
         $this->packageSpecialServices = $packageSpecialServices;

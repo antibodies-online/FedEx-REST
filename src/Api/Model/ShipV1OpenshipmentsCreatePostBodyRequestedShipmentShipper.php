@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipper extends \ArrayOb
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipper extends \ArrayOb
      *
      * @return ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipperaddress
      */
-    public function getAddress() : ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipperaddress
+    public function getAddress(): ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipperaddress
     {
         return $this->address;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipper extends \ArrayOb
      *
      * @return self
      */
-    public function setAddress(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipperaddress $address) : self
+    public function setAddress(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipperaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipper extends \ArrayOb
      *
      * @return ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippercontact
      */
-    public function getContact() : ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippercontact
+    public function getContact(): ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippercontact
     {
         return $this->contact;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipper extends \ArrayOb
      *
      * @return self
      */
-    public function setContact(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippercontact $contact) : self
+    public function setContact(ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippercontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipper extends \ArrayOb
      *
      * @return list<ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShippertinsItem>
      */
-    public function getTins() : array
+    public function getTins(): array
     {
         return $this->tins;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsCreatePostBodyRequestedShipmentShipper extends \ArrayOb
      *
      * @return self
      */
-    public function setTins(array $tins) : self
+    public function setTins(array $tins): self
     {
         $this->initialized['tins'] = true;
         $this->tins = $tins;

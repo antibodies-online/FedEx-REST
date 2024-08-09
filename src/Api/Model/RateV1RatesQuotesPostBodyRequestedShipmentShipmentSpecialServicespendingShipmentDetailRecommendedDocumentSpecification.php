@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return list<string>
      */
-    public function getTypes() : array
+    public function getTypes(): array
     {
         return $this->types;
     }
@@ -34,7 +34,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicespendingSh
      *
      * @return self
      */
-    public function setTypes(array $types) : self
+    public function setTypes(array $types): self
     {
         $this->initialized['types'] = true;
         $this->types = $types;

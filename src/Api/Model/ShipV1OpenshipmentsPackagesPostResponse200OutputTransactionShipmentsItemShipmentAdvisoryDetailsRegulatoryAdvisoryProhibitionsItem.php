@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return string
      */
-    public function getDerivedHarmonizedCode() : string
+    public function getDerivedHarmonizedCode(): string
     {
         return $this->derivedHarmonizedCode;
     }
@@ -76,7 +76,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return self
      */
-    public function setDerivedHarmonizedCode(string $derivedHarmonizedCode) : self
+    public function setDerivedHarmonizedCode(string $derivedHarmonizedCode): self
     {
         $this->initialized['derivedHarmonizedCode'] = true;
         $this->derivedHarmonizedCode = $derivedHarmonizedCode;
@@ -87,7 +87,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisoryProhibitionsItemAdvisory
      */
-    public function getAdvisory() : ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisoryProhibitionsItemAdvisory
+    public function getAdvisory(): ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisoryProhibitionsItemAdvisory
     {
         return $this->advisory;
     }
@@ -98,7 +98,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return self
      */
-    public function setAdvisory(ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisoryProhibitionsItemAdvisory $advisory) : self
+    public function setAdvisory(ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisoryProhibitionsItemAdvisory $advisory): self
     {
         $this->initialized['advisory'] = true;
         $this->advisory = $advisory;
@@ -109,7 +109,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return int
      */
-    public function getCommodityIndex() : int
+    public function getCommodityIndex(): int
     {
         return $this->commodityIndex;
     }
@@ -120,7 +120,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return self
      */
-    public function setCommodityIndex(int $commodityIndex) : self
+    public function setCommodityIndex(int $commodityIndex): self
     {
         $this->initialized['commodityIndex'] = true;
         $this->commodityIndex = $commodityIndex;
@@ -131,7 +131,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return string
      */
-    public function getSource() : string
+    public function getSource(): string
     {
         return $this->source;
     }
@@ -142,7 +142,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return self
      */
-    public function setSource(string $source) : self
+    public function setSource(string $source): self
     {
         $this->initialized['source'] = true;
         $this->source = $source;
@@ -153,7 +153,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return list<string>
      */
-    public function getCategories() : array
+    public function getCategories(): array
     {
         return $this->categories;
     }
@@ -164,7 +164,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return self
      */
-    public function setCategories(array $categories) : self
+    public function setCategories(array $categories): self
     {
         $this->initialized['categories'] = true;
         $this->categories = $categories;
@@ -175,7 +175,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -186,7 +186,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -197,7 +197,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisoryProhibitionsItemWaiver
      */
-    public function getWaiver() : ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisoryProhibitionsItemWaiver
+    public function getWaiver(): ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisoryProhibitionsItemWaiver
     {
         return $this->waiver;
     }
@@ -208,7 +208,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return self
      */
-    public function setWaiver(ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisoryProhibitionsItemWaiver $waiver) : self
+    public function setWaiver(ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisoryProhibitionsItemWaiver $waiver): self
     {
         $this->initialized['waiver'] = true;
         $this->waiver = $waiver;
@@ -219,7 +219,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -230,7 +230,7 @@ class ShipV1OpenshipmentsPackagesPostResponse200OutputTransactionShipmentsItemSh
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;

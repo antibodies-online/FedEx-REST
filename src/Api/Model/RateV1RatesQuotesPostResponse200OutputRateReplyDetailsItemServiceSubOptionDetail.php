@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemServiceSubOption
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemServiceSubOption
      *
      * @return string
      */
-    public function getSmartPostIndiciaType() : string
+    public function getSmartPostIndiciaType(): string
     {
         return $this->smartPostIndiciaType;
     }
@@ -34,7 +34,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemServiceSubOption
      *
      * @return self
      */
-    public function setSmartPostIndiciaType(string $smartPostIndiciaType) : self
+    public function setSmartPostIndiciaType(string $smartPostIndiciaType): self
     {
         $this->initialized['smartPostIndiciaType'] = true;
         $this->smartPostIndiciaType = $smartPostIndiciaType;

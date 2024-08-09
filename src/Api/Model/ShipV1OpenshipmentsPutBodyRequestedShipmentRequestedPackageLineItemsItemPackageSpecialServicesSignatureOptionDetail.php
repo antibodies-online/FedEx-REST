@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemPa
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemPa
      *
      * @return string
      */
-    public function getSignatureReleaseNumber() : string
+    public function getSignatureReleaseNumber(): string
     {
         return $this->signatureReleaseNumber;
     }
@@ -34,7 +34,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemPa
      *
      * @return self
      */
-    public function setSignatureReleaseNumber(string $signatureReleaseNumber) : self
+    public function setSignatureReleaseNumber(string $signatureReleaseNumber): self
     {
         $this->initialized['signatureReleaseNumber'] = true;
         $this->signatureReleaseNumber = $signatureReleaseNumber;

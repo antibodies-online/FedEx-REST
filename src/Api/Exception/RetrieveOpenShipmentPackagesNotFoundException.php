@@ -18,11 +18,11 @@ class RetrieveOpenShipmentPackagesNotFoundException extends NotFoundException
         $this->shipV1OpenshipmentsPackagesRetrievePostResponse404 = $shipV1OpenshipmentsPackagesRetrievePostResponse404;
         $this->response = $response;
     }
-    public function getShipV1OpenshipmentsPackagesRetrievePostResponse404() : \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesRetrievePostResponse404
+    public function getShipV1OpenshipmentsPackagesRetrievePostResponse404(): \AntibodiesOnline\FedEx\Api\Model\ShipV1OpenshipmentsPackagesRetrievePostResponse404
     {
         return $this->shipV1OpenshipmentsPackagesRetrievePostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

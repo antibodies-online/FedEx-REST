@@ -18,11 +18,11 @@ class GetPackageAndServiceOptionsNotFoundException extends NotFoundException
         $this->availabilityV1PackageandserviceoptionsPostResponse404 = $availabilityV1PackageandserviceoptionsPostResponse404;
         $this->response = $response;
     }
-    public function getAvailabilityV1PackageandserviceoptionsPostResponse404() : \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1PackageandserviceoptionsPostResponse404
+    public function getAvailabilityV1PackageandserviceoptionsPostResponse404(): \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1PackageandserviceoptionsPostResponse404
     {
         return $this->availabilityV1PackageandserviceoptionsPostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShi
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShi
      *
      * @return list<TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipmentDetailsContentsItem>
      */
-    public function getContents() : array
+    public function getContents(): array
     {
         return $this->contents;
     }
@@ -58,7 +58,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShi
      *
      * @return self
      */
-    public function setContents(array $contents) : self
+    public function setContents(array $contents): self
     {
         $this->initialized['contents'] = true;
         $this->contents = $contents;
@@ -69,7 +69,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShi
      *
      * @return bool
      */
-    public function getBeforePossessionStatus() : bool
+    public function getBeforePossessionStatus(): bool
     {
         return $this->beforePossessionStatus;
     }
@@ -80,7 +80,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShi
      *
      * @return self
      */
-    public function setBeforePossessionStatus(bool $beforePossessionStatus) : self
+    public function setBeforePossessionStatus(bool $beforePossessionStatus): self
     {
         $this->initialized['beforePossessionStatus'] = true;
         $this->beforePossessionStatus = $beforePossessionStatus;
@@ -91,7 +91,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShi
      *
      * @return list<TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipmentDetailsWeightItem>
      */
-    public function getWeight() : array
+    public function getWeight(): array
     {
         return $this->weight;
     }
@@ -102,7 +102,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShi
      *
      * @return self
      */
-    public function setWeight(array $weight) : self
+    public function setWeight(array $weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -113,7 +113,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShi
      *
      * @return string
      */
-    public function getContentPieceCount() : string
+    public function getContentPieceCount(): string
     {
         return $this->contentPieceCount;
     }
@@ -124,7 +124,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShi
      *
      * @return self
      */
-    public function setContentPieceCount(string $contentPieceCount) : self
+    public function setContentPieceCount(string $contentPieceCount): self
     {
         $this->initialized['contentPieceCount'] = true;
         $this->contentPieceCount = $contentPieceCount;
@@ -135,7 +135,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShi
      *
      * @return list<TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShipmentDetailsSplitShipmentsItem>
      */
-    public function getSplitShipments() : array
+    public function getSplitShipments(): array
     {
         return $this->splitShipments;
     }
@@ -146,7 +146,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemShi
      *
      * @return self
      */
-    public function setSplitShipments(array $splitShipments) : self
+    public function setSplitShipments(array $splitShipments): self
     {
         $this->initialized['splitShipments'] = true;
         $this->splitShipments = $splitShipments;

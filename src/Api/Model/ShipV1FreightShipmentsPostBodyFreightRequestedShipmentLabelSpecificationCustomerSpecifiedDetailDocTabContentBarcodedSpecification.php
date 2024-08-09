@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      *
      * @return int
      */
-    public function getZoneNumber() : int
+    public function getZoneNumber(): int
     {
         return $this->zoneNumber;
     }
@@ -58,7 +58,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      *
      * @return self
      */
-    public function setZoneNumber(int $zoneNumber) : self
+    public function setZoneNumber(int $zoneNumber): self
     {
         $this->initialized['zoneNumber'] = true;
         $this->zoneNumber = $zoneNumber;
@@ -69,7 +69,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      *
      * @return string
      */
-    public function getHeader() : string
+    public function getHeader(): string
     {
         return $this->header;
     }
@@ -80,7 +80,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      *
      * @return self
      */
-    public function setHeader(string $header) : self
+    public function setHeader(string $header): self
     {
         $this->initialized['header'] = true;
         $this->header = $header;
@@ -91,7 +91,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      *
      * @return string
      */
-    public function getDataField() : string
+    public function getDataField(): string
     {
         return $this->dataField;
     }
@@ -102,7 +102,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      *
      * @return self
      */
-    public function setDataField(string $dataField) : self
+    public function setDataField(string $dataField): self
     {
         $this->initialized['dataField'] = true;
         $this->dataField = $dataField;
@@ -113,7 +113,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      *
      * @return string
      */
-    public function getLiteralValue() : string
+    public function getLiteralValue(): string
     {
         return $this->literalValue;
     }
@@ -124,7 +124,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      *
      * @return self
      */
-    public function setLiteralValue(string $literalValue) : self
+    public function setLiteralValue(string $literalValue): self
     {
         $this->initialized['literalValue'] = true;
         $this->literalValue = $literalValue;
@@ -135,7 +135,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      *
      * @return string
      */
-    public function getJustification() : string
+    public function getJustification(): string
     {
         return $this->justification;
     }
@@ -146,7 +146,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentLabelSpecificationCu
      *
      * @return self
      */
-    public function setJustification(string $justification) : self
+    public function setJustification(string $justification): self
     {
         $this->initialized['justification'] = true;
         $this->justification = $justification;

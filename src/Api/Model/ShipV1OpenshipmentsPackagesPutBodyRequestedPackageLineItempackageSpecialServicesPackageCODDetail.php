@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesPutBodyRequestedPackageLineItempackageSpecialSe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1OpenshipmentsPackagesPutBodyRequestedPackageLineItempackageSpecialSe
      *
      * @return ShipV1OpenshipmentsPackagesPutBodyRequestedPackageLineItempackageSpecialServicesPackageCODDetailCodCollectionAmount
      */
-    public function getCodCollectionAmount() : ShipV1OpenshipmentsPackagesPutBodyRequestedPackageLineItempackageSpecialServicesPackageCODDetailCodCollectionAmount
+    public function getCodCollectionAmount(): ShipV1OpenshipmentsPackagesPutBodyRequestedPackageLineItempackageSpecialServicesPackageCODDetailCodCollectionAmount
     {
         return $this->codCollectionAmount;
     }
@@ -34,7 +34,7 @@ class ShipV1OpenshipmentsPackagesPutBodyRequestedPackageLineItempackageSpecialSe
      *
      * @return self
      */
-    public function setCodCollectionAmount(ShipV1OpenshipmentsPackagesPutBodyRequestedPackageLineItempackageSpecialServicesPackageCODDetailCodCollectionAmount $codCollectionAmount) : self
+    public function setCodCollectionAmount(ShipV1OpenshipmentsPackagesPutBodyRequestedPackageLineItempackageSpecialServicesPackageCODDetailCodCollectionAmount $codCollectionAmount): self
     {
         $this->initialized['codCollectionAmount'] = true;
         $this->codCollectionAmount = $codCollectionAmount;

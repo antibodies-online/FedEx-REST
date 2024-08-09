@@ -8,7 +8,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyDestinationAddress 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyDestinationAddress 
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -46,7 +46,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyDestinationAddress 
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;
@@ -57,7 +57,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyDestinationAddress 
      *
      * @return string
      */
-    public function getPostalCode() : string
+    public function getPostalCode(): string
     {
         return $this->postalCode;
     }
@@ -68,7 +68,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyDestinationAddress 
      *
      * @return self
      */
-    public function setPostalCode(string $postalCode) : self
+    public function setPostalCode(string $postalCode): self
     {
         $this->initialized['postalCode'] = true;
         $this->postalCode = $postalCode;
@@ -79,7 +79,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyDestinationAddress 
      *
      * @return string
      */
-    public function getStateOrProvinceCode() : string
+    public function getStateOrProvinceCode(): string
     {
         return $this->stateOrProvinceCode;
     }
@@ -90,7 +90,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostBodyDestinationAddress 
      *
      * @return self
      */
-    public function setStateOrProvinceCode(string $stateOrProvinceCode) : self
+    public function setStateOrProvinceCode(string $stateOrProvinceCode): self
     {
         $this->initialized['stateOrProvinceCode'] = true;
         $this->stateOrProvinceCode = $stateOrProvinceCode;

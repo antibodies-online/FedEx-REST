@@ -8,7 +8,7 @@ class TrackV1TrackingdocumentsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1TrackingdocumentsPostBody extends \ArrayObject
      *
      * @return TrackV1TrackingdocumentsPostBodyTrackDocumentDetail
      */
-    public function getTrackDocumentDetail() : TrackV1TrackingdocumentsPostBodyTrackDocumentDetail
+    public function getTrackDocumentDetail(): TrackV1TrackingdocumentsPostBodyTrackDocumentDetail
     {
         return $this->trackDocumentDetail;
     }
@@ -40,7 +40,7 @@ class TrackV1TrackingdocumentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackDocumentDetail(TrackV1TrackingdocumentsPostBodyTrackDocumentDetail $trackDocumentDetail) : self
+    public function setTrackDocumentDetail(TrackV1TrackingdocumentsPostBodyTrackDocumentDetail $trackDocumentDetail): self
     {
         $this->initialized['trackDocumentDetail'] = true;
         $this->trackDocumentDetail = $trackDocumentDetail;
@@ -51,7 +51,7 @@ class TrackV1TrackingdocumentsPostBody extends \ArrayObject
      *
      * @return list<TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItem>
      */
-    public function getTrackDocumentSpecification() : array
+    public function getTrackDocumentSpecification(): array
     {
         return $this->trackDocumentSpecification;
     }
@@ -62,7 +62,7 @@ class TrackV1TrackingdocumentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackDocumentSpecification(array $trackDocumentSpecification) : self
+    public function setTrackDocumentSpecification(array $trackDocumentSpecification): self
     {
         $this->initialized['trackDocumentSpecification'] = true;
         $this->trackDocumentSpecification = $trackDocumentSpecification;

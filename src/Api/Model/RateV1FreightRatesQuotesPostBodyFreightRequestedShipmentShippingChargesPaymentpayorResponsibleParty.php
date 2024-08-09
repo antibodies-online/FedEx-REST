@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPay
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPay
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsiblePartyaddress
      */
-    public function getAddress() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsiblePartyaddress
+    public function getAddress(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsiblePartyaddress
     {
         return $this->address;
     }
@@ -46,7 +46,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPay
      *
      * @return self
      */
-    public function setAddress(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsiblePartyaddress $address) : self
+    public function setAddress(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsiblePartyaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -57,7 +57,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPay
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsiblePartycontact
      */
-    public function getContact() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsiblePartycontact
+    public function getContact(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsiblePartycontact
     {
         return $this->contact;
     }
@@ -68,7 +68,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPay
      *
      * @return self
      */
-    public function setContact(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsiblePartycontact $contact) : self
+    public function setContact(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPaymentpayorResponsiblePartycontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -79,7 +79,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPay
      *
      * @return array<string, mixed>
      */
-    public function getAccountNumber() : iterable
+    public function getAccountNumber(): iterable
     {
         return $this->accountNumber;
     }
@@ -90,7 +90,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentShippingChargesPay
      *
      * @return self
      */
-    public function setAccountNumber(iterable $accountNumber) : self
+    public function setAccountNumber(iterable $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

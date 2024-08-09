@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBody';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBody::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBody';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBody::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -41,11 +41,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('locationsSummaryRequestControlParameters', $data)) {
-                $object->setLocationsSummaryRequestControlParameters($this->denormalizer->denormalize($data['locationsSummaryRequestControlParameters'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBodyLocationsSummaryRequestControlParameters', 'json', $context));
+                $object->setLocationsSummaryRequestControlParameters($this->denormalizer->denormalize($data['locationsSummaryRequestControlParameters'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBodyLocationsSummaryRequestControlParameters::class, 'json', $context));
                 unset($data['locationsSummaryRequestControlParameters']);
             }
             if (\array_key_exists('constraints', $data)) {
-                $object->setConstraints($this->denormalizer->denormalize($data['constraints'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBodyConstraints', 'json', $context));
+                $object->setConstraints($this->denormalizer->denormalize($data['constraints'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBodyConstraints::class, 'json', $context));
                 unset($data['constraints']);
             }
             if (\array_key_exists('locationSearchCriterion', $data)) {
@@ -53,7 +53,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['locationSearchCriterion']);
             }
             if (\array_key_exists('location', $data)) {
-                $object->setLocation($this->denormalizer->denormalize($data['location'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBodyLocation', 'json', $context));
+                $object->setLocation($this->denormalizer->denormalize($data['location'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBodyLocation::class, 'json', $context));
                 unset($data['location']);
             }
             if (\array_key_exists('phoneNumber', $data)) {
@@ -65,11 +65,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['multipleMatchesAction']);
             }
             if (\array_key_exists('sort', $data)) {
-                $object->setSort($this->denormalizer->denormalize($data['sort'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBodySort', 'json', $context));
+                $object->setSort($this->denormalizer->denormalize($data['sort'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBodySort::class, 'json', $context));
                 unset($data['sort']);
             }
             if (\array_key_exists('trackingInfo', $data)) {
-                $object->setTrackingInfo($this->denormalizer->denormalize($data['trackingInfo'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBodyTrackingInfo', 'json', $context));
+                $object->setTrackingInfo($this->denormalizer->denormalize($data['trackingInfo'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBodyTrackingInfo::class, 'json', $context));
                 unset($data['trackingInfo']);
             }
             if (\array_key_exists('sameState', $data)) {
@@ -95,7 +95,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('locationCapabilities', $data)) {
                 $values_1 = [];
                 foreach ($data['locationCapabilities'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBodyLocationCapabilitiesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBodyLocationCapabilitiesItem::class, 'json', $context);
                 }
                 $object->setLocationCapabilities($values_1);
                 unset($data['locationCapabilities']);
@@ -103,7 +103,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('packageAttributes', $data)) {
                 $values_2 = [];
                 foreach ($data['packageAttributes'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBodyPackageAttributesItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBodyPackageAttributesItem::class, 'json', $context);
                 }
                 $object->setPackageAttributes($values_2);
                 unset($data['packageAttributes']);
@@ -147,7 +147,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('locationsSummaryRequestControlParameters') && null !== $object->getLocationsSummaryRequestControlParameters()) {
@@ -235,9 +235,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBody' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBody::class => false];
         }
     }
 } else {
@@ -247,13 +247,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBody';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBody::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBody';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBody::class;
         }
         /**
          * @return mixed
@@ -271,11 +271,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('locationsSummaryRequestControlParameters', $data)) {
-                $object->setLocationsSummaryRequestControlParameters($this->denormalizer->denormalize($data['locationsSummaryRequestControlParameters'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBodyLocationsSummaryRequestControlParameters', 'json', $context));
+                $object->setLocationsSummaryRequestControlParameters($this->denormalizer->denormalize($data['locationsSummaryRequestControlParameters'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBodyLocationsSummaryRequestControlParameters::class, 'json', $context));
                 unset($data['locationsSummaryRequestControlParameters']);
             }
             if (\array_key_exists('constraints', $data)) {
-                $object->setConstraints($this->denormalizer->denormalize($data['constraints'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBodyConstraints', 'json', $context));
+                $object->setConstraints($this->denormalizer->denormalize($data['constraints'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBodyConstraints::class, 'json', $context));
                 unset($data['constraints']);
             }
             if (\array_key_exists('locationSearchCriterion', $data)) {
@@ -283,7 +283,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['locationSearchCriterion']);
             }
             if (\array_key_exists('location', $data)) {
-                $object->setLocation($this->denormalizer->denormalize($data['location'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBodyLocation', 'json', $context));
+                $object->setLocation($this->denormalizer->denormalize($data['location'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBodyLocation::class, 'json', $context));
                 unset($data['location']);
             }
             if (\array_key_exists('phoneNumber', $data)) {
@@ -295,11 +295,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['multipleMatchesAction']);
             }
             if (\array_key_exists('sort', $data)) {
-                $object->setSort($this->denormalizer->denormalize($data['sort'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBodySort', 'json', $context));
+                $object->setSort($this->denormalizer->denormalize($data['sort'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBodySort::class, 'json', $context));
                 unset($data['sort']);
             }
             if (\array_key_exists('trackingInfo', $data)) {
-                $object->setTrackingInfo($this->denormalizer->denormalize($data['trackingInfo'], 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBodyTrackingInfo', 'json', $context));
+                $object->setTrackingInfo($this->denormalizer->denormalize($data['trackingInfo'], \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBodyTrackingInfo::class, 'json', $context));
                 unset($data['trackingInfo']);
             }
             if (\array_key_exists('sameState', $data)) {
@@ -325,7 +325,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('locationCapabilities', $data)) {
                 $values_1 = [];
                 foreach ($data['locationCapabilities'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBodyLocationCapabilitiesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBodyLocationCapabilitiesItem::class, 'json', $context);
                 }
                 $object->setLocationCapabilities($values_1);
                 unset($data['locationCapabilities']);
@@ -333,7 +333,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('packageAttributes', $data)) {
                 $values_2 = [];
                 foreach ($data['packageAttributes'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBodyPackageAttributesItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBodyPackageAttributesItem::class, 'json', $context);
                 }
                 $object->setPackageAttributes($values_2);
                 unset($data['packageAttributes']);
@@ -468,9 +468,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\LocationV1LocationsPostBody' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostBody::class => false];
         }
     }
 }

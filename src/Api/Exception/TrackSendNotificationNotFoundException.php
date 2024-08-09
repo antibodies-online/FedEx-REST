@@ -18,11 +18,11 @@ class TrackSendNotificationNotFoundException extends NotFoundException
         $this->trackV1NotificationsPostResponse404 = $trackV1NotificationsPostResponse404;
         $this->response = $response;
     }
-    public function getTrackV1NotificationsPostResponse404() : \AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostResponse404
+    public function getTrackV1NotificationsPostResponse404(): \AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostResponse404
     {
         return $this->trackV1NotificationsPostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

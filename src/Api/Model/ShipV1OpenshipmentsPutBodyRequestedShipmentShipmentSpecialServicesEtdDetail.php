@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShipmentSpecialServicesEtdDetai
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShipmentSpecialServicesEtdDetai
      *
      * @return list<string>
      */
-    public function getAttributes() : array
+    public function getAttributes(): array
     {
         return $this->attributes;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShipmentSpecialServicesEtdDetai
      *
      * @return self
      */
-    public function setAttributes(array $attributes) : self
+    public function setAttributes(array $attributes): self
     {
         $this->initialized['attributes'] = true;
         $this->attributes = $attributes;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShipmentSpecialServicesEtdDetai
      *
      * @return list<ShipV1OpenshipmentsPutBodyRequestedShipmentShipmentSpecialServicesEtdDetailAttachedDocumentsItem>
      */
-    public function getAttachedDocuments() : array
+    public function getAttachedDocuments(): array
     {
         return $this->attachedDocuments;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShipmentSpecialServicesEtdDetai
      *
      * @return self
      */
-    public function setAttachedDocuments(array $attachedDocuments) : self
+    public function setAttachedDocuments(array $attachedDocuments): self
     {
         $this->initialized['attachedDocuments'] = true;
         $this->attachedDocuments = $attachedDocuments;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShipmentSpecialServicesEtdDetai
      *
      * @return list<string>
      */
-    public function getRequestedDocumentTypes() : array
+    public function getRequestedDocumentTypes(): array
     {
         return $this->requestedDocumentTypes;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentShipmentSpecialServicesEtdDetai
      *
      * @return self
      */
-    public function setRequestedDocumentTypes(array $requestedDocumentTypes) : self
+    public function setRequestedDocumentTypes(array $requestedDocumentTypes): self
     {
         $this->initialized['requestedDocumentTypes'] = true;
         $this->requestedDocumentTypes = $requestedDocumentTypes;

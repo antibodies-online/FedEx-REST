@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return string
      */
-    public function getActualRateType() : string
+    public function getActualRateType(): string
     {
         return $this->actualRateType;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setActualRateType(string $actualRateType) : self
+    public function setActualRateType(string $actualRateType): self
     {
         $this->initialized['actualRateType'] = true;
         $this->actualRateType = $actualRateType;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return list<ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCompletedShipmentDetailShipmentRatingShipmentRateDetailsItem>
      */
-    public function getShipmentRateDetails() : array
+    public function getShipmentRateDetails(): array
     {
         return $this->shipmentRateDetails;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemCom
      *
      * @return self
      */
-    public function setShipmentRateDetails(array $shipmentRateDetails) : self
+    public function setShipmentRateDetails(array $shipmentRateDetails): self
     {
         $this->initialized['shipmentRateDetails'] = true;
         $this->shipmentRateDetails = $shipmentRateDetails;

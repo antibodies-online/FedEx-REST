@@ -18,11 +18,11 @@ class FreightShipmentBadRequestException extends BadRequestException
         $this->shipV1FreightShipmentsPostResponse400 = $shipV1FreightShipmentsPostResponse400;
         $this->response = $response;
     }
-    public function getShipV1FreightShipmentsPostResponse400() : \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostResponse400
+    public function getShipV1FreightShipmentsPostResponse400(): \AntibodiesOnline\FedEx\Api\Model\ShipV1FreightShipmentsPostResponse400
     {
         return $this->shipV1FreightShipmentsPostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

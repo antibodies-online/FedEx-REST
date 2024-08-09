@@ -18,11 +18,11 @@ class RetrieveServicesAndTransitTimesInternalServerErrorException extends Intern
         $this->availabilityV1TransittimesPostResponse500 = $availabilityV1TransittimesPostResponse500;
         $this->response = $response;
     }
-    public function getAvailabilityV1TransittimesPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostResponse500
+    public function getAvailabilityV1TransittimesPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostResponse500
     {
         return $this->availabilityV1TransittimesPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

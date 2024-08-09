@@ -18,11 +18,11 @@ class RetrieveServicesAndTransitTimesUnauthorizedException extends UnauthorizedE
         $this->availabilityV1TransittimesPostResponse401 = $availabilityV1TransittimesPostResponse401;
         $this->response = $response;
     }
-    public function getAvailabilityV1TransittimesPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostResponse401
+    public function getAvailabilityV1TransittimesPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostResponse401
     {
         return $this->availabilityV1TransittimesPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

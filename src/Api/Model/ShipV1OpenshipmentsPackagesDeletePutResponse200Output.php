@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesDeletePutResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPackagesDeletePutResponse200Output extends \ArrayObject
      *
      * @return bool
      */
-    public function getDeletedPackagesFromOpenshipment() : bool
+    public function getDeletedPackagesFromOpenshipment(): bool
     {
         return $this->deletedPackagesFromOpenshipment;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPackagesDeletePutResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setDeletedPackagesFromOpenshipment(bool $deletedPackagesFromOpenshipment) : self
+    public function setDeletedPackagesFromOpenshipment(bool $deletedPackagesFromOpenshipment): self
     {
         $this->initialized['deletedPackagesFromOpenshipment'] = true;
         $this->deletedPackagesFromOpenshipment = $deletedPackagesFromOpenshipment;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPackagesDeletePutResponse200Output extends \ArrayObject
      *
      * @return list<ShipV1OpenshipmentsPackagesDeletePutResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPackagesDeletePutResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

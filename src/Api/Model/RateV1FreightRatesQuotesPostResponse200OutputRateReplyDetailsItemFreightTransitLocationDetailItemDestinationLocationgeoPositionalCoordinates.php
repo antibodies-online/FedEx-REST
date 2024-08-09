@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return float
      */
-    public function getLatitude() : float
+    public function getLatitude(): float
     {
         return $this->latitude;
     }
@@ -40,7 +40,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setLatitude(float $latitude) : self
+    public function setLatitude(float $latitude): self
     {
         $this->initialized['latitude'] = true;
         $this->latitude = $latitude;
@@ -51,7 +51,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return float
      */
-    public function getLongitude() : float
+    public function getLongitude(): float
     {
         return $this->longitude;
     }
@@ -62,7 +62,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemFreightTr
      *
      * @return self
      */
-    public function setLongitude(float $longitude) : self
+    public function setLongitude(float $longitude): self
     {
         $this->initialized['longitude'] = true;
         $this->longitude = $longitude;

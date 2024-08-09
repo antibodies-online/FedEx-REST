@@ -18,11 +18,11 @@ class PerformEndOfDayCloseServiceUnavailableException extends ServiceUnavailable
         $this->shipV1EndofdayPostResponse503 = $shipV1EndofdayPostResponse503;
         $this->response = $response;
     }
-    public function getShipV1EndofdayPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPostResponse503
+    public function getShipV1EndofdayPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPostResponse503
     {
         return $this->shipV1EndofdayPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

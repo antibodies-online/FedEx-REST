@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailAddTransportationChargesDetail
      */
-    public function getAddTransportationChargesDetail() : ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailAddTransportationChargesDetail
+    public function getAddTransportationChargesDetail(): ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailAddTransportationChargesDetail
     {
         return $this->addTransportationChargesDetail;
     }
@@ -76,7 +76,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return self
      */
-    public function setAddTransportationChargesDetail(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailAddTransportationChargesDetail $addTransportationChargesDetail) : self
+    public function setAddTransportationChargesDetail(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailAddTransportationChargesDetail $addTransportationChargesDetail): self
     {
         $this->initialized['addTransportationChargesDetail'] = true;
         $this->addTransportationChargesDetail = $addTransportationChargesDetail;
@@ -87,7 +87,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailCodRecipient
      */
-    public function getCodRecipient() : ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailCodRecipient
+    public function getCodRecipient(): ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailCodRecipient
     {
         return $this->codRecipient;
     }
@@ -98,7 +98,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return self
      */
-    public function setCodRecipient(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailCodRecipient $codRecipient) : self
+    public function setCodRecipient(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailCodRecipient $codRecipient): self
     {
         $this->initialized['codRecipient'] = true;
         $this->codRecipient = $codRecipient;
@@ -109,7 +109,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return string
      */
-    public function getRemitToName() : string
+    public function getRemitToName(): string
     {
         return $this->remitToName;
     }
@@ -120,7 +120,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return self
      */
-    public function setRemitToName(string $remitToName) : self
+    public function setRemitToName(string $remitToName): self
     {
         $this->initialized['remitToName'] = true;
         $this->remitToName = $remitToName;
@@ -131,7 +131,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return string
      */
-    public function getCodCollectionType() : string
+    public function getCodCollectionType(): string
     {
         return $this->codCollectionType;
     }
@@ -142,7 +142,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return self
      */
-    public function setCodCollectionType(string $codCollectionType) : self
+    public function setCodCollectionType(string $codCollectionType): self
     {
         $this->initialized['codCollectionType'] = true;
         $this->codCollectionType = $codCollectionType;
@@ -153,7 +153,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailFinancialInstitutionContactAndAddress
      */
-    public function getFinancialInstitutionContactAndAddress() : ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailFinancialInstitutionContactAndAddress
+    public function getFinancialInstitutionContactAndAddress(): ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailFinancialInstitutionContactAndAddress
     {
         return $this->financialInstitutionContactAndAddress;
     }
@@ -164,7 +164,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return self
      */
-    public function setFinancialInstitutionContactAndAddress(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailFinancialInstitutionContactAndAddress $financialInstitutionContactAndAddress) : self
+    public function setFinancialInstitutionContactAndAddress(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailFinancialInstitutionContactAndAddress $financialInstitutionContactAndAddress): self
     {
         $this->initialized['financialInstitutionContactAndAddress'] = true;
         $this->financialInstitutionContactAndAddress = $financialInstitutionContactAndAddress;
@@ -175,7 +175,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailCodCollectionAmount
      */
-    public function getCodCollectionAmount() : ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailCodCollectionAmount
+    public function getCodCollectionAmount(): ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailCodCollectionAmount
     {
         return $this->codCollectionAmount;
     }
@@ -186,7 +186,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return self
      */
-    public function setCodCollectionAmount(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailCodCollectionAmount $codCollectionAmount) : self
+    public function setCodCollectionAmount(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailCodCollectionAmount $codCollectionAmount): self
     {
         $this->initialized['codCollectionAmount'] = true;
         $this->codCollectionAmount = $codCollectionAmount;
@@ -197,7 +197,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return string
      */
-    public function getReturnReferenceIndicatorType() : string
+    public function getReturnReferenceIndicatorType(): string
     {
         return $this->returnReferenceIndicatorType;
     }
@@ -208,7 +208,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return self
      */
-    public function setReturnReferenceIndicatorType(string $returnReferenceIndicatorType) : self
+    public function setReturnReferenceIndicatorType(string $returnReferenceIndicatorType): self
     {
         $this->initialized['returnReferenceIndicatorType'] = true;
         $this->returnReferenceIndicatorType = $returnReferenceIndicatorType;
@@ -219,7 +219,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailShipmentCodAmount
      */
-    public function getShipmentCodAmount() : ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailShipmentCodAmount
+    public function getShipmentCodAmount(): ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailShipmentCodAmount
     {
         return $this->shipmentCodAmount;
     }
@@ -230,7 +230,7 @@ class ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCOD
      *
      * @return self
      */
-    public function setShipmentCodAmount(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailShipmentCodAmount $shipmentCodAmount) : self
+    public function setShipmentCodAmount(ShipV1ShipmentsPostBodyRequestedShipmentShipmentSpecialServicesShipmentCODDetailShipmentCodAmount $shipmentCodAmount): self
     {
         $this->initialized['shipmentCodAmount'] = true;
         $this->shipmentCodAmount = $shipmentCodAmount;

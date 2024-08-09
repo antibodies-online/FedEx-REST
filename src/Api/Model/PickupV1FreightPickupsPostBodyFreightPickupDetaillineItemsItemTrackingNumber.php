@@ -8,7 +8,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumb
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumb
      *
      * @return string
      */
-    public function getTrackingNumber() : string
+    public function getTrackingNumber(): string
     {
         return $this->trackingNumber;
     }
@@ -52,7 +52,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumb
      *
      * @return self
      */
-    public function setTrackingNumber(string $trackingNumber) : self
+    public function setTrackingNumber(string $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;
@@ -63,7 +63,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumb
      *
      * @return string
      */
-    public function getTrackingQualifier() : string
+    public function getTrackingQualifier(): string
     {
         return $this->trackingQualifier;
     }
@@ -74,7 +74,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumb
      *
      * @return self
      */
-    public function setTrackingQualifier(string $trackingQualifier) : self
+    public function setTrackingQualifier(string $trackingQualifier): self
     {
         $this->initialized['trackingQualifier'] = true;
         $this->trackingQualifier = $trackingQualifier;
@@ -85,7 +85,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumb
      *
      * @return string
      */
-    public function getTrackingCarrier() : string
+    public function getTrackingCarrier(): string
     {
         return $this->trackingCarrier;
     }
@@ -96,7 +96,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumb
      *
      * @return self
      */
-    public function setTrackingCarrier(string $trackingCarrier) : self
+    public function setTrackingCarrier(string $trackingCarrier): self
     {
         $this->initialized['trackingCarrier'] = true;
         $this->trackingCarrier = $trackingCarrier;
@@ -107,7 +107,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumb
      *
      * @return string
      */
-    public function getTrackingUniqueId() : string
+    public function getTrackingUniqueId(): string
     {
         return $this->trackingUniqueId;
     }
@@ -118,7 +118,7 @@ class PickupV1FreightPickupsPostBodyFreightPickupDetaillineItemsItemTrackingNumb
      *
      * @return self
      */
-    public function setTrackingUniqueId(string $trackingUniqueId) : self
+    public function setTrackingUniqueId(string $trackingUniqueId): self
     {
         $this->initialized['trackingUniqueId'] = true;
         $this->trackingUniqueId = $trackingUniqueId;

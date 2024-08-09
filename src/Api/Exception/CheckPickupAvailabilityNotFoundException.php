@@ -18,11 +18,11 @@ class CheckPickupAvailabilityNotFoundException extends NotFoundException
         $this->pickupV1PickupsAvailabilitiesPostResponse404 = $pickupV1PickupsAvailabilitiesPostResponse404;
         $this->response = $response;
     }
-    public function getPickupV1PickupsAvailabilitiesPostResponse404() : \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsAvailabilitiesPostResponse404
+    public function getPickupV1PickupsAvailabilitiesPostResponse404(): \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsAvailabilitiesPostResponse404
     {
         return $this->pickupV1PickupsAvailabilitiesPostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

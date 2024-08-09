@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      *
      * @return float
      */
-    public function getAmount() : float
+    public function getAmount(): float
     {
         return $this->amount;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      *
      * @return self
      */
-    public function setAmount(float $amount) : self
+    public function setAmount(float $amount): self
     {
         $this->initialized['amount'] = true;
         $this->amount = $amount;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      *
      * @return string
      */
-    public function getUnits() : string
+    public function getUnits(): string
     {
         return $this->units;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      *
      * @return self
      */
-    public function setUnits(string $units) : self
+    public function setUnits(string $units): self
     {
         $this->initialized['units'] = true;
         $this->units = $units;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;

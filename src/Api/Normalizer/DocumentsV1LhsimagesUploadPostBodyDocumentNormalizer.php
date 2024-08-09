@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1LhsimagesUploadPostBodyDocument';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostBodyDocument::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1LhsimagesUploadPostBodyDocument';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostBodyDocument::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -53,11 +53,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['contentType']);
             }
             if (\array_key_exists('rules', $data)) {
-                $object->setRules($this->denormalizer->denormalize($data['rules'], 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1LhsimagesUploadPostBodyDocumentRules', 'json', $context));
+                $object->setRules($this->denormalizer->denormalize($data['rules'], \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostBodyDocumentRules::class, 'json', $context));
                 unset($data['rules']);
             }
             if (\array_key_exists('meta', $data)) {
-                $object->setMeta($this->denormalizer->denormalize($data['meta'], 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1LhsimagesUploadPostBodyDocumentMeta', 'json', $context));
+                $object->setMeta($this->denormalizer->denormalize($data['meta'], \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostBodyDocumentMeta::class, 'json', $context));
                 unset($data['meta']);
             }
             foreach ($data as $key => $value) {
@@ -67,7 +67,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['referenceId'] = $object->getReferenceId();
@@ -82,9 +82,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1LhsimagesUploadPostBodyDocument' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostBodyDocument::class => false];
         }
     }
 } else {
@@ -94,13 +94,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
-            return $type === 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1LhsimagesUploadPostBodyDocument';
+            return $type === \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostBodyDocument::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
-            return is_object($data) && get_class($data) === 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1LhsimagesUploadPostBodyDocument';
+            return is_object($data) && get_class($data) === AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostBodyDocument::class;
         }
         /**
          * @return mixed
@@ -130,11 +130,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['contentType']);
             }
             if (\array_key_exists('rules', $data)) {
-                $object->setRules($this->denormalizer->denormalize($data['rules'], 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1LhsimagesUploadPostBodyDocumentRules', 'json', $context));
+                $object->setRules($this->denormalizer->denormalize($data['rules'], \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostBodyDocumentRules::class, 'json', $context));
                 unset($data['rules']);
             }
             if (\array_key_exists('meta', $data)) {
-                $object->setMeta($this->denormalizer->denormalize($data['meta'], 'AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1LhsimagesUploadPostBodyDocumentMeta', 'json', $context));
+                $object->setMeta($this->denormalizer->denormalize($data['meta'], \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostBodyDocumentMeta::class, 'json', $context));
                 unset($data['meta']);
             }
             foreach ($data as $key => $value) {
@@ -162,9 +162,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
-            return ['AntibodiesOnline\\FedEx\\Api\\Model\\DocumentsV1LhsimagesUploadPostBodyDocument' => false];
+            return [\AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostBodyDocument::class => false];
         }
     }
 }

@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliv
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliv
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliveryPremiumDetailPhoneNumber
      */
-    public function getPhoneNumber() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliveryPremiumDetailPhoneNumber
+    public function getPhoneNumber(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliveryPremiumDetailPhoneNumber
     {
         return $this->phoneNumber;
     }
@@ -46,7 +46,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliv
      *
      * @return self
      */
-    public function setPhoneNumber(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliveryPremiumDetailPhoneNumber $phoneNumber) : self
+    public function setPhoneNumber(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliveryPremiumDetailPhoneNumber $phoneNumber): self
     {
         $this->initialized['phoneNumber'] = true;
         $this->phoneNumber = $phoneNumber;
@@ -57,7 +57,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliv
      *
      * @return string
      */
-    public function getShipTimestamp() : string
+    public function getShipTimestamp(): string
     {
         return $this->shipTimestamp;
     }
@@ -68,7 +68,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliv
      *
      * @return self
      */
-    public function setShipTimestamp(string $shipTimestamp) : self
+    public function setShipTimestamp(string $shipTimestamp): self
     {
         $this->initialized['shipTimestamp'] = true;
         $this->shipTimestamp = $shipTimestamp;
@@ -79,7 +79,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliv
      *
      * @return string
      */
-    public function getHomedeliveryPremiumType() : string
+    public function getHomedeliveryPremiumType(): string
     {
         return $this->homedeliveryPremiumType;
     }
@@ -90,7 +90,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServiceshomeDeliv
      *
      * @return self
      */
-    public function setHomedeliveryPremiumType(string $homedeliveryPremiumType) : self
+    public function setHomedeliveryPremiumType(string $homedeliveryPremiumType): self
     {
         $this->initialized['homedeliveryPremiumType'] = true;
         $this->homedeliveryPremiumType = $homedeliveryPremiumType;

@@ -8,7 +8,7 @@ class LocationV1LocationsPostBodyLocationsSummaryRequestControlParameters extend
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class LocationV1LocationsPostBodyLocationsSummaryRequestControlParameters extend
      *
      * @return LocationV1LocationsPostBodyLocationsSummaryRequestControlParametersdistance
      */
-    public function getDistance() : LocationV1LocationsPostBodyLocationsSummaryRequestControlParametersdistance
+    public function getDistance(): LocationV1LocationsPostBodyLocationsSummaryRequestControlParametersdistance
     {
         return $this->distance;
     }
@@ -40,7 +40,7 @@ class LocationV1LocationsPostBodyLocationsSummaryRequestControlParameters extend
      *
      * @return self
      */
-    public function setDistance(LocationV1LocationsPostBodyLocationsSummaryRequestControlParametersdistance $distance) : self
+    public function setDistance(LocationV1LocationsPostBodyLocationsSummaryRequestControlParametersdistance $distance): self
     {
         $this->initialized['distance'] = true;
         $this->distance = $distance;
@@ -51,7 +51,7 @@ class LocationV1LocationsPostBodyLocationsSummaryRequestControlParameters extend
      *
      * @return int
      */
-    public function getMaxResults() : int
+    public function getMaxResults(): int
     {
         return $this->maxResults;
     }
@@ -62,7 +62,7 @@ class LocationV1LocationsPostBodyLocationsSummaryRequestControlParameters extend
      *
      * @return self
      */
-    public function setMaxResults(int $maxResults) : self
+    public function setMaxResults(int $maxResults): self
     {
         $this->initialized['maxResults'] = true;
         $this->maxResults = $maxResults;

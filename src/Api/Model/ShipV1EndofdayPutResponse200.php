@@ -8,7 +8,7 @@ class ShipV1EndofdayPutResponse200 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1EndofdayPutResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getTransactionId() : string
+    public function getTransactionId(): string
     {
         return $this->transactionId;
     }
@@ -40,7 +40,7 @@ class ShipV1EndofdayPutResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setTransactionId(string $transactionId) : self
+    public function setTransactionId(string $transactionId): self
     {
         $this->initialized['transactionId'] = true;
         $this->transactionId = $transactionId;
@@ -51,7 +51,7 @@ class ShipV1EndofdayPutResponse200 extends \ArrayObject
      *
      * @return ShipV1EndofdayPutResponse200Output
      */
-    public function getOutput() : ShipV1EndofdayPutResponse200Output
+    public function getOutput(): ShipV1EndofdayPutResponse200Output
     {
         return $this->output;
     }
@@ -62,7 +62,7 @@ class ShipV1EndofdayPutResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setOutput(ShipV1EndofdayPutResponse200Output $output) : self
+    public function setOutput(ShipV1EndofdayPutResponse200Output $output): self
     {
         $this->initialized['output'] = true;
         $this->output = $output;

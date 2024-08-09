@@ -8,7 +8,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetailScanLocation
      */
-    public function getScanLocation() : TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetailScanLocation
+    public function getScanLocation(): TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetailScanLocation
     {
         return $this->scanLocation;
     }
@@ -70,7 +70,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setScanLocation(TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetailScanLocation $scanLocation) : self
+    public function setScanLocation(TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetailScanLocation $scanLocation): self
     {
         $this->initialized['scanLocation'] = true;
         $this->scanLocation = $scanLocation;
@@ -81,7 +81,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return string
      */
-    public function getCode() : string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -92,7 +92,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setCode(string $code) : self
+    public function setCode(string $code): self
     {
         $this->initialized['code'] = true;
         $this->code = $code;
@@ -103,7 +103,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return string
      */
-    public function getDerivedCode() : string
+    public function getDerivedCode(): string
     {
         return $this->derivedCode;
     }
@@ -114,7 +114,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setDerivedCode(string $derivedCode) : self
+    public function setDerivedCode(string $derivedCode): self
     {
         $this->initialized['derivedCode'] = true;
         $this->derivedCode = $derivedCode;
@@ -125,7 +125,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return list<TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetailAncillaryDetailsItem>
      */
-    public function getAncillaryDetails() : array
+    public function getAncillaryDetails(): array
     {
         return $this->ancillaryDetails;
     }
@@ -136,7 +136,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setAncillaryDetails(array $ancillaryDetails) : self
+    public function setAncillaryDetails(array $ancillaryDetails): self
     {
         $this->initialized['ancillaryDetails'] = true;
         $this->ancillaryDetails = $ancillaryDetails;
@@ -147,7 +147,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return string
      */
-    public function getStatusByLocale() : string
+    public function getStatusByLocale(): string
     {
         return $this->statusByLocale;
     }
@@ -158,7 +158,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setStatusByLocale(string $statusByLocale) : self
+    public function setStatusByLocale(string $statusByLocale): self
     {
         $this->initialized['statusByLocale'] = true;
         $this->statusByLocale = $statusByLocale;
@@ -169,7 +169,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -180,7 +180,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -191,7 +191,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetailDelayDetail
      */
-    public function getDelayDetail() : TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetailDelayDetail
+    public function getDelayDetail(): TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetailDelayDetail
     {
         return $this->delayDetail;
     }
@@ -202,7 +202,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setDelayDetail(TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetailDelayDetail $delayDetail) : self
+    public function setDelayDetail(TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTrackResultsItemLatestStatusDetailDelayDetail $delayDetail): self
     {
         $this->initialized['delayDetail'] = true;
         $this->delayDetail = $delayDetail;

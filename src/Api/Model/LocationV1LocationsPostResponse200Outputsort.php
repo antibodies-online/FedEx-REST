@@ -8,7 +8,7 @@ class LocationV1LocationsPostResponse200Outputsort extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class LocationV1LocationsPostResponse200Outputsort extends \ArrayObject
      *
      * @return string
      */
-    public function getCriteria() : string
+    public function getCriteria(): string
     {
         return $this->criteria;
     }
@@ -40,7 +40,7 @@ class LocationV1LocationsPostResponse200Outputsort extends \ArrayObject
      *
      * @return self
      */
-    public function setCriteria(string $criteria) : self
+    public function setCriteria(string $criteria): self
     {
         $this->initialized['criteria'] = true;
         $this->criteria = $criteria;
@@ -51,7 +51,7 @@ class LocationV1LocationsPostResponse200Outputsort extends \ArrayObject
      *
      * @return string
      */
-    public function getOrder() : string
+    public function getOrder(): string
     {
         return $this->order;
     }
@@ -62,7 +62,7 @@ class LocationV1LocationsPostResponse200Outputsort extends \ArrayObject
      *
      * @return self
      */
-    public function setOrder(string $order) : self
+    public function setOrder(string $order): self
     {
         $this->initialized['order'] = true;
         $this->order = $order;

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return string
      */
-    public function getLabelFormatType() : string
+    public function getLabelFormatType(): string
     {
         return $this->labelFormatType;
     }
@@ -82,7 +82,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return self
      */
-    public function setLabelFormatType(string $labelFormatType) : self
+    public function setLabelFormatType(string $labelFormatType): self
     {
         $this->initialized['labelFormatType'] = true;
         $this->labelFormatType = $labelFormatType;
@@ -93,7 +93,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return string
      */
-    public function getLabelOrder() : string
+    public function getLabelOrder(): string
     {
         return $this->labelOrder;
     }
@@ -104,7 +104,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return self
      */
-    public function setLabelOrder(string $labelOrder) : self
+    public function setLabelOrder(string $labelOrder): self
     {
         $this->initialized['labelOrder'] = true;
         $this->labelOrder = $labelOrder;
@@ -115,7 +115,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPostBodyLabelSpecificationCustomerSpecifiedDetail
      */
-    public function getCustomerSpecifiedDetail() : ShipV1OpenshipmentsPostBodyLabelSpecificationCustomerSpecifiedDetail
+    public function getCustomerSpecifiedDetail(): ShipV1OpenshipmentsPostBodyLabelSpecificationCustomerSpecifiedDetail
     {
         return $this->customerSpecifiedDetail;
     }
@@ -126,7 +126,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return self
      */
-    public function setCustomerSpecifiedDetail(ShipV1OpenshipmentsPostBodyLabelSpecificationCustomerSpecifiedDetail $customerSpecifiedDetail) : self
+    public function setCustomerSpecifiedDetail(ShipV1OpenshipmentsPostBodyLabelSpecificationCustomerSpecifiedDetail $customerSpecifiedDetail): self
     {
         $this->initialized['customerSpecifiedDetail'] = true;
         $this->customerSpecifiedDetail = $customerSpecifiedDetail;
@@ -137,7 +137,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigin
      */
-    public function getPrintedLabelOrigin() : ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigin
+    public function getPrintedLabelOrigin(): ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigin
     {
         return $this->printedLabelOrigin;
     }
@@ -148,7 +148,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return self
      */
-    public function setPrintedLabelOrigin(ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigin $printedLabelOrigin) : self
+    public function setPrintedLabelOrigin(ShipV1OpenshipmentsPostBodyLabelSpecificationPrintedLabelOrigin $printedLabelOrigin): self
     {
         $this->initialized['printedLabelOrigin'] = true;
         $this->printedLabelOrigin = $printedLabelOrigin;
@@ -159,7 +159,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return string
      */
-    public function getLabelStockType() : string
+    public function getLabelStockType(): string
     {
         return $this->labelStockType;
     }
@@ -170,7 +170,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return self
      */
-    public function setLabelStockType(string $labelStockType) : self
+    public function setLabelStockType(string $labelStockType): self
     {
         $this->initialized['labelStockType'] = true;
         $this->labelStockType = $labelStockType;
@@ -181,7 +181,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return string
      */
-    public function getLabelRotation() : string
+    public function getLabelRotation(): string
     {
         return $this->labelRotation;
     }
@@ -192,7 +192,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return self
      */
-    public function setLabelRotation(string $labelRotation) : self
+    public function setLabelRotation(string $labelRotation): self
     {
         $this->initialized['labelRotation'] = true;
         $this->labelRotation = $labelRotation;
@@ -203,7 +203,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return string
      */
-    public function getImageType() : string
+    public function getImageType(): string
     {
         return $this->imageType;
     }
@@ -214,7 +214,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return self
      */
-    public function setImageType(string $imageType) : self
+    public function setImageType(string $imageType): self
     {
         $this->initialized['imageType'] = true;
         $this->imageType = $imageType;
@@ -225,7 +225,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return string
      */
-    public function getLabelPrintingOrientation() : string
+    public function getLabelPrintingOrientation(): string
     {
         return $this->labelPrintingOrientation;
     }
@@ -236,7 +236,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return self
      */
-    public function setLabelPrintingOrientation(string $labelPrintingOrientation) : self
+    public function setLabelPrintingOrientation(string $labelPrintingOrientation): self
     {
         $this->initialized['labelPrintingOrientation'] = true;
         $this->labelPrintingOrientation = $labelPrintingOrientation;
@@ -247,7 +247,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return bool
      */
-    public function getReturnedDispositionDetail() : bool
+    public function getReturnedDispositionDetail(): bool
     {
         return $this->returnedDispositionDetail;
     }
@@ -258,7 +258,7 @@ class ShipV1OpenshipmentsPostBodyLabelSpecification extends \ArrayObject
      *
      * @return self
      */
-    public function setReturnedDispositionDetail(bool $returnedDispositionDetail) : self
+    public function setReturnedDispositionDetail(bool $returnedDispositionDetail): self
     {
         $this->initialized['returnedDispositionDetail'] = true;
         $this->returnedDispositionDetail = $returnedDispositionDetail;

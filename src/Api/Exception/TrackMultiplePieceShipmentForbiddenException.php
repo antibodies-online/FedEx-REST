@@ -18,11 +18,11 @@ class TrackMultiplePieceShipmentForbiddenException extends ForbiddenException
         $this->trackV1AssociatedshipmentsPostResponse403 = $trackV1AssociatedshipmentsPostResponse403;
         $this->response = $response;
     }
-    public function getTrackV1AssociatedshipmentsPostResponse403() : \AntibodiesOnline\FedEx\Api\Model\TrackV1AssociatedshipmentsPostResponse403
+    public function getTrackV1AssociatedshipmentsPostResponse403(): \AntibodiesOnline\FedEx\Api\Model\TrackV1AssociatedshipmentsPostResponse403
     {
         return $this->trackV1AssociatedshipmentsPostResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

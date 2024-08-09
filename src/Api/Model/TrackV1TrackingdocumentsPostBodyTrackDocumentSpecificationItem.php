@@ -8,7 +8,7 @@ class TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItem extends \Ar
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItem extends \Ar
      *
      * @return TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItemTrackingNumberInfo
      */
-    public function getTrackingNumberInfo() : TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItemTrackingNumberInfo
+    public function getTrackingNumberInfo(): TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItemTrackingNumberInfo
     {
         return $this->trackingNumberInfo;
     }
@@ -52,7 +52,7 @@ class TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItem extends \Ar
      *
      * @return self
      */
-    public function setTrackingNumberInfo(TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItemTrackingNumberInfo $trackingNumberInfo) : self
+    public function setTrackingNumberInfo(TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItemTrackingNumberInfo $trackingNumberInfo): self
     {
         $this->initialized['trackingNumberInfo'] = true;
         $this->trackingNumberInfo = $trackingNumberInfo;
@@ -63,7 +63,7 @@ class TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItem extends \Ar
      *
      * @return string
      */
-    public function getShipDateBegin() : string
+    public function getShipDateBegin(): string
     {
         return $this->shipDateBegin;
     }
@@ -74,7 +74,7 @@ class TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItem extends \Ar
      *
      * @return self
      */
-    public function setShipDateBegin(string $shipDateBegin) : self
+    public function setShipDateBegin(string $shipDateBegin): self
     {
         $this->initialized['shipDateBegin'] = true;
         $this->shipDateBegin = $shipDateBegin;
@@ -85,7 +85,7 @@ class TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItem extends \Ar
      *
      * @return string
      */
-    public function getShipDateEnd() : string
+    public function getShipDateEnd(): string
     {
         return $this->shipDateEnd;
     }
@@ -96,7 +96,7 @@ class TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItem extends \Ar
      *
      * @return self
      */
-    public function setShipDateEnd(string $shipDateEnd) : self
+    public function setShipDateEnd(string $shipDateEnd): self
     {
         $this->initialized['shipDateEnd'] = true;
         $this->shipDateEnd = $shipDateEnd;
@@ -107,7 +107,7 @@ class TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItem extends \Ar
      *
      * @return string
      */
-    public function getAccountNumber() : string
+    public function getAccountNumber(): string
     {
         return $this->accountNumber;
     }
@@ -118,7 +118,7 @@ class TrackV1TrackingdocumentsPostBodyTrackDocumentSpecificationItem extends \Ar
      *
      * @return self
      */
-    public function setAccountNumber(string $accountNumber) : self
+    public function setAccountNumber(string $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

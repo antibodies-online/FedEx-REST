@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddressContact
      */
-    public function getContact() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddressContact
+    public function getContact(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddressContact
     {
         return $this->contact;
     }
@@ -40,7 +40,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return self
      */
-    public function setContact(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddressContact $contact) : self
+    public function setContact(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddressContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -51,7 +51,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddressAddress
      */
-    public function getAddress() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddressAddress
+    public function getAddress(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddressAddress
     {
         return $this->address;
     }
@@ -62,7 +62,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentC
      *
      * @return self
      */
-    public function setAddress(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddressAddress $address) : self
+    public function setAddress(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesshipmentCODDetailfinancialInstitutionContactAndAddressAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

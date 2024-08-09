@@ -8,7 +8,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getDate() : string
+    public function getDate(): string
     {
         return $this->date;
     }
@@ -94,7 +94,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setDate(string $date) : self
+    public function setDate(string $date): self
     {
         $this->initialized['date'] = true;
         $this->date = $date;
@@ -105,7 +105,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getDerivedStatus() : string
+    public function getDerivedStatus(): string
     {
         return $this->derivedStatus;
     }
@@ -116,7 +116,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setDerivedStatus(string $derivedStatus) : self
+    public function setDerivedStatus(string $derivedStatus): self
     {
         $this->initialized['derivedStatus'] = true;
         $this->derivedStatus = $derivedStatus;
@@ -127,7 +127,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemScanEventsItemScanLocation
      */
-    public function getScanLocation() : TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemScanEventsItemScanLocation
+    public function getScanLocation(): TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemScanEventsItemScanLocation
     {
         return $this->scanLocation;
     }
@@ -138,7 +138,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setScanLocation(TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemScanEventsItemScanLocation $scanLocation) : self
+    public function setScanLocation(TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemScanEventsItemScanLocation $scanLocation): self
     {
         $this->initialized['scanLocation'] = true;
         $this->scanLocation = $scanLocation;
@@ -149,7 +149,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getLocationId() : string
+    public function getLocationId(): string
     {
         return $this->locationId;
     }
@@ -160,7 +160,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setLocationId(string $locationId) : self
+    public function setLocationId(string $locationId): self
     {
         $this->initialized['locationId'] = true;
         $this->locationId = $locationId;
@@ -171,7 +171,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getLocationType() : string
+    public function getLocationType(): string
     {
         return $this->locationType;
     }
@@ -182,7 +182,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setLocationType(string $locationType) : self
+    public function setLocationType(string $locationType): self
     {
         $this->initialized['locationType'] = true;
         $this->locationType = $locationType;
@@ -193,7 +193,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getExceptionDescription() : string
+    public function getExceptionDescription(): string
     {
         return $this->exceptionDescription;
     }
@@ -204,7 +204,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setExceptionDescription(string $exceptionDescription) : self
+    public function setExceptionDescription(string $exceptionDescription): self
     {
         $this->initialized['exceptionDescription'] = true;
         $this->exceptionDescription = $exceptionDescription;
@@ -215,7 +215,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getEventDescription() : string
+    public function getEventDescription(): string
     {
         return $this->eventDescription;
     }
@@ -226,7 +226,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setEventDescription(string $eventDescription) : self
+    public function setEventDescription(string $eventDescription): self
     {
         $this->initialized['eventDescription'] = true;
         $this->eventDescription = $eventDescription;
@@ -237,7 +237,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getEventType() : string
+    public function getEventType(): string
     {
         return $this->eventType;
     }
@@ -248,7 +248,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setEventType(string $eventType) : self
+    public function setEventType(string $eventType): self
     {
         $this->initialized['eventType'] = true;
         $this->eventType = $eventType;
@@ -259,7 +259,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getDerivedStatusCode() : string
+    public function getDerivedStatusCode(): string
     {
         return $this->derivedStatusCode;
     }
@@ -270,7 +270,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setDerivedStatusCode(string $derivedStatusCode) : self
+    public function setDerivedStatusCode(string $derivedStatusCode): self
     {
         $this->initialized['derivedStatusCode'] = true;
         $this->derivedStatusCode = $derivedStatusCode;
@@ -281,7 +281,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getExceptionCode() : string
+    public function getExceptionCode(): string
     {
         return $this->exceptionCode;
     }
@@ -292,7 +292,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setExceptionCode(string $exceptionCode) : self
+    public function setExceptionCode(string $exceptionCode): self
     {
         $this->initialized['exceptionCode'] = true;
         $this->exceptionCode = $exceptionCode;
@@ -303,7 +303,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemScanEventsItemDelayDetail
      */
-    public function getDelayDetail() : TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemScanEventsItemDelayDetail
+    public function getDelayDetail(): TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemScanEventsItemDelayDetail
     {
         return $this->delayDetail;
     }
@@ -314,7 +314,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setDelayDetail(TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemScanEventsItemDelayDetail $delayDetail) : self
+    public function setDelayDetail(TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackResultsItemScanEventsItemDelayDetail $delayDetail): self
     {
         $this->initialized['delayDetail'] = true;
         $this->delayDetail = $delayDetail;

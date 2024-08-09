@@ -18,11 +18,11 @@ class CancelShipmentUnauthorizedException extends UnauthorizedException
         $this->shipV1ShipmentsCancelPutResponse401 = $shipV1ShipmentsCancelPutResponse401;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsCancelPutResponse401() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse401
+    public function getShipV1ShipmentsCancelPutResponse401(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsCancelPutResponse401
     {
         return $this->shipV1ShipmentsCancelPutResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

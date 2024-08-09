@@ -8,7 +8,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return bool
      */
-    public function getHasAssociatedShipments() : bool
+    public function getHasAssociatedShipments(): bool
     {
         return $this->hasAssociatedShipments;
     }
@@ -52,7 +52,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setHasAssociatedShipments(bool $hasAssociatedShipments) : self
+    public function setHasAssociatedShipments(bool $hasAssociatedShipments): self
     {
         $this->initialized['hasAssociatedShipments'] = true;
         $this->hasAssociatedShipments = $hasAssociatedShipments;
@@ -63,7 +63,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return string
      */
-    public function getNickname() : string
+    public function getNickname(): string
     {
         return $this->nickname;
     }
@@ -74,7 +74,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setNickname(string $nickname) : self
+    public function setNickname(string $nickname): self
     {
         $this->initialized['nickname'] = true;
         $this->nickname = $nickname;
@@ -85,7 +85,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return list<TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTrackResultsItemAdditionalTrackingInfoPackageIdentifiersItem>
      */
-    public function getPackageIdentifiers() : array
+    public function getPackageIdentifiers(): array
     {
         return $this->packageIdentifiers;
     }
@@ -96,7 +96,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setPackageIdentifiers(array $packageIdentifiers) : self
+    public function setPackageIdentifiers(array $packageIdentifiers): self
     {
         $this->initialized['packageIdentifiers'] = true;
         $this->packageIdentifiers = $packageIdentifiers;
@@ -107,7 +107,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return string
      */
-    public function getShipmentNotes() : string
+    public function getShipmentNotes(): string
     {
         return $this->shipmentNotes;
     }
@@ -118,7 +118,7 @@ class TrackV1AssociatedshipmentsPostResponse200OutputCompleteTrackResultsItemTra
      *
      * @return self
      */
-    public function setShipmentNotes(string $shipmentNotes) : self
+    public function setShipmentNotes(string $shipmentNotes): self
     {
         $this->initialized['shipmentNotes'] = true;
         $this->shipmentNotes = $shipmentNotes;

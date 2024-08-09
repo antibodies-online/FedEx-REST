@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetailfedExFreightBillingContactAndAddresscontact
      */
-    public function getContact() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetailfedExFreightBillingContactAndAddresscontact
+    public function getContact(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetailfedExFreightBillingContactAndAddresscontact
     {
         return $this->contact;
     }
@@ -40,7 +40,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setContact(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetailfedExFreightBillingContactAndAddresscontact $contact) : self
+    public function setContact(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetailfedExFreightBillingContactAndAddresscontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -51,7 +51,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetailfedExFreightBillingContactAndAddressaddress
      */
-    public function getAddress() : RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetailfedExFreightBillingContactAndAddressaddress
+    public function getAddress(): RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetailfedExFreightBillingContactAndAddressaddress
     {
         return $this->address;
     }
@@ -62,7 +62,7 @@ class RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDet
      *
      * @return self
      */
-    public function setAddress(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetailfedExFreightBillingContactAndAddressaddress $address) : self
+    public function setAddress(RateV1FreightRatesQuotesPostBodyFreightRequestedShipmentFreightShipmentDetailfedExFreightBillingContactAndAddressaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

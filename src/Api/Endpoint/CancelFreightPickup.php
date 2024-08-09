@@ -21,26 +21,26 @@ class CancelFreightPickup extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Bas
         $this->headerParameters = $headerParameters;
     }
     use \AntibodiesOnline\FedEx\Api\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'PUT';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return '/pickup/v1/freight/pickups/cancel/';
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if ($this->body instanceof \AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsCancelPutBody) {
             return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
         }
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
-    protected function getHeadersOptionsResolver() : \Symfony\Component\OptionsResolver\OptionsResolver
+    protected function getHeadersOptionsResolver(): \Symfony\Component\OptionsResolver\OptionsResolver
     {
         $optionsResolver = parent::getHeadersOptionsResolver();
         $optionsResolver->setDefined(['x-customer-transaction-id', 'content-type', 'x-locale', 'authorization']);
@@ -69,28 +69,28 @@ class CancelFreightPickup extends \AntibodiesOnline\FedEx\Api\Runtime\Client\Bas
         $status = $response->getStatusCode();
         $body = (string) $response->getBody();
         if (is_null($contentType) === false && (200 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            return $serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsCancelPutResponse200', 'json');
+            return $serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsCancelPutResponse200', 'json');
         }
         if (is_null($contentType) === false && (400 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelFreightPickupBadRequestException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsCancelPutResponse400', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelFreightPickupBadRequestException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsCancelPutResponse400', 'json'), $response);
         }
         if (is_null($contentType) === false && (401 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelFreightPickupUnauthorizedException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsCancelPutResponse401', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelFreightPickupUnauthorizedException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsCancelPutResponse401', 'json'), $response);
         }
         if (is_null($contentType) === false && (403 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelFreightPickupForbiddenException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsCancelPutResponse403', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelFreightPickupForbiddenException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsCancelPutResponse403', 'json'), $response);
         }
         if (is_null($contentType) === false && (404 === $status && mb_strpos($contentType, 'application/json') !== false)) {
             throw new \AntibodiesOnline\FedEx\Api\Exception\CancelFreightPickupNotFoundException($response);
         }
         if (is_null($contentType) === false && (500 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelFreightPickupInternalServerErrorException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsCancelPutResponse500', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelFreightPickupInternalServerErrorException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsCancelPutResponse500', 'json'), $response);
         }
         if (is_null($contentType) === false && (503 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelFreightPickupServiceUnavailableException($serializer->deserialize($body, 'AntibodiesOnline\\FedEx\\Api\\Model\\PickupV1FreightPickupsCancelPutResponse503', 'json'), $response);
+            throw new \AntibodiesOnline\FedEx\Api\Exception\CancelFreightPickupServiceUnavailableException($serializer->deserialize($body, 'AntibodiesOnline\FedEx\Api\Model\PickupV1FreightPickupsCancelPutResponse503', 'json'), $response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

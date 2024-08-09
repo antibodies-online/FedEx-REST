@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLoc
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLoc
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetailLocationContactAndAddressContact
      */
-    public function getContact() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetailLocationContactAndAddressContact
+    public function getContact(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetailLocationContactAndAddressContact
     {
         return $this->contact;
     }
@@ -40,7 +40,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLoc
      *
      * @return self
      */
-    public function setContact(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetailLocationContactAndAddressContact $contact) : self
+    public function setContact(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetailLocationContactAndAddressContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -51,7 +51,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLoc
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetailLocationContactAndAddressAddress
      */
-    public function getAddress() : RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetailLocationContactAndAddressAddress
+    public function getAddress(): RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetailLocationContactAndAddressAddress
     {
         return $this->address;
     }
@@ -62,7 +62,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLoc
      *
      * @return self
      */
-    public function setAddress(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetailLocationContactAndAddressAddress $address) : self
+    public function setAddress(RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesholdAtLocationDetailLocationContactAndAddressAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

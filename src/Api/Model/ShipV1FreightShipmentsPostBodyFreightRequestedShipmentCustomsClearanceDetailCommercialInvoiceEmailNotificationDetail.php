@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDeta
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDeta
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -46,7 +46,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDeta
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -57,7 +57,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDeta
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -68,7 +68,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDeta
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -79,7 +79,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDeta
      *
      * @return string
      */
-    public function getRecipientType() : string
+    public function getRecipientType(): string
     {
         return $this->recipientType;
     }
@@ -90,7 +90,7 @@ class ShipV1FreightShipmentsPostBodyFreightRequestedShipmentCustomsClearanceDeta
      *
      * @return self
      */
-    public function setRecipientType(string $recipientType) : self
+    public function setRecipientType(string $recipientType): self
     {
         $this->initialized['recipientType'] = true;
         $this->recipientType = $recipientType;

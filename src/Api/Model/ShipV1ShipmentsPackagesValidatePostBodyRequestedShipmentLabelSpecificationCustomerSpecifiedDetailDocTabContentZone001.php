@@ -8,7 +8,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentLabelSpecification
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentLabelSpecification
      *
      * @return list<ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentLabelSpecificationCustomerSpecifiedDetailDocTabContentZone001DocTabZoneSpecificationsItem>
      */
-    public function getDocTabZoneSpecifications() : array
+    public function getDocTabZoneSpecifications(): array
     {
         return $this->docTabZoneSpecifications;
     }
@@ -34,7 +34,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentLabelSpecification
      *
      * @return self
      */
-    public function setDocTabZoneSpecifications(array $docTabZoneSpecifications) : self
+    public function setDocTabZoneSpecifications(array $docTabZoneSpecifications): self
     {
         $this->initialized['docTabZoneSpecifications'] = true;
         $this->docTabZoneSpecifications = $docTabZoneSpecifications;

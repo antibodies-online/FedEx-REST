@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -52,7 +52,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      *
      * @return self
      */
-    public function setAmount($amount) : self
+    public function setAmount($amount): self
     {
         $this->initialized['amount'] = true;
         $this->amount = $amount;
@@ -63,7 +63,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      *
      * @return string
      */
-    public function getSurchargeType() : string
+    public function getSurchargeType(): string
     {
         return $this->surchargeType;
     }
@@ -74,7 +74,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      *
      * @return self
      */
-    public function setSurchargeType(string $surchargeType) : self
+    public function setSurchargeType(string $surchargeType): self
     {
         $this->initialized['surchargeType'] = true;
         $this->surchargeType = $surchargeType;
@@ -85,7 +85,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      *
      * @return string
      */
-    public function getLevel() : string
+    public function getLevel(): string
     {
         return $this->level;
     }
@@ -96,7 +96,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      *
      * @return self
      */
-    public function setLevel(string $level) : self
+    public function setLevel(string $level): self
     {
         $this->initialized['level'] = true;
         $this->level = $level;
@@ -107,7 +107,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -118,7 +118,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedSh
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;

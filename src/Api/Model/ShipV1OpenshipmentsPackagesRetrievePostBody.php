@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getIndex() : string
+    public function getIndex(): string
     {
         return $this->index;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIndex(string $index) : self
+    public function setIndex(string $index): self
     {
         $this->initialized['index'] = true;
         $this->index = $index;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBody extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPackagesRetrievePostBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1OpenshipmentsPackagesRetrievePostBodyAccountNumber
+    public function getAccountNumber(): ShipV1OpenshipmentsPackagesRetrievePostBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1OpenshipmentsPackagesRetrievePostBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1OpenshipmentsPackagesRetrievePostBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBody extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPackagesRetrievePostBodyTrackingId
      */
-    public function getTrackingId() : ShipV1OpenshipmentsPackagesRetrievePostBodyTrackingId
+    public function getTrackingId(): ShipV1OpenshipmentsPackagesRetrievePostBodyTrackingId
     {
         return $this->trackingId;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingId(ShipV1OpenshipmentsPackagesRetrievePostBodyTrackingId $trackingId) : self
+    public function setTrackingId(ShipV1OpenshipmentsPackagesRetrievePostBodyTrackingId $trackingId): self
     {
         $this->initialized['trackingId'] = true;
         $this->trackingId = $trackingId;

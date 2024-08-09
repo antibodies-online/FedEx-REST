@@ -8,7 +8,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributes extends \Ar
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributes extends \Ar
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -52,7 +52,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributes extends \Ar
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -63,7 +63,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributes extends \Ar
      *
      * @return PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributesweight
      */
-    public function getWeight() : PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributesweight
+    public function getWeight(): PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributesweight
     {
         return $this->weight;
     }
@@ -74,7 +74,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributes extends \Ar
      *
      * @return self
      */
-    public function setWeight(PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributesweight $weight) : self
+    public function setWeight(PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributesweight $weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -85,7 +85,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributes extends \Ar
      *
      * @return string
      */
-    public function getPackagingType() : string
+    public function getPackagingType(): string
     {
         return $this->packagingType;
     }
@@ -96,7 +96,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributes extends \Ar
      *
      * @return self
      */
-    public function setPackagingType(string $packagingType) : self
+    public function setPackagingType(string $packagingType): self
     {
         $this->initialized['packagingType'] = true;
         $this->packagingType = $packagingType;
@@ -107,7 +107,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributes extends \Ar
      *
      * @return PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributesdimensions
      */
-    public function getDimensions() : PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributesdimensions
+    public function getDimensions(): PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributesdimensions
     {
         return $this->dimensions;
     }
@@ -118,7 +118,7 @@ class PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributes extends \Ar
      *
      * @return self
      */
-    public function setDimensions(PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributesdimensions $dimensions) : self
+    public function setDimensions(PickupV1FreightPickupsAvailabilitiesPostBodyShipmentAttributesdimensions $dimensions): self
     {
         $this->initialized['dimensions'] = true;
         $this->dimensions = $dimensions;

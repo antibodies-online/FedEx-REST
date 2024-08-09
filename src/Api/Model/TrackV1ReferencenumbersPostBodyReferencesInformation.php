@@ -8,7 +8,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return string
      */
-    public function getCarrierCode() : string
+    public function getCarrierCode(): string
     {
         return $this->carrierCode;
     }
@@ -76,7 +76,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return self
      */
-    public function setCarrierCode(string $carrierCode) : self
+    public function setCarrierCode(string $carrierCode): self
     {
         $this->initialized['carrierCode'] = true;
         $this->carrierCode = $carrierCode;
@@ -87,7 +87,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -98,7 +98,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -109,7 +109,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return string
      */
-    public function getValue() : string
+    public function getValue(): string
     {
         return $this->value;
     }
@@ -120,7 +120,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return self
      */
-    public function setValue(string $value) : self
+    public function setValue(string $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;
@@ -131,7 +131,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return string
      */
-    public function getAccountNumber() : string
+    public function getAccountNumber(): string
     {
         return $this->accountNumber;
     }
@@ -142,7 +142,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(string $accountNumber) : self
+    public function setAccountNumber(string $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -153,7 +153,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return string
      */
-    public function getShipDateBegin() : string
+    public function getShipDateBegin(): string
     {
         return $this->shipDateBegin;
     }
@@ -164,7 +164,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return self
      */
-    public function setShipDateBegin(string $shipDateBegin) : self
+    public function setShipDateBegin(string $shipDateBegin): self
     {
         $this->initialized['shipDateBegin'] = true;
         $this->shipDateBegin = $shipDateBegin;
@@ -175,7 +175,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return string
      */
-    public function getShipDateEndDate() : string
+    public function getShipDateEndDate(): string
     {
         return $this->shipDateEndDate;
     }
@@ -186,7 +186,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return self
      */
-    public function setShipDateEndDate(string $shipDateEndDate) : self
+    public function setShipDateEndDate(string $shipDateEndDate): self
     {
         $this->initialized['shipDateEndDate'] = true;
         $this->shipDateEndDate = $shipDateEndDate;
@@ -197,7 +197,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return string
      */
-    public function getDestinationCountryCode() : string
+    public function getDestinationCountryCode(): string
     {
         return $this->destinationCountryCode;
     }
@@ -208,7 +208,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return self
      */
-    public function setDestinationCountryCode(string $destinationCountryCode) : self
+    public function setDestinationCountryCode(string $destinationCountryCode): self
     {
         $this->initialized['destinationCountryCode'] = true;
         $this->destinationCountryCode = $destinationCountryCode;
@@ -219,7 +219,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return string
      */
-    public function getDestinationPostalCode() : string
+    public function getDestinationPostalCode(): string
     {
         return $this->destinationPostalCode;
     }
@@ -230,7 +230,7 @@ class TrackV1ReferencenumbersPostBodyReferencesInformation extends \ArrayObject
      *
      * @return self
      */
-    public function setDestinationPostalCode(string $destinationPostalCode) : self
+    public function setDestinationPostalCode(string $destinationPostalCode): self
     {
         $this->initialized['destinationPostalCode'] = true;
         $this->destinationPostalCode = $destinationPostalCode;

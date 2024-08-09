@@ -8,7 +8,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemEarlyAccessTi
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemEarlyAccessTi
      *
      * @return int
      */
-    public function getHours() : int
+    public function getHours(): int
     {
         return $this->hours;
     }
@@ -40,7 +40,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemEarlyAccessTi
      *
      * @return self
      */
-    public function setHours(int $hours) : self
+    public function setHours(int $hours): self
     {
         $this->initialized['hours'] = true;
         $this->hours = $hours;
@@ -51,7 +51,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemEarlyAccessTi
      *
      * @return int
      */
-    public function getMinutes() : int
+    public function getMinutes(): int
     {
         return $this->minutes;
     }
@@ -62,7 +62,7 @@ class PickupV1PickupsAvailabilitiesPostResponse200OutputOptionsItemEarlyAccessTi
      *
      * @return self
      */
-    public function setMinutes(int $minutes) : self
+    public function setMinutes(int $minutes): self
     {
         $this->initialized['minutes'] = true;
         $this->minutes = $minutes;

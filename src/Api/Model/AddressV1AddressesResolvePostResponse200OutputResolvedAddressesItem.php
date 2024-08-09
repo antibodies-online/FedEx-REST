@@ -8,7 +8,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -113,7 +113,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return list<string>
      */
-    public function getStreetLinesToken() : array
+    public function getStreetLinesToken(): array
     {
         return $this->streetLinesToken;
     }
@@ -124,7 +124,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setStreetLinesToken(array $streetLinesToken) : self
+    public function setStreetLinesToken(array $streetLinesToken): self
     {
         $this->initialized['streetLinesToken'] = true;
         $this->streetLinesToken = $streetLinesToken;
@@ -135,7 +135,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return string
      */
-    public function getCity() : string
+    public function getCity(): string
     {
         return $this->city;
     }
@@ -146,7 +146,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setCity(string $city) : self
+    public function setCity(string $city): self
     {
         $this->initialized['city'] = true;
         $this->city = $city;
@@ -157,7 +157,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return string
      */
-    public function getStateOrProvinceCode() : string
+    public function getStateOrProvinceCode(): string
     {
         return $this->stateOrProvinceCode;
     }
@@ -168,7 +168,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setStateOrProvinceCode(string $stateOrProvinceCode) : self
+    public function setStateOrProvinceCode(string $stateOrProvinceCode): self
     {
         $this->initialized['stateOrProvinceCode'] = true;
         $this->stateOrProvinceCode = $stateOrProvinceCode;
@@ -179,7 +179,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -190,7 +190,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;
@@ -201,7 +201,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return list<mixed>
      */
-    public function getCustomerMessage() : array
+    public function getCustomerMessage(): array
     {
         return $this->customerMessage;
     }
@@ -212,7 +212,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setCustomerMessage(array $customerMessage) : self
+    public function setCustomerMessage(array $customerMessage): self
     {
         $this->initialized['customerMessage'] = true;
         $this->customerMessage = $customerMessage;
@@ -223,7 +223,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return list<AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemCityTokenItem>
      */
-    public function getCityToken() : array
+    public function getCityToken(): array
     {
         return $this->cityToken;
     }
@@ -234,7 +234,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setCityToken(array $cityToken) : self
+    public function setCityToken(array $cityToken): self
     {
         $this->initialized['cityToken'] = true;
         $this->cityToken = $cityToken;
@@ -245,7 +245,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemPostalCodeToken
      */
-    public function getPostalCodeToken() : AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemPostalCodeToken
+    public function getPostalCodeToken(): AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemPostalCodeToken
     {
         return $this->postalCodeToken;
     }
@@ -256,7 +256,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setPostalCodeToken(AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemPostalCodeToken $postalCodeToken) : self
+    public function setPostalCodeToken(AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemPostalCodeToken $postalCodeToken): self
     {
         $this->initialized['postalCodeToken'] = true;
         $this->postalCodeToken = $postalCodeToken;
@@ -267,7 +267,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedPostalCode
      */
-    public function getParsedPostalCode() : AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedPostalCode
+    public function getParsedPostalCode(): AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedPostalCode
     {
         return $this->parsedPostalCode;
     }
@@ -278,7 +278,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setParsedPostalCode(AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedPostalCode $parsedPostalCode) : self
+    public function setParsedPostalCode(AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemParsedPostalCode $parsedPostalCode): self
     {
         $this->initialized['parsedPostalCode'] = true;
         $this->parsedPostalCode = $parsedPostalCode;
@@ -289,7 +289,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return string
      */
-    public function getClassification() : string
+    public function getClassification(): string
     {
         return $this->classification;
     }
@@ -300,7 +300,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setClassification(string $classification) : self
+    public function setClassification(string $classification): self
     {
         $this->initialized['classification'] = true;
         $this->classification = $classification;
@@ -311,7 +311,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return bool
      */
-    public function getPostOfficeBox() : bool
+    public function getPostOfficeBox(): bool
     {
         return $this->postOfficeBox;
     }
@@ -322,7 +322,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setPostOfficeBox(bool $postOfficeBox) : self
+    public function setPostOfficeBox(bool $postOfficeBox): self
     {
         $this->initialized['postOfficeBox'] = true;
         $this->postOfficeBox = $postOfficeBox;
@@ -333,7 +333,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return bool
      */
-    public function getNormalizedStatusNameDPV() : bool
+    public function getNormalizedStatusNameDPV(): bool
     {
         return $this->normalizedStatusNameDPV;
     }
@@ -344,7 +344,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setNormalizedStatusNameDPV(bool $normalizedStatusNameDPV) : self
+    public function setNormalizedStatusNameDPV(bool $normalizedStatusNameDPV): self
     {
         $this->initialized['normalizedStatusNameDPV'] = true;
         $this->normalizedStatusNameDPV = $normalizedStatusNameDPV;
@@ -355,7 +355,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return string
      */
-    public function getStandardizedStatusNameMatchSource() : string
+    public function getStandardizedStatusNameMatchSource(): string
     {
         return $this->standardizedStatusNameMatchSource;
     }
@@ -366,7 +366,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setStandardizedStatusNameMatchSource(string $standardizedStatusNameMatchSource) : self
+    public function setStandardizedStatusNameMatchSource(string $standardizedStatusNameMatchSource): self
     {
         $this->initialized['standardizedStatusNameMatchSource'] = true;
         $this->standardizedStatusNameMatchSource = $standardizedStatusNameMatchSource;
@@ -377,7 +377,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return string
      */
-    public function getResolutionMethodName() : string
+    public function getResolutionMethodName(): string
     {
         return $this->resolutionMethodName;
     }
@@ -388,7 +388,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setResolutionMethodName(string $resolutionMethodName) : self
+    public function setResolutionMethodName(string $resolutionMethodName): self
     {
         $this->initialized['resolutionMethodName'] = true;
         $this->resolutionMethodName = $resolutionMethodName;
@@ -399,7 +399,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return bool
      */
-    public function getRuralRouteHighwayContract() : bool
+    public function getRuralRouteHighwayContract(): bool
     {
         return $this->ruralRouteHighwayContract;
     }
@@ -410,7 +410,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setRuralRouteHighwayContract(bool $ruralRouteHighwayContract) : self
+    public function setRuralRouteHighwayContract(bool $ruralRouteHighwayContract): self
     {
         $this->initialized['ruralRouteHighwayContract'] = true;
         $this->ruralRouteHighwayContract = $ruralRouteHighwayContract;
@@ -421,7 +421,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return bool
      */
-    public function getGeneralDelivery() : bool
+    public function getGeneralDelivery(): bool
     {
         return $this->generalDelivery;
     }
@@ -432,7 +432,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setGeneralDelivery(bool $generalDelivery) : self
+    public function setGeneralDelivery(bool $generalDelivery): self
     {
         $this->initialized['generalDelivery'] = true;
         $this->generalDelivery = $generalDelivery;
@@ -443,7 +443,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttributes
      */
-    public function getAttributes() : AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttributes
+    public function getAttributes(): AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttributes
     {
         return $this->attributes;
     }
@@ -454,7 +454,7 @@ class AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem extend
      *
      * @return self
      */
-    public function setAttributes(AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttributes $attributes) : self
+    public function setAttributes(AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItemAttributes $attributes): self
     {
         $this->initialized['attributes'] = true;
         $this->attributes = $attributes;

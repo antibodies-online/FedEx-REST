@@ -18,11 +18,11 @@ class PerformEndOfDayCloseBadRequestException extends BadRequestException
         $this->shipV1EndofdayPostResponse400 = $shipV1EndofdayPostResponse400;
         $this->response = $response;
     }
-    public function getShipV1EndofdayPostResponse400() : \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPostResponse400
+    public function getShipV1EndofdayPostResponse400(): \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPostResponse400
     {
         return $this->shipV1EndofdayPostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return string
      */
-    public function getContentKey() : string
+    public function getContentKey(): string
     {
         return $this->contentKey;
     }
@@ -76,7 +76,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return self
      */
-    public function setContentKey(string $contentKey) : self
+    public function setContentKey(string $contentKey): self
     {
         $this->initialized['contentKey'] = true;
         $this->contentKey = $contentKey;
@@ -87,7 +87,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return int
      */
-    public function getCopiesToPrint() : int
+    public function getCopiesToPrint(): int
     {
         return $this->copiesToPrint;
     }
@@ -98,7 +98,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return self
      */
-    public function setCopiesToPrint(int $copiesToPrint) : self
+    public function setCopiesToPrint(int $copiesToPrint): self
     {
         $this->initialized['copiesToPrint'] = true;
         $this->copiesToPrint = $copiesToPrint;
@@ -109,7 +109,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return string
      */
-    public function getContentType() : string
+    public function getContentType(): string
     {
         return $this->contentType;
     }
@@ -120,7 +120,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return self
      */
-    public function setContentType(string $contentType) : self
+    public function setContentType(string $contentType): self
     {
         $this->initialized['contentType'] = true;
         $this->contentType = $contentType;
@@ -131,7 +131,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return string
      */
-    public function getTrackingNumber() : string
+    public function getTrackingNumber(): string
     {
         return $this->trackingNumber;
     }
@@ -142,7 +142,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return self
      */
-    public function setTrackingNumber(string $trackingNumber) : self
+    public function setTrackingNumber(string $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;
@@ -153,7 +153,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return string
      */
-    public function getDocType() : string
+    public function getDocType(): string
     {
         return $this->docType;
     }
@@ -164,7 +164,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return self
      */
-    public function setDocType(string $docType) : self
+    public function setDocType(string $docType): self
     {
         $this->initialized['docType'] = true;
         $this->docType = $docType;
@@ -175,7 +175,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return list<ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPieceResponsesItemPackageDocumentsItemAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -186,7 +186,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;
@@ -197,7 +197,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return string
      */
-    public function getEncodedLabel() : string
+    public function getEncodedLabel(): string
     {
         return $this->encodedLabel;
     }
@@ -208,7 +208,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return self
      */
-    public function setEncodedLabel(string $encodedLabel) : self
+    public function setEncodedLabel(string $encodedLabel): self
     {
         $this->initialized['encodedLabel'] = true;
         $this->encodedLabel = $encodedLabel;
@@ -219,7 +219,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -230,7 +230,7 @@ class ShipV1OpenshipmentsPackagesPutResponse200OutputTransactionShipmentsItemPie
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;

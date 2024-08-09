@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightBillingContactAndAddresscontactAncillaryDetailPhoneNumberDetailsItemNumber
      */
-    public function getNumber() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightBillingContactAndAddresscontactAncillaryDetailPhoneNumberDetailsItemNumber
+    public function getNumber(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightBillingContactAndAddresscontactAncillaryDetailPhoneNumberDetailsItemNumber
     {
         return $this->number;
     }
@@ -52,7 +52,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setNumber(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightBillingContactAndAddresscontactAncillaryDetailPhoneNumberDetailsItemNumber $number) : self
+    public function setNumber(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetailfedExFreightBillingContactAndAddresscontactAncillaryDetailPhoneNumberDetailsItemNumber $number): self
     {
         $this->initialized['number'] = true;
         $this->number = $number;
@@ -63,7 +63,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return array<string, string>
      */
-    public function getPermissions() : iterable
+    public function getPermissions(): iterable
     {
         return $this->permissions;
     }
@@ -74,7 +74,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setPermissions(iterable $permissions) : self
+    public function setPermissions(iterable $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;
@@ -85,7 +85,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return string
      */
-    public function getUsage() : string
+    public function getUsage(): string
     {
         return $this->usage;
     }
@@ -96,7 +96,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setUsage(string $usage) : self
+    public function setUsage(string $usage): self
     {
         $this->initialized['usage'] = true;
         $this->usage = $usage;
@@ -107,7 +107,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -118,7 +118,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;

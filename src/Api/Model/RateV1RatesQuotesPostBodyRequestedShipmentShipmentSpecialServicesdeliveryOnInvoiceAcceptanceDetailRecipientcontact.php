@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryO
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryO
      *
      * @return string
      */
-    public function getCompanyName() : string
+    public function getCompanyName(): string
     {
         return $this->companyName;
     }
@@ -52,7 +52,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryO
      *
      * @return self
      */
-    public function setCompanyName(string $companyName) : self
+    public function setCompanyName(string $companyName): self
     {
         $this->initialized['companyName'] = true;
         $this->companyName = $companyName;
@@ -63,7 +63,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryO
      *
      * @return string
      */
-    public function getFaxNumber() : string
+    public function getFaxNumber(): string
     {
         return $this->faxNumber;
     }
@@ -74,7 +74,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryO
      *
      * @return self
      */
-    public function setFaxNumber(string $faxNumber) : self
+    public function setFaxNumber(string $faxNumber): self
     {
         $this->initialized['faxNumber'] = true;
         $this->faxNumber = $faxNumber;
@@ -85,7 +85,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryO
      *
      * @return string
      */
-    public function getPersonName() : string
+    public function getPersonName(): string
     {
         return $this->personName;
     }
@@ -96,7 +96,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryO
      *
      * @return self
      */
-    public function setPersonName(string $personName) : self
+    public function setPersonName(string $personName): self
     {
         $this->initialized['personName'] = true;
         $this->personName = $personName;
@@ -107,7 +107,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryO
      *
      * @return string
      */
-    public function getPhoneNumber() : string
+    public function getPhoneNumber(): string
     {
         return $this->phoneNumber;
     }
@@ -118,7 +118,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentShipmentSpecialServicesdeliveryO
      *
      * @return self
      */
-    public function setPhoneNumber(string $phoneNumber) : self
+    public function setPhoneNumber(string $phoneNumber): self
     {
         $this->initialized['phoneNumber'] = true;
         $this->phoneNumber = $phoneNumber;

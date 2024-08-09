@@ -8,7 +8,7 @@ class PickupV1FreightPickupsCancelPutResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class PickupV1FreightPickupsCancelPutResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getPickupConfirmationCode() : string
+    public function getPickupConfirmationCode(): string
     {
         return $this->pickupConfirmationCode;
     }
@@ -46,7 +46,7 @@ class PickupV1FreightPickupsCancelPutResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setPickupConfirmationCode(string $pickupConfirmationCode) : self
+    public function setPickupConfirmationCode(string $pickupConfirmationCode): self
     {
         $this->initialized['pickupConfirmationCode'] = true;
         $this->pickupConfirmationCode = $pickupConfirmationCode;
@@ -57,7 +57,7 @@ class PickupV1FreightPickupsCancelPutResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getCancelConfirmationMessage() : string
+    public function getCancelConfirmationMessage(): string
     {
         return $this->cancelConfirmationMessage;
     }
@@ -68,7 +68,7 @@ class PickupV1FreightPickupsCancelPutResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setCancelConfirmationMessage(string $cancelConfirmationMessage) : self
+    public function setCancelConfirmationMessage(string $cancelConfirmationMessage): self
     {
         $this->initialized['cancelConfirmationMessage'] = true;
         $this->cancelConfirmationMessage = $cancelConfirmationMessage;
@@ -79,7 +79,7 @@ class PickupV1FreightPickupsCancelPutResponse200Output extends \ArrayObject
      *
      * @return list<PickupV1FreightPickupsCancelPutResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -90,7 +90,7 @@ class PickupV1FreightPickupsCancelPutResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

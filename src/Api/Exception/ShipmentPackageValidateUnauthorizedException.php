@@ -18,11 +18,11 @@ class ShipmentPackageValidateUnauthorizedException extends UnauthorizedException
         $this->shipV1ShipmentsPackagesValidatePostResponse401 = $shipV1ShipmentsPackagesValidatePostResponse401;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsPackagesValidatePostResponse401() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPackagesValidatePostResponse401
+    public function getShipV1ShipmentsPackagesValidatePostResponse401(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsPackagesValidatePostResponse401
     {
         return $this->shipV1ShipmentsPackagesValidatePostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

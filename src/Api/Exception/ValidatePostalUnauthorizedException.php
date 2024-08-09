@@ -18,11 +18,11 @@ class ValidatePostalUnauthorizedException extends UnauthorizedException
         $this->countryV1PostalValidatePostResponse401 = $countryV1PostalValidatePostResponse401;
         $this->response = $response;
     }
-    public function getCountryV1PostalValidatePostResponse401() : \AntibodiesOnline\FedEx\Api\Model\CountryV1PostalValidatePostResponse401
+    public function getCountryV1PostalValidatePostResponse401(): \AntibodiesOnline\FedEx\Api\Model\CountryV1PostalValidatePostResponse401
     {
         return $this->countryV1PostalValidatePostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

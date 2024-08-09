@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class RateV1FreightRatesQuotesPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getCustomerTransactionId() : string
+    public function getCustomerTransactionId(): string
     {
         return $this->customerTransactionId;
     }
@@ -58,7 +58,7 @@ class RateV1FreightRatesQuotesPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setCustomerTransactionId(string $customerTransactionId) : self
+    public function setCustomerTransactionId(string $customerTransactionId): self
     {
         $this->initialized['customerTransactionId'] = true;
         $this->customerTransactionId = $customerTransactionId;
@@ -69,7 +69,7 @@ class RateV1FreightRatesQuotesPostResponse200Output extends \ArrayObject
      *
      * @return list<RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItem>
      */
-    public function getRateReplyDetails() : array
+    public function getRateReplyDetails(): array
     {
         return $this->rateReplyDetails;
     }
@@ -80,7 +80,7 @@ class RateV1FreightRatesQuotesPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setRateReplyDetails(array $rateReplyDetails) : self
+    public function setRateReplyDetails(array $rateReplyDetails): self
     {
         $this->initialized['rateReplyDetails'] = true;
         $this->rateReplyDetails = $rateReplyDetails;
@@ -91,7 +91,7 @@ class RateV1FreightRatesQuotesPostResponse200Output extends \ArrayObject
      *
      * @return string
      */
-    public function getQuoteDate() : string
+    public function getQuoteDate(): string
     {
         return $this->quoteDate;
     }
@@ -102,7 +102,7 @@ class RateV1FreightRatesQuotesPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setQuoteDate(string $quoteDate) : self
+    public function setQuoteDate(string $quoteDate): self
     {
         $this->initialized['quoteDate'] = true;
         $this->quoteDate = $quoteDate;
@@ -113,7 +113,7 @@ class RateV1FreightRatesQuotesPostResponse200Output extends \ArrayObject
      *
      * @return bool
      */
-    public function getEncoded() : bool
+    public function getEncoded(): bool
     {
         return $this->encoded;
     }
@@ -124,7 +124,7 @@ class RateV1FreightRatesQuotesPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setEncoded(bool $encoded) : self
+    public function setEncoded(bool $encoded): self
     {
         $this->initialized['encoded'] = true;
         $this->encoded = $encoded;
@@ -135,7 +135,7 @@ class RateV1FreightRatesQuotesPostResponse200Output extends \ArrayObject
      *
      * @return list<RateV1FreightRatesQuotesPostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -146,7 +146,7 @@ class RateV1FreightRatesQuotesPostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

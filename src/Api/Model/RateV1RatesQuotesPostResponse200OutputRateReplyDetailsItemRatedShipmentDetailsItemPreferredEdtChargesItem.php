@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return list<string>
      */
-    public function getAlternateHarmonizedCodes() : array
+    public function getAlternateHarmonizedCodes(): array
     {
         return $this->alternateHarmonizedCodes;
     }
@@ -46,7 +46,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setAlternateHarmonizedCodes(array $alternateHarmonizedCodes) : self
+    public function setAlternateHarmonizedCodes(array $alternateHarmonizedCodes): self
     {
         $this->initialized['alternateHarmonizedCodes'] = true;
         $this->alternateHarmonizedCodes = $alternateHarmonizedCodes;
@@ -57,7 +57,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemPreferredEdtChargesItemEdtTaxDetail
      */
-    public function getEdtTaxDetail() : RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemPreferredEdtChargesItemEdtTaxDetail
+    public function getEdtTaxDetail(): RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemPreferredEdtChargesItemEdtTaxDetail
     {
         return $this->edtTaxDetail;
     }
@@ -68,7 +68,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setEdtTaxDetail(RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemPreferredEdtChargesItemEdtTaxDetail $edtTaxDetail) : self
+    public function setEdtTaxDetail(RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemPreferredEdtChargesItemEdtTaxDetail $edtTaxDetail): self
     {
         $this->initialized['edtTaxDetail'] = true;
         $this->edtTaxDetail = $edtTaxDetail;
@@ -79,7 +79,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return string
      */
-    public function getHarmonizedCode() : string
+    public function getHarmonizedCode(): string
     {
         return $this->harmonizedCode;
     }
@@ -90,7 +90,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setHarmonizedCode(string $harmonizedCode) : self
+    public function setHarmonizedCode(string $harmonizedCode): self
     {
         $this->initialized['harmonizedCode'] = true;
         $this->harmonizedCode = $harmonizedCode;

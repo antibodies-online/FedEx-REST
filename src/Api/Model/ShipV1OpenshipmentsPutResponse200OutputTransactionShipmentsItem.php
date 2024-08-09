@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return string
      */
-    public function getServiceType() : string
+    public function getServiceType(): string
     {
         return $this->serviceType;
     }
@@ -76,7 +76,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return self
      */
-    public function setServiceType(string $serviceType) : self
+    public function setServiceType(string $serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -87,7 +87,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return string
      */
-    public function getShipDatestamp() : string
+    public function getShipDatestamp(): string
     {
         return $this->shipDatestamp;
     }
@@ -98,7 +98,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return self
      */
-    public function setShipDatestamp(string $shipDatestamp) : self
+    public function setShipDatestamp(string $shipDatestamp): self
     {
         $this->initialized['shipDatestamp'] = true;
         $this->shipDatestamp = $shipDatestamp;
@@ -109,7 +109,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return string
      */
-    public function getServiceCategory() : string
+    public function getServiceCategory(): string
     {
         return $this->serviceCategory;
     }
@@ -120,7 +120,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return self
      */
-    public function setServiceCategory(string $serviceCategory) : self
+    public function setServiceCategory(string $serviceCategory): self
     {
         $this->initialized['serviceCategory'] = true;
         $this->serviceCategory = $serviceCategory;
@@ -131,7 +131,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return string
      */
-    public function getServiceName() : string
+    public function getServiceName(): string
     {
         return $this->serviceName;
     }
@@ -142,7 +142,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return self
      */
-    public function setServiceName(string $serviceName) : self
+    public function setServiceName(string $serviceName): self
     {
         $this->initialized['serviceName'] = true;
         $this->serviceName = $serviceName;
@@ -153,7 +153,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return list<ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -164,7 +164,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;
@@ -175,7 +175,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedShipmentDetail
      */
-    public function getCompletedShipmentDetail() : ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedShipmentDetail
+    public function getCompletedShipmentDetail(): ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedShipmentDetail
     {
         return $this->completedShipmentDetail;
     }
@@ -186,7 +186,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return self
      */
-    public function setCompletedShipmentDetail(ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedShipmentDetail $completedShipmentDetail) : self
+    public function setCompletedShipmentDetail(ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemCompletedShipmentDetail $completedShipmentDetail): self
     {
         $this->initialized['completedShipmentDetail'] = true;
         $this->completedShipmentDetail = $completedShipmentDetail;
@@ -197,7 +197,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetails
      */
-    public function getShipmentAdvisoryDetails() : ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetails
+    public function getShipmentAdvisoryDetails(): ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetails
     {
         return $this->shipmentAdvisoryDetails;
     }
@@ -208,7 +208,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return self
      */
-    public function setShipmentAdvisoryDetails(ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetails $shipmentAdvisoryDetails) : self
+    public function setShipmentAdvisoryDetails(ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetails $shipmentAdvisoryDetails): self
     {
         $this->initialized['shipmentAdvisoryDetails'] = true;
         $this->shipmentAdvisoryDetails = $shipmentAdvisoryDetails;
@@ -219,7 +219,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return string
      */
-    public function getMasterTrackingNumber() : string
+    public function getMasterTrackingNumber(): string
     {
         return $this->masterTrackingNumber;
     }
@@ -230,7 +230,7 @@ class ShipV1OpenshipmentsPutResponse200OutputTransactionShipmentsItem extends \A
      *
      * @return self
      */
-    public function setMasterTrackingNumber(string $masterTrackingNumber) : self
+    public function setMasterTrackingNumber(string $masterTrackingNumber): self
     {
         $this->initialized['masterTrackingNumber'] = true;
         $this->masterTrackingNumber = $masterTrackingNumber;

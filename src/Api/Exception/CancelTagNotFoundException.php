@@ -18,11 +18,11 @@ class CancelTagNotFoundException extends NotFoundException
         $this->shipV1ShipmentsTagCancelShipmentidPutResponse404 = $shipV1ShipmentsTagCancelShipmentidPutResponse404;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsTagCancelShipmentidPutResponse404() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagCancelShipmentidPutResponse404
+    public function getShipV1ShipmentsTagCancelShipmentidPutResponse404(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagCancelShipmentidPutResponse404
     {
         return $this->shipV1ShipmentsTagCancelShipmentidPutResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

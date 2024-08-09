@@ -8,7 +8,7 @@ class TrackV1TcnPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1TcnPostBody extends \ArrayObject
      *
      * @return TrackV1TcnPostBodyTcnInfo
      */
-    public function getTcnInfo() : TrackV1TcnPostBodyTcnInfo
+    public function getTcnInfo(): TrackV1TcnPostBodyTcnInfo
     {
         return $this->tcnInfo;
     }
@@ -40,7 +40,7 @@ class TrackV1TcnPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTcnInfo(TrackV1TcnPostBodyTcnInfo $tcnInfo) : self
+    public function setTcnInfo(TrackV1TcnPostBodyTcnInfo $tcnInfo): self
     {
         $this->initialized['tcnInfo'] = true;
         $this->tcnInfo = $tcnInfo;
@@ -51,7 +51,7 @@ class TrackV1TcnPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getIncludeDetailedScans() : bool
+    public function getIncludeDetailedScans(): bool
     {
         return $this->includeDetailedScans;
     }
@@ -62,7 +62,7 @@ class TrackV1TcnPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIncludeDetailedScans(bool $includeDetailedScans) : self
+    public function setIncludeDetailedScans(bool $includeDetailedScans): self
     {
         $this->initialized['includeDetailedScans'] = true;
         $this->includeDetailedScans = $includeDetailedScans;

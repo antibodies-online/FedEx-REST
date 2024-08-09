@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getAreaCode() : string
+    public function getAreaCode(): string
     {
         return $this->areaCode;
     }
@@ -58,7 +58,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setAreaCode(string $areaCode) : self
+    public function setAreaCode(string $areaCode): self
     {
         $this->initialized['areaCode'] = true;
         $this->areaCode = $areaCode;
@@ -69,7 +69,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getExtension() : string
+    public function getExtension(): string
     {
         return $this->extension;
     }
@@ -80,7 +80,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setExtension(string $extension) : self
+    public function setExtension(string $extension): self
     {
         $this->initialized['extension'] = true;
         $this->extension = $extension;
@@ -91,7 +91,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -102,7 +102,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;
@@ -113,7 +113,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getPersonalIdentificationNumber() : string
+    public function getPersonalIdentificationNumber(): string
     {
         return $this->personalIdentificationNumber;
     }
@@ -124,7 +124,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setPersonalIdentificationNumber(string $personalIdentificationNumber) : self
+    public function setPersonalIdentificationNumber(string $personalIdentificationNumber): self
     {
         $this->initialized['personalIdentificationNumber'] = true;
         $this->personalIdentificationNumber = $personalIdentificationNumber;
@@ -135,7 +135,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getLocalNumber() : string
+    public function getLocalNumber(): string
     {
         return $this->localNumber;
     }
@@ -146,7 +146,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setLocalNumber(string $localNumber) : self
+    public function setLocalNumber(string $localNumber): self
     {
         $this->initialized['localNumber'] = true;
         $this->localNumber = $localNumber;

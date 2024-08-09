@@ -18,11 +18,11 @@ class CheckPickupAvailabilityServiceUnavailableException extends ServiceUnavaila
         $this->pickupV1PickupsAvailabilitiesPostResponse503 = $pickupV1PickupsAvailabilitiesPostResponse503;
         $this->response = $response;
     }
-    public function getPickupV1PickupsAvailabilitiesPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsAvailabilitiesPostResponse503
+    public function getPickupV1PickupsAvailabilitiesPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsAvailabilitiesPostResponse503
     {
         return $this->pickupV1PickupsAvailabilitiesPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -70,7 +70,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -81,7 +81,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getShippingCycle() : string
+    public function getShippingCycle(): string
     {
         return $this->shippingCycle;
     }
@@ -92,7 +92,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setShippingCycle(string $shippingCycle) : self
+    public function setShippingCycle(string $shippingCycle): self
     {
         $this->initialized['shippingCycle'] = true;
         $this->shippingCycle = $shippingCycle;
@@ -103,7 +103,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getShippingDocumentDisposition() : string
+    public function getShippingDocumentDisposition(): string
     {
         return $this->shippingDocumentDisposition;
     }
@@ -114,7 +114,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setShippingDocumentDisposition(string $shippingDocumentDisposition) : self
+    public function setShippingDocumentDisposition(string $shippingDocumentDisposition): self
     {
         $this->initialized['shippingDocumentDisposition'] = true;
         $this->shippingDocumentDisposition = $shippingDocumentDisposition;
@@ -125,7 +125,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getAccessReference() : string
+    public function getAccessReference(): string
     {
         return $this->accessReference;
     }
@@ -136,7 +136,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setAccessReference(string $accessReference) : self
+    public function setAccessReference(string $accessReference): self
     {
         $this->initialized['accessReference'] = true;
         $this->accessReference = $accessReference;
@@ -147,7 +147,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      *
      * @return int
      */
-    public function getResolution() : int
+    public function getResolution(): int
     {
         return $this->resolution;
     }
@@ -158,7 +158,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setResolution(int $resolution) : self
+    public function setResolution(int $resolution): self
     {
         $this->initialized['resolution'] = true;
         $this->resolution = $resolution;
@@ -169,7 +169,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      *
      * @return int
      */
-    public function getCopiesToPrint() : int
+    public function getCopiesToPrint(): int
     {
         return $this->copiesToPrint;
     }
@@ -180,7 +180,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCopiesToPrint(int $copiesToPrint) : self
+    public function setCopiesToPrint(int $copiesToPrint): self
     {
         $this->initialized['copiesToPrint'] = true;
         $this->copiesToPrint = $copiesToPrint;
@@ -191,7 +191,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      *
      * @return list<ShipV1EndofdayPutResponse200OutputCloseDocumentsItemPartsItem>
      */
-    public function getParts() : array
+    public function getParts(): array
     {
         return $this->parts;
     }
@@ -202,7 +202,7 @@ class ShipV1EndofdayPutResponse200OutputCloseDocumentsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setParts(array $parts) : self
+    public function setParts(array $parts): self
     {
         $this->initialized['parts'] = true;
         $this->parts = $parts;

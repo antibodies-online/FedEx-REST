@@ -18,11 +18,11 @@ class RateAndTransitTimesUnauthorizedException extends UnauthorizedException
         $this->rateV1RatesQuotesPostResponse401 = $rateV1RatesQuotesPostResponse401;
         $this->response = $response;
     }
-    public function getRateV1RatesQuotesPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse401
+    public function getRateV1RatesQuotesPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse401
     {
         return $this->rateV1RatesQuotesPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

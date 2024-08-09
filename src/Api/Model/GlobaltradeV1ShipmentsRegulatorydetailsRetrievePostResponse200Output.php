@@ -8,7 +8,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200Output exten
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200Output exten
      *
      * @return list<GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputUserMessagesItem>
      */
-    public function getUserMessages() : array
+    public function getUserMessages(): array
     {
         return $this->userMessages;
     }
@@ -46,7 +46,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200Output exten
      *
      * @return self
      */
-    public function setUserMessages(array $userMessages) : self
+    public function setUserMessages(array $userMessages): self
     {
         $this->initialized['userMessages'] = true;
         $this->userMessages = $userMessages;
@@ -57,7 +57,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200Output exten
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetails
      */
-    public function getCountryDetails() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetails
+    public function getCountryDetails(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetails
     {
         return $this->countryDetails;
     }
@@ -68,7 +68,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200Output exten
      *
      * @return self
      */
-    public function setCountryDetails(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetails $countryDetails) : self
+    public function setCountryDetails(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetails $countryDetails): self
     {
         $this->initialized['countryDetails'] = true;
         $this->countryDetails = $countryDetails;
@@ -79,7 +79,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200Output exten
      *
      * @return list<GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCxsalertsItem>
      */
-    public function getCxsalerts() : array
+    public function getCxsalerts(): array
     {
         return $this->cxsalerts;
     }
@@ -90,7 +90,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200Output exten
      *
      * @return self
      */
-    public function setCxsalerts(array $cxsalerts) : self
+    public function setCxsalerts(array $cxsalerts): self
     {
         $this->initialized['cxsalerts'] = true;
         $this->cxsalerts = $cxsalerts;

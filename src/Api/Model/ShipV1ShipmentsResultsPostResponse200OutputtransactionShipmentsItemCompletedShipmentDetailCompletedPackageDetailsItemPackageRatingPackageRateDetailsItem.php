@@ -8,7 +8,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -101,7 +101,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return string
      */
-    public function getRatedWeightMethod() : string
+    public function getRatedWeightMethod(): string
     {
         return $this->ratedWeightMethod;
     }
@@ -112,7 +112,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setRatedWeightMethod(string $ratedWeightMethod) : self
+    public function setRatedWeightMethod(string $ratedWeightMethod): self
     {
         $this->initialized['ratedWeightMethod'] = true;
         $this->ratedWeightMethod = $ratedWeightMethod;
@@ -123,7 +123,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return float
      */
-    public function getTotalFreightDiscounts() : float
+    public function getTotalFreightDiscounts(): float
     {
         return $this->totalFreightDiscounts;
     }
@@ -134,7 +134,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setTotalFreightDiscounts(float $totalFreightDiscounts) : self
+    public function setTotalFreightDiscounts(float $totalFreightDiscounts): self
     {
         $this->initialized['totalFreightDiscounts'] = true;
         $this->totalFreightDiscounts = $totalFreightDiscounts;
@@ -145,7 +145,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return float
      */
-    public function getTotalTaxes() : float
+    public function getTotalTaxes(): float
     {
         return $this->totalTaxes;
     }
@@ -156,7 +156,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setTotalTaxes(float $totalTaxes) : self
+    public function setTotalTaxes(float $totalTaxes): self
     {
         $this->initialized['totalTaxes'] = true;
         $this->totalTaxes = $totalTaxes;
@@ -167,7 +167,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return string
      */
-    public function getMinimumChargeType() : string
+    public function getMinimumChargeType(): string
     {
         return $this->minimumChargeType;
     }
@@ -178,7 +178,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setMinimumChargeType(string $minimumChargeType) : self
+    public function setMinimumChargeType(string $minimumChargeType): self
     {
         $this->initialized['minimumChargeType'] = true;
         $this->minimumChargeType = $minimumChargeType;
@@ -189,7 +189,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return float
      */
-    public function getBaseCharge() : float
+    public function getBaseCharge(): float
     {
         return $this->baseCharge;
     }
@@ -200,7 +200,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setBaseCharge(float $baseCharge) : self
+    public function setBaseCharge(float $baseCharge): self
     {
         $this->initialized['baseCharge'] = true;
         $this->baseCharge = $baseCharge;
@@ -211,7 +211,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return float
      */
-    public function getTotalRebates() : float
+    public function getTotalRebates(): float
     {
         return $this->totalRebates;
     }
@@ -222,7 +222,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setTotalRebates(float $totalRebates) : self
+    public function setTotalRebates(float $totalRebates): self
     {
         $this->initialized['totalRebates'] = true;
         $this->totalRebates = $totalRebates;
@@ -233,7 +233,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return string
      */
-    public function getRateType() : string
+    public function getRateType(): string
     {
         return $this->rateType;
     }
@@ -244,7 +244,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setRateType(string $rateType) : self
+    public function setRateType(string $rateType): self
     {
         $this->initialized['rateType'] = true;
         $this->rateType = $rateType;
@@ -255,7 +255,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemPackageRatingPackageRateDetailsItemBillingWeight
      */
-    public function getBillingWeight() : ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemPackageRatingPackageRateDetailsItemBillingWeight
+    public function getBillingWeight(): ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemPackageRatingPackageRateDetailsItemBillingWeight
     {
         return $this->billingWeight;
     }
@@ -266,7 +266,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setBillingWeight(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemPackageRatingPackageRateDetailsItemBillingWeight $billingWeight) : self
+    public function setBillingWeight(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemPackageRatingPackageRateDetailsItemBillingWeight $billingWeight): self
     {
         $this->initialized['billingWeight'] = true;
         $this->billingWeight = $billingWeight;
@@ -277,7 +277,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return float
      */
-    public function getNetFreight() : float
+    public function getNetFreight(): float
     {
         return $this->netFreight;
     }
@@ -288,7 +288,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setNetFreight(float $netFreight) : self
+    public function setNetFreight(float $netFreight): self
     {
         $this->initialized['netFreight'] = true;
         $this->netFreight = $netFreight;
@@ -299,7 +299,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return list<ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemPackageRatingPackageRateDetailsItemSurchargesItem>
      */
-    public function getSurcharges() : array
+    public function getSurcharges(): array
     {
         return $this->surcharges;
     }
@@ -310,7 +310,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setSurcharges(array $surcharges) : self
+    public function setSurcharges(array $surcharges): self
     {
         $this->initialized['surcharges'] = true;
         $this->surcharges = $surcharges;
@@ -321,7 +321,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return float
      */
-    public function getTotalSurcharges() : float
+    public function getTotalSurcharges(): float
     {
         return $this->totalSurcharges;
     }
@@ -332,7 +332,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setTotalSurcharges(float $totalSurcharges) : self
+    public function setTotalSurcharges(float $totalSurcharges): self
     {
         $this->initialized['totalSurcharges'] = true;
         $this->totalSurcharges = $totalSurcharges;
@@ -343,7 +343,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return float
      */
-    public function getNetFedExCharge() : float
+    public function getNetFedExCharge(): float
     {
         return $this->netFedExCharge;
     }
@@ -354,7 +354,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setNetFedExCharge(float $netFedExCharge) : self
+    public function setNetFedExCharge(float $netFedExCharge): self
     {
         $this->initialized['netFedExCharge'] = true;
         $this->netFedExCharge = $netFedExCharge;
@@ -365,7 +365,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return float
      */
-    public function getNetCharge() : float
+    public function getNetCharge(): float
     {
         return $this->netCharge;
     }
@@ -376,7 +376,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setNetCharge(float $netCharge) : self
+    public function setNetCharge(float $netCharge): self
     {
         $this->initialized['netCharge'] = true;
         $this->netCharge = $netCharge;
@@ -387,7 +387,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return string
      */
-    public function getCurrency() : string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
@@ -398,7 +398,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setCurrency(string $currency) : self
+    public function setCurrency(string $currency): self
     {
         $this->initialized['currency'] = true;
         $this->currency = $currency;

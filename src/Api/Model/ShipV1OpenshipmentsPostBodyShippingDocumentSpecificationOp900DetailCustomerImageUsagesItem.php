@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationOp900DetailCustome
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationOp900DetailCustome
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationOp900DetailCustome
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationOp900DetailCustome
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationOp900DetailCustome
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationOp900DetailCustome
      *
      * @return string
      */
-    public function getProvidedImageType() : string
+    public function getProvidedImageType(): string
     {
         return $this->providedImageType;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsPostBodyShippingDocumentSpecificationOp900DetailCustome
      *
      * @return self
      */
-    public function setProvidedImageType(string $providedImageType) : self
+    public function setProvidedImageType(string $providedImageType): self
     {
         $this->initialized['providedImageType'] = true;
         $this->providedImageType = $providedImageType;

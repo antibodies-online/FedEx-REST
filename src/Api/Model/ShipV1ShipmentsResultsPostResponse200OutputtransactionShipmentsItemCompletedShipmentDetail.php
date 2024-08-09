@@ -8,7 +8,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -101,7 +101,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return list<ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItem>
      */
-    public function getCompletedPackageDetails() : array
+    public function getCompletedPackageDetails(): array
     {
         return $this->completedPackageDetails;
     }
@@ -112,7 +112,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setCompletedPackageDetails(array $completedPackageDetails) : self
+    public function setCompletedPackageDetails(array $completedPackageDetails): self
     {
         $this->initialized['completedPackageDetails'] = true;
         $this->completedPackageDetails = $completedPackageDetails;
@@ -123,7 +123,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailOperationalDetail
      */
-    public function getOperationalDetail() : ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailOperationalDetail
+    public function getOperationalDetail(): ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailOperationalDetail
     {
         return $this->operationalDetail;
     }
@@ -134,7 +134,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setOperationalDetail(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailOperationalDetail $operationalDetail) : self
+    public function setOperationalDetail(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailOperationalDetail $operationalDetail): self
     {
         $this->initialized['operationalDetail'] = true;
         $this->operationalDetail = $operationalDetail;
@@ -145,7 +145,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return string
      */
-    public function getCarrierCode() : string
+    public function getCarrierCode(): string
     {
         return $this->carrierCode;
     }
@@ -156,7 +156,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setCarrierCode(string $carrierCode) : self
+    public function setCarrierCode(string $carrierCode): self
     {
         $this->initialized['carrierCode'] = true;
         $this->carrierCode = $carrierCode;
@@ -167,7 +167,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetail
      */
-    public function getCompletedHoldAtLocationDetail() : ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetail
+    public function getCompletedHoldAtLocationDetail(): ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetail
     {
         return $this->completedHoldAtLocationDetail;
     }
@@ -178,7 +178,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setCompletedHoldAtLocationDetail(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetail $completedHoldAtLocationDetail) : self
+    public function setCompletedHoldAtLocationDetail(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedHoldAtLocationDetail $completedHoldAtLocationDetail): self
     {
         $this->initialized['completedHoldAtLocationDetail'] = true;
         $this->completedHoldAtLocationDetail = $completedHoldAtLocationDetail;
@@ -189,7 +189,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedEtdDetail
      */
-    public function getCompletedEtdDetail() : ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedEtdDetail
+    public function getCompletedEtdDetail(): ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedEtdDetail
     {
         return $this->completedEtdDetail;
     }
@@ -200,7 +200,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setCompletedEtdDetail(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedEtdDetail $completedEtdDetail) : self
+    public function setCompletedEtdDetail(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailCompletedEtdDetail $completedEtdDetail): self
     {
         $this->initialized['completedEtdDetail'] = true;
         $this->completedEtdDetail = $completedEtdDetail;
@@ -211,7 +211,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return string
      */
-    public function getPackagingDescription() : string
+    public function getPackagingDescription(): string
     {
         return $this->packagingDescription;
     }
@@ -222,7 +222,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setPackagingDescription(string $packagingDescription) : self
+    public function setPackagingDescription(string $packagingDescription): self
     {
         $this->initialized['packagingDescription'] = true;
         $this->packagingDescription = $packagingDescription;
@@ -233,7 +233,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailMasterTrackingId
      */
-    public function getMasterTrackingId() : ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailMasterTrackingId
+    public function getMasterTrackingId(): ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailMasterTrackingId
     {
         return $this->masterTrackingId;
     }
@@ -244,7 +244,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setMasterTrackingId(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailMasterTrackingId $masterTrackingId) : self
+    public function setMasterTrackingId(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailMasterTrackingId $masterTrackingId): self
     {
         $this->initialized['masterTrackingId'] = true;
         $this->masterTrackingId = $masterTrackingId;
@@ -255,7 +255,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailServiceDescription
      */
-    public function getServiceDescription() : ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailServiceDescription
+    public function getServiceDescription(): ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailServiceDescription
     {
         return $this->serviceDescription;
     }
@@ -266,7 +266,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setServiceDescription(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailServiceDescription $serviceDescription) : self
+    public function setServiceDescription(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailServiceDescription $serviceDescription): self
     {
         $this->initialized['serviceDescription'] = true;
         $this->serviceDescription = $serviceDescription;
@@ -277,7 +277,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return bool
      */
-    public function getUsDomestic() : bool
+    public function getUsDomestic(): bool
     {
         return $this->usDomestic;
     }
@@ -288,7 +288,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setUsDomestic(bool $usDomestic) : self
+    public function setUsDomestic(bool $usDomestic): self
     {
         $this->initialized['usDomestic'] = true;
         $this->usDomestic = $usDomestic;
@@ -299,7 +299,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetail
      */
-    public function getHazardousShipmentDetail() : ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetail
+    public function getHazardousShipmentDetail(): ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetail
     {
         return $this->hazardousShipmentDetail;
     }
@@ -310,7 +310,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setHazardousShipmentDetail(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetail $hazardousShipmentDetail) : self
+    public function setHazardousShipmentDetail(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailHazardousShipmentDetail $hazardousShipmentDetail): self
     {
         $this->initialized['hazardousShipmentDetail'] = true;
         $this->hazardousShipmentDetail = $hazardousShipmentDetail;
@@ -321,7 +321,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailShipmentRating
      */
-    public function getShipmentRating() : ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailShipmentRating
+    public function getShipmentRating(): ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailShipmentRating
     {
         return $this->shipmentRating;
     }
@@ -332,7 +332,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setShipmentRating(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailShipmentRating $shipmentRating) : self
+    public function setShipmentRating(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailShipmentRating $shipmentRating): self
     {
         $this->initialized['shipmentRating'] = true;
         $this->shipmentRating = $shipmentRating;
@@ -343,7 +343,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailDocumentRequirements
      */
-    public function getDocumentRequirements() : ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailDocumentRequirements
+    public function getDocumentRequirements(): ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailDocumentRequirements
     {
         return $this->documentRequirements;
     }
@@ -354,7 +354,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setDocumentRequirements(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailDocumentRequirements $documentRequirements) : self
+    public function setDocumentRequirements(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailDocumentRequirements $documentRequirements): self
     {
         $this->initialized['documentRequirements'] = true;
         $this->documentRequirements = $documentRequirements;
@@ -365,7 +365,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return string
      */
-    public function getExportComplianceStatement() : string
+    public function getExportComplianceStatement(): string
     {
         return $this->exportComplianceStatement;
     }
@@ -376,7 +376,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setExportComplianceStatement(string $exportComplianceStatement) : self
+    public function setExportComplianceStatement(string $exportComplianceStatement): self
     {
         $this->initialized['exportComplianceStatement'] = true;
         $this->exportComplianceStatement = $exportComplianceStatement;
@@ -387,7 +387,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailAccessDetail
      */
-    public function getAccessDetail() : ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailAccessDetail
+    public function getAccessDetail(): ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailAccessDetail
     {
         return $this->accessDetail;
     }
@@ -398,7 +398,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemComplet
      *
      * @return self
      */
-    public function setAccessDetail(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailAccessDetail $accessDetail) : self
+    public function setAccessDetail(ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemCompletedShipmentDetailAccessDetail $accessDetail): self
     {
         $this->initialized['accessDetail'] = true;
         $this->accessDetail = $accessDetail;

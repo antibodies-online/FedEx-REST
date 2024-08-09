@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBodyTrackingId extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBodyTrackingId extends \ArrayObject
      *
      * @return int
      */
-    public function getFormId() : int
+    public function getFormId(): int
     {
         return $this->formId;
     }
@@ -52,7 +52,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBodyTrackingId extends \ArrayObject
      *
      * @return self
      */
-    public function setFormId(int $formId) : self
+    public function setFormId(int $formId): self
     {
         $this->initialized['formId'] = true;
         $this->formId = $formId;
@@ -63,7 +63,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBodyTrackingId extends \ArrayObject
      *
      * @return string
      */
-    public function getTrackingIdType() : string
+    public function getTrackingIdType(): string
     {
         return $this->trackingIdType;
     }
@@ -74,7 +74,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBodyTrackingId extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingIdType(string $trackingIdType) : self
+    public function setTrackingIdType(string $trackingIdType): self
     {
         $this->initialized['trackingIdType'] = true;
         $this->trackingIdType = $trackingIdType;
@@ -85,7 +85,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBodyTrackingId extends \ArrayObject
      *
      * @return int
      */
-    public function getUspsApplicationId() : int
+    public function getUspsApplicationId(): int
     {
         return $this->uspsApplicationId;
     }
@@ -96,7 +96,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBodyTrackingId extends \ArrayObject
      *
      * @return self
      */
-    public function setUspsApplicationId(int $uspsApplicationId) : self
+    public function setUspsApplicationId(int $uspsApplicationId): self
     {
         $this->initialized['uspsApplicationId'] = true;
         $this->uspsApplicationId = $uspsApplicationId;
@@ -107,7 +107,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBodyTrackingId extends \ArrayObject
      *
      * @return string
      */
-    public function getTrackingNumber() : string
+    public function getTrackingNumber(): string
     {
         return $this->trackingNumber;
     }
@@ -118,7 +118,7 @@ class ShipV1OpenshipmentsPackagesRetrievePostBodyTrackingId extends \ArrayObject
      *
      * @return self
      */
-    public function setTrackingNumber(string $trackingNumber) : self
+    public function setTrackingNumber(string $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;

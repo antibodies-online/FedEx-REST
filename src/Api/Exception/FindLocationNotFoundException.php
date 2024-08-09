@@ -18,11 +18,11 @@ class FindLocationNotFoundException extends NotFoundException
         $this->locationV1LocationsPostResponse404 = $locationV1LocationsPostResponse404;
         $this->response = $response;
     }
-    public function getLocationV1LocationsPostResponse404() : \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse404
+    public function getLocationV1LocationsPostResponse404(): \AntibodiesOnline\FedEx\Api\Model\LocationV1LocationsPostResponse404
     {
         return $this->locationV1LocationsPostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

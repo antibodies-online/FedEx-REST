@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmen
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmen
      *
      * @return list<ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisoryProhibitionsItemWaiverAdvisoriesItem>
      */
-    public function getAdvisories() : array
+    public function getAdvisories(): array
     {
         return $this->advisories;
     }
@@ -46,7 +46,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmen
      *
      * @return self
      */
-    public function setAdvisories(array $advisories) : self
+    public function setAdvisories(array $advisories): self
     {
         $this->initialized['advisories'] = true;
         $this->advisories = $advisories;
@@ -57,7 +57,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmen
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -68,7 +68,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmen
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -79,7 +79,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmen
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -90,7 +90,7 @@ class ShipV1FreightShipmentsPostResponse200OutputTransactionShipmentsItemShipmen
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;

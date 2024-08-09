@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTo extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTo extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentSoldToaddress
      */
-    public function getAddress() : ShipV1OpenshipmentsPutBodyRequestedShipmentSoldToaddress
+    public function getAddress(): ShipV1OpenshipmentsPutBodyRequestedShipmentSoldToaddress
     {
         return $this->address;
     }
@@ -52,7 +52,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTo extends \ArrayObject
      *
      * @return self
      */
-    public function setAddress(ShipV1OpenshipmentsPutBodyRequestedShipmentSoldToaddress $address) : self
+    public function setAddress(ShipV1OpenshipmentsPutBodyRequestedShipmentSoldToaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -63,7 +63,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTo extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTocontact
      */
-    public function getContact() : ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTocontact
+    public function getContact(): ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTocontact
     {
         return $this->contact;
     }
@@ -74,7 +74,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTo extends \ArrayObject
      *
      * @return self
      */
-    public function setContact(ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTocontact $contact) : self
+    public function setContact(ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTocontact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -85,7 +85,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTo extends \ArrayObject
      *
      * @return list<ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTotinsItem>
      */
-    public function getTins() : array
+    public function getTins(): array
     {
         return $this->tins;
     }
@@ -96,7 +96,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTo extends \ArrayObject
      *
      * @return self
      */
-    public function setTins(array $tins) : self
+    public function setTins(array $tins): self
     {
         $this->initialized['tins'] = true;
         $this->tins = $tins;
@@ -107,7 +107,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTo extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentSoldToaccountNumber
      */
-    public function getAccountNumber() : ShipV1OpenshipmentsPutBodyRequestedShipmentSoldToaccountNumber
+    public function getAccountNumber(): ShipV1OpenshipmentsPutBodyRequestedShipmentSoldToaccountNumber
     {
         return $this->accountNumber;
     }
@@ -118,7 +118,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentSoldTo extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1OpenshipmentsPutBodyRequestedShipmentSoldToaccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1OpenshipmentsPutBodyRequestedShipmentSoldToaccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

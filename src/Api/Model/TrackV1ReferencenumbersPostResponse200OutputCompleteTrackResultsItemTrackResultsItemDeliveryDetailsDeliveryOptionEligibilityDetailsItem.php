@@ -8,7 +8,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getOption() : string
+    public function getOption(): string
     {
         return $this->option;
     }
@@ -40,7 +40,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setOption(string $option) : self
+    public function setOption(string $option): self
     {
         $this->initialized['option'] = true;
         $this->option = $option;
@@ -51,7 +51,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return string
      */
-    public function getEligibility() : string
+    public function getEligibility(): string
     {
         return $this->eligibility;
     }
@@ -62,7 +62,7 @@ class TrackV1ReferencenumbersPostResponse200OutputCompleteTrackResultsItemTrackR
      *
      * @return self
      */
-    public function setEligibility(string $eligibility) : self
+    public function setEligibility(string $eligibility): self
     {
         $this->initialized['eligibility'] = true;
         $this->eligibility = $eligibility;

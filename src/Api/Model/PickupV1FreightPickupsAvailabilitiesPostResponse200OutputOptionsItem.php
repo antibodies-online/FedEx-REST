@@ -8,7 +8,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      *
      * @return string
      */
-    public function getCarrier() : string
+    public function getCarrier(): string
     {
         return $this->carrier;
     }
@@ -70,7 +70,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      *
      * @return self
      */
-    public function setCarrier(string $carrier) : self
+    public function setCarrier(string $carrier): self
     {
         $this->initialized['carrier'] = true;
         $this->carrier = $carrier;
@@ -81,7 +81,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      *
      * @return bool
      */
-    public function getAvailable() : bool
+    public function getAvailable(): bool
     {
         return $this->available;
     }
@@ -92,7 +92,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      *
      * @return self
      */
-    public function setAvailable(bool $available) : self
+    public function setAvailable(bool $available): self
     {
         $this->initialized['available'] = true;
         $this->available = $available;
@@ -103,7 +103,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      *
      * @return string
      */
-    public function getPickupDate() : string
+    public function getPickupDate(): string
     {
         return $this->pickupDate;
     }
@@ -114,7 +114,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      *
      * @return self
      */
-    public function setPickupDate(string $pickupDate) : self
+    public function setPickupDate(string $pickupDate): self
     {
         $this->initialized['pickupDate'] = true;
         $this->pickupDate = $pickupDate;
@@ -125,7 +125,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      *
      * @return string
      */
-    public function getCutOffTime() : string
+    public function getCutOffTime(): string
     {
         return $this->cutOffTime;
     }
@@ -136,7 +136,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      *
      * @return self
      */
-    public function setCutOffTime(string $cutOffTime) : self
+    public function setCutOffTime(string $cutOffTime): self
     {
         $this->initialized['cutOffTime'] = true;
         $this->cutOffTime = $cutOffTime;
@@ -147,7 +147,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      *
      * @return PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItemAccessTime
      */
-    public function getAccessTime() : PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItemAccessTime
+    public function getAccessTime(): PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItemAccessTime
     {
         return $this->accessTime;
     }
@@ -158,7 +158,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      *
      * @return self
      */
-    public function setAccessTime(PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItemAccessTime $accessTime) : self
+    public function setAccessTime(PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItemAccessTime $accessTime): self
     {
         $this->initialized['accessTime'] = true;
         $this->accessTime = $accessTime;
@@ -169,7 +169,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      *
      * @return bool
      */
-    public function getResidentialAvailable() : bool
+    public function getResidentialAvailable(): bool
     {
         return $this->residentialAvailable;
     }
@@ -180,7 +180,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      *
      * @return self
      */
-    public function setResidentialAvailable(bool $residentialAvailable) : self
+    public function setResidentialAvailable(bool $residentialAvailable): self
     {
         $this->initialized['residentialAvailable'] = true;
         $this->residentialAvailable = $residentialAvailable;
@@ -191,7 +191,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      *
      * @return string
      */
-    public function getScheduleDay() : string
+    public function getScheduleDay(): string
     {
         return $this->scheduleDay;
     }
@@ -202,7 +202,7 @@ class PickupV1FreightPickupsAvailabilitiesPostResponse200OutputOptionsItem exten
      *
      * @return self
      */
-    public function setScheduleDay(string $scheduleDay) : self
+    public function setScheduleDay(string $scheduleDay): self
     {
         $this->initialized['scheduleDay'] = true;
         $this->scheduleDay = $scheduleDay;

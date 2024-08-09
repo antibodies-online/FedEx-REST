@@ -8,7 +8,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentRequestedPackageLi
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentRequestedPackageLi
      *
      * @return list<string>
      */
-    public function getEnhancementTypes() : array
+    public function getEnhancementTypes(): array
     {
         return $this->enhancementTypes;
     }
@@ -40,7 +40,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentRequestedPackageLi
      *
      * @return self
      */
-    public function setEnhancementTypes(array $enhancementTypes) : self
+    public function setEnhancementTypes(array $enhancementTypes): self
     {
         $this->initialized['enhancementTypes'] = true;
         $this->enhancementTypes = $enhancementTypes;
@@ -51,7 +51,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentRequestedPackageLi
      *
      * @return list<string>
      */
-    public function getContent() : array
+    public function getContent(): array
     {
         return $this->content;
     }
@@ -62,7 +62,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentRequestedPackageLi
      *
      * @return self
      */
-    public function setContent(array $content) : self
+    public function setContent(array $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;

@@ -8,7 +8,7 @@ class TrackV1ReferencenumbersPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TrackV1ReferencenumbersPostBody extends \ArrayObject
      *
      * @return TrackV1ReferencenumbersPostBodyReferencesInformation
      */
-    public function getReferencesInformation() : TrackV1ReferencenumbersPostBodyReferencesInformation
+    public function getReferencesInformation(): TrackV1ReferencenumbersPostBodyReferencesInformation
     {
         return $this->referencesInformation;
     }
@@ -40,7 +40,7 @@ class TrackV1ReferencenumbersPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setReferencesInformation(TrackV1ReferencenumbersPostBodyReferencesInformation $referencesInformation) : self
+    public function setReferencesInformation(TrackV1ReferencenumbersPostBodyReferencesInformation $referencesInformation): self
     {
         $this->initialized['referencesInformation'] = true;
         $this->referencesInformation = $referencesInformation;
@@ -51,7 +51,7 @@ class TrackV1ReferencenumbersPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getIncludeDetailedScans() : bool
+    public function getIncludeDetailedScans(): bool
     {
         return $this->includeDetailedScans;
     }
@@ -62,7 +62,7 @@ class TrackV1ReferencenumbersPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIncludeDetailedScans(bool $includeDetailedScans) : self
+    public function setIncludeDetailedScans(bool $includeDetailedScans): self
     {
         $this->initialized['includeDetailedScans'] = true;
         $this->includeDetailedScans = $includeDetailedScans;

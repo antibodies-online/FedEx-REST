@@ -18,11 +18,11 @@ class ImageUploadServiceInfoNotFoundException extends NotFoundException
         $this->documentsV1LhsimagesUploadPostResponse404 = $documentsV1LhsimagesUploadPostResponse404;
         $this->response = $response;
     }
-    public function getDocumentsV1LhsimagesUploadPostResponse404() : \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostResponse404
+    public function getDocumentsV1LhsimagesUploadPostResponse404(): \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostResponse404
     {
         return $this->documentsV1LhsimagesUploadPostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

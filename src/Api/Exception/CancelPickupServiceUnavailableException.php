@@ -18,11 +18,11 @@ class CancelPickupServiceUnavailableException extends ServiceUnavailableExceptio
         $this->pickupV1PickupsCancelPutResponse503 = $pickupV1PickupsCancelPutResponse503;
         $this->response = $response;
     }
-    public function getPickupV1PickupsCancelPutResponse503() : \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsCancelPutResponse503
+    public function getPickupV1PickupsCancelPutResponse503(): \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsCancelPutResponse503
     {
         return $this->pickupV1PickupsCancelPutResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

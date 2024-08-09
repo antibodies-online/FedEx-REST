@@ -18,11 +18,11 @@ class TrackingDocumentsUnauthorizedException extends UnauthorizedException
         $this->trackV1TrackingdocumentsPostResponse401 = $trackV1TrackingdocumentsPostResponse401;
         $this->response = $response;
     }
-    public function getTrackV1TrackingdocumentsPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingdocumentsPostResponse401
+    public function getTrackV1TrackingdocumentsPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingdocumentsPostResponse401
     {
         return $this->trackV1TrackingdocumentsPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -89,7 +89,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return list<RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentLegRateDetailsItemdiscountsItem>
      */
-    public function getDiscounts() : array
+    public function getDiscounts(): array
     {
         return $this->discounts;
     }
@@ -100,7 +100,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setDiscounts(array $discounts) : self
+    public function setDiscounts(array $discounts): self
     {
         $this->initialized['discounts'] = true;
         $this->discounts = $discounts;
@@ -111,7 +111,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return string
      */
-    public function getPricingCode() : string
+    public function getPricingCode(): string
     {
         return $this->pricingCode;
     }
@@ -122,7 +122,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setPricingCode(string $pricingCode) : self
+    public function setPricingCode(string $pricingCode): self
     {
         $this->initialized['pricingCode'] = true;
         $this->pricingCode = $pricingCode;
@@ -133,7 +133,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return string
      */
-    public function getLegDescription() : string
+    public function getLegDescription(): string
     {
         return $this->legDescription;
     }
@@ -144,7 +144,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setLegDescription(string $legDescription) : self
+    public function setLegDescription(string $legDescription): self
     {
         $this->initialized['legDescription'] = true;
         $this->legDescription = $legDescription;
@@ -155,7 +155,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return list<RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentLegRateDetailsItemsurchargesItem>
      */
-    public function getSurcharges() : array
+    public function getSurcharges(): array
     {
         return $this->surcharges;
     }
@@ -166,7 +166,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setSurcharges(array $surcharges) : self
+    public function setSurcharges(array $surcharges): self
     {
         $this->initialized['surcharges'] = true;
         $this->surcharges = $surcharges;
@@ -177,7 +177,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return list<string>
      */
-    public function getSpecialRatingApplied() : array
+    public function getSpecialRatingApplied(): array
     {
         return $this->specialRatingApplied;
     }
@@ -188,7 +188,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setSpecialRatingApplied(array $specialRatingApplied) : self
+    public function setSpecialRatingApplied(array $specialRatingApplied): self
     {
         $this->initialized['specialRatingApplied'] = true;
         $this->specialRatingApplied = $specialRatingApplied;
@@ -199,7 +199,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return list<RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentLegRateDetailsItemtaxesItem>
      */
-    public function getTaxes() : array
+    public function getTaxes(): array
     {
         return $this->taxes;
     }
@@ -210,7 +210,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTaxes(array $taxes) : self
+    public function setTaxes(array $taxes): self
     {
         $this->initialized['taxes'] = true;
         $this->taxes = $taxes;
@@ -221,7 +221,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return string
      */
-    public function getRateScale() : string
+    public function getRateScale(): string
     {
         return $this->rateScale;
     }
@@ -232,7 +232,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setRateScale(string $rateScale) : self
+    public function setRateScale(string $rateScale): self
     {
         $this->initialized['rateScale'] = true;
         $this->rateScale = $rateScale;
@@ -243,7 +243,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return float
      */
-    public function getTotalNetCharge() : float
+    public function getTotalNetCharge(): float
     {
         return $this->totalNetCharge;
     }
@@ -254,7 +254,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTotalNetCharge(float $totalNetCharge) : self
+    public function setTotalNetCharge(float $totalNetCharge): self
     {
         $this->initialized['totalNetCharge'] = true;
         $this->totalNetCharge = $totalNetCharge;
@@ -265,7 +265,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return float
      */
-    public function getTotalBaseCharge() : float
+    public function getTotalBaseCharge(): float
     {
         return $this->totalBaseCharge;
     }
@@ -276,7 +276,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTotalBaseCharge(float $totalBaseCharge) : self
+    public function setTotalBaseCharge(float $totalBaseCharge): self
     {
         $this->initialized['totalBaseCharge'] = true;
         $this->totalBaseCharge = $totalBaseCharge;
@@ -287,7 +287,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentLegRateDetailsItemcurrencyExchangeRate
      */
-    public function getCurrencyExchangeRate() : RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentLegRateDetailsItemcurrencyExchangeRate
+    public function getCurrencyExchangeRate(): RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentLegRateDetailsItemcurrencyExchangeRate
     {
         return $this->currencyExchangeRate;
     }
@@ -298,7 +298,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setCurrencyExchangeRate(RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentLegRateDetailsItemcurrencyExchangeRate $currencyExchangeRate) : self
+    public function setCurrencyExchangeRate(RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentLegRateDetailsItemcurrencyExchangeRate $currencyExchangeRate): self
     {
         $this->initialized['currencyExchangeRate'] = true;
         $this->currencyExchangeRate = $currencyExchangeRate;
@@ -309,7 +309,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentLegRateDetailsItemtotalBillingWeight
      */
-    public function getTotalBillingWeight() : RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentLegRateDetailsItemtotalBillingWeight
+    public function getTotalBillingWeight(): RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentLegRateDetailsItemtotalBillingWeight
     {
         return $this->totalBillingWeight;
     }
@@ -320,7 +320,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setTotalBillingWeight(RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentLegRateDetailsItemtotalBillingWeight $totalBillingWeight) : self
+    public function setTotalBillingWeight(RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsItemShipmentLegRateDetailsItemtotalBillingWeight $totalBillingWeight): self
     {
         $this->initialized['totalBillingWeight'] = true;
         $this->totalBillingWeight = $totalBillingWeight;
@@ -331,7 +331,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return string
      */
-    public function getCurrency() : string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
@@ -342,7 +342,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDet
      *
      * @return self
      */
-    public function setCurrency(string $currency) : self
+    public function setCurrency(string $currency): self
     {
         $this->initialized['currency'] = true;
         $this->currency = $currency;

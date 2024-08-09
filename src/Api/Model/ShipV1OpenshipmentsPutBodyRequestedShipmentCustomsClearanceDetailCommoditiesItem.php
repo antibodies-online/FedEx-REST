@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -119,7 +119,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUnitPrice
      */
-    public function getUnitPrice() : ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUnitPrice
+    public function getUnitPrice(): ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUnitPrice
     {
         return $this->unitPrice;
     }
@@ -130,7 +130,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setUnitPrice(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUnitPrice $unitPrice) : self
+    public function setUnitPrice(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUnitPrice $unitPrice): self
     {
         $this->initialized['unitPrice'] = true;
         $this->unitPrice = $unitPrice;
@@ -141,7 +141,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return list<ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemAdditionalMeasuresItem>
      */
-    public function getAdditionalMeasures() : array
+    public function getAdditionalMeasures(): array
     {
         return $this->additionalMeasures;
     }
@@ -152,7 +152,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setAdditionalMeasures(array $additionalMeasures) : self
+    public function setAdditionalMeasures(array $additionalMeasures): self
     {
         $this->initialized['additionalMeasures'] = true;
         $this->additionalMeasures = $additionalMeasures;
@@ -163,7 +163,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return int
      */
-    public function getNumberOfPieces() : int
+    public function getNumberOfPieces(): int
     {
         return $this->numberOfPieces;
     }
@@ -174,7 +174,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setNumberOfPieces(int $numberOfPieces) : self
+    public function setNumberOfPieces(int $numberOfPieces): self
     {
         $this->initialized['numberOfPieces'] = true;
         $this->numberOfPieces = $numberOfPieces;
@@ -185,7 +185,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return int
      */
-    public function getQuantity() : int
+    public function getQuantity(): int
     {
         return $this->quantity;
     }
@@ -196,7 +196,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setQuantity(int $quantity) : self
+    public function setQuantity(int $quantity): self
     {
         $this->initialized['quantity'] = true;
         $this->quantity = $quantity;
@@ -207,7 +207,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return string
      */
-    public function getQuantityUnits() : string
+    public function getQuantityUnits(): string
     {
         return $this->quantityUnits;
     }
@@ -218,7 +218,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setQuantityUnits(string $quantityUnits) : self
+    public function setQuantityUnits(string $quantityUnits): self
     {
         $this->initialized['quantityUnits'] = true;
         $this->quantityUnits = $quantityUnits;
@@ -229,7 +229,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemCustomsValue
      */
-    public function getCustomsValue() : ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemCustomsValue
+    public function getCustomsValue(): ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemCustomsValue
     {
         return $this->customsValue;
     }
@@ -240,7 +240,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setCustomsValue(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemCustomsValue $customsValue) : self
+    public function setCustomsValue(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemCustomsValue $customsValue): self
     {
         $this->initialized['customsValue'] = true;
         $this->customsValue = $customsValue;
@@ -251,7 +251,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return string
      */
-    public function getCountryOfManufacture() : string
+    public function getCountryOfManufacture(): string
     {
         return $this->countryOfManufacture;
     }
@@ -262,7 +262,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setCountryOfManufacture(string $countryOfManufacture) : self
+    public function setCountryOfManufacture(string $countryOfManufacture): self
     {
         $this->initialized['countryOfManufacture'] = true;
         $this->countryOfManufacture = $countryOfManufacture;
@@ -273,7 +273,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return string
      */
-    public function getCIMarksAndNumbers() : string
+    public function getCIMarksAndNumbers(): string
     {
         return $this->cIMarksAndNumbers;
     }
@@ -284,7 +284,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setCIMarksAndNumbers(string $cIMarksAndNumbers) : self
+    public function setCIMarksAndNumbers(string $cIMarksAndNumbers): self
     {
         $this->initialized['cIMarksAndNumbers'] = true;
         $this->cIMarksAndNumbers = $cIMarksAndNumbers;
@@ -295,7 +295,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return string
      */
-    public function getHarmonizedCode() : string
+    public function getHarmonizedCode(): string
     {
         return $this->harmonizedCode;
     }
@@ -306,7 +306,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setHarmonizedCode(string $harmonizedCode) : self
+    public function setHarmonizedCode(string $harmonizedCode): self
     {
         $this->initialized['harmonizedCode'] = true;
         $this->harmonizedCode = $harmonizedCode;
@@ -317,7 +317,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -328,7 +328,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -339,7 +339,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -350,7 +350,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -361,7 +361,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemWeight
      */
-    public function getWeight() : ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemWeight
+    public function getWeight(): ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemWeight
     {
         return $this->weight;
     }
@@ -372,7 +372,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setWeight(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemWeight $weight) : self
+    public function setWeight(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemWeight $weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -383,7 +383,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return string
      */
-    public function getExportLicenseNumber() : string
+    public function getExportLicenseNumber(): string
     {
         return $this->exportLicenseNumber;
     }
@@ -394,7 +394,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setExportLicenseNumber(string $exportLicenseNumber) : self
+    public function setExportLicenseNumber(string $exportLicenseNumber): self
     {
         $this->initialized['exportLicenseNumber'] = true;
         $this->exportLicenseNumber = $exportLicenseNumber;
@@ -405,7 +405,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return \DateTime
      */
-    public function getExportLicenseExpirationDate() : \DateTime
+    public function getExportLicenseExpirationDate(): \DateTime
     {
         return $this->exportLicenseExpirationDate;
     }
@@ -416,7 +416,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setExportLicenseExpirationDate(\DateTime $exportLicenseExpirationDate) : self
+    public function setExportLicenseExpirationDate(\DateTime $exportLicenseExpirationDate): self
     {
         $this->initialized['exportLicenseExpirationDate'] = true;
         $this->exportLicenseExpirationDate = $exportLicenseExpirationDate;
@@ -427,7 +427,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return string
      */
-    public function getPartNumber() : string
+    public function getPartNumber(): string
     {
         return $this->partNumber;
     }
@@ -438,7 +438,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setPartNumber(string $partNumber) : self
+    public function setPartNumber(string $partNumber): self
     {
         $this->initialized['partNumber'] = true;
         $this->partNumber = $partNumber;
@@ -449,7 +449,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return string
      */
-    public function getPurpose() : string
+    public function getPurpose(): string
     {
         return $this->purpose;
     }
@@ -460,7 +460,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setPurpose(string $purpose) : self
+    public function setPurpose(string $purpose): self
     {
         $this->initialized['purpose'] = true;
         $this->purpose = $purpose;
@@ -471,7 +471,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUsmcaDetail
      */
-    public function getUsmcaDetail() : ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUsmcaDetail
+    public function getUsmcaDetail(): ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUsmcaDetail
     {
         return $this->usmcaDetail;
     }
@@ -482,7 +482,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditi
      *
      * @return self
      */
-    public function setUsmcaDetail(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUsmcaDetail $usmcaDetail) : self
+    public function setUsmcaDetail(ShipV1OpenshipmentsPutBodyRequestedShipmentCustomsClearanceDetailCommoditiesItemUsmcaDetail $usmcaDetail): self
     {
         $this->initialized['usmcaDetail'] = true;
         $this->usmcaDetail = $usmcaDetail;

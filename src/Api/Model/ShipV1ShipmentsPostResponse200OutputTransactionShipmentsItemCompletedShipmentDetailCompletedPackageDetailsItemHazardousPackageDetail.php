@@ -8,7 +8,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return string
      */
-    public function getRegulation() : string
+    public function getRegulation(): string
     {
         return $this->regulation;
     }
@@ -70,7 +70,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return self
      */
-    public function setRegulation(string $regulation) : self
+    public function setRegulation(string $regulation): self
     {
         $this->initialized['regulation'] = true;
         $this->regulation = $regulation;
@@ -81,7 +81,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return string
      */
-    public function getAccessibility() : string
+    public function getAccessibility(): string
     {
         return $this->accessibility;
     }
@@ -92,7 +92,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return self
      */
-    public function setAccessibility(string $accessibility) : self
+    public function setAccessibility(string $accessibility): self
     {
         $this->initialized['accessibility'] = true;
         $this->accessibility = $accessibility;
@@ -103,7 +103,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return string
      */
-    public function getLabelType() : string
+    public function getLabelType(): string
     {
         return $this->labelType;
     }
@@ -114,7 +114,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return self
      */
-    public function setLabelType(string $labelType) : self
+    public function setLabelType(string $labelType): self
     {
         $this->initialized['labelType'] = true;
         $this->labelType = $labelType;
@@ -125,7 +125,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return list<ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipmentDetailCompletedPackageDetailsItemHazardousPackageDetailContainersItem>
      */
-    public function getContainers() : array
+    public function getContainers(): array
     {
         return $this->containers;
     }
@@ -136,7 +136,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return self
      */
-    public function setContainers(array $containers) : self
+    public function setContainers(array $containers): self
     {
         $this->initialized['containers'] = true;
         $this->containers = $containers;
@@ -147,7 +147,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return bool
      */
-    public function getCargoAircraftOnly() : bool
+    public function getCargoAircraftOnly(): bool
     {
         return $this->cargoAircraftOnly;
     }
@@ -158,7 +158,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return self
      */
-    public function setCargoAircraftOnly(bool $cargoAircraftOnly) : self
+    public function setCargoAircraftOnly(bool $cargoAircraftOnly): self
     {
         $this->initialized['cargoAircraftOnly'] = true;
         $this->cargoAircraftOnly = $cargoAircraftOnly;
@@ -169,7 +169,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return string
      */
-    public function getReferenceId() : string
+    public function getReferenceId(): string
     {
         return $this->referenceId;
     }
@@ -180,7 +180,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return self
      */
-    public function setReferenceId(string $referenceId) : self
+    public function setReferenceId(string $referenceId): self
     {
         $this->initialized['referenceId'] = true;
         $this->referenceId = $referenceId;
@@ -191,7 +191,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return float
      */
-    public function getRadioactiveTransportIndex() : float
+    public function getRadioactiveTransportIndex(): float
     {
         return $this->radioactiveTransportIndex;
     }
@@ -202,7 +202,7 @@ class ShipV1ShipmentsPostResponse200OutputTransactionShipmentsItemCompletedShipm
      *
      * @return self
      */
-    public function setRadioactiveTransportIndex(float $radioactiveTransportIndex) : self
+    public function setRadioactiveTransportIndex(float $radioactiveTransportIndex): self
     {
         $this->initialized['radioactiveTransportIndex'] = true;
         $this->radioactiveTransportIndex = $radioactiveTransportIndex;

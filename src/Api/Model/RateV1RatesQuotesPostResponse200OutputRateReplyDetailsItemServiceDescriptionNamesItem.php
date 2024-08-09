@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemServiceDescripti
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemServiceDescripti
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -46,7 +46,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemServiceDescripti
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -57,7 +57,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemServiceDescripti
      *
      * @return string
      */
-    public function getEncoding() : string
+    public function getEncoding(): string
     {
         return $this->encoding;
     }
@@ -68,7 +68,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemServiceDescripti
      *
      * @return self
      */
-    public function setEncoding(string $encoding) : self
+    public function setEncoding(string $encoding): self
     {
         $this->initialized['encoding'] = true;
         $this->encoding = $encoding;
@@ -79,7 +79,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemServiceDescripti
      *
      * @return string
      */
-    public function getValue() : string
+    public function getValue(): string
     {
         return $this->value;
     }
@@ -90,7 +90,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemServiceDescripti
      *
      * @return self
      */
-    public function setValue(string $value) : self
+    public function setValue(string $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;

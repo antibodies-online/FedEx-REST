@@ -8,7 +8,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnEmailDetail
      */
-    public function getReturnEmailDetail() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnEmailDetail
+    public function getReturnEmailDetail(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnEmailDetail
     {
         return $this->returnEmailDetail;
     }
@@ -52,7 +52,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      *
      * @return self
      */
-    public function setReturnEmailDetail(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnEmailDetail $returnEmailDetail) : self
+    public function setReturnEmailDetail(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnEmailDetail $returnEmailDetail): self
     {
         $this->initialized['returnEmailDetail'] = true;
         $this->returnEmailDetail = $returnEmailDetail;
@@ -63,7 +63,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailRma
      */
-    public function getRma() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailRma
+    public function getRma(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailRma
     {
         return $this->rma;
     }
@@ -74,7 +74,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      *
      * @return self
      */
-    public function setRma(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailRma $rma) : self
+    public function setRma(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailRma $rma): self
     {
         $this->initialized['rma'] = true;
         $this->rma = $rma;
@@ -85,7 +85,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      *
      * @return ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnAssociationDetail
      */
-    public function getReturnAssociationDetail() : ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnAssociationDetail
+    public function getReturnAssociationDetail(): ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnAssociationDetail
     {
         return $this->returnAssociationDetail;
     }
@@ -96,7 +96,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      *
      * @return self
      */
-    public function setReturnAssociationDetail(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnAssociationDetail $returnAssociationDetail) : self
+    public function setReturnAssociationDetail(ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialServicesReturnShipmentDetailReturnAssociationDetail $returnAssociationDetail): self
     {
         $this->initialized['returnAssociationDetail'] = true;
         $this->returnAssociationDetail = $returnAssociationDetail;
@@ -107,7 +107,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      *
      * @return string
      */
-    public function getReturnType() : string
+    public function getReturnType(): string
     {
         return $this->returnType;
     }
@@ -118,7 +118,7 @@ class ShipV1ShipmentsPackagesValidatePostBodyRequestedShipmentShipmentSpecialSer
      *
      * @return self
      */
-    public function setReturnType(string $returnType) : self
+    public function setReturnType(string $returnType): self
     {
         $this->initialized['returnType'] = true;
         $this->returnType = $returnType;

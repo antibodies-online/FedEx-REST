@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailcommercial
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailcommercial
      *
      * @return string
      */
-    public function getShipmentPurpose() : string
+    public function getShipmentPurpose(): string
     {
         return $this->shipmentPurpose;
     }
@@ -34,7 +34,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailcommercial
      *
      * @return self
      */
-    public function setShipmentPurpose(string $shipmentPurpose) : self
+    public function setShipmentPurpose(string $shipmentPurpose): self
     {
         $this->initialized['shipmentPurpose'] = true;
         $this->shipmentPurpose = $shipmentPurpose;

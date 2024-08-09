@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return list<string>
      */
-    public function getSpecialServiceTypes() : array
+    public function getSpecialServiceTypes(): array
     {
         return $this->specialServiceTypes;
     }
@@ -70,7 +70,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return self
      */
-    public function setSpecialServiceTypes(array $specialServiceTypes) : self
+    public function setSpecialServiceTypes(array $specialServiceTypes): self
     {
         $this->initialized['specialServiceTypes'] = true;
         $this->specialServiceTypes = $specialServiceTypes;
@@ -81,7 +81,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesCodDetail
      */
-    public function getCodDetail() : AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesCodDetail
+    public function getCodDetail(): AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesCodDetail
     {
         return $this->codDetail;
     }
@@ -92,7 +92,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return self
      */
-    public function setCodDetail(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesCodDetail $codDetail) : self
+    public function setCodDetail(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesCodDetail $codDetail): self
     {
         $this->initialized['codDetail'] = true;
         $this->codDetail = $codDetail;
@@ -103,7 +103,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDryIceWeight
      */
-    public function getDryIceWeight() : AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDryIceWeight
+    public function getDryIceWeight(): AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDryIceWeight
     {
         return $this->dryIceWeight;
     }
@@ -114,7 +114,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return self
      */
-    public function setDryIceWeight(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDryIceWeight $dryIceWeight) : self
+    public function setDryIceWeight(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDryIceWeight $dryIceWeight): self
     {
         $this->initialized['dryIceWeight'] = true;
         $this->dryIceWeight = $dryIceWeight;
@@ -125,7 +125,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDangerousGoodsDetail
      */
-    public function getDangerousGoodsDetail() : AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDangerousGoodsDetail
+    public function getDangerousGoodsDetail(): AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDangerousGoodsDetail
     {
         return $this->dangerousGoodsDetail;
     }
@@ -136,7 +136,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return self
      */
-    public function setDangerousGoodsDetail(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDangerousGoodsDetail $dangerousGoodsDetail) : self
+    public function setDangerousGoodsDetail(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesDangerousGoodsDetail $dangerousGoodsDetail): self
     {
         $this->initialized['dangerousGoodsDetail'] = true;
         $this->dangerousGoodsDetail = $dangerousGoodsDetail;
@@ -147,7 +147,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesAlcoholDetail
      */
-    public function getAlcoholDetail() : AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesAlcoholDetail
+    public function getAlcoholDetail(): AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesAlcoholDetail
     {
         return $this->alcoholDetail;
     }
@@ -158,7 +158,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return self
      */
-    public function setAlcoholDetail(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesAlcoholDetail $alcoholDetail) : self
+    public function setAlcoholDetail(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesAlcoholDetail $alcoholDetail): self
     {
         $this->initialized['alcoholDetail'] = true;
         $this->alcoholDetail = $alcoholDetail;
@@ -169,7 +169,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return int
      */
-    public function getPieceCountVerificationBoxCount() : int
+    public function getPieceCountVerificationBoxCount(): int
     {
         return $this->pieceCountVerificationBoxCount;
     }
@@ -180,7 +180,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return self
      */
-    public function setPieceCountVerificationBoxCount(int $pieceCountVerificationBoxCount) : self
+    public function setPieceCountVerificationBoxCount(int $pieceCountVerificationBoxCount): self
     {
         $this->initialized['pieceCountVerificationBoxCount'] = true;
         $this->pieceCountVerificationBoxCount = $pieceCountVerificationBoxCount;
@@ -191,7 +191,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesBatteryDetails
      */
-    public function getBatteryDetails() : AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesBatteryDetails
+    public function getBatteryDetails(): AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesBatteryDetails
     {
         return $this->batteryDetails;
     }
@@ -202,7 +202,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineIte
      *
      * @return self
      */
-    public function setBatteryDetails(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesBatteryDetails $batteryDetails) : self
+    public function setBatteryDetails(AvailabilityV1TransittimesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesBatteryDetails $batteryDetails): self
     {
         $this->initialized['batteryDetails'] = true;
         $this->batteryDetails = $batteryDetails;

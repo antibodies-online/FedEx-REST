@@ -18,11 +18,11 @@ class TrackByReferencesForbiddenException extends ForbiddenException
         $this->trackV1ReferencenumbersPostResponse403 = $trackV1ReferencenumbersPostResponse403;
         $this->response = $response;
     }
-    public function getTrackV1ReferencenumbersPostResponse403() : \AntibodiesOnline\FedEx\Api\Model\TrackV1ReferencenumbersPostResponse403
+    public function getTrackV1ReferencenumbersPostResponse403(): \AntibodiesOnline\FedEx\Api\Model\TrackV1ReferencenumbersPostResponse403
     {
         return $this->trackV1ReferencenumbersPostResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

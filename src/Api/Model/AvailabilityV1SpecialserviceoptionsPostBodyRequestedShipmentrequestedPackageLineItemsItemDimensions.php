@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -52,7 +52,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setLength($length) : self
+    public function setLength($length): self
     {
         $this->initialized['length'] = true;
         $this->length = $length;
@@ -74,7 +74,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setWidth($width) : self
+    public function setWidth($width): self
     {
         $this->initialized['width'] = true;
         $this->width = $width;
@@ -96,7 +96,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setHeight($height) : self
+    public function setHeight($height): self
     {
         $this->initialized['height'] = true;
         $this->height = $height;
@@ -118,7 +118,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentrequestedPacka
      *
      * @return self
      */
-    public function setUnits($units) : self
+    public function setUnits($units): self
     {
         $this->initialized['units'] = true;
         $this->units = $units;

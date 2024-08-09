@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsRetrievePostResponse500ErrorsItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsRetrievePostResponse500ErrorsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCode() : string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsRetrievePostResponse500ErrorsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCode(string $code) : self
+    public function setCode(string $code): self
     {
         $this->initialized['code'] = true;
         $this->code = $code;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsRetrievePostResponse500ErrorsItem extends \ArrayObject
      *
      * @return list<ShipV1OpenshipmentsRetrievePostResponse500ErrorsItemParameterListItem>
      */
-    public function getParameterList() : array
+    public function getParameterList(): array
     {
         return $this->parameterList;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsRetrievePostResponse500ErrorsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setParameterList(array $parameterList) : self
+    public function setParameterList(array $parameterList): self
     {
         $this->initialized['parameterList'] = true;
         $this->parameterList = $parameterList;
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsRetrievePostResponse500ErrorsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage($message) : self
+    public function setMessage($message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;

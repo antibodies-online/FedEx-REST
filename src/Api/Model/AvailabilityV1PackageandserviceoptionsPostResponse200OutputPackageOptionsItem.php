@@ -8,7 +8,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -82,7 +82,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return self
      */
-    public function setServiceType($serviceType) : self
+    public function setServiceType($serviceType): self
     {
         $this->initialized['serviceType'] = true;
         $this->serviceType = $serviceType;
@@ -104,7 +104,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return self
      */
-    public function setOneRateMaxWeightAllowed($oneRateMaxWeightAllowed) : self
+    public function setOneRateMaxWeightAllowed($oneRateMaxWeightAllowed): self
     {
         $this->initialized['oneRateMaxWeightAllowed'] = true;
         $this->oneRateMaxWeightAllowed = $oneRateMaxWeightAllowed;
@@ -126,7 +126,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return self
      */
-    public function setMaxWeightAllowed($maxWeightAllowed) : self
+    public function setMaxWeightAllowed($maxWeightAllowed): self
     {
         $this->initialized['maxWeightAllowed'] = true;
         $this->maxWeightAllowed = $maxWeightAllowed;
@@ -137,7 +137,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return list<string>
      */
-    public function getRateTypes() : array
+    public function getRateTypes(): array
     {
         return $this->rateTypes;
     }
@@ -148,7 +148,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return self
      */
-    public function setRateTypes(array $rateTypes) : self
+    public function setRateTypes(array $rateTypes): self
     {
         $this->initialized['rateTypes'] = true;
         $this->rateTypes = $rateTypes;
@@ -159,7 +159,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return list<AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsItemPackagingInfoListItem>
      */
-    public function getPackagingInfoList() : array
+    public function getPackagingInfoList(): array
     {
         return $this->packagingInfoList;
     }
@@ -170,7 +170,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return self
      */
-    public function setPackagingInfoList(array $packagingInfoList) : self
+    public function setPackagingInfoList(array $packagingInfoList): self
     {
         $this->initialized['packagingInfoList'] = true;
         $this->packagingInfoList = $packagingInfoList;
@@ -181,7 +181,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsItemPackageType
      */
-    public function getPackageType() : AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsItemPackageType
+    public function getPackageType(): AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsItemPackageType
     {
         return $this->packageType;
     }
@@ -192,7 +192,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return self
      */
-    public function setPackageType(AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsItemPackageType $packageType) : self
+    public function setPackageType(AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsItemPackageType $packageType): self
     {
         $this->initialized['packageType'] = true;
         $this->packageType = $packageType;
@@ -214,7 +214,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return self
      */
-    public function setMaxMetricWeightAllowed($maxMetricWeightAllowed) : self
+    public function setMaxMetricWeightAllowed($maxMetricWeightAllowed): self
     {
         $this->initialized['maxMetricWeightAllowed'] = true;
         $this->maxMetricWeightAllowed = $maxMetricWeightAllowed;
@@ -236,7 +236,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return self
      */
-    public function setOneRateMaxMetricWeightAllowed($oneRateMaxMetricWeightAllowed) : self
+    public function setOneRateMaxMetricWeightAllowed($oneRateMaxMetricWeightAllowed): self
     {
         $this->initialized['oneRateMaxMetricWeightAllowed'] = true;
         $this->oneRateMaxMetricWeightAllowed = $oneRateMaxMetricWeightAllowed;
@@ -247,7 +247,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsItemMaxDeclaredValue
      */
-    public function getMaxDeclaredValue() : AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsItemMaxDeclaredValue
+    public function getMaxDeclaredValue(): AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsItemMaxDeclaredValue
     {
         return $this->maxDeclaredValue;
     }
@@ -258,7 +258,7 @@ class AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsI
      *
      * @return self
      */
-    public function setMaxDeclaredValue(AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsItemMaxDeclaredValue $maxDeclaredValue) : self
+    public function setMaxDeclaredValue(AvailabilityV1PackageandserviceoptionsPostResponse200OutputPackageOptionsItemMaxDeclaredValue $maxDeclaredValue): self
     {
         $this->initialized['maxDeclaredValue'] = true;
         $this->maxDeclaredValue = $maxDeclaredValue;

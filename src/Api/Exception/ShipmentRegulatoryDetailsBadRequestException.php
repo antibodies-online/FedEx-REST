@@ -18,11 +18,11 @@ class ShipmentRegulatoryDetailsBadRequestException extends BadRequestException
         $this->globaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse400 = $globaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse400;
         $this->response = $response;
     }
-    public function getGlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse400() : \AntibodiesOnline\FedEx\Api\Model\GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse400
+    public function getGlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse400(): \AntibodiesOnline\FedEx\Api\Model\GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse400
     {
         return $this->globaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

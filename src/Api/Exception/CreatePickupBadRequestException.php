@@ -18,11 +18,11 @@ class CreatePickupBadRequestException extends BadRequestException
         $this->pickupV1PickupsPostResponse400 = $pickupV1PickupsPostResponse400;
         $this->response = $response;
     }
-    public function getPickupV1PickupsPostResponse400() : \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsPostResponse400
+    public function getPickupV1PickupsPostResponse400(): \AntibodiesOnline\FedEx\Api\Model\PickupV1PickupsPostResponse400
     {
         return $this->pickupV1PickupsPostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

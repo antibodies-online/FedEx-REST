@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -89,7 +89,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return string
      */
-    public function getSequenceNumber() : string
+    public function getSequenceNumber(): string
     {
         return $this->sequenceNumber;
     }
@@ -100,7 +100,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return self
      */
-    public function setSequenceNumber(string $sequenceNumber) : self
+    public function setSequenceNumber(string $sequenceNumber): self
     {
         $this->initialized['sequenceNumber'] = true;
         $this->sequenceNumber = $sequenceNumber;
@@ -111,7 +111,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return string
      */
-    public function getSubPackagingType() : string
+    public function getSubPackagingType(): string
     {
         return $this->subPackagingType;
     }
@@ -122,7 +122,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return self
      */
-    public function setSubPackagingType(string $subPackagingType) : self
+    public function setSubPackagingType(string $subPackagingType): self
     {
         $this->initialized['subPackagingType'] = true;
         $this->subPackagingType = $subPackagingType;
@@ -133,7 +133,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return list<ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemCustomerReferencesItem>
      */
-    public function getCustomerReferences() : array
+    public function getCustomerReferences(): array
     {
         return $this->customerReferences;
     }
@@ -144,7 +144,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return self
      */
-    public function setCustomerReferences(array $customerReferences) : self
+    public function setCustomerReferences(array $customerReferences): self
     {
         $this->initialized['customerReferences'] = true;
         $this->customerReferences = $customerReferences;
@@ -155,7 +155,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemDeclaredValue
      */
-    public function getDeclaredValue() : ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemDeclaredValue
+    public function getDeclaredValue(): ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemDeclaredValue
     {
         return $this->declaredValue;
     }
@@ -166,7 +166,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return self
      */
-    public function setDeclaredValue(ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemDeclaredValue $declaredValue) : self
+    public function setDeclaredValue(ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemDeclaredValue $declaredValue): self
     {
         $this->initialized['declaredValue'] = true;
         $this->declaredValue = $declaredValue;
@@ -177,7 +177,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemWeight
      */
-    public function getWeight() : ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemWeight
+    public function getWeight(): ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemWeight
     {
         return $this->weight;
     }
@@ -188,7 +188,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return self
      */
-    public function setWeight(ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemWeight $weight) : self
+    public function setWeight(ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemWeight $weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -199,7 +199,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemDimensions
      */
-    public function getDimensions() : ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemDimensions
+    public function getDimensions(): ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemDimensions
     {
         return $this->dimensions;
     }
@@ -210,7 +210,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return self
      */
-    public function setDimensions(ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemDimensions $dimensions) : self
+    public function setDimensions(ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemDimensions $dimensions): self
     {
         $this->initialized['dimensions'] = true;
         $this->dimensions = $dimensions;
@@ -221,7 +221,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return int
      */
-    public function getGroupPackageCount() : int
+    public function getGroupPackageCount(): int
     {
         return $this->groupPackageCount;
     }
@@ -232,7 +232,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return self
      */
-    public function setGroupPackageCount(int $groupPackageCount) : self
+    public function setGroupPackageCount(int $groupPackageCount): self
     {
         $this->initialized['groupPackageCount'] = true;
         $this->groupPackageCount = $groupPackageCount;
@@ -243,7 +243,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return string
      */
-    public function getItemDescriptionForClearance() : string
+    public function getItemDescriptionForClearance(): string
     {
         return $this->itemDescriptionForClearance;
     }
@@ -254,7 +254,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return self
      */
-    public function setItemDescriptionForClearance(string $itemDescriptionForClearance) : self
+    public function setItemDescriptionForClearance(string $itemDescriptionForClearance): self
     {
         $this->initialized['itemDescriptionForClearance'] = true;
         $this->itemDescriptionForClearance = $itemDescriptionForClearance;
@@ -265,7 +265,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return list<ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemContentRecordItem>
      */
-    public function getContentRecord() : array
+    public function getContentRecord(): array
     {
         return $this->contentRecord;
     }
@@ -276,7 +276,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return self
      */
-    public function setContentRecord(array $contentRecord) : self
+    public function setContentRecord(array $contentRecord): self
     {
         $this->initialized['contentRecord'] = true;
         $this->contentRecord = $contentRecord;
@@ -287,7 +287,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return string
      */
-    public function getItemDescription() : string
+    public function getItemDescription(): string
     {
         return $this->itemDescription;
     }
@@ -298,7 +298,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return self
      */
-    public function setItemDescription(string $itemDescription) : self
+    public function setItemDescription(string $itemDescription): self
     {
         $this->initialized['itemDescription'] = true;
         $this->itemDescription = $itemDescription;
@@ -309,7 +309,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail
      */
-    public function getVariableHandlingChargeDetail() : ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail
+    public function getVariableHandlingChargeDetail(): ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail
     {
         return $this->variableHandlingChargeDetail;
     }
@@ -320,7 +320,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return self
      */
-    public function setVariableHandlingChargeDetail(ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail $variableHandlingChargeDetail) : self
+    public function setVariableHandlingChargeDetail(ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail $variableHandlingChargeDetail): self
     {
         $this->initialized['variableHandlingChargeDetail'] = true;
         $this->variableHandlingChargeDetail = $variableHandlingChargeDetail;
@@ -331,7 +331,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices
      */
-    public function getPackageSpecialServices() : ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices
+    public function getPackageSpecialServices(): ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices
     {
         return $this->packageSpecialServices;
     }
@@ -342,7 +342,7 @@ class ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItem e
      *
      * @return self
      */
-    public function setPackageSpecialServices(ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices $packageSpecialServices) : self
+    public function setPackageSpecialServices(ShipV1OpenshipmentsPutBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices $packageSpecialServices): self
     {
         $this->initialized['packageSpecialServices'] = true;
         $this->packageSpecialServices = $packageSpecialServices;

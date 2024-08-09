@@ -18,11 +18,11 @@ class PerformEndOfDayCloseForbiddenException extends ForbiddenException
         $this->shipV1EndofdayPostResponse403 = $shipV1EndofdayPostResponse403;
         $this->response = $response;
     }
-    public function getShipV1EndofdayPostResponse403() : \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPostResponse403
+    public function getShipV1EndofdayPostResponse403(): \AntibodiesOnline\FedEx\Api\Model\ShipV1EndofdayPostResponse403
     {
         return $this->shipV1EndofdayPostResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

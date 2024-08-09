@@ -8,7 +8,7 @@ class ShipV1FreightShipmentsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -42,7 +42,7 @@ class ShipV1FreightShipmentsPostBody extends \ArrayObject
      *
      * @return ShipV1FreightShipmentsPostBodyFreightRequestedShipment
      */
-    public function getFreightRequestedShipment() : ShipV1FreightShipmentsPostBodyFreightRequestedShipment
+    public function getFreightRequestedShipment(): ShipV1FreightShipmentsPostBodyFreightRequestedShipment
     {
         return $this->freightRequestedShipment;
     }
@@ -53,7 +53,7 @@ class ShipV1FreightShipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setFreightRequestedShipment(ShipV1FreightShipmentsPostBodyFreightRequestedShipment $freightRequestedShipment) : self
+    public function setFreightRequestedShipment(ShipV1FreightShipmentsPostBodyFreightRequestedShipment $freightRequestedShipment): self
     {
         $this->initialized['freightRequestedShipment'] = true;
         $this->freightRequestedShipment = $freightRequestedShipment;
@@ -64,7 +64,7 @@ class ShipV1FreightShipmentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getLabelResponseOptions() : string
+    public function getLabelResponseOptions(): string
     {
         return $this->labelResponseOptions;
     }
@@ -75,7 +75,7 @@ class ShipV1FreightShipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLabelResponseOptions(string $labelResponseOptions) : self
+    public function setLabelResponseOptions(string $labelResponseOptions): self
     {
         $this->initialized['labelResponseOptions'] = true;
         $this->labelResponseOptions = $labelResponseOptions;
@@ -86,7 +86,7 @@ class ShipV1FreightShipmentsPostBody extends \ArrayObject
      *
      * @return ShipV1FreightShipmentsPostBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1FreightShipmentsPostBodyAccountNumber
+    public function getAccountNumber(): ShipV1FreightShipmentsPostBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -97,7 +97,7 @@ class ShipV1FreightShipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1FreightShipmentsPostBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1FreightShipmentsPostBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -109,7 +109,7 @@ class ShipV1FreightShipmentsPostBody extends \ArrayObject
     *
     * @return bool
     */
-    public function getOneLabelAtATime() : bool
+    public function getOneLabelAtATime(): bool
     {
         return $this->oneLabelAtATime;
     }
@@ -121,7 +121,7 @@ class ShipV1FreightShipmentsPostBody extends \ArrayObject
     *
     * @return self
     */
-    public function setOneLabelAtATime(bool $oneLabelAtATime) : self
+    public function setOneLabelAtATime(bool $oneLabelAtATime): self
     {
         $this->initialized['oneLabelAtATime'] = true;
         $this->oneLabelAtATime = $oneLabelAtATime;

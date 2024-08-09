@@ -18,11 +18,11 @@ class UploadETDFilesBadRequestException extends BadRequestException
         $this->documentsV1EtdsUploadPostResponse400 = $documentsV1EtdsUploadPostResponse400;
         $this->response = $response;
     }
-    public function getDocumentsV1EtdsUploadPostResponse400() : \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse400
+    public function getDocumentsV1EtdsUploadPostResponse400(): \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse400
     {
         return $this->documentsV1EtdsUploadPostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

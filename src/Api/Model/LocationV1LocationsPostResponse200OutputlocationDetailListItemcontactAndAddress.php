@@ -8,7 +8,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAd
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAd
      *
      * @return LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressAddress
      */
-    public function getAddress() : LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressAddress
+    public function getAddress(): LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressAddress
     {
         return $this->address;
     }
@@ -46,7 +46,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAd
      *
      * @return self
      */
-    public function setAddress(LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressAddress $address) : self
+    public function setAddress(LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -57,7 +57,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAd
      *
      * @return LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressContact
      */
-    public function getContact() : LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressContact
+    public function getContact(): LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressContact
     {
         return $this->contact;
     }
@@ -68,7 +68,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAd
      *
      * @return self
      */
-    public function setContact(LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressContact $contact) : self
+    public function setContact(LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -79,7 +79,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAd
      *
      * @return LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressAddressAncillaryDetail
      */
-    public function getAddressAncillaryDetail() : LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressAddressAncillaryDetail
+    public function getAddressAncillaryDetail(): LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressAddressAncillaryDetail
     {
         return $this->addressAncillaryDetail;
     }
@@ -90,7 +90,7 @@ class LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAd
      *
      * @return self
      */
-    public function setAddressAncillaryDetail(LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressAddressAncillaryDetail $addressAncillaryDetail) : self
+    public function setAddressAncillaryDetail(LocationV1LocationsPostResponse200OutputlocationDetailListItemcontactAndAddressAddressAncillaryDetail $addressAncillaryDetail): self
     {
         $this->initialized['addressAncillaryDetail'] = true;
         $this->addressAncillaryDetail = $addressAncillaryDetail;

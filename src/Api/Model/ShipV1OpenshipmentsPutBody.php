@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ShipV1OpenshipmentsPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getIndex() : string
+    public function getIndex(): string
     {
         return $this->index;
     }
@@ -52,7 +52,7 @@ class ShipV1OpenshipmentsPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIndex(string $index) : self
+    public function setIndex(string $index): self
     {
         $this->initialized['index'] = true;
         $this->index = $index;
@@ -63,7 +63,7 @@ class ShipV1OpenshipmentsPutBody extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPutBodyRequestedShipment
      */
-    public function getRequestedShipment() : ShipV1OpenshipmentsPutBodyRequestedShipment
+    public function getRequestedShipment(): ShipV1OpenshipmentsPutBodyRequestedShipment
     {
         return $this->requestedShipment;
     }
@@ -74,7 +74,7 @@ class ShipV1OpenshipmentsPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedShipment(ShipV1OpenshipmentsPutBodyRequestedShipment $requestedShipment) : self
+    public function setRequestedShipment(ShipV1OpenshipmentsPutBodyRequestedShipment $requestedShipment): self
     {
         $this->initialized['requestedShipment'] = true;
         $this->requestedShipment = $requestedShipment;
@@ -85,7 +85,7 @@ class ShipV1OpenshipmentsPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getOpenShipmentAction() : string
+    public function getOpenShipmentAction(): string
     {
         return $this->openShipmentAction;
     }
@@ -96,7 +96,7 @@ class ShipV1OpenshipmentsPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setOpenShipmentAction(string $openShipmentAction) : self
+    public function setOpenShipmentAction(string $openShipmentAction): self
     {
         $this->initialized['openShipmentAction'] = true;
         $this->openShipmentAction = $openShipmentAction;
@@ -107,7 +107,7 @@ class ShipV1OpenshipmentsPutBody extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsPutBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1OpenshipmentsPutBodyAccountNumber
+    public function getAccountNumber(): ShipV1OpenshipmentsPutBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -118,7 +118,7 @@ class ShipV1OpenshipmentsPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1OpenshipmentsPutBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1OpenshipmentsPutBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

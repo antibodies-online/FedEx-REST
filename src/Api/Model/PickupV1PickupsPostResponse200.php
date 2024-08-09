@@ -8,7 +8,7 @@ class PickupV1PickupsPostResponse200 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class PickupV1PickupsPostResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getTransactionId() : string
+    public function getTransactionId(): string
     {
         return $this->transactionId;
     }
@@ -46,7 +46,7 @@ class PickupV1PickupsPostResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setTransactionId(string $transactionId) : self
+    public function setTransactionId(string $transactionId): self
     {
         $this->initialized['transactionId'] = true;
         $this->transactionId = $transactionId;
@@ -57,7 +57,7 @@ class PickupV1PickupsPostResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getCustomerTransactionId() : string
+    public function getCustomerTransactionId(): string
     {
         return $this->customerTransactionId;
     }
@@ -68,7 +68,7 @@ class PickupV1PickupsPostResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setCustomerTransactionId(string $customerTransactionId) : self
+    public function setCustomerTransactionId(string $customerTransactionId): self
     {
         $this->initialized['customerTransactionId'] = true;
         $this->customerTransactionId = $customerTransactionId;
@@ -79,7 +79,7 @@ class PickupV1PickupsPostResponse200 extends \ArrayObject
      *
      * @return PickupV1PickupsPostResponse200Output
      */
-    public function getOutput() : PickupV1PickupsPostResponse200Output
+    public function getOutput(): PickupV1PickupsPostResponse200Output
     {
         return $this->output;
     }
@@ -90,7 +90,7 @@ class PickupV1PickupsPostResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setOutput(PickupV1PickupsPostResponse200Output $output) : self
+    public function setOutput(PickupV1PickupsPostResponse200Output $output): self
     {
         $this->initialized['output'] = true;
         $this->output = $output;

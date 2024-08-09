@@ -8,7 +8,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatements
      */
-    public function getRegulatoryStatements() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatements
+    public function getRegulatoryStatements(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatements
     {
         return $this->regulatoryStatements;
     }
@@ -64,7 +64,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setRegulatoryStatements(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatements $regulatoryStatements) : self
+    public function setRegulatoryStatements(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryStatements $regulatoryStatements): self
     {
         $this->initialized['regulatoryStatements'] = true;
         $this->regulatoryStatements = $regulatoryStatements;
@@ -75,7 +75,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return list<string>
      */
-    public function getRequiredCommodityUnitsOfMeasure() : array
+    public function getRequiredCommodityUnitsOfMeasure(): array
     {
         return $this->requiredCommodityUnitsOfMeasure;
     }
@@ -86,7 +86,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setRequiredCommodityUnitsOfMeasure(array $requiredCommodityUnitsOfMeasure) : self
+    public function setRequiredCommodityUnitsOfMeasure(array $requiredCommodityUnitsOfMeasure): self
     {
         $this->initialized['requiredCommodityUnitsOfMeasure'] = true;
         $this->requiredCommodityUnitsOfMeasure = $requiredCommodityUnitsOfMeasure;
@@ -97,7 +97,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return string
      */
-    public function getLevel() : string
+    public function getLevel(): string
     {
         return $this->level;
     }
@@ -108,7 +108,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setLevel(string $level) : self
+    public function setLevel(string $level): self
     {
         $this->initialized['level'] = true;
         $this->level = $level;
@@ -119,7 +119,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return int
      */
-    public function getCommodityIndex() : int
+    public function getCommodityIndex(): int
     {
         return $this->commodityIndex;
     }
@@ -130,7 +130,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setCommodityIndex(int $commodityIndex) : self
+    public function setCommodityIndex(int $commodityIndex): self
     {
         $this->initialized['commodityIndex'] = true;
         $this->commodityIndex = $commodityIndex;
@@ -141,7 +141,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryDocuments
      */
-    public function getRegulatoryDocuments() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryDocuments
+    public function getRegulatoryDocuments(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryDocuments
     {
         return $this->regulatoryDocuments;
     }
@@ -152,7 +152,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setRegulatoryDocuments(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryDocuments $regulatoryDocuments) : self
+    public function setRegulatoryDocuments(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryDocuments $regulatoryDocuments): self
     {
         $this->initialized['regulatoryDocuments'] = true;
         $this->regulatoryDocuments = $regulatoryDocuments;
@@ -163,7 +163,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryCountryAdvisories
      */
-    public function getRegulatoryCountryAdvisories() : GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryCountryAdvisories
+    public function getRegulatoryCountryAdvisories(): GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryCountryAdvisories
     {
         return $this->regulatoryCountryAdvisories;
     }
@@ -174,7 +174,7 @@ class GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountr
      *
      * @return self
      */
-    public function setRegulatoryCountryAdvisories(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryCountryAdvisories $regulatoryCountryAdvisories) : self
+    public function setRegulatoryCountryAdvisories(GlobaltradeV1ShipmentsRegulatorydetailsRetrievePostResponse200OutputCountryDetailsshipmentDetailsregulatoryCountryAdvisories $regulatoryCountryAdvisories): self
     {
         $this->initialized['regulatoryCountryAdvisories'] = true;
         $this->regulatoryCountryAdvisories = $regulatoryCountryAdvisories;

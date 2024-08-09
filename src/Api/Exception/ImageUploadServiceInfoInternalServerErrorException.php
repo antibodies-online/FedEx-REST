@@ -18,11 +18,11 @@ class ImageUploadServiceInfoInternalServerErrorException extends InternalServerE
         $this->documentsV1LhsimagesUploadPostResponse500 = $documentsV1LhsimagesUploadPostResponse500;
         $this->response = $response;
     }
-    public function getDocumentsV1LhsimagesUploadPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostResponse500
+    public function getDocumentsV1LhsimagesUploadPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\DocumentsV1LhsimagesUploadPostResponse500
     {
         return $this->documentsV1LhsimagesUploadPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

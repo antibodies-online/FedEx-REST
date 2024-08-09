@@ -18,11 +18,11 @@ class TrackingDocumentsForbiddenException extends ForbiddenException
         $this->trackV1TrackingdocumentsPostResponse403 = $trackV1TrackingdocumentsPostResponse403;
         $this->response = $response;
     }
-    public function getTrackV1TrackingdocumentsPostResponse403() : \AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingdocumentsPostResponse403
+    public function getTrackV1TrackingdocumentsPostResponse403(): \AntibodiesOnline\FedEx\Api\Model\TrackV1TrackingdocumentsPostResponse403
     {
         return $this->trackV1TrackingdocumentsPostResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

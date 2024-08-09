@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return int
      */
-    public function getPieces() : int
+    public function getPieces(): int
     {
         return $this->pieces;
     }
@@ -88,7 +88,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setPieces(int $pieces) : self
+    public function setPieces(int $pieces): self
     {
         $this->initialized['pieces'] = true;
         $this->pieces = $pieces;
@@ -99,7 +99,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetaillineItemItemVolume
      */
-    public function getVolume() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetaillineItemItemVolume
+    public function getVolume(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetaillineItemItemVolume
     {
         return $this->volume;
     }
@@ -110,7 +110,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setVolume(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetaillineItemItemVolume $volume) : self
+    public function setVolume(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmentDetaillineItemItemVolume $volume): self
     {
         $this->initialized['volume'] = true;
         $this->volume = $volume;
@@ -121,7 +121,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return int
      */
-    public function getHandlingUnits() : int
+    public function getHandlingUnits(): int
     {
         return $this->handlingUnits;
     }
@@ -132,7 +132,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setHandlingUnits(int $handlingUnits) : self
+    public function setHandlingUnits(int $handlingUnits): self
     {
         $this->initialized['handlingUnits'] = true;
         $this->handlingUnits = $handlingUnits;
@@ -143,7 +143,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return string
      */
-    public function getFreightClass() : string
+    public function getFreightClass(): string
     {
         return $this->freightClass;
     }
@@ -154,7 +154,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setFreightClass(string $freightClass) : self
+    public function setFreightClass(string $freightClass): self
     {
         $this->initialized['freightClass'] = true;
         $this->freightClass = $freightClass;
@@ -165,7 +165,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -176,7 +176,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -198,7 +198,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setWeight($weight) : self
+    public function setWeight($weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -209,7 +209,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return string
      */
-    public function getPackaging() : string
+    public function getPackaging(): string
     {
         return $this->packaging;
     }
@@ -220,7 +220,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setPackaging(string $packaging) : self
+    public function setPackaging(string $packaging): self
     {
         $this->initialized['packaging'] = true;
         $this->packaging = $packaging;
@@ -231,7 +231,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return bool
      */
-    public function getClassProvidedByCustomer() : bool
+    public function getClassProvidedByCustomer(): bool
     {
         return $this->classProvidedByCustomer;
     }
@@ -242,7 +242,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setClassProvidedByCustomer(bool $classProvidedByCustomer) : self
+    public function setClassProvidedByCustomer(bool $classProvidedByCustomer): self
     {
         $this->initialized['classProvidedByCustomer'] = true;
         $this->classProvidedByCustomer = $classProvidedByCustomer;
@@ -253,7 +253,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return string
      */
-    public function getHazardousMaterials() : string
+    public function getHazardousMaterials(): string
     {
         return $this->hazardousMaterials;
     }
@@ -264,7 +264,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setHazardousMaterials(string $hazardousMaterials) : self
+    public function setHazardousMaterials(string $hazardousMaterials): self
     {
         $this->initialized['hazardousMaterials'] = true;
         $this->hazardousMaterials = $hazardousMaterials;
@@ -286,7 +286,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setDimensions($dimensions) : self
+    public function setDimensions($dimensions): self
     {
         $this->initialized['dimensions'] = true;
         $this->dimensions = $dimensions;

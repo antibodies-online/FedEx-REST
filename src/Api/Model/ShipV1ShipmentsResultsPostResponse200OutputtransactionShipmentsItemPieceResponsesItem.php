@@ -8,7 +8,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -131,7 +131,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return float
      */
-    public function getNetChargeAmount() : float
+    public function getNetChargeAmount(): float
     {
         return $this->netChargeAmount;
     }
@@ -142,7 +142,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setNetChargeAmount(float $netChargeAmount) : self
+    public function setNetChargeAmount(float $netChargeAmount): self
     {
         $this->initialized['netChargeAmount'] = true;
         $this->netChargeAmount = $netChargeAmount;
@@ -153,7 +153,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return list<ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceResponsesItemTransactionDetailsItem>
      */
-    public function getTransactionDetails() : array
+    public function getTransactionDetails(): array
     {
         return $this->transactionDetails;
     }
@@ -164,7 +164,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setTransactionDetails(array $transactionDetails) : self
+    public function setTransactionDetails(array $transactionDetails): self
     {
         $this->initialized['transactionDetails'] = true;
         $this->transactionDetails = $transactionDetails;
@@ -175,7 +175,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return list<ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceResponsesItemPackageDocumentsItem>
      */
-    public function getPackageDocuments() : array
+    public function getPackageDocuments(): array
     {
         return $this->packageDocuments;
     }
@@ -186,7 +186,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setPackageDocuments(array $packageDocuments) : self
+    public function setPackageDocuments(array $packageDocuments): self
     {
         $this->initialized['packageDocuments'] = true;
         $this->packageDocuments = $packageDocuments;
@@ -197,7 +197,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return string
      */
-    public function getAcceptanceTrackingNumber() : string
+    public function getAcceptanceTrackingNumber(): string
     {
         return $this->acceptanceTrackingNumber;
     }
@@ -208,7 +208,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setAcceptanceTrackingNumber(string $acceptanceTrackingNumber) : self
+    public function setAcceptanceTrackingNumber(string $acceptanceTrackingNumber): self
     {
         $this->initialized['acceptanceTrackingNumber'] = true;
         $this->acceptanceTrackingNumber = $acceptanceTrackingNumber;
@@ -219,7 +219,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return string
      */
-    public function getServiceCategory() : string
+    public function getServiceCategory(): string
     {
         return $this->serviceCategory;
     }
@@ -230,7 +230,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setServiceCategory(string $serviceCategory) : self
+    public function setServiceCategory(string $serviceCategory): self
     {
         $this->initialized['serviceCategory'] = true;
         $this->serviceCategory = $serviceCategory;
@@ -241,7 +241,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return string
      */
-    public function getListCustomerTotalCharge() : string
+    public function getListCustomerTotalCharge(): string
     {
         return $this->listCustomerTotalCharge;
     }
@@ -252,7 +252,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setListCustomerTotalCharge(string $listCustomerTotalCharge) : self
+    public function setListCustomerTotalCharge(string $listCustomerTotalCharge): self
     {
         $this->initialized['listCustomerTotalCharge'] = true;
         $this->listCustomerTotalCharge = $listCustomerTotalCharge;
@@ -263,7 +263,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return string
      */
-    public function getDeliveryTimestamp() : string
+    public function getDeliveryTimestamp(): string
     {
         return $this->deliveryTimestamp;
     }
@@ -274,7 +274,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setDeliveryTimestamp(string $deliveryTimestamp) : self
+    public function setDeliveryTimestamp(string $deliveryTimestamp): self
     {
         $this->initialized['deliveryTimestamp'] = true;
         $this->deliveryTimestamp = $deliveryTimestamp;
@@ -285,7 +285,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return string
      */
-    public function getTrackingIdType() : string
+    public function getTrackingIdType(): string
     {
         return $this->trackingIdType;
     }
@@ -296,7 +296,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setTrackingIdType(string $trackingIdType) : self
+    public function setTrackingIdType(string $trackingIdType): self
     {
         $this->initialized['trackingIdType'] = true;
         $this->trackingIdType = $trackingIdType;
@@ -307,7 +307,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return float
      */
-    public function getAdditionalChargesDiscount() : float
+    public function getAdditionalChargesDiscount(): float
     {
         return $this->additionalChargesDiscount;
     }
@@ -318,7 +318,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setAdditionalChargesDiscount(float $additionalChargesDiscount) : self
+    public function setAdditionalChargesDiscount(float $additionalChargesDiscount): self
     {
         $this->initialized['additionalChargesDiscount'] = true;
         $this->additionalChargesDiscount = $additionalChargesDiscount;
@@ -329,7 +329,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return float
      */
-    public function getNetListRateAmount() : float
+    public function getNetListRateAmount(): float
     {
         return $this->netListRateAmount;
     }
@@ -340,7 +340,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setNetListRateAmount(float $netListRateAmount) : self
+    public function setNetListRateAmount(float $netListRateAmount): self
     {
         $this->initialized['netListRateAmount'] = true;
         $this->netListRateAmount = $netListRateAmount;
@@ -351,7 +351,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return float
      */
-    public function getBaseRateAmount() : float
+    public function getBaseRateAmount(): float
     {
         return $this->baseRateAmount;
     }
@@ -362,7 +362,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setBaseRateAmount(float $baseRateAmount) : self
+    public function setBaseRateAmount(float $baseRateAmount): self
     {
         $this->initialized['baseRateAmount'] = true;
         $this->baseRateAmount = $baseRateAmount;
@@ -373,7 +373,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return int
      */
-    public function getPackageSequenceNumber() : int
+    public function getPackageSequenceNumber(): int
     {
         return $this->packageSequenceNumber;
     }
@@ -384,7 +384,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setPackageSequenceNumber(int $packageSequenceNumber) : self
+    public function setPackageSequenceNumber(int $packageSequenceNumber): self
     {
         $this->initialized['packageSequenceNumber'] = true;
         $this->packageSequenceNumber = $packageSequenceNumber;
@@ -395,7 +395,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return float
      */
-    public function getNetDiscountAmount() : float
+    public function getNetDiscountAmount(): float
     {
         return $this->netDiscountAmount;
     }
@@ -406,7 +406,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setNetDiscountAmount(float $netDiscountAmount) : self
+    public function setNetDiscountAmount(float $netDiscountAmount): self
     {
         $this->initialized['netDiscountAmount'] = true;
         $this->netDiscountAmount = $netDiscountAmount;
@@ -417,7 +417,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return float
      */
-    public function getCodcollectionAmount() : float
+    public function getCodcollectionAmount(): float
     {
         return $this->codcollectionAmount;
     }
@@ -428,7 +428,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setCodcollectionAmount(float $codcollectionAmount) : self
+    public function setCodcollectionAmount(float $codcollectionAmount): self
     {
         $this->initialized['codcollectionAmount'] = true;
         $this->codcollectionAmount = $codcollectionAmount;
@@ -439,7 +439,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return string
      */
-    public function getMasterTrackingNumber() : string
+    public function getMasterTrackingNumber(): string
     {
         return $this->masterTrackingNumber;
     }
@@ -450,7 +450,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setMasterTrackingNumber(string $masterTrackingNumber) : self
+    public function setMasterTrackingNumber(string $masterTrackingNumber): self
     {
         $this->initialized['masterTrackingNumber'] = true;
         $this->masterTrackingNumber = $masterTrackingNumber;
@@ -461,7 +461,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return string
      */
-    public function getAcceptanceType() : string
+    public function getAcceptanceType(): string
     {
         return $this->acceptanceType;
     }
@@ -472,7 +472,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setAcceptanceType(string $acceptanceType) : self
+    public function setAcceptanceType(string $acceptanceType): self
     {
         $this->initialized['acceptanceType'] = true;
         $this->acceptanceType = $acceptanceType;
@@ -483,7 +483,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return string
      */
-    public function getTrackingNumber() : string
+    public function getTrackingNumber(): string
     {
         return $this->trackingNumber;
     }
@@ -494,7 +494,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setTrackingNumber(string $trackingNumber) : self
+    public function setTrackingNumber(string $trackingNumber): self
     {
         $this->initialized['trackingNumber'] = true;
         $this->trackingNumber = $trackingNumber;
@@ -505,7 +505,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return bool
      */
-    public function getSuccessful() : bool
+    public function getSuccessful(): bool
     {
         return $this->successful;
     }
@@ -516,7 +516,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setSuccessful(bool $successful) : self
+    public function setSuccessful(bool $successful): self
     {
         $this->initialized['successful'] = true;
         $this->successful = $successful;
@@ -527,7 +527,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return list<ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceResponsesItemCustomerReferencesItem>
      */
-    public function getCustomerReferences() : array
+    public function getCustomerReferences(): array
     {
         return $this->customerReferences;
     }
@@ -538,7 +538,7 @@ class ShipV1ShipmentsResultsPostResponse200OutputtransactionShipmentsItemPieceRe
      *
      * @return self
      */
-    public function setCustomerReferences(array $customerReferences) : self
+    public function setCustomerReferences(array $customerReferences): self
     {
         $this->initialized['customerReferences'] = true;
         $this->customerReferences = $customerReferences;

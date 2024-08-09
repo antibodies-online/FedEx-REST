@@ -8,7 +8,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutResponse200Output extends \ArrayObjec
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutResponse200Output extends \ArrayObjec
      *
      * @return bool
      */
-    public function getCancelledTag() : bool
+    public function getCancelledTag(): bool
     {
         return $this->cancelledTag;
     }
@@ -40,7 +40,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutResponse200Output extends \ArrayObjec
      *
      * @return self
      */
-    public function setCancelledTag(bool $cancelledTag) : self
+    public function setCancelledTag(bool $cancelledTag): self
     {
         $this->initialized['cancelledTag'] = true;
         $this->cancelledTag = $cancelledTag;
@@ -51,7 +51,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutResponse200Output extends \ArrayObjec
      *
      * @return string
      */
-    public function getSuccessMessage() : string
+    public function getSuccessMessage(): string
     {
         return $this->successMessage;
     }
@@ -62,7 +62,7 @@ class ShipV1ShipmentsTagCancelShipmentidPutResponse200Output extends \ArrayObjec
      *
      * @return self
      */
-    public function setSuccessMessage(string $successMessage) : self
+    public function setSuccessMessage(string $successMessage): self
     {
         $this->initialized['successMessage'] = true;
         $this->successMessage = $successMessage;

@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsResultsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShipV1OpenshipmentsResultsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getResultMethodType() : string
+    public function getResultMethodType(): string
     {
         return $this->resultMethodType;
     }
@@ -46,7 +46,7 @@ class ShipV1OpenshipmentsResultsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setResultMethodType(string $resultMethodType) : self
+    public function setResultMethodType(string $resultMethodType): self
     {
         $this->initialized['resultMethodType'] = true;
         $this->resultMethodType = $resultMethodType;
@@ -57,7 +57,7 @@ class ShipV1OpenshipmentsResultsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getJobId() : string
+    public function getJobId(): string
     {
         return $this->jobId;
     }
@@ -68,7 +68,7 @@ class ShipV1OpenshipmentsResultsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setJobId(string $jobId) : self
+    public function setJobId(string $jobId): self
     {
         $this->initialized['jobId'] = true;
         $this->jobId = $jobId;
@@ -79,7 +79,7 @@ class ShipV1OpenshipmentsResultsPostBody extends \ArrayObject
      *
      * @return ShipV1OpenshipmentsResultsPostBodyAccountNumber
      */
-    public function getAccountNumber() : ShipV1OpenshipmentsResultsPostBodyAccountNumber
+    public function getAccountNumber(): ShipV1OpenshipmentsResultsPostBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -90,7 +90,7 @@ class ShipV1OpenshipmentsResultsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(ShipV1OpenshipmentsResultsPostBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(ShipV1OpenshipmentsResultsPostBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;

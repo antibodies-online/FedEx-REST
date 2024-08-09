@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetail extends \
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetail extends \
      *
      * @return list<RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailbrokersItem>
      */
-    public function getBrokers() : array
+    public function getBrokers(): array
     {
         return $this->brokers;
     }
@@ -58,7 +58,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetail extends \
      *
      * @return self
      */
-    public function setBrokers(array $brokers) : self
+    public function setBrokers(array $brokers): self
     {
         $this->initialized['brokers'] = true;
         $this->brokers = $brokers;
@@ -69,7 +69,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetail extends \
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailcommercialInvoice
      */
-    public function getCommercialInvoice() : RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailcommercialInvoice
+    public function getCommercialInvoice(): RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailcommercialInvoice
     {
         return $this->commercialInvoice;
     }
@@ -80,7 +80,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetail extends \
      *
      * @return self
      */
-    public function setCommercialInvoice(RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailcommercialInvoice $commercialInvoice) : self
+    public function setCommercialInvoice(RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailcommercialInvoice $commercialInvoice): self
     {
         $this->initialized['commercialInvoice'] = true;
         $this->commercialInvoice = $commercialInvoice;
@@ -91,7 +91,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetail extends \
      *
      * @return string
      */
-    public function getFreightOnValue() : string
+    public function getFreightOnValue(): string
     {
         return $this->freightOnValue;
     }
@@ -102,7 +102,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetail extends \
      *
      * @return self
      */
-    public function setFreightOnValue(string $freightOnValue) : self
+    public function setFreightOnValue(string $freightOnValue): self
     {
         $this->initialized['freightOnValue'] = true;
         $this->freightOnValue = $freightOnValue;
@@ -113,7 +113,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetail extends \
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPayment
      */
-    public function getDutiesPayment() : RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPayment
+    public function getDutiesPayment(): RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPayment
     {
         return $this->dutiesPayment;
     }
@@ -124,7 +124,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetail extends \
      *
      * @return self
      */
-    public function setDutiesPayment(RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPayment $dutiesPayment) : self
+    public function setDutiesPayment(RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetaildutiesPayment $dutiesPayment): self
     {
         $this->initialized['dutiesPayment'] = true;
         $this->dutiesPayment = $dutiesPayment;
@@ -135,7 +135,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetail extends \
      *
      * @return list<RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetailcommoditiesItem>
      */
-    public function getCommodities() : array
+    public function getCommodities(): array
     {
         return $this->commodities;
     }
@@ -146,7 +146,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentCustomsClearanceDetail extends \
      *
      * @return self
      */
-    public function setCommodities(array $commodities) : self
+    public function setCommodities(array $commodities): self
     {
         $this->initialized['commodities'] = true;
         $this->commodities = $commodities;

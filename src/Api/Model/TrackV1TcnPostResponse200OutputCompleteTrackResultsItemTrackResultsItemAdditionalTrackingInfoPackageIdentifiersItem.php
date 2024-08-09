@@ -8,7 +8,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemAdd
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemAdd
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -46,7 +46,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemAdd
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -57,7 +57,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemAdd
      *
      * @return list<string>
      */
-    public function getValue() : array
+    public function getValue(): array
     {
         return $this->value;
     }
@@ -68,7 +68,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemAdd
      *
      * @return self
      */
-    public function setValue(array $value) : self
+    public function setValue(array $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;
@@ -79,7 +79,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemAdd
      *
      * @return string
      */
-    public function getTrackingNumberUniqueId() : string
+    public function getTrackingNumberUniqueId(): string
     {
         return $this->trackingNumberUniqueId;
     }
@@ -90,7 +90,7 @@ class TrackV1TcnPostResponse200OutputCompleteTrackResultsItemTrackResultsItemAdd
      *
      * @return self
      */
-    public function setTrackingNumberUniqueId(string $trackingNumberUniqueId) : self
+    public function setTrackingNumberUniqueId(string $trackingNumberUniqueId): self
     {
         $this->initialized['trackingNumberUniqueId'] = true;
         $this->trackingNumberUniqueId = $trackingNumberUniqueId;

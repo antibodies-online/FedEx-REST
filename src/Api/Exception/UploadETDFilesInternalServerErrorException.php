@@ -18,11 +18,11 @@ class UploadETDFilesInternalServerErrorException extends InternalServerErrorExce
         $this->documentsV1EtdsUploadPostResponse500 = $documentsV1EtdsUploadPostResponse500;
         $this->response = $response;
     }
-    public function getDocumentsV1EtdsUploadPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse500
+    public function getDocumentsV1EtdsUploadPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse500
     {
         return $this->documentsV1EtdsUploadPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

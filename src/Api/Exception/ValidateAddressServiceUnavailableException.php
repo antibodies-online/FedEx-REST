@@ -18,11 +18,11 @@ class ValidateAddressServiceUnavailableException extends ServiceUnavailableExcep
         $this->addressV1AddressesResolvePostResponse503 = $addressV1AddressesResolvePostResponse503;
         $this->response = $response;
     }
-    public function getAddressV1AddressesResolvePostResponse503() : \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse503
+    public function getAddressV1AddressesResolvePostResponse503(): \AntibodiesOnline\FedEx\Api\Model\AddressV1AddressesResolvePostResponse503
     {
         return $this->addressV1AddressesResolvePostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

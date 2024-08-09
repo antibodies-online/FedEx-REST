@@ -8,7 +8,7 @@ class AddressV1AddressesResolvePostResponse200Output extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class AddressV1AddressesResolvePostResponse200Output extends \ArrayObject
      *
      * @return list<AddressV1AddressesResolvePostResponse200OutputResolvedAddressesItem>
      */
-    public function getResolvedAddresses() : array
+    public function getResolvedAddresses(): array
     {
         return $this->resolvedAddresses;
     }
@@ -40,7 +40,7 @@ class AddressV1AddressesResolvePostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setResolvedAddresses(array $resolvedAddresses) : self
+    public function setResolvedAddresses(array $resolvedAddresses): self
     {
         $this->initialized['resolvedAddresses'] = true;
         $this->resolvedAddresses = $resolvedAddresses;
@@ -51,7 +51,7 @@ class AddressV1AddressesResolvePostResponse200Output extends \ArrayObject
      *
      * @return list<AddressV1AddressesResolvePostResponse200OutputAlertsItem>
      */
-    public function getAlerts() : array
+    public function getAlerts(): array
     {
         return $this->alerts;
     }
@@ -62,7 +62,7 @@ class AddressV1AddressesResolvePostResponse200Output extends \ArrayObject
      *
      * @return self
      */
-    public function setAlerts(array $alerts) : self
+    public function setAlerts(array $alerts): self
     {
         $this->initialized['alerts'] = true;
         $this->alerts = $alerts;

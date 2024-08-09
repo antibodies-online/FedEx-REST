@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -191,7 +191,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return list<string>
      */
-    public function getOriginLocationIds() : array
+    public function getOriginLocationIds(): array
     {
         return $this->originLocationIds;
     }
@@ -202,7 +202,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setOriginLocationIds(array $originLocationIds) : self
+    public function setOriginLocationIds(array $originLocationIds): self
     {
         $this->initialized['originLocationIds'] = true;
         $this->originLocationIds = $originLocationIds;
@@ -213,7 +213,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return list<string>
      */
-    public function getCommitDays() : array
+    public function getCommitDays(): array
     {
         return $this->commitDays;
     }
@@ -224,7 +224,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setCommitDays(array $commitDays) : self
+    public function setCommitDays(array $commitDays): self
     {
         $this->initialized['commitDays'] = true;
         $this->commitDays = $commitDays;
@@ -235,7 +235,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getServiceCode() : string
+    public function getServiceCode(): string
     {
         return $this->serviceCode;
     }
@@ -246,7 +246,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setServiceCode(string $serviceCode) : self
+    public function setServiceCode(string $serviceCode): self
     {
         $this->initialized['serviceCode'] = true;
         $this->serviceCode = $serviceCode;
@@ -257,7 +257,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getAirportId() : string
+    public function getAirportId(): string
     {
         return $this->airportId;
     }
@@ -268,7 +268,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setAirportId(string $airportId) : self
+    public function setAirportId(string $airportId): self
     {
         $this->initialized['airportId'] = true;
         $this->airportId = $airportId;
@@ -279,7 +279,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getScac() : string
+    public function getScac(): string
     {
         return $this->scac;
     }
@@ -290,7 +290,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setScac(string $scac) : self
+    public function setScac(string $scac): self
     {
         $this->initialized['scac'] = true;
         $this->scac = $scac;
@@ -301,7 +301,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return list<string>
      */
-    public function getOriginServiceAreas() : array
+    public function getOriginServiceAreas(): array
     {
         return $this->originServiceAreas;
     }
@@ -312,7 +312,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setOriginServiceAreas(array $originServiceAreas) : self
+    public function setOriginServiceAreas(array $originServiceAreas): self
     {
         $this->initialized['originServiceAreas'] = true;
         $this->originServiceAreas = $originServiceAreas;
@@ -323,7 +323,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getDeliveryDay() : string
+    public function getDeliveryDay(): string
     {
         return $this->deliveryDay;
     }
@@ -334,7 +334,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setDeliveryDay(string $deliveryDay) : self
+    public function setDeliveryDay(string $deliveryDay): self
     {
         $this->initialized['deliveryDay'] = true;
         $this->deliveryDay = $deliveryDay;
@@ -345,7 +345,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return list<int>
      */
-    public function getOriginLocationNumbers() : array
+    public function getOriginLocationNumbers(): array
     {
         return $this->originLocationNumbers;
     }
@@ -356,7 +356,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setOriginLocationNumbers(array $originLocationNumbers) : self
+    public function setOriginLocationNumbers(array $originLocationNumbers): self
     {
         $this->initialized['originLocationNumbers'] = true;
         $this->originLocationNumbers = $originLocationNumbers;
@@ -367,7 +367,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getDestinationPostalCode() : string
+    public function getDestinationPostalCode(): string
     {
         return $this->destinationPostalCode;
     }
@@ -378,7 +378,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setDestinationPostalCode(string $destinationPostalCode) : self
+    public function setDestinationPostalCode(string $destinationPostalCode): self
     {
         $this->initialized['destinationPostalCode'] = true;
         $this->destinationPostalCode = $destinationPostalCode;
@@ -389,7 +389,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getCommitDate() : string
+    public function getCommitDate(): string
     {
         return $this->commitDate;
     }
@@ -400,7 +400,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setCommitDate(string $commitDate) : self
+    public function setCommitDate(string $commitDate): self
     {
         $this->initialized['commitDate'] = true;
         $this->commitDate = $commitDate;
@@ -411,7 +411,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getAstraDescription() : string
+    public function getAstraDescription(): string
     {
         return $this->astraDescription;
     }
@@ -422,7 +422,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setAstraDescription(string $astraDescription) : self
+    public function setAstraDescription(string $astraDescription): self
     {
         $this->initialized['astraDescription'] = true;
         $this->astraDescription = $astraDescription;
@@ -433,7 +433,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getDeliveryDate() : string
+    public function getDeliveryDate(): string
     {
         return $this->deliveryDate;
     }
@@ -444,7 +444,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setDeliveryDate(string $deliveryDate) : self
+    public function setDeliveryDate(string $deliveryDate): self
     {
         $this->initialized['deliveryDate'] = true;
         $this->deliveryDate = $deliveryDate;
@@ -455,7 +455,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return list<string>
      */
-    public function getDeliveryEligibilities() : array
+    public function getDeliveryEligibilities(): array
     {
         return $this->deliveryEligibilities;
     }
@@ -466,7 +466,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setDeliveryEligibilities(array $deliveryEligibilities) : self
+    public function setDeliveryEligibilities(array $deliveryEligibilities): self
     {
         $this->initialized['deliveryEligibilities'] = true;
         $this->deliveryEligibilities = $deliveryEligibilities;
@@ -477,7 +477,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return bool
      */
-    public function getIneligibleForMoneyBackGuarantee() : bool
+    public function getIneligibleForMoneyBackGuarantee(): bool
     {
         return $this->ineligibleForMoneyBackGuarantee;
     }
@@ -488,7 +488,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setIneligibleForMoneyBackGuarantee(bool $ineligibleForMoneyBackGuarantee) : self
+    public function setIneligibleForMoneyBackGuarantee(bool $ineligibleForMoneyBackGuarantee): self
     {
         $this->initialized['ineligibleForMoneyBackGuarantee'] = true;
         $this->ineligibleForMoneyBackGuarantee = $ineligibleForMoneyBackGuarantee;
@@ -499,7 +499,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getMaximumTransitTime() : string
+    public function getMaximumTransitTime(): string
     {
         return $this->maximumTransitTime;
     }
@@ -510,7 +510,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setMaximumTransitTime(string $maximumTransitTime) : self
+    public function setMaximumTransitTime(string $maximumTransitTime): self
     {
         $this->initialized['maximumTransitTime'] = true;
         $this->maximumTransitTime = $maximumTransitTime;
@@ -521,7 +521,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getAstraPlannedServiceLevel() : string
+    public function getAstraPlannedServiceLevel(): string
     {
         return $this->astraPlannedServiceLevel;
     }
@@ -532,7 +532,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setAstraPlannedServiceLevel(string $astraPlannedServiceLevel) : self
+    public function setAstraPlannedServiceLevel(string $astraPlannedServiceLevel): self
     {
         $this->initialized['astraPlannedServiceLevel'] = true;
         $this->astraPlannedServiceLevel = $astraPlannedServiceLevel;
@@ -543,7 +543,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return list<string>
      */
-    public function getDestinationLocationIds() : array
+    public function getDestinationLocationIds(): array
     {
         return $this->destinationLocationIds;
     }
@@ -554,7 +554,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setDestinationLocationIds(array $destinationLocationIds) : self
+    public function setDestinationLocationIds(array $destinationLocationIds): self
     {
         $this->initialized['destinationLocationIds'] = true;
         $this->destinationLocationIds = $destinationLocationIds;
@@ -565,7 +565,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return list<string>
      */
-    public function getDestinationLocationStateOrProvinceCodes() : array
+    public function getDestinationLocationStateOrProvinceCodes(): array
     {
         return $this->destinationLocationStateOrProvinceCodes;
     }
@@ -576,7 +576,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setDestinationLocationStateOrProvinceCodes(array $destinationLocationStateOrProvinceCodes) : self
+    public function setDestinationLocationStateOrProvinceCodes(array $destinationLocationStateOrProvinceCodes): self
     {
         $this->initialized['destinationLocationStateOrProvinceCodes'] = true;
         $this->destinationLocationStateOrProvinceCodes = $destinationLocationStateOrProvinceCodes;
@@ -587,7 +587,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getTransitTime() : string
+    public function getTransitTime(): string
     {
         return $this->transitTime;
     }
@@ -598,7 +598,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setTransitTime(string $transitTime) : self
+    public function setTransitTime(string $transitTime): self
     {
         $this->initialized['transitTime'] = true;
         $this->transitTime = $transitTime;
@@ -609,7 +609,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getPackagingCode() : string
+    public function getPackagingCode(): string
     {
         return $this->packagingCode;
     }
@@ -620,7 +620,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setPackagingCode(string $packagingCode) : self
+    public function setPackagingCode(string $packagingCode): self
     {
         $this->initialized['packagingCode'] = true;
         $this->packagingCode = $packagingCode;
@@ -631,7 +631,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return list<int>
      */
-    public function getDestinationLocationNumbers() : array
+    public function getDestinationLocationNumbers(): array
     {
         return $this->destinationLocationNumbers;
     }
@@ -642,7 +642,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setDestinationLocationNumbers(array $destinationLocationNumbers) : self
+    public function setDestinationLocationNumbers(array $destinationLocationNumbers): self
     {
         $this->initialized['destinationLocationNumbers'] = true;
         $this->destinationLocationNumbers = $destinationLocationNumbers;
@@ -653,7 +653,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getPublishedDeliveryTime() : string
+    public function getPublishedDeliveryTime(): string
     {
         return $this->publishedDeliveryTime;
     }
@@ -664,7 +664,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setPublishedDeliveryTime(string $publishedDeliveryTime) : self
+    public function setPublishedDeliveryTime(string $publishedDeliveryTime): self
     {
         $this->initialized['publishedDeliveryTime'] = true;
         $this->publishedDeliveryTime = $publishedDeliveryTime;
@@ -675,7 +675,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return list<string>
      */
-    public function getCountryCodes() : array
+    public function getCountryCodes(): array
     {
         return $this->countryCodes;
     }
@@ -686,7 +686,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setCountryCodes(array $countryCodes) : self
+    public function setCountryCodes(array $countryCodes): self
     {
         $this->initialized['countryCodes'] = true;
         $this->countryCodes = $countryCodes;
@@ -697,7 +697,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return list<string>
      */
-    public function getStateOrProvinceCodes() : array
+    public function getStateOrProvinceCodes(): array
     {
         return $this->stateOrProvinceCodes;
     }
@@ -708,7 +708,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setStateOrProvinceCodes(array $stateOrProvinceCodes) : self
+    public function setStateOrProvinceCodes(array $stateOrProvinceCodes): self
     {
         $this->initialized['stateOrProvinceCodes'] = true;
         $this->stateOrProvinceCodes = $stateOrProvinceCodes;
@@ -719,7 +719,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getUrsaPrefixCode() : string
+    public function getUrsaPrefixCode(): string
     {
         return $this->ursaPrefixCode;
     }
@@ -730,7 +730,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setUrsaPrefixCode(string $ursaPrefixCode) : self
+    public function setUrsaPrefixCode(string $ursaPrefixCode): self
     {
         $this->initialized['ursaPrefixCode'] = true;
         $this->ursaPrefixCode = $ursaPrefixCode;
@@ -741,7 +741,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getUrsaSuffixCode() : string
+    public function getUrsaSuffixCode(): string
     {
         return $this->ursaSuffixCode;
     }
@@ -752,7 +752,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setUrsaSuffixCode(string $ursaSuffixCode) : self
+    public function setUrsaSuffixCode(string $ursaSuffixCode): self
     {
         $this->initialized['ursaSuffixCode'] = true;
         $this->ursaSuffixCode = $ursaSuffixCode;
@@ -763,7 +763,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return list<string>
      */
-    public function getDestinationServiceAreas() : array
+    public function getDestinationServiceAreas(): array
     {
         return $this->destinationServiceAreas;
     }
@@ -774,7 +774,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setDestinationServiceAreas(array $destinationServiceAreas) : self
+    public function setDestinationServiceAreas(array $destinationServiceAreas): self
     {
         $this->initialized['destinationServiceAreas'] = true;
         $this->destinationServiceAreas = $destinationServiceAreas;
@@ -785,7 +785,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return list<string>
      */
-    public function getOriginPostalCodes() : array
+    public function getOriginPostalCodes(): array
     {
         return $this->originPostalCodes;
     }
@@ -796,7 +796,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setOriginPostalCodes(array $originPostalCodes) : self
+    public function setOriginPostalCodes(array $originPostalCodes): self
     {
         $this->initialized['originPostalCodes'] = true;
         $this->originPostalCodes = $originPostalCodes;
@@ -807,7 +807,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return string
      */
-    public function getCustomTransitTime() : string
+    public function getCustomTransitTime(): string
     {
         return $this->customTransitTime;
     }
@@ -818,7 +818,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemOperationalDetai
      *
      * @return self
      */
-    public function setCustomTransitTime(string $customTransitTime) : self
+    public function setCustomTransitTime(string $customTransitTime): self
     {
         $this->initialized['customTransitTime'] = true;
         $this->customTransitTime = $customTransitTime;

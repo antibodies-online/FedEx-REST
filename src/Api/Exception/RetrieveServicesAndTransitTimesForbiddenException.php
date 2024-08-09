@@ -18,11 +18,11 @@ class RetrieveServicesAndTransitTimesForbiddenException extends ForbiddenExcepti
         $this->availabilityV1TransittimesPostResponse403 = $availabilityV1TransittimesPostResponse403;
         $this->response = $response;
     }
-    public function getAvailabilityV1TransittimesPostResponse403() : \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostResponse403
+    public function getAvailabilityV1TransittimesPostResponse403(): \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1TransittimesPostResponse403
     {
         return $this->availabilityV1TransittimesPostResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

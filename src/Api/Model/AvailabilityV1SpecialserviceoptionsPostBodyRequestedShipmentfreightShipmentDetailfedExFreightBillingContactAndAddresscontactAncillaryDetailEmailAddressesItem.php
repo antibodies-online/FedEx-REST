@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return string
      */
-    public function getEmailNotificationFormatType() : string
+    public function getEmailNotificationFormatType(): string
     {
         return $this->emailNotificationFormatType;
     }
@@ -46,7 +46,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setEmailNotificationFormatType(string $emailNotificationFormatType) : self
+    public function setEmailNotificationFormatType(string $emailNotificationFormatType): self
     {
         $this->initialized['emailNotificationFormatType'] = true;
         $this->emailNotificationFormatType = $emailNotificationFormatType;
@@ -57,7 +57,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return string
      */
-    public function getAddress() : string
+    public function getAddress(): string
     {
         return $this->address;
     }
@@ -68,7 +68,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setAddress(string $address) : self
+    public function setAddress(string $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -79,7 +79,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return array<string, string>
      */
-    public function getPermissions() : iterable
+    public function getPermissions(): iterable
     {
         return $this->permissions;
     }
@@ -90,7 +90,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentfreightShipmen
      *
      * @return self
      */
-    public function setPermissions(iterable $permissions) : self
+    public function setPermissions(iterable $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;

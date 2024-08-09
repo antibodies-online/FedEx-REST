@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItem extends \A
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItem extends \A
      *
      * @return list<AvailabilityV1TransittimesPostResponse200OutputtransitTimesItemTransitTimeDetailsItem>
      */
-    public function getTransitTimeDetails() : array
+    public function getTransitTimeDetails(): array
     {
         return $this->transitTimeDetails;
     }
@@ -34,7 +34,7 @@ class AvailabilityV1TransittimesPostResponse200OutputtransitTimesItem extends \A
      *
      * @return self
      */
-    public function setTransitTimeDetails(array $transitTimeDetails) : self
+    public function setTransitTimeDetails(array $transitTimeDetails): self
     {
         $this->initialized['transitTimeDetails'] = true;
         $this->transitTimeDetails = $transitTimeDetails;

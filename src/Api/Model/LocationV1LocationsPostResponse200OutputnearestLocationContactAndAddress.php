@@ -8,7 +8,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddress e
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddress e
      *
      * @return LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressAddress
      */
-    public function getAddress() : LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressAddress
+    public function getAddress(): LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressAddress
     {
         return $this->address;
     }
@@ -46,7 +46,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddress e
      *
      * @return self
      */
-    public function setAddress(LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressAddress $address) : self
+    public function setAddress(LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -57,7 +57,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddress e
      *
      * @return LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressContact
      */
-    public function getContact() : LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressContact
+    public function getContact(): LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressContact
     {
         return $this->contact;
     }
@@ -68,7 +68,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddress e
      *
      * @return self
      */
-    public function setContact(LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressContact $contact) : self
+    public function setContact(LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressContact $contact): self
     {
         $this->initialized['contact'] = true;
         $this->contact = $contact;
@@ -79,7 +79,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddress e
      *
      * @return LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressAddressAncillaryDetail
      */
-    public function getAddressAncillaryDetail() : LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressAddressAncillaryDetail
+    public function getAddressAncillaryDetail(): LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressAddressAncillaryDetail
     {
         return $this->addressAncillaryDetail;
     }
@@ -90,7 +90,7 @@ class LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddress e
      *
      * @return self
      */
-    public function setAddressAncillaryDetail(LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressAddressAncillaryDetail $addressAncillaryDetail) : self
+    public function setAddressAncillaryDetail(LocationV1LocationsPostResponse200OutputnearestLocationContactAndAddressAddressAncillaryDetail $addressAncillaryDetail): self
     {
         $this->initialized['addressAncillaryDetail'] = true;
         $this->addressAncillaryDetail = $addressAncillaryDetail;

@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return string
      */
-    public function getMerchantPhoneNumber() : string
+    public function getMerchantPhoneNumber(): string
     {
         return $this->merchantPhoneNumber;
     }
@@ -40,7 +40,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setMerchantPhoneNumber(string $merchantPhoneNumber) : self
+    public function setMerchantPhoneNumber(string $merchantPhoneNumber): self
     {
         $this->initialized['merchantPhoneNumber'] = true;
         $this->merchantPhoneNumber = $merchantPhoneNumber;
@@ -51,7 +51,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return list<string>
      */
-    public function getAllowedSpecialService() : array
+    public function getAllowedSpecialService(): array
     {
         return $this->allowedSpecialService;
     }
@@ -62,7 +62,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setAllowedSpecialService(array $allowedSpecialService) : self
+    public function setAllowedSpecialService(array $allowedSpecialService): self
     {
         $this->initialized['allowedSpecialService'] = true;
         $this->allowedSpecialService = $allowedSpecialService;

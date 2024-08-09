@@ -8,7 +8,7 @@ class LocationV1LocationsPostResponse200Outputlocation extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class LocationV1LocationsPostResponse200Outputlocation extends \ArrayObject
      *
      * @return LocationV1LocationsPostResponse200Outputlocationaddress
      */
-    public function getAddress() : LocationV1LocationsPostResponse200Outputlocationaddress
+    public function getAddress(): LocationV1LocationsPostResponse200Outputlocationaddress
     {
         return $this->address;
     }
@@ -40,7 +40,7 @@ class LocationV1LocationsPostResponse200Outputlocation extends \ArrayObject
      *
      * @return self
      */
-    public function setAddress(LocationV1LocationsPostResponse200Outputlocationaddress $address) : self
+    public function setAddress(LocationV1LocationsPostResponse200Outputlocationaddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -51,7 +51,7 @@ class LocationV1LocationsPostResponse200Outputlocation extends \ArrayObject
      *
      * @return LocationV1LocationsPostResponse200OutputlocationlongLat
      */
-    public function getLongLat() : LocationV1LocationsPostResponse200OutputlocationlongLat
+    public function getLongLat(): LocationV1LocationsPostResponse200OutputlocationlongLat
     {
         return $this->longLat;
     }
@@ -62,7 +62,7 @@ class LocationV1LocationsPostResponse200Outputlocation extends \ArrayObject
      *
      * @return self
      */
-    public function setLongLat(LocationV1LocationsPostResponse200OutputlocationlongLat $longLat) : self
+    public function setLongLat(LocationV1LocationsPostResponse200OutputlocationlongLat $longLat): self
     {
         $this->initialized['longLat'] = true;
         $this->longLat = $longLat;

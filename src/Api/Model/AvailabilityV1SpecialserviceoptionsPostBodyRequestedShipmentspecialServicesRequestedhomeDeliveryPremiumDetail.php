@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return string
      */
-    public function getHomedeliveryPremiumType() : string
+    public function getHomedeliveryPremiumType(): string
     {
         return $this->homedeliveryPremiumType;
     }
@@ -34,7 +34,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setHomedeliveryPremiumType(string $homedeliveryPremiumType) : self
+    public function setHomedeliveryPremiumType(string $homedeliveryPremiumType): self
     {
         $this->initialized['homedeliveryPremiumType'] = true;
         $this->homedeliveryPremiumType = $homedeliveryPremiumType;

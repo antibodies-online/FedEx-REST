@@ -18,11 +18,11 @@ class ValidatePostalForbiddenException extends ForbiddenException
         $this->countryV1PostalValidatePostResponse403 = $countryV1PostalValidatePostResponse403;
         $this->response = $response;
     }
-    public function getCountryV1PostalValidatePostResponse403() : \AntibodiesOnline\FedEx\Api\Model\CountryV1PostalValidatePostResponse403
+    public function getCountryV1PostalValidatePostResponse403(): \AntibodiesOnline\FedEx\Api\Model\CountryV1PostalValidatePostResponse403
     {
         return $this->countryV1PostalValidatePostResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

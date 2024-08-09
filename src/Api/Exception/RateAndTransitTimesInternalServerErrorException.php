@@ -18,11 +18,11 @@ class RateAndTransitTimesInternalServerErrorException extends InternalServerErro
         $this->rateV1RatesQuotesPostResponse500 = $rateV1RatesQuotesPostResponse500;
         $this->response = $response;
     }
-    public function getRateV1RatesQuotesPostResponse500() : \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse500
+    public function getRateV1RatesQuotesPostResponse500(): \AntibodiesOnline\FedEx\Api\Model\RateV1RatesQuotesPostResponse500
     {
         return $this->rateV1RatesQuotesPostResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

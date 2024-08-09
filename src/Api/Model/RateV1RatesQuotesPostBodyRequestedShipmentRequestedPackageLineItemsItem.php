@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItem ex
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItem ex
      *
      * @return string
      */
-    public function getSubPackagingType() : string
+    public function getSubPackagingType(): string
     {
         return $this->subPackagingType;
     }
@@ -76,7 +76,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItem ex
      *
      * @return self
      */
-    public function setSubPackagingType(string $subPackagingType) : self
+    public function setSubPackagingType(string $subPackagingType): self
     {
         $this->initialized['subPackagingType'] = true;
         $this->subPackagingType = $subPackagingType;
@@ -87,7 +87,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItem ex
      *
      * @return int
      */
-    public function getGroupPackageCount() : int
+    public function getGroupPackageCount(): int
     {
         return $this->groupPackageCount;
     }
@@ -98,7 +98,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItem ex
      *
      * @return self
      */
-    public function setGroupPackageCount(int $groupPackageCount) : self
+    public function setGroupPackageCount(int $groupPackageCount): self
     {
         $this->initialized['groupPackageCount'] = true;
         $this->groupPackageCount = $groupPackageCount;
@@ -109,7 +109,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItem ex
      *
      * @return list<RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemContentRecordItem>
      */
-    public function getContentRecord() : array
+    public function getContentRecord(): array
     {
         return $this->contentRecord;
     }
@@ -120,7 +120,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItem ex
      *
      * @return self
      */
-    public function setContentRecord(array $contentRecord) : self
+    public function setContentRecord(array $contentRecord): self
     {
         $this->initialized['contentRecord'] = true;
         $this->contentRecord = $contentRecord;
@@ -142,7 +142,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItem ex
      *
      * @return self
      */
-    public function setDeclaredValue($declaredValue) : self
+    public function setDeclaredValue($declaredValue): self
     {
         $this->initialized['declaredValue'] = true;
         $this->declaredValue = $declaredValue;
@@ -164,7 +164,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItem ex
      *
      * @return self
      */
-    public function setWeight($weight) : self
+    public function setWeight($weight): self
     {
         $this->initialized['weight'] = true;
         $this->weight = $weight;
@@ -186,7 +186,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItem ex
      *
      * @return self
      */
-    public function setDimensions($dimensions) : self
+    public function setDimensions($dimensions): self
     {
         $this->initialized['dimensions'] = true;
         $this->dimensions = $dimensions;
@@ -197,7 +197,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItem ex
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail
      */
-    public function getVariableHandlingChargeDetail() : RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail
+    public function getVariableHandlingChargeDetail(): RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail
     {
         return $this->variableHandlingChargeDetail;
     }
@@ -208,7 +208,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItem ex
      *
      * @return self
      */
-    public function setVariableHandlingChargeDetail(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail $variableHandlingChargeDetail) : self
+    public function setVariableHandlingChargeDetail(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemVariableHandlingChargeDetail $variableHandlingChargeDetail): self
     {
         $this->initialized['variableHandlingChargeDetail'] = true;
         $this->variableHandlingChargeDetail = $variableHandlingChargeDetail;
@@ -219,7 +219,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItem ex
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices
      */
-    public function getPackageSpecialServices() : RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices
+    public function getPackageSpecialServices(): RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices
     {
         return $this->packageSpecialServices;
     }
@@ -230,7 +230,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItem ex
      *
      * @return self
      */
-    public function setPackageSpecialServices(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices $packageSpecialServices) : self
+    public function setPackageSpecialServices(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServices $packageSpecialServices): self
     {
         $this->initialized['packageSpecialServices'] = true;
         $this->packageSpecialServices = $packageSpecialServices;

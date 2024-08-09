@@ -8,7 +8,7 @@ class AvailabilityV1PackageandserviceoptionsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -52,7 +52,7 @@ class AvailabilityV1PackageandserviceoptionsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedShipment($requestedShipment) : self
+    public function setRequestedShipment($requestedShipment): self
     {
         $this->initialized['requestedShipment'] = true;
         $this->requestedShipment = $requestedShipment;
@@ -63,7 +63,7 @@ class AvailabilityV1PackageandserviceoptionsPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getCarrierCodes() : array
+    public function getCarrierCodes(): array
     {
         return $this->carrierCodes;
     }
@@ -74,7 +74,7 @@ class AvailabilityV1PackageandserviceoptionsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCarrierCodes(array $carrierCodes) : self
+    public function setCarrierCodes(array $carrierCodes): self
     {
         $this->initialized['carrierCodes'] = true;
         $this->carrierCodes = $carrierCodes;
@@ -85,7 +85,7 @@ class AvailabilityV1PackageandserviceoptionsPostBody extends \ArrayObject
      *
      * @return AvailabilityV1PackageandserviceoptionsPostBodyAccountNumber
      */
-    public function getAccountNumber() : AvailabilityV1PackageandserviceoptionsPostBodyAccountNumber
+    public function getAccountNumber(): AvailabilityV1PackageandserviceoptionsPostBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -96,7 +96,7 @@ class AvailabilityV1PackageandserviceoptionsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(AvailabilityV1PackageandserviceoptionsPostBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(AvailabilityV1PackageandserviceoptionsPostBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -107,7 +107,7 @@ class AvailabilityV1PackageandserviceoptionsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getSystemOfMeasureType() : string
+    public function getSystemOfMeasureType(): string
     {
         return $this->systemOfMeasureType;
     }
@@ -118,7 +118,7 @@ class AvailabilityV1PackageandserviceoptionsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSystemOfMeasureType(string $systemOfMeasureType) : self
+    public function setSystemOfMeasureType(string $systemOfMeasureType): self
     {
         $this->initialized['systemOfMeasureType'] = true;
         $this->systemOfMeasureType = $systemOfMeasureType;

@@ -8,7 +8,7 @@ class TrackV1AssociatedshipmentsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class TrackV1AssociatedshipmentsPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getIncludeDetailedScans() : bool
+    public function getIncludeDetailedScans(): bool
     {
         return $this->includeDetailedScans;
     }
@@ -52,7 +52,7 @@ class TrackV1AssociatedshipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIncludeDetailedScans(bool $includeDetailedScans) : self
+    public function setIncludeDetailedScans(bool $includeDetailedScans): self
     {
         $this->initialized['includeDetailedScans'] = true;
         $this->includeDetailedScans = $includeDetailedScans;
@@ -63,7 +63,7 @@ class TrackV1AssociatedshipmentsPostBody extends \ArrayObject
      *
      * @return TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfo
      */
-    public function getMasterTrackingNumberInfo() : TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfo
+    public function getMasterTrackingNumberInfo(): TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfo
     {
         return $this->masterTrackingNumberInfo;
     }
@@ -74,7 +74,7 @@ class TrackV1AssociatedshipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setMasterTrackingNumberInfo(TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfo $masterTrackingNumberInfo) : self
+    public function setMasterTrackingNumberInfo(TrackV1AssociatedshipmentsPostBodyMasterTrackingNumberInfo $masterTrackingNumberInfo): self
     {
         $this->initialized['masterTrackingNumberInfo'] = true;
         $this->masterTrackingNumberInfo = $masterTrackingNumberInfo;
@@ -85,7 +85,7 @@ class TrackV1AssociatedshipmentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getAssociatedType() : string
+    public function getAssociatedType(): string
     {
         return $this->associatedType;
     }
@@ -96,7 +96,7 @@ class TrackV1AssociatedshipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAssociatedType(string $associatedType) : self
+    public function setAssociatedType(string $associatedType): self
     {
         $this->initialized['associatedType'] = true;
         $this->associatedType = $associatedType;
@@ -107,7 +107,7 @@ class TrackV1AssociatedshipmentsPostBody extends \ArrayObject
      *
      * @return TrackV1AssociatedshipmentsPostBodyPagingDetails
      */
-    public function getPagingDetails() : TrackV1AssociatedshipmentsPostBodyPagingDetails
+    public function getPagingDetails(): TrackV1AssociatedshipmentsPostBodyPagingDetails
     {
         return $this->pagingDetails;
     }
@@ -118,7 +118,7 @@ class TrackV1AssociatedshipmentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPagingDetails(TrackV1AssociatedshipmentsPostBodyPagingDetails $pagingDetails) : self
+    public function setPagingDetails(TrackV1AssociatedshipmentsPostBodyPagingDetails $pagingDetails): self
     {
         $this->initialized['pagingDetails'] = true;
         $this->pagingDetails = $pagingDetails;

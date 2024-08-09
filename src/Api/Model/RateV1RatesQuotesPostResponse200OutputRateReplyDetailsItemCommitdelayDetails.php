@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetai
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetai
      *
      * @return string
      */
-    public function getDate() : string
+    public function getDate(): string
     {
         return $this->date;
     }
@@ -64,7 +64,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetai
      *
      * @return self
      */
-    public function setDate(string $date) : self
+    public function setDate(string $date): self
     {
         $this->initialized['date'] = true;
         $this->date = $date;
@@ -75,7 +75,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetai
      *
      * @return string
      */
-    public function getDayOfWeek() : string
+    public function getDayOfWeek(): string
     {
         return $this->dayOfWeek;
     }
@@ -86,7 +86,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetai
      *
      * @return self
      */
-    public function setDayOfWeek(string $dayOfWeek) : self
+    public function setDayOfWeek(string $dayOfWeek): self
     {
         $this->initialized['dayOfWeek'] = true;
         $this->dayOfWeek = $dayOfWeek;
@@ -97,7 +97,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetai
      *
      * @return string
      */
-    public function getLevel() : string
+    public function getLevel(): string
     {
         return $this->level;
     }
@@ -108,7 +108,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetai
      *
      * @return self
      */
-    public function setLevel(string $level) : self
+    public function setLevel(string $level): self
     {
         $this->initialized['level'] = true;
         $this->level = $level;
@@ -119,7 +119,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetai
      *
      * @return string
      */
-    public function getPoint() : string
+    public function getPoint(): string
     {
         return $this->point;
     }
@@ -130,7 +130,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetai
      *
      * @return self
      */
-    public function setPoint(string $point) : self
+    public function setPoint(string $point): self
     {
         $this->initialized['point'] = true;
         $this->point = $point;
@@ -141,7 +141,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetai
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -152,7 +152,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetai
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -163,7 +163,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetai
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -174,7 +174,7 @@ class RateV1RatesQuotesPostResponse200OutputRateReplyDetailsItemCommitdelayDetai
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;

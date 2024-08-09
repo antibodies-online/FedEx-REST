@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getOfferor() : string
+    public function getOfferor(): string
     {
         return $this->offeror;
     }
@@ -76,7 +76,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setOfferor(string $offeror) : self
+    public function setOfferor(string $offeror): self
     {
         $this->initialized['offeror'] = true;
         $this->offeror = $offeror;
@@ -87,7 +87,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return list<RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemHazardousCommoditiesItem>
      */
-    public function getHazardousCommodities() : array
+    public function getHazardousCommodities(): array
     {
         return $this->hazardousCommodities;
     }
@@ -98,7 +98,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setHazardousCommodities(array $hazardousCommodities) : self
+    public function setHazardousCommodities(array $hazardousCommodities): self
     {
         $this->initialized['hazardousCommodities'] = true;
         $this->hazardousCommodities = $hazardousCommodities;
@@ -109,7 +109,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return int
      */
-    public function getNumberOfContainers() : int
+    public function getNumberOfContainers(): int
     {
         return $this->numberOfContainers;
     }
@@ -120,7 +120,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setNumberOfContainers(int $numberOfContainers) : self
+    public function setNumberOfContainers(int $numberOfContainers): self
     {
         $this->initialized['numberOfContainers'] = true;
         $this->numberOfContainers = $numberOfContainers;
@@ -131,7 +131,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getContainerType() : string
+    public function getContainerType(): string
     {
         return $this->containerType;
     }
@@ -142,7 +142,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setContainerType(string $containerType) : self
+    public function setContainerType(string $containerType): self
     {
         $this->initialized['containerType'] = true;
         $this->containerType = $containerType;
@@ -153,7 +153,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemEmergencyContactNumber
      */
-    public function getEmergencyContactNumber() : RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemEmergencyContactNumber
+    public function getEmergencyContactNumber(): RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemEmergencyContactNumber
     {
         return $this->emergencyContactNumber;
     }
@@ -164,7 +164,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setEmergencyContactNumber(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemEmergencyContactNumber $emergencyContactNumber) : self
+    public function setEmergencyContactNumber(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemEmergencyContactNumber $emergencyContactNumber): self
     {
         $this->initialized['emergencyContactNumber'] = true;
         $this->emergencyContactNumber = $emergencyContactNumber;
@@ -175,7 +175,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemPackaging
      */
-    public function getPackaging() : RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemPackaging
+    public function getPackaging(): RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemPackaging
     {
         return $this->packaging;
     }
@@ -186,7 +186,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setPackaging(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemPackaging $packaging) : self
+    public function setPackaging(RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPackageSpecialServicesdangerousGoodsDetailContainersItemPackaging $packaging): self
     {
         $this->initialized['packaging'] = true;
         $this->packaging = $packaging;
@@ -197,7 +197,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getPackingType() : string
+    public function getPackingType(): string
     {
         return $this->packingType;
     }
@@ -208,7 +208,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setPackingType(string $packingType) : self
+    public function setPackingType(string $packingType): self
     {
         $this->initialized['packingType'] = true;
         $this->packingType = $packingType;
@@ -219,7 +219,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return string
      */
-    public function getRadioactiveContainerClass() : string
+    public function getRadioactiveContainerClass(): string
     {
         return $this->radioactiveContainerClass;
     }
@@ -230,7 +230,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentRequestedPackageLineItemsItemPac
      *
      * @return self
      */
-    public function setRadioactiveContainerClass(string $radioactiveContainerClass) : self
+    public function setRadioactiveContainerClass(string $radioactiveContainerClass): self
     {
         $this->initialized['radioactiveContainerClass'] = true;
         $this->radioactiveContainerClass = $radioactiveContainerClass;

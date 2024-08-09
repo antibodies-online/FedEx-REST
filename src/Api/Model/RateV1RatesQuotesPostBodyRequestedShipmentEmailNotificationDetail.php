@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetail extends 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetail extends 
      *
      * @return list<RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailRecipientsItem>
      */
-    public function getRecipients() : array
+    public function getRecipients(): array
     {
         return $this->recipients;
     }
@@ -46,7 +46,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetail extends 
      *
      * @return self
      */
-    public function setRecipients(array $recipients) : self
+    public function setRecipients(array $recipients): self
     {
         $this->initialized['recipients'] = true;
         $this->recipients = $recipients;
@@ -57,7 +57,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetail extends 
      *
      * @return string
      */
-    public function getPersonalMessage() : string
+    public function getPersonalMessage(): string
     {
         return $this->personalMessage;
     }
@@ -68,7 +68,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetail extends 
      *
      * @return self
      */
-    public function setPersonalMessage(string $personalMessage) : self
+    public function setPersonalMessage(string $personalMessage): self
     {
         $this->initialized['personalMessage'] = true;
         $this->personalMessage = $personalMessage;
@@ -79,7 +79,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetail extends 
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailPrintedReference
      */
-    public function getPrintedReference() : RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailPrintedReference
+    public function getPrintedReference(): RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailPrintedReference
     {
         return $this->printedReference;
     }
@@ -90,7 +90,7 @@ class RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetail extends 
      *
      * @return self
      */
-    public function setPrintedReference(RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailPrintedReference $printedReference) : self
+    public function setPrintedReference(RateV1RatesQuotesPostBodyRequestedShipmentEmailNotificationDetailPrintedReference $printedReference): self
     {
         $this->initialized['printedReference'] = true;
         $this->printedReference = $printedReference;

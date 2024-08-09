@@ -8,7 +8,7 @@ class AddressV1AddressesResolvePostResponse500 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class AddressV1AddressesResolvePostResponse500 extends \ArrayObject
      *
      * @return string
      */
-    public function getTransactionId() : string
+    public function getTransactionId(): string
     {
         return $this->transactionId;
     }
@@ -46,7 +46,7 @@ class AddressV1AddressesResolvePostResponse500 extends \ArrayObject
      *
      * @return self
      */
-    public function setTransactionId(string $transactionId) : self
+    public function setTransactionId(string $transactionId): self
     {
         $this->initialized['transactionId'] = true;
         $this->transactionId = $transactionId;
@@ -57,7 +57,7 @@ class AddressV1AddressesResolvePostResponse500 extends \ArrayObject
      *
      * @return string
      */
-    public function getCustomerTransactionId() : string
+    public function getCustomerTransactionId(): string
     {
         return $this->customerTransactionId;
     }
@@ -68,7 +68,7 @@ class AddressV1AddressesResolvePostResponse500 extends \ArrayObject
      *
      * @return self
      */
-    public function setCustomerTransactionId(string $customerTransactionId) : self
+    public function setCustomerTransactionId(string $customerTransactionId): self
     {
         $this->initialized['customerTransactionId'] = true;
         $this->customerTransactionId = $customerTransactionId;
@@ -79,7 +79,7 @@ class AddressV1AddressesResolvePostResponse500 extends \ArrayObject
      *
      * @return list<AddressV1AddressesResolvePostResponse500ErrorsItem>
      */
-    public function getErrors() : array
+    public function getErrors(): array
     {
         return $this->errors;
     }
@@ -90,7 +90,7 @@ class AddressV1AddressesResolvePostResponse500 extends \ArrayObject
      *
      * @return self
      */
-    public function setErrors(array $errors) : self
+    public function setErrors(array $errors): self
     {
         $this->initialized['errors'] = true;
         $this->errors = $errors;

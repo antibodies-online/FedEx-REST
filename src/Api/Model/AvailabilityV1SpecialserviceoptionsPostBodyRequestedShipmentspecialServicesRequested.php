@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -78,7 +78,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedinternationalControlledExportDetail
      */
-    public function getInternationalControlledExportDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedinternationalControlledExportDetail
+    public function getInternationalControlledExportDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedinternationalControlledExportDetail
     {
         return $this->internationalControlledExportDetail;
     }
@@ -89,7 +89,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setInternationalControlledExportDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedinternationalControlledExportDetail $internationalControlledExportDetail) : self
+    public function setInternationalControlledExportDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedinternationalControlledExportDetail $internationalControlledExportDetail): self
     {
         $this->initialized['internationalControlledExportDetail'] = true;
         $this->internationalControlledExportDetail = $internationalControlledExportDetail;
@@ -100,7 +100,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedreturnShipmentDetail
      */
-    public function getReturnShipmentDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedreturnShipmentDetail
+    public function getReturnShipmentDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedreturnShipmentDetail
     {
         return $this->returnShipmentDetail;
     }
@@ -111,7 +111,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setReturnShipmentDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedreturnShipmentDetail $returnShipmentDetail) : self
+    public function setReturnShipmentDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedreturnShipmentDetail $returnShipmentDetail): self
     {
         $this->initialized['returnShipmentDetail'] = true;
         $this->returnShipmentDetail = $returnShipmentDetail;
@@ -122,7 +122,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedhomeDeliveryPremiumDetail
      */
-    public function getHomeDeliveryPremiumDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedhomeDeliveryPremiumDetail
+    public function getHomeDeliveryPremiumDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedhomeDeliveryPremiumDetail
     {
         return $this->homeDeliveryPremiumDetail;
     }
@@ -133,7 +133,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setHomeDeliveryPremiumDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedhomeDeliveryPremiumDetail $homeDeliveryPremiumDetail) : self
+    public function setHomeDeliveryPremiumDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedhomeDeliveryPremiumDetail $homeDeliveryPremiumDetail): self
     {
         $this->initialized['homeDeliveryPremiumDetail'] = true;
         $this->homeDeliveryPremiumDetail = $homeDeliveryPremiumDetail;
@@ -144,7 +144,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedreturnEmailDetail
      */
-    public function getReturnEmailDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedreturnEmailDetail
+    public function getReturnEmailDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedreturnEmailDetail
     {
         return $this->returnEmailDetail;
     }
@@ -155,7 +155,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setReturnEmailDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedreturnEmailDetail $returnEmailDetail) : self
+    public function setReturnEmailDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedreturnEmailDetail $returnEmailDetail): self
     {
         $this->initialized['returnEmailDetail'] = true;
         $this->returnEmailDetail = $returnEmailDetail;
@@ -166,7 +166,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return list<string>
      */
-    public function getSpecialServiceTypes() : array
+    public function getSpecialServiceTypes(): array
     {
         return $this->specialServiceTypes;
     }
@@ -177,7 +177,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setSpecialServiceTypes(array $specialServiceTypes) : self
+    public function setSpecialServiceTypes(array $specialServiceTypes): self
     {
         $this->initialized['specialServiceTypes'] = true;
         $this->specialServiceTypes = $specialServiceTypes;
@@ -188,7 +188,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetail
      */
-    public function getSaturdayDeliveryDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetail
+    public function getSaturdayDeliveryDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetail
     {
         return $this->saturdayDeliveryDetail;
     }
@@ -199,7 +199,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setSaturdayDeliveryDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetail $saturdayDeliveryDetail) : self
+    public function setSaturdayDeliveryDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedsaturdayDeliveryDetail $saturdayDeliveryDetail): self
     {
         $this->initialized['saturdayDeliveryDetail'] = true;
         $this->saturdayDeliveryDetail = $saturdayDeliveryDetail;
@@ -210,7 +210,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetail
      */
-    public function getHoldAtLocationDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetail
+    public function getHoldAtLocationDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetail
     {
         return $this->holdAtLocationDetail;
     }
@@ -221,7 +221,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setHoldAtLocationDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetail $holdAtLocationDetail) : self
+    public function setHoldAtLocationDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedholdAtLocationDetail $holdAtLocationDetail): self
     {
         $this->initialized['holdAtLocationDetail'] = true;
         $this->holdAtLocationDetail = $holdAtLocationDetail;
@@ -233,7 +233,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
     *
     * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedcodDetail
     */
-    public function getCodDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedcodDetail
+    public function getCodDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedcodDetail
     {
         return $this->codDetail;
     }
@@ -245,7 +245,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
     *
     * @return self
     */
-    public function setCodDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedcodDetail $codDetail) : self
+    public function setCodDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedcodDetail $codDetail): self
     {
         $this->initialized['codDetail'] = true;
         $this->codDetail = $codDetail;
@@ -256,7 +256,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedshipmentDryIceDetail
      */
-    public function getShipmentDryIceDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedshipmentDryIceDetail
+    public function getShipmentDryIceDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedshipmentDryIceDetail
     {
         return $this->shipmentDryIceDetail;
     }
@@ -267,7 +267,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setShipmentDryIceDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedshipmentDryIceDetail $shipmentDryIceDetail) : self
+    public function setShipmentDryIceDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedshipmentDryIceDetail $shipmentDryIceDetail): self
     {
         $this->initialized['shipmentDryIceDetail'] = true;
         $this->shipmentDryIceDetail = $shipmentDryIceDetail;
@@ -278,7 +278,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedfreightDirectDetail
      */
-    public function getFreightDirectDetail() : AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedfreightDirectDetail
+    public function getFreightDirectDetail(): AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedfreightDirectDetail
     {
         return $this->freightDirectDetail;
     }
@@ -289,7 +289,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setFreightDirectDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedfreightDirectDetail $freightDirectDetail) : self
+    public function setFreightDirectDetail(AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialServicesRequestedfreightDirectDetail $freightDirectDetail): self
     {
         $this->initialized['freightDirectDetail'] = true;
         $this->freightDirectDetail = $freightDirectDetail;

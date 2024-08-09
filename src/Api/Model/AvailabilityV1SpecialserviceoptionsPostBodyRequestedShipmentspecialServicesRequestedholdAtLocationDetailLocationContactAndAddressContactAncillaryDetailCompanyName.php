@@ -8,7 +8,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return string
      */
-    public function getDivision() : string
+    public function getDivision(): string
     {
         return $this->division;
     }
@@ -58,7 +58,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setDivision(string $division) : self
+    public function setDivision(string $division): self
     {
         $this->initialized['division'] = true;
         $this->division = $division;
@@ -69,7 +69,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return string
      */
-    public function getCompanyCd() : string
+    public function getCompanyCd(): string
     {
         return $this->companyCd;
     }
@@ -80,7 +80,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setCompanyCd(string $companyCd) : self
+    public function setCompanyCd(string $companyCd): self
     {
         $this->initialized['companyCd'] = true;
         $this->companyCd = $companyCd;
@@ -91,7 +91,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -102,7 +102,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -113,7 +113,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return string
      */
-    public function getDepartment() : string
+    public function getDepartment(): string
     {
         return $this->department;
     }
@@ -124,7 +124,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setDepartment(string $department) : self
+    public function setDepartment(string $department): self
     {
         $this->initialized['department'] = true;
         $this->department = $department;
@@ -135,7 +135,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return string
      */
-    public function getStoreId() : string
+    public function getStoreId(): string
     {
         return $this->storeId;
     }
@@ -146,7 +146,7 @@ class AvailabilityV1SpecialserviceoptionsPostBodyRequestedShipmentspecialService
      *
      * @return self
      */
-    public function setStoreId(string $storeId) : self
+    public function setStoreId(string $storeId): self
     {
         $this->initialized['storeId'] = true;
         $this->storeId = $storeId;

@@ -8,7 +8,7 @@ class RateV1RatesQuotesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class RateV1RatesQuotesPostBody extends \ArrayObject
      *
      * @return RateV1RatesQuotesPostBodyAccountNumber
      */
-    public function getAccountNumber() : RateV1RatesQuotesPostBodyAccountNumber
+    public function getAccountNumber(): RateV1RatesQuotesPostBodyAccountNumber
     {
         return $this->accountNumber;
     }
@@ -52,7 +52,7 @@ class RateV1RatesQuotesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(RateV1RatesQuotesPostBodyAccountNumber $accountNumber) : self
+    public function setAccountNumber(RateV1RatesQuotesPostBodyAccountNumber $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -63,7 +63,7 @@ class RateV1RatesQuotesPostBody extends \ArrayObject
      *
      * @return RateV1RatesQuotesPostBodyRateRequestControlParameters
      */
-    public function getRateRequestControlParameters() : RateV1RatesQuotesPostBodyRateRequestControlParameters
+    public function getRateRequestControlParameters(): RateV1RatesQuotesPostBodyRateRequestControlParameters
     {
         return $this->rateRequestControlParameters;
     }
@@ -74,7 +74,7 @@ class RateV1RatesQuotesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRateRequestControlParameters(RateV1RatesQuotesPostBodyRateRequestControlParameters $rateRequestControlParameters) : self
+    public function setRateRequestControlParameters(RateV1RatesQuotesPostBodyRateRequestControlParameters $rateRequestControlParameters): self
     {
         $this->initialized['rateRequestControlParameters'] = true;
         $this->rateRequestControlParameters = $rateRequestControlParameters;
@@ -85,7 +85,7 @@ class RateV1RatesQuotesPostBody extends \ArrayObject
      *
      * @return RateV1RatesQuotesPostBodyRequestedShipment
      */
-    public function getRequestedShipment() : RateV1RatesQuotesPostBodyRequestedShipment
+    public function getRequestedShipment(): RateV1RatesQuotesPostBodyRequestedShipment
     {
         return $this->requestedShipment;
     }
@@ -96,7 +96,7 @@ class RateV1RatesQuotesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedShipment(RateV1RatesQuotesPostBodyRequestedShipment $requestedShipment) : self
+    public function setRequestedShipment(RateV1RatesQuotesPostBodyRequestedShipment $requestedShipment): self
     {
         $this->initialized['requestedShipment'] = true;
         $this->requestedShipment = $requestedShipment;
@@ -107,7 +107,7 @@ class RateV1RatesQuotesPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getCarrierCodes() : array
+    public function getCarrierCodes(): array
     {
         return $this->carrierCodes;
     }
@@ -118,7 +118,7 @@ class RateV1RatesQuotesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCarrierCodes(array $carrierCodes) : self
+    public function setCarrierCodes(array $carrierCodes): self
     {
         $this->initialized['carrierCodes'] = true;
         $this->carrierCodes = $carrierCodes;

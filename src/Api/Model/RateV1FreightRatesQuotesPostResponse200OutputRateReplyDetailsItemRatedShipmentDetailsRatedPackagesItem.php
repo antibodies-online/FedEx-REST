@@ -8,7 +8,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShip
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShip
      *
      * @return float
      */
-    public function getEffectiveNetDiscount() : float
+    public function getEffectiveNetDiscount(): float
     {
         return $this->effectiveNetDiscount;
     }
@@ -46,7 +46,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShip
      *
      * @return self
      */
-    public function setEffectiveNetDiscount(float $effectiveNetDiscount) : self
+    public function setEffectiveNetDiscount(float $effectiveNetDiscount): self
     {
         $this->initialized['effectiveNetDiscount'] = true;
         $this->effectiveNetDiscount = $effectiveNetDiscount;
@@ -57,7 +57,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShip
      *
      * @return RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsRatedPackagesItemPackageRateDetail
      */
-    public function getPackageRateDetail() : RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsRatedPackagesItemPackageRateDetail
+    public function getPackageRateDetail(): RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsRatedPackagesItemPackageRateDetail
     {
         return $this->packageRateDetail;
     }
@@ -68,7 +68,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShip
      *
      * @return self
      */
-    public function setPackageRateDetail(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsRatedPackagesItemPackageRateDetail $packageRateDetail) : self
+    public function setPackageRateDetail(RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShipmentDetailsRatedPackagesItemPackageRateDetail $packageRateDetail): self
     {
         $this->initialized['packageRateDetail'] = true;
         $this->packageRateDetail = $packageRateDetail;
@@ -79,7 +79,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShip
      *
      * @return int
      */
-    public function getGroupNumber() : int
+    public function getGroupNumber(): int
     {
         return $this->groupNumber;
     }
@@ -90,7 +90,7 @@ class RateV1FreightRatesQuotesPostResponse200OutputRateReplyDetailsItemRatedShip
      *
      * @return self
      */
-    public function setGroupNumber(int $groupNumber) : self
+    public function setGroupNumber(int $groupNumber): self
     {
         $this->initialized['groupNumber'] = true;
         $this->groupNumber = $groupNumber;

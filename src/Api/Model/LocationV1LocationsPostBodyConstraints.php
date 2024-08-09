@@ -8,7 +8,7 @@ class LocationV1LocationsPostBodyConstraints extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class LocationV1LocationsPostBodyConstraints extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getLocationContentOptions() : array
+    public function getLocationContentOptions(): array
     {
         return $this->locationContentOptions;
     }
@@ -46,7 +46,7 @@ class LocationV1LocationsPostBodyConstraints extends \ArrayObject
      *
      * @return self
      */
-    public function setLocationContentOptions(array $locationContentOptions) : self
+    public function setLocationContentOptions(array $locationContentOptions): self
     {
         $this->initialized['locationContentOptions'] = true;
         $this->locationContentOptions = $locationContentOptions;
@@ -57,7 +57,7 @@ class LocationV1LocationsPostBodyConstraints extends \ArrayObject
      *
      * @return string
      */
-    public function getDropOffTimeNeeded() : string
+    public function getDropOffTimeNeeded(): string
     {
         return $this->dropOffTimeNeeded;
     }
@@ -68,7 +68,7 @@ class LocationV1LocationsPostBodyConstraints extends \ArrayObject
      *
      * @return self
      */
-    public function setDropOffTimeNeeded(string $dropOffTimeNeeded) : self
+    public function setDropOffTimeNeeded(string $dropOffTimeNeeded): self
     {
         $this->initialized['dropOffTimeNeeded'] = true;
         $this->dropOffTimeNeeded = $dropOffTimeNeeded;
@@ -79,7 +79,7 @@ class LocationV1LocationsPostBodyConstraints extends \ArrayObject
      *
      * @return string
      */
-    public function getExcludeUnavailableLocations() : string
+    public function getExcludeUnavailableLocations(): string
     {
         return $this->excludeUnavailableLocations;
     }
@@ -90,7 +90,7 @@ class LocationV1LocationsPostBodyConstraints extends \ArrayObject
      *
      * @return self
      */
-    public function setExcludeUnavailableLocations(string $excludeUnavailableLocations) : self
+    public function setExcludeUnavailableLocations(string $excludeUnavailableLocations): self
     {
         $this->initialized['excludeUnavailableLocations'] = true;
         $this->excludeUnavailableLocations = $excludeUnavailableLocations;

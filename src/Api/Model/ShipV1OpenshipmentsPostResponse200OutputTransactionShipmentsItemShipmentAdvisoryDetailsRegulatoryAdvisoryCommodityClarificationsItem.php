@@ -8,7 +8,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemShipmentAd
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemShipmentAd
      *
      * @return int
      */
-    public function getCommodityIndex() : int
+    public function getCommodityIndex(): int
     {
         return $this->commodityIndex;
     }
@@ -40,7 +40,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemShipmentAd
      *
      * @return self
      */
-    public function setCommodityIndex(int $commodityIndex) : self
+    public function setCommodityIndex(int $commodityIndex): self
     {
         $this->initialized['commodityIndex'] = true;
         $this->commodityIndex = $commodityIndex;
@@ -51,7 +51,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemShipmentAd
      *
      * @return list<ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemShipmentAdvisoryDetailsRegulatoryAdvisoryCommodityClarificationsItemSuggestionsItem>
      */
-    public function getSuggestions() : array
+    public function getSuggestions(): array
     {
         return $this->suggestions;
     }
@@ -62,7 +62,7 @@ class ShipV1OpenshipmentsPostResponse200OutputTransactionShipmentsItemShipmentAd
      *
      * @return self
      */
-    public function setSuggestions(array $suggestions) : self
+    public function setSuggestions(array $suggestions): self
     {
         $this->initialized['suggestions'] = true;
         $this->suggestions = $suggestions;

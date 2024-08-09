@@ -18,11 +18,11 @@ class UploadETDFilesServiceUnavailableException extends ServiceUnavailableExcept
         $this->documentsV1EtdsUploadPostResponse503 = $documentsV1EtdsUploadPostResponse503;
         $this->response = $response;
     }
-    public function getDocumentsV1EtdsUploadPostResponse503() : \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse503
+    public function getDocumentsV1EtdsUploadPostResponse503(): \AntibodiesOnline\FedEx\Api\Model\DocumentsV1EtdsUploadPostResponse503
     {
         return $this->documentsV1EtdsUploadPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

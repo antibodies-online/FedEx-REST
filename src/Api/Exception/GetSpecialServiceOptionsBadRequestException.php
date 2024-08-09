@@ -18,11 +18,11 @@ class GetSpecialServiceOptionsBadRequestException extends BadRequestException
         $this->availabilityV1SpecialserviceoptionsPostResponse400 = $availabilityV1SpecialserviceoptionsPostResponse400;
         $this->response = $response;
     }
-    public function getAvailabilityV1SpecialserviceoptionsPostResponse400() : \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1SpecialserviceoptionsPostResponse400
+    public function getAvailabilityV1SpecialserviceoptionsPostResponse400(): \AntibodiesOnline\FedEx\Api\Model\AvailabilityV1SpecialserviceoptionsPostResponse400
     {
         return $this->availabilityV1SpecialserviceoptionsPostResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

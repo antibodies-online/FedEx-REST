@@ -18,11 +18,11 @@ class TrackSendNotificationUnauthorizedException extends UnauthorizedException
         $this->trackV1NotificationsPostResponse401 = $trackV1NotificationsPostResponse401;
         $this->response = $response;
     }
-    public function getTrackV1NotificationsPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostResponse401
+    public function getTrackV1NotificationsPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\TrackV1NotificationsPostResponse401
     {
         return $this->trackV1NotificationsPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

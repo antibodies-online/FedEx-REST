@@ -18,11 +18,11 @@ class CreateTagUnauthorizedException extends UnauthorizedException
         $this->shipV1ShipmentsTagPostResponse401 = $shipV1ShipmentsTagPostResponse401;
         $this->response = $response;
     }
-    public function getShipV1ShipmentsTagPostResponse401() : \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagPostResponse401
+    public function getShipV1ShipmentsTagPostResponse401(): \AntibodiesOnline\FedEx\Api\Model\ShipV1ShipmentsTagPostResponse401
     {
         return $this->shipV1ShipmentsTagPostResponse401;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

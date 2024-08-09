@@ -8,7 +8,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetail 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetail 
      *
      * @return list<AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetailCommoditiesItem>
      */
-    public function getCommodities() : array
+    public function getCommodities(): array
     {
         return $this->commodities;
     }
@@ -34,7 +34,7 @@ class AvailabilityV1TransittimesPostBodyRequestedShipmentCustomsClearanceDetail 
      *
      * @return self
      */
-    public function setCommodities(array $commodities) : self
+    public function setCommodities(array $commodities): self
     {
         $this->initialized['commodities'] = true;
         $this->commodities = $commodities;
