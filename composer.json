@@ -2,6 +2,7 @@
     "name": "antibodies-online/fedex-rest-sdk",
     "description": "PHP SDK for Fedex REST API",
     "license": "MIT",
+    "homepage": "https://www.antibodies-online.com/",
     "authors": [
         {
             "name": "Benedikt Lenzen",
