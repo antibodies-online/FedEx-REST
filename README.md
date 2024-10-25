@@ -1,6 +1,6 @@
 # FedEx Rest
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/antibodies-online/fedex-rest/master/LICENSE)
-[![Packagist](https://img.shields.io/packagist/v/antibodies-online/fedex-rest.svg)](https://packagist.org/packages/antibodies-online/fedex-rest)
+[![Packagist](https://img.shields.io/packagist/v/antibodies-online/fedex-rest-sdk.svg)](https://packagist.org/packages/antibodies-online/fedex-rest-sdk)
 [![GitHub issues](https://img.shields.io/github/issues/antibodies-online/fedex-rest.svg)](https://github.com/antibodies-online/fedex-rest/issues)
 
 This package provides PHP classes to interact with the FedEx REST API.
